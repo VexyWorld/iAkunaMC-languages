@@ -1,0 +1,2545 @@
+{
+    "_displayname": "Русский",
+    "_authors": [
+        "M4theuskkj"
+    ],
+    "bedwars": {
+        "game": {
+            "_prefix": "§cBed§fWars §8§l» §r",
+            "waiting": "§cОжидание игроков...",
+            "countdown": "§7Начало через §c{time}с",
+            "returning": "§7Возврат в лобби через §c{time}с",
+            "respawning": "§7Возрождение через §c{time}с",
+            "player_joined": "§c{player} §7присоединился к матчу §8(§f{count}§8/§f{max}§8)",
+            "player_left": "§c{player} §7покинул матч §8(§f{count}§8/§f{max}§8)",
+            "player_left_rejoin": "§c{player} §7вышел §8(§cRejoin§8)",
+            "player_returned": "§c{player} §7вернулся в матч",
+            "custom_info": "§7Вы находитесь в кастомной комнате, созданной §c{creator}",
+            "custom_no_stats": "§7Этот матч не считает статистику, конфигурацию можно посмотреть через §8/§7bwcustom config"
+        },
+        "combat": {
+            "_prefix": "§cBed§fWars §8§l» §r",
+            "killed_by": "{victim} §r§7был(а) убит(а) игроком {killer}",
+            "killed_by_final": "{victim} §r§7был(а) убит(а) игроком {killer} §8(§cФинальный Килл§8)",
+            "fell_void": "{victim} §r§7упал(а) в пустоту",
+            "fell_void_final": "{victim} §r§7упал(а) в пустоту §8(§cФинальный Килл§8)",
+            "infected_by": "{victim} §r§7был(а) заражён(а) игроком {killer}",
+            "eliminated_by": "{victim} §r§7был(а) устранён(а) игроком {killer}",
+            "team_eliminated": "§cBed§fWars §8§l» §r§7Команда {team} §r§7была устранена!",
+            "enderchest_drop": "§cBed§fWars §8§l» §r§7Предметы из эндер-сундука {player} §7были выброшены в кузницу команды!"
+        },
+        "bed": {
+            "_prefix": "§cBed§fWars §8§l» §r",
+            "destroyed": "§7Кровать команды {team} §r§7была уничтожена игроком {killer}",
+            "own_destroyed": "§cВаша кровать была уничтожена {killer}§c! Вы больше не будете возрождаться..."
+        },
+        "trap": {
+            "_prefix": "§cBed§fWars §8§l» §r",
+            "enemy": "§cВражеская ловушка активирована!",
+            "own": "§cЛовушка вашего острова активирована!"
+        },
+        "tracker": {
+            "tracking": "§cBed§fWars §8§l» §r§7Отслеживание §c{player} §8§7 Расстояние§8:§c {distance} §7блоков"
+        },
+        "enderchest": {
+            "_prefix": "§cBed§fWars §8§l» §r",
+            "stored": "§7Предмет успешно сохранён",
+            "retrieved": "§7Предмет успешно извлечён",
+            "full": "§cВаш эндер-сундук полон...",
+            "empty": "§cВаш эндер-сундук пуст...",
+            "inventory_full": "§cВаш инвентарь полон...",
+            "cant_store_tools": "§cВы не можете хранить инструменты!",
+            "cant_store_tools_menu": "§cНельзя хранить инструменты...",
+            "keep_sword": "§cВ инвентаре должен оставаться хотя бы один меч!"
+        },
+        "drop": {
+            "combat_cancel": "§cBed§fWars §8§l» §r§cНельзя выбрасывать предметы в бою!"
+        },
+        "teams": {
+            "_prefix": "§cBed§fWars §8§l» §r",
+            "vip_only": "§cТолько игроки с VIP §b§l§oAstral§r§c или выше могут выбирать команды! §oКупите на https://loja.iakunamc.com",
+            "moved_by_partner": "§7Вас переместили в команду {team} §r§7партнёр!",
+            "already_in_team": "§cВы уже в команде {team}§r§c!",
+            "team_full": "§cКоманда {team} §r§cполна!",
+            "joined_team": "§7Вы успешно вступили в команду {team}§r§7!",
+            "preference_set": "§7Команда {team} §r§7установлена как предпочтительная",
+            "invalid_team": "§cНеверная команда..."
+        },
+        "rejoin": {
+            "_prefix": "§cBed§fWars §8§l» §r",
+            "pending": "§7Вы вышли из активного матча...",
+            "pending_hint": "§7Используйте §8/§7bedwars rejoin для возврата",
+            "no_pending": "§cУ вас нет ожидающего rejoin!",
+            "expired": "§cВремя rejoin истекло!",
+            "game_ended": "§cМатч завершён или кровать уничтожена!"
+        },
+        "command": {
+            "_prefix": "§cBed§fWars §8§l» §r",
+            "usage": "§7Для входа используйте §8/§7bw join §8<§7режим§8> §7или §8/§7bw join §8<§7код§8>",
+            "usage_leave": "§7Для выхода используйте §8/§7bw leave",
+            "usage_full": "§7Для входа используйте §8/§7bw join §8<§7solo§8|§7duo§8|§7trios§8|§7squad§8|§71v1§8|§7ultra§8|§7infection§8> §7или §8/§7bw join §8<§7код§8>",
+            "invalid_mode": "§cНеверный режим... Доступные режимы§8:§7 {modes}",
+            "mode_full": "§cЭтот режим заполнен...",
+            "invalid_code": "§cНеверный код или комната заполнена...",
+            "not_in_arena": "§cВы не находитесь на арене..."
+        },
+        "custom": {
+            "vip_only": "§cBed§fWars §8§l» §r§cТолько игроки с VIP §7§o§lGalaxy§r§a+§c или выше могут создавать кастомные комнаты! §oКупите на https://loja.iakunamc.com",
+            "created": "§cBed§fWars §8§l» §r§7Кастомная комната успешно создана!",
+            "code": "§cBed§fWars §8§l» §r§7Код комнаты: §c{code}",
+            "join_hint": "§cBed§fWars §8§l» §r§7Другие игроки могут войти через §8/§7bw join §c{code}",
+            "create_failed": "§cBed§fWars §8§l» §r§cНе удалось создать кастомную комнату...",
+            "settings_ignored": "§cBed§fWars §8§l» §r§cНекоторые настройки были проигнорированы...",
+            "not_in_custom": "§cBed§fWars §8§l» §r§cВы не находитесь в кастомной комнате...",
+            "no_settings_changed": "§cBed§fWars §8§l» §r§cВ этом матче нет кастомных настроек...",
+            "settings_header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §7Настройки кастомной комнаты §8===-=-=-=-",
+            "create_usage": "§cBed§fWars §8§l» §r§cИспользуйте §8/§cbwcustom создать §8<§cрежим§8> §8<§cнастройки§8>",
+            "no_settings": "§cBed§fWars §8§l» §r§cНужно установить хотя бы одну настройку...",
+            "no_valid_settings": "§cBed§fWars §8§l» §r§cНет допустимых настроек...",
+            "invalid_format": "§cBed§fWars §8§l» §r§cНеверный формат§8: §c{part} §8(§cИспользуйте §ckey§8=§cvalue§8)",
+            "unknown_setting": "§cBed§fWars §8§l» §r§cНеизвестная настройка§8: §c{key}",
+            "unknown_item": "§cBed§fWars §8§l» §r§cНеизвестный предмет§8: §c{item}",
+            "unknown_upgrade": "§cBed§fWars §8§l» §r§cНеизвестное улучшение§8: §c{upgrade}",
+            "time_zero": "§cBed§fWars §8§l» §r§cВремя должно быть больше нуля...",
+            "invalid_time": "§cBed§fWars §8§l» §r§cНеверное время...",
+            "invalid_speed": "§cBed§fWars §8§l» §r§cНеверная скорость...",
+            "speed_zero": "§cBed§fWars §8§l» §r§cСкорость должна быть больше нуля...",
+            "speed_max": "§cBed§fWars §8§l» §r§cМаксимальная скорость — 10x...",
+            "forge_level_range": "§cBed§fWars §8§l» §r§cУровень кузницы должен быть от 0 до 3...",
+            "generator_level_range": "§cBed§fWars §8§l» §r§cУровень генератора должен быть от 1 до 3...",
+            "invalid_gen_item": "§cBed§fWars §8§l» §r§cНеверный предмет генератора§8: §c{item}={amount} §8(§cМаксимум§8: §c64§8)",
+            "help": "§cBed§fWars §8§l» §r§7Для создания кастомной комнаты используйте §8/§7bwcustom создать §8<§7режим§8> §8<§7настройки§8>",
+            "help_config": "§cBed§fWars §8§l» §r§7Для просмотра настроек используйте §8/§7bwcustom config",
+            "help_list": "§cBed§fWars §8§l» §r§7Для списка настроек используйте §8/§7bwcustom list §8<§7configs§8|§7items§8|§7upgrades§8>",
+            "list_usage": "§cBed§fWars §8§l» §r§cИспользуйте §8/§cbwcustom list §8<§cconfigs§8|§citems§8|§cupgrades§8>",
+            "list_configs_header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §7Доступные настройки §8===-=-=-=-",
+            "list_items": "§cBed§fWars §8§l» §r§7Доступные предметы §8(§f{count}§8): §7{list}",
+            "list_upgrades": "§cBed§fWars §8§l» §r§7Доступные улучшения §8(§f{count}§8): §7{list}",
+            "show_blocked_items": "§cBed§fWars §8§l» §r§7Заблокированные предметы §8(§f{count}§8): §7{list}",
+            "show_blocked_upgrades": "§cBed§fWars §8§l» §r§7Заблокированные улучшения §8(§f{count}§8): §7{list}",
+            "show_upgrade_time": "§cBed§fWars §8§l» §r§7Время улучшения§8: §c{time}",
+            "show_forge_speed": "§cBed§fWars §8§l» §r§7Скорость кузницы§8: §c{speed}x",
+            "show_diamond_time": "§cBed§fWars §8§l» §r§7Время генератора §bАлмазов§8: §c{time}",
+            "show_emerald_time": "§cBed§fWars §8§l» §r§7Время генератора §2Изумрудов§8: §c{time}",
+            "show_forge_level": "§cBed§fWars §8§l» §r§7Уровень кузницы§8: §c{level}",
+            "show_generator_level": "§cBed§fWars §8§l» §r§7Уровень генераторов§8: §c{level}",
+            "show_beds_destroyed": "§cBed§fWars §8§l» §r§7Уничтоженные кровати§8: {value}",
+            "beds_yes": "§aДа",
+            "beds_no": "§cНет"
+        },
+        "menu": {
+            "_prefix": "§cBed§fWars §8§l» §r",
+            "invalid_mode": "§cНеверный режим... Доступные режимы§8:§7 {modes}",
+            "arena_not_found": "§cАрена не найдена!",
+            "map_not_found": "§cКарта не найдена...",
+            "wrong_mode": "§cЭта карта для режима {mode}...",
+            "load_error": "§cОшибка загрузки арены...",
+            "no_space": "§cНедостаточно места на арене...",
+            "mode_full": "§cЭтот режим заполнен...",
+            "click_favorite": "§7Нажмите на карту, чтобы добавить/убрать из избранного",
+            "map_favorited": "§7Карта {map} добавлена в избранное",
+            "map_unfavorited": "§7Карта {map} убрана из избранного",
+            "confirm_button": "§a§lПодтвердить",
+            "cancel_button": "§c§lОтмена"
+        },
+        "shop": {
+            "_prefix": "§cBed§fWars §8§l» §r",
+            "no_resources": "§cНедостаточно ресурсов для покупки этого предмета!",
+            "armor_better": "§cУ вас уже есть эта броня или лучше!",
+            "inventory_full": "§cВаш инвентарь полон!",
+            "already_has_shears": "§cУ вас уже есть ножницы!"
+        },
+        "upgrade": {
+            "_prefix": "§cBed§fWars §8§l» §r",
+            "max_level": "§c{name} §cуже на максимальном уровне!",
+            "need_diamonds": "§cНе хватает {amount} §bАлмазов§c!",
+            "purchased": "§c{player} §7улучшил {name} §7до уровня §c{level}§7!"
+        },
+        "generator": {
+            "_prefix": "§cBed§fWars §8§l» §r",
+            "upgraded": "§7Генераторы {type} §7обновлены до уровня §f{level}",
+            "beds_destroyed": "§cВсе кровати уничтожены!"
+        },
+        "cooldown": {
+            "_prefix": "§cBed§fWars §8§l» §r",
+            "egg": "§cПодождите перед повторным использованием Яйца Моста!",
+            "irongolem": "§cПодождите перед спавном Железного голема!",
+            "silverfish": "§cПодождите перед спавном Чешуйниц!",
+            "slingshot": "§cПодождите перед повторным использованием Рогатки!",
+            "fireball": "§cПодождите перед повторным использованием Огненного шара!",
+            "sponge": "§cПодождите перед повторным использованием Губки!",
+            "platform": "§cПодождите перед повторным использованием Платформы!",
+            "bridge": "§cПодождите перед повторным использованием Строителя мостов!",
+            "tower": "§cПодождите перед повторным использованием Компактной башни!"
+        },
+        "platform": {
+            "_prefix": "§cBed§fWars §8§l» §r",
+            "blocked": "§cЗдесь нельзя создать платформу..."
+        }
+    },
+    "teampvp": {
+        "_prefix": "§aTeamPvP §8§l» §r",
+        "usage": "§7Для входа используйте §8/§7{label} join §8<§7команда§8>{n}§aTeamPvP §8§l» §r§7Для выхода используйте §8/§7{label} leave",
+        "join": {
+            "_prefix": "",
+            "usage": "§aTeamPvP §8§l» §r§cИспользуйте §8/§c{label} join §8<§cкоманда§8>"
+        },
+        "teams": "§cДоступные команды§8:§7 {teams}",
+        "sameteam": "§cНельзя атаковать игрока своей команды!"
+    },
+    "parkour": {
+        "_prefix": "§5Паркур §8§l» §r",
+        "usage": "§7Для входа используйте §8/§7{label} join{n}§5Паркур §8§l» §r§7Для выхода используйте §8/§7{label} leave",
+        "finish": {
+            "time": "§7Вы прошли паркур за §5{time}",
+            "personalbest": "§5Новый рекорд! §7Ваше лучшее время§8:§5 {time}",
+            "noreward": "§7Поздравляем, вы прошли паркур!",
+            "reward": "§7Поздравляем, вы прошли паркур и получили §7§lNightmare §r§7в награду!"
+        }
+    },
+    "thebridge": {
+        "_prefix": "§cThe§9Bridge §8§l» §r",
+        "game": {
+            "waiting": "§cОжидание ещё одного игрока...",
+            "countdown": "§7Начало через §c{time}с",
+            "releasing": "§7Освобождение через §c{time}с",
+            "returning": "§7Возврат в лобби через §c{time}с",
+            "player_joined": "§c{player} §7присоединился к матчу",
+            "player_quit": "§c{player} §7покинул матч",
+            "point_scored": "{player} §7забил гол",
+            "point_scored_final": "{player} §7забил гол §8(§cФинальный гол§8)",
+            "killed_by": "§c{victim} §7был(а) убит(а) игроком §c{killer}",
+            "own_point": "§cНельзя забивать гол в ворота своей команды"
+        },
+        "command": {
+            "usage": "§7Для входа используйте §8/§7{label} join",
+            "no_arenas": "§cСейчас нет доступных арен..."
+        },
+        "teams": {
+            "invalid": "§cНеверная команда...",
+            "already_in": "§cВы уже в команде {team}§r§c!",
+            "full": "§cКоманда {team} §r§cполна!",
+            "joined": "§7Вы успешно вступили в команду {team}§r§7!"
+        }
+    },
+    "skywars": {
+        "_prefix": "§fSky§bWars §8§l» §r",
+        "state": {
+            "waiting": "§cОжидание игроков...",
+            "starting": "§7Начало через §b{start}с",
+            "finish": "§7Возврат в лобби через §b{time}с"
+        },
+        "player": {
+            "join": "§b{player} §7присоединился к матчу §8(§f{count}§8/§f{maxPlayers}§8)",
+            "quit": "§b{player} §7покинул матч §8(§f{count}§8/§f{maxPlayers}§8)",
+            "killed_by": "§b{player} §7был(а) убит(а) игроком §b{killer} §8(§f{alive}§8/§f{maxPlayers}§8)",
+            "killed_void": "§b{player} §7упал(а) в пустоту §8(§f{alive}§8/§f{maxPlayers}§8)"
+        },
+        "refill": {
+            "_prefix": "",
+            "done": "§7Все сундуки снова заполнены!"
+        },
+        "scoreboard": {
+            "_prefix": "",
+            "format": "{right} §fi§cAkuna§9MC §8§l» §r§fSky§bWars{n}{right}{bar}{n}{refill}{right}§8§l» §r§7Карта§8:§b {map}{n}{right}§8§l» §r§7В живых§8:§b {alive}{n}{right}§8§l» §r§7Убийства§8:§b {kills}{n}{right}{bar}{n}{n}{right}§biakunamc.com 19132"
+        },
+        "command": {
+            "usage": "§7Для входа используйте §8/§7sw join{n}§fSky§bWars §8§l» §r§7Для выхода используйте §8/§7sw leave",
+            "mode_not_exist": "§cРежим {mode} не существует...",
+            "mode_full": "§cЭтот режим заполнен...",
+            "not_in_arena": "§cВы не находитесь на арене..."
+        },
+        "voting": {
+            "player_voted": "§b{player} §7проголосовал за {gamemode}",
+            "selected": "§7Выбранный режим§8:§b {gamemode}"
+        },
+        "caos": {
+            "tnt_spawn": "§cТНТ!",
+            "fire": "§6Огонь!",
+            "inventory_scramble": "§7Инвентари перемешаны!",
+            "teleport": "§7Телепортация!",
+            "launch": "§7Полёт!",
+            "tnt_rain": "§cДождь из ТНТ!",
+            "inventory_swap": "§eИнвентари обменяны!"
+        },
+        "menu": {
+            "invalid_mode": "§cНеверный режим... Доступные режимы§8:§7 {modes}",
+            "mode_full": "§cЭтот режим заполнен...",
+            "arena_not_found": "§cАрена не найдена!",
+            "map_not_found": "§cКарта не найдена...",
+            "wrong_mode": "§cЭта карта для режима {mode}...",
+            "load_error": "§cОшибка загрузки арены...",
+            "no_space": "§cНедостаточно места на арене...",
+            "click_favorite": "§7Нажмите на карту, чтобы добавить/убрать из избранного",
+            "map_favorited": "§7Карта {map} добавлена в избранное",
+            "map_unfavorited": "§7Карта {map} убрана из избранного",
+            "confirm_button": "§a§lПодтвердить",
+            "cancel_button": "§c§lОтмена"
+        },
+        "tracker": "§8§l» §r§7Отслеживание §b{player} §8§l» §r§7Расстояние: §b{distance} §7блоков"
+    },
+    "mlgblock": {
+        "state": {
+            "_prefix": "§eMlg§fBlock §8§l» §r",
+            "waiting": "§cОжидание игроков...",
+            "starting": "§7Начало через §e{start}с",
+            "finish": "§7Возврат в лобби через §e{time}с"
+        },
+        "player": {
+            "_prefix": "§eMlg§fBlock §8§l» §r",
+            "join": "§e{player} §7присоединился к матчу §8(§f{count}§8/§f{slots}§8)",
+            "quit": "§e{player} §7покинул матч §8(§f{count}§8/§f{slots}§8)",
+            "killed_by": "§e{player} §7был(а) убит(а) игроком §e{killer} §8(§f{alive}§8/§f{slots}§8)",
+            "killed_void": "§e{player} §7упал(а) в пустоту §8(§f{alive}§8/§f{slots}§8)"
+        },
+        "command": {
+            "_prefix": "§eMlg§fBlock §8§l» §r",
+            "usage": "§7Используйте §8/§7mlg §8<§7join§8|§7leave§8>",
+            "no_arenas": "§cНет доступных арен..."
+        },
+        "scoreboard": {
+            "format": "{right}§fi§cAkuna§9MC §8§l» §r§eMlg§fBlock{n}{right}{bar}{n}{right}§8§l» §r§7Карта§8:§e {map}{n}{right}§8§l» §r§7Убийства§8:§e {kills}{n}{right}§8§l» §r§7В живых§8:§e {alive}{n}{right}{bar}{n}{n}{right}§eiakunamc.com 19132"
+        }
+    },
+    "blocksumo": {
+        "state": {
+            "_prefix": "§bBlock§fSumo §8§l» §r",
+            "waiting": "§cОжидание игроков...",
+            "starting": "§7Начало через §b{start}с",
+            "finish": "§7Возврат в лобби через §b{time}с"
+        },
+        "player": {
+            "_prefix": "§bBlock§fSumo §8§l» §r",
+            "join": "§b{player} §7присоединился к матчу §8(§f{count}§8/§f{slots}§8)",
+            "quit": "§b{player} §7покинул матч §8(§f{count}§8/§f{slots}§8)",
+            "killed_by": "§b{player} §7был(а) убит(а) игроком §b{killer} §8(§f{alive}§8/§f{slots}§8)",
+            "killed_by_final": "§b{player} §7был(а) §cустранён(а) §7игроком §b{killer} §8(§f{alive}§8/§f{slots}§8)",
+            "killed_void": "§b{player} §7упал(а) в пустоту §8(§f{alive}§8/§f{slots}§8)",
+            "respawning": "§7Возрождение через §b{time}с"
+        },
+        "command": {
+            "_prefix": "§bBlock§fSumo §8§l» §r",
+            "usage": "§7Используйте §8/§7blocksumo §8<§7join§8|§7leave§8>",
+            "no_arenas": "§cНет доступных арен..."
+        },
+        "scoreboard": {
+            "format": "{right}§fi§cAkuna§9MC §8§l» §r§bBlock§fSumo{n}{right}{bar}{n}{right}§8§l» §r§7Карта§8:§b {map}{n}{right}§8§l» §r§7Убийства§8:§b {kills}{n}{right}§8§l» §r§7Жизни§8:§b {lives}{n}{right}{bar}{n}{n}{right}§biakunamc.com 19132"
+        }
+    },
+    "plot": {
+        "popup": {
+            "_prefix": "§9Участок §8§l» §r",
+            "owner": "§7Собственность §9{owner} §8- §7Оценка§8:§9 {rating}",
+            "rate": "§7Нравится этот участок? Оцените его с помощью §8/§7p rate!",
+            "available": "§7Этот участок свободен! Приобретите за §c{price} Аkunas §7с помощью /p claim"
+        },
+        "command": {
+            "name": "plot",
+            "alias": "p",
+            "desc": "§7Управляйте своими участками",
+            "usage": "§9Участок §8§l» §r§cИспользуйте §8/§cplot §8<§cajuda§8|§csub-cmd§8> §8[§cопции§8]",
+            "unknown": "§9Участок §8§l» §r§cНеизвестная подкоманда, используйте §8/§cp ajuda для списка команд"
+        },
+        "subcommand": {
+            "usage": "§9Участок §8§l» §r§cИспользуйте {usage}"
+        },
+        "error": "§9Участок §8§l» §r§cОй! Что-то пошло не так...",
+        "notinplot": "§9Участок §8§l» §r§cВы не находитесь на участке...",
+        "notowner": "§9Участок §8§l» §r§cВы не владеете этим участком...",
+        "confirm": "confirm",
+        "help": {
+            "name": "ajuda",
+            "alias": "help",
+            "desc": "§7Показывает команды участка",
+            "usage": "§8/§cp help §8<§cстраница§8>",
+            "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §9Участок §8(§f{page}§8/§f{total}§8) §8===-=-=-=-",
+            "entry": "§9Участок §8§l» §r§8/§7p {name} §8-§7 {desc}"
+        },
+        "addhelper": {
+            "name": "addhelper",
+            "alias": "addh",
+            "desc": "§7Добавляет помощника на участок",
+            "usage": "§8/§cp addhelper §8<§cигрок§8>",
+            "alreadyone": "§9Участок §8§l» §r§c{player} уже является помощником...",
+            "success": "§9Участок §8§l» §r§9{player} §7стал помощником участка",
+            "everyone": {
+                "success": "§9Участок §8§l» §r§7Все игроки теперь помощники участка!"
+            },
+            "offline": "§cСистема §8§l» §r§cИгрок не в сети"
+        },
+        "removehelper": {
+            "name": "removehelper",
+            "alias": "delh",
+            "desc": "§7Удаляет помощника с участка",
+            "usage": "§8/§cp removehelper §8<§cигрок§8>",
+            "notone": "§9Участок §8§l» §r§c{player} не является помощником...",
+            "success": "§9Участок §8§l» §r§9{player} §7удалён из помощников участка...",
+            "everyone": {
+                "success": "§9Участок §8§l» §r§7Все игроки удалены из помощников участка!"
+            }
+        },
+        "claim": {
+            "name": "claim",
+            "alias": "c",
+            "desc": "§7Забирает участок, на котором вы стоите",
+            "usage": "§8/§cp claim §8<§cназвание§8>",
+            "yourplot": "§9Участок §8§l» §r§cВы уже заняли этот участок",
+            "alreadyclaimed": "§9Участок §8§l» §r§cЭтот участок уже занят {owner}",
+            "nomoney": "§9Участок §8§l» §r§cНедостаточно денег для занятия участка",
+            "success": "§9Участок §8§l» §r§7Вы успешно заняли участок!"
+        },
+        "auto": {
+            "name": "auto",
+            "alias": "a",
+            "desc": "§7Телепортирует на следующий свободный участок",
+            "usage": "§8/§cp auto",
+            "notplotworld": "§9Участок §8§l» §r§cВы не в мире участков...",
+            "success": "§9Участок §8§l» §r§7Успешно телепортированы на свободный участок §9{x}§8;§9{z}§7!",
+            "noplots": "§9Участок §8§l» §r§7Нет доступных участков..."
+        },
+        "dispose": {
+            "name": "dispose",
+            "alias": "d",
+            "desc": "§7Отказывается от участка",
+            "usage": "§8/§cp dispose",
+            "confirm": "§9Участок §8§l» §r§7Уверены, что хотите отказаться от участка §9{plot}§7? Если да, используйте §8/§7p dispose confirm",
+            "success": "§9Участок §8§l» §r§7Вы успешно отказались от участка!"
+        },
+        "reset": {
+            "name": "reset",
+            "alias": "r",
+            "desc": "§7Сбрасывает участок",
+            "usage": "§8/§cp reset",
+            "confirm": "§9Участок §8§l» §r§7Уверены, что хотите сбросить участок §9{plot}§7? Если да, используйте §8/§7p reset confirm",
+            "success": "§9Участок §8§l» §r§7Участок успешно сброшен!",
+            "already_clearing": "§9Участок §8§l» §r§cЭтот участок уже сбрасывается..."
+        },
+        "clear": {
+            "name": "clear",
+            "alias": "cl",
+            "desc": "§7Очищает участок",
+            "usage": "§8/§cp clear",
+            "confirm": "§9Участок §8§l» §r§7Уверены, что хотите очистить участок §9{plot}§7? Если да, используйте §8/§7p clear confirm",
+            "success": "§9Участок §8§l» §r§7Участок успешно очищен!",
+            "already_clearing": "§9Участок §8§l» §r§cЭтот участок уже очищается..."
+        },
+        "biome": {
+            "name": "biome",
+            "alias": "b",
+            "desc": "§7Меняет биом участка",
+            "usage": "§8/§cp biome §8[§cбиом§8]",
+            "success": "§9Участок §8§l» §r§7Биом участка изменён на §9{biome} §7успешно!",
+            "invalid": "§9Участок §8§l» §r§cТакой биом не существует...",
+            "possible": "§9Участок §8§l» §r§7Доступные биомы§8:§7 {biomes}"
+        },
+        "name": {
+            "name": "name",
+            "alias": "n",
+            "desc": "§7Устанавливает или меняет название участка",
+            "usage": "§8/§cp name §8<§cназвание§8>",
+            "success": "§9Участок §8§l» §r§7Название участка изменено на §7\"§9{name}§7\" успешно!"
+        },
+        "home": {
+            "name": "home",
+            "alias": "h",
+            "desc": "§7Переходит на один из ваших участков",
+            "usage": "§8/§cp home §8<§cid§8>",
+            "noplots": "§9Участок §8§l» §r§cУ вас нет участков",
+            "notexist": "§9Участок §8§l» §r§cУ вас нет участка с id {id}",
+            "success": "§9Участок §8§l» §r§7Успешно телепортированы на участок §9{plot}§7!",
+            "error": "§9Участок §8§l» §r§cНе удалось перейти на участок..."
+        },
+        "homes": {
+            "name": "homes",
+            "alias": "hs",
+            "desc": "§7Показывает ваши участки",
+            "usage": "§8/§cp homes",
+            "noplots": "§9Участок §8§l» §r§cУ вас нет участков...",
+            "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §9Участки §8(§f{page}§8/§f{total}§8) §8===-=-=-=-",
+            "invalid_page": "§cСистема §8§l» §r§cНеверная страница, всего §c{total} §cстраниц..."
+        },
+        "info": {
+            "name": "info",
+            "alias": "i",
+            "desc": "§7Показывает информацию об участке",
+            "usage": "§8/§cp info",
+            "about": "§9Участок §8§l» §r§7Информация об участке §9{plot}",
+            "owner": "§9Участок §8§l» §r§7Владелец§8:§9 {owner}",
+            "plotname": "§9Участок §8§l» §r§7Название§8:§9 {name}",
+            "helpers": "§9Участок §8§l» §r§7Помощники §8(§f{count}§8):§7 {helpers}",
+            "biome": "§9Участок §8§l» §r§7Биом§8:§9 {biome}",
+            "rating": "§9Участок §8§l» §r§7Оценка§8:§9 {score} §8(§9{count} §7оценок§8)",
+            "allowed": "§9Участок §8§l» §r§7Разрешены §8(§f{count}§8):§7 {players}",
+            "denied": "§9Участок §8§l» §r§7Заблокированы §8(§f{count}§8):§7 {players}"
+        },
+        "generate": {
+            "name": "generate",
+            "alias": "gen",
+            "desc": "§7Генерирует новый мир участков",
+            "usage": "§8/§cp generate §8<§cназвание§8>",
+            "exists": "§9Участок §8§l» §r§cМир {name} уже существует",
+            "success": "§9Участок §8§l» §r§7Мир участков успешно создан: {name}",
+            "error": "§9Участок §8§l» §r§cНе удалось создать мир..."
+        },
+        "give": {
+            "name": "give",
+            "alias": "g",
+            "desc": "§7Передаёт участок другому игроку",
+            "usage": "§8/§cp give §8<§cигрок§8>",
+            "notonline": "§9Участок §8§l» §r§cИгрок не в сети",
+            "toself": "§9Участок §8§l» §r§cНельзя передать участок самому себе...",
+            "requests_disabled": "§cСистема §8§l» §r§cЭтот игрок отключил получение запросов...",
+            "pending_exists": "§cСистема §8§l» §r§cУ этого игрока уже есть ожидающий запрос...",
+            "expired": "§9Участок §8§l» §r§cЗапрос на передачу истёк...",
+            "sent": "§9Участок §8§l» §r§7Запрос на передачу отправлен §9{player}§7!",
+            "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §7Передача §9Участка§8===-=-=-",
+            "request": "§9Участок §8§l» §r§9{player} §7хочет отдать вам участок §9{x}§8;§9{z}",
+            "instructions": "§9Участок §8§l» §r§7Используйте §a/p accepttransfer §7для принятия §7или §c/p denytransfer §7для отказа"
+        },
+        "warp": {
+            "name": "warp",
+            "alias": "w",
+            "desc": "§7Телепортирует на участок",
+            "usage": "§8/§cp warp §8<§cid§8>",
+            "wrongid": "§9Участок §8§l» §r§cID должен быть в формате X;Z",
+            "notinplotworld": "§9Участок §8§l» §r§cВы не в мире участков...",
+            "unclaimed": "§9Участок §8§l» §r§cЭтот участок никому не принадлежит...",
+            "success": "§9Участок §8§l» §r§7Вы телепортированы на участок §9{plot}§7!"
+        },
+        "resetplots": {
+            "name": "resetplots",
+            "alias": "rsp",
+            "desc": "§7Сбрасывает все участки игрока",
+            "usage": "§8/§cp resetplots §8<§cигрок§8>"
+        },
+        "rate": {
+            "name": "rate",
+            "alias": "avaliar",
+            "desc": "§7Оценивает участок",
+            "usage": "§8/§cp rate §8<§cоценка - 1 до 5§8>",
+            "invalid_range": "§9Участок §8§l» §r§cОценка должна быть от 1 до 5...",
+            "self": "§9Участок §8§l» §r§cНельзя оценивать собственный участок...",
+            "notify_owner": "§9Участок §8§l» §r §9{player} §7оценил ваш участок §9{x}§8;§9{z} §7на §9{rating} §7звёзд!",
+            "success": "§9Участок §8§l» §r§7Оценка успешно выставлена! Общая оценка участка§8:§9 {score}"
+        },
+        "top": {
+            "name": "top",
+            "alias": "best",
+            "desc": "§7Показывает топ-10 участков по оценкам",
+            "usage": "§8/§cp top",
+            "header": "§8-=-=-=-=== §bТоп 10 §8- §9Участки §8===-=-=-=-",
+            "entry": "§9{pos} §8§l» §r§9{x}§8;§9{z} §8-§9 {owner} §8- §9{score} §8(§9{ratings} §7Оценок§8)",
+            "noplots": "§9Участок §8§l» §r§cУчастки с оценками не найдены..."
+        },
+        "allow": {
+            "name": "allow",
+            "desc": "§7Разрешает всем или конкретному игроку войти на участок",
+            "usage": "§8/§cp allow §8<§cигрок§8|§c*§8>",
+            "everyone": {
+                "success": "§9Участок §8§l» §r§7Все игроки теперь могут войти на участок!"
+            },
+            "success": "§9Участок §8§l» §r§9{player} §7теперь может войти на участок!",
+            "already": {
+                "allowed": "§9Участок §8§l» §r§c{player} уже разрешён(а)..."
+            }
+        },
+        "deny": {
+            "name": "deny",
+            "desc": "§7Блокирует всех или конкретного игрока на участке",
+            "usage": "§8/§cp deny §8<§cигрок§8|§c*§8>",
+            "everyone": {
+                "success": "§9Участок §8§l» §r§7Все игроки заблокированы!"
+            },
+            "success": "§9Участок §8§l» §r§9{player} §7успешно заблокирован(а)!",
+            "already": {
+                "denied": "§9Участок §8§l» §r§c{player} уже заблокирован(а)..."
+            }
+        },
+        "biomecolor": {
+            "name": "biomecolor",
+            "desc": "§7Меняет цвет биома участка",
+            "usage": "§8/§cp biomecolor §8<§cr§8,§cg§8,§cb§8>",
+            "success": "§9Участок §8§l» §r§7Цвет биома изменён на §9{r}§8,§9{g}§8,§9{b} §7успешно!",
+            "invalid_format": "§9Участок §8§l» §r§cИспользуйте §8/§cp biomecolor §8<§cr§8,§cg§8,§cb§8>",
+            "invalid_type": "§9Участок §8§l» §r§cЦвета должны быть числами (формат rgb)...",
+            "invalid_range": "§9Участок §8§l» §r§cЗначения цвета должны быть от 0 до 255..."
+        },
+        "accepttransfer": {
+            "name": "accepttransfer",
+            "desc": "§7Принимает передачу участка",
+            "usage": "§8/§cp accepttransfer",
+            "no_pending": "§cСистема §8§l» §r§cУ вас нет ожидающих запросов...",
+            "invalid_data": "§9Участок §8§l» §r§cНеверные данные участка...",
+            "not_exists": "§9Участок §8§l» §r§cУчасток не существует...",
+            "not_owner": "§9Участок §8§l» §r§cУчасток больше не принадлежит {owner}...",
+            "success": "§9Участок §8§l» §r§7Вы приняли передачу участка §9{plot}§7!",
+            "notify_sender": "§9Участок §8§l» §r§c{player} §7принял(а) передачу участка §9{plot}§7!"
+        },
+        "denytransfer": {
+            "name": "denytransfer",
+            "desc": "§7Отказывается от передачи участка",
+            "usage": "§8/§cp denytransfer",
+            "no_pending": "§cСистема §8§l» §r§cУ вас нет ожидающих запросов...",
+            "success": "§9Участок §8§l» §r§7Вы отказались от передачи участка...",
+            "notify_sender": "§9Участок §8§l» §r§9{player} §7отказался(ась) от передачи участка..."
+        }
+    },
+    "cosmetic": {
+        "bedwars": {
+            "bed_break": {
+                "explosion": {
+                    "description": "Разрушительный взрыв при уничтожении кровати"
+                },
+                "ores": {
+                    "description": "Драгоценные руды взрываются вокруг уничтоженной кровати"
+                },
+                "rainbow": {
+                    "description": "Красочный взрыв шерсти при уничтожении кровати"
+                }
+            },
+            "final_kill": {
+                "blood": {
+                    "description": "Кровь..."
+                },
+                "lightning": {
+                    "description": "Молния падает на убитого игрока"
+                },
+                "ez": {
+                    "description": "Отображает текст EZ"
+                },
+                "loser": {
+                    "description": "Отображает текст L"
+                },
+                "smoke": {
+                    "description": "Облако дыма поднимается над устранённым врагом"
+                },
+                "critical": {
+                    "description": "Критические частицы взрываются над устранённым врагом"
+                }
+            },
+            "kill": {
+                "smoke": {
+                    "description": "Облако дыма отмечает каждое убийство"
+                },
+                "critical": {
+                    "description": "Критические частицы взрываются при каждом убийстве"
+                },
+                "hearts": {
+                    "description": "Красные сердечки парят над жертвой"
+                }
+            },
+            "win": {
+                "firework": {
+                    "description": "Красочные фейерверки взрываются вокруг победителя"
+                },
+                "enchant": {
+                    "description": "Магические частицы окутывают победителя"
+                }
+            },
+            "wood_type": {
+                "oak": {
+                    "description": "Классическая дубовая древесина"
+                },
+                "spruce": {
+                    "description": "Тёмная еловая древесина"
+                },
+                "birch": {
+                    "description": "Светлая берёзовая древесина"
+                },
+                "jungle": {
+                    "description": "Экзотическая джунглевая древесина"
+                },
+                "acacia": {
+                    "description": "Красноватая акациевая древесина"
+                },
+                "dark_oak": {
+                    "description": "Тёмная древесина тёмного дуба"
+                }
+            }
+        },
+        "skywars": {
+            "win": {
+                "firework": {
+                    "description": "Красочные фейерверки взрываются вокруг победителя"
+                },
+                "enchant": {
+                    "description": "Магические частицы окутывают победителя"
+                }
+            },
+            "kill": {
+                "smoke": {
+                    "description": "Облако дыма отмечает каждое убийство"
+                },
+                "critical": {
+                    "description": "Критические частицы взрываются при каждом убийстве"
+                },
+                "hearts": {
+                    "description": "Красные сердечки парят над жертвой"
+                },
+                "blood": {
+                    "description": "Кровь разбрызгивается в месте гибели жертвы"
+                },
+                "lightning": {
+                    "description": "Молния падает на жертву при смерти"
+                },
+                "ez": {
+                    "description": "EZ парит над жертвой"
+                },
+                "loser": {
+                    "description": "L парит над жертвой"
+                }
+            }
+        },
+        "blocksumo": {
+            "kill": {
+                "smoke": {
+                    "description": "Облако дыма отмечает каждое убийство"
+                },
+                "critical": {
+                    "description": "Критические частицы взрываются при каждом убийстве"
+                },
+                "hearts": {
+                    "description": "Красные сердечки парят над жертвой"
+                },
+                "blood": {
+                    "description": "Кровь разбрызгивается в месте гибели жертвы"
+                },
+                "lightning": {
+                    "description": "Молния падает на жертву при смерти"
+                },
+                "ez": {
+                    "description": "EZ парит над жертвой"
+                },
+                "loser": {
+                    "description": "L парит над жертвой"
+                }
+            },
+            "final_kill": {
+                "blood": {
+                    "description": "Кровь..."
+                },
+                "lightning": {
+                    "description": "Молния падает на устранённого игрока"
+                },
+                "ez": {
+                    "description": "Отображает текст EZ при устранении"
+                },
+                "loser": {
+                    "description": "Отображает текст L при устранении"
+                },
+                "smoke": {
+                    "description": "Облако дыма поднимается над устранённым врагом"
+                },
+                "critical": {
+                    "description": "Критические частицы взрываются над устранённым врагом"
+                }
+            },
+            "win": {
+                "firework": {
+                    "description": "Красочные фейерверки взрываются вокруг победителя"
+                },
+                "enchant": {
+                    "description": "Магические частицы окутывают победителя"
+                }
+            },
+            "wool_color": {
+                "white": {
+                    "description": "Стандартная белая шерсть"
+                },
+                "red": {
+                    "description": "Яркая красная шерсть"
+                },
+                "blue": {
+                    "description": "Насыщенная синяя шерсть"
+                },
+                "green": {
+                    "description": "Яркая зелёная шерсть"
+                },
+                "yellow": {
+                    "description": "Лучистая жёлтая шерсть"
+                },
+                "purple": {
+                    "description": "Загадочная фиолетовая шерсть"
+                },
+                "pink": {
+                    "description": "Нежная розовая шерсть"
+                },
+                "cyan": {
+                    "description": "Освежающая голубая шерсть"
+                },
+                "orange": {
+                    "description": "Энергичная оранжевая шерсть"
+                },
+                "black": {
+                    "description": "Мрачная чёрная шерсть"
+                }
+            }
+        }
+    },
+    "cosmetics": {
+        "usage": "§5Cosmetics §8§l» §r§cИспользуйте §8/§c{label} §8<§cbuy§8|§con§8|§coff§8|§clist§8|§cinfo§8>",
+        "buy": {
+            "_prefix": "§5Косметика §8§l» §r",
+            "usage": "§cИспользуйте §8/§c{label} buy §8<§ccosmetic§8> [minigame] [тип]",
+            "already_owned": "§cУ вас уже есть этот косметический предмет!",
+            "perm_only": "§cЭтот косметический предмет доступен только по разрешению!",
+            "success": "§7Косметика §5{cosmetic}§7 куплена за §c{cost} Акун"
+        },
+        "set": {
+            "_prefix": "§5Косметика §8§l» §r",
+            "usage": "§cИспользуйте §8/§c{label} on §8<§ccosmetic§8> [§cminigame§8] [§cтип§8]",
+            "not_owned": "§cУ вас нет этого косметического предмета!",
+            "success": "§7Косметика §5{cosmetic}§7 успешно активирована",
+            "failed": "§cНе удалось активировать косметику!"
+        },
+        "unset": {
+            "_prefix": "§5Косметика §8§l» §r",
+            "usage": "§cИспользуйте §8/§c{label} off §8<§cminigame§8> §8<§cтип§8>",
+            "success": "§7Косметика по умолчанию активирована в §5{minigame} §8[§5{type}§8]"
+        },
+        "list": {
+            "_prefix": "§5Косметика §8§l» §r",
+            "title": "§7Список косметики§8:",
+            "owned": "§7Приобретена§8:§7 {cosmetics}",
+            "unowned": "§7Не приобретена§8:§7 {cosmetics}"
+        },
+        "info": {
+            "_prefix": "§5Косметика §8§l» §r",
+            "usage": "§cИспользуйте §8/§c{label} info §8<§ccosmetic§8> [§cminigame§8] [§cтип§8]",
+            "title": "§7Информация о §5{cosmetic}§8:",
+            "minigame": "§7Мини-игра§8: §5{minigame}",
+            "type": "§7Тип§8: §5{type}",
+            "description": "§7Описание§8: §5{description}",
+            "cost": "§7Цена§8:§c {cost} Акун",
+            "perm_only": "§7Разблокировка§8: §5Только по разрешению",
+            "status": "§7Статус§8: §5{status}",
+            "active": "§7Активна§8: §5{active}"
+        },
+        "cosmetic": {
+            "_prefix": "§5Косметика §8§l» §r",
+            "not_found": "§cКосметика не найдена...",
+            "ambiguous": "§cЭто название существует в нескольких типах, уточните мини-игру и тип!"
+        },
+        "minigame": {
+            "invalid": "§5Cosmetics §8§l» §r§cНеверная мини-игра!",
+            "_prefix": ""
+        },
+        "type": {
+            "invalid": "§5Cosmetics §8§l» §r§cНеверный тип косметики!"
+        },
+        "_prefix": "§5Косметика §8§l» §r"
+    },
+    "cosmeticswindow": {
+        "title": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §5Косметика §8===-=-=-=-",
+        "buy": {
+            "title": "§7Купить§8: §7{cosmetic} §8- §c{cost} Акun",
+            "success": "§5Косметика §8§l» §r§7Вы успешно купили косметику §5{cosmetic}§7!",
+            "confirm": "§aПодтвердить",
+            "cancel": "§cОтмена"
+        },
+        "invalid_minigame": "§5Cosmetics §8§l» §r§cНеверная мини-игра...",
+        "invalid_type": "§5Cosmetics §8§l» §r§cНеверный тип...",
+        "perm_only_label": "§5Только по разрешению",
+        "perm_required": "§5Cosmetics §8§l» §r§cУ вас нет разрешения на эту косметику!",
+        "set": {
+            "success": "§5Косметика §8§l» §r§7Косметика §5{cosmetic} §7успешно активирована!"
+        },
+        "disable": {
+            "success": "§5Косметика §8§l» §r§7Косметика §5{cosmetic} §7успешно отключена!",
+            "type_success": "§5Cosmetics §8§l» §r§7Косметика по умолчанию активирована в §5{minigame} §8[§5{type}§8]",
+            "minigame_success": "§5Cosmetics §8§l» §r§7Косметика по умолчанию активирована в §5{minigame}",
+            "all_success": "§5Cosmetics §8§l» §r§7Вся косметика отключена",
+            "button_type": "§cОтключить косметику типа",
+            "button_minigame": "§cОтключить косметику режима",
+            "button_all": "§cОтключить всю косметику"
+        },
+        "nav": {
+            "back": "§c« Назад в меню",
+            "prev_page": "§a« Предыдущая страница",
+            "current_page": "§8» §fТекущая страница",
+            "next_page": "§aСледующая страница »"
+        },
+        "cost_label": "§c{cost} Акун"
+    },
+    "pay": {
+        "_prefix": "§aЭкономика §8§l» §r",
+        "insufficient_balance": "§cНедостаточно Акun для этой транзакции...",
+        "invalid_amount": "§cКоличество должно быть числом и не может быть меньше или равно 0...",
+        "receive": "§7Вы получили §c{amount} Акun§7 от §a{player}§7!",
+        "success": "§7Вы успешно отправили §c{amount} Акun§7 на счёт §a{target}§7!",
+        "usage": "§cИспользуйте §8/§c{label} §8<§cигрок§8> <§cколичество§8>"
+    },
+    "economy": {
+        "_prefix": "§aЭкономика §8§l» §r",
+        "tax_applied": "§cНалог {tax} Акun применён... Всего списано: {total} Акun"
+    },
+    "skill": {
+        "explosivebow": {
+            "description": "Вызывает небольшой взрыв в месте попадания стрелы"
+        },
+        "fury": {
+            "description": "При убийстве игрока вы получаете скорость и силу на 8 секунд"
+        },
+        "firearrow": {
+            "description": "Стрелы поджигают противников при попадании"
+        },
+        "slow": {
+            "description": "Попадание яйцом накладывает замедление на 4 секунды"
+        },
+        "tntegg": {
+            "description": "При броске яйца появляется ТНТ!"
+        },
+        "switcher": {
+            "description": "Попадание снежком меняет вас местами с игроком"
+        },
+        "enderpearl": {
+            "description": "Теперь вы можете использовать снежки как жемчуг Эндера!"
+        },
+        "cheststealer": {
+            "description": "При клике на сундук вы автоматически получаете его содержимое"
+        },
+        "featherboost": {
+            "description": "Увеличивает ускорение от пера"
+        },
+        "bird": {
+            "description": "Вы получаете 2 дополнительных пера"
+        },
+        "thief": {
+            "description": "Получайте 20% перьев убитого игрока..."
+        },
+        "builder": {
+            "description": "Даёт вдвое больше блоков"
+        },
+        "sprinter": {
+            "description": "Вы получаете Скорость II на 11 секунд",
+            "description_sw": "Вы получаете Скорость II в начале матча"
+        },
+        "killer": {
+            "description": "При убийстве игрока вы получаете Силу и Прыжок"
+        },
+        "tanker": {
+            "description": "Вы получаете железный нагрудник..."
+        },
+        "life": {
+            "description": "Даёт дополнительно 4 сердца"
+        },
+        "hook": {
+            "description": "Стрелы притягивают врага при попадании"
+        },
+        "miner": {
+            "description": "У вас бесконечная Спешка I"
+        },
+        "archer": {
+            "description": "Получайте стрелу при попадании в врагов"
+        },
+        "slingshotboost": {
+            "description": "Увеличивает ускорение от рогатки"
+        },
+        "fireballboost": {
+            "description": "Увеличивает ускорение огненного шара по другим игрокам"
+        },
+        "towerspeed": {
+            "description": "Увеличивает скорость строительства компактной башни"
+        },
+        "trapbuff": {
+            "description": "При активации ловушки вы получаете Силу и Скорость II на 6 секунд"
+        },
+        "trapresistance": {
+            "description": "Сокращает длительность негативных эффектов ловушки на 2 секунды"
+        },
+        "bedbreaker": {
+            "description": "При уничтожении вражеской кровати вы получаете Скорость II и Прыжок II на 10 секунд"
+        }
+    },
+    "skills": {
+        "_prefix": "§aНавыки §8§l» §r",
+        "usage": "§cИспользуйте §8/§c{label} §8<§cbuy§8|§con§8|§coff§8|§clist§8|§cinfo§8>",
+        "buy": {
+            "usage": "§cИспользуйте §8/§c{label} buy §8<§cskill§8> [minigame]",
+            "already_owned": "§cУ вас уже есть этот навык!",
+            "success": "§7Навык §a{skill}§7 куплен за §c{cost} Акун",
+            "_prefix": ""
+        },
+        "activate": {
+            "usage": "§cИспользуйте §8/§c{label} on §8<§cskill§8> [minigame]",
+            "not_owned": "§cУ вас нет этого навыка!",
+            "already_active": "§cЭтот навык уже активен...",
+            "limit_reached": "§cВы достигли лимита в {limit} активных навыков...",
+            "success": "§7Навык §a{skill}§7 успешно активирован",
+            "failed": "§cНе удалось активировать навык!"
+        },
+        "deactivate": {
+            "usage": "§cИспользуйте §8/§c{label} off §8<§cminigame§8> <§cskill§8>",
+            "not_active": "§cЭтот навык не активен!",
+            "success": "§7Навык §a{skill}§7 деактивирован",
+            "all_success": "§7Все навыки деактивированы",
+            "minigame_all_success": "§7Все навыки режима §a{minigame} §7деактивированы!"
+        },
+        "list": {
+            "title": "§7Список навыков§8:",
+            "owned": "§7Приобретены§8:§7 {skills}",
+            "unowned": "§7Не приобретены§8:§7 {skills}",
+            "_prefix": ""
+        },
+        "info": {
+            "usage": "§cИспользуйте §8/§c{label} info §8<§cskill§8> [minigame]",
+            "title": "§7Информация о навыке §a{skill}§8:",
+            "description": "§7Описание§8: §a{description}",
+            "cost": "§7Цена§8:§c {cost} Акун",
+            "status": "§7Статус§8: §a{status}",
+            "active": "§7Активен§8: §a{active}",
+            "_prefix": ""
+        },
+        "skill": {
+            "not_found": "§aSkills §8§l» §r§cНавык не найден...",
+            "_prefix": ""
+        },
+        "cooldown": {
+            "tntegg": "§cНавык Tntegg на перезарядке...",
+            "enderpearl": "§cНавык Enderpearl на перезарядке...",
+            "cheststealer": "§cНавык Cheststealer на перезарядке...",
+            "hook": "§cНавык Hook на перезарядке...",
+            "archer": "§cНавык Archer на перезарядке..."
+        }
+    },
+    "skillswindow": {
+        "title": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §aНавыки §8===-=-=-=-",
+        "buy": {
+            "title": "§7Купить§8: §7{skill} §8- §c{cost} Акun",
+            "success": "§aНавыки §8§l» §r§7Вы успешно купили навык §a{skill}§7! Деактивируйте навык, чтобы активировать новый...",
+            "success_active": "§aНавыки §8§l» §r§7Вы успешно купили и активировали навык §a{skill}§7!",
+            "confirm": "§aПодтвердить",
+            "cancel": "§cОтмена"
+        },
+        "invalid_minigame": "§aSkills §8§l» §r§cНеверная мини-игра...",
+        "activate": {
+            "_prefix": "§aНавыки §8§l» §r",
+            "success": "§7Навык §a{skill} §7успешно активирован!",
+            "limit_reached": "§cВы достигли лимита в {limit} активных навыков для этой мини-игры..."
+        },
+        "disable": {
+            "button_all": "§cДеактивировать все навыки",
+            "button_minigame": "§cДеактивировать все навыки режима",
+            "success": "§aНавыки §8§l» §r§7Навык §a{skill} §7успешно деактивирован!",
+            "all_minigame_success": "§aSkills §8§l» §r§7Все навыки режима §a{minigame} §7деактивированы!",
+            "all_success": "§aSkills §8§l» §r§7Все навыки деактивированы"
+        },
+        "nav": {
+            "prev_page": "§a« Предыдущая страница",
+            "current_page": "§8» §fТекущая страница",
+            "next_page": "§aСледующая страница »"
+        }
+    },
+    "chest": {
+        "_prefix": "§aНавыки §8§l» §r",
+        "empty": "§cСундук пуст..."
+    },
+    "inventory": {
+        "_prefix": "§aНавыки §8§l» §r",
+        "full": "§cИнвентарь полон..."
+    },
+    "kit": {
+        "rush": {
+            "description": "Набор для стремительной атаки"
+        },
+        "trap": {
+            "description": "Набор для ловушек..."
+        },
+        "xyp": {
+            "description": "Набор создан srxyp"
+        },
+        "w3lton": {
+            "description": "Набор создан W3lton (SrMathBR)"
+        },
+        "eco": {
+            "description": "Набор создан zLitePvPz"
+        },
+        "mágico": {
+            "description": "Набор зелий"
+        },
+        "godness": {
+            "description": "Специальный набор для VIP"
+        },
+        "yt": {
+            "description": "Специальный набор для YouTubers"
+        },
+        "archer": {
+            "description": "Набор лучника с перьями и яйцами"
+        },
+        "ninja": {
+            "description": "Набор ниндзя с мобильностью"
+        },
+        "builder": {
+            "description": "Набор для быстрого строительства"
+        },
+        "lumberjack": {
+            "description": "Набор лесоруба с древесиной"
+        },
+        "tank": {
+            "description": "Танковый набор с высокой защитой"
+        },
+        "assassin": {
+            "description": "Набор скрытного убийцы"
+        },
+        "scout": {
+            "description": "Продвинутый разведывательный набор"
+        },
+        "pyro": {
+            "description": "Набор пиромана с огнём"
+        },
+        "miner": {
+            "description": "Набор шахтёра"
+        },
+        "sniper": {
+            "description": "Набор снайпера"
+        },
+        "juggernaut": {
+            "description": "Набор грубой силы"
+        },
+        "thrower": {
+            "description": "Набор метателя снарядов"
+        },
+        "medic": {
+            "description": "Медицинский набор с лечением"
+        }
+    },
+    "kits": {
+        "usage": "§cИспользуйте §8/§c{label} §8<§cbuy§8|§con§8|§coff§8|§clist§8|§cinfo§8>",
+        "buy": {
+            "_prefix": "§9Наборы §8§l» §r",
+            "usage": "§cИспользуйте §8/§c{label} buy §8<§ckit§8>",
+            "already_owned": "§cУ вас уже есть этот набор!",
+            "success": "§7Набор §9{kit}§7 куплен за §c{cost}",
+            "no_permission": "§cУ вас нет разрешения на покупку этого набора!"
+        },
+        "set": {
+            "_prefix": "§9Наборы §8§l» §r",
+            "usage": "§cИспользуйте §8/§c{label} on §8<§ckit§8>",
+            "not_owned": "§cУ вас нет этого набора!",
+            "success": "§7Набор §9{kit}§7 успешно активирован",
+            "failed": "§cНе удалось активировать набор!"
+        },
+        "unset": {
+            "_prefix": "§9Наборы §8§l» §r",
+            "usage": "§cИспользуйте §8/§c{label} off",
+            "success": "§7Набор деактивирован"
+        },
+        "list": {
+            "_prefix": "§9Наборы §8§l» §r",
+            "title": "§7Список наборов§8:",
+            "owned": "§7Приобретены§8:§7 {kits}",
+            "unowned": "§7Не приобретены§8:§7 {kits}"
+        },
+        "info": {
+            "_prefix": "§9Наборы §8§l» §r",
+            "usage": "§cИспользуйте §8/§c{label} info §8<§ckit§8>",
+            "title": "§7Информация о наборе §9{kit}§8:",
+            "description": "§7Описание§8: §9{description}",
+            "cost": "§7Цена§8:§c {cost}",
+            "status": "§7Статус§8: §9{status}",
+            "active": "§7Активен§8: §9{active}"
+        },
+        "kit": {
+            "not_found": "§9Kits §8§l» §r§cНабор не найден...",
+            "_prefix": ""
+        },
+        "_prefix": "§9Наборы §8§l» §r"
+    },
+    "kitswindow": {
+        "title": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §9Наборы §8===-=-=-=-",
+        "buy": {
+            "title": "§7Купить§8: §7{kit} §8- §c{cost}",
+            "success": "§9Наборы §8§l» §r§7Вы успешно купили набор §9{kit}§7!",
+            "confirm": "§aПодтвердить",
+            "cancel": "§cОтмена"
+        },
+        "disable": {
+            "button": "§cДеактивировать набор",
+            "success": "§9Kits §8§l» §r§7Набор деактивирован!",
+            "success_kit": "§9Kits §8§l» §r§7Набор §9{kit} §7деактивирован"
+        },
+        "set": {
+            "success": "§9Наборы §8§l» §r§7Набор §9{kit} §7успешно активирован!"
+        },
+        "nav": {
+            "prev_page": "§a« Предыдущая страница",
+            "current_page": "§8» §fТекущая страница",
+            "next_page": "§aСледующая страница »"
+        }
+    },
+    "duels": {
+        "command": {
+            "_prefix": "§2Дуэли §8§l» §r",
+            "in_duel": "§cВы не можете использовать эту команду во время дуэли!",
+            "player_only": "§cТолько игроки могут использовать эту команду..."
+        },
+        "status": {
+            "_prefix": "§2Дуэли §8§l» §r",
+            "starting": "§7Дуэль началась!",
+            "countdown": "§7Начало через §2{seconds}с",
+            "ending_countdown": "§7Возврат в лобби через §2{seconds}с"
+        },
+        "item": {
+            "play_again": "§8-> §aСыграть снова",
+            "quit": "§8-> §cВыйти"
+        },
+        "queue": {
+            "_prefix": "§2Дуэли §8§l» §r",
+            "not_found": "§cРежим {kit} не существует!",
+            "joined": "§7Вы успешно встали в очередь для режима §2{mode}§r§7!",
+            "left": "§7Вы покинули очередь режима §c{mode}§7!",
+            "timeout": "§cВы были автоматически удалены из очереди, так как не удалось найти других доступных игроков..."
+        }
+    },
+    "addbalance": {
+        "_prefix": "§aЭкономика §8§l» §r",
+        "invalid_number": "§cКоличество должно быть числом и не может быть меньше или равно 0...",
+        "receive": "§7Вы получили §c{amount} Акун§7!",
+        "success": "§7На счёт §a{target} §7успешно добавлено §c{amount} Акун§7!",
+        "usage": "§cИспользуйте §8/§c{label} §8<§cигрок§8> <§cколичество§8>"
+    },
+    "auth": {
+        "error": {
+            "_prefix": "§eАутентификация §8§l» §r",
+            "account": {
+                "_prefix": "",
+                "limit": "§eАутентификация §8§l» §r§cВы достигли лимита зарегистрированных аккаунтов..."
+            },
+            "already": {
+                "haspassword": "§cУ вас уже есть пароль. Чтобы изменить его, используйте §8/§cсменитьпароль...",
+                "loggedin": "§cВы уже вошли в систему...",
+                "registered": "§cВы уже зарегистрированы..."
+            },
+            "clientid": {
+                "_prefix": "",
+                "mismatch": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §eАутентификация §8===-=-=-=-{n}§cЭтот аккаунт уже зарегистрирован на другом устройстве..."
+            },
+            "incorrect": {
+                "_prefix": "",
+                "password": "§eАутентификация §8§l» §r§cНеверный пароль..."
+            },
+            "invalidpassword": "§cПароль должен содержать от {minLength} до {maxLength} символов и использовать только буквы, цифры или стандартные символы",
+            "notregistered": "§cВы не зарегистрированы...",
+            "password": {
+                "_prefix": "",
+                "match": "§eАутентификация §8§l» §r§cПароли не совпадают..."
+            },
+            "use": {
+                "_prefix": "",
+                "commands": "§eАутентификация §8§l» §r§cВы должны быть аутентифицированы для использования команд..."
+            },
+            "weakpassword": {
+                "login": "§cПожалуйста, смените пароль с помощью §8/§cchp§c, так как он слишком простой...",
+                "register": "§cСлишком простой пароль, пожалуйста, выберите другой..."
+            }
+        },
+        "join": {
+            "_prefix": "",
+            "msg": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eАутентификация §8§l» §r§7Привет §e{user}§7, добро пожаловать на §fi§cAkuna§9MC§7!"
+        },
+        "login": {
+            "_prefix": "",
+            "already": {
+                "_prefix": "",
+                "online": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §eАутентификация §8===-=-=-=-{n}§cИгрок с таким именем уже в сети..."
+            },
+            "timeout": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §eАутентификация §8===-=-=-=-{n}§cВремя входа истекло...",
+            "toomany": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §eАутентификация §8===-=-=-=-{n}§cСлишком много попыток аутентификации..."
+        },
+        "need": {
+            "_prefix": "§eАутентификация §8§l» §r",
+            "login": "§7Пожалуйста, войдите с помощью §8/§7login §8<§7пароль§8>",
+            "register": "§7Пожалуйста, зарегистрируйтесь с помощью §8/§7register §8<§7пароль§8>"
+        },
+        "success": {
+            "_prefix": "§eАутентификация §8§l» §r",
+            "auto": {
+                "_prefix": "",
+                "register": "§eАутентификация §8§l» §r§7Добро пожаловать! Ваш аккаунт создан автоматически. Используйте §8/§7register §8<§7пароль§8> §7для защиты"
+            },
+            "autologin": "§7Вы вошли автоматически!",
+            "chp": "§7Пароль успешно изменён!",
+            "login": "§7Вход выполнен успешно!",
+            "register": "§7Вы успешно зарегистрированы! §cРегистрируясь, вы соглашаетесь с нашими §8/§cправилами..."
+        }
+    },
+    "automsg": {
+        "_prefix": "§cСистема §8§l» §r",
+        "akuna_ai": "§7Познакомьтесь с §cAkuna§r§7, нашим ИИ! Напишите §8\"§cAkuna, ваш вопрос§8\" §7в чате и она ответит!",
+        "block": "§7Знаете ли вы, что можете блокировать игроков? Используйте §8/§7block",
+        "daily": "§7Знаете ли вы, что ежедневный вход приносит вам ежедневную награду, которая может дать §cАкун §7или §9Множитель XP§7?",
+        "discord": "§7Присоединяйтесь к нашему дискорду! §chttps://discord.iakunamc.com",
+        "exit_minigames": "§7Чтобы вернуться в лобби из любого миниигры, используйте §8/§clobby",
+        "friends": "§7Приглашайте друзей играть на нашем сервере! IP можно увидеть командой §8/§7ip",
+        "hackers": "§7Видите хакера? Используйте §8/§creport §8<§cимя§8> <§cпричина§8> §7для жалобы!",
+        "launch": "§7Сервер §ciAkunaMC §7существует с февраля 2022 года и продолжает расти благодаря вам! Спасибо, что играете здесь!",
+        "marry": "§7Вы можете жениться на других игроках и получать 25% их XP! Используйте §8/§7marry",
+        "missions": "§7Выполняйте ежедневные миссии для получения невероятных бонусов! Используйте §8/§cмиссии §7для просмотра",
+        "nopromote": "§7Не рекламируйте §cдругие серверы в чате или tell§7, это приведёт к §cбану§7!",
+        "nosamepass": "§7Не используйте один пароль на других серверах! Используйте §8/§cpin §7для защиты аккаунта!",
+        "rules": "§7Читали ли вы наши §8/§cправила§7? Незнание не освобождает от §cнаказаний§7!",
+        "staff": "§7Хотите стать частью нашего Staff? Посетите §chttps://staff.iakunamc.com",
+        "yt": "§7Снимите видео с нашим сервером на YouTube и получите специальные теги! Требования: §8/§cyt"
+    },
+    "backpack": {
+        "_prefix": "§cСистема §8§l» §r",
+        "buy": {
+            "already_exists": "§cРюкзак с таким именем уже существует...",
+            "error": "§cОшибка при покупке рюкзака...",
+            "invalid_length": "§cИмя должно содержать от 3 до 20 символов...",
+            "limit": "§cВы достигли лимита рюкзаков...",
+            "success": "§7Рюкзак §c{name} §7успешно куплен за §c{cost} Акун§7!",
+            "usage": "§cИспользуйте §8/§c{label} buy §8<§cимя§8>"
+        },
+        "delete": {
+            "confirm": "§7Вы уверены, что хотите удалить рюкзак §c{name}§7? Если да, используйте §8/§7{label} deletar {name} confirm",
+            "error": "§cОшибка при удалении рюкзака...",
+            "not_exists": "§cРюкзак не найден...",
+            "success": "§7Рюкзак успешно удалён!",
+            "usage": "§cИспользуйте §8/§c{label} delete §8<§cимя§8>"
+        },
+        "list": "§7Ваши рюкзаки §8(§f{count}§8):§7 {backpacks}",
+        "not_in_survival": "§cВы не в режиме выживания...",
+        "open": {
+            "not_exists": "§cРюкзак не найден...",
+            "usage": "§cИспользуйте §8/§c{label} open §8<§cимя§8>"
+        },
+        "usage": "§cИспользуйте §8/§c{label} §8<§cbuy§8|§copen§8|§cdelete§8|§clist§8>",
+        "list_none": "§cСистема §8§l» §r§cУ вас нет ни одного рюкзака..."
+    },
+    "balance": {
+        "_prefix": "§aЭкономика §8§l» §r",
+        "inactivity_tax_info": "§7Каждый понедельник, если вы не заходите §c{days}д§7, с вас будет взиматься налог §c{percent}% §8(§c{amount} Акун§8)§7. Налог растёт каждую неделю отсутствия",
+        "other": "§a{target} §7имеет §c{amount} Акун§7!",
+        "self": "§7У вас §c{amount} Акун§7!"
+    },
+    "ban": {
+        "broadcast": "§cСистема §8§l» §r§c{target} §7был(а) §cперманентно забанен(а) §7по причине §c{reason}",
+        "kick": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§cВы перманентно забанены...{n}§cИмя§8:§c {name}{n}§cПричина§8:§c {reason}{n}§cДата§8:§c {timestamp}{n}{n}§7Считаете бан несправедливым? Обратитесь в поддержку§8:{n}§chttps://discord.iakunamc.com §7через Discord или §csupport@iakunamc.com §7по email{n}§7§oВы можете купить разбан на §chttps://loja.iakunamc.com"
+    },
+    "bet": {
+        "_prefix": "§aЭкономика §8§l» §r",
+        "cashback": "§7Вы получили кэшбэк §c{amount} Акун§7!",
+        "coin": {
+            "invalid": "§cВыберите орёл или решку",
+            "lose": "§7Монета выпала §a{result}§7, вы проиграли!",
+            "win": "§7Монета выпала §a{result}§7! Вы выиграли §c{amount} Акун§7!"
+        },
+        "dice": {
+            "invalid": "§cВыберите число от §a1 §cдо §a6",
+            "lose": "§7Кубик выпал §a{result}§7, вы проиграли!",
+            "win": "§7Кубик выпал §a{result}§7! Вы выиграли §c{amount} Акун§7!"
+        },
+        "higher": {
+            "invalid": "§cВыберите число от 1 до {max}",
+            "lose": "§7Число §a{result} §7меньше или равно, вы проиграли!",
+            "win": "§7Число §a{result} §7больше! Вы выиграли §c{amount} Акун§7!"
+        },
+        "invalid_type": "§cНеверный тип ставки... Используйте §8/§cbet для просмотра доступных типов",
+        "lower": {
+            "invalid": "§cВыберите число от §a1 §cдо §a{max}",
+            "lose": "§7Число §a{result} §7больше или равно, вы проиграли!",
+            "win": "§7Число §a{result} §7меньше! Вы выиграли §c{amount} Акун§7!"
+        },
+        "min": "§cМинимальная ставка {min} Акун...",
+        "ppt": {
+            "draw": "§7Ничья в камень-ножницы-бумага! Ничего не списано",
+            "invalid": "§cВыберите §aкамень§7, §aбумага §7или §aножницы",
+            "lose": "§7Вы проиграли в камень-ножницы-бумага!",
+            "win": "§7Вы выиграли в камень-ножницы-бумага! §c{amount} Акун§7!"
+        },
+        "pvp": {
+            "_prefix": "",
+            "accept": {
+                "_prefix": "§aЭкономика §8§l» §r",
+                "target_insufficient": "§c{target} недостаточно Акун для принятия этой ставки...",
+                "none": "§cУ вас нет ожидающих ставок..."
+            },
+            "coin": {
+                "result": "§aЭкономика §8§l» §r§7Монета выпала§8: §a{result}"
+            },
+            "dice": {
+                "result": "§aЭкономика §8§l» §r§7Результат кубиков§8: §a{challenger_roll} §7против §a{target_roll}"
+            },
+            "invalid_type": "§aЭкономика §8§l» §r§cНеверный тип для PvP ставки! Доступные типы§8:§7 кубик§8,§7 кнб§8,§7 монета",
+            "lose": "§aЭкономика §8§l» §r§7Вы проиграли вызов против §a{opponent}§7!",
+            "ppt": {
+                "result": "§aЭкономика §8§l» §r§7Результат§8: §a{challenger_choice} §7против §a{target_choice}"
+            },
+            "self_challenge": "§aЭкономика §8§l» §r§cВы не можете бросить вызов себе!",
+            "usage": "§aЭкономика §8§l» §r§cИспользуйте §8/§cbet §8<§cтип§8> <§cигрок§8> <§cсумма§8> <§cвыбор§8>",
+            "win": "§aЭкономика §8§l» §r§7Поздравляем! Вы выиграли §c{amount} Акун §7против §a{opponent}§7!",
+            "deny": {
+                "_prefix": "§aЭкономика §8§l» §r",
+                "none": "§cУ вас нет ожидающих ставок...",
+                "success": "§7Вызов на ставку успешно отклонён...",
+                "notify": "§7{target} отклонил(а) ваш вызов на ставку..."
+            },
+            "draw": "§aЭкономика §8§l» §r§7Ничья! Ничего не списано",
+            "expired": "§aЭкономика §8§l» §r§cВызов на ставку истёк...",
+            "insufficient_challenger": "§aЭкономика §8§l» §r§cУ претендента недостаточно Акун...",
+            "pending": "§aЭкономика §8§l» §r§cЭтот игрок уже имеет ожидающий вызов на ставку...",
+            "request": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §aВызов на ставку §8===-=-=-{n}§aЭкономика §8§l» §r§a{challenger} §7вызывает вас на ставку §c{amount} Акун §7в режиме §e{type}§7!{n}§aЭкономика §8§l» §r§7Используйте §a/bet принять §7для принятия или §c/bet отклонить §7для отклонения",
+            "sent": "§aЭкономика §8§l» §r§7Вызов на ставку отправлен §a{target}§7! Режим§8: §e{type}§8, §7Сумма§8: §c{amount} Акун",
+            "insufficient_target": "§aЭкономика §8§l» §r§c{target} недостаточно Акун для участия в этой ставке..."
+        },
+        "roulette": {
+            "invalid": "§cВыберите число от 1 до {max}",
+            "lose": "§7Рулетка остановилась на §a{result}§7, вы проиграли!",
+            "win": "§7Рулетка остановилась на §a{result}§7! Вы выиграли §c{amount} Акун§7!"
+        },
+        "types": "§7Доступные типы§8:§7 кубик§8,§7 кнб§8,§7 рулетка§8,§7 монета§8,§7 больше§8,§7 меньше",
+        "usage": "§cИспользуйте §8/§cbet §8<§cтип§8> [§cигрок§8] <§cсумма§8> <§cвыбор§8>"
+    },
+    "bio": {
+        "_prefix": "§3Профиль §8§l» §r",
+        "set": "§7Биография установлена на '§3{bio}§7' успешно!",
+        "usage": "§cИспользуйте §8/§c{label} §8<§cбиография§8>"
+    },
+    "block": {
+        "_prefix": "§cСистема §8§l» §r",
+        "add": {
+            "already": "§c{player} уже заблокирован(а)!",
+            "limit": "§cДостигнут лимит блокировок...",
+            "self": "§cВы не можете заблокировать себя!",
+            "staff": "§cВы не можете заблокировать члена персонала!",
+            "success": "§c{player}§7 успешно заблокирован(а)",
+            "usage": "§cИспользуйте §8/§c{label} add §8<§cигрок§8>"
+        },
+        "list": "§7Заблокированные игроки §8(§f{count}§8):§7 {blocked}",
+        "remove": {
+            "all": "§7Все игроки успешно разблокированы!",
+            "notfound": "§c{player} не заблокирован(а)...",
+            "success": "§c{player} §7успешно разблокирован(а)",
+            "usage": "§cИспользуйте §8/§c{label} remove §8<§cигрок§8|§c*§8>"
+        },
+        "usage": "§cИспользуйте §8/§c{label} §8<§cadd§8|§cremove§8|§clist§8>",
+        "list_none": "§cВы не заблокировали ни одного игрока..."
+    },
+    "changepassword": {
+        "_prefix": "§eАутентификация §8§l» §r",
+        "usage": "§cИспользуйте §8/§c{label} §8<§cтекущий пароль§8> <§cновый пароль§8>"
+    },
+    "chat": {
+        "_prefix": "§cСистема §8§l» §r",
+        "disabled": "§cЧат отключён...",
+        "nochars": "§cИспользование этих символов не разрешено...",
+        "nopromote": "§cЗапрещено рекламировать и/или упоминать другие серверы в чате...{n}§cСистема §8§l» §r§cНе забудьте прочитать наши §8/§cправила во избежание наказаний",
+        "nospam": "§cПомедленнее! Без спама...",
+        "toolong": "§cВаше сообщение слишком длинное... (максимум {max} символов)",
+        "noemoji": "§cИспользование эмодзи не разрешено..."
+    },
+    "clan": {
+        "_prefix": "§eКланы §8§l» §r",
+        "accept": {
+            "error": "§cОшибка при вступлении в клан...",
+            "no_invite": "§cУ вас нет ожидающих приглашений...",
+            "success": "§7Вы успешно вступили в §e{clan}"
+        },
+        "already_in_clan": "§cВы уже состоите в клане...",
+        "changetag": {
+            "error": "§cОшибка при изменении тега...",
+            "success": "§7Тег изменён на §e{tag} §7успешно!",
+            "usage": "§cИспользуйте §8/§c{label} tag §8<§cтег§8>"
+        },
+        "chat": {
+            "toggle": {
+                "off": "§7Чат клана отключён!",
+                "on": "§7Чат клана включён!"
+            }
+        },
+        "create": {
+            "error": "§cОшибка при создании клана...",
+            "exists": "§cКлан с таким именем или тегом уже существует!",
+            "length": "§cИмя должно содержать 3-24 символа, а тег 2-4 символа!",
+            "success": "§7Клан успешно создан!",
+            "usage": "§cИспользуйте §8/§c{label} create §8<§cимя§8> §8<§cтег§8>"
+        },
+        "delete": {
+            "error": "§cОшибка при удалении клана!",
+            "success": "§7Клан успешно удалён!"
+        },
+        "demote": {
+            "broadcast": "§e{player} §7понижен(а) до рядового члена!",
+            "error": "§cОшибка при понижении игрока...",
+            "success": "§e{player} §7успешно понижен(а)!",
+            "usage": "§cИспользуйте §8/§c{label} demote §8<§cигрок§8>"
+        },
+        "deny": {
+            "no_invite": "§cУ вас нет ожидающих приглашений...",
+            "success": "§7Приглашение успешно отклонено"
+        },
+        "desc": {
+            "error": "§cОшибка при изменении описания...",
+            "success": "§7Описание успешно изменено!",
+            "usage": "§cИспользуйте §8/§c{label} desc §8<§cописание§8>"
+        },
+        "disband": {
+            "_prefix": "",
+            "broadcast": "§eКланы §8§l» §r§cКлан был удалён..."
+        },
+        "info": {
+            "_prefix": "",
+            "description": "§eКланы §8§l» §r§7Описание§8: §e{description}",
+            "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §7Информация о клане §e{name} §8===-=-=-=-",
+            "level": "§eКланы §8§l» §r§7Уровень§8: §e{level}",
+            "members": "§eКланы §8§l» §r§7Участники §8(§f{count}§8/§f{max}§8): §7{members}",
+            "owner": "§eКланы §8§l» §r§7Владелец§8: §e{owner}",
+            "tag": "§eКланы §8§l» §r§7Тег§8: §e{tag}",
+            "type": "§eКланы §8§l» §r§7Тип§8: §e{type}",
+            "usage": "§eКланы §8§l» §r§cИспользуйте §8/§c{label} info §8<§cклан§8>",
+            "xp": "§eКланы §8§l» §r§7Опыт§8: §e{xp}",
+            "xp_needed": "§eКланы §8§l» §r§7XP для следующего уровня§8: §e{xp_needed}"
+        },
+        "invite": {
+            "_prefix": "",
+            "already_in_clan": "§eКланы §8§l» §r§cИгрок уже состоит в клане...",
+            "expired": "§eКланы §8§l» §r§cПриглашение в {clan} истекло...",
+            "not_private": "§eКланы §8§l» §r§cТолько приватные кланы могут приглашать...",
+            "received": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §eКланы§8===-=-=-{n}§eКланы §8§l» §r§e{sender} §7пригласил(а) вас в клан §e{clan}§7...{n}§eКланы §8§l» §r§7Используйте §a/clan принять §7для принятия или §c/clan отклонить §7для отклонения",
+            "sent": "§eКланы §8§l» §r§7Приглашение отправлено §e{player}§7!",
+            "usage": "§eКланы §8§l» §r§cИспользуйте §8/§c{label} invite §8<§cигрок§8>"
+        },
+        "join": {
+            "_prefix": "",
+            "broadcast": "§eКланы §8§l» §r§e{player} §7вступил(а) в клан!"
+        },
+        "kick": {
+            "broadcast": "§e{player} §7исключён(а) из клана!",
+            "cant_kick_admin": "§cАдминистраторы не могут исключать других администраторов...",
+            "cant_kick_owner": "§cВы не можете исключить владельца клана...",
+            "error": "§cОшибка при исключении игрока...",
+            "kicked": "§cВы были исключены из клана...",
+            "not_in_clan": "§cИгрок не состоит в клане...",
+            "success": "§7Игрок успешно исключён!",
+            "usage": "§cИспользуйте §8/§c{label} kick §8<§cигрок§8>"
+        },
+        "leave": {
+            "broadcast": "§e{player} §7покинул(а) клан...",
+            "error": "§cОшибка при выходе из клана...",
+            "owner": "§cВладелец не может покинуть клан...",
+            "success": "§7Вы успешно покинули клан!"
+        },
+        "level_up": "§7Клан достиг уровня §e{newLevel}§7!",
+        "not_found": "§cТакого клана не существует...",
+        "not_in_clan": "§cВы не состоите в клане...",
+        "not_owner": "§cТолько владелец может это сделать...",
+        "not_owner_or_admin": "§cТолько владелец или администраторы могут это сделать...",
+        "promote": {
+            "broadcast": "§e{player} §7повышен(а) до администратора!",
+            "error": "§cОшибка при повышении игрока...",
+            "success": "§e{player} §7успешно повышен(а)!",
+            "usage": "§cИспользуйте §8/§c{label} promote §8<§cигрок§8>"
+        },
+        "request": {
+            "_prefix": "",
+            "closed": "§eКланы §8§l» §r§cЭтот клан закрыт...",
+            "error": "§eКланы §8§l» §r§cОшибка при обработке запроса...",
+            "joined": "§eКланы §8§l» §r§7Вы вступили в клан §e{clan}§7!",
+            "private": "§eКланы §8§l» §r§cЭтот клан приватный...",
+            "received": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §eКланы§8===-=-=-{n}§eКланы §8§l» §r§e{sender} §7хочет вступить в клан...{n}§eКланы §8§l» §r§7Используйте §a/clan requests принять {sender} §7или §c/clan requests отклонить {sender} §7для отклонения",
+            "sent": "§eКланы §8§l» §r§7Заявка отправлена в §e{clan}§7!",
+            "usage": "§eКланы §8§l» §r§cИспользуйте §8/§c{label} request §8<§cклан§8>"
+        },
+        "requests": {
+            "accept": {
+                "all": "§7Все заявки приняты!",
+                "error": "§cОшибка при принятии заявки!",
+                "success": "§7Заявка от §e{player} §7принята!",
+                "usage": "§cИспользуйте §8/§c{label} requests accept §8<§cигрок§8>"
+            },
+            "deny": {
+                "all": "§7Все заявки отклонены...",
+                "error": "§cОшибка при отклонении заявки!",
+                "success": "§7Заявка от §e{player} §7отклонена!",
+                "usage": "§cИспользуйте §8/§c{label} requests deny §8<§cигрок§8>"
+            },
+            "none": "§cНет ожидающих заявок...",
+            "usage": "§cИспользуйте §8/§c{label} requests §8<§caccept§8|§cdeny§8> §8<§cигрок§8|§c*§8>"
+        },
+        "tagcolor": {
+            "error": "§cОшибка при изменении цвета тега!",
+            "invalid": "§cНеверный цвет...",
+            "not_unlocked": "§cВы ещё не разблокировали этот цвет...",
+            "success": "§7Цвет тега изменён на {color}§7 успешно!",
+            "usage": "§cИспользуйте §8/§c{label} tagcolor §8<§cцвет§8>{n}§eКланы §8§l» §r§7Доступные цвета§8: {colors}"
+        },
+        "type": {
+            "error": "§cОшибка при изменении типа...",
+            "invalid": "§cНеверный тип... Доступные типы§8:§7 public§8,§7 invite§8,§7 private§8,§7 closed",
+            "success": "§7Тип клана успешно изменён на §e{type}",
+            "usage": "§cИспользуйте §8/§c{label} type §8<§cтип§8>"
+        },
+        "usage": "§cИспользуйте §8/§c{label} §8<§ccreate§8|§cinvite§8|§ckick§8|§cdesc§8|§cleave§8|§cinfo§8|§ctype§8|§crequest§8|§cpromote§8|§cdemote§8|§ctag§8|§crequests§8|§cchat§8|§cdelete§8|§ctagcolor§8>",
+        "requests_list": "§7Заявки на вступление §8(§f{count}§8):§7 {requests}"
+    },
+    "clear": {
+        "_prefix": "§cСистема §8§l» §r",
+        "success": "§7Инвентарь успешно очищен!"
+    },
+    "clearchat": {
+        "_prefix": "§cСистема §8§l» §r",
+        "success": "§7Чат очищен §c{author}§7!"
+    },
+    "clearchatme": {
+        "_prefix": "§cСистема §8§l» §r",
+        "success": "§7Ваш чат успешно очищен!"
+    },
+    "colorarmor": {
+        "_prefix": "§dЦ§aв§eе§bт§9н§1а§2я §4Б§6р§3о§8н§8я §8§l» §r",
+        "invalid_world": "§cЦветная броня доступна только в лобби...",
+        "off": "§7Цветная броня успешно отключена",
+        "on": "§7Цветная броня успешно включена"
+    },
+    "coords": {
+        "_prefix": "§cСистема §8§l» §r",
+        "position": "§7Ваши координаты§8: §c{x}§8, §c{y}§8, §c{z}"
+    },
+    "crown": {
+        "_prefix": "§6К§eо§6р§eо§6н§8а §8§l» §r",
+        "invalid_world": "§cНевозможно активировать корону здесь...",
+        "off": "§7Корона успешно отключена",
+        "on": "§7Корона успешно включена"
+    },
+    "daily": {
+        "reward": {
+            "akunas": "§c{amount} Акун",
+            "milestone": "§5Ежедневная награда §8§l» §r§7Поздравляем! Вы достигли §5{weeks} §7недель подряд!",
+            "multiplier": "§9{multiplier}x Множитель §8(§5{duration}§8)",
+            "received": "§5Ежедневная награда §8§l» §r§7Вы получили {rewards}",
+            "streak": "§5Ежедневная награда §8§l» §r§7Текущая серия§8: §5{streak} §7дней",
+            "xp": "§9{amount} XP",
+            "streak_lost": "§5Ежедневная награда §8§l» §r§cВы потеряли серию {oldStreak} дней..."
+        }
+    },
+    "delhome": {
+        "_prefix": "§cСистема §8§l» §r",
+        "not_exists": "§cУ вас нет дома с таким именем...",
+        "not_in_survival": "§cВы не в режиме выживания...",
+        "success": "§7Дом §c{home} §7успешно удалён!",
+        "usage": "§cИспользуйте §8/§c{label} §8<§cимя§8|§c*§8>",
+        "success_all": "§7Все дома успешно удалены!"
+    },
+    "fake": {
+        "_prefix": "§1Фейк §8§l» §r",
+        "disable": "§7Фейк успешно отключён!",
+        "enable": {
+            "_prefix": "",
+            "usage": "§1Фейк §8§l» §r§cИспользуйте §8/§c{label} on §8<§cимя§8>"
+        },
+        "invalid": {
+            "_prefix": "",
+            "name": "§1Фейк §8§l» §r§cНеверное имя..."
+        },
+        "registered": "§cЭто имя уже зарегистрировано на сервере...",
+        "set": "§7Фейк успешно включён!",
+        "usage": "§cИспользуйте §8/§c{label} §8<§con§8|§coff§8|§crandom§8|§clist§8>"
+    },
+    "home": {
+        "_prefix": "§cСистема §8§l» §r",
+        "none": "§cУ вас нет ни одного дома...",
+        "not_exists": "§cУ вас нет дома с таким именем...",
+        "not_in_survival": "§cВы не в режиме выживания...",
+        "success": "§7Телепортация к §c{home}§7...",
+        "usage": "§cИспользуйте §8/§c{label} §8<§cимя§8>"
+    },
+    "homes": {
+        "_prefix": "§cСистема §8§l» §r",
+        "list": "§7Ваши дома §8(§f{count}§8):§7 {homes}",
+        "none": "§cУ вас нет ни одного дома..."
+    },
+    "itemid": {
+        "_prefix": "§cСистема §8§l» §r",
+        "info": "§7Имя§8:§c {name}{n}§cСистема §8§l» §r§7ID§8:§c {id}§8:§c{meta}",
+        "noitem": "§cВ руке нет предмета..."
+    },
+    "joinmsg": {
+        "automsg": {
+            "disabled": "§bВход §8§l» §r§cВам нужно включить предпочтение автосообщений для использования приветственных сообщений..."
+        },
+        "list": {
+            "entry": "§b{id} §8§l» §r§7{message}",
+            "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §bПриветственные сообщения §8(§f{page}§8/§f{total}§8) ===-=-=-=-"
+        },
+        "messages": {
+            "_prefix": "§bВход §8§l» §r",
+            "1": "§7Оп! §b{player} §7приземлился на сервер!",
+            "10": "§7Драматическая пауза... §b{player} §7вошёл на сервер!",
+            "11": "§b{player} §7вошёл!",
+            "12": "§7Держитесь! §b{player} §7только что появился!",
+            "13": "§7Вселенная улыбнулась... §b{player} §7вошёл!",
+            "14": "§7Новые приключения начинаются с §b{player}§7 онлайн!",
+            "15": "§7Готовы? §b{player} §7пришёл доминировать!",
+            "2": "§7Кто-то вызвал подкрепление? §b{player} §7прибыл!",
+            "3": "§7§b{player} §7вошёл уверенно! Добро пожаловать!",
+            "4": "§7Как насчёт пиццы, §b{player}§7? Добро пожаловать!",
+            "5": "§7Дорогу! §b{player} §7появился!",
+            "6": "§7Радар обнаружил активность... §b{player} §7вошёл!",
+            "7": "§7Телепортация завершена! §b{player} §7появился здесь!",
+            "8": "§7Отличная погода для игры... тем более с §b{player} §7онлайн!",
+            "9": "§7Легенда появилась§8:§7 §b{player}§7 среди нас!"
+        },
+        "off": {
+            "success": "§bВход §8§l» §r§7Приветственное сообщение успешно отключено!"
+        },
+        "on": {
+            "_prefix": "§bВход §8§l» §r",
+            "invalid": "§cНеверный id... Используйте §8/§c{label} list для просмотра доступных id",
+            "success": "§7Приветственное сообщение установлено на §b{id}§7 успешно!",
+            "usage": "§cИспользуйте §8/§c{label} on §8<§cid§8>"
+        },
+        "usage": "§bВход §8§l» §r§cИспользуйте §8/§c{label} §8<§con§8|§coff§8|§clist§8>"
+    },
+    "kick": {
+        "broadcast": "§cСистема §8§l» §r§c{target} §7был(а) §cисключён(а) §7по причине §c{reason}",
+        "kick": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§cВы были исключены...{n}§cПричина§8:§c {reason}"
+    },
+    "lbc": {
+        "profile": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§3Профиль §8§l» §r§7Ваше имя§8:§3 {name}{n}§3Профиль §8§l» §r§7Ваш тег§8:§3 {tag}{n}§3Профиль §8§l» §r§7Ваш клан§8:§3 {clan}{n}§3Профиль §8§l» §r§7О себе§8:§3 {about}{n}§3Профиль §8§l» §r§7В браке с§8:§7 {partner}{n}§3Профиль §8§l» §r§7Акуны§8:§3 {akunas}{n}§8-=-=-=-=== §9Уровни §8===-=-=-=-{n}§3Профиль §8§l» §r§7Ваш уровень§8:§3 {level}{n}§3Профиль §8§l» §r§7Ваш xp§8:§3 {xp}{n}§3Профиль §8§l» §r§7XP для следующего уровня§8:§3 {xpneeded}{n}§8-=-=-=-=== §fСтатистика §8===-=-=-=-{n}§3Профиль §8§l» §r§7Победы в §bSky§fWars§8:§3 {winssw}{n}§3Профиль §8§l» §r§7Победы в §cThe§9Bridge§8:§3 {winstb}{n}§3Профиль §8§l» §r§7Победы в §eMlg§fBlock§8:§3 {winsmlg}{n}§3Профиль §8§l» §r§7Победы в §cBed§fWars§8:§3 {winsbw}{n}§3Профиль §8§l» §r§7Победы в §bBlock§fSumo§8:§3 {winsbs}{n}§3Профиль §8§l» §r§7Победы в §2Дуэлях§8:§3 {winsduels}{n}§3Профиль §8§l» §r§7Убийства§8:§3 {kills}{n}§3Профиль §8§l» §r§7Время онлайн§8:§3 {onlineTime}",
+        "profile_other": "§8-=-=-=-=== §fi§cAkuna§9MC §8- §7Профиль §3{name} §8===-=-=-=-{n}§3Профиль §8§l» §r§7Тег§8:§3 {tag}{n}§3Профиль §8§l» §r§7Последний вход§8:§3 {lastOnline} §8(§7{lastOnlineSince} §7назад§8){n}§3Профиль §8§l» §r§7Клан§8:§3 {clan}{n}§3Профиль §8§l» §r§7О себе§8:§3 {about}{n}§3Профиль §8§l» §r§7В браке с§8:§7 {partner}{n}§3Профиль §8§l» §r§7Акуны§8:§3 {akunas}{n}§8-=-=-=-=== §9Уровни §8===-=-=-=-{n}§3Профиль §8§l» §r§7Уровень§8:§3 {level}{n}§3Профиль §8§l» §r§7Xp§8:§3 {xp}{n}§3Профиль §8§l» §r§7XP для следующего уровня§8:§3 {xpneeded}{n}§8-=-=-=-=== §fСтатистика §8===-=-=-=-{n}§3Профиль §8§l» §r§7Победы в §bSky§fWars§8:§3 {winssw}{n}§3Профиль §8§l» §r§7Победы в §cThe§9Bridge§8:§3 {winstb}{n}§3Профиль §8§l» §r§7Победы в §eMlg§fBlock§8:§3 {winsmlg}{n}§3Профиль §8§l» §r§7Победы в §cBed§fWars§8:§3 {winsbw}{n}§3Профиль §8§l» §r§7Победы в §bBlock§fSumo§8:§3 {winsbs}{n}§3Профиль §8§l» §r§7Победы в §2Дуэлях§8:§3 {winsduels}{n}§3Профиль §8§l» §r§7Убийства§8:§3 {kills}{n}§3Профиль §8§l» §r§7Время онлайн§8:§3 {onlineTime}"
+    },
+    "lobby": {
+        "_prefix": "§cСистема §8§l» §r",
+        "cmd": "§7Вы успешно вернулись в лобби!"
+    },
+    "locktell": {
+        "_prefix": "§1Телл §8§l» §r",
+        "already": {
+            "_prefix": "",
+            "locked": "§1Телл §8§l» §r§cВаш телл уже заблокирован, напишите @e в чате для разблокировки..."
+        },
+        "offlinetarget": "§cИгрок offline, разблокировка телла...",
+        "success": {
+            "other": "§1{sender} §7заблокировал(а) телл с вами...",
+            "self": "§7Ваш телл заблокирован с §1{player}§7! Напишите §1@e §7в чате для разблокировки..."
+        },
+        "unlocked": {
+            "other": "§1{player} §7разблокировал(а) телл...",
+            "self": "§7Ваш телл успешно разблокирован!"
+        },
+        "usage": "§cИспользуйте §8/§c{label} §8<§cигрок§8>"
+    },
+    "canal": {
+        "_prefix": "§9Канал §8§l» §r",
+        "current": "§7{channels}",
+        "switched": "§7{channels}",
+        "invalid": "§cЭтот канал не существует, доступные каналы§8:§7 {channels}",
+        "unavailable": "§cЭтот канал недоступен в данный момент...",
+        "usage": "§cИспользуйте §8/§c{label} §8<§cканал§8>"
+    },
+    "reply": {
+        "_prefix": "§1Телл §8§l» §r",
+        "usage": "§cИспользуйте §8/§c{label} §8<§cсообщение§8>",
+        "notell": "§cВы не получали телл недавно..."
+    },
+    "login": {
+        "error": {
+            "nopassword": "§eАутентификация §8§l» §r§cУ вашего аккаунта нет пароля. Вы аутентифицированы автоматически устройством"
+        },
+        "usage": "§eАутентификация §8§l» §r§cИспользуйте §8/§c{label} §8<§cпароль§8>"
+    },
+    "lottery": {
+        "_prefix": "§eЛотерея §8§l» §r",
+        "broadcast": "§7Текущий приз лотереи §c{amount} Акун§7! До розыгрыша §e{time}§7, покупайте билеты командой §8/§7lottery купить §8<§7количество билетов§8>",
+        "buy_success": "§7Вы купили §e{quantity} билет(ов) §7за §c{cost} Акун§7!",
+        "buy_usage": "§cИспользуйте §8/§c{label} купить §8<§cбилеты§8>",
+        "no_money": "§cНедостаточно Акун для покупки {amount} билет(ов)...",
+        "no_tickets": "§7В этом раунде билеты не продавались. Следующая лотерея начнётся скоро!",
+        "prize": "§7Текущий приз§8:§c {prize} Акун",
+        "status_header": "§7Текущий статус§8:",
+        "ticket_limit": "§cВы не можете купить такое количество билетов...",
+        "ticket_price": "§7Каждый билет стоит §c{price} Акун",
+        "tickets": "§7Продано билетов§8:§e {tickets}",
+        "time": "§7Оставшееся время§8:§e {time}",
+        "usage": "§cИспользуйте §8/§c{label} §8<§cstatus§8|§cкупить§8>",
+        "win": "§7Поздравляем §e{winner}§7, вы выиграли §c{amount} Акун §7в Лотерее!"
+    },
+    "marriage": {
+        "accept": {
+            "_prefix": "§cСистема §8§l» §r",
+            "already": "§cВы или ваш партнёр уже состоите в браке...",
+            "none": "§cУ вас нет ожидающих запросов...",
+            "notify": "§c{partner} §7принял(а) ваше предложение о браке!",
+            "success": "§7Вы вступили в брак с §c{partner}§7! Поздравляем :)"
+        },
+        "deny": {
+            "_prefix": "§cСистема §8§l» §r",
+            "none": "§cУ вас нет ожидающих запросов...",
+            "notify": "§c{target} §7отклонил(а) ваше предложение о браке...",
+            "success": "§7Предложение о браке успешно отклонено..."
+        },
+        "divorce": {
+            "_prefix": "§cСистема §8§l» §r",
+            "all_success": "§7Вы развелись со всеми своими партнёрами...",
+            "invalid": "§cНеверный партнёр или не в браке с вами...",
+            "none": "§cВы не состоите в браке...",
+            "notify": "§c{partner} §7развёлся(лась) с вами...",
+            "specify": "§cИспользуйте §8/§c{label} развод §8<§cигрок§8|§c*§8>",
+            "success": "§7Вы развелись с §c{partner}§7..."
+        },
+        "info": {
+            "entry": "§cСистема §8§l» §r§7Партнёр§8:§d {partner} §8| §7С§8:§d {date} §8(§7{dateSince} §7назад§8){n}§cСистема §8§l» §r§7Вы зовёте§8:§d {nicknameGiven} §8| §7Вас зовут§8:§d {nicknameReceived}",
+            "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §dАктивные браки §8===-=-=-=-",
+            "no_nickname": "§7Нет прозвища...§r",
+            "none": "§cСистема §8§l» §r§cУ вас нет активных браков..."
+        },
+        "marry": {
+            "already": "§cСистема §8§l» §r§cВы или игрок уже состоите в браке...",
+            "expired": "§cСистема §8§l» §r§cПредложение о браке от §c{sender} §7истекло...",
+            "limit": "§cСистема §8§l» §r§cВы достигли лимита браков!",
+            "pending": "§cСистема §8§l» §r§cЭтот игрок уже имеет ожидающий запрос...",
+            "request": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §dПредложение о браке§8===-=-=-{n}§cСистема §8§l» §r§d{sender} §7предложил(а) вам руку и сердце...{n}§cСистема §8§l» §r§7Используйте §a/marriage принять §7или §c/marriage отклонить §7для отклонения",
+            "self": "§cСистема §8§l» §r§cВы не можете жениться на себе...",
+            "sent": "§cСистема §8§l» §r§7Предложение о браке успешно отправлено §c{target}§7!",
+            "target_limit": "§cСистема §8§l» §r§cИгрок достиг лимита браков!",
+            "usage": "§cСистема §8§l» §r§cИспользуйте §8/§c{label} жениться §8<§cигрок§8>"
+        },
+        "nick": {
+            "_prefix": "§cСистема §8§l» §r",
+            "success": "§7Прозвище §c{partner} §7установлено на '§c{nickname}§7' успешно!",
+            "usage": "§cИспользуйте §8/§c{label} nick §8<§cпартнёр§8> <§cпрозвище§8>"
+        },
+        "partner": {
+            "_prefix": "§cСистема §8§l» §r",
+            "joined": "§7Ваш партнёр §c{partner} §7вошёл на сервер!",
+            "left": "§cВаш партнёр {partner} вышел с сервера..."
+        },
+        "usage": "§cСистема §8§l» §r§cИспользуйте §8/§c{label} §8<§cжениться§8|§cразвод§8|§cinfo§8|§cnick§8>"
+    },
+    "msgcolor": {
+        "_prefix": "§cСистема §8§l» §r",
+        "invalid": "§cНеверный цвет...",
+        "reset": "§7Цвет сообщений сброшен до стандартного!",
+        "success": "§7Цвет сообщений изменён на {color}§7 успешно!",
+        "usage": "§cИспользуйте §8/§c{label} §8<§cцвет§8|§creset§8>{n}§cСистема §8§l» §r§7Доступные цвета§8: {colors}"
+    },
+    "mute": {
+        "_prefix": "§cСистема §8§l» §r",
+        "broadcast": "§c{target} §7был(а) §cперманентно замучен(а) §7по причине §c{reason}",
+        "muted": "§cВы перманентно замучены по причине {reason}... §oВы можете купить анмут на §chttps://loja.iakunamc.com"
+    },
+    "nametag": {
+        "add": {
+            "_prefix": "§6Nametags §8§l» §r",
+            "limit": {
+                "_prefix": "",
+                "reached": "§6Nametags §8§l» §r§cВы достигли лимита {limit} nametags..."
+            },
+            "success": "§7Nametag '§6{text}§7' успешно добавлен!",
+            "too": {
+                "_prefix": "",
+                "long": "§6Nametags §8§l» §r§cВаш nametag превышает лимит {limit} символов..."
+            },
+            "usage": "§cИспользуйте §8/§c{label} add §8<§cтекст§8>"
+        },
+        "list": {
+            "none": "§6Nametags §8§l» §r§cУ вас нет nametags..."
+        },
+        "off": {
+            "success": "§6Nametags §8§l» §r§7Nametags отключены..."
+        },
+        "remove": {
+            "_prefix": "§6Nametags §8§l» §r",
+            "invalid": {
+                "_prefix": "",
+                "id": "§6Nametags §8§l» §r§cНеверный id... Используйте §8/§c{label} list для просмотра доступных id"
+            },
+            "success": "§7Nametag §6{id} §7успешно удалён!",
+            "usage": "§cИспользуйте §8/§c{label} remove §8<§cid§8>"
+        },
+        "usage": "§6Nametags §8§l» §r§cИспользуйте §8/§c{label} §8<§cadd§8|§clist§8|§cremove§8|§coff§8>"
+    },
+    "nickcolor": {
+        "_prefix": "§cСистема §8§l» §r",
+        "invalid": "§cНеверный цвет...",
+        "reset": "§7Цвет имени сброшен до стандартного!",
+        "success": "§7Цвет имени изменён на {color}§7 успешно!",
+        "usage": "§cИспользуйте §8/§c{label} §8<§cцвет§8|§creset§8>{n}§cСистема §8§l» §r§7Доступные цвета§8: {colors}"
+    },
+    "particle": {
+        "on": {
+            "usage": "§5Частицы §8§l» §r§cИспользуйте §8/§c{label} on §8<§cчастица§8>"
+        }
+    },
+    "particles": {
+        "_prefix": "§5Частицы §8§l» §r",
+        "activated": "§7Частица §5{type} §7успешно активирована!",
+        "deactivated": "§7Частицы успешно деактивированы!",
+        "invalid_type": "§cНеверная частица... Список доступных частиц: §8/§c{label} list",
+        "invalid_world": "§cНевозможно использовать частицы здесь...",
+        "list": "§7Список доступных частиц §8(§f{count}§8):§7 {particles}",
+        "no_active": "§cУ вас нет активных частиц...",
+        "usage": "§cИспользуйте §8/§c{label} §8<§con§8|§coff§8|§clist§8>"
+    },
+    "party": {
+        "_prefix": "§dПати §8§l» §r",
+        "chat": {
+            "off": "§7Чат пати отключён!",
+            "on": "§7Чат пати включён!"
+        },
+        "create": {
+            "already_in_party": "§cВы уже состоите в пати...",
+            "error": "§cОшибка при создании пати...",
+            "success": "§7Пати успешно создана! Используйте §8/§7party info §7для просмотра информации"
+        },
+        "info": {
+            "_prefix": "",
+            "code": "§dПати §8§l» §r§7Код§8: §d{code}",
+            "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §dИнформация о пати §8===-=-=-=-",
+            "leader": "§dПати §8§l» §r§7Лидер§8: §d{leader}",
+            "members": "§dПати §8§l» §r§7Участники§8: §d{current}§8/§d{max}",
+            "not_found": "§dПати §8§l» §r§cПати не найдена...",
+            "type": "§dПати §8§l» §r§7Тип§8: §d{type}"
+        },
+        "join": {
+            "already_in_party": "§cВы уже состоите в пати...",
+            "blocked": "§cВы не можете войти в эту пати...",
+            "broadcast": "§d{player} §7вступил(а) в пати!",
+            "closed": "§cЭта пати закрыта...",
+            "error": "§cОшибка при входе в пати...",
+            "full": "§cПати заполнена...",
+            "locked": "§cЭта пати заблокирована...",
+            "not_found": "§cПати не найдена...",
+            "success": "§7Вы вступили в пати!",
+            "usage": "§cИспользуйте §8/§c{label} join §8<§cкод§8|§cигрок§8>"
+        },
+        "kick": {
+            "broadcast": "§d{player} §7исключён(а) из пати!",
+            "error": "§cОшибка при исключении игрока...",
+            "kicked": "§cВы были исключены из пати!",
+            "not_in_party": "§cИгрок не состоит в пати...",
+            "self": "§cВы не можете исключить себя!",
+            "success": "§7Игрок успешно исключён!",
+            "usage": "§cИспользуйте §8/§c{label} kick §8<§cигрок§8>"
+        },
+        "leader": {
+            "_prefix": "",
+            "changed": "§dПати §8§l» §r§d{old_leader} §7покинул сервер, новый лидер — §d{new_leader}§7!",
+            "expired": "§dПати §8§l» §r§d{old_leader} §7не вернулся вовремя. Новый лидер — §d{new_leader}§7!"
+        },
+        "leave": {
+            "broadcast": "§d{player} §7покинул(а) пати...",
+            "error": "§cОшибка при выходе из пати...",
+            "success": "§7Вы покинули пати!"
+        },
+        "not_in_party": "§cВы не состоите в пати...",
+        "not_leader": "§cТолько лидер может это сделать...",
+        "quit": {
+            "_prefix": "",
+            "notify": "§dПати §8§l» §r§d{player} §7покинул сервер и вышел из пати...",
+            "leader_offline": "§dПати §8§l» §r§d{player} §7покинул сервер. У него есть §d3 минуты §7чтобы вернуться или потерять лидерство.",
+            "leader_rejoined": "§dПати §8§l» §r§d{player} §7вернулся на сервер и восстановил лидерство!"
+        },
+        "transfer": {
+            "broadcast": "§d{new_leader} §7— новый(ая) лидер!",
+            "error": "§cОшибка при передаче лидерства...",
+            "not_in_party": "§cИгрок не состоит в пати...",
+            "received": "§7Вы получили лидерство в пати!",
+            "self": "§cВы не можете передать лидерство себе!",
+            "success": "§7Лидерство передано §d{player}§7!",
+            "usage": "§cИспользуйте §8/§c{label} transfer §8<§cигрок§8>"
+        },
+        "type": {
+            "broadcast": "§7Тип пати изменён на §d{type}§7!",
+            "error": "§cОшибка при изменении типа...",
+            "invalid": "§cНеверный тип... Доступные типы§8: §7public§8, §7private§8, §7closed",
+            "success": "§7Тип изменён на §d{type}§7!",
+            "usage": "§cИспользуйте §8/§c{label} type §8<§cpublic§8|§cprivate§8|§cclosed§8>"
+        },
+        "invite": {
+            "already_in_party": "§cЭтот игрок уже состоит в пати...",
+            "already_invited": "§cЭтот игрок уже был приглашён...",
+            "expired": "§dПати §8§l» §r§cПриглашение от §d{sender} §7истекло...",
+            "received": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §dПриглашение в пати§8===-=-=-{n}§dПати §8§l» §r§d{player} §7приглашает вас в пати...{n}§dПати §8§l» §r§7Используйте §a/party принять §7или §c/party отклонить §7для отклонения",
+            "self": "§cВы не можете пригласить себя...",
+            "sent": "§dПати §8§l» §r§7Приглашение отправлено §d{player}§7!",
+            "usage": "§cИспользуйте §8/§c{label} invite §8<§cигрок§8>"
+        },
+        "accept": {
+            "no_invite": "§cУ вас нет ожидающих приглашений в пати..."
+        },
+        "deny": {
+            "none": "§cУ вас нет ожидающих приглашений в пати...",
+            "notify": "§dПати §8§l» §r§d{player} §7отклонил(а) ваше приглашение...",
+            "success": "§7Приглашение отклонено!"
+        },
+        "usage": "§cИспользуйте §8/§c{label} §8<§ccreate§8|§cjoin§8|§cleave§8|§ckick§8|§ctransfer§8|§cchat§8|§cinfo§8|§ctype§8|§cinvite§8|§caccept§8|§cdeny§8>"
+    },
+    "pets": {
+        "_prefix": "§3Питомцы §8§l» §r",
+        "activated": "§7Питомец успешно создан!",
+        "deactivated": "§7Питомец успешно отключён!",
+        "invalid_pet": "§cНеверный питомец... Список доступных: §8/§c{label} list",
+        "invalid_world": "§cНевозможно спавнить питомцев здесь...",
+        "list": "§7Список доступных питомцев §8(§f{count}§8):§7 {pets}",
+        "no_active": "§cУ вас нет активного питомца...",
+        "no_name": "§cИспользуйте §8/§c{label} name §8<§cимя§8>",
+        "no_perm": "§cТолько игроки с VIP §f§lMoon §r§cили выше могут спавнить питомцев... §oКупите на https://loja.iakunamc.com",
+        "no_type": "§cИспользуйте §8/§c{label} spawn §8<§cпитомец§8> [§cимя§8]",
+        "renamed": "§7Имя питомца изменено на '§3{name}§7' успешно!",
+        "to_adult": "§7Питомец превращён во взрослого успешно!",
+        "to_baby": "§7Питомец превращён в детёныша успешно!",
+        "usage": "§cИспользуйте §8/§c{label} §8<§con§8|§crandom§8|§coff§8|§cname§8|§cbaby§8|§clist§8>"
+    },
+    "pin": {
+        "add": {
+            "_prefix": "§3Пин §8§l» §r",
+            "already": "§cУ вас уже есть пин...",
+            "success": "§7Пин успешно добавлен!",
+            "usage": "§cИспользуйте §8/§c{label} add §8<§c4-значный пин§8>"
+        },
+        "change": {
+            "_prefix": "§3Пин §8§l» §r",
+            "incorrect": "§cТекущий пин неверный...",
+            "success": "§7Пин успешно изменён!",
+            "usage": "§cИспользуйте §8/§c{label} change §8<§cтекущий пин§8> <§cновый пин§8>"
+        },
+        "error": {
+            "incorrect": "§3Пин §8§l» §r§cНеверный пин..."
+        },
+        "login": {
+            "timeout": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §3Пин §8===-=-=-=-{n}§cВремя входа истекло...",
+            "toomany": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §3Пин §8===-=-=-=-{n}§cСлишком много попыток аутентификации..."
+        },
+        "need": {
+            "login": "§3Пин §8§l» §r§7Введите ваш пин в чате для завершения аутентификации"
+        },
+        "remove": {
+            "_prefix": "§3Пин §8§l» §r",
+            "incorrect": "§cНеверный пин...",
+            "nopin": "§cУ вас нет пина...",
+            "success": "§7Пин успешно удалён!",
+            "usage": "§cИспользуйте §8/§c{label} remove §8<§cтекущий пин§8>"
+        },
+        "success": {
+            "login": "§3Пин §8§l» §r§7Аутентификация прошла успешно!"
+        },
+        "usage": "§3Пин §8§l» §r§cИспользуйте §8/§c{label} §8<§cadd§8|§cremove§8|§cchange§8>"
+    },
+    "pluscolor": {
+        "_prefix": "§cСистема §8§l» §r",
+        "invalid": "§cНеверный цвет...",
+        "reset": "§7Цвет + сброшен до стандартного!",
+        "success": "§7Цвет + изменён на {color}§7 успешно!",
+        "usage": "§cИспользуйте §8/§c{label} §8<§cцвет§8|§creset§8>{n}§cСистема §8§l» §r§7Доступные цвета§8: {colors}"
+    },
+    "pref": {
+        "_prefix": "§cСистема §8§l» §r",
+        "disable": "§7Предпочтение успешно отключено!",
+        "enable": "§7Предпочтение успешно включено!",
+        "onlyvip": "§cТолько игроки с VIP §b§l§oAstral §r§cили выше могут изменить это предпочтение... §oКупите на https://loja.iakunamc.com",
+        "reset": "§7Все предпочтения сброшены до стандартных!",
+        "usage": "§cИспользуйте §8/§c{label} §8<§cпредпочтение§8|§creset§8>{n}§cСистема §8§l» §r§cДоступные предпочтения§8:§7 {prefs}"
+    },
+    "profanity": {
+        "_prefix": "§cСистема §8§l» §r",
+        "blocked": "§cПожалуйста, соблюдайте уважение"
+    },
+    "profile": {
+        "view": {
+            "disabled": "§3Профиль §8§l» §r§cИгрок отключил просмотр профиля..."
+        }
+    },
+    "randomtp": {
+        "_prefix": "§cСистема §8§l» §r",
+        "no_safe_location": "§cНе удалось найти безопасное место...",
+        "success": "§7Телепортирован(а) на §c{x}§8,§c {y}§8,§c {z}"
+    },
+    "register": {
+        "setpassword": {
+            "success": "§eАутентификация §8§l» §r§7Пароль успешно установлен! На новых устройствах используйте §8/§7login §8<§7пароль§8> §7для входа"
+        },
+        "usage": "§eАутентификация §8§l» §r§cИспользуйте §8/§c{label} §8<§cпароль§8>"
+    },
+    "repair": {
+        "_prefix": "§6Ремонт §8§l» §r",
+        "no_damage": "§cЭтот предмет уже в идеальном состоянии...",
+        "no_item": "§cВ руке нет предмета...",
+        "no_repairable_items": "§cУ вас нет ремонтируемых предметов в инвентаре...",
+        "not_in_survival": "§cВы не в режиме выживания...",
+        "not_repairable": "§cЭтот предмет нельзя починить...",
+        "success": "§7Вы починили §6{item} §7и восстановили §6{durability} §7прочности за §c{cost} Акун§7!",
+        "success_all": "§6Ремонт §8§l» §r§7Вы починили §6{items} §7предметов и восстановили §6{durability} §7прочности за §c{cost} Акун§7!"
+    },
+    "report": {
+        "_prefix": "§cСистема §8§l» §r",
+        "already_reported": "§cВы уже жаловались на этого игрока...",
+        "noself": "§cВы не можете пожаловаться на себя!",
+        "nostaff": "§cВы не можете пожаловаться на члена персонала!",
+        "sent": "§7Вы успешно пожаловались на §c{target} §7по причине §c{reason}§7!",
+        "usage": "§cИспользуйте §8/§c{label} §8<§cигрок§8> <§cпричина§8>"
+    },
+    "requests": {
+        "_prefix": "§cСистема §8§l» §r",
+        "disabled": "§cЭтот игрок отключил получение запросов..."
+    },
+    "restart": {
+        "kick": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§cПерезапуск...",
+        "time": "§cСистема §8§l» §r§7Сервер перезапустится через §c{time}§7..."
+    },
+    "rules": {
+        "cmd": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §cПравила §8===-=-=-=-{n}§cСистема §8§l» §r§7Запрещены серьёзные оскорбления, предрассудки, домогательства, угрозы, язык ненависти или пропаганда экстремистских идеологий{n}§cСистема §8§l» §r§7Запрещена реклама или упоминание других серверов, сайтов, соцсетей или внешних сообществ{n}§cСистема §8§l» §r§7Запрещено обходить фильтры, эксплуатировать баги или уязвимости сервера{n}§cСистема §8§l» §r§7Использование хаков, автокликеров, багов или любых читов строго запрещено §8(§7включая 2p и контроллеры с турбо§8){n}§cСистема §8§l» §r§7Запрещено взламывать аккаунты, выдавать себя за персонал или мошенничать{n}§cСистема §8§l» §r§7Запрещено объединяться в командах в одиночных режимах или 1v1{n}§cСистема §8§l» §r§7Оскорбительные, неуместные или провокационные ники, скины и постройки запрещены{n}§cСистема §8§l» §r§7Запрещено злоупотреблять CAPS, флудом, спамом или повторяющимися сообщениями{n}§cСистема §8§l» §r§7Запрещено мешать работе персонала, игнорировать решения или оскорблять сервер"
+    },
+    "scoreboard": {
+        "lobby": "{right}     §fi§cAkuna§9MC §8§l» §r§cЛобби{n}{right}{bar}{n}{right}§8§l» §r§7Имя§8:§c {name}{n}{right}§8§l» §r§7Онлайн§8:§c {online}§8/§c{onlinemax}{n}{right}§8§l» §r§7Пинг§8:§c {ping}мс{n}{right}{bar}{n}{n}{right}§c{address}",
+        "plot": "{right}   §fi§cAkuna§9MC §8§l» §r§9Участок{n}{right}{bar}{n}{right}§8§l» §r§7Имя§8:§9 {name}{n}{right}§8§l» §r§7Играет§8:§9 {onlinemap}{n}{right}§8§l» §r§7Участки§8:§9 {plots}{n}{right}{bar}{n}{n}{right}§9{address}",
+        "lobby_bw": "{right}  §fi§cAkuna§9MC §8§l» §r§cBed§fWars{n}{right}{bar}{n}{right}§8§l» §r§7Победы§8:§c {wins}{n}{right}§8§l» §r§7Убийства§8:§c {kills}{n}{right}§8§l» §r§7Финальные убийства§8:§c {final_kills}{n}{right}§8§l» §r§7Сломано кроватей§8:§c {beds}{n}{right}{bar}{n}{n}{right}§c{address}",
+        "lobby_sw": "{right}  §fi§cAkuna§9MC §8§l» §r§bSky§fWars{n}{right}{bar}{n}{right}§8§l» §r§7Победы§8:§b {wins}{n}{right}§8§l» §r§7Убийства§8:§b {kills}{n}{right}§8§l» §r§7Матчи§8:§b {plays}{n}{right}{bar}{n}{n}{right}§b{address}"
+    },
+    "server": {
+        "whitelist": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§cСервер на техническом обслуживании{n}§cDiscord: https://discord.iakunamc.com",
+        "forcedshutdown": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§cСервер был принудительно остановлен...",
+        "attack": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§cСистема §8§l» §r§7Сервер находится под DDoS-атакой...{n}§7Наша защита уже смягчает атаку. Необходимые меры приняты, но возможны задержки или отключения{n}§cСистема §8§l» §r§7Поддержка§8: §chttps://discord.iakunamc.com",
+        "info": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §fИнформация §8===-=-=-=-{n}§cСистема §8» §r§7IP§8:§c iakunamc.com{n}§cСистема §8» §r§7Порт§8:§c 19132{n}{n}§cСистема §8» §r§7Заявка в Staff§8:§c https://staff.iakunamc.com{n}§cСистема §8» §r§7Магазин§8:§c https://loja.iakunamc.com{n}§cСистема §8» §r§7Discord§8:§c https://discord.iakunamc.com{n}{n}§fY§cT §8» §r§7300 подписчиков §a+ §7Рекламное видео{n}§fMini§cYT §8» §r§750 подписчиков §a+ §7Рекламное видео{n}§cYT§fmirin §8» §r§70 подписчиков §a+ §7Рекламное видео{n}§cПримечания §8» §r§7Укажите IP в названии/описании и продвигайте сервер раз в месяц, чтобы сохранить свой ранг",
+        "tps_low": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§cСистема §8§l» §r§7Похоже, сервер перегружен, наша команда уже решает эту проблему..."
+    },
+    "sethome": {
+        "_prefix": "§cСистема §8§l» §r",
+        "already_exists": "§cДом с таким именем уже существует...",
+        "limit": "§cВы достигли лимита домов...",
+        "not_in_survival": "§cВы не в режиме выживания...",
+        "position_exists": "§cДом в этой позиции уже существует...",
+        "success": "§7Дом §c{home} §7успешно создан!",
+        "usage": "§cИспользуйте §8/§c{label} §8<§cимя§8>"
+    },
+    "shop": {
+        "_prefix": "§eМагазин §8§l» §r",
+        "break": {
+            "not_owner": "§cТолько владелец может удалить магазин...",
+            "success": "§7Магазин успешно удалён",
+            "_prefix": "§eShop §8§l» §r"
+        },
+        "buy": {
+            "inventory_full": "§cИнвентарь полон...",
+            "not_enough_stock": "§cНедостаточно товара...",
+            "success": "§7Вы купили §e{quantity}§7x {item} за §c{price} Акун §7у §e{owner}",
+            "_prefix": "§eShop §8§l» §r"
+        },
+        "chest_access_denied": "§cТолько владелец магазина может получить доступ к этому сундуку...",
+        "chest_not_found": "§cСундук магазина не найден...",
+        "create": {
+            "chest_not_found": "§cПоставьте сундук за/под табличкой...",
+            "error": "§cОшибка при создании магазина...",
+            "invalid_item": "§cНеверный ID предмета...",
+            "invalid_price": "§cНеверная цена...",
+            "invalid_quantity": "§cНеверное количество...",
+            "success": "§7Магазин успешно создан!",
+            "_prefix": "§eShop §8§l» §r"
+        },
+        "inventory_full": "§cИнвентарь полон...",
+        "not_in_survival": "§cВы не в режиме выживания...",
+        "owner": {
+            "notify_purchase": "§e{seller} §7продал(а) §e{quantity}§7x {item} за §c{price} Акун§7!",
+            "notify_sale": "§e{buyer} §7купил(а) §e{quantity}§7x {item} за §c{price} Акун§7!",
+            "_prefix": "§eShop §8§l» §r"
+        },
+        "purchase_error": "§cОшибка при обработке покупки...",
+        "purchase_summary": "§7Вы купили §7{items} на общую сумму §c{total} Акун§7!",
+        "self_interact": "§cВы не можете взаимодействовать со своим собственным магазином...",
+        "sell": {
+            "chest_full": "§cСундук магазина полон...",
+            "insufficient_items": "§cУ вас недостаточно предметов...",
+            "success": "§7Вы продали §e{quantity}§7x {item} за §c{price} Акун §7игроку §e{owner}§7!",
+            "_prefix": "§eShop §8§l» §r"
+        }
+    },
+    "sit": {
+        "_prefix": "§cСистема §8§l» §r",
+        "accept": {
+            "different_world": "§cВы должны быть в том же мире, что и игрок...",
+            "none": "§cУ вас нет ожидающих запросов на перенос...",
+            "notify": "§c{target} §7принял(а) ваш запрос на перенос!",
+            "offline": "§cИгрок, отправивший запрос, покинул сервер...",
+            "sender_different_world": "§c{target} §7больше не в том же мире, что и вы...",
+            "sender_too_far": "§c{target} §7слишком далеко ушёл(шла)...",
+            "success": "§7Вы приняли запрос от §c{sender}§7!",
+            "too_far": "§cСлишком далеко..."
+        },
+        "blockedworld": "§cЗдесь нельзя сидеть...",
+        "deny": {
+            "none": "§cУ вас нет ожидающих запросов на перенос...",
+            "notify": "§c{target} §7отклонил(а) ваш запрос на перенос...",
+            "success": "§7Запрос на перенос успешно отклонён..."
+        },
+        "different_world": "§cВы должны быть в том же мире, что и игрок...",
+        "expired": "§cЗапрос на перенос от §c{sender} §7истёк...",
+        "pending": "§cЭтот игрок уже имеет ожидающий запрос на перенос...",
+        "request": {
+            "_prefix": "",
+            "received": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §6Запрос на перенос §8===-=-=-{n}§cСистема §8§l» §r§6{sender} §7хочет нести вас...{n}§cСистема §8§l» §r§7Используйте §a/sitaccept §7для принятия или §c/sitdeny §7для отклонения",
+            "sent": "§cСистема §8§l» §r§7Запрос на перенос отправлен §c{target}§7!"
+        },
+        "self": "§cВы не можете отправить запрос себе...",
+        "success": "§7Вы успешно сели!",
+        "too_far": "§cСлишком далеко..."
+    },
+    "sleep": {
+        "_prefix": "§cСистема §8§l» §r",
+        "blockedworld": "§cЗдесь нельзя спать...",
+        "success": "§7Вы успешно легли спать! Сладких снов..."
+    },
+    "smelt": {
+        "_prefix": "§6Плавка §8§l» §r",
+        "inventory_full": "§cИнвентарь полон...",
+        "no_blocks": "§cУ вас нет рудных блоков для переплавки...",
+        "not_in_survival": "§cВы не в режиме выживания...",
+        "success": "§7Вы переплавили §6{blocks} §7блоков в §6{ores} §7руды за §c{cost} Акун§7!"
+    },
+    "tell": {
+        "_prefix": "§1Телл §8§l» §r",
+        "disabled": "§cЭтот игрок отключил телл...",
+        "noselferror": "§cВы не можете отправить сообщение себе",
+        "player": "§1{sender} §8§l»§r§7 Вы§8:§7 {msg}",
+        "sender": "§7Вы §8§l»§r§1 {player}§8:§7 {msg}",
+        "usage": "§cИспользуйте §8/§c{label} §8<§cигрок§8> <§cсообщение§8>",
+        "disabled_me": "§1Телл §8§l» §r§cВаш телл отключён..."
+    },
+    "tempban": {
+        "broadcast": "§cСистема §8§l» §r§c{target} §7был(а) §cвременно забанен(а) §7на §c{time} §7по причине §c{reason}",
+        "kick": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§cВы временно забанены...{n}§cИмя§8:§c {name}{n}§cПричина§8:§c {reason}{n}§cИстекает§8:§c {end}{n}§cДата§8:§c {timestamp}"
+    },
+    "tempmute": {
+        "_prefix": "§cСистема §8§l» §r",
+        "broadcast": "§c{target} §7был(а) §cвременно замучен(а) §7на §c{time} §7по причине §c{reason}",
+        "muted": "§cВы временно замучены по причине {reason}. Наказание истекает {end}{n}§cСистема §8§l» §r§cНе забудьте прочитать наши §8/§cправила во избежание наказаний..."
+    },
+    "tpa": {
+        "expired": "§5Телепорт §8§l» §r§cЗапрос на телепорт от {sender} истёк...",
+        "noself": "§5Телепорт §8§l» §r§cВы не можете телепортироваться к себе...",
+        "not_in_survival": "§5Телепорт §8§l» §r§cВы не в режиме выживания...",
+        "pending": "§5Телепорт §8§l» §r§cЭтот игрок уже имеет ожидающий запрос на телепорт...",
+        "received": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §5Запрос на телепорт §8===-=-=-=-{n}§5Телепорт §8§l» §r§5{sender} §7хочет телепортироваться к вам...{n}§5Телепорт §8§l» §r§7Используйте §a/tpaccept §7для принятия или §c/tpdeny §7для отклонения",
+        "sent": "§5Телепорт §8§l» §r§7Запрос на телепорт отправлен §5{target}§7!",
+        "target_not_in_survival": "§5Телепорт §8§l» §r§cИгрок не в режиме выживания...",
+        "usage": "§5Телепорт §8§l» §r§cИспользуйте §8/§c{label} §8<§cигрок§8>"
+    },
+    "tpaccept": {
+        "_prefix": "§5Телепорт §8§l» §r",
+        "none": "§cУ вас нет ожидающих запросов на телепорт...",
+        "not_in_survival": "§cИгрок не в режиме выживания...",
+        "success": "§7Вы приняли запрос на телепорт от §5{sender}§7!",
+        "success_target": "§5{target} §7принял(а) ваш запрос на телепорт!"
+    },
+    "tpdeny": {
+        "_prefix": "§5Телепорт §8§l» §r",
+        "none": "§cУ вас нет ожидающих запросов на телепорт...",
+        "success": "§7Вы отклонили запрос на телепорт от §5{sender}§7!",
+        "success_target": "§5{target} §7отклонил(а) ваш запрос на телепорт..."
+    },
+    "warn": {
+        "_prefix": "§cСистема §8§l» §r",
+        "active_warning": "§cУ вас {count} активное(ых) предупреждение(й)... Используйте §8/§cwarns для просмотра...",
+        "received": "§7Вы получили предупреждение на §c{time} §7по причине §c{reason}{n}§cСистема §8§l» §r§cНе забудьте прочитать наши §8/§cправила во избежание наказаний..."
+    },
+    "wings": {
+        "_prefix": "§6К§eр§6ы§eл§6ь§8я §8§l» §r",
+        "invalid_world": "§cНевозможно активировать крылья здесь...",
+        "off": "§7Крылья успешно отключены",
+        "on": "§7Крылья успешно включены"
+    },
+    "xp": {
+        "_prefix": "§9Уровни §8§l» §r",
+        "gain": "§7Вы получили §9{xp} xp§7!",
+        "gain_partner": "§7Вы получили §9{xp} xp §7от партнёра §c{partner}§7!",
+        "levelup": "§7Поздравляем! Вы достигли §9уровня {newLevel}",
+        "temp_multiplier": "§7У вас активен временный буст §9{boost}x §7на §9{time}"
+    },
+    "error": {
+        "_prefix": "§cСистема §8§l» §r",
+        "unknowncommand": "§cЭта команда не существует...",
+        "offlineplayer": "§cИгрок offline",
+        "command": "§cОй, произошла ошибка!",
+        "noperm": "§cУ вас нет прав для использования этой команды...",
+        "invalid_page": "§cСистема §8§l» §r§cНеверная страница, всего §c{total} §cстраниц..."
+    },
+    "ping": {
+        "_prefix": "§cСистема §8§l» §r",
+        "self": "§7Ваш пинг §c{ping}мс",
+        "other": "§7Пинг §c{target} §7— §c{ping}мс"
+    },
+    "version": {
+        "_prefix": "§bApi §8§l» §r",
+        "command": "§fi§cAkuna§9MC §bApi §8'§7{codename}§8'{n}{n}§7Автор§8:§b M4theuskkj{n}§7Обновлено§8:§b {lastupdate}"
+    },
+    "list": {
+        "_prefix": "§cСистема §8§l» §r",
+        "command": "§7Игроков онлайн §8(§f{online}§8/§f{maxOnline}§8):§7 {list}"
+    },
+    "mission": {
+        "_prefix": "§6Миссии §8§l» §r",
+        "completed": "§7Поздравляем! Вы выполнили миссию §6{mission}",
+        "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §6Миссии §8===-=-=-=-",
+        "header_other": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §6Миссии §7игрока §6{target} §8===-=-=-=-",
+        "resetIn": "§7Миссии сбрасываются через §6{time}",
+        "break": {
+            "_prefix": "",
+            "blocks": "§7Сломайте {target} блоков",
+            "beds": "§7Сломайте {target} кроватей в §cBed§fWars"
+        },
+        "kill": {
+            "_prefix": "",
+            "skywars": "§7Убейте {target} игроков в §bSky§fWars",
+            "pvp": "§7Убейте {target} игроков в §bPvP Modes",
+            "thebridge": "§7Убейте {target} игроков в §cThe§9Bridge",
+            "bedwars": "§7Убейте {target} игроков в §cBed§fWars",
+            "blocksumo": "§7Убейте {target} игроков в §bBlock§fSumo"
+        },
+        "win": {
+            "_prefix": "",
+            "bedwars": "§7Выиграйте {target} матчей §cBed§fWars",
+            "mlgblock": "§7Выиграйте {target} матчей §eMlg§fBlock",
+            "duels": "§7Выиграйте {target} матчей §2Дуэлей",
+            "skywars": "§7Выиграйте {target} матчей §bSky§fWars",
+            "thebridge": "§7Выиграйте {target} матчей §cThe§9Bridge",
+            "blocksumo": "§7Выиграйте {target} матчей §bBlock§fSumo"
+        },
+        "place": {
+            "_prefix": "",
+            "blocks": "§7Поставьте {target} блоков"
+        },
+        "complete": {
+            "_prefix": "",
+            "parkour": "§7Пройдите §5Паркур §7{target} раз"
+        },
+        "score": {
+            "_prefix": "",
+            "thebridge": "§7Наберите {target} очков в §cThe§9Bridge"
+        },
+        "mine": {
+            "_prefix": "",
+            "coal": "§7Добудьте {target} угля",
+            "iron": "§7Добудьте {target} железа",
+            "gold": "§7Добудьте {target} золота",
+            "diamond": "§7Добудьте {target} алмазов",
+            "emerald": "§7Добудьте {target} изумрудов"
+        },
+        "get": {
+            "_prefix": "",
+            "wood": "§7Соберите {target} древесины"
+        },
+        "craft": {
+            "_prefix": "",
+            "items": "§7Скрафтите {target} предметов"
+        },
+        "no": {
+            "missions": "§cСейчас нет доступных миссий..."
+        },
+        "list": {
+            "item": {
+                "v2": "§7{name} §8- §7Прогресс§8:§f {progress}§8/§f{target} §8- §7Награда§8: {reward}"
+            }
+        },
+        "reward": {
+            "xp_multiplier": "§7Вы получили §9Множитель XP {multiplier}x §7на §6{duration}"
+        },
+        "first": {
+            "kill": {
+                "_prefix": "",
+                "skywars": "§7Будьте 1-м убийцей в §bSky§fWars §7{target} раз",
+                "bedwars": "§7Будьте 1-м убийцей в §cBed§fWars §7{target} раз",
+                "thebridge": "§7Будьте 1-м убийцей в §cThe§9Bridge §7{target} раз",
+                "blocksumo": "§7Будьте 1-м убийцей в §bBlock§fSumo §7{target} раз"
+            }
+        },
+        "play": {
+            "_prefix": "",
+            "bedwars": "§7Сыграйте {target} матчей §cBed§fWars",
+            "skywars": "§7Сыграйте {target} матчей §bSky§fWars"
+        },
+        "buy": {
+            "items": {
+                "_prefix": "",
+                "bedwars": "§7Купите {target} предметов в магазине §cBed§fWars"
+            },
+            "upgrades": {
+                "_prefix": "",
+                "bedwars": "§7Купите {target} улучшений в §cBed§fWars"
+            }
+        }
+    },
+    "missions": {
+        "_prefix": "§6Миссии §8§l» §r",
+        "reset": "§7Вы можете сбросить их за §c{cost} Акун §7командой §8/§7resetmissions"
+    },
+    "resetmissions": {
+        "_prefix": "§6Миссии §8§l» §r",
+        "no_missions": "§cУ вас нет миссий для сброса!",
+        "success": "§7Ваши миссии успешно сброшены!"
+    },
+    "cages": {
+        "_prefix": "§cКлетки §8§l» §r",
+        "usage": "§cИспользуйте §8/§c{label} §8<§cbuy§8|§cset§8|§cunset§8|§clist§8|§cinfo§8>",
+        "buy": {
+            "_prefix": "",
+            "usage": "§cCages §8§l» §r§cИспользуйте §8/§c{label} buy §8<§ccage§8> §8[§cminigame§8]",
+            "already_owned": "§cCages §8§l» §r§cУ вас уже есть эта клетка...",
+            "success": "§cCages §8§l» §r§7Клетка §c{cage} §7куплена за §c{cost} Акун!"
+        },
+        "set": {
+            "_prefix": "",
+            "usage": "§cCages §8§l» §r§cИспользуйте §8/§c{label} set §8<§ccage§8> §8[§cminigame§8]",
+            "not_owned": "§cCages §8§l» §r§cУ вас нет этой клетки...",
+            "success": "§cCages §8§l» §r§7Клетка §c{cage} §7успешно активирована!",
+            "failed": "§cCages §8§l» §r§cОшибка активации клетки..."
+        },
+        "unset": {
+            "_prefix": "",
+            "usage": "§cCages §8§l» §r§cИспользуйте §8/§c{label} unset §8<§cminigame§8>",
+            "success": "§cCages §8§l» §r§7Клетка {minigame} §7успешно отключена!"
+        },
+        "list": {
+            "_prefix": "",
+            "title": "§cCages §8§l» §r§7Ваши клетки§8:",
+            "owned": "§cCages §8§l» §r§7Имеются§8:§7 {cages}",
+            "unowned": "§cCages §8§l» §r§7Отсутствуют§8:§7 {cages}"
+        },
+        "info": {
+            "_prefix": "",
+            "usage": "§cCages §8§l» §r§cИспользуйте §8/§c{label} info §8<§ccage§8> §8[§cminigame§8]",
+            "title": "§cCages §8§l» §r§7Информация о клетке §c{cage}§8:",
+            "description": "§cCages §8§l» §r§7Описание§8:§7 {description}",
+            "cost": "§cCages §8§l» §r§7Стоимость§8:§c {cost} Акун",
+            "status": "§cCages §8§l» §r§7Имеется§8:§7 {status}",
+            "active": "§cCages §8§l» §r§7Активна§8:§7 {active}"
+        },
+        "cage": {
+            "_prefix": "",
+            "not_found": "§cCages §8§l» §r§cКлетка не найдена..."
+        },
+        "minigame": {
+            "_prefix": "",
+            "invalid": "§cCages §8§l» §r§cНеверная миниигра..."
+        }
+    },
+    "cageswindow": {
+        "_prefix": "§cКлетки §8§l» §r",
+        "invalid_minigame": "§cCages §8§l» §r§cНеверная миниигра... Доступные§8:§7 {minigames}",
+        "title": "§7Клетки",
+        "disable": {
+            "_prefix": "",
+            "button_minigame": "§cОтключить клетку",
+            "button_all": "§cОтключить все клетки",
+            "minigame_success": "§cCages §8§l» §r§7Клетка {minigame} §7отключена!",
+            "all_success": "§cCages §8§l» §r§7Все клетки отключены!",
+            "success": "§cCages §8§l» §r§7Клетка §c{cage} §7отключена!"
+        },
+        "set": {
+            "_prefix": "",
+            "success": "§cCages §8§l» §r§7Клетка §c{cage} §7активирована!"
+        },
+        "buy": {
+            "_prefix": "",
+            "title": "§7Купить клетку §c{cage} §7за §c{cost} Акун§8?",
+            "success": "§cКлетки §8§l» §r§7Клетка §c{cage} §7успешно куплена!"
+        }
+    },
+    "cage": {
+        "prison": {
+            "description": "Тюремная каменная клетка"
+        },
+        "iron": {
+            "description": "Железная клетка"
+        },
+        "bedrock": {
+            "description": "Клетка из бедрока"
+        },
+        "gold": {
+            "description": "Золотая клетка"
+        },
+        "lapis": {
+            "description": "Клетка из лазурита"
+        },
+        "obsidian": {
+            "description": "Обсидиановая клетка"
+        },
+        "wooden": {
+            "description": "Деревянная клетка"
+        },
+        "ice": {
+            "description": "Ледяная клетка"
+        },
+        "rainbow": {
+            "description": "Радужная клетка"
+        },
+        "emerald": {
+            "description": "Изумрудная клетка"
+        },
+        "diamond": {
+            "description": "Алмазная клетка"
+        },
+        "redstone": {
+            "description": "Клетка из редстоуна"
+        },
+        "coal": {
+            "description": "Угольная клетка"
+        },
+        "bricks": {
+            "description": "Кирпичная клетка"
+        },
+        "mossy": {
+            "description": "Клетка из замшелого камня"
+        },
+        "chiseled": {
+            "description": "Клетка из тёсаного камня"
+        },
+        "quartz": {
+            "description": "Кварцевая клетка"
+        },
+        "nether": {
+            "description": "Клетка из Незера"
+        },
+        "end": {
+            "description": "Клетка из Края"
+        },
+        "snow": {
+            "description": "Снежная клетка"
+        },
+        "glowstone": {
+            "description": "Клетка из глоустоуна"
+        },
+        "terracotta": {
+            "description": "Терракотовая клетка"
+        }
+    },
+    "temprank": {
+        "_prefix": "§cСистема §8§l» §r",
+        "expiry": "§7Ваш тег §c{rank} §7истечёт через §c{time}§7..."
+    },
+    "language": {
+        "_prefix": "§3Язык §8§l» §r",
+        "usage": "§cИспользуйте §8/§c{label} §8<§cсписок§8|§cязык§8>",
+        "list_header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §3Языки §8(§f{page}§8/§f{max}§8) §8===-=-=-=-",
+        "list_item": "§3{code} §8- §7{name}",
+        "changed": "§7Язык изменён на §3{name} §7успешно!",
+        "invalid": "§cЯзык §8\"§c{code}§8\"§c не существует, используйте §8/§c{label} список для просмотра языков"
+    },
+    "skin": {
+        "_prefix": "§3Скины §8§l» §r",
+        "usage": "§cИспользуйте §8/§c{label} §8<§clist§8|§cview§8|§con§8|§coff§8>",
+        "list": {
+            "_prefix": "",
+            "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §3Скины §8(§f{page}§8/§f{pages}§8){filter} ===-=-=-=-",
+            "entry": "§3{id} §8§l» §r§7{name} §8-§7 {type}",
+            "empty": "§3Скины §8§l» §r§cСкины с такими фильтрами не найдены..."
+        },
+        "view": {
+            "_prefix": "",
+            "usage": "§3Скины §8§l» §r§cИспользуйте §8/§c{label} view §8<§cid§8>",
+            "not_found": "§3Скины §8§l» §r§cСкин не найден...",
+            "no_data": "§3Скины §8§l» §r§cДанные скина не найдены..."
+        },
+        "on": {
+            "_prefix": "",
+            "usage": "§3Скины §8§l» §r§cИспользуйте §8/§c{label} on §8<§cid§8>",
+            "not_found": "§3Скины §8§l» §r§cСкин не найден...",
+            "no_data": "§3Скины §8§l» §r§cДанные скина не найдены...",
+            "already_equipped": "§3Скины §8§l» §r§cВы уже используете этот скин...",
+            "success": "§3Скины §8§l» §r§7Скин §3{name} §7успешно активирован!"
+        },
+        "off": {
+            "_prefix": "",
+            "none": "§3Скины §8§l» §r§cУ вас нет скинов...",
+            "success": "§3Скины §8§l» §r§7Скин успешно удалён"
+        }
+    }
+}
