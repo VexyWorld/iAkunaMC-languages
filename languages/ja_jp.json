@@ -1,0 +1,2666 @@
+{
+    "_displayname": "日本語",
+    "_authors": [
+        "M4theuskkj"
+    ],
+    "bedwars": {
+        "game": {
+            "_prefix": "§cBed§fWars §8§l» §r",
+            "waiting": "§cプレイヤーを待っています...",
+            "countdown": "§7§c{time}秒 §7後に開始します",
+            "returning": "§7§c{time}秒 §7後にロビーに戻ります",
+            "respawning": "§7§c{time}秒 §7後にリスポーンします",
+            "player_joined": "§c{player} §7がゲームに参加しました §8(§f{count}§8/§f{max}§8)",
+            "player_left": "§c{player} §7がゲームを離れました §8(§f{count}§8/§f{max}§8)",
+            "player_left_rejoin": "§c{player} §7が離れました §8(§cRejoin§8)",
+            "player_returned": "§c{player} §7がゲームに戻りました",
+            "custom_info": "§7あなたは §c{creator} §7が作成したカスタムルームにいます",
+            "custom_no_stats": "§7このゲームは統計に記録されません。§8/§7bwcustom config でルーム設定を確認できます"
+        },
+        "combat": {
+            "_prefix": "§cBed§fWars §8§l» §r",
+            "killed_by": "{victim} §r§7は {killer} §r§7に倒されました",
+            "killed_by_final": "{victim} §r§7は {killer} §r§7に倒されました §8(§cファイナルキル§8)",
+            "fell_void": "{victim} §r§7は虚空に落ちました",
+            "fell_void_final": "{victim} §r§7は虚空に落ちました §8(§cファイナルキル§8)",
+            "infected_by": "{victim} §r§7は {killer} §r§7に感染されました",
+            "eliminated_by": "{victim} §r§7は {killer} §r§7に排除されました",
+            "team_eliminated": "§cBed§fWars §8§l» §r§7チーム {team} §r§7が敗退しました！",
+            "enderchest_drop": "§cBed§fWars §8§l» §r§7{player} §7のエンダーチェストのアイテムがチームの炉にドロップされました！"
+        },
+        "bed": {
+            "_prefix": "§cBed§fWars §8§l» §r",
+            "destroyed": "§7チーム {team} §r§7のベッドが {killer} §r§7に破壊されました",
+            "own_destroyed": "§cあなたのベッドが {killer}§c に破壊されました！もうリスポーンできません..."
+        },
+        "trap": {
+            "_prefix": "§cBed§fWars §8§l» §r",
+            "enemy": "§c敵のトラップが発動しました！",
+            "own": "§cあなたの島のトラップが発動しました！"
+        },
+        "tracker": {
+            "tracking": "§cBed§fWars §8§l» §r§7§c{player} §7を追跡中 §8§7 距離§8:§c {distance} §7ブロック"
+        },
+        "enderchest": {
+            "_prefix": "§cBed§fWars §8§l» §r",
+            "stored": "§7アイテムを保管しました",
+            "retrieved": "§7アイテムを取り出しました",
+            "full": "§cエンダーチェストが満杯です...",
+            "empty": "§cエンダーチェストは空です...",
+            "inventory_full": "§cインベントリが満杯です...",
+            "cant_store_tools": "§cツールは保管できません！",
+            "cant_store_tools_menu": "§cツールは保管できません...",
+            "keep_sword": "§cインベントリに最低1本の剣を残してください！"
+        },
+        "drop": {
+            "combat_cancel": "§cBed§fWars §8§l» §r§c戦闘中はアイテムをドロップできません！"
+        },
+        "teams": {
+            "_prefix": "§cBed§fWars §8§l» §r",
+            "vip_only": "§c§b§l§oAstral§r§c 以上のVIPを持つプレイヤーのみチームを選択できます！§o https://loja.iakunamc.com で購入",
+            "moved_by_partner": "§7パートナーによってチーム {team} §r§7に移動されました！",
+            "already_in_team": "§cすでにチーム {team}§r§c にいます！",
+            "team_full": "§cチーム {team} §r§cは満員です！",
+            "joined_team": "§7チーム {team}§r §7に参加しました！",
+            "preference_set": "§7チーム {team} §r§7を優先設定しました",
+            "invalid_team": "§c無効なチームです..."
+        },
+        "rejoin": {
+            "_prefix": "§cBed§fWars §8§l» §r",
+            "pending": "§7進行中のゲームから退出しました...",
+            "pending_hint": "§7§8/§7bedwars rejoin でゲームに戻れます",
+            "no_pending": "§c再参加の保留がありません！",
+            "expired": "§c再参加の期限が切れました！",
+            "game_ended": "§cゲームが終了またはベッドが破壊されました！"
+        },
+        "command": {
+            "_prefix": "§cBed§fWars §8§l» §r",
+            "usage": "§7参加するには §8/§7bw join §8<§7モード§8> §7または §8/§7bw join §8<§7コード§8>",
+            "usage_leave": "§7退出するには §8/§7bw leave",
+            "usage_full": "§7参加するには §8/§7bw join §8<§7solo§8|§7duo§8|§7trios§8|§7squad§8|§71v1§8|§7ultra§8|§7infection§8> §7または §8/§7bw join §8<§7コード§8>",
+            "invalid_mode": "§c無効なモードです... 利用可能なモード§8:§7 {modes}",
+            "mode_full": "§cこのモードは満員です...",
+            "invalid_code": "§c無効なコードまたはルームが満員です...",
+            "not_in_arena": "§cアリーナにいません..."
+        },
+        "custom": {
+            "vip_only": "§cBed§fWars §8§l» §r§c§7§o§lGalaxy§r§a+§c 以上のVIPを持つプレイヤーのみカスタムルームを作成できます！§o https://loja.iakunamc.com で購入",
+            "created": "§cBed§fWars §8§l» §r§7カスタムルームを作成しました！",
+            "code": "§cBed§fWars §8§l» §r§7ルームコード：§c{code}",
+            "join_hint": "§cBed§fWars §8§l» §r§7他のプレイヤーは §8/§7bw join §c{code} §7で入れます",
+            "create_failed": "§cBed§fWars §8§l» §r§cカスタムルームを作成できませんでした...",
+            "settings_ignored": "§cBed§fWars §8§l» §r§c一部の設定が無視されました...",
+            "not_in_custom": "§cBed§fWars §8§l» §r§cカスタムルームにいません...",
+            "no_settings_changed": "§cBed§fWars §8§l» §r§cこのゲームにカスタム設定はありません...",
+            "settings_header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §7カスタムルーム設定 §8===-=-=-=-",
+            "create_usage": "§cBed§fWars §8§l» §r§c§8/§cbwcustom create §8<§cモード§8> §8<§c設定§8> を使用してください",
+            "no_settings": "§cBed§fWars §8§l» §r§c少なくとも1つのカスタマイズを設定してください...",
+            "no_valid_settings": "§cBed§fWars §8§l» §r§c有効な設定がありません...",
+            "invalid_format": "§cBed§fWars §8§l» §r§c無効なフォーマット§8: §c{part} §8(§c key§8=§cvalue を使用§8)",
+            "unknown_setting": "§cBed§fWars §8§l» §r§c不明な設定§8: §c{key}",
+            "unknown_item": "§cBed§fWars §8§l» §r§c不明なアイテム§8: §c{item}",
+            "unknown_upgrade": "§cBed§fWars §8§l» §r§c不明なアップグレード§8: §c{upgrade}",
+            "time_zero": "§cBed§fWars §8§l» §r§c時間は0より大きくなければなりません...",
+            "invalid_time": "§cBed§fWars §8§l» §r§c無効な時間です...",
+            "invalid_speed": "§cBed§fWars §8§l» §r§c無効な速度です...",
+            "speed_zero": "§cBed§fWars §8§l» §r§c速度は0より大きくなければなりません...",
+            "speed_max": "§cBed§fWars §8§l» §r§c最大速度は10倍です...",
+            "forge_level_range": "§cBed§fWars §8§l» §r§cフォージレベルは0から3の間でなければなりません...",
+            "generator_level_range": "§cBed§fWars §8§l» §r§cジェネレーターレベルは1から3の間でなければなりません...",
+            "invalid_gen_item": "§cBed§fWars §8§l» §r§c無効なジェネレーターアイテム§8: §c{item}={amount} §8(§c最大§8: §c64§8)",
+            "help": "§cBed§fWars §8§l» §r§7カスタムルームを作成するには §8/§7bwcustom 作成 §8<§7モード§8> §8<§7設定§8>",
+            "help_config": "§cBed§fWars §8§l» §r§7ルームのカスタマイズを表示するには §8/§7bwcustom config",
+            "help_list": "§cBed§fWars §8§l» §r§7利用可能なカスタマイズを一覧表示するには §8/§7bwcustom list §8<§7configs§8|§7items§8|§7upgrades§8>",
+            "list_usage": "§cBed§fWars §8§l» §r§c§8/§cbwcustom list §8<§cconfigs§8|§citems§8|§cupgrades§8> を使用してください",
+            "list_configs_header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §7利用可能な設定 §8===-=-=-=-",
+            "list_items": "§cBed§fWars §8§l» §r§7利用可能なアイテム §8(§f{count}§8): §7{list}",
+            "list_upgrades": "§cBed§fWars §8§l» §r§7利用可能なアップグレード §8(§f{count}§8): §7{list}",
+            "show_blocked_items": "§cBed§fWars §8§l» §r§7ブロックされたアイテム §8(§f{count}§8): §7{list}",
+            "show_blocked_upgrades": "§cBed§fWars §8§l» §r§7ブロックされたアップグレード §8(§f{count}§8): §7{list}",
+            "show_upgrade_time": "§cBed§fWars §8§l» §r§7アップグレード時間§8: §c{time}",
+            "show_forge_speed": "§cBed§fWars §8§l» §r§7フォージ速度§8: §c{speed}倍",
+            "show_diamond_time": "§cBed§fWars §8§l» §r§7§bダイヤモンド§7ジェネレーター時間§8: §c{time}",
+            "show_emerald_time": "§cBed§fWars §8§l» §r§7§2エメラルド§7ジェネレーター時間§8: §c{time}",
+            "show_forge_level": "§cBed§fWars §8§l» §r§7フォージレベル§8: §c{level}",
+            "show_generator_level": "§cBed§fWars §8§l» §r§7ジェネレーターレベル§8: §c{level}",
+            "show_beds_destroyed": "§cBed§fWars §8§l» §r§7ベッド破壊§8: {value}",
+            "beds_yes": "§aはい",
+            "beds_no": "§cいいえ"
+        },
+        "menu": {
+            "_prefix": "§cBed§fWars §8§l» §r",
+            "invalid_mode": "§c無効なモードです... 利用可能なモード§8:§7 {modes}",
+            "arena_not_found": "§cアリーナが見つかりません！",
+            "map_not_found": "§cマップが見つかりません...",
+            "wrong_mode": "§cこのマップは {mode} モード用です...",
+            "load_error": "§cアリーナの読み込みエラー...",
+            "no_space": "§cアリーナに十分なスペースがありません...",
+            "mode_full": "§cこのモードは満員です...",
+            "click_favorite": "§7マップをクリックしてお気に入りに追加または削除",
+            "map_favorited": "§7マップ {map} をお気に入りに追加しました",
+            "map_unfavorited": "§7マップ {map} をお気に入りから削除しました",
+            "confirm_button": "§a§l確認",
+            "cancel_button": "§c§lキャンセル"
+        },
+        "shop": {
+            "_prefix": "§cBed§fWars §8§l» §r",
+            "no_resources": "§cこのアイテムを購入するためのリソースが不足しています！",
+            "armor_better": "§cすでにこの防具または上位の防具を持っています！",
+            "inventory_full": "§cインベントリが満杯です！",
+            "already_has_shears": "§cすでにハサミを持っています！"
+        },
+        "upgrade": {
+            "_prefix": "§cBed§fWars §8§l» §r",
+            "max_level": "§c{name} §cはすでに最大レベルです！",
+            "need_diamonds": "§c§bダイヤモンド§cが{amount}個不足しています！",
+            "purchased": "§c{player} §7が {name} §7をレベル §c{level}§7 にアップグレードしました！"
+        },
+        "generator": {
+            "_prefix": "§cBed§fWars §8§l» §r",
+            "upgraded": "§7{type} §7ジェネレーターがレベル §f{level} §7にアップグレードされました",
+            "beds_destroyed": "§c全てのベッドが破壊されました！"
+        },
+        "cooldown": {
+            "_prefix": "§cBed§fWars §8§l» §r",
+            "egg": "§cブリッジエッグを再使用するまでお待ちください！",
+            "irongolem": "§cアイアンゴーレムを再召喚するまでお待ちください！",
+            "silverfish": "§cシルバーフィッシュを再召喚するまでお待ちください！",
+            "slingshot": "§cスリングショットを再使用するまでお待ちください！",
+            "fireball": "§cファイアボールを再使用するまでお待ちください！",
+            "sponge": "§cスポンジを再使用するまでお待ちください！",
+            "platform": "§cプラットフォームを再使用するまでお待ちください！",
+            "bridge": "§cブリッジビルダーを再使用するまでお待ちください！",
+            "tower": "§cコンパクトタワーを再使用するまでお待ちください！"
+        },
+        "platform": {
+            "_prefix": "§cBed§fWars §8§l» §r",
+            "blocked": "§cここにプラットフォームを作成できません..."
+        }
+    },
+    "teampvp": {
+        "_prefix": "§aTeamPvP §8§l» §r",
+        "usage": "§7参加するには §8/§7{label} join §8<§7チーム§8>{n}§aTeamPvP §8§l» §r§7退出するには §8/§7{label} leave",
+        "join": {
+            "_prefix": "",
+            "usage": "§aTeamPvP §8§l» §r§c§8/§c{label} join §8<§cチーム§8> を使用してください"
+        },
+        "teams": "§c利用可能なチーム§8:§7 {teams}",
+        "sameteam": "§c同じチームのプレイヤーを攻撃できません！"
+    },
+    "parkour": {
+        "_prefix": "§5パルクール §8§l» §r",
+        "usage": "§7参加するには §8/§7{label} join{n}§5パルクール §8§l» §r§7退出するには §8/§7{label} leave",
+        "finish": {
+            "time": "§7§5{time} §7でパルクールをクリアしました",
+            "personalbest": "§5新記録！§7ベストタイム§8:§5 {time}",
+            "noreward": "§7おめでとう、パルクールをクリアしました！",
+            "reward": "§7おめでとう、パルクールをクリアして §7§lNightmare §r§7の報酬を獲得しました！"
+        }
+    },
+    "thebridge": {
+        "_prefix": "§cThe§9Bridge §8§l» §r",
+        "game": {
+            "_prefix": "§cThe§9Bridge §8§l» §r",
+            "waiting": "§cプレイヤーを待っています...",
+            "countdown": "§7§c{time}秒 §7後に開始します",
+            "returning": "§7§c{time}秒 §7後にロビーに戻ります",
+            "respawning": "§7§c{time}秒 §7後にリスポーンします",
+            "player_joined": "§c{player} §7がゲームに参加しました §8(§f{count}§8/§f{max}§8)",
+            "player_left": "§c{player} §7がゲームを離れました §8(§f{count}§8/§f{max}§8)",
+            "score": "§c{player} §7がチーム {team} §r§7にポイントを獲得しました！",
+            "win": "§7チーム {team} §r§7がゲームに勝利しました！",
+            "tie": "§7引き分けです！",
+            "killed_by": "§c{victim} §7was killed by §c{killer}",
+            "own_point": "§cYou cannot score a point on your own team's side",
+            "player_quit": "§c{player} §7left the match",
+            "point_scored": "{player} §7scored a point",
+            "point_scored_final": "{player} §7scored a point §8(§cFinal Point§8)",
+            "releasing": "§7Releasing in §c{time}s"
+        },
+        "combat": {
+            "killed_by": "{victim} §r§7は {killer} §r§7に倒されました",
+            "fell_void": "{victim} §r§7は虚空に落ちました"
+        },
+        "command": {
+            "_prefix": "§cThe§9Bridge §8§l» §r",
+            "usage": "§7参加するには §8/§7{label} join §8<§7モード§8>",
+            "usage_leave": "§7退出するには §8/§7{label} leave",
+            "invalid_mode": "§c無効なモードです... 利用可能なモード§8:§7 {modes}",
+            "not_in_arena": "§cアリーナにいません...",
+            "no_arenas": "§cNo arenas available at the moment..."
+        },
+        "teams": {
+            "already_in": "§cYou are already on the {team}§r§c team!",
+            "full": "§cThe {team} §r§cteam is full!",
+            "invalid": "§cInvalid team...",
+            "joined": "§7You joined the {team}§r §7team successfully!"
+        }
+    },
+    "skywars": {
+        "game": {
+            "_prefix": "§bSky§fWars §8§l» §r",
+            "waiting": "§cプレイヤーを待っています...",
+            "countdown": "§7§b{time}秒 §7後に開始します",
+            "returning": "§7§b{time}秒 §7後にロビーに戻ります",
+            "player_joined": "§b{player} §7がゲームに参加しました §8(§f{count}§8/§f{max}§8)",
+            "player_left": "§b{player} §7がゲームを離れました §8(§f{count}§8/§f{max}§8)",
+            "win": "§b{player} §7がゲームに勝利しました！"
+        },
+        "combat": {
+            "killed_by": "{victim} §r§7は {killer} §r§7に倒されました",
+            "fell_void": "{victim} §r§7は虚空に落ちました"
+        },
+        "command": {
+            "_prefix": "§bSky§fWars §8§l» §r",
+            "usage": "§7参加するには §8/§7{label} join §8<§7モード§8>",
+            "usage_leave": "§7退出するには §8/§7{label} leave",
+            "invalid_mode": "§c無効なモードです... 利用可能なモード§8:§7 {modes}",
+            "not_in_arena": "§cアリーナにいません...",
+            "mode_full": "§cThis mode is full...",
+            "mode_not_exist": "§cMode {mode} does not exist..."
+        },
+        "menu": {
+            "_prefix": "§bSky§fWars §8§l» §r",
+            "invalid_mode": "§c無効なモードです... 利用可能なモード§8:§7 {modes}",
+            "arena_not_found": "§cアリーナが見つかりません！",
+            "map_not_found": "§cマップが見つかりません...",
+            "wrong_mode": "§cこのマップは {mode} モード用です...",
+            "load_error": "§cアリーナの読み込みエラー...",
+            "no_space": "§cアリーナに十分なスペースがありません...",
+            "mode_full": "§cこのモードは満員です...",
+            "click_favorite": "§7マップをクリックしてお気に入りに追加または削除",
+            "map_favorited": "§7マップ {map} をお気に入りに追加しました",
+            "map_unfavorited": "§7マップ {map} をお気に入りから削除しました",
+            "confirm_button": "§a§l確認",
+            "cancel_button": "§c§lキャンセル"
+        },
+        "_prefix": "§fSky§bWars §8§l» §r",
+        "caos": {
+            "fire": "§6Fire!",
+            "inventory_scramble": "§7Scrambled inventories!",
+            "inventory_swap": "§eInventories swapped!",
+            "launch": "§7Flying!",
+            "teleport": "§7Teleport!",
+            "tnt_rain": "§cTNT rain!",
+            "tnt_spawn": "§cTNTs!"
+        },
+        "player": {
+            "join": "§b{player} §7joined the match §8(§f{count}§8/§f{maxPlayers}§8)",
+            "killed_by": "§b{player} §7was killed by §b{killer} §8(§f{alive}§8/§f{maxPlayers}§8)",
+            "killed_void": "§b{player} §7fell into the void §8(§f{alive}§8/§f{maxPlayers}§8)",
+            "quit": "§b{player} §7left the match §8(§f{count}§8/§f{maxPlayers}§8)"
+        },
+        "refill": {
+            "_prefix": "",
+            "done": "§7All chests have been refilled!"
+        },
+        "scoreboard": {
+            "_prefix": "",
+            "format": "{right} §fi§cAkuna§9MC §8§l» §r§fSky§bWars{n}{right}{bar}{n}{refill}{right}§8§l» §r§7Map§8:§b {map}{n}{right}§8§l» §r§7Alive§8:§b {alive}{n}{right}§8§l» §r§7Kills§8:§b {kills}{n}{right}{bar}{n}{n}{right}§biakunamc.com 19132"
+        },
+        "state": {
+            "finish": "§7Returning to lobby in §b{time}s",
+            "starting": "§7Starting in §b{start}s",
+            "waiting": "§cWaiting for more players..."
+        },
+        "tracker": "§8§l» §r§7Tracking §b{player} §8§l» §r§7Distance: §b{distance} §7blocks",
+        "voting": {
+            "player_voted": "§b{player} §7voted for {gamemode}",
+            "selected": "§7Selected mode§8:§b {gamemode}"
+        }
+    },
+    "mlgblock": {
+        "_prefix": "§eMlg§fBlock §8§l» §r",
+        "game": {
+            "waiting": "§eプレイヤーを待っています...",
+            "countdown": "§7§e{time}秒 §7後に開始します",
+            "returning": "§7§e{time}秒 §7後にロビーに戻ります",
+            "player_joined": "§e{player} §7がゲームに参加しました §8(§f{count}§8/§f{max}§8)",
+            "player_left": "§e{player} §7がゲームを離れました §8(§f{count}§8/§f{max}§8)",
+            "win": "§e{player} §7がゲームに勝利しました！",
+            "failed": "§e{player} §7は失敗しました！",
+            "survived": "§e{player} §7は着地に成功しました！"
+        },
+        "command": {
+            "_prefix": "§eMlg§fBlock §8§l» §r",
+            "usage": "§7参加するには §8/§7{label} join",
+            "usage_leave": "§7退出するには §8/§7{label} leave",
+            "not_in_arena": "§cアリーナにいません...",
+            "no_arenas": "§cNo arenas available..."
+        },
+        "player": {
+            "_prefix": "§eMlg§fBlock §8§l» §r",
+            "join": "§e{player} §7joined the match §8(§f{count}§8/§f{slots}§8)",
+            "killed_by": "§e{player} §7was killed by §e{killer} §8(§f{alive}§8/§f{slots}§8)",
+            "killed_void": "§e{player} §7fell into the void §8(§f{alive}§8/§f{slots}§8)",
+            "quit": "§e{player} §7left the match §8(§f{count}§8/§f{slots}§8)"
+        },
+        "scoreboard": {
+            "format": "{right}§fi§cAkuna§9MC §8§l» §r§eMlg§fBlock{n}{right}{bar}{n}{right}§8§l» §r§7Map§8:§e {map}{n}{right}§8§l» §r§7Kills§8:§e {kills}{n}{right}§8§l» §r§7Alive§8:§e {alive}{n}{right}{bar}{n}{n}{right}§eiakunamc.com 19132"
+        },
+        "state": {
+            "_prefix": "§eMlg§fBlock §8§l» §r",
+            "finish": "§7Returning to lobby in §e{time}s",
+            "starting": "§7Starting in §e{start}s",
+            "waiting": "§cWaiting for more players..."
+        }
+    },
+    "blocksumo": {
+        "_prefix": "§bBlock§fSumo §8§l» §r",
+        "game": {
+            "waiting": "§bプレイヤーを待っています...",
+            "countdown": "§7§b{time}秒 §7後に開始します",
+            "returning": "§7§b{time}秒 §7後にロビーに戻ります",
+            "player_joined": "§b{player} §7がゲームに参加しました §8(§f{count}§8/§f{max}§8)",
+            "player_left": "§b{player} §7がゲームを離れました §8(§f{count}§8/§f{max}§8)",
+            "win": "§b{player} §7がゲームに勝利しました！",
+            "eliminated": "§b{player} §7が敗退しました！",
+            "killed_by": "{victim} §r§7は {killer} §r§7に倒されました"
+        },
+        "command": {
+            "_prefix": "§bBlock§fSumo §8§l» §r",
+            "usage": "§7参加するには §8/§7{label} join",
+            "usage_leave": "§7退出するには §8/§7{label} leave",
+            "not_in_arena": "§cアリーナにいません...",
+            "no_arenas": "§cNo arenas available..."
+        },
+        "player": {
+            "_prefix": "§bBlock§fSumo §8§l» §r",
+            "join": "§b{player} §7joined the match §8(§f{count}§8/§f{slots}§8)",
+            "killed_by": "§b{player} §7was killed by §b{killer} §8(§f{alive}§8/§f{slots}§8)",
+            "killed_by_final": "§b{player} §7was §celiminated §7by §b{killer} §8(§f{alive}§8/§f{slots}§8)",
+            "killed_void": "§b{player} §7fell into the void §8(§f{alive}§8/§f{slots}§8)",
+            "quit": "§b{player} §7left the match §8(§f{count}§8/§f{slots}§8)",
+            "respawning": "§7Respawning in §b{time}s"
+        },
+        "scoreboard": {
+            "format": "{right}§fi§cAkuna§9MC §8§l» §r§bBlock§fSumo{n}{right}{bar}{n}{right}§8§l» §r§7Map§8:§b {map}{n}{right}§8§l» §r§7Kills§8:§b {kills}{n}{right}§8§l» §r§7Lives§8:§b {lives}{n}{right}{bar}{n}{n}{right}§biakunamc.com 19132"
+        },
+        "state": {
+            "_prefix": "§bBlock§fSumo §8§l» §r",
+            "finish": "§7Returning to lobby in §b{time}s",
+            "starting": "§7Starting in §b{start}s",
+            "waiting": "§cWaiting for more players..."
+        }
+    },
+    "plot": {
+        "_prefix": "§9プロット §8§l» §r",
+        "claim": {
+            "success": "§7プロットを正常に確保しました！",
+            "already_claimed": "§cすでにプロットを持っています...",
+            "no_plots": "§c利用可能なプロットがありません...",
+            "alias": "c",
+            "alreadyclaimed": "§9Plot §8§l» §r§cThis plot is already claimed by {owner}",
+            "desc": "§7Claims the plot you are standing in",
+            "name": "claim",
+            "nomoney": "§9Plot §8§l» §r§cYou don't have enough money to claim this plot",
+            "usage": "§8/§cp claim §8<§cname§8>",
+            "yourplot": "§9Plot §8§l» §r§cYou already claimed this plot"
+        },
+        "unclaim": {
+            "success": "§7プロットを正常に放棄しました！",
+            "not_owner": "§cこのプロットの所有者ではありません..."
+        },
+        "home": {
+            "not_owner": "§cプロットを持っていません...",
+            "not_found": "§cプロットが見つかりません...",
+            "alias": "h",
+            "desc": "§7Teleports to one of your plots",
+            "error": "§9Plot §8§l» §r§cCould not travel to the plot...",
+            "name": "home",
+            "noplots": "§9Plot §8§l» §r§cYou have no plots",
+            "notexist": "§9Plot §8§l» §r§cYou don't have a plot with id {id}",
+            "success": "§9Plot §8§l» §r§7Teleported to plot §9{plot} §7successfully!",
+            "usage": "§8/§cp home §8<§cid§8>"
+        },
+        "visit": {
+            "not_found": "§c{player} のプロットが見つかりません..."
+        },
+        "accepttransfer": {
+            "desc": "§7Accepts a plot transfer",
+            "invalid_data": "§9Plot §8§l» §r§cInvalid plot data...",
+            "name": "accepttransfer",
+            "no_pending": "§cSystem §8§l» §r§cYou have no pending requests...",
+            "not_exists": "§9Plot §8§l» §r§cThe plot does not exist...",
+            "not_owner": "§9Plot §8§l» §r§cThe plot no longer belongs to {owner}...",
+            "notify_sender": "§9Plot §8§l» §r§c{player} §7accepted the plot transfer §9{plot}§7!",
+            "success": "§9Plot §8§l» §r§7You accepted the plot transfer §9{plot}§7!",
+            "usage": "§8/§cp accepttransfer"
+        },
+        "addhelper": {
+            "alias": "addh",
+            "alreadyone": "§9Plot §8§l» §r§c{player} is already a helper...",
+            "desc": "§7Adds a helper to your plot",
+            "everyone": {
+                "success": "§9Plot §8§l» §r§7All players are now helpers on your plot!"
+            },
+            "name": "addhelper",
+            "offline": "§cSystem §8§l» §r§cPlayer is offline",
+            "success": "§9Plot §8§l» §r§9{player} §7is now a helper on your plot",
+            "usage": "§8/§cp addhelper §8<§cplayer§8>"
+        },
+        "allow": {
+            "already": {
+                "allowed": "§9Plot §8§l» §r§c{player} is already allowed..."
+            },
+            "desc": "§7Allows all or a player to enter your plot",
+            "everyone": {
+                "success": "§9Plot §8§l» §r§7All players can now enter the plot!"
+            },
+            "name": "allow",
+            "success": "§9Plot §8§l» §r§9{player} §7can now enter the plot!",
+            "usage": "§8/§cp allow §8<§cplayer§8|§c*§8>"
+        },
+        "auto": {
+            "alias": "a",
+            "desc": "§7Teleports to the next free plot",
+            "name": "auto",
+            "noplots": "§9Plot §8§l» §r§7No plots available...",
+            "notplotworld": "§9Plot §8§l» §r§cYou are not in the Plot world...",
+            "success": "§9Plot §8§l» §r§7Teleported to free plot §9{x}§8;§9{z} §7successfully!",
+            "usage": "§8/§cp auto"
+        },
+        "biome": {
+            "alias": "b",
+            "desc": "§7Changes the biome of your plot",
+            "invalid": "§9Plot §8§l» §r§cThis biome does not exist...",
+            "name": "biome",
+            "possible": "§9Plot §8§l» §r§7Available biomes§8:§7 {biomes}",
+            "success": "§9Plot §8§l» §r§7Plot biome changed to §9{biome} §7successfully!",
+            "usage": "§8/§cp biome §8[§cbiome§8]"
+        },
+        "biomecolor": {
+            "desc": "§7Changes the biome color of your plot",
+            "invalid_format": "§9Plot §8§l» §r§cUse §8/§cp biomecolor §8<§cr§8,§cg§8,§cb§8>",
+            "invalid_range": "§9Plot §8§l» §r§cColor values must be between 0 - 255...",
+            "invalid_type": "§9Plot §8§l» §r§cColors must be numbers (rgb format)...",
+            "name": "biomecolor",
+            "success": "§9Plot §8§l» §r§7Biome color changed to §9{r}§8,§9{g}§8,§9{b} §7successfully!",
+            "usage": "§8/§cp biomecolor §8<§cr§8,§cg§8,§cb§8>"
+        },
+        "clear": {
+            "alias": "cl",
+            "already_clearing": "§9Plot §8§l» §r§cThis plot is already being cleared...",
+            "confirm": "§9Plot §8§l» §r§7Are you sure you want to clear plot §9{plot}§7? Use §8/§7p clear confirm",
+            "desc": "§7Clears your plot",
+            "name": "clear",
+            "success": "§9Plot §8§l» §r§7Plot cleared successfully!",
+            "usage": "§8/§cp clear"
+        },
+        "command": {
+            "alias": "p",
+            "desc": "§7Manage your plots",
+            "name": "plot",
+            "unknown": "§9Plot §8§l» §r§cUnknown subcommand, use §8/§cp help to see available commands",
+            "usage": "§9Plot §8§l» §r§cUse §8/§cplot §8<§chelp§8|§csub-cmd§8> §8[§coptions§8]"
+        },
+        "confirm": "confirm",
+        "deny": {
+            "already": {
+                "denied": "§9Plot §8§l» §r§c{player} is already blocked..."
+            },
+            "desc": "§7Blocks all or a player from entering your plot",
+            "everyone": {
+                "success": "§9Plot §8§l» §r§7All players were blocked!"
+            },
+            "name": "deny",
+            "success": "§9Plot §8§l» §r§9{player} §7was blocked successfully!",
+            "usage": "§8/§cp deny §8<§cplayer§8|§c*§8>"
+        },
+        "denytransfer": {
+            "desc": "§7Denies a plot transfer",
+            "name": "denytransfer",
+            "no_pending": "§cSystem §8§l» §r§cYou have no pending requests...",
+            "notify_sender": "§9Plot §8§l» §r§9{player} §7declined the plot transfer...",
+            "success": "§9Plot §8§l» §r§7You declined the plot transfer...",
+            "usage": "§8/§cp denytransfer"
+        },
+        "dispose": {
+            "alias": "d",
+            "confirm": "§9Plot §8§l» §r§7Are you sure you want to discard plot §9{plot}§7? Use §8/§7p dispose confirm",
+            "desc": "§7Discards your plot",
+            "name": "dispose",
+            "success": "§9Plot §8§l» §r§7Plot discarded successfully!",
+            "usage": "§8/§cp dispose"
+        },
+        "error": "§9Plot §8§l» §r§cOops! Something went wrong...",
+        "generate": {
+            "alias": "gen",
+            "desc": "§7Generates a new plot world",
+            "error": "§9Plot §8§l» §r§cThe world could not be generated...",
+            "exists": "§9Plot §8§l» §r§cWorld {name} already exists",
+            "name": "generate",
+            "success": "§9Plot §8§l» §r§7Plot world generated successfully: {name}",
+            "usage": "§8/§cp generate §8<§cname§8>"
+        },
+        "give": {
+            "alias": "g",
+            "desc": "§7Gives your plot to another player",
+            "expired": "§9Plot §8§l» §r§cThe plot transfer request has expired...",
+            "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §7Plot §9Transfer§8===-=-=-",
+            "instructions": "§9Plot §8§l» §r§7Use §a/p accepttransfer §7to accept or §c/p denytransfer §7to decline",
+            "name": "give",
+            "notonline": "§9Plot §8§l» §r§cPlayer is offline",
+            "pending_exists": "§cSystem §8§l» §r§cThis player already has a pending request...",
+            "request": "§9Plot §8§l» §r§9{player} §7wants to give you plot §9{x}§8;§9{z}",
+            "requests_disabled": "§cSystem §8§l» §r§cThis player has disabled receiving requests...",
+            "sent": "§9Plot §8§l» §r§7Transfer request sent to §9{player}§7!",
+            "toself": "§9Plot §8§l» §r§cYou can't give a plot to yourself...",
+            "usage": "§8/§cp give §8<§cplayer§8>"
+        },
+        "help": {
+            "alias": "help",
+            "desc": "§7Shows Plot commands",
+            "entry": "§9Plot §8§l» §r§8/§7p {name} §8-§7 {desc}",
+            "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §9Plot §8(§f{page}§8/§f{total}§8) §8===-=-=-=-",
+            "name": "help",
+            "usage": "§8/§cp help §8<§cpage§8>"
+        },
+        "homes": {
+            "alias": "hs",
+            "desc": "§7Shows your plots",
+            "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §9Plots §8(§f{page}§8/§f{total}§8) §8===-=-=-=-",
+            "invalid_page": "§cSystem §8§l» §r§cInvalid page, there are only §c{total} §cpages...",
+            "name": "homes",
+            "noplots": "§9Plot §8§l» §r§cYou have no plots...",
+            "usage": "§8/§cp homes"
+        },
+        "info": {
+            "about": "§9Plot §8§l» §r§7Information about plot §9{plot}",
+            "alias": "i",
+            "allowed": "§9Plot §8§l» §r§7Allowed §8(§f{count}§8):§7 {players}",
+            "biome": "§9Plot §8§l» §r§7Biome§8:§9 {biome}",
+            "denied": "§9Plot §8§l» §r§7Denied §8(§f{count}§8):§7 {players}",
+            "desc": "§7Shows information about a plot",
+            "helpers": "§9Plot §8§l» §r§7Helpers §8(§f{count}§8):§7 {helpers}",
+            "name": "info",
+            "owner": "§9Plot §8§l» §r§7Owner§8:§9 {owner}",
+            "plotname": "§9Plot §8§l» §r§7Name§8:§9 {name}",
+            "rating": "§9Plot §8§l» §r§7Rating§8:§9 {score} §8(§9{count} §7ratings§8)",
+            "usage": "§8/§cp info"
+        },
+        "name": {
+            "alias": "n",
+            "desc": "§7Sets or changes the plot name",
+            "name": "name",
+            "success": "§9Plot §8§l» §r§7Plot name changed to §7\"§9{name}§7\" successfully!",
+            "usage": "§8/§cp name §8<§cname§8>"
+        },
+        "notinplot": "§9Plot §8§l» §r§cYou are not inside a plot...",
+        "notowner": "§9Plot §8§l» §r§cYou don't own this plot...",
+        "popup": {
+            "_prefix": "§9Plot §8§l» §r",
+            "available": "§7This plot is free! Claim it for §c{price} Akunas §7with /p claim",
+            "owner": "§7Owned by §9{owner} §8- §7Rating§8:§9 {rating}",
+            "rate": "§7Like this plot? Rate it with §8/§7p rate!"
+        },
+        "rate": {
+            "alias": "rate",
+            "desc": "§7Rates a plot",
+            "invalid_range": "§9Plot §8§l» §r§cThe rating must be between 1 and 5...",
+            "name": "rate",
+            "notify_owner": "§9Plot §8§l» §r §9{player} §7rated your plot §9{x}§8;§9{z} §7with §9{rating} §7stars!",
+            "self": "§9Plot §8§l» §r§cYou cannot rate your own plot...",
+            "success": "§9Plot §8§l» §r§7Rating submitted! Plot average rating§8:§9 {score}",
+            "usage": "§8/§cp rate §8<§cscore - 1 to 5§8>"
+        },
+        "removehelper": {
+            "alias": "delh",
+            "desc": "§7Removes a helper from your plot",
+            "everyone": {
+                "success": "§9Plot §8§l» §r§7All players were removed from helpers!"
+            },
+            "name": "removehelper",
+            "notone": "§9Plot §8§l» §r§c{player} is not a helper...",
+            "success": "§9Plot §8§l» §r§9{player} §7was removed from helpers...",
+            "usage": "§8/§cp removehelper §8<§cplayer§8>"
+        },
+        "reset": {
+            "alias": "r",
+            "already_clearing": "§9Plot §8§l» §r§cThis plot is already being reset...",
+            "confirm": "§9Plot §8§l» §r§7Are you sure you want to reset plot §9{plot}§7? Use §8/§7p reset confirm",
+            "desc": "§7Resets your plot",
+            "name": "reset",
+            "success": "§9Plot §8§l» §r§7Plot reset successfully!",
+            "usage": "§8/§cp reset"
+        },
+        "resetplots": {
+            "alias": "rsp",
+            "desc": "§7Resets all plots of a player",
+            "name": "resetplots",
+            "usage": "§8/§cp resetplots §8<§cplayer§8>"
+        },
+        "subcommand": {
+            "usage": "§9Plot §8§l» §r§cUsage: {usage}"
+        },
+        "top": {
+            "alias": "best",
+            "desc": "§7Shows the top 10 highest rated plots",
+            "entry": "§9{pos} §8§l» §r§9{x}§8;§9{z} §8-§9 {owner} §8- §9{score} §8(§9{ratings} §7Ratings§8)",
+            "header": "§8-=-=-=-=== §bTop 10 §8- §9Plots §8===-=-=-=-",
+            "name": "top",
+            "noplots": "§9Plot §8§l» §r§cNo rated plots found...",
+            "usage": "§8/§cp top"
+        },
+        "warp": {
+            "alias": "w",
+            "desc": "§7Teleports to a plot",
+            "name": "warp",
+            "notinplotworld": "§9Plot §8§l» §r§cYou are not in the Plot world...",
+            "success": "§9Plot §8§l» §r§7You were teleported to plot §9{plot}§7!",
+            "unclaimed": "§9Plot §8§l» §r§cThis plot doesn't belong to anyone...",
+            "usage": "§8/§cp warp §8<§cid§8>",
+            "wrongid": "§9Plot §8§l» §r§cThe id must be in X;Z format"
+        }
+    },
+    "cosmetic": {
+        "_prefix": "§5コスメティック §8§l» §r",
+        "trail": {
+            "activated": "§7トレイル §5{type} §7を正常に有効にしました！",
+            "deactivated": "§7トレイルを正常に無効にしました！",
+            "invalid": "§c無効なトレイルです..."
+        },
+        "gadget": {
+            "activated": "§7ガジェット §5{type} §7を正常に有効にしました！",
+            "deactivated": "§7ガジェットを正常に無効にしました！",
+            "invalid": "§c無効なガジェットです..."
+        },
+        "bedwars": {
+            "bed_break": {
+                "explosion": {
+                    "description": "A devastating explosion when breaking the bed"
+                },
+                "ores": {
+                    "description": "Precious ores explode around the destroyed bed"
+                },
+                "rainbow": {
+                    "description": "A colorful wool explosion when breaking the bed"
+                }
+            },
+            "final_kill": {
+                "blood": {
+                    "description": "Blood..."
+                },
+                "critical": {
+                    "description": "Critical particles explode over the eliminated enemy"
+                },
+                "ez": {
+                    "description": "Displays an EZ text"
+                },
+                "lightning": {
+                    "description": "A lightning bolt strikes the killed player"
+                },
+                "loser": {
+                    "description": "Displays an L text"
+                },
+                "smoke": {
+                    "description": "A cloud of smoke rises over the eliminated enemy"
+                }
+            },
+            "kill": {
+                "critical": {
+                    "description": "Critical particles explode on each kill"
+                },
+                "hearts": {
+                    "description": "Red hearts float over the victim"
+                },
+                "smoke": {
+                    "description": "A cloud of smoke marks each kill"
+                }
+            },
+            "win": {
+                "enchant": {
+                    "description": "Magical particles surround the winner"
+                },
+                "firework": {
+                    "description": "Colorful fireworks explode around the winner"
+                }
+            },
+            "wood_type": {
+                "acacia": {
+                    "description": "Reddish acacia wood"
+                },
+                "birch": {
+                    "description": "Light birch wood"
+                },
+                "dark_oak": {
+                    "description": "Dark oak wood"
+                },
+                "jungle": {
+                    "description": "Exotic jungle wood"
+                },
+                "oak": {
+                    "description": "Classic oak wood"
+                },
+                "spruce": {
+                    "description": "Dark spruce wood"
+                }
+            }
+        },
+        "blocksumo": {
+            "final_kill": {
+                "blood": {
+                    "description": "Blood..."
+                },
+                "critical": {
+                    "description": "Critical particles explode over the eliminated enemy"
+                },
+                "ez": {
+                    "description": "Displays EZ text on final kill"
+                },
+                "lightning": {
+                    "description": "A lightning bolt strikes the eliminated player"
+                },
+                "loser": {
+                    "description": "Displays L text on final kill"
+                },
+                "smoke": {
+                    "description": "A smoke cloud rises over the eliminated enemy"
+                }
+            },
+            "kill": {
+                "blood": {
+                    "description": "Blood splatters at the victim position"
+                },
+                "critical": {
+                    "description": "Critical particles explode on each kill"
+                },
+                "ez": {
+                    "description": "EZ floats above the victim"
+                },
+                "hearts": {
+                    "description": "Red hearts float over the victim"
+                },
+                "lightning": {
+                    "description": "A lightning bolt strikes the victim on death"
+                },
+                "loser": {
+                    "description": "L floats above the victim"
+                },
+                "smoke": {
+                    "description": "A smoke cloud marks each kill"
+                }
+            },
+            "win": {
+                "enchant": {
+                    "description": "Magical particles surround the winner"
+                },
+                "firework": {
+                    "description": "Colorful fireworks explode around the winner"
+                }
+            },
+            "wool_color": {
+                "black": {
+                    "description": "Dark black wool"
+                },
+                "blue": {
+                    "description": "Intense blue wool"
+                },
+                "cyan": {
+                    "description": "Refreshing cyan wool"
+                },
+                "green": {
+                    "description": "Bright green wool"
+                },
+                "orange": {
+                    "description": "Energetic orange wool"
+                },
+                "pink": {
+                    "description": "Delicate pink wool"
+                },
+                "purple": {
+                    "description": "Mysterious purple wool"
+                },
+                "red": {
+                    "description": "Vibrant red wool"
+                },
+                "white": {
+                    "description": "Default white wool"
+                },
+                "yellow": {
+                    "description": "Radiant yellow wool"
+                }
+            }
+        },
+        "skywars": {
+            "kill": {
+                "blood": {
+                    "description": "Blood splatters at the victim position"
+                },
+                "critical": {
+                    "description": "Critical particles explode on each kill"
+                },
+                "ez": {
+                    "description": "EZ floats above the victim"
+                },
+                "hearts": {
+                    "description": "Red hearts float over the victim"
+                },
+                "lightning": {
+                    "description": "A lightning bolt strikes the victim on death"
+                },
+                "loser": {
+                    "description": "L floats above the victim"
+                },
+                "smoke": {
+                    "description": "A smoke cloud marks each kill"
+                }
+            },
+            "win": {
+                "enchant": {
+                    "description": "Magical particles surround the winner"
+                },
+                "firework": {
+                    "description": "Colorful fireworks explode around the winner"
+                }
+            }
+        }
+    },
+    "cosmetics": {
+        "_prefix": "§5コスメティック §8§l» §r",
+        "activated": "§7コスメティック §5{type} §7を正常に有効にしました！",
+        "deactivated": "§7コスメティックを正常に無効にしました！",
+        "invalid_type": "§c無効なコスメティックです... §8/§c{label} list で利用可能なリストを確認",
+        "invalid_world": "§cここではコスメティックを使用できません...",
+        "list": {
+            "_prefix": "§5Cosmetics §8§l» §r",
+            "owned": "§7所有済み§8:§7 {cosmetics}",
+            "title": "§7コスメティックリスト§8:",
+            "unowned": "§7未所有§8:§7 {cosmetics}"
+        },
+        "no_active": "§cアクティブなコスメティックがありません...",
+        "usage": "§5Cosmetics §8§l» §r§c§8/§c{label} §8<§cbuy§8|§con§8|§coff§8|§clist§8|§cinfo§8> を使用してください",
+        "buy": {
+            "_prefix": "§5Cosmetics §8§l» §r",
+            "already_owned": "§cこのコスメティックはすでに所有しています！",
+            "perm_only": "§cこのコスメティックは権限専有です！",
+            "success": "§7コスメティック §5{cosmetic}§7 を §c{cost} Akunas で購入しました",
+            "usage": "§c§8/§c{label} buy §8<§ccosmetic§8> [minigame] [type] を使用してください"
+        },
+        "cosmetic": {
+            "_prefix": "§5Cosmetics §8§l» §r",
+            "ambiguous": "§cこの名前は複数のタイプに存在します。ミニゲームとタイプを指定してください！",
+            "not_found": "§cコスメティックが見つかりません..."
+        },
+        "info": {
+            "_prefix": "§5Cosmetics §8§l» §r",
+            "active": "§7有効§8: §5{active}",
+            "cost": "§7価格§8:§c {cost} Akunas",
+            "description": "§7説明§8: §5{description}",
+            "minigame": "§7ミニゲーム§8: §5{minigame}",
+            "perm_only": "§7アンロック§8: §5権限専有",
+            "status": "§7ステータス§8: §5{status}",
+            "title": "§7§5{cosmetic}§8 の情報:",
+            "type": "§7タイプ§8: §5{type}",
+            "usage": "§c§8/§c{label} info §8<§ccosmetic§8> [§cminigame§8] [§ctype§8] を使用してください"
+        },
+        "minigame": {
+            "invalid": "§5Cosmetics §8§l» §r§c無効なミニゲーム！",
+            "_prefix": ""
+        },
+        "set": {
+            "_prefix": "§5Cosmetics §8§l» §r",
+            "failed": "§cコスメティックの有効化に失敗しました！",
+            "not_owned": "§cこのコスメティックを所有していません！",
+            "success": "§7コスメティック §5{cosmetic}§7 を有効化しました",
+            "usage": "§c§8/§c{label} on §8<§ccosmetic§8> [§cminigame§8] [§ctype§8] を使用してください"
+        },
+        "type": {
+            "invalid": "§5Cosmetics §8§l» §r§c無効なコスメティックタイプ！"
+        },
+        "unset": {
+            "_prefix": "§5Cosmetics §8§l» §r",
+            "success": "§7デフォルトコスメティックを §5{minigame} §8[§5{type}§8] で有効化しました",
+            "usage": "§c§8/§c{label} off §8<§cminigame§8> §8<§ctype§8> を使用してください"
+        }
+    },
+    "cosmeticswindow": {
+        "title": "§5コスメティック",
+        "buy": {
+            "title": "§7購入§8: §7{cosmetic} §8- §c{cost}",
+            "success": "§5コスメティック §8§l» §r§7コスメティック §5{cosmetic} §7を購入しました！",
+            "confirm": "§a確認",
+            "cancel": "§cキャンセル"
+        },
+        "set": {
+            "success": "§5コスメティック §8§l» §r§7コスメティック §5{cosmetic} §7を正常に有効にしました！"
+        },
+        "disable": {
+            "button": "§cコスメティックを無効化",
+            "success": "§5コスメティック §8§l» §r§7コスメティックを正常に無効にしました！",
+            "all_success": "§5Cosmetics §8§l» §r§7すべてのコスメティックを無効化しました",
+            "button_all": "§cすべてのコスメティックを無効化",
+            "button_minigame": "§cモードのコスメティックを無効化",
+            "button_type": "§cタイプのコスメティックを無効化",
+            "minigame_success": "§5Cosmetics §8§l» §r§7デフォルトコスメティックを §5{minigame} で有効化しました",
+            "type_success": "§5Cosmetics §8§l» §r§7デフォルトコスメティックを §5{minigame} §8[§5{type}§8] で有効化しました"
+        },
+        "nav": {
+            "prev_page": "§a« 前のページ",
+            "current_page": "§8» §f現在のページ",
+            "next_page": "§a次のページ »",
+            "back": "§c« メニューに戻る"
+        },
+        "cost_label": "§c{cost} Akunas",
+        "invalid_minigame": "§5Cosmetics §8§l» §r§c無効なミニゲーム...",
+        "invalid_type": "§5Cosmetics §8§l» §r§c無効なタイプ...",
+        "perm_only_label": "§5権限専有",
+        "perm_required": "§5Cosmetics §8§l» §r§cこのコスメティックを使用する権限がありません！"
+    },
+    "pay": {
+        "_prefix": "§a経済 §8§l» §r",
+        "invalid_amount": "§c金額は数値でなければならず、0以下であってはなりません...",
+        "not_enough": "§c十分なコインがありません...",
+        "received": "§a{sender} §7から §c{amount} コイン§7を受け取りました！",
+        "self": "§c自分自身に送金できません！",
+        "sent": "§a{target} §7に §c{amount} コイン§7を正常に送金しました！",
+        "usage": "§c§8/§c{label} §8<§cプレイヤー§8> <§c金額§8> を使用してください",
+        "insufficient_balance": "§cYou don't have enough Akunas to make this transaction...",
+        "receive": "§7You received §c{amount} Akunas§7 from §a{player}§7!",
+        "success": "§7You sent §c{amount} Akunas§7 to §a{target}'s account successfully!"
+    },
+    "economy": {
+        "_prefix": "§a経済 §8§l» §r",
+        "not_enough": "§c十分なコインがありません...",
+        "tax_applied": "§cA tax of {tax} Akunas was applied... Total debited: {total} Akunas"
+    },
+    "skill": {
+        "_prefix": "§6スキル §8§l» §r",
+        "activated": "§7スキル §6{skill} §7を正常に有効にしました！",
+        "deactivated": "§7スキルを正常に無効にしました！",
+        "invalid": "§c無効なスキルです...",
+        "no_active": "§cアクティブなスキルがありません...",
+        "usage": "§c§8/§c{label} §8<§con§8|§coff§8|§clist§8> を使用してください",
+        "archer": {
+            "description": "Gain an arrow when hitting enemies"
+        },
+        "bedbreaker": {
+            "description": "When breaking an enemy bed, you receive Speed II and Jump Boost II for 10 seconds"
+        },
+        "bird": {
+            "description": "You receive 2 extra feathers"
+        },
+        "builder": {
+            "description": "Gives you double the blocks"
+        },
+        "cheststealer": {
+            "description": "When clicking on a chest, you automatically receive its items"
+        },
+        "enderpearl": {
+            "description": "Now you can use snowballs as an ender pearl!"
+        },
+        "explosivebow": {
+            "description": "Causes a small explosion where your arrow lands"
+        },
+        "featherboost": {
+            "description": "Increases your feather boost"
+        },
+        "firearrow": {
+            "description": "Arrows set enemies on fire upon hitting them"
+        },
+        "fireballboost": {
+            "description": "Increases the fireball boost on other players"
+        },
+        "fury": {
+            "description": "When killing a player, you receive Speed and Strength effects for 8 seconds"
+        },
+        "hook": {
+            "description": "Arrows pull the enemy forward when hitting them"
+        },
+        "killer": {
+            "description": "You receive Strength and Jump Boost effects when killing a player"
+        },
+        "life": {
+            "description": "Gives you 4 extra hearts"
+        },
+        "miner": {
+            "description": "You have infinite Haste I"
+        },
+        "slingshotboost": {
+            "description": "Increases the Estilingue boost"
+        },
+        "slow": {
+            "description": "When hitting a player with an egg, you apply a slowness effect for 4 seconds"
+        },
+        "sprinter": {
+            "description": "You receive Speed II for 11 seconds",
+            "description_sw": "You receive Speed II at the start of the match"
+        },
+        "switcher": {
+            "description": "When hitting someone with a snowball, you switch places with that person"
+        },
+        "tanker": {
+            "description": "You receive an iron chestplate"
+        },
+        "thief": {
+            "description": "Receive 20% of the player's feathers when killing them..."
+        },
+        "tntegg": {
+            "description": "When throwing an egg, you spawn a TNT!"
+        },
+        "towerspeed": {
+            "description": "Increases the building speed of the compact tower"
+        },
+        "trapbuff": {
+            "description": "When your trap is activated, you gain Strength and Speed II for 6 seconds"
+        },
+        "trapresistance": {
+            "description": "Reduces the duration of negative trap effects by 2 seconds"
+        }
+    },
+    "skills": {
+        "_prefix": "§aスキル §8§l» §r",
+        "activated": "§7スキル §6{type} §7を正常に有効にしました！",
+        "deactivated": "§7スキルを正常に無効にしました！",
+        "invalid_type": "§c無効なスキルです... §8/§c{label} list で利用可能なリストを確認",
+        "invalid_world": "§cここではスキルを使用できません...",
+        "list": {
+            "owned": "§7所有済み§8:§7 {skills}",
+            "title": "§7スキルリスト§8:",
+            "unowned": "§7未所有§8:§7 {skills}",
+            "_prefix": ""
+        },
+        "no_active": "§cアクティブなスキルがありません...",
+        "usage": "§c§8/§c{label} §8<§cbuy§8|§con§8|§coff§8|§clist§8|§cinfo§8> を使用してください",
+        "activate": {
+            "already_active": "§cこのスキルはすでに有効です...",
+            "failed": "§cスキルの有効化に失敗しました！",
+            "limit_reached": "§c有効スキルの上限 {limit} に達しています...",
+            "not_owned": "§cこのスキルを所有していません！",
+            "success": "§7スキル §a{skill}§7 を有効化しました",
+            "usage": "§c§8/§c{label} on §8<§cskill§8> [minigame] を使用してください"
+        },
+        "buy": {
+            "already_owned": "§cこのスキルはすでに所有しています！",
+            "success": "§7スキル §a{skill}§7 を §c{cost} Akunas で購入しました",
+            "usage": "§c§8/§c{label} buy §8<§cskill§8> [minigame] を使用してください",
+            "_prefix": ""
+        },
+        "cooldown": {
+            "archer": "§cスキル Archer はクールダウン中...",
+            "cheststealer": "§cスキル Cheststealer はクールダウン中...",
+            "enderpearl": "§cスキル Enderpearl はクールダウン中...",
+            "hook": "§cスキル Hook はクールダウン中...",
+            "tntegg": "§cスキル Tntegg はクールダウン中..."
+        },
+        "deactivate": {
+            "all_success": "§7すべてのスキルを無効化しました",
+            "minigame_all_success": "§7§a{minigame} §7のすべてのスキルを無効化しました！",
+            "not_active": "§cこのスキルは有効ではありません！",
+            "success": "§7スキル §a{skill}§7 を無効化しました",
+            "usage": "§c§8/§c{label} off §8<§cminigame§8> <§cskill§8> を使用してください"
+        },
+        "info": {
+            "active": "§7有効§8: §a{active}",
+            "cost": "§7価格§8:§c {cost} Akunas",
+            "description": "§7説明§8: §a{description}",
+            "status": "§7ステータス§8: §a{status}",
+            "title": "§7スキル §a{skill}§8 の情報:",
+            "usage": "§c§8/§c{label} info §8<§cskill§8> [minigame] を使用してください",
+            "_prefix": ""
+        },
+        "skill": {
+            "not_found": "§aSkills §8§l» §r§cスキルが見つかりません...",
+            "_prefix": ""
+        }
+    },
+    "skillswindow": {
+        "title": "§6スキル",
+        "buy": {
+            "title": "§7購入§8: §7{skill} §8- §c{cost}",
+            "success": "§6スキル §8§l» §r§7スキル §6{skill} §7を購入しました！",
+            "confirm": "§a確認",
+            "cancel": "§cキャンセル",
+            "success_active": "§aSkills §8§l» §r§7You successfully purchased and activated the skill §a{skill} §7!"
+        },
+        "set": {
+            "success": "§6スキル §8§l» §r§7スキル §6{skill} §7を正常に有効にしました！"
+        },
+        "disable": {
+            "button": "§cスキルを無効化",
+            "success": "§6スキル §8§l» §r§7スキルを正常に無効にしました！",
+            "all_minigame_success": "§aSkills §8§l» §r§7§a{minigame} §7のすべてのスキルを無効化しました！",
+            "all_success": "§aSkills §8§l» §r§7すべてのスキルを無効化しました",
+            "button_all": "§cすべてのスキルを無効化",
+            "button_minigame": "§cすべてのモードスキルを無効化"
+        },
+        "nav": {
+            "prev_page": "§a« 前のページ",
+            "current_page": "§8» §f現在のページ",
+            "next_page": "§a次のページ »"
+        },
+        "activate": {
+            "_prefix": "§aSkills §8§l» §r",
+            "limit_reached": "§cこのミニゲームの有効スキル上限 {limit} に達しています...",
+            "success": "§7スキル §a{skill} §7を有効化しました！"
+        },
+        "invalid_minigame": "§aSkills §8§l» §r§c無効なミニゲーム..."
+    },
+    "chest": {
+        "_prefix": "§6チェスト §8§l» §r",
+        "opened": "§7§6{type} §7チェストを開けました！",
+        "no_chest": "§c開けられるチェストがありません...",
+        "usage": "§c§8/§c{label} §8<§cタイプ§8> を使用してください",
+        "empty": "§cChest is empty..."
+    },
+    "inventory": {
+        "_prefix": "§cシステム §8§l» §r",
+        "full": "§cインベントリが満杯です...",
+        "saved": "§7インベントリを保存しました！",
+        "restored": "§7インベントリを復元しました！"
+    },
+    "kit": {
+        "_prefix": "§9キット §8§l» §r",
+        "activated": "§7キット §9{kit} §7を正常に有効にしました！",
+        "deactivated": "§7キットを正常に無効にしました！",
+        "invalid": "§c無効なキットです...",
+        "no_active": "§cアクティブなキットがありません...",
+        "no_permission": "§cキット §9{kit}§c を使用する権限がありません！",
+        "archer": {
+            "description": "Archer kit with feathers and eggs"
+        },
+        "assassin": {
+            "description": "Stealth assassin kit"
+        },
+        "builder": {
+            "description": "Kit for quick building"
+        },
+        "eco": {
+            "description": "Kit created by zLitePvPz"
+        },
+        "godness": {
+            "description": "Special kit for VIPs"
+        },
+        "juggernaut": {
+            "description": "Brute force kit"
+        },
+        "lumberjack": {
+            "description": "Lumberjack kit with wood"
+        },
+        "medic": {
+            "description": "Medic kit with healing"
+        },
+        "miner": {
+            "description": "Mining kit"
+        },
+        "mágico": {
+            "description": "Potion kit"
+        },
+        "ninja": {
+            "description": "Ninja kit with mobility"
+        },
+        "pyro": {
+            "description": "Pyromaniac kit with fire"
+        },
+        "rush": {
+            "description": "Rush kit"
+        },
+        "scout": {
+            "description": "Advanced scouting kit"
+        },
+        "sniper": {
+            "description": "Elite sniper kit"
+        },
+        "tank": {
+            "description": "Tank kit with high defense"
+        },
+        "thrower": {
+            "description": "Projectile kit"
+        },
+        "trap": {
+            "description": "Trap kit..."
+        },
+        "w3lton": {
+            "description": "Kit created by W3lton (SrMathBR)"
+        },
+        "xyp": {
+            "description": "Kit created by srxyp"
+        },
+        "yt": {
+            "description": "Special kit for Youtubers"
+        }
+    },
+    "kits": {
+        "_prefix": "§9キット §8§l» §r",
+        "activated": "§7キット §9{type} §7を正常に有効にしました！",
+        "deactivated": "§7キットを正常に無効にしました！",
+        "invalid_type": "§c無効なキットです... §8/§c{label} list で利用可能なリストを確認",
+        "list": {
+            "_prefix": "§9Kits §8§l» §r",
+            "owned": "§7所有済み§8:§7 {kits}",
+            "title": "§7キットリスト§8:",
+            "unowned": "§7未所有§8:§7 {kits}"
+        },
+        "no_active": "§cアクティブなキットがありません...",
+        "usage": "§c§8/§c{label} §8<§cbuy§8|§con§8|§coff§8|§clist§8|§cinfo§8> を使用してください",
+        "buy": {
+            "_prefix": "§9Kits §8§l» §r",
+            "already_owned": "§cこのキットはすでに所有しています！",
+            "no_permission": "§cこのキットを購入する権限がありません！",
+            "success": "§7キット §9{kit}§7 を §c{cost} で購入しました",
+            "usage": "§c§8/§c{label} buy §8<§ckit§8> を使用してください"
+        },
+        "info": {
+            "_prefix": "§9Kits §8§l» §r",
+            "active": "§7有効§8: §9{active}",
+            "cost": "§7価格§8:§c {cost}",
+            "description": "§7説明§8: §9{description}",
+            "status": "§7ステータス§8: §9{status}",
+            "title": "§7キット §9{kit}§8 の情報:",
+            "usage": "§c§8/§c{label} info §8<§ckit§8> を使用してください"
+        },
+        "kit": {
+            "not_found": "§9Kits §8§l» §r§cキットが見つかりません...",
+            "_prefix": ""
+        },
+        "set": {
+            "_prefix": "§9Kits §8§l» §r",
+            "failed": "§cキットの有効化に失敗しました！",
+            "not_owned": "§cこのキットを所有していません！",
+            "success": "§7キット §9{kit}§7 を有効化しました",
+            "usage": "§c§8/§c{label} on §8<§ckit§8> を使用してください"
+        },
+        "unset": {
+            "_prefix": "§9Kits §8§l» §r",
+            "success": "§7キットを無効化しました",
+            "usage": "§c§8/§c{label} off を使用してください"
+        }
+    },
+    "kitswindow": {
+        "title": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §9キット §8===-=-=-=-",
+        "buy": {
+            "title": "§7購入§8: §7{kit} §8- §c{cost}",
+            "success": "§9キット §8§l» §r§7キット §9{kit} §7を購入しました！",
+            "confirm": "§a確認",
+            "cancel": "§cキャンセル"
+        },
+        "disable": {
+            "button": "§cキットを無効化",
+            "success": "§9Kits §8§l» §r§7キットを無効化しました！",
+            "success_kit": "§9Kits §8§l» §r§7キット §9{kit} §7を無効にしました"
+        },
+        "set": {
+            "success": "§9キット §8§l» §r§7キット §9{kit} §7を正常に有効にしました！"
+        },
+        "nav": {
+            "prev_page": "§a« 前のページ",
+            "current_page": "§8» §f現在のページ",
+            "next_page": "§a次のページ »"
+        }
+    },
+    "duels": {
+        "command": {
+            "_prefix": "§2デュエル §8§l» §r",
+            "in_duel": "§cデュエル中はこのコマンドを使用できません！",
+            "player_only": "§cプレイヤーのみこのコマンドを使用できます..."
+        },
+        "status": {
+            "_prefix": "§2デュエル §8§l» §r",
+            "starting": "§7デュエルが始まりました！",
+            "countdown": "§7§2{seconds}秒 §7後に開始します",
+            "ending_countdown": "§7§2{seconds}秒 §7後にロビーに戻ります"
+        },
+        "item": {
+            "play_again": "§8-> §aもう一度プレイ",
+            "quit": "§8-> §c退出"
+        },
+        "queue": {
+            "_prefix": "§2デュエル §8§l» §r",
+            "not_found": "§cモード {kit} は存在しません！",
+            "joined": "§7§2{mode}§r§7 モードのキューに正常に参加しました！",
+            "left": "§7§c{mode}§7 モードのキューから退出しました！",
+            "timeout": "§c他のプレイヤーが見つからなかったため、自動的にキューから削除されました..."
+        }
+    },
+    "addbalance": {
+        "_prefix": "§a経済 §8§l» §r",
+        "invalid_number": "§c数量は数値でなければならず、0以下であってはなりません...",
+        "receive": "§7§c{amount} コイン§7を受け取りました！",
+        "success": "§7§a{target} §7のアカウントに §c{amount} コイン§7を正常に追加しました！",
+        "usage": "§c§8/§c{label} §8<§cプレイヤー§8> <§c数量§8> を使用してください"
+    },
+    "auth": {
+        "error": {
+            "_prefix": "§e認証 §8§l» §r",
+            "account": {
+                "_prefix": "",
+                "limit": "§e認証 §8§l» §r§c登録アカウントの上限に達しました..."
+            },
+            "already": {
+                "haspassword": "§cすでにパスワードがあります。変更するには §8/§cパスワード変更 を使用してください...",
+                "loggedin": "§cすでにログインしています...",
+                "registered": "§cすでに登録されています..."
+            },
+            "clientid": {
+                "_prefix": "",
+                "mismatch": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §e認証 §8===-=-=-=-{n}§cこのアカウントはすでに別のデバイスで登録されています..."
+            },
+            "incorrect": {
+                "_prefix": "",
+                "password": "§e認証 §8§l» §r§cパスワードが間違っています..."
+            },
+            "invalidpassword": "§cパスワードは {minLength} 〜 {maxLength} 文字で、英字・数字・一般的な記号のみ使用できます",
+            "notregistered": "§c登録されていません...",
+            "password": {
+                "_prefix": "",
+                "match": "§e認証 §8§l» §r§cパスワードが一致しません..."
+            },
+            "use": {
+                "_prefix": "",
+                "commands": "§e認証 §8§l» §r§cコマンドを使用するには認証が必要です..."
+            },
+            "weakpassword": {
+                "login": "§cパスワードが簡単すぎます。§8/§cchp §cで変更してください...",
+                "register": "§cパスワードが簡単すぎます。別のパスワードを選んでください..."
+            }
+        },
+        "join": {
+            "_prefix": "",
+            "msg": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§e認証 §8§l» §r§7こんにちは §e{user}§7、§fi§cAkuna§9MC§7 へようこそ！"
+        },
+        "login": {
+            "_prefix": "",
+            "already": {
+                "_prefix": "",
+                "online": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §e認証 §8===-=-=-=-{n}§cそのユーザー名のプレイヤーはすでにオンラインです..."
+            },
+            "timeout": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §e認証 §8===-=-=-=-{n}§cログイン時間が終了しました...",
+            "toomany": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §e認証 §8===-=-=-=-{n}§c認証の試行が多すぎます..."
+        },
+        "need": {
+            "_prefix": "§e認証 §8§l» §r",
+            "login": "§7§8/§7login §8<§7パスワード§8> §7でログインしてください",
+            "register": "§7§8/§7register §8<§7パスワード§8> §7で登録してください"
+        },
+        "success": {
+            "_prefix": "§e認証 §8§l» §r",
+            "auto": {
+                "_prefix": "",
+                "register": "§e認証 §8§l» §r§7ようこそ！アカウントが自動作成されました。§8/§7register §8<§7パスワード§8> §7で保護してください"
+            },
+            "autologin": "§7自動的にログインしました！",
+            "chp": "§7パスワードが正常に変更されました！",
+            "login": "§7ログインしました！",
+            "register": "§7正常に登録されました！§c登録することで §8/§cルール §cに同意したことになります..."
+        }
+    },
+    "automsg": {
+        "_prefix": "§cシステム §8§l» §r",
+        "akuna_ai": "§7§cAkuna§r§7、私たちのAIをご存知ですか？チャットで §8\"§cAkuna, 質問§8\" §7と書くと答えてくれます！",
+        "block": "§7プレイヤーをブロックできることをご存知ですか？§8/§7block を使用してください",
+        "daily": "§7毎日ログインすると§c コイン §7や §9XP倍増器§7が貰える毎日報酬があることをご存知ですか？",
+        "discord": "§7Discordに参加してください！§chttps://discord.iakunamc.com",
+        "exit_minigames": "§7ミニゲームからロビーに戻るには §8/§clobby を使用してください",
+        "friends": "§7友達をサーバーに招待してください！IPは §8/§7ip で確認できます",
+        "hackers": "§7チーターを見かけましたか？§8/§creport §8<§c名前§8> <§c理由§8> §7で報告してください！",
+        "launch": "§7§ciAkunaMC §7は2022年2月から成長し続けています。ここでプレイしてくれてありがとう！",
+        "marry": "§7他のプレイヤーと結婚してXPの25%を獲得できます！§8/§7marry を使用してください",
+        "missions": "§7毎日ミッションをクリアして素晴らしいボーナスを獲得！§8/§cミッション §7で確認できます",
+        "nopromote": "§7チャットやテルで§c他のサーバーを宣伝§7しないでください。§cBANされます§7！",
+        "nosamepass": "§7他のサーバーで同じパスワードを使わないでください！§8/§cpin §7でアカウントを保護できます！",
+        "rules": "§7§8/§cルール§7を読みましたか？知らなくても§c罰を免れません§7！",
+        "staff": "§7スタッフの一員になりたいですか？§chttps://staff.iakunamc.com にアクセスしてください",
+        "yt": "§7YouTubeでサーバーの動画を作成して特別タグを獲得！要件は §8/§cyt で確認"
+    },
+    "backpack": {
+        "_prefix": "§cシステム §8§l» §r",
+        "buy": {
+            "already_exists": "§cその名前のバックパックはすでに存在します...",
+            "error": "§cバックパック購入エラー...",
+            "invalid_length": "§c名前は3〜20文字でなければなりません...",
+            "limit": "§cバックパックの上限に達しました...",
+            "success": "§7バックパック §c{name} §7を §c{cost} コイン§7で正常に購入しました！",
+            "usage": "§c§8/§c{label} buy §8<§c名前§8> を使用してください"
+        },
+        "delete": {
+            "confirm": "§7バックパック §c{name}§7 を削除しますか？はいの場合 §8/§7{label} deletar {name} confirm を使用してください",
+            "error": "§cバックパック削除エラー...",
+            "not_exists": "§cバックパックが見つかりません...",
+            "success": "§7バックパックが正常に削除されました！",
+            "usage": "§c§8/§c{label} delete §8<§c名前§8> を使用してください"
+        },
+        "list": "§7バックパック §8(§f{count}§8):§7 {backpacks}",
+        "not_in_survival": "§cサバイバルモードにいません...",
+        "open": {
+            "not_exists": "§cバックパックが見つかりません...",
+            "usage": "§c§8/§c{label} open §8<§c名前§8> を使用してください"
+        },
+        "usage": "§c§8/§c{label} §8<§cbuy§8|§copen§8|§cdelete§8|§clist§8> を使用してください",
+        "list_none": "§cシステム §8§l» §r§cバックパックがありません..."
+    },
+    "balance": {
+        "_prefix": "§a経済 §8§l» §r",
+        "inactivity_tax_info": "§7毎週月曜日、§c{days}日 §7ログインしないと §c{percent}% §7の税金 §8(§c{amount} コイン§8)§7が課されます。税率は毎週増加します",
+        "other": "§a{target} §7は §c{amount} コイン§7を持っています！",
+        "self": "§7あなたは §c{amount} コイン§7を持っています！"
+    },
+    "ban": {
+        "broadcast": "§cシステム §8§l» §r§c{target} §7は §c{reason} §7により§c永久BANされました",
+        "kick": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§cあなたは永久BANされています...{n}§c名前§8:§c {name}{n}§c理由§8:§c {reason}{n}§c日付§8:§c {timestamp}{n}{n}§7BANが不当だと思いますか？サポートにお問い合わせください§8:{n}§chttps://discord.iakunamc.com §7(Discord)または §csupport@iakunamc.com §7(email){n}§7§o§chttps://loja.iakunamc.com §7でBAN解除を購入できます"
+    },
+    "bet": {
+        "_prefix": "§a経済 §8§l» §r",
+        "cashback": "§7§c{amount} コイン§7のキャッシュバックを受け取りました！",
+        "coin": {
+            "invalid": "§c表か裏を選んでください",
+            "lose": "§7コインは §a{result}§7 に落ちました。負けです！",
+            "win": "§7コインは §a{result}§7 に落ちました！§c{amount} コイン§7を獲得しました！"
+        },
+        "dice": {
+            "invalid": "§c§a1 §c〜 §a6 §cの数字を選んでください",
+            "lose": "§7サイコロは §a{result}§7 に落ちました。負けです！",
+            "win": "§7サイコロは §a{result}§7 に落ちました！§c{amount} コイン§7を獲得しました！"
+        },
+        "higher": {
+            "invalid": "§c1〜{max}の数字を選んでください",
+            "lose": "§7数字 §a{result} §7は以下です。負けです！",
+            "win": "§7数字 §a{result} §7は以上です！§c{amount} コイン§7を獲得しました！"
+        },
+        "invalid_type": "§c無効な賭けタイプです... §8/§cbet で利用可能なタイプを確認してください",
+        "lower": {
+            "invalid": "§c§a1 §c〜 §a{max} §cの数字を選んでください",
+            "lose": "§7数字 §a{result} §7は以上です。負けです！",
+            "win": "§7数字 §a{result} §7は以下です！§c{amount} コイン§7を獲得しました！"
+        },
+        "min": "§c最低賭け金は {min} コインです...",
+        "ppt": {
+            "draw": "§7じゃんけん引き分け！何も差し引かれませんでした",
+            "invalid": "§c§aグー§7、§aチョキ §7または §aパー §7を選んでください",
+            "lose": "§7じゃんけんで負けました！",
+            "win": "§7じゃんけんで勝ちました！§c{amount} コイン§7！"
+        },
+        "pvp": {
+            "_prefix": "",
+            "accept": {
+                "_prefix": "§a経済 §8§l» §r",
+                "target_insufficient": "§c{target} §7はこの賭けを受け入れるコインが不足しています...",
+                "none": "§c保留中の賭けがありません..."
+            },
+            "coin": {
+                "result": "§a経済 §8§l» §r§7コインの結果§8: §a{result}"
+            },
+            "dice": {
+                "result": "§a経済 §8§l» §r§7サイコロの結果§8: §a{challenger_roll} §7対 §a{target_roll}"
+            },
+            "invalid_type": "§a経済 §8§l» §r§cPvP賭けタイプが無効です！利用可能なタイプ§8:§7 サイコロ§8,§7 じゃんけん§8,§7 コイン",
+            "lose": "§a経済 §8§l» §r§7§a{opponent}§7 との対決で負けました！",
+            "ppt": {
+                "result": "§a経済 §8§l» §r§7結果§8: §a{challenger_choice} §7対 §a{target_choice}"
+            },
+            "self_challenge": "§a経済 §8§l» §r§c自分に挑戦することはできません！",
+            "usage": "§a経済 §8§l» §r§c§8/§cbet §8<§cタイプ§8> <§cプレイヤー§8> <§c金額§8> <§c予想§8> を使用してください",
+            "win": "§a経済 §8§l» §r§7おめでとう！§a{opponent}§7 との対決で §c{amount} コイン§7を獲得しました！",
+            "deny": {
+                "_prefix": "§a経済 §8§l» §r",
+                "none": "§c保留中の賭けがありません...",
+                "success": "§7賭けチャレンジを正常に拒否しました...",
+                "notify": "§7{target} があなたの賭けチャレンジを拒否しました..."
+            },
+            "draw": "§a経済 §8§l» §r§7引き分け！何も差し引かれませんでした",
+            "expired": "§a経済 §8§l» §r§c賭けチャレンジの期限が切れました...",
+            "insufficient_challenger": "§a経済 §8§l» §r§c挑戦者のコインが不足しています...",
+            "pending": "§a経済 §8§l» §r§cそのプレイヤーにはすでに保留中の賭けチャレンジがあります...",
+            "request": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §a賭けチャレンジ §8===-=-=-{n}§a経済 §8§l» §r§a{challenger} §7があなたに §c{amount} コイン §7の §e{type}§7 モードの賭けを挑戦しました！{n}§a経済 §8§l» §r§7§a/bet 受諾 §7で受けるか §c/bet 拒否 §7で拒否してください",
+            "sent": "§a経済 §8§l» §r§7賭けチャレンジを §a{target}§7 に送りました！モード§8: §e{type}§8, §7金額§8: §c{amount} コイン",
+            "insufficient_target": "§a経済 §8§l» §r§c{target} §7はこの賭けに参加するコインが不足しています..."
+        },
+        "roulette": {
+            "invalid": "§c1〜{max}の数字を選んでください",
+            "lose": "§7ルーレットは §a{result}§7 で止まりました。負けです！",
+            "win": "§7ルーレットは §a{result}§7 で止まりました！§c{amount} コイン§7を獲得しました！"
+        },
+        "types": "§7利用可能なタイプ§8:§7 サイコロ§8,§7 じゃんけん§8,§7 ルーレット§8,§7 コイン§8,§7 大きい§8,§7 小さい",
+        "usage": "§c§8/§cbet §8<§cタイプ§8> [§cプレイヤー§8] <§c金額§8> <§c予想§8> を使用してください"
+    },
+    "bio": {
+        "_prefix": "§3プロフィール §8§l» §r",
+        "set": "§7プロフィール文を '§3{bio}§7' に設定しました！",
+        "usage": "§c§8/§c{label} §8<§c自己紹介§8> を使用してください"
+    },
+    "block": {
+        "_prefix": "§cシステム §8§l» §r",
+        "add": {
+            "already": "§c{player} はすでにブロックされています！",
+            "limit": "§cブロックの上限に達しました...",
+            "self": "§c自分をブロックすることはできません！",
+            "staff": "§cスタッフメンバーをブロックすることはできません！",
+            "success": "§c{player}§7 を正常にブロックしました",
+            "usage": "§c§8/§c{label} add §8<§cプレイヤー§8> を使用してください"
+        },
+        "list": "§7ブロック中のプレイヤー §8(§f{count}§8):§7 {blocked}",
+        "remove": {
+            "all": "§7全プレイヤーのブロックを正常に解除しました！",
+            "notfound": "§c{player} はブロックされていません...",
+            "success": "§c{player} §7のブロックを正常に解除しました",
+            "usage": "§c§8/§c{label} remove §8<§cプレイヤー§8|§c*§8> を使用してください"
+        },
+        "usage": "§c§8/§c{label} §8<§cadd§8|§cremove§8|§clist§8> を使用してください",
+        "list_none": "§cプレイヤーをブロックしていません..."
+    },
+    "changepassword": {
+        "_prefix": "§e認証 §8§l» §r",
+        "usage": "§c§8/§c{label} §8<§c現在のパスワード§8> <§c新しいパスワード§8> を使用してください"
+    },
+    "chat": {
+        "_prefix": "§cシステム §8§l» §r",
+        "disabled": "§cチャットは無効です...",
+        "nochars": "§cこれらの文字は使用できません...",
+        "nopromote": "§cチャットで他のサーバーを宣伝/言及することは禁止されています...{n}§cシステム §8§l» §r§c罰を避けるために §8/§cルール §cを読んでください",
+        "nospam": "§c落ち着いて！スパムなし...",
+        "toolong": "§cメッセージが長すぎます... (最大 {max} 文字)",
+        "noemoji": "§c絵文字は使用できません..."
+    },
+    "clan": {
+        "_prefix": "§eクラン §8§l» §r",
+        "accept": {
+            "error": "§cクランへの参加エラー...",
+            "no_invite": "§c保留中の招待がありません...",
+            "success": "§7§e{clan} §7に正常に参加しました"
+        },
+        "already_in_clan": "§cすでにクランに所属しています...",
+        "changetag": {
+            "error": "§cタグ変更エラー...",
+            "success": "§7タグを §e{tag}§7 に正常に変更しました！",
+            "usage": "§c§8/§c{label} tag §8<§cタグ§8> を使用してください"
+        },
+        "chat": {
+            "toggle": {
+                "off": "§7クランチャットをオフにしました！",
+                "on": "§7クランチャットをオンにしました！"
+            }
+        },
+        "create": {
+            "error": "§cクラン作成エラー...",
+            "exists": "§cその名前またはタグのクランはすでに存在します！",
+            "length": "§c名前は3〜24文字、タグは2〜4文字でなければなりません！",
+            "success": "§7クランが正常に作成されました！",
+            "usage": "§c§8/§c{label} create §8<§c名前§8> §8<§cタグ§8> を使用してください"
+        },
+        "delete": {
+            "error": "§cクラン削除エラー！",
+            "success": "§7クランが正常に削除されました！"
+        },
+        "demote": {
+            "broadcast": "§e{player} §7がメンバーに降格されました！",
+            "error": "§cプレイヤー降格エラー...",
+            "success": "§e{player} §7が正常に降格されました！",
+            "usage": "§c§8/§c{label} demote §8<§cプレイヤー§8> を使用してください"
+        },
+        "deny": {
+            "no_invite": "§c保留中の招待がありません...",
+            "success": "§7招待を正常に拒否しました"
+        },
+        "desc": {
+            "error": "§c説明変更エラー...",
+            "success": "§7説明が正常に変更されました！",
+            "usage": "§c§8/§c{label} desc §8<§c説明§8> を使用してください"
+        },
+        "disband": {
+            "_prefix": "",
+            "broadcast": "§eクラン §8§l» §r§cクランが解散されました..."
+        },
+        "info": {
+            "_prefix": "",
+            "description": "§eクラン §8§l» §r§7説明§8: §e{description}",
+            "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §7クラン §e{name} §7情報 §8===-=-=-=-",
+            "level": "§eクラン §8§l» §r§7レベル§8: §e{level}",
+            "members": "§eクラン §8§l» §r§7メンバー §8(§f{count}§8/§f{max}§8): §7{members}",
+            "owner": "§eクラン §8§l» §r§7オーナー§8: §e{owner}",
+            "tag": "§eクラン §8§l» §r§7タグ§8: §e{tag}",
+            "type": "§eクラン §8§l» §r§7タイプ§8: §e{type}",
+            "usage": "§eクラン §8§l» §r§c§8/§c{label} info §8<§cクラン§8> を使用してください",
+            "xp": "§eクラン §8§l» §r§7経験値§8: §e{xp}",
+            "xp_needed": "§eクラン §8§l» §r§7次のレベルに必要なXP§8: §e{xp_needed}"
+        },
+        "invite": {
+            "_prefix": "",
+            "already_in_clan": "§eクラン §8§l» §r§cプレイヤーはすでにクランに所属しています...",
+            "expired": "§eクラン §8§l» §r§c{clan} への招待が期限切れになりました...",
+            "not_private": "§eクラン §8§l» §r§cプライベートクランのみ招待できます...",
+            "received": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §eクラン§8===-=-=-{n}§eクラン §8§l» §r§e{sender} §7があなたをクラン §e{clan}§7 に招待しました...{n}§eクラン §8§l» §r§7§a/clan 承認 §7で承認するか §c/clan 拒否 §7で拒否してください",
+            "sent": "§eクラン §8§l» §r§7招待を §e{player}§7 に送りました！",
+            "usage": "§eクラン §8§l» §r§c§8/§c{label} invite §8<§cプレイヤー§8> を使用してください"
+        },
+        "join": {
+            "_prefix": "",
+            "broadcast": "§eクラン §8§l» §r§e{player} §7がクランに参加しました！"
+        },
+        "kick": {
+            "broadcast": "§e{player} §7がクランからキックされました！",
+            "cant_kick_admin": "§c管理者は他の管理者をキックできません...",
+            "cant_kick_owner": "§cクランオーナーをキックすることはできません...",
+            "error": "§cプレイヤーキックエラー...",
+            "kicked": "§cクランからキックされました...",
+            "not_in_clan": "§cプレイヤーはクランに所属していません...",
+            "success": "§7プレイヤーを正常にキックしました！",
+            "usage": "§c§8/§c{label} kick §8<§cプレイヤー§8> を使用してください"
+        },
+        "leave": {
+            "broadcast": "§e{player} §7がクランを離れました...",
+            "error": "§cクラン退出エラー...",
+            "owner": "§cオーナーはクランを離れることができません...",
+            "success": "§7クランを正常に退出しました！"
+        },
+        "level_up": "§7クランがレベル §e{newLevel}§7 になりました！",
+        "not_found": "§cそのクランは存在しません...",
+        "not_in_clan": "§cクランに所属していません...",
+        "not_owner": "§cオーナーのみ実行できます...",
+        "not_owner_or_admin": "§cオーナーまたは管理者のみ実行できます...",
+        "promote": {
+            "broadcast": "§e{player} §7が管理者に昇格されました！",
+            "error": "§cプレイヤー昇格エラー...",
+            "success": "§e{player} §7が正常に昇格されました！",
+            "usage": "§c§8/§c{label} promote §8<§cプレイヤー§8> を使用してください"
+        },
+        "request": {
+            "_prefix": "",
+            "closed": "§eクラン §8§l» §r§cこのクランは閉鎖されています...",
+            "error": "§eクラン §8§l» §r§c申請処理エラー...",
+            "joined": "§eクラン §8§l» §r§7クラン §e{clan}§7 に参加しました！",
+            "private": "§eクラン §8§l» §r§cこのクランはプライベートです...",
+            "received": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §eクラン§8===-=-=-{n}§eクラン §8§l» §r§e{sender} §7がクランへの参加を希望しています...{n}§eクラン §8§l» §r§7§a/clan requests 承認 {sender} §7または §c/clan requests 拒否 {sender} §7で処理してください",
+            "sent": "§eクラン §8§l» §r§7§e{clan}§7 に申請を送りました！",
+            "usage": "§eクラン §8§l» §r§c§8/§c{label} request §8<§cクラン§8> を使用してください"
+        },
+        "requests": {
+            "accept": {
+                "all": "§7全ての申請を承認しました！",
+                "error": "§c申請承認エラー！",
+                "success": "§7§e{player} §7の申請を承認しました！",
+                "usage": "§c§8/§c{label} requests accept §8<§cプレイヤー§8> を使用してください"
+            },
+            "deny": {
+                "all": "§7全ての申請を拒否しました...",
+                "error": "§c申請拒否エラー！",
+                "success": "§7§e{player} §7の申請を拒否しました！",
+                "usage": "§c§8/§c{label} requests deny §8<§cプレイヤー§8> を使用してください"
+            },
+            "none": "§c保留中の申請がありません...",
+            "usage": "§c§8/§c{label} requests §8<§caccept§8|§cdeny§8> §8<§cプレイヤー§8|§c*§8> を使用してください"
+        },
+        "tagcolor": {
+            "error": "§cタグカラー変更エラー！",
+            "invalid": "§c無効なカラーです...",
+            "not_unlocked": "§cまだそのカラーをアンロックしていません...",
+            "success": "§7タグカラーを {color}§7 に正常に変更しました！",
+            "usage": "§c§8/§c{label} tagcolor §8<§cカラー§8>{n}§eクラン §8§l» §r§7利用可能なカラー§8: {colors}"
+        },
+        "type": {
+            "error": "§cタイプ変更エラー...",
+            "invalid": "§c無効なタイプです... 利用可能なタイプ§8:§7 public§8,§7 invite§8,§7 private§8,§7 closed",
+            "success": "§7クランタイプを §e{type}§7 に正常に変更しました",
+            "usage": "§c§8/§c{label} type §8<§cタイプ§8> を使用してください"
+        },
+        "usage": "§c§8/§c{label} §8<§ccreate§8|§cinvite§8|§ckick§8|§cdesc§8|§cleave§8|§cinfo§8|§ctype§8|§crequest§8|§cpromote§8|§cdemote§8|§ctag§8|§crequests§8|§cchat§8|§cdelete§8|§ctagcolor§8> を使用してください",
+        "requests_list": "§7参加申請 §8(§f{count}§8):§7 {requests}"
+    },
+    "clear": {
+        "_prefix": "§cシステム §8§l» §r",
+        "success": "§7インベントリを正常にクリアしました！"
+    },
+    "clearchat": {
+        "_prefix": "§cシステム §8§l» §r",
+        "success": "§7チャットが §c{author}§7 によってクリアされました！"
+    },
+    "clearchatme": {
+        "_prefix": "§cシステム §8§l» §r",
+        "success": "§7チャットを正常にクリアしました！"
+    },
+    "colorarmor": {
+        "_prefix": "§dカ§aラ§eー§bア§9ー§1マ§2ー §8§l» §r",
+        "invalid_world": "§cカラーアーマーはロビーのみ使用できます...",
+        "off": "§7カラーアーマーを正常に無効にしました",
+        "on": "§7カラーアーマーを正常に有効にしました"
+    },
+    "coords": {
+        "_prefix": "§cシステム §8§l» §r",
+        "position": "§7座標§8: §c{x}§8, §c{y}§8, §c{z}"
+    },
+    "crown": {
+        "_prefix": "§6ク§eラ§6ウ§eン §8§l» §r",
+        "invalid_world": "§cここではクラウンを有効にできません...",
+        "off": "§7クラウンを正常に無効にしました",
+        "on": "§7クラウンを正常に有効にしました"
+    },
+    "daily": {
+        "reward": {
+            "akunas": "§c{amount} コイン",
+            "milestone": "§5毎日報酬 §8§l» §r§7おめでとう！§5{weeks} §7週連続達成！",
+            "multiplier": "§9{multiplier}倍 倍増器 §8(§5{duration}§8)",
+            "received": "§5毎日報酬 §8§l» §r§7{rewards} を受け取りました",
+            "streak": "§5毎日報酬 §8§l» §r§7現在の連続§8: §5{streak} §7日",
+            "xp": "§9{amount} XP",
+            "streak_lost": "§5毎日報酬 §8§l» §r§c{oldStreak} 日の連続記録が失われました..."
+        }
+    },
+    "delhome": {
+        "_prefix": "§cシステム §8§l» §r",
+        "not_exists": "§cその名前のホームがありません...",
+        "not_in_survival": "§cサバイバルモードにいません...",
+        "success": "§7ホーム §c{home} §7を正常に削除しました！",
+        "usage": "§c§8/§c{label} §8<§c名前§8|§c*§8> を使用してください",
+        "success_all": "§7全てのホームを正常に削除しました！"
+    },
+    "fake": {
+        "_prefix": "§1フェイク §8§l» §r",
+        "disable": "§7フェイクを正常に無効にしました！",
+        "enable": {
+            "_prefix": "",
+            "usage": "§1フェイク §8§l» §r§c§8/§c{label} on §8<§c名前§8> を使用してください"
+        },
+        "invalid": {
+            "_prefix": "",
+            "name": "§1フェイク §8§l» §r§c無効な名前です..."
+        },
+        "registered": "§cその名前はすでにサーバーに登録されています...",
+        "set": "§7フェイクを正常に有効にしました！",
+        "usage": "§c§8/§c{label} §8<§con§8|§coff§8|§crandom§8|§clist§8> を使用してください"
+    },
+    "home": {
+        "_prefix": "§cシステム §8§l» §r",
+        "none": "§cホームがありません...",
+        "not_exists": "§cその名前のホームがありません...",
+        "not_in_survival": "§cサバイバルモードにいません...",
+        "success": "§7§c{home}§7 にテレポートしています...",
+        "usage": "§c§8/§c{label} §8<§c名前§8> を使用してください"
+    },
+    "homes": {
+        "_prefix": "§cシステム §8§l» §r",
+        "list": "§7ホーム §8(§f{count}§8):§7 {homes}",
+        "none": "§cホームがありません..."
+    },
+    "itemid": {
+        "_prefix": "§cシステム §8§l» §r",
+        "info": "§7名前§8:§c {name}{n}§cシステム §8§l» §r§7ID§8:§c {id}§8:§c{meta}",
+        "noitem": "§c手にアイテムを持っていません..."
+    },
+    "joinmsg": {
+        "automsg": {
+            "disabled": "§b参加 §8§l» §r§c参加メッセージを使用するには自動メッセージ設定を有効にしてください..."
+        },
+        "list": {
+            "entry": "§b{id} §8§l» §r§7{message}",
+            "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §b参加メッセージ §8(§f{page}§8/§f{total}§8) ===-=-=-=-"
+        },
+        "messages": {
+            "_prefix": "§b参加 §8§l» §r",
+            "1": "§7おっと！§b{player} §7がサーバーに降り立ちました！",
+            "10": "§7劇的な間... §b{player} §7がサーバーに参加しました！",
+            "11": "§b{player} §7が参加しました！",
+            "12": "§7気をつけて！§b{player} §7が現れました！",
+            "13": "§7宇宙が微笑んだ... §b{player} §7が参加しました！",
+            "14": "§7新しい冒険が §b{player}§7 とともに始まります！",
+            "15": "§7準備はいい？§b{player} §7が支配しに来ました！",
+            "2": "§7増援が呼ばれましたか？§b{player} §7が到着しました！",
+            "3": "§7§b{player} §7が颯爽と入ってきました！ようこそ！",
+            "4": "§7ピザどうぞ、§b{player}§7？ようこそ！",
+            "5": "§7道を開けて！§b{player} §7が来ました！",
+            "6": "§7レーダーが活動を検知... §b{player} §7が参加しました！",
+            "7": "§7テレポート完了！§b{player} §7がここに現れました！",
+            "8": "§7いい天気ですね... §b{player} §7がオンラインならなおさら！",
+            "9": "§7伝説が現れました§8:§7 §b{player}§7 が我々の中に！"
+        },
+        "off": {
+            "success": "§b参加 §8§l» §r§7参加メッセージを正常に無効にしました！"
+        },
+        "on": {
+            "_prefix": "§b参加 §8§l» §r",
+            "invalid": "§c無効なIDです... §8/§c{label} list で利用可能なIDを確認",
+            "success": "§7参加メッセージを §b{id}§7 に正常に設定しました！",
+            "usage": "§c§8/§c{label} on §8<§cid§8> を使用してください"
+        },
+        "usage": "§b参加 §8§l» §r§c§8/§c{label} §8<§con§8|§coff§8|§clist§8> を使用してください"
+    },
+    "kick": {
+        "broadcast": "§cシステム §8§l» §r§c{target} §7は §c{reason} §7によりキックされました",
+        "kick": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§cキックされました...{n}§c理由§8:§c {reason}"
+    },
+    "lbc": {
+        "profile": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§3プロフィール §8§l» §r§7名前§8:§3 {name}{n}§3プロフィール §8§l» §r§7タグ§8:§3 {tag}{n}§3プロフィール §8§l» §r§7クラン§8:§3 {clan}{n}§3プロフィール §8§l» §r§7自己紹介§8:§3 {about}{n}§3プロフィール §8§l» §r§7結婚相手§8:§7 {partner}{n}§3プロフィール §8§l» §r§7コイン§8:§3 {akunas}{n}§8-=-=-=-=== §9レベル §8===-=-=-=-{n}§3プロフィール §8§l» §r§7レベル§8:§3 {level}{n}§3プロフィール §8§l» §r§7経験値§8:§3 {xp}{n}§3プロフィール §8§l» §r§7次のレベルに必要なXP§8:§3 {xpneeded}{n}§8-=-=-=-=== §f統計 §8===-=-=-=-{n}§3プロフィール §8§l» §r§7§bSky§fWars§7 勝利§8:§3 {winssw}{n}§3プロフィール §8§l» §r§7§cThe§9Bridge§7 勝利§8:§3 {winstb}{n}§3プロフィール §8§l» §r§7§eMlg§fBlock§7 勝利§8:§3 {winsmlg}{n}§3プロフィール §8§l» §r§7§cBed§fWars§7 勝利§8:§3 {winsbw}{n}§3プロフィール §8§l» §r§7§bBlock§fSumo§7 勝利§8:§3 {winsbs}{n}§3プロフィール §8§l» §r§7§2デュエル§7 勝利§8:§3 {winsduels}{n}§3プロフィール §8§l» §r§7キル数§8:§3 {kills}{n}§3プロフィール §8§l» §r§7オンライン時間§8:§3 {onlineTime}",
+        "profile_other": "§8-=-=-=-=== §fi§cAkuna§9MC §8- §7§3{name}§7 のプロフィール §8===-=-=-=-{n}§3プロフィール §8§l» §r§7タグ§8:§3 {tag}{n}§3プロフィール §8§l» §r§7最終ログイン§8:§3 {lastOnline} §8(§7{lastOnlineSince}§7 前§8){n}§3プロフィール §8§l» §r§7クラン§8:§3 {clan}{n}§3プロフィール §8§l» §r§7自己紹介§8:§3 {about}{n}§3プロフィール §8§l» §r§7結婚相手§8:§7 {partner}{n}§3プロフィール §8§l» §r§7コイン§8:§3 {akunas}{n}§8-=-=-=-=== §9レベル §8===-=-=-=-{n}§3プロフィール §8§l» §r§7レベル§8:§3 {level}{n}§3プロフィール §8§l» §r§7経験値§8:§3 {xp}{n}§3プロフィール §8§l» §r§7次のレベルに必要なXP§8:§3 {xpneeded}{n}§8-=-=-=-=== §f統計 §8===-=-=-=-{n}§3プロフィール §8§l» §r§7§bSky§fWars§7 勝利§8:§3 {winssw}{n}§3プロフィール §8§l» §r§7§cThe§9Bridge§7 勝利§8:§3 {winstb}{n}§3プロフィール §8§l» §r§7§eMlg§fBlock§7 勝利§8:§3 {winsmlg}{n}§3プロフィール §8§l» §r§7§cBed§fWars§7 勝利§8:§3 {winsbw}{n}§3プロフィール §8§l» §r§7§bBlock§fSumo§7 勝利§8:§3 {winsbs}{n}§3プロフィール §8§l» §r§7§2デュエル§7 勝利§8:§3 {winsduels}{n}§3プロフィール §8§l» §r§7キル数§8:§3 {kills}{n}§3プロフィール §8§l» §r§7オンライン時間§8:§3 {onlineTime}"
+    },
+    "lobby": {
+        "_prefix": "§cシステム §8§l» §r",
+        "cmd": "§7正常にロビーに戻りました！"
+    },
+    "locktell": {
+        "_prefix": "§1テル §8§l» §r",
+        "already": {
+            "_prefix": "",
+            "locked": "§1テル §8§l» §r§cテルはすでにロックされています。@eとチャットに入力してロック解除できます..."
+        },
+        "offlinetarget": "§cプレイヤーがオフラインです。テルをアンロックしています...",
+        "success": {
+            "other": "§1{sender} §7があなたとのテルをロックしました...",
+            "self": "§7§1{player}§7 とのテルをロックしました！§1@e §7とチャットに入力してロック解除できます..."
+        },
+        "unlocked": {
+            "other": "§1{player} §7がテルをロック解除しました...",
+            "self": "§7テルを正常にロック解除しました！"
+        },
+        "usage": "§c§8/§c{label} §8<§cプレイヤー§8> を使用してください"
+    },
+    "canal": {
+        "_prefix": "§9チャンネル §8§l» §r",
+        "current": "§7{channels}",
+        "switched": "§7{channels}",
+        "invalid": "§cそのチャンネルは存在しません。利用可能なチャンネル§8:§7 {channels}",
+        "unavailable": "§cそのチャンネルは現在利用できません...",
+        "usage": "§c§8/§c{label} §8<§cチャンネル§8> を使用してください"
+    },
+    "reply": {
+        "_prefix": "§1テル §8§l» §r",
+        "usage": "§c§8/§c{label} §8<§cメッセージ§8> を使用してください",
+        "notell": "§c最近テルを受け取っていません..."
+    },
+    "login": {
+        "error": {
+            "nopassword": "§e認証 §8§l» §r§cアカウントにパスワードがありません。デバイスで自動認証されています"
+        },
+        "usage": "§e認証 §8§l» §r§c§8/§c{label} §8<§cパスワード§8> を使用してください"
+    },
+    "lottery": {
+        "_prefix": "§e宝くじ §8§l» §r",
+        "broadcast": "§7現在の宝くじの賞金は §c{amount} コイン§7です！抽選まで §e{time}§7、§8/§7lottery 購入 §8<§7枚数§8> でチケット購入できます",
+        "buy_success": "§7§c{cost} コイン§7で §e{quantity} 枚§7のチケットを購入しました！",
+        "buy_usage": "§c§8/§c{label} 購入 §8<§cチケット枚数§8> を使用してください",
+        "no_money": "§c{amount} 枚のチケットを購入するコインが不足しています...",
+        "no_tickets": "§7このラウンドではチケットが売れませんでした。次の宝くじはまもなく始まります！",
+        "prize": "§7現在の賞金§8:§c {prize} コイン",
+        "status_header": "§7現在のステータス§8:",
+        "ticket_limit": "§cそんなに多くのチケットは購入できません...",
+        "ticket_price": "§7チケット1枚 §c{price} コイン",
+        "tickets": "§7販売済みチケット§8:§e {tickets}",
+        "time": "§7残り時間§8:§e {time}",
+        "usage": "§c§8/§c{label} §8<§cstatus§8|§c購入§8> を使用してください",
+        "win": "§7おめでとう §e{winner}§7、宝くじで §c{amount} コイン§7を獲得しました！"
+    },
+    "marriage": {
+        "accept": {
+            "_prefix": "§cシステム §8§l» §r",
+            "already": "§cあなたまたはパートナーはすでに結婚しています...",
+            "none": "§c保留中のリクエストがありません...",
+            "notify": "§c{partner} §7がプロポーズを受け入れました！",
+            "success": "§7§c{partner}§7 と結婚しました！おめでとう :)"
+        },
+        "deny": {
+            "_prefix": "§cシステム §8§l» §r",
+            "none": "§c保留中のリクエストがありません...",
+            "notify": "§c{target} §7がプロポーズを断りました...",
+            "success": "§7プロポーズを正常に断りました..."
+        },
+        "divorce": {
+            "_prefix": "§cシステム §8§l» §r",
+            "all_success": "§7全てのパートナーと離婚しました...",
+            "invalid": "§c無効なパートナーまたは結婚していません...",
+            "none": "§c結婚していません...",
+            "notify": "§c{partner} §7があなたと離婚しました...",
+            "specify": "§c§8/§c{label} 離婚 §8<§cプレイヤー§8|§c*§8> を使用してください",
+            "success": "§7§c{partner}§7 と離婚しました..."
+        },
+        "info": {
+            "entry": "§cシステム §8§l» §r§7パートナー§8:§d {partner} §8| §7から§8:§d {date} §8(§7{dateSince} §7前§8){n}§cシステム §8§l» §r§7あなたの呼び方§8:§d {nicknameGiven} §8| §7相手の呼び方§8:§d {nicknameReceived}",
+            "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §dアクティブな結婚 §8===-=-=-=-",
+            "no_nickname": "§7ニックネームなし...§r",
+            "none": "§cシステム §8§l» §r§cアクティブな結婚がありません..."
+        },
+        "marry": {
+            "already": "§cシステム §8§l» §r§cあなたまたはプレイヤーはすでに結婚しています...",
+            "expired": "§cシステム §8§l» §r§c§c{sender} §7のプロポーズが期限切れになりました...",
+            "limit": "§cシステム §8§l» §r§c結婚の上限に達しました！",
+            "pending": "§cシステム §8§l» §r§cそのプレイヤーにはすでに保留中のリクエストがあります...",
+            "request": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §dプロポーズ§8===-=-=-{n}§cシステム §8§l» §r§d{sender} §7があなたにプロポーズしました...{n}§cシステム §8§l» §r§7§a/marriage 承諾 §7で承諾するか §c/marriage 拒否 §7で拒否してください",
+            "self": "§cシステム §8§l» §r§c自分にプロポーズすることはできません...",
+            "sent": "§cシステム §8§l» §r§7§c{target}§7 にプロポーズを正常に送りました！",
+            "target_limit": "§cシステム §8§l» §r§cプレイヤーは結婚の上限に達しました！",
+            "usage": "§cシステム §8§l» §r§c§8/§c{label} 結婚 §8<§cプレイヤー§8> を使用してください"
+        },
+        "nick": {
+            "_prefix": "§cシステム §8§l» §r",
+            "success": "§7§c{partner} §7のニックネームを '§c{nickname}§7' に正常に設定しました！",
+            "usage": "§c§8/§c{label} nick §8<§cパートナー§8> <§cニックネーム§8> を使用してください"
+        },
+        "partner": {
+            "_prefix": "§cシステム §8§l» §r",
+            "joined": "§7パートナー §c{partner} §7がサーバーに参加しました！",
+            "left": "§cパートナー {partner} がサーバーを離れました..."
+        },
+        "usage": "§cシステム §8§l» §r§c§8/§c{label} §8<§c結婚§8|§c離婚§8|§cinfo§8|§cnick§8> を使用してください"
+    },
+    "msgcolor": {
+        "_prefix": "§cシステム §8§l» §r",
+        "invalid": "§c無効なカラーです...",
+        "reset": "§7メッセージカラーをデフォルトにリセットしました！",
+        "success": "§7メッセージカラーを {color}§7 に正常に変更しました！",
+        "usage": "§c§8/§c{label} §8<§cカラー§8|§creset§8>{n}§cシステム §8§l» §r§7利用可能なカラー§8: {colors}"
+    },
+    "mute": {
+        "_prefix": "§cシステム §8§l» §r",
+        "broadcast": "§c{target} §7は §c{reason} §7により§c永久ミュートされました",
+        "muted": "§c{reason} により永久ミュートされました... §o§chttps://loja.iakunamc.com §7でミュート解除を購入できます"
+    },
+    "nametag": {
+        "add": {
+            "_prefix": "§6ネームタグ §8§l» §r",
+            "limit": {
+                "_prefix": "",
+                "reached": "§6ネームタグ §8§l» §r§c{limit} 個のネームタグ上限に達しました..."
+            },
+            "success": "§7ネームタグ '§6{text}§7' を正常に追加しました！",
+            "too": {
+                "_prefix": "",
+                "long": "§6ネームタグ §8§l» §r§cネームタグが {limit} 文字の制限を超えています..."
+            },
+            "usage": "§c§8/§c{label} add §8<§cテキスト§8> を使用してください"
+        },
+        "list": {
+            "none": "§6ネームタグ §8§l» §r§cネームタグがありません..."
+        },
+        "off": {
+            "success": "§6ネームタグ §8§l» §r§7ネームタグをオフにしました..."
+        },
+        "remove": {
+            "_prefix": "§6ネームタグ §8§l» §r",
+            "invalid": {
+                "_prefix": "",
+                "id": "§6ネームタグ §8§l» §r§c無効なIDです... §8/§c{label} list で利用可能なIDを確認"
+            },
+            "success": "§7ネームタグ §6{id} §7を正常に削除しました！",
+            "usage": "§c§8/§c{label} remove §8<§cid§8> を使用してください"
+        },
+        "usage": "§6ネームタグ §8§l» §r§c§8/§c{label} §8<§cadd§8|§clist§8|§cremove§8|§coff§8> を使用してください"
+    },
+    "nickcolor": {
+        "_prefix": "§cシステム §8§l» §r",
+        "invalid": "§c無効なカラーです...",
+        "reset": "§7名前カラーをデフォルトにリセットしました！",
+        "success": "§7名前カラーを {color}§7 に正常に変更しました！",
+        "usage": "§c§8/§c{label} §8<§cカラー§8|§creset§8>{n}§cシステム §8§l» §r§7利用可能なカラー§8: {colors}"
+    },
+    "particle": {
+        "on": {
+            "usage": "§5パーティクル §8§l» §r§c§8/§c{label} on §8<§cパーティクル§8> を使用してください"
+        }
+    },
+    "particles": {
+        "_prefix": "§5パーティクル §8§l» §r",
+        "activated": "§7パーティクル §5{type} §7を正常に有効にしました！",
+        "deactivated": "§7パーティクルを正常に無効にしました！",
+        "invalid_type": "§c無効なパーティクルです... §8/§c{label} list で利用可能なリストを確認",
+        "invalid_world": "§cここではパーティクルを使用できません...",
+        "list": "§7利用可能なパーティクルリスト §8(§f{count}§8):§7 {particles}",
+        "no_active": "§cアクティブなパーティクルがありません...",
+        "usage": "§c§8/§c{label} §8<§con§8|§coff§8|§clist§8> を使用してください"
+    },
+    "party": {
+        "_prefix": "§dパーティ §8§l» §r",
+        "chat": {
+            "off": "§7パーティチャットをオフにしました！",
+            "on": "§7パーティチャットをオンにしました！"
+        },
+        "create": {
+            "already_in_party": "§cすでにパーティにいます...",
+            "error": "§cパーティ作成エラー...",
+            "success": "§7パーティを正常に作成しました！§8/§7party info §7でパーティ情報を確認できます"
+        },
+        "info": {
+            "_prefix": "",
+            "code": "§dパーティ §8§l» §r§7コード§8: §d{code}",
+            "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §dパーティ情報 §8===-=-=-=-",
+            "leader": "§dパーティ §8§l» §r§7リーダー§8: §d{leader}",
+            "members": "§dパーティ §8§l» §r§7メンバー§8: §d{current}§8/§d{max}",
+            "not_found": "§dパーティ §8§l» §r§cパーティが見つかりません...",
+            "type": "§dパーティ §8§l» §r§7タイプ§8: §d{type}"
+        },
+        "join": {
+            "already_in_party": "§cすでにパーティにいます...",
+            "blocked": "§cこのパーティに参加できません...",
+            "broadcast": "§d{player} §7がパーティに参加しました！",
+            "closed": "§cこのパーティは閉鎖されています...",
+            "error": "§cパーティ参加エラー...",
+            "full": "§cパーティが満員です...",
+            "locked": "§cこのパーティはロックされています...",
+            "not_found": "§cパーティが見つかりません...",
+            "success": "§7パーティに参加しました！",
+            "usage": "§c§8/§c{label} join §8<§cコード§8|§cプレイヤー§8> を使用してください"
+        },
+        "kick": {
+            "broadcast": "§d{player} §7がパーティからキックされました！",
+            "error": "§cプレイヤーキックエラー...",
+            "kicked": "§cパーティからキックされました！",
+            "not_in_party": "§cプレイヤーはパーティにいません...",
+            "self": "§c自分をキックすることはできません！",
+            "success": "§7プレイヤーを正常にキックしました！",
+            "usage": "§c§8/§c{label} kick §8<§cプレイヤー§8> を使用してください"
+        },
+        "leader": {
+            "_prefix": "",
+            "changed": "§dパーティ §8§l» §r§d{old_leader} §7がサーバーを離れました。新しいリーダーは §d{new_leader}§7 です！",
+            "expired": "§dパーティ §8§l» §r§d{old_leader} §7が時間内に戻りませんでした。新しいリーダーは §d{new_leader}§7 です！"
+        },
+        "leave": {
+            "broadcast": "§d{player} §7がパーティを離れました...",
+            "error": "§cパーティ退出エラー...",
+            "success": "§7パーティを離れました！"
+        },
+        "not_in_party": "§cパーティにいません...",
+        "not_leader": "§cリーダーのみ実行できます...",
+        "quit": {
+            "_prefix": "",
+            "notify": "§dパーティ §8§l» §r§d{player} §7がサーバーを離れてパーティを退出しました...",
+            "leader_offline": "§dパーティ §8§l» §r§d{player} §7がサーバーを離れました。§d3分 §7以内に戻らないとリーダーを失います。",
+            "leader_rejoined": "§dパーティ §8§l» §r§d{player} §7がサーバーに戻り、リーダーを取り戻しました！"
+        },
+        "transfer": {
+            "broadcast": "§d{new_leader} §7が新しいリーダーです！",
+            "error": "§cリーダー移譲エラー...",
+            "not_in_party": "§cプレイヤーはパーティにいません...",
+            "received": "§7パーティのリーダーシップを受け取りました！",
+            "self": "§c自分にリーダーシップを移譲することはできません！",
+            "success": "§7§d{player}§7 にリーダーシップを移譲しました！",
+            "usage": "§c§8/§c{label} transfer §8<§cプレイヤー§8> を使用してください"
+        },
+        "type": {
+            "broadcast": "§7パーティタイプを §d{type}§7 に変更しました！",
+            "error": "§cタイプ変更エラー...",
+            "invalid": "§c無効なタイプです... 利用可能なタイプ§8: §7public§8, §7private§8, §7closed",
+            "success": "§7タイプを §d{type}§7 に変更しました！",
+            "usage": "§c§8/§c{label} type §8<§cpublic§8|§cprivate§8|§cclosed§8> を使用してください"
+        },
+        "invite": {
+            "already_in_party": "§cそのプレイヤーはすでにパーティにいます...",
+            "already_invited": "§cそのプレイヤーはすでに招待されています...",
+            "expired": "§dパーティ §8§l» §r§c§d{sender} §7からの招待が期限切れになりました...",
+            "received": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §dパーティ招待§8===-=-=-{n}§dパーティ §8§l» §r§d{player} §7があなたをパーティに招待しました...{n}§dパーティ §8§l» §r§7§a/party 承諾 §7で承諾するか §c/party 拒否 §7で拒否してください",
+            "self": "§c自分を招待することはできません...",
+            "sent": "§dパーティ §8§l» §r§7招待を §d{player}§7 に送りました！",
+            "usage": "§c§8/§c{label} invite §8<§cプレイヤー§8> を使用してください"
+        },
+        "accept": {
+            "no_invite": "§c保留中のパーティ招待がありません..."
+        },
+        "deny": {
+            "none": "§c保留中のパーティ招待がありません...",
+            "notify": "§dパーティ §8§l» §r§d{player} §7が招待を断りました...",
+            "success": "§7招待を断りました！"
+        },
+        "usage": "§c§8/§c{label} §8<§ccreate§8|§cjoin§8|§cleave§8|§ckick§8|§ctransfer§8|§cchat§8|§cinfo§8|§ctype§8|§cinvite§8|§caccept§8|§cdeny§8> を使用してください"
+    },
+    "pets": {
+        "_prefix": "§3ペット §8§l» §r",
+        "activated": "§7ペットを正常に作成しました！",
+        "deactivated": "§7ペットを正常に無効にしました！",
+        "invalid_pet": "§c無効なペットです... §8/§c{label} list で利用可能なリストを確認",
+        "invalid_world": "§cここではペットをスポーンできません...",
+        "list": "§7利用可能なペットリスト §8(§f{count}§8):§7 {pets}",
+        "no_active": "§cアクティブなペットがありません...",
+        "no_name": "§c§8/§c{label} name §8<§c名前§8> を使用してください",
+        "no_perm": "§cVIP §f§lMoon §r§c以上のプレイヤーのみペットをスポーンできます... §o https://loja.iakunamc.com で購入",
+        "no_type": "§c§8/§c{label} spawn §8<§cペット§8> [§c名前§8] を使用してください",
+        "renamed": "§7ペットの名前を '§3{name}§7' に正常に変更しました！",
+        "to_adult": "§7ペットを成体に正常に変更しました！",
+        "to_baby": "§7ペットを赤ちゃんに正常に変更しました！",
+        "usage": "§c§8/§c{label} §8<§con§8|§crandom§8|§coff§8|§cname§8|§cbaby§8|§clist§8> を使用してください"
+    },
+    "pin": {
+        "add": {
+            "_prefix": "§3PIN §8§l» §r",
+            "already": "§cすでにPINがあります...",
+            "success": "§7PINを正常に追加しました！",
+            "usage": "§c§8/§c{label} add §8<§c4桁のPIN§8> を使用してください"
+        },
+        "change": {
+            "_prefix": "§3PIN §8§l» §r",
+            "incorrect": "§c現在のPINが間違っています...",
+            "success": "§7PINを正常に変更しました！",
+            "usage": "§c§8/§c{label} change §8<§c現在のPIN§8> <§c新しいPIN§8> を使用してください"
+        },
+        "error": {
+            "incorrect": "§3PIN §8§l» §r§cPINが間違っています..."
+        },
+        "login": {
+            "timeout": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §3PIN §8===-=-=-=-{n}§cログイン時間が終了しました...",
+            "toomany": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §3PIN §8===-=-=-=-{n}§c認証の試行が多すぎます..."
+        },
+        "need": {
+            "login": "§3PIN §8§l» §r§7認証を完了するためにチャットにPINを入力してください"
+        },
+        "remove": {
+            "_prefix": "§3PIN §8§l» §r",
+            "incorrect": "§cPINが間違っています...",
+            "nopin": "§cPINがありません...",
+            "success": "§7PINを正常に削除しました！",
+            "usage": "§c§8/§c{label} remove §8<§c現在のPIN§8> を使用してください"
+        },
+        "success": {
+            "login": "§3PIN §8§l» §r§7認証に成功しました！"
+        },
+        "usage": "§3PIN §8§l» §r§c§8/§c{label} §8<§cadd§8|§cremove§8|§cchange§8> を使用してください"
+    },
+    "pluscolor": {
+        "_prefix": "§cシステム §8§l» §r",
+        "invalid": "§c無効なカラーです...",
+        "reset": "§7+のカラーをデフォルトにリセットしました！",
+        "success": "§7+のカラーを {color}§7 に正常に変更しました！",
+        "usage": "§c§8/§c{label} §8<§cカラー§8|§creset§8>{n}§cシステム §8§l» §r§7利用可能なカラー§8: {colors}"
+    },
+    "pref": {
+        "_prefix": "§cシステム §8§l» §r",
+        "disable": "§7設定を正常に無効にしました！",
+        "enable": "§7設定を正常に有効にしました！",
+        "onlyvip": "§cVIP §b§l§oAstral §r§c以上のプレイヤーのみこの設定を変更できます... §o https://loja.iakunamc.com で購入",
+        "reset": "§7全ての設定をデフォルトにリセットしました！",
+        "usage": "§c§8/§c{label} §8<§c設定§8|§creset§8>{n}§cシステム §8§l» §r§c利用可能な設定§8:§7 {prefs}"
+    },
+    "profanity": {
+        "_prefix": "§cシステム §8§l» §r",
+        "blocked": "§c礼儀正しくしてください"
+    },
+    "profile": {
+        "view": {
+            "disabled": "§3プロフィール §8§l» §r§cプレイヤーがプロフィール表示を無効にしています..."
+        }
+    },
+    "randomtp": {
+        "_prefix": "§cシステム §8§l» §r",
+        "no_safe_location": "§c安全な場所が見つかりませんでした...",
+        "success": "§7§c{x}§8,§c {y}§8,§c {z} §7にテレポートしました"
+    },
+    "register": {
+        "setpassword": {
+            "success": "§e認証 §8§l» §r§7パスワードを正常に設定しました！新しいデバイスでは §8/§7login §8<§7パスワード§8> §7でログインしてください"
+        },
+        "usage": "§e認証 §8§l» §r§c§8/§c{label} §8<§cパスワード§8> を使用してください"
+    },
+    "repair": {
+        "_prefix": "§6修理 §8§l» §r",
+        "no_damage": "§cこのアイテムはすでに完全な状態です...",
+        "no_item": "§c手にアイテムを持っていません...",
+        "no_repairable_items": "§cインベントリに修理できるアイテムがありません...",
+        "not_in_survival": "§cサバイバルモードにいません...",
+        "not_repairable": "§cこのアイテムは修理できません...",
+        "success": "§7§6{item} §7を修理して §6{durability} §7耐久度を回復しました。費用: §c{cost} コイン§7！",
+        "success_all": "§6修理 §8§l» §r§7§6{items} §7個のアイテムを修理して合計 §6{durability} §7耐久度を回復しました。費用: §c{cost} コイン§7！"
+    },
+    "report": {
+        "_prefix": "§cシステム §8§l» §r",
+        "already_reported": "§cすでにそのプレイヤーを報告しました...",
+        "noself": "§c自分を報告することはできません！",
+        "nostaff": "§cスタッフメンバーを報告することはできません！",
+        "sent": "§7§c{reason} §7の理由で §c{target} §7を正常に報告しました！",
+        "usage": "§c§8/§c{label} §8<§cプレイヤー§8> <§c理由§8> を使用してください"
+    },
+    "requests": {
+        "_prefix": "§cシステム §8§l» §r",
+        "disabled": "§cそのプレイヤーはリクエストの受信を無効にしています..."
+    },
+    "restart": {
+        "kick": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§c再起動中...",
+        "time": "§cシステム §8§l» §r§7サーバーは §c{time}§7 後に再起動します..."
+    },
+    "rules": {
+        "cmd": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §cルール §8===-=-=-=-{n}§cシステム §8§l» §r§7深刻な侮辱、差別、嫌がらせ、脅迫、ヘイトスピーチ、または過激主義の宣伝は禁止です{n}§cシステム §8§l» §r§7他のサーバー、サイト、SNS、外部コミュニティの宣伝または言及は禁止です{n}§cシステム §8§l» §r§7フィルター回避、バグ・脆弱性の悪用は禁止です{n}§cシステム §8§l» §r§7ハック、オートクリッカー、バグ、チートの使用は厳しく禁止されています §8(§72人操作・ターボコントローラーを含む§8){n}§cシステム §8§l» §r§7アカウントの乗っ取り、スタッフへのなりすまし、詐欺は禁止です{n}§cシステム §8§l» §r§7ソロモードや1v1でのチーミングは禁止です{n}§cシステム §8§l» §r§7攻撃的・不適切・挑発的な名前、スキン、建築は禁止です{n}§cシステム §8§l» §r§7チャットでの大文字の乱用、フラッド、スパム、繰り返しメッセージは禁止です{n}§cシステム §8§l» §r§7スタッフの妨害、決定の無視、サーバーへの侮辱は禁止です"
+    },
+    "scoreboard": {
+        "lobby": "{right}     §fi§cAkuna§9MC §8§l» §r§cロビー{n}{right}{bar}{n}{right}§8§l» §r§7名前§8:§c {name}{n}{right}§8§l» §r§7オンライン§8:§c {online}§8/§c{onlinemax}{n}{right}§8§l» §r§7PING§8:§c {ping}ms{n}{right}{bar}{n}{n}{right}§c{address}",
+        "plot": "{right}   §fi§cAkuna§9MC §8§l» §r§9プロット{n}{right}{bar}{n}{right}§8§l» §r§7名前§8:§9 {name}{n}{right}§8§l» §r§7プレイ中§8:§9 {onlinemap}{n}{right}§8§l» §r§7プロット§8:§9 {plots}{n}{right}{bar}{n}{n}{right}§9{address}",
+        "lobby_bw": "{right}  §fi§cAkuna§9MC §8§l» §r§cBed§fWars{n}{right}{bar}{n}{right}§8§l» §r§7勝利§8:§c {wins}{n}{right}§8§l» §r§7キル§8:§c {kills}{n}{right}§8§l» §r§7ファイナルキル§8:§c {final_kills}{n}{right}§8§l» §r§7ベッド破壊§8:§c {beds}{n}{right}{bar}{n}{n}{right}§c{address}",
+        "lobby_sw": "{right}  §fi§cAkuna§9MC §8§l» §r§bSky§fWars{n}{right}{bar}{n}{right}§8§l» §r§7勝利§8:§b {wins}{n}{right}§8§l» §r§7キル§8:§b {kills}{n}{right}§8§l» §r§7試合§8:§b {plays}{n}{right}{bar}{n}{n}{right}§b{address}"
+    },
+    "server": {
+        "whitelist": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§cサーバーはメンテナンス中です{n}§cDiscord: https://discord.iakunamc.com",
+        "forcedshutdown": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§cサーバーが強制シャットダウンされました...",
+        "attack": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§cシステム §8§l» §r§7サーバーがDDoS攻撃を受けています...{n}§7プロテクションは既に緩和中です。必要な保護が有効になりましたが、遅延や切断が発生する可能性があります{n}§cシステム §8§l» §r§7サポート§8: §chttps://discord.iakunamc.com",
+        "info": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §f情報 §8===-=-=-=-{n}§cシステム §8» §r§7IP§8:§c iakunamc.com{n}§cシステム §8» §r§7ポート§8:§c 19132{n}{n}§cシステム §8» §r§7スタッフ応募§8:§c https://staff.iakunamc.com{n}§cシステム §8» §r§7ストア§8:§c https://loja.iakunamc.com{n}§cシステム §8» §r§7Discord§8:§c https://discord.iakunamc.com{n}{n}§fY§cT §8» §r§7300 登録者 §a+ §7プロモーション動画{n}§fMini§cYT §8» §r§750 登録者 §a+ §7プロモーション動画{n}§cYT§fmirin §8» §r§70 登録者 §a+ §7プロモーション動画{n}§c注意 §8» §r§7タイトル/説明にIPを入れ、月に1回サーバーを宣伝してランクを維持してください",
+        "tps_low": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§cシステム §8§l» §r§7サーバーが過負荷のようです。スタッフが既に対応中です..."
+    },
+    "sethome": {
+        "_prefix": "§cシステム §8§l» §r",
+        "already_exists": "§cその名前のホームはすでに存在します...",
+        "limit": "§cホームの上限に達しました...",
+        "not_in_survival": "§cサバイバルモードにいません...",
+        "position_exists": "§cその位置にすでにホームがあります...",
+        "success": "§7ホーム §c{home} §7を正常に作成しました！",
+        "usage": "§c§8/§c{label} §8<§c名前§8> を使用してください"
+    },
+    "shop": {
+        "_prefix": "§eショップ §8§l» §r",
+        "break": {
+            "not_owner": "§cオーナーのみショップを削除できます...",
+            "success": "§7ショップを正常に削除しました",
+            "_prefix": "§eShop §8§l» §r"
+        },
+        "buy": {
+            "inventory_full": "§cインベントリが満杯です...",
+            "not_enough_stock": "§c在庫不足...",
+            "success": "§7§e{owner} §7から §e{quantity}§7x {item} を §c{price} コイン§7で購入しました",
+            "_prefix": "§eShop §8§l» §r"
+        },
+        "chest_access_denied": "§cショップオーナーのみこのチェストにアクセスできます...",
+        "chest_not_found": "§cショップのチェストが見つかりません...",
+        "create": {
+            "chest_not_found": "§c看板の後ろ/下にチェストを置いてください...",
+            "error": "§cショップ作成エラー...",
+            "invalid_item": "§c無効なアイテムIDです...",
+            "invalid_price": "§c無効な価格です...",
+            "invalid_quantity": "§c無効な数量です...",
+            "success": "§7ショップを正常に作成しました！",
+            "_prefix": "§eShop §8§l» §r"
+        },
+        "inventory_full": "§cインベントリが満杯です...",
+        "not_in_survival": "§cサバイバルモードにいません...",
+        "owner": {
+            "notify_purchase": "§e{seller} §7が §e{quantity}§7x {item} を §c{price} コイン§7で販売しました！",
+            "notify_sale": "§e{buyer} §7が §e{quantity}§7x {item} を §c{price} コイン§7で購入しました！",
+            "_prefix": "§eShop §8§l» §r"
+        },
+        "purchase_error": "§c購入処理エラー...",
+        "purchase_summary": "§7{items} を合計 §c{total} コイン§7で購入しました！",
+        "self_interact": "§c自分のショップとインタラクトすることはできません...",
+        "sell": {
+            "chest_full": "§cショップのチェストが満杯です...",
+            "insufficient_items": "§cアイテムが不足しています...",
+            "success": "§7§e{owner}§7 に §e{quantity}§7x {item} を §c{price} コイン§7で販売しました！",
+            "_prefix": "§eShop §8§l» §r"
+        }
+    },
+    "sit": {
+        "_prefix": "§cシステム §8§l» §r",
+        "accept": {
+            "different_world": "§cプレイヤーと同じワールドにいる必要があります...",
+            "none": "§c保留中の抱っこリクエストがありません...",
+            "notify": "§c{target} §7が抱っこリクエストを受け入れました！",
+            "offline": "§cリクエストを送ったプレイヤーがサーバーを離れました...",
+            "sender_different_world": "§c{target} §7はもう同じワールドにいません...",
+            "sender_too_far": "§c{target} §7が遠くに行きすぎました...",
+            "success": "§7§c{sender}§7 のリクエストを受け入れました！",
+            "too_far": "§c遠すぎます..."
+        },
+        "blockedworld": "§cここでは座れません...",
+        "deny": {
+            "none": "§c保留中の抱っこリクエストがありません...",
+            "notify": "§c{target} §7が抱っこリクエストを断りました...",
+            "success": "§7抱っこリクエストを正常に断りました..."
+        },
+        "different_world": "§cプレイヤーと同じワールドにいる必要があります...",
+        "expired": "§c§c{sender} §7からの抱っこリクエストが期限切れになりました...",
+        "pending": "§cそのプレイヤーにはすでに保留中の抱っこリクエストがあります...",
+        "request": {
+            "_prefix": "",
+            "received": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §6抱っこリクエスト §8===-=-=-{n}§cシステム §8§l» §r§6{sender} §7があなたを抱っこしたいです...{n}§cシステム §8§l» §r§7§a/sitaccept §7で受け入れるか §c/sitdeny §7で断ってください",
+            "sent": "§cシステム §8§l» §r§7抱っこリクエストを §c{target}§7 に送りました！"
+        },
+        "self": "§c自分にリクエストを送ることはできません...",
+        "success": "§7正常に座りました！",
+        "too_far": "§c遠すぎます..."
+    },
+    "sleep": {
+        "_prefix": "§cシステム §8§l» §r",
+        "blockedworld": "§cここでは寝ることができません...",
+        "success": "§7正常に寝ました！良い夢を..."
+    },
+    "smelt": {
+        "_prefix": "§6製錬 §8§l» §r",
+        "inventory_full": "§cインベントリが満杯です...",
+        "no_blocks": "§c製錬できる鉱石ブロックがありません...",
+        "not_in_survival": "§cサバイバルモードにいません...",
+        "success": "§7§6{blocks} §7個のブロックを §6{ores} §7個の鉱石に製錬しました。費用: §c{cost} コイン§7！"
+    },
+    "tell": {
+        "_prefix": "§1テル §8§l» §r",
+        "disabled": "§cそのプレイヤーはテルを無効にしています...",
+        "noselferror": "§c自分にメッセージを送ることはできません",
+        "player": "§1{sender} §8§l»§r§7 あなた§8:§7 {msg}",
+        "sender": "§7あなた §8§l»§r§1 {player}§8:§7 {msg}",
+        "usage": "§c§8/§c{label} §8<§cプレイヤー§8> <§cメッセージ§8> を使用してください",
+        "disabled_me": "§1テル §8§l» §r§cテルが無効になっています..."
+    },
+    "tempban": {
+        "broadcast": "§cシステム §8§l» §r§c{target} §7は §c{reason} §7により §c{time} §7の一時BANをされました",
+        "kick": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§c一時BANされました...{n}§c名前§8:§c {name}{n}§c理由§8:§c {reason}{n}§c期限§8:§c {end}{n}§c日付§8:§c {timestamp}"
+    },
+    "tempmute": {
+        "_prefix": "§cシステム §8§l» §r",
+        "broadcast": "§c{target} §7は §c{reason} §7により §c{time} §7の一時ミュートをされました",
+        "muted": "§c{reason} により一時ミュートされました。処罰は {end} に切れます{n}§cシステム §8§l» §r§c罰を避けるために §8/§cルール §cを読んでください..."
+    },
+    "tpa": {
+        "expired": "§5テレポート §8§l» §r§c{sender} からのテレポートリクエストが期限切れになりました...",
+        "noself": "§5テレポート §8§l» §r§c自分にテレポートすることはできません...",
+        "not_in_survival": "§5テレポート §8§l» §r§cサバイバルモードにいません...",
+        "pending": "§5テレポート §8§l» §r§cそのプレイヤーにはすでに保留中のテレポートリクエストがあります...",
+        "received": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §5テレポートリクエスト §8===-=-=-=-{n}§5テレポート §8§l» §r§5{sender} §7があなたにテレポートしたいです...{n}§5テレポート §8§l» §r§7§a/tpaccept §7で受け入れるか §c/tpdeny §7で断ってください",
+        "sent": "§5テレポート §8§l» §r§7テレポートリクエストを §5{target}§7 に送りました！",
+        "target_not_in_survival": "§5テレポート §8§l» §r§cプレイヤーはサバイバルモードにいません...",
+        "usage": "§5テレポート §8§l» §r§c§8/§c{label} §8<§cプレイヤー§8> を使用してください"
+    },
+    "tpaccept": {
+        "_prefix": "§5テレポート §8§l» §r",
+        "none": "§c保留中のテレポートリクエストがありません...",
+        "not_in_survival": "§cプレイヤーはサバイバルモードにいません...",
+        "success": "§7§5{sender}§7 のテレポートリクエストを受け入れました！",
+        "success_target": "§5{target} §7がテレポートリクエストを受け入れました！"
+    },
+    "tpdeny": {
+        "_prefix": "§5テレポート §8§l» §r",
+        "none": "§c保留中のテレポートリクエストがありません...",
+        "success": "§7§5{sender}§7 のテレポートリクエストを断りました！",
+        "success_target": "§5{target} §7がテレポートリクエストを断りました..."
+    },
+    "warn": {
+        "_prefix": "§cシステム §8§l» §r",
+        "active_warning": "§c{count} 件のアクティブな警告があります... §8/§cwarns §cで確認してください...",
+        "received": "§7§c{reason} §7により §c{time} §7の警告を受けました{n}§cシステム §8§l» §r§c罰を避けるために §8/§cルール §cを読んでください..."
+    },
+    "wings": {
+        "_prefix": "§6翼 §8§l» §r",
+        "invalid_world": "§cここでは翼を有効にできません...",
+        "off": "§7翼を正常に無効にしました",
+        "on": "§7翼を正常に有効にしました"
+    },
+    "xp": {
+        "_prefix": "§9レベル §8§l» §r",
+        "gain": "§7§9{xp} XP§7 を獲得しました！",
+        "gain_partner": "§7パートナー §c{partner}§7 から §9{xp} XP§7 を獲得しました！",
+        "levelup": "§7おめでとう！§9レベル {newLevel} §7に達しました",
+        "temp_multiplier": "§7§9{boost}倍 §7の一時ブーストが §9{time} §7間有効です"
+    },
+    "error": {
+        "_prefix": "§cシステム §8§l» §r",
+        "unknowncommand": "§cそのコマンドは存在しません...",
+        "offlineplayer": "§cプレイヤーはオフラインです",
+        "command": "§cエラーが発生しました！",
+        "noperm": "§cこのコマンドを使用する権限がありません...",
+        "invalid_page": "§cシステム §8§l» §r§c無効なページです。ページ数は §c{total} §cページのみです..."
+    },
+    "ping": {
+        "_prefix": "§cシステム §8§l» §r",
+        "self": "§7PINGは §c{ping}ms §7です",
+        "other": "§7§c{target}§7 のPINGは §c{ping}ms §7です"
+    },
+    "version": {
+        "_prefix": "§bApi §8§l» §r",
+        "command": "§fi§cAkuna§9MC §bApi §8'§7{codename}§8'{n}{n}§7作者§8:§b M4theuskkj{n}§7更新日§8:§b {lastupdate}"
+    },
+    "list": {
+        "_prefix": "§cシステム §8§l» §r",
+        "command": "§7オンラインプレイヤー §8(§f{online}§8/§f{maxOnline}§8):§7 {list}"
+    },
+    "mission": {
+        "_prefix": "§6ミッション §8§l» §r",
+        "completed": "§7おめでとう！ミッション §6{mission} §7をクリアしました",
+        "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §6ミッション §8===-=-=-=-",
+        "header_other": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §6{target}§7 の§6ミッション §8===-=-=-=-",
+        "resetIn": "§7ミッションは §6{time} §7後にリセットされます",
+        "break": {
+            "_prefix": "",
+            "blocks": "§7{target} 個のブロックを破壊する",
+            "beds": "§7§cBed§fWars §7で {target} 個のベッドを破壊する"
+        },
+        "kill": {
+            "_prefix": "",
+            "skywars": "§7§bSky§fWars §7で {target} 人のプレイヤーを倒す",
+            "pvp": "§7§bPvP Modes §7で {target} 人のプレイヤーを倒す",
+            "thebridge": "§7§cThe§9Bridge §7で {target} 人のプレイヤーを倒す",
+            "bedwars": "§7§cBed§fWars §7で {target} 人のプレイヤーを倒す",
+            "blocksumo": "§7§bBlock§fSumo §7で {target} 人のプレイヤーを倒す"
+        },
+        "win": {
+            "_prefix": "",
+            "bedwars": "§7§cBed§fWars §7で {target} 試合勝利する",
+            "mlgblock": "§7§eMlg§fBlock §7で {target} 試合勝利する",
+            "duels": "§7§2デュエル §7で {target} 試合勝利する",
+            "skywars": "§7§bSky§fWars §7で {target} 試合勝利する",
+            "thebridge": "§7§cThe§9Bridge §7で {target} 試合勝利する",
+            "blocksumo": "§7§bBlock§fSumo §7で {target} 試合勝利する"
+        },
+        "place": {
+            "_prefix": "",
+            "blocks": "§7{target} 個のブロックを設置する"
+        },
+        "complete": {
+            "_prefix": "",
+            "parkour": "§7§5パルクール §7を {target} 回クリアする"
+        },
+        "score": {
+            "_prefix": "",
+            "thebridge": "§7§cThe§9Bridge §7で {target} ポイント獲得する"
+        },
+        "mine": {
+            "_prefix": "",
+            "coal": "§7石炭鉱石を {target} 個採掘する",
+            "iron": "§7鉄鉱石を {target} 個採掘する",
+            "gold": "§7金鉱石を {target} 個採掘する",
+            "diamond": "§7ダイヤモンド鉱石を {target} 個採掘する",
+            "emerald": "§7エメラルド鉱石を {target} 個採掘する"
+        },
+        "get": {
+            "_prefix": "",
+            "wood": "§7木材を {target} 個集める"
+        },
+        "craft": {
+            "_prefix": "",
+            "items": "§7{target} 個のアイテムをクラフトする"
+        },
+        "no": {
+            "missions": "§c現在利用可能なミッションがありません..."
+        },
+        "list": {
+            "item": {
+                "v2": "§7{name} §8- §7進捗§8:§f {progress}§8/§f{target} §8- §7報酬§8: {reward}"
+            }
+        },
+        "reward": {
+            "xp_multiplier": "§7§9XP倍増器 {multiplier}倍 §7を §6{duration} §7間獲得しました"
+        },
+        "first": {
+            "kill": {
+                "_prefix": "",
+                "skywars": "§7§bSky§fWars §7で最初にキル {target} 回達成する",
+                "bedwars": "§7§cBed§fWars §7で最初にキル {target} 回達成する",
+                "thebridge": "§7§cThe§9Bridge §7で最初にキル {target} 回達成する",
+                "blocksumo": "§7§bBlock§fSumo §7で最初にキル {target} 回達成する"
+            }
+        },
+        "play": {
+            "_prefix": "",
+            "bedwars": "§7§cBed§fWars §7を {target} 試合プレイする",
+            "skywars": "§7§bSky§fWars §7を {target} 試合プレイする"
+        },
+        "buy": {
+            "items": {
+                "_prefix": "",
+                "bedwars": "§7§cBed§fWars §7のショップで {target} 個のアイテムを購入する"
+            },
+            "upgrades": {
+                "_prefix": "",
+                "bedwars": "§7§cBed§fWars §7で {target} 回アップグレードを購入する"
+            }
+        }
+    },
+    "missions": {
+        "_prefix": "§6ミッション §8§l» §r",
+        "reset": "§7§8/§7resetmissions で §c{cost} コイン§7を使ってリセットできます"
+    },
+    "resetmissions": {
+        "_prefix": "§6ミッション §8§l» §r",
+        "no_missions": "§cリセットするミッションがありません！",
+        "success": "§7ミッションを正常にリセットしました！"
+    },
+    "cages": {
+        "_prefix": "§cケージ §8§l» §r",
+        "usage": "§c§8/§c{label} §8<§cbuy§8|§cset§8|§cunset§8|§clist§8|§cinfo§8> を使用してください",
+        "buy": {
+            "_prefix": "",
+            "usage": "§cCages §8§l» §r§c§8/§c{label} buy §8<§ccage§8> §8[§cminigame§8] を使用してください",
+            "already_owned": "§cCages §8§l» §r§cこのケージはすでに所有しています...",
+            "success": "§cCages §8§l» §r§7ケージ §c{cage} §7を §c{cost} Akunas で購入しました！"
+        },
+        "set": {
+            "_prefix": "",
+            "usage": "§cCages §8§l» §r§c§8/§c{label} set §8<§ccage§8> §8[§cminigame§8] を使用してください",
+            "not_owned": "§cCages §8§l» §r§cこのケージを所有していません...",
+            "success": "§cCages §8§l» §r§7ケージ §c{cage} §7を有効化しました！",
+            "failed": "§cCages §8§l» §r§cケージの有効化に失敗しました..."
+        },
+        "unset": {
+            "_prefix": "",
+            "usage": "§cCages §8§l» §r§c§8/§c{label} unset §8<§cminigame§8> を使用してください",
+            "success": "§cCages §8§l» §r§7{minigame} のケージを無効化しました！"
+        },
+        "list": {
+            "_prefix": "",
+            "title": "§cCages §8§l» §r§7ケージ§8:",
+            "owned": "§cCages §8§l» §r§7所有§8:§7 {cages}",
+            "unowned": "§cCages §8§l» §r§7未所有§8:§7 {cages}"
+        },
+        "info": {
+            "_prefix": "",
+            "usage": "§cCages §8§l» §r§c§8/§c{label} info §8<§ccage§8> §8[§cminigame§8] を使用してください",
+            "title": "§cCages §8§l» §r§7ケージ §c{cage}§8 の情報:",
+            "description": "§cCages §8§l» §r§7説明§8:§7 {description}",
+            "cost": "§cCages §8§l» §r§7価格§8:§c {cost} Akunas",
+            "status": "§cCages §8§l» §r§7所有§8:§7 {status}",
+            "active": "§cCages §8§l» §r§7有効§8:§7 {active}"
+        },
+        "cage": {
+            "_prefix": "",
+            "not_found": "§cCages §8§l» §r§cケージが見つかりません..."
+        },
+        "minigame": {
+            "_prefix": "",
+            "invalid": "§cCages §8§l» §r§c無効なミニゲーム..."
+        }
+    },
+    "cageswindow": {
+        "_prefix": "§cケージ §8§l» §r",
+        "invalid_minigame": "§cCages §8§l» §r§c無効なミニゲーム... 使用可能§8:§7 {minigames}",
+        "title": "§7ケージ",
+        "disable": {
+            "_prefix": "",
+            "button_minigame": "§cケージを無効化",
+            "button_all": "§cすべてのケージを無効化",
+            "minigame_success": "§cCages §8§l» §r§7{minigame} §7のケージを無効化しました！",
+            "all_success": "§cCages §8§l» §r§7すべてのケージを無効化しました！",
+            "success": "§cCages §8§l» §r§7ケージ §c{cage} §7を無効化しました！"
+        },
+        "set": {
+            "_prefix": "",
+            "success": "§cCages §8§l» §r§7ケージ §c{cage} §7を有効化しました！"
+        },
+        "buy": {
+            "_prefix": "",
+            "title": "§7ケージ §c{cage} §7を §c{cost} Akunas§8 で購入しますか？",
+            "success": "§cケージ §8§l» §r§7ケージ §c{cage} §7を購入しました！"
+        }
+    },
+    "cage": {
+        "prison": {
+            "description": "刑務所の石ケージ"
+        },
+        "iron": {
+            "description": "鉄のケージ"
+        },
+        "bedrock": {
+            "description": "岩盤ケージ"
+        },
+        "gold": {
+            "description": "金のケージ"
+        },
+        "lapis": {
+            "description": "ラピスラズリのケージ"
+        },
+        "obsidian": {
+            "description": "黒曜石のケージ"
+        },
+        "wooden": {
+            "description": "木のケージ"
+        },
+        "ice": {
+            "description": "氷のケージ"
+        },
+        "rainbow": {
+            "description": "虹色ケージ"
+        },
+        "emerald": {
+            "description": "エメラルドのケージ"
+        },
+        "diamond": {
+            "description": "ダイヤモンドのケージ"
+        },
+        "redstone": {
+            "description": "レッドストーンのケージ"
+        },
+        "coal": {
+            "description": "石炭のケージ"
+        },
+        "bricks": {
+            "description": "レンガのケージ"
+        },
+        "mossy": {
+            "description": "苔石のケージ"
+        },
+        "chiseled": {
+            "description": "石レンガのケージ"
+        },
+        "quartz": {
+            "description": "石英のケージ"
+        },
+        "nether": {
+            "description": "ネザーのケージ"
+        },
+        "end": {
+            "description": "エンドのケージ"
+        },
+        "snow": {
+            "description": "雪のケージ"
+        },
+        "glowstone": {
+            "description": "グロウストーンのケージ"
+        },
+        "terracotta": {
+            "description": "テラコッタのケージ"
+        }
+    },
+    "temprank": {
+        "_prefix": "§cシステム §8§l» §r",
+        "expiry": "§7タグ §c{rank} §7は §c{time}§7 後に期限切れになります..."
+    },
+    "language": {
+        "_prefix": "§3言語 §8§l» §r",
+        "usage": "§c§8/§c{label} §8<§cリスト§8|§c言語§8> を使用してください",
+        "list_header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §3言語 §8(§f{page}§8/§f{max}§8) §8===-=-=-=-",
+        "list_item": "§3{code} §8- §7{name}",
+        "changed": "§7言語を §3{name}§7 に正常に変更しました！",
+        "invalid": "§c言語 §8\"§c{code}§8\"§c は存在しません。§8/§c{label} リスト で言語リストを確認してください"
+    },
+    "skin": {
+        "_prefix": "§3スキン §8§l» §r",
+        "usage": "§c§8/§c{label} §8<§clist§8|§cview§8|§con§8|§coff§8> を使用してください",
+        "list": {
+            "_prefix": "",
+            "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §3スキン §8(§f{page}§8/§f{pages}§8){filter} ===-=-=-=-",
+            "entry": "§3{id} §8§l» §r§7{name} §8-§7 {type}",
+            "empty": "§3スキン §8§l» §r§cそのフィルターに一致するスキンが見つかりません..."
+        },
+        "view": {
+            "_prefix": "",
+            "usage": "§3スキン §8§l» §r§c§8/§c{label} view §8<§cid§8> を使用してください",
+            "not_found": "§3スキン §8§l» §r§cスキンが見つかりません...",
+            "no_data": "§3スキン §8§l» §r§cスキンデータが見つかりません..."
+        },
+        "on": {
+            "_prefix": "",
+            "usage": "§3スキン §8§l» §r§c§8/§c{label} on §8<§cid§8> を使用してください",
+            "not_found": "§3スキン §8§l» §r§cスキンが見つかりません...",
+            "no_data": "§3スキン §8§l» §r§cスキンデータが見つかりません...",
+            "already_equipped": "§3スキン §8§l» §r§cそのスキンはすでに装備しています...",
+            "success": "§3スキン §8§l» §r§7スキン §3{name} §7を正常に有効にしました！"
+        },
+        "off": {
+            "_prefix": "",
+            "none": "§3スキン §8§l» §r§cスキンがありません...",
+            "success": "§3スキン §8§l» §r§7スキンを正常に削除しました"
+        }
+    }
+}

@@ -1,0 +1,2665 @@
+{
+    "_displayname": "中文(简体)",
+    "_authors": [
+        "M4theuskkj"
+    ],
+    "bedwars": {
+        "game": {
+            "_prefix": "§cBed§fWars §8§l» §r",
+            "waiting": "§c等待更多玩家...",
+            "countdown": "§7即将在 §c{time}秒 §7后开始",
+            "returning": "§7将在 §c{time}秒 §7后返回大厅",
+            "respawning": "§7将在 §c{time}秒 §7后重生",
+            "player_joined": "§c{player} §7加入了游戏 §8(§f{count}§8/§f{max}§8)",
+            "player_left": "§c{player} §7离开了游戏 §8(§f{count}§8/§f{max}§8)",
+            "player_left_rejoin": "§c{player} §7已离开 §8(§cRejoin§8)",
+            "player_returned": "§c{player} §7返回了游戏",
+            "custom_info": "§7您正在 §c{creator} §7创建的自定义房间中",
+            "custom_no_stats": "§7此游戏不计入统计，您可以使用 §8/§7bwcustom config 查看房间设置"
+        },
+        "combat": {
+            "_prefix": "§cBed§fWars §8§l» §r",
+            "killed_by": "{victim} §r§7被 {killer} §r§7击杀",
+            "killed_by_final": "{victim} §r§7被 {killer} §r§7击杀 §8(§c最终击杀§8)",
+            "fell_void": "{victim} §r§7掉入了虚空",
+            "fell_void_final": "{victim} §r§7掉入了虚空 §8(§c最终击杀§8)",
+            "infected_by": "{victim} §r§7被 {killer} §r§7感染",
+            "eliminated_by": "{victim} §r§7被 {killer} §r§7淘汰",
+            "team_eliminated": "§cBed§fWars §8§l» §r§7队伍 {team} §r§7已被淘汰！",
+            "enderchest_drop": "§cBed§fWars §8§l» §r§7{player} §7的末影箱物品已掉落到队伍熔炉！"
+        },
+        "bed": {
+            "_prefix": "§cBed§fWars §8§l» §r",
+            "destroyed": "§7队伍 {team} §r§7的床被 {killer} §r§7摧毁了",
+            "own_destroyed": "§c您的床被 {killer}§c 摧毁了！您将不再重生..."
+        },
+        "trap": {
+            "_prefix": "§cBed§fWars §8§l» §r",
+            "enemy": "§c敌方陷阱已触发！",
+            "own": "§c您的岛屿陷阱已被触发！"
+        },
+        "tracker": {
+            "tracking": "§cBed§fWars §8§l» §r§7追踪 §c{player} §8§7 距离§8:§c {distance} §7格"
+        },
+        "enderchest": {
+            "_prefix": "§cBed§fWars §8§l» §r",
+            "stored": "§7物品已成功存入",
+            "retrieved": "§7物品已成功取出",
+            "full": "§c您的末影箱已满...",
+            "empty": "§c您的末影箱是空的...",
+            "inventory_full": "§c您的背包已满...",
+            "cant_store_tools": "§c您不能存入工具！",
+            "cant_store_tools_menu": "§c无法存入工具...",
+            "keep_sword": "§c您必须在背包中保留至少一把剑！"
+        },
+        "drop": {
+            "combat_cancel": "§cBed§fWars §8§l» §r§c战斗中不能丢弃物品！"
+        },
+        "teams": {
+            "_prefix": "§cBed§fWars §8§l» §r",
+            "vip_only": "§c只有拥有 §b§l§oAstral§r§c 或更高VIP的玩家才能选择队伍！§o请在 https://loja.iakunamc.com 购买",
+            "moved_by_partner": "§7您被伴侣移动到队伍 {team}§r§7！",
+            "already_in_team": "§c您已在队伍 {team}§r§c 中！",
+            "team_full": "§c队伍 {team} §r§c已满！",
+            "joined_team": "§7您成功加入了队伍 {team}§r§7！",
+            "preference_set": "§7已将队伍 {team} §r§7设为偏好",
+            "invalid_team": "§c无效队伍..."
+        },
+        "rejoin": {
+            "_prefix": "§cBed§fWars §8§l» §r",
+            "pending": "§7您离开了一场进行中的游戏...",
+            "pending_hint": "§7使用 §8/§7bedwars rejoin 返回游戏",
+            "no_pending": "§c您没有待处理的重新加入！",
+            "expired": "§c重新加入已过期！",
+            "game_ended": "§c游戏已结束或床已被摧毁！"
+        },
+        "command": {
+            "_prefix": "§cBed§fWars §8§l» §r",
+            "usage": "§7加入请使用 §8/§7bw join §8<§7模式§8> §7或 §8/§7bw join §8<§7代码§8>",
+            "usage_leave": "§7离开请使用 §8/§7bw leave",
+            "usage_full": "§7加入请使用 §8/§7bw join §8<§7solo§8|§7duo§8|§7trios§8|§7squad§8|§71v1§8|§7ultra§8|§7infection§8> §7或 §8/§7bw join §8<§7代码§8>",
+            "invalid_mode": "§c无效模式... 可用模式§8:§7 {modes}",
+            "mode_full": "§c此模式已满...",
+            "invalid_code": "§c无效代码或房间已满...",
+            "not_in_arena": "§c您不在竞技场中..."
+        },
+        "custom": {
+            "vip_only": "§cBed§fWars §8§l» §r§c只有拥有 §7§o§lGalaxy§r§a+§c 或更高VIP的玩家才能创建自定义房间！§o请在 https://loja.iakunamc.com 购买",
+            "created": "§cBed§fWars §8§l» §r§7自定义房间创建成功！",
+            "code": "§cBed§fWars §8§l» §r§7房间代码：§c{code}",
+            "join_hint": "§cBed§fWars §8§l» §r§7其他玩家可使用 §8/§7bw join §c{code} §7进入",
+            "create_failed": "§cBed§fWars §8§l» §r§c无法创建自定义房间...",
+            "settings_ignored": "§cBed§fWars §8§l» §r§c部分设置已被忽略...",
+            "not_in_custom": "§cBed§fWars §8§l» §r§c您不在自定义房间中...",
+            "no_settings_changed": "§cBed§fWars §8§l» §r§c此游戏没有自定义配置...",
+            "settings_header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §7自定义房间设置 §8===-=-=-=-",
+            "create_usage": "§cBed§fWars §8§l» §r§c使用 §8/§cbwcustom create §8<§c模式§8> §8<§c设置§8>",
+            "no_settings": "§cBed§fWars §8§l» §r§c您需要至少设置一个自定义配置...",
+            "no_valid_settings": "§cBed§fWars §8§l» §r§c没有有效的配置...",
+            "invalid_format": "§cBed§fWars §8§l» §r§c无效格式§8: §c{part} §8(§c使用 key§8=§cvalue§8)",
+            "unknown_setting": "§cBed§fWars §8§l» §r§c未知设置§8: §c{key}",
+            "unknown_item": "§cBed§fWars §8§l» §r§c未知物品§8: §c{item}",
+            "unknown_upgrade": "§cBed§fWars §8§l» §r§c未知升级§8: §c{upgrade}",
+            "time_zero": "§cBed§fWars §8§l» §r§c时间必须大于零...",
+            "invalid_time": "§cBed§fWars §8§l» §r§c无效时间...",
+            "invalid_speed": "§cBed§fWars §8§l» §r§c无效速度...",
+            "speed_zero": "§cBed§fWars §8§l» §r§c速度必须大于零...",
+            "speed_max": "§cBed§fWars §8§l» §r§c最大速度为10倍...",
+            "forge_level_range": "§cBed§fWars §8§l» §r§c熔炉等级必须在0到3之间...",
+            "generator_level_range": "§cBed§fWars §8§l» §r§c生成器等级必须在1到3之间...",
+            "invalid_gen_item": "§cBed§fWars §8§l» §r§c无效生成器物品§8: §c{item}={amount} §8(§c最大§8: §c64§8)",
+            "help": "§cBed§fWars §8§l» §r§7创建自定义房间请使用 §8/§7bwcustom 创建 §8<§7模式§8> §8<§7设置§8>",
+            "help_config": "§cBed§fWars §8§l» §r§7查看房间自定义设置请使用 §8/§7bwcustom config",
+            "help_list": "§cBed§fWars §8§l» §r§7列出可用自定义设置请使用 §8/§7bwcustom list §8<§7configs§8|§7items§8|§7upgrades§8>",
+            "list_usage": "§cBed§fWars §8§l» §r§c使用 §8/§cbwcustom list §8<§cconfigs§8|§citems§8|§cupgrades§8>",
+            "list_configs_header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §7可用配置 §8===-=-=-=-",
+            "list_items": "§cBed§fWars §8§l» §r§7可用物品 §8(§f{count}§8): §7{list}",
+            "list_upgrades": "§cBed§fWars §8§l» §r§7可用升级 §8(§f{count}§8): §7{list}",
+            "show_blocked_items": "§cBed§fWars §8§l» §r§7已屏蔽物品 §8(§f{count}§8): §7{list}",
+            "show_blocked_upgrades": "§cBed§fWars §8§l» §r§7已屏蔽升级 §8(§f{count}§8): §7{list}",
+            "show_upgrade_time": "§cBed§fWars §8§l» §r§7升级时间§8: §c{time}",
+            "show_forge_speed": "§cBed§fWars §8§l» §r§7熔炉速度§8: §c{speed}倍",
+            "show_diamond_time": "§cBed§fWars §8§l» §r§7§b钻石§7生成器时间§8: §c{time}",
+            "show_emerald_time": "§cBed§fWars §8§l» §r§7§2绿宝石§7生成器时间§8: §c{time}",
+            "show_forge_level": "§cBed§fWars §8§l» §r§7熔炉等级§8: §c{level}",
+            "show_generator_level": "§cBed§fWars §8§l» §r§7生成器等级§8: §c{level}",
+            "show_beds_destroyed": "§cBed§fWars §8§l» §r§7床已摧毁§8: {value}",
+            "beds_yes": "§a是",
+            "beds_no": "§c否"
+        },
+        "menu": {
+            "_prefix": "§cBed§fWars §8§l» §r",
+            "invalid_mode": "§c无效模式... 可用模式§8:§7 {modes}",
+            "arena_not_found": "§c未找到竞技场！",
+            "map_not_found": "§c未找到地图...",
+            "wrong_mode": "§c此地图属于 {mode} 模式...",
+            "load_error": "§c加载竞技场时出错...",
+            "no_space": "§c竞技场空间不足...",
+            "mode_full": "§c此模式已满...",
+            "click_favorite": "§7点击地图以收藏或取消收藏",
+            "map_favorited": "§7地图 {map} 已添加到收藏",
+            "map_unfavorited": "§7地图 {map} 已从收藏中移除",
+            "confirm_button": "§a§l确认",
+            "cancel_button": "§c§l取消"
+        },
+        "shop": {
+            "_prefix": "§cBed§fWars §8§l» §r",
+            "no_resources": "§c您没有足够的资源购买此物品！",
+            "armor_better": "§c您已拥有此盔甲或更好的盔甲！",
+            "inventory_full": "§c您的背包已满！",
+            "already_has_shears": "§c您已有剪刀！"
+        },
+        "upgrade": {
+            "_prefix": "§cBed§fWars §8§l» §r",
+            "max_level": "§c{name} §c已达到最高等级！",
+            "need_diamonds": "§c还需要 {amount} 颗§b钻石§c！",
+            "purchased": "§c{player} §7将 {name} §7升级到了 §c{level}§7 级！"
+        },
+        "generator": {
+            "_prefix": "§cBed§fWars §8§l» §r",
+            "upgraded": "§7{type} §7生成器已升级到 §f{level} §7级",
+            "beds_destroyed": "§c所有床已被摧毁！"
+        },
+        "cooldown": {
+            "_prefix": "§cBed§fWars §8§l» §r",
+            "egg": "§c请等待再次使用桥梁蛋！",
+            "irongolem": "§c请等待再次召唤铁傀儡！",
+            "silverfish": "§c请等待再次召唤蠹虫！",
+            "slingshot": "§c请等待再次使用弹弓！",
+            "fireball": "§c请等待再次使用火球！",
+            "sponge": "§c请等待再次使用海绵！",
+            "platform": "§c请等待再次使用平台！",
+            "bridge": "§c请等待再次使用桥梁建造器！",
+            "tower": "§c请等待再次使用紧凑塔！"
+        },
+        "platform": {
+            "_prefix": "§cBed§fWars §8§l» §r",
+            "blocked": "§c无法在此处创建平台..."
+        }
+    },
+    "teampvp": {
+        "_prefix": "§aTeamPvP §8§l» §r",
+        "usage": "§7加入请使用 §8/§7{label} join §8<§7队伍§8>{n}§aTeamPvP §8§l» §r§7离开请使用 §8/§7{label} leave",
+        "join": {
+            "_prefix": "",
+            "usage": "§aTeamPvP §8§l» §r§c使用 §8/§c{label} join §8<§c队伍§8>"
+        },
+        "teams": "§c可用队伍§8:§7 {teams}",
+        "sameteam": "§c您不能攻击自己队伍的玩家！"
+    },
+    "parkour": {
+        "_prefix": "§5跑酷 §8§l» §r",
+        "usage": "§7加入请使用 §8/§7{label} join{n}§5跑酷 §8§l» §r§7离开请使用 §8/§7{label} leave",
+        "finish": {
+            "time": "§7您在 §5{time} §7内完成了跑酷",
+            "personalbest": "§5新纪录！§7您的最佳时间§8:§5 {time}",
+            "noreward": "§7恭喜，您完成了跑酷！",
+            "reward": "§7恭喜，您完成了跑酷并获得了 §7§lNightmare §r§7奖励！"
+        }
+    },
+    "thebridge": {
+        "_prefix": "§cThe§9Bridge §8§l» §r",
+        "game": {
+            "_prefix": "§cThe§9Bridge §8§l» §r",
+            "waiting": "§c等待更多玩家...",
+            "countdown": "§7即将在 §c{time}秒 §7后开始",
+            "returning": "§7将在 §c{time}秒 §7后返回大厅",
+            "respawning": "§7将在 §c{time}秒 §7后重生",
+            "player_joined": "§c{player} §7加入了游戏 §8(§f{count}§8/§f{max}§8)",
+            "player_left": "§c{player} §7离开了游戏 §8(§f{count}§8/§f{max}§8)",
+            "score": "§c{player} §7为队伍 {team} §r§7得分！",
+            "win": "§7队伍 {team} §r§7赢得了游戏！",
+            "tie": "§7平局！",
+            "killed_by": "§c{victim} §7was killed by §c{killer}",
+            "own_point": "§cYou cannot score a point on your own team's side",
+            "player_quit": "§c{player} §7left the match",
+            "point_scored": "{player} §7scored a point",
+            "point_scored_final": "{player} §7scored a point §8(§cFinal Point§8)",
+            "releasing": "§7Releasing in §c{time}s"
+        },
+        "combat": {
+            "killed_by": "{victim} §r§7被 {killer} §r§7击杀",
+            "fell_void": "{victim} §r§7掉入了虚空"
+        },
+        "command": {
+            "_prefix": "§cThe§9Bridge §8§l» §r",
+            "usage": "§7加入请使用 §8/§7{label} join §8<§7模式§8>",
+            "usage_leave": "§7离开请使用 §8/§7{label} leave",
+            "invalid_mode": "§c无效模式... 可用模式§8:§7 {modes}",
+            "not_in_arena": "§c您不在竞技场中...",
+            "no_arenas": "§cNo arenas available at the moment..."
+        },
+        "teams": {
+            "already_in": "§cYou are already on the {team}§r§c team!",
+            "full": "§cThe {team} §r§cteam is full!",
+            "invalid": "§cInvalid team...",
+            "joined": "§7You joined the {team}§r §7team successfully!"
+        }
+    },
+    "skywars": {
+        "game": {
+            "_prefix": "§bSky§fWars §8§l» §r",
+            "waiting": "§c等待更多玩家...",
+            "countdown": "§7即将在 §b{time}秒 §7后开始",
+            "returning": "§7将在 §b{time}秒 §7后返回大厅",
+            "player_joined": "§b{player} §7加入了游戏 §8(§f{count}§8/§f{max}§8)",
+            "player_left": "§b{player} §7离开了游戏 §8(§f{count}§8/§f{max}§8)",
+            "win": "§b{player} §7赢得了游戏！"
+        },
+        "combat": {
+            "killed_by": "{victim} §r§7被 {killer} §r§7击杀",
+            "fell_void": "{victim} §r§7掉入了虚空"
+        },
+        "command": {
+            "_prefix": "§bSky§fWars §8§l» §r",
+            "usage": "§7加入请使用 §8/§7{label} join §8<§7模式§8>",
+            "usage_leave": "§7离开请使用 §8/§7{label} leave",
+            "invalid_mode": "§c无效模式... 可用模式§8:§7 {modes}",
+            "not_in_arena": "§c您不在竞技场中...",
+            "mode_full": "§cThis mode is full...",
+            "mode_not_exist": "§cMode {mode} does not exist..."
+        },
+        "menu": {
+            "_prefix": "§bSky§fWars §8§l» §r",
+            "invalid_mode": "§c无效模式... 可用模式§8:§7 {modes}",
+            "arena_not_found": "§c未找到竞技场！",
+            "map_not_found": "§c未找到地图...",
+            "wrong_mode": "§c此地图属于 {mode} 模式...",
+            "load_error": "§c加载竞技场时出错...",
+            "no_space": "§c竞技场空间不足...",
+            "mode_full": "§c此模式已满...",
+            "click_favorite": "§7点击地图以收藏或取消收藏",
+            "map_favorited": "§7地图 {map} 已添加到收藏",
+            "map_unfavorited": "§7地图 {map} 已从收藏中移除",
+            "confirm_button": "§a§l确认",
+            "cancel_button": "§c§l取消"
+        },
+        "_prefix": "§fSky§bWars §8§l» §r",
+        "caos": {
+            "fire": "§6Fire!",
+            "inventory_scramble": "§7Scrambled inventories!",
+            "inventory_swap": "§eInventories swapped!",
+            "launch": "§7Flying!",
+            "teleport": "§7Teleport!",
+            "tnt_rain": "§cTNT rain!",
+            "tnt_spawn": "§cTNTs!"
+        },
+        "player": {
+            "join": "§b{player} §7joined the match §8(§f{count}§8/§f{maxPlayers}§8)",
+            "killed_by": "§b{player} §7was killed by §b{killer} §8(§f{alive}§8/§f{maxPlayers}§8)",
+            "killed_void": "§b{player} §7fell into the void §8(§f{alive}§8/§f{maxPlayers}§8)",
+            "quit": "§b{player} §7left the match §8(§f{count}§8/§f{maxPlayers}§8)"
+        },
+        "refill": {
+            "_prefix": "",
+            "done": "§7All chests have been refilled!"
+        },
+        "scoreboard": {
+            "_prefix": "",
+            "format": "{right} §fi§cAkuna§9MC §8§l» §r§fSky§bWars{n}{right}{bar}{n}{refill}{right}§8§l» §r§7Map§8:§b {map}{n}{right}§8§l» §r§7Alive§8:§b {alive}{n}{right}§8§l» §r§7Kills§8:§b {kills}{n}{right}{bar}{n}{n}{right}§biakunamc.com 19132"
+        },
+        "state": {
+            "finish": "§7Returning to lobby in §b{time}s",
+            "starting": "§7Starting in §b{start}s",
+            "waiting": "§cWaiting for more players..."
+        },
+        "tracker": "§8§l» §r§7Tracking §b{player} §8§l» §r§7Distance: §b{distance} §7blocks",
+        "voting": {
+            "player_voted": "§b{player} §7voted for {gamemode}",
+            "selected": "§7Selected mode§8:§b {gamemode}"
+        }
+    },
+    "mlgblock": {
+        "_prefix": "§eMlg§fBlock §8§l» §r",
+        "game": {
+            "waiting": "§e等待更多玩家...",
+            "countdown": "§7即将在 §e{time}秒 §7后开始",
+            "returning": "§7将在 §e{time}秒 §7后返回大厅",
+            "player_joined": "§e{player} §7加入了游戏 §8(§f{count}§8/§f{max}§8)",
+            "player_left": "§e{player} §7离开了游戏 §8(§f{count}§8/§f{max}§8)",
+            "win": "§e{player} §7赢得了游戏！",
+            "failed": "§e{player} §7失败了！",
+            "survived": "§e{player} §7成功落地！"
+        },
+        "command": {
+            "_prefix": "§eMlg§fBlock §8§l» §r",
+            "usage": "§7加入请使用 §8/§7{label} join",
+            "usage_leave": "§7离开请使用 §8/§7{label} leave",
+            "not_in_arena": "§c您不在竞技场中...",
+            "no_arenas": "§cNo arenas available..."
+        },
+        "player": {
+            "_prefix": "§eMlg§fBlock §8§l» §r",
+            "join": "§e{player} §7joined the match §8(§f{count}§8/§f{slots}§8)",
+            "killed_by": "§e{player} §7was killed by §e{killer} §8(§f{alive}§8/§f{slots}§8)",
+            "killed_void": "§e{player} §7fell into the void §8(§f{alive}§8/§f{slots}§8)",
+            "quit": "§e{player} §7left the match §8(§f{count}§8/§f{slots}§8)"
+        },
+        "scoreboard": {
+            "format": "{right}§fi§cAkuna§9MC §8§l» §r§eMlg§fBlock{n}{right}{bar}{n}{right}§8§l» §r§7Map§8:§e {map}{n}{right}§8§l» §r§7Kills§8:§e {kills}{n}{right}§8§l» §r§7Alive§8:§e {alive}{n}{right}{bar}{n}{n}{right}§eiakunamc.com 19132"
+        },
+        "state": {
+            "_prefix": "§eMlg§fBlock §8§l» §r",
+            "finish": "§7Returning to lobby in §e{time}s",
+            "starting": "§7Starting in §e{start}s",
+            "waiting": "§cWaiting for more players..."
+        }
+    },
+    "blocksumo": {
+        "_prefix": "§bBlock§fSumo §8§l» §r",
+        "game": {
+            "waiting": "§b等待更多玩家...",
+            "countdown": "§7即将在 §b{time}秒 §7后开始",
+            "returning": "§7将在 §b{time}秒 §7后返回大厅",
+            "player_joined": "§b{player} §7加入了游戏 §8(§f{count}§8/§f{max}§8)",
+            "player_left": "§b{player} §7离开了游戏 §8(§f{count}§8/§f{max}§8)",
+            "win": "§b{player} §7赢得了游戏！",
+            "eliminated": "§b{player} §7被淘汰了！",
+            "killed_by": "{victim} §r§7被 {killer} §r§7击杀"
+        },
+        "command": {
+            "_prefix": "§bBlock§fSumo §8§l» §r",
+            "usage": "§7加入请使用 §8/§7{label} join",
+            "usage_leave": "§7离开请使用 §8/§7{label} leave",
+            "not_in_arena": "§c您不在竞技场中...",
+            "no_arenas": "§cNo arenas available..."
+        },
+        "player": {
+            "_prefix": "§bBlock§fSumo §8§l» §r",
+            "join": "§b{player} §7joined the match §8(§f{count}§8/§f{slots}§8)",
+            "killed_by": "§b{player} §7was killed by §b{killer} §8(§f{alive}§8/§f{slots}§8)",
+            "killed_by_final": "§b{player} §7was §celiminated §7by §b{killer} §8(§f{alive}§8/§f{slots}§8)",
+            "killed_void": "§b{player} §7fell into the void §8(§f{alive}§8/§f{slots}§8)",
+            "quit": "§b{player} §7left the match §8(§f{count}§8/§f{slots}§8)",
+            "respawning": "§7Respawning in §b{time}s"
+        },
+        "scoreboard": {
+            "format": "{right}§fi§cAkuna§9MC §8§l» §r§bBlock§fSumo{n}{right}{bar}{n}{right}§8§l» §r§7Map§8:§b {map}{n}{right}§8§l» §r§7Kills§8:§b {kills}{n}{right}§8§l» §r§7Lives§8:§b {lives}{n}{right}{bar}{n}{n}{right}§biakunamc.com 19132"
+        },
+        "state": {
+            "_prefix": "§bBlock§fSumo §8§l» §r",
+            "finish": "§7Returning to lobby in §b{time}s",
+            "starting": "§7Starting in §b{start}s",
+            "waiting": "§cWaiting for more players..."
+        }
+    },
+    "plot": {
+        "_prefix": "§9地块 §8§l» §r",
+        "claim": {
+            "success": "§7地块已成功领取！",
+            "already_claimed": "§c您已有一个地块...",
+            "no_plots": "§c没有可用的地块...",
+            "alias": "c",
+            "alreadyclaimed": "§9Plot §8§l» §r§cThis plot is already claimed by {owner}",
+            "desc": "§7Claims the plot you are standing in",
+            "name": "claim",
+            "nomoney": "§9Plot §8§l» §r§cYou don't have enough money to claim this plot",
+            "usage": "§8/§cp claim §8<§cname§8>",
+            "yourplot": "§9Plot §8§l» §r§cYou already claimed this plot"
+        },
+        "unclaim": {
+            "success": "§7地块已成功放弃！",
+            "not_owner": "§c您不是此地块的主人..."
+        },
+        "home": {
+            "not_owner": "§c您没有地块...",
+            "not_found": "§c未找到地块...",
+            "alias": "h",
+            "desc": "§7Teleports to one of your plots",
+            "error": "§9Plot §8§l» §r§cCould not travel to the plot...",
+            "name": "home",
+            "noplots": "§9Plot §8§l» §r§cYou have no plots",
+            "notexist": "§9Plot §8§l» §r§cYou don't have a plot with id {id}",
+            "success": "§9Plot §8§l» §r§7Teleported to plot §9{plot} §7successfully!",
+            "usage": "§8/§cp home §8<§cid§8>"
+        },
+        "visit": {
+            "not_found": "§c未找到 {player} 的地块..."
+        },
+        "accepttransfer": {
+            "desc": "§7Accepts a plot transfer",
+            "invalid_data": "§9Plot §8§l» §r§cInvalid plot data...",
+            "name": "accepttransfer",
+            "no_pending": "§cSystem §8§l» §r§cYou have no pending requests...",
+            "not_exists": "§9Plot §8§l» §r§cThe plot does not exist...",
+            "not_owner": "§9Plot §8§l» §r§cThe plot no longer belongs to {owner}...",
+            "notify_sender": "§9Plot §8§l» §r§c{player} §7accepted the plot transfer §9{plot}§7!",
+            "success": "§9Plot §8§l» §r§7You accepted the plot transfer §9{plot}§7!",
+            "usage": "§8/§cp accepttransfer"
+        },
+        "addhelper": {
+            "alias": "addh",
+            "alreadyone": "§9Plot §8§l» §r§c{player} is already a helper...",
+            "desc": "§7Adds a helper to your plot",
+            "everyone": {
+                "success": "§9Plot §8§l» §r§7All players are now helpers on your plot!"
+            },
+            "name": "addhelper",
+            "offline": "§cSystem §8§l» §r§cPlayer is offline",
+            "success": "§9Plot §8§l» §r§9{player} §7is now a helper on your plot",
+            "usage": "§8/§cp addhelper §8<§cplayer§8>"
+        },
+        "allow": {
+            "already": {
+                "allowed": "§9Plot §8§l» §r§c{player} is already allowed..."
+            },
+            "desc": "§7Allows all or a player to enter your plot",
+            "everyone": {
+                "success": "§9Plot §8§l» §r§7All players can now enter the plot!"
+            },
+            "name": "allow",
+            "success": "§9Plot §8§l» §r§9{player} §7can now enter the plot!",
+            "usage": "§8/§cp allow §8<§cplayer§8|§c*§8>"
+        },
+        "auto": {
+            "alias": "a",
+            "desc": "§7Teleports to the next free plot",
+            "name": "auto",
+            "noplots": "§9Plot §8§l» §r§7No plots available...",
+            "notplotworld": "§9Plot §8§l» §r§cYou are not in the Plot world...",
+            "success": "§9Plot §8§l» §r§7Teleported to free plot §9{x}§8;§9{z} §7successfully!",
+            "usage": "§8/§cp auto"
+        },
+        "biome": {
+            "alias": "b",
+            "desc": "§7Changes the biome of your plot",
+            "invalid": "§9Plot §8§l» §r§cThis biome does not exist...",
+            "name": "biome",
+            "possible": "§9Plot §8§l» §r§7Available biomes§8:§7 {biomes}",
+            "success": "§9Plot §8§l» §r§7Plot biome changed to §9{biome} §7successfully!",
+            "usage": "§8/§cp biome §8[§cbiome§8]"
+        },
+        "biomecolor": {
+            "desc": "§7Changes the biome color of your plot",
+            "invalid_format": "§9Plot §8§l» §r§cUse §8/§cp biomecolor §8<§cr§8,§cg§8,§cb§8>",
+            "invalid_range": "§9Plot §8§l» §r§cColor values must be between 0 - 255...",
+            "invalid_type": "§9Plot §8§l» §r§cColors must be numbers (rgb format)...",
+            "name": "biomecolor",
+            "success": "§9Plot §8§l» §r§7Biome color changed to §9{r}§8,§9{g}§8,§9{b} §7successfully!",
+            "usage": "§8/§cp biomecolor §8<§cr§8,§cg§8,§cb§8>"
+        },
+        "clear": {
+            "alias": "cl",
+            "already_clearing": "§9Plot §8§l» §r§cThis plot is already being cleared...",
+            "confirm": "§9Plot §8§l» §r§7Are you sure you want to clear plot §9{plot}§7? Use §8/§7p clear confirm",
+            "desc": "§7Clears your plot",
+            "name": "clear",
+            "success": "§9Plot §8§l» §r§7Plot cleared successfully!",
+            "usage": "§8/§cp clear"
+        },
+        "command": {
+            "alias": "p",
+            "desc": "§7Manage your plots",
+            "name": "plot",
+            "unknown": "§9Plot §8§l» §r§cUnknown subcommand, use §8/§cp help to see available commands",
+            "usage": "§9Plot §8§l» §r§cUse §8/§cplot §8<§chelp§8|§csub-cmd§8> §8[§coptions§8]"
+        },
+        "confirm": "confirm",
+        "deny": {
+            "already": {
+                "denied": "§9Plot §8§l» §r§c{player} is already blocked..."
+            },
+            "desc": "§7Blocks all or a player from entering your plot",
+            "everyone": {
+                "success": "§9Plot §8§l» §r§7All players were blocked!"
+            },
+            "name": "deny",
+            "success": "§9Plot §8§l» §r§9{player} §7was blocked successfully!",
+            "usage": "§8/§cp deny §8<§cplayer§8|§c*§8>"
+        },
+        "denytransfer": {
+            "desc": "§7Denies a plot transfer",
+            "name": "denytransfer",
+            "no_pending": "§cSystem §8§l» §r§cYou have no pending requests...",
+            "notify_sender": "§9Plot §8§l» §r§9{player} §7declined the plot transfer...",
+            "success": "§9Plot §8§l» §r§7You declined the plot transfer...",
+            "usage": "§8/§cp denytransfer"
+        },
+        "dispose": {
+            "alias": "d",
+            "confirm": "§9Plot §8§l» §r§7Are you sure you want to discard plot §9{plot}§7? Use §8/§7p dispose confirm",
+            "desc": "§7Discards your plot",
+            "name": "dispose",
+            "success": "§9Plot §8§l» §r§7Plot discarded successfully!",
+            "usage": "§8/§cp dispose"
+        },
+        "error": "§9Plot §8§l» §r§cOops! Something went wrong...",
+        "generate": {
+            "alias": "gen",
+            "desc": "§7Generates a new plot world",
+            "error": "§9Plot §8§l» §r§cThe world could not be generated...",
+            "exists": "§9Plot §8§l» §r§cWorld {name} already exists",
+            "name": "generate",
+            "success": "§9Plot §8§l» §r§7Plot world generated successfully: {name}",
+            "usage": "§8/§cp generate §8<§cname§8>"
+        },
+        "give": {
+            "alias": "g",
+            "desc": "§7Gives your plot to another player",
+            "expired": "§9Plot §8§l» §r§cThe plot transfer request has expired...",
+            "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §7Plot §9Transfer§8===-=-=-",
+            "instructions": "§9Plot §8§l» §r§7Use §a/p accepttransfer §7to accept or §c/p denytransfer §7to decline",
+            "name": "give",
+            "notonline": "§9Plot §8§l» §r§cPlayer is offline",
+            "pending_exists": "§cSystem §8§l» §r§cThis player already has a pending request...",
+            "request": "§9Plot §8§l» §r§9{player} §7wants to give you plot §9{x}§8;§9{z}",
+            "requests_disabled": "§cSystem §8§l» §r§cThis player has disabled receiving requests...",
+            "sent": "§9Plot §8§l» §r§7Transfer request sent to §9{player}§7!",
+            "toself": "§9Plot §8§l» §r§cYou can't give a plot to yourself...",
+            "usage": "§8/§cp give §8<§cplayer§8>"
+        },
+        "help": {
+            "alias": "help",
+            "desc": "§7Shows Plot commands",
+            "entry": "§9Plot §8§l» §r§8/§7p {name} §8-§7 {desc}",
+            "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §9Plot §8(§f{page}§8/§f{total}§8) §8===-=-=-=-",
+            "name": "help",
+            "usage": "§8/§cp help §8<§cpage§8>"
+        },
+        "homes": {
+            "alias": "hs",
+            "desc": "§7Shows your plots",
+            "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §9Plots §8(§f{page}§8/§f{total}§8) §8===-=-=-=-",
+            "invalid_page": "§cSystem §8§l» §r§cInvalid page, there are only §c{total} §cpages...",
+            "name": "homes",
+            "noplots": "§9Plot §8§l» §r§cYou have no plots...",
+            "usage": "§8/§cp homes"
+        },
+        "info": {
+            "about": "§9Plot §8§l» §r§7Information about plot §9{plot}",
+            "alias": "i",
+            "allowed": "§9Plot §8§l» §r§7Allowed §8(§f{count}§8):§7 {players}",
+            "biome": "§9Plot §8§l» §r§7Biome§8:§9 {biome}",
+            "denied": "§9Plot §8§l» §r§7Denied §8(§f{count}§8):§7 {players}",
+            "desc": "§7Shows information about a plot",
+            "helpers": "§9Plot §8§l» §r§7Helpers §8(§f{count}§8):§7 {helpers}",
+            "name": "info",
+            "owner": "§9Plot §8§l» §r§7Owner§8:§9 {owner}",
+            "plotname": "§9Plot §8§l» §r§7Name§8:§9 {name}",
+            "rating": "§9Plot §8§l» §r§7Rating§8:§9 {score} §8(§9{count} §7ratings§8)",
+            "usage": "§8/§cp info"
+        },
+        "name": {
+            "alias": "n",
+            "desc": "§7Sets or changes the plot name",
+            "name": "name",
+            "success": "§9Plot §8§l» §r§7Plot name changed to §7\"§9{name}§7\" successfully!",
+            "usage": "§8/§cp name §8<§cname§8>"
+        },
+        "notinplot": "§9Plot §8§l» §r§cYou are not inside a plot...",
+        "notowner": "§9Plot §8§l» §r§cYou don't own this plot...",
+        "popup": {
+            "_prefix": "§9Plot §8§l» §r",
+            "available": "§7This plot is free! Claim it for §c{price} Akunas §7with /p claim",
+            "owner": "§7Owned by §9{owner} §8- §7Rating§8:§9 {rating}",
+            "rate": "§7Like this plot? Rate it with §8/§7p rate!"
+        },
+        "rate": {
+            "alias": "rate",
+            "desc": "§7Rates a plot",
+            "invalid_range": "§9Plot §8§l» §r§cThe rating must be between 1 and 5...",
+            "name": "rate",
+            "notify_owner": "§9Plot §8§l» §r §9{player} §7rated your plot §9{x}§8;§9{z} §7with §9{rating} §7stars!",
+            "self": "§9Plot §8§l» §r§cYou cannot rate your own plot...",
+            "success": "§9Plot §8§l» §r§7Rating submitted! Plot average rating§8:§9 {score}",
+            "usage": "§8/§cp rate §8<§cscore - 1 to 5§8>"
+        },
+        "removehelper": {
+            "alias": "delh",
+            "desc": "§7Removes a helper from your plot",
+            "everyone": {
+                "success": "§9Plot §8§l» §r§7All players were removed from helpers!"
+            },
+            "name": "removehelper",
+            "notone": "§9Plot §8§l» §r§c{player} is not a helper...",
+            "success": "§9Plot §8§l» §r§9{player} §7was removed from helpers...",
+            "usage": "§8/§cp removehelper §8<§cplayer§8>"
+        },
+        "reset": {
+            "alias": "r",
+            "already_clearing": "§9Plot §8§l» §r§cThis plot is already being reset...",
+            "confirm": "§9Plot §8§l» §r§7Are you sure you want to reset plot §9{plot}§7? Use §8/§7p reset confirm",
+            "desc": "§7Resets your plot",
+            "name": "reset",
+            "success": "§9Plot §8§l» §r§7Plot reset successfully!",
+            "usage": "§8/§cp reset"
+        },
+        "resetplots": {
+            "alias": "rsp",
+            "desc": "§7Resets all plots of a player",
+            "name": "resetplots",
+            "usage": "§8/§cp resetplots §8<§cplayer§8>"
+        },
+        "subcommand": {
+            "usage": "§9Plot §8§l» §r§cUsage: {usage}"
+        },
+        "top": {
+            "alias": "best",
+            "desc": "§7Shows the top 10 highest rated plots",
+            "entry": "§9{pos} §8§l» §r§9{x}§8;§9{z} §8-§9 {owner} §8- §9{score} §8(§9{ratings} §7Ratings§8)",
+            "header": "§8-=-=-=-=== §bTop 10 §8- §9Plots §8===-=-=-=-",
+            "name": "top",
+            "noplots": "§9Plot §8§l» §r§cNo rated plots found...",
+            "usage": "§8/§cp top"
+        },
+        "warp": {
+            "alias": "w",
+            "desc": "§7Teleports to a plot",
+            "name": "warp",
+            "notinplotworld": "§9Plot §8§l» §r§cYou are not in the Plot world...",
+            "success": "§9Plot §8§l» §r§7You were teleported to plot §9{plot}§7!",
+            "unclaimed": "§9Plot §8§l» §r§cThis plot doesn't belong to anyone...",
+            "usage": "§8/§cp warp §8<§cid§8>",
+            "wrongid": "§9Plot §8§l» §r§cThe id must be in X;Z format"
+        }
+    },
+    "cosmetic": {
+        "_prefix": "§5装饰 §8§l» §r",
+        "trail": {
+            "activated": "§7轨迹 §5{type} §7已成功激活！",
+            "deactivated": "§7轨迹已成功停用！",
+            "invalid": "§c无效轨迹..."
+        },
+        "gadget": {
+            "activated": "§7装备 §5{type} §7已成功激活！",
+            "deactivated": "§7装备已成功停用！",
+            "invalid": "§c无效装备..."
+        },
+        "bedwars": {
+            "bed_break": {
+                "explosion": {
+                    "description": "A devastating explosion when breaking the bed"
+                },
+                "ores": {
+                    "description": "Precious ores explode around the destroyed bed"
+                },
+                "rainbow": {
+                    "description": "A colorful wool explosion when breaking the bed"
+                }
+            },
+            "final_kill": {
+                "blood": {
+                    "description": "Blood..."
+                },
+                "critical": {
+                    "description": "Critical particles explode over the eliminated enemy"
+                },
+                "ez": {
+                    "description": "Displays an EZ text"
+                },
+                "lightning": {
+                    "description": "A lightning bolt strikes the killed player"
+                },
+                "loser": {
+                    "description": "Displays an L text"
+                },
+                "smoke": {
+                    "description": "A cloud of smoke rises over the eliminated enemy"
+                }
+            },
+            "kill": {
+                "critical": {
+                    "description": "Critical particles explode on each kill"
+                },
+                "hearts": {
+                    "description": "Red hearts float over the victim"
+                },
+                "smoke": {
+                    "description": "A cloud of smoke marks each kill"
+                }
+            },
+            "win": {
+                "enchant": {
+                    "description": "Magical particles surround the winner"
+                },
+                "firework": {
+                    "description": "Colorful fireworks explode around the winner"
+                }
+            },
+            "wood_type": {
+                "acacia": {
+                    "description": "Reddish acacia wood"
+                },
+                "birch": {
+                    "description": "Light birch wood"
+                },
+                "dark_oak": {
+                    "description": "Dark oak wood"
+                },
+                "jungle": {
+                    "description": "Exotic jungle wood"
+                },
+                "oak": {
+                    "description": "Classic oak wood"
+                },
+                "spruce": {
+                    "description": "Dark spruce wood"
+                }
+            }
+        },
+        "blocksumo": {
+            "final_kill": {
+                "blood": {
+                    "description": "Blood..."
+                },
+                "critical": {
+                    "description": "Critical particles explode over the eliminated enemy"
+                },
+                "ez": {
+                    "description": "Displays EZ text on final kill"
+                },
+                "lightning": {
+                    "description": "A lightning bolt strikes the eliminated player"
+                },
+                "loser": {
+                    "description": "Displays L text on final kill"
+                },
+                "smoke": {
+                    "description": "A smoke cloud rises over the eliminated enemy"
+                }
+            },
+            "kill": {
+                "blood": {
+                    "description": "Blood splatters at the victim position"
+                },
+                "critical": {
+                    "description": "Critical particles explode on each kill"
+                },
+                "ez": {
+                    "description": "EZ floats above the victim"
+                },
+                "hearts": {
+                    "description": "Red hearts float over the victim"
+                },
+                "lightning": {
+                    "description": "A lightning bolt strikes the victim on death"
+                },
+                "loser": {
+                    "description": "L floats above the victim"
+                },
+                "smoke": {
+                    "description": "A smoke cloud marks each kill"
+                }
+            },
+            "win": {
+                "enchant": {
+                    "description": "Magical particles surround the winner"
+                },
+                "firework": {
+                    "description": "Colorful fireworks explode around the winner"
+                }
+            },
+            "wool_color": {
+                "black": {
+                    "description": "Dark black wool"
+                },
+                "blue": {
+                    "description": "Intense blue wool"
+                },
+                "cyan": {
+                    "description": "Refreshing cyan wool"
+                },
+                "green": {
+                    "description": "Bright green wool"
+                },
+                "orange": {
+                    "description": "Energetic orange wool"
+                },
+                "pink": {
+                    "description": "Delicate pink wool"
+                },
+                "purple": {
+                    "description": "Mysterious purple wool"
+                },
+                "red": {
+                    "description": "Vibrant red wool"
+                },
+                "white": {
+                    "description": "Default white wool"
+                },
+                "yellow": {
+                    "description": "Radiant yellow wool"
+                }
+            }
+        },
+        "skywars": {
+            "kill": {
+                "blood": {
+                    "description": "Blood splatters at the victim position"
+                },
+                "critical": {
+                    "description": "Critical particles explode on each kill"
+                },
+                "ez": {
+                    "description": "EZ floats above the victim"
+                },
+                "hearts": {
+                    "description": "Red hearts float over the victim"
+                },
+                "lightning": {
+                    "description": "A lightning bolt strikes the victim on death"
+                },
+                "loser": {
+                    "description": "L floats above the victim"
+                },
+                "smoke": {
+                    "description": "A smoke cloud marks each kill"
+                }
+            },
+            "win": {
+                "enchant": {
+                    "description": "Magical particles surround the winner"
+                },
+                "firework": {
+                    "description": "Colorful fireworks explode around the winner"
+                }
+            }
+        }
+    },
+    "cosmetics": {
+        "_prefix": "§5装饰 §8§l» §r",
+        "activated": "§7装饰 §5{type} §7已成功激活！",
+        "deactivated": "§7装饰已成功停用！",
+        "invalid_type": "§c无效装饰... 使用 §8/§c{label} list 查看可用列表",
+        "invalid_world": "§c无法在此处使用装饰...",
+        "list": {
+            "_prefix": "§5Cosmetics §8§l» §r",
+            "owned": "§7已拥有§8:§7 {cosmetics}",
+            "title": "§7装饰列表§8:",
+            "unowned": "§7未拥有§8:§7 {cosmetics}"
+        },
+        "no_active": "§c您没有激活任何装饰...",
+        "usage": "§5Cosmetics §8§l» §r§c请使用 §8/§c{label} §8<§cbuy§8|§con§8|§coff§8|§clist§8|§cinfo§8>",
+        "buy": {
+            "_prefix": "§5Cosmetics §8§l» §r",
+            "already_owned": "§c您已经拥有此装饰！",
+            "perm_only": "§c此装饰为权限专属！",
+            "success": "§7装饰 §5{cosmetic}§7 已使用 §c{cost} 金币购买",
+            "usage": "§c请使用 §8/§c{label} buy §8<§ccosmetic§8> [minigame] [type]"
+        },
+        "cosmetic": {
+            "_prefix": "§5Cosmetics §8§l» §r",
+            "ambiguous": "§c此名称存在于多个类型中，请指定小游戏和类型！",
+            "not_found": "§c未找到装饰..."
+        },
+        "info": {
+            "_prefix": "§5Cosmetics §8§l» §r",
+            "active": "§7已激活§8: §5{active}",
+            "cost": "§7价格§8:§c {cost} 金币",
+            "description": "§7描述§8: §5{description}",
+            "minigame": "§7小游戏§8: §5{minigame}",
+            "perm_only": "§7解锁§8: §5权限专属",
+            "status": "§7状态§8: §5{status}",
+            "title": "§7§5{cosmetic}§7 的信息§8:",
+            "type": "§7类型§8: §5{type}",
+            "usage": "§c请使用 §8/§c{label} info §8<§ccosmetic§8> [§cminigame§8] [§ctype§8]"
+        },
+        "minigame": {
+            "invalid": "§5Cosmetics §8§l» §r§c无效小游戏！",
+            "_prefix": ""
+        },
+        "set": {
+            "_prefix": "§5Cosmetics §8§l» §r",
+            "failed": "§c激活装饰失败！",
+            "not_owned": "§c您没有此装饰！",
+            "success": "§7装饰 §5{cosmetic}§7 已激活",
+            "usage": "§c请使用 §8/§c{label} on §8<§ccosmetic§8> [§cminigame§8] [§ctype§8]"
+        },
+        "type": {
+            "invalid": "§5Cosmetics §8§l» §r§c无效装饰类型！"
+        },
+        "unset": {
+            "_prefix": "§5Cosmetics §8§l» §r",
+            "success": "§7默认装饰已在 §5{minigame} §8[§5{type}§8] 启用",
+            "usage": "§c请使用 §8/§c{label} off §8<§cminigame§8> §8<§ctype§8>"
+        }
+    },
+    "cosmeticswindow": {
+        "title": "§5装饰",
+        "buy": {
+            "title": "§7购买§8: §7{cosmetic} §8- §c{cost}",
+            "success": "§5装饰 §8§l» §r§7装饰 §5{cosmetic} §7购买成功！",
+            "confirm": "§a确认",
+            "cancel": "§c取消"
+        },
+        "set": {
+            "success": "§5装饰 §8§l» §r§7装饰 §5{cosmetic} §7已成功激活！"
+        },
+        "disable": {
+            "button": "§c停用装饰",
+            "success": "§5装饰 §8§l» §r§7装饰已成功停用！",
+            "all_success": "§5Cosmetics §8§l» §r§7所有装饰已禁用",
+            "button_all": "§c禁用所有装饰",
+            "button_minigame": "§c禁用该模式装饰",
+            "button_type": "§c禁用该类型装饰",
+            "minigame_success": "§5Cosmetics §8§l» §r§7默认装饰已在 §5{minigame} 启用",
+            "type_success": "§5Cosmetics §8§l» §r§7默认装饰已在 §5{minigame} §8[§5{type}§8] 启用"
+        },
+        "nav": {
+            "prev_page": "§a« 上一页",
+            "current_page": "§8» §f当前页",
+            "next_page": "§a下一页 »",
+            "back": "§c« 返回菜单"
+        },
+        "cost_label": "§c{cost} 金币",
+        "invalid_minigame": "§5Cosmetics §8§l» §r§c无效小游戏...",
+        "invalid_type": "§5Cosmetics §8§l» §r§c无效类型...",
+        "perm_only_label": "§5权限专属",
+        "perm_required": "§5Cosmetics §8§l» §r§c您没有权限使用此装饰！"
+    },
+    "pay": {
+        "_prefix": "§a经济 §8§l» §r",
+        "invalid_amount": "§c金额必须是数字且不能小于或等于0...",
+        "not_enough": "§c您没有足够的金币...",
+        "received": "§7您收到了来自 §a{sender} §7的 §c{amount} 金币§7！",
+        "self": "§c您不能给自己转账！",
+        "sent": "§7您成功向 §a{target} §7转账了 §c{amount} 金币§7！",
+        "usage": "§c使用 §8/§c{label} §8<§c玩家§8> <§c金额§8>",
+        "insufficient_balance": "§cYou don't have enough Akunas to make this transaction...",
+        "receive": "§7You received §c{amount} Akunas§7 from §a{player}§7!",
+        "success": "§7You sent §c{amount} Akunas§7 to §a{target}'s account successfully!"
+    },
+    "economy": {
+        "_prefix": "§a经济 §8§l» §r",
+        "not_enough": "§c您没有足够的金币...",
+        "tax_applied": "§cA tax of {tax} Akunas was applied... Total debited: {total} Akunas"
+    },
+    "skill": {
+        "_prefix": "§6技能 §8§l» §r",
+        "activated": "§7技能 §6{skill} §7已成功激活！",
+        "deactivated": "§7技能已成功停用！",
+        "invalid": "§c无效技能...",
+        "no_active": "§c您没有激活任何技能...",
+        "usage": "§c使用 §8/§c{label} §8<§con§8|§coff§8|§clist§8>",
+        "archer": {
+            "description": "Gain an arrow when hitting enemies"
+        },
+        "bedbreaker": {
+            "description": "When breaking an enemy bed, you receive Speed II and Jump Boost II for 10 seconds"
+        },
+        "bird": {
+            "description": "You receive 2 extra feathers"
+        },
+        "builder": {
+            "description": "Gives you double the blocks"
+        },
+        "cheststealer": {
+            "description": "When clicking on a chest, you automatically receive its items"
+        },
+        "enderpearl": {
+            "description": "Now you can use snowballs as an ender pearl!"
+        },
+        "explosivebow": {
+            "description": "Causes a small explosion where your arrow lands"
+        },
+        "featherboost": {
+            "description": "Increases your feather boost"
+        },
+        "firearrow": {
+            "description": "Arrows set enemies on fire upon hitting them"
+        },
+        "fireballboost": {
+            "description": "Increases the fireball boost on other players"
+        },
+        "fury": {
+            "description": "When killing a player, you receive Speed and Strength effects for 8 seconds"
+        },
+        "hook": {
+            "description": "Arrows pull the enemy forward when hitting them"
+        },
+        "killer": {
+            "description": "You receive Strength and Jump Boost effects when killing a player"
+        },
+        "life": {
+            "description": "Gives you 4 extra hearts"
+        },
+        "miner": {
+            "description": "You have infinite Haste I"
+        },
+        "slingshotboost": {
+            "description": "Increases the Estilingue boost"
+        },
+        "slow": {
+            "description": "When hitting a player with an egg, you apply a slowness effect for 4 seconds"
+        },
+        "sprinter": {
+            "description": "You receive Speed II for 11 seconds",
+            "description_sw": "You receive Speed II at the start of the match"
+        },
+        "switcher": {
+            "description": "When hitting someone with a snowball, you switch places with that person"
+        },
+        "tanker": {
+            "description": "You receive an iron chestplate"
+        },
+        "thief": {
+            "description": "Receive 20% of the player's feathers when killing them..."
+        },
+        "tntegg": {
+            "description": "When throwing an egg, you spawn a TNT!"
+        },
+        "towerspeed": {
+            "description": "Increases the building speed of the compact tower"
+        },
+        "trapbuff": {
+            "description": "When your trap is activated, you gain Strength and Speed II for 6 seconds"
+        },
+        "trapresistance": {
+            "description": "Reduces the duration of negative trap effects by 2 seconds"
+        }
+    },
+    "skills": {
+        "_prefix": "§a技能 §8§l» §r",
+        "activated": "§7技能 §6{type} §7已成功激活！",
+        "deactivated": "§7技能已成功停用！",
+        "invalid_type": "§c无效技能... 使用 §8/§c{label} list 查看可用列表",
+        "invalid_world": "§c无法在此处使用技能...",
+        "list": {
+            "owned": "§7已拥有§8:§7 {skills}",
+            "title": "§7技能列表§8:",
+            "unowned": "§7未拥有§8:§7 {skills}",
+            "_prefix": ""
+        },
+        "no_active": "§c您没有激活任何技能...",
+        "usage": "§c请使用 §8/§c{label} §8<§cbuy§8|§con§8|§coff§8|§clist§8|§cinfo§8>",
+        "activate": {
+            "already_active": "§c此技能已激活...",
+            "failed": "§c激活技能失败！",
+            "limit_reached": "§c您已达到 {limit} 个激活技能的上限...",
+            "not_owned": "§c您没有此技能！",
+            "success": "§7技能 §a{skill}§7 已激活",
+            "usage": "§c请使用 §8/§c{label} on §8<§cskill§8> [minigame]"
+        },
+        "buy": {
+            "already_owned": "§c您已经拥有此技能！",
+            "success": "§7技能 §a{skill}§7 已使用 §c{cost} 金币购买",
+            "usage": "§c请使用 §8/§c{label} buy §8<§cskill§8> [minigame]",
+            "_prefix": ""
+        },
+        "cooldown": {
+            "archer": "§c技能 Archer 冷却中...",
+            "cheststealer": "§c技能 Cheststealer 冷却中...",
+            "enderpearl": "§c技能 Enderpearl 冷却中...",
+            "hook": "§c技能 Hook 冷却中...",
+            "tntegg": "§c技能 Tntegg 冷却中..."
+        },
+        "deactivate": {
+            "all_success": "§7所有技能已停用",
+            "minigame_all_success": "§7来自 §a{minigame} §7的所有技能已停用！",
+            "not_active": "§c此技能未激活！",
+            "success": "§7技能 §a{skill}§7 已停用",
+            "usage": "§c请使用 §8/§c{label} off §8<§cminigame§8> <§cskill§8>"
+        },
+        "info": {
+            "active": "§7已激活§8: §a{active}",
+            "cost": "§7价格§8:§c {cost} 金币",
+            "description": "§7描述§8: §a{description}",
+            "status": "§7状态§8: §a{status}",
+            "title": "§7技能 §a{skill}§7 的信息§8:",
+            "usage": "§c请使用 §8/§c{label} info §8<§cskill§8> [minigame]",
+            "_prefix": ""
+        },
+        "skill": {
+            "not_found": "§aSkills §8§l» §r§c未找到技能...",
+            "_prefix": ""
+        }
+    },
+    "skillswindow": {
+        "title": "§6技能",
+        "buy": {
+            "title": "§7购买§8: §7{skill} §8- §c{cost}",
+            "success": "§6技能 §8§l» §r§7技能 §6{skill} §7购买成功！",
+            "confirm": "§a确认",
+            "cancel": "§c取消",
+            "success_active": "§aSkills §8§l» §r§7You successfully purchased and activated the skill §a{skill} §7!"
+        },
+        "set": {
+            "success": "§6技能 §8§l» §r§7技能 §6{skill} §7已成功激活！"
+        },
+        "disable": {
+            "button": "§c停用技能",
+            "success": "§6技能 §8§l» §r§7技能已成功停用！",
+            "all_minigame_success": "§a技能 §8§l» §r§7来自 §a{minigame} §7的所有技能已停用！",
+            "all_success": "§a技能 §8§l» §r§7所有技能已停用",
+            "button_all": "§c停用所有技能",
+            "button_minigame": "§c停用该模式所有技能"
+        },
+        "nav": {
+            "prev_page": "§a« 上一页",
+            "current_page": "§8» §f当前页",
+            "next_page": "§a下一页 »"
+        },
+        "activate": {
+            "_prefix": "§aSkills §8§l» §r",
+            "limit_reached": "§c您已达到该小游戏 {limit} 个激活技能的上限...",
+            "success": "§7技能 §a{skill} §7已激活！"
+        },
+        "invalid_minigame": "§a技能 §8§l» §r§c无效小游戏..."
+    },
+    "chest": {
+        "_prefix": "§6宝箱 §8§l» §r",
+        "opened": "§7您开启了一个 §6{type} §7宝箱！",
+        "no_chest": "§c您没有可开启的宝箱...",
+        "usage": "§c使用 §8/§c{label} §8<§c类型§8>",
+        "empty": "§cChest is empty..."
+    },
+    "inventory": {
+        "_prefix": "§cSystem §8§l» §r",
+        "full": "§c您的背包已满...",
+        "saved": "§7背包已保存！",
+        "restored": "§7背包已恢复！"
+    },
+    "kit": {
+        "_prefix": "§9套装 §8§l» §r",
+        "activated": "§7套装 §9{kit} §7已成功激活！",
+        "deactivated": "§7套装已成功停用！",
+        "invalid": "§c无效套装...",
+        "no_active": "§c您没有激活任何套装...",
+        "no_permission": "§c您没有权限使用套装 §9{kit}§c！",
+        "archer": {
+            "description": "Archer kit with feathers and eggs"
+        },
+        "assassin": {
+            "description": "Stealth assassin kit"
+        },
+        "builder": {
+            "description": "Kit for quick building"
+        },
+        "eco": {
+            "description": "Kit created by zLitePvPz"
+        },
+        "godness": {
+            "description": "Special kit for VIPs"
+        },
+        "juggernaut": {
+            "description": "Brute force kit"
+        },
+        "lumberjack": {
+            "description": "Lumberjack kit with wood"
+        },
+        "medic": {
+            "description": "Medic kit with healing"
+        },
+        "miner": {
+            "description": "Mining kit"
+        },
+        "mágico": {
+            "description": "Potion kit"
+        },
+        "ninja": {
+            "description": "Ninja kit with mobility"
+        },
+        "pyro": {
+            "description": "Pyromaniac kit with fire"
+        },
+        "rush": {
+            "description": "Rush kit"
+        },
+        "scout": {
+            "description": "Advanced scouting kit"
+        },
+        "sniper": {
+            "description": "Elite sniper kit"
+        },
+        "tank": {
+            "description": "Tank kit with high defense"
+        },
+        "thrower": {
+            "description": "Projectile kit"
+        },
+        "trap": {
+            "description": "Trap kit..."
+        },
+        "w3lton": {
+            "description": "Kit created by W3lton (SrMathBR)"
+        },
+        "xyp": {
+            "description": "Kit created by srxyp"
+        },
+        "yt": {
+            "description": "Special kit for Youtubers"
+        }
+    },
+    "kits": {
+        "_prefix": "§9套件 §8§l» §r",
+        "activated": "§7套装 §9{type} §7已成功激活！",
+        "deactivated": "§7套装已成功停用！",
+        "invalid_type": "§c无效套装... 使用 §8/§c{label} list 查看可用列表",
+        "list": {
+            "_prefix": "§9Kits §8§l» §r",
+            "owned": "§7已拥有§8:§7 {kits}",
+            "title": "§7套件列表§8:",
+            "unowned": "§7未拥有§8:§7 {kits}"
+        },
+        "no_active": "§c您没有激活任何套装...",
+        "usage": "§c请使用 §8/§c{label} §8<§cbuy§8|§con§8|§coff§8|§clist§8|§cinfo§8>",
+        "buy": {
+            "_prefix": "§9Kits §8§l» §r",
+            "already_owned": "§c您已经拥有此套件！",
+            "no_permission": "§c您没有权限购买此套件！",
+            "success": "§7套件 §9{kit}§7 已使用 §c{cost} 购买",
+            "usage": "§c请使用 §8/§c{label} buy §8<§ckit§8>"
+        },
+        "info": {
+            "_prefix": "§9Kits §8§l» §r",
+            "active": "§7已激活§8: §9{active}",
+            "cost": "§7价格§8:§c {cost}",
+            "description": "§7描述§8: §9{description}",
+            "status": "§7状态§8: §9{status}",
+            "title": "§7套件 §9{kit}§7 的信息§8:",
+            "usage": "§c请使用 §8/§c{label} info §8<§ckit§8>"
+        },
+        "kit": {
+            "not_found": "§9Kits §8§l» §r§c未找到套件...",
+            "_prefix": ""
+        },
+        "set": {
+            "_prefix": "§9Kits §8§l» §r",
+            "failed": "§c激活套件失败！",
+            "not_owned": "§c您没有此套件！",
+            "success": "§7套件 §9{kit}§7 已激活",
+            "usage": "§c请使用 §8/§c{label} on §8<§ckit§8>"
+        },
+        "unset": {
+            "_prefix": "§9Kits §8§l» §r",
+            "success": "§7套件已停用",
+            "usage": "§c请使用 §8/§c{label} off"
+        }
+    },
+    "kitswindow": {
+        "title": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §9套装 §8===-=-=-=-",
+        "buy": {
+            "title": "§7购买§8: §7{kit} §8- §c{cost}",
+            "success": "§9套装 §8§l» §r§7套装 §9{kit} §7购买成功！",
+            "confirm": "§a确认",
+            "cancel": "§c取消"
+        },
+        "disable": {
+            "button": "§c停用套件",
+            "success": "§9Kits §8§l» §r§7套件已停用！",
+            "success_kit": "§9Kits §8§l» §r§7套件 §9{kit} §7已停用"
+        },
+        "set": {
+            "success": "§9套装 §8§l» §r§7套装 §9{kit} §7已成功激活！"
+        },
+        "nav": {
+            "prev_page": "§a« 上一页",
+            "current_page": "§8» §f当前页",
+            "next_page": "§a下一页 »"
+        }
+    },
+    "duels": {
+        "command": {
+            "_prefix": "§2决斗 §8§l» §r",
+            "in_duel": "§c决斗中不能使用此命令！",
+            "player_only": "§c只有玩家可以使用此命令..."
+        },
+        "status": {
+            "_prefix": "§2决斗 §8§l» §r",
+            "starting": "§7决斗开始了！",
+            "countdown": "§7将在 §2{seconds}秒 §7后开始",
+            "ending_countdown": "§7将在 §2{seconds}秒 §7后返回大厅"
+        },
+        "item": {
+            "play_again": "§8-> §a再玩一次",
+            "quit": "§8-> §c退出"
+        },
+        "queue": {
+            "_prefix": "§2决斗 §8§l» §r",
+            "not_found": "§c模式 {kit} 不存在！",
+            "joined": "§7您已成功加入 §2{mode}§r§7 模式的队列！",
+            "left": "§7您已离开 §c{mode}§7 模式的队列！",
+            "timeout": "§c由于找不到其他玩家，您已被自动移出队列..."
+        }
+    },
+    "addbalance": {
+        "_prefix": "§a经济 §8§l» §r",
+        "invalid_number": "§c数量必须是数字且不能小于或等于0...",
+        "receive": "§7您收到了 §c{amount} 金币§7！",
+        "success": "§7已成功向 §a{target} §7的账户添加 §c{amount} 金币§7！",
+        "usage": "§c使用 §8/§c{label} §8<§c玩家§8> <§c数量§8>"
+    },
+    "auth": {
+        "error": {
+            "_prefix": "§e认证 §8§l» §r",
+            "account": {
+                "_prefix": "",
+                "limit": "§e认证 §8§l» §r§c您已达到注册账户的上限..."
+            },
+            "already": {
+                "haspassword": "§c您已有密码。如需修改请使用 §8/§c改密...",
+                "loggedin": "§c您已登录...",
+                "registered": "§c您已注册..."
+            },
+            "clientid": {
+                "_prefix": "",
+                "mismatch": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §e认证 §8===-=-=-=-{n}§c此账户已在其他设备上注册..."
+            },
+            "incorrect": {
+                "_prefix": "",
+                "password": "§e认证 §8§l» §r§c密码错误..."
+            },
+            "invalidpassword": "§c密码必须包含 {minLength} 到 {maxLength} 个字符，且只能使用字母、数字或常用符号",
+            "notregistered": "§c您尚未注册...",
+            "password": {
+                "_prefix": "",
+                "match": "§e认证 §8§l» §r§c两次密码不一致..."
+            },
+            "use": {
+                "_prefix": "",
+                "commands": "§e认证 §8§l» §r§c您需要先登录才能使用命令..."
+            },
+            "weakpassword": {
+                "login": "§c请使用 §8/§cchp §c更改您的密码，因为它太简单了...",
+                "register": "§c密码太简单，请选择其他密码..."
+            }
+        },
+        "join": {
+            "_prefix": "",
+            "msg": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§e认证 §8§l» §r§7你好 §e{user}§7，欢迎来到 §fi§cAkuna§9MC§7！"
+        },
+        "login": {
+            "_prefix": "",
+            "already": {
+                "_prefix": "",
+                "online": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §e认证 §8===-=-=-=-{n}§c该用户名的玩家已在线..."
+            },
+            "timeout": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §e认证 §8===-=-=-=-{n}§c登录时间已过...",
+            "toomany": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §e认证 §8===-=-=-=-{n}§c认证尝试次数过多..."
+        },
+        "need": {
+            "_prefix": "§e认证 §8§l» §r",
+            "login": "§7请使用 §8/§7login §8<§7密码§8> §7登录",
+            "register": "§7请使用 §8/§7register §8<§7密码§8> §7注册"
+        },
+        "success": {
+            "_prefix": "§e认证 §8§l» §r",
+            "auto": {
+                "_prefix": "",
+                "register": "§e认证 §8§l» §r§7欢迎！您的账户已自动创建。使用 §8/§7register §8<§7密码§8> §7保护您的账户"
+            },
+            "autologin": "§7您已自动登录！",
+            "chp": "§7密码修改成功！",
+            "login": "§7登录成功！",
+            "register": "§7注册成功！§c注册即表示您同意我们的 §8/§c规则..."
+        }
+    },
+    "automsg": {
+        "_prefix": "§c系统 §8§l» §r",
+        "akuna_ai": "§7了解 §cAkuna§r§7，我们的AI！在聊天中输入 §8\"§cAkuna, 您的问题§8\" §7她会回答您！",
+        "block": "§7您知道可以屏蔽玩家吗？使用 §8/§7block",
+        "daily": "§7您知道每天登录都能获得每日奖励吗？奖励可能包括§c金币 §7或 §9XP倍增器§7！",
+        "discord": "§7加入我们的Discord！§chttps://discord.iakunamc.com",
+        "exit_minigames": "§7要从任何小游戏返回大厅，请使用 §8/§clobby",
+        "friends": "§7邀请朋友来我们的服务器游玩！使用 §8/§7ip 查看IP",
+        "hackers": "§7发现作弊者？使用 §8/§creport §8<§c名字§8> <§c原因§8> §7进行举报！",
+        "launch": "§7§ciAkunaMC §7自2022年2月以来一直在成长，感谢您在此游玩！",
+        "marry": "§7您可以与其他玩家结婚并获得他们25%的XP！使用 §8/§7marry",
+        "missions": "§7完成每日任务获得丰厚奖励！使用 §8/§c任务 §7查看所有可用任务",
+        "nopromote": "§7不要在聊天或私信中宣传§c其他服务器§7，否则将被§c封禁§7！",
+        "nosamepass": "§7不要在其他服务器使用相同密码！使用 §8/§cpin §7保护您的账户！",
+        "rules": "§7阅读过我们的 §8/§c规则§7了吗？不了解规则不能免除§c处罚§7！",
+        "staff": "§7想成为我们工作人员的一员？访问 §chttps://staff.iakunamc.com",
+        "yt": "§7在YouTube上为我们的服务器录制视频并获得特殊标签！使用 §8/§cyt 查看要求"
+    },
+    "backpack": {
+        "_prefix": "§c系统 §8§l» §r",
+        "buy": {
+            "already_exists": "§c已存在同名背包...",
+            "error": "§c购买背包时出错...",
+            "invalid_length": "§c名称必须包含3到20个字符...",
+            "limit": "§c您已达到背包上限...",
+            "success": "§7背包 §c{name} §7已成功以 §c{cost} 金币§7购买！",
+            "usage": "§c使用 §8/§c{label} buy §8<§c名称§8>"
+        },
+        "delete": {
+            "confirm": "§7确定要删除背包 §c{name}§7吗？如是，请使用 §8/§7{label} deletar {name} confirm",
+            "error": "§c删除背包时出错...",
+            "not_exists": "§c未找到背包...",
+            "success": "§7背包已成功删除！",
+            "usage": "§c使用 §8/§c{label} delete §8<§c名称§8>"
+        },
+        "list": "§7您的背包 §8(§f{count}§8):§7 {backpacks}",
+        "not_in_survival": "§c您不在生存模式中...",
+        "open": {
+            "not_exists": "§c未找到背包...",
+            "usage": "§c使用 §8/§c{label} open §8<§c名称§8>"
+        },
+        "usage": "§c使用 §8/§c{label} §8<§cbuy§8|§copen§8|§cdelete§8|§clist§8>",
+        "list_none": "§c系统 §8§l» §r§c您没有任何背包..."
+    },
+    "balance": {
+        "_prefix": "§a经济 §8§l» §r",
+        "inactivity_tax_info": "§7每周一，如果您 §c{days}天 §7未登录，将被征收 §c{percent}% §7的税 §8(§c{amount} 金币§8)§7。税率随离线时间增加",
+        "other": "§a{target} §7拥有 §c{amount} 金币§7！",
+        "self": "§7您拥有 §c{amount} 金币§7！"
+    },
+    "ban": {
+        "broadcast": "§c系统 §8§l» §r§c{target} §7已被§c永久封禁 §7，原因：§c{reason}",
+        "kick": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§c您已被永久封禁...{n}§c名称§8:§c {name}{n}§c原因§8:§c {reason}{n}§c日期§8:§c {timestamp}{n}{n}§7认为封禁不公平？联系我们的支持§8:{n}§chttps://discord.iakunamc.com §7通过Discord或 §csupport@iakunamc.com §7通过email{n}§7§o您可以在 §chttps://loja.iakunamc.com §7购买解封"
+    },
+    "bet": {
+        "_prefix": "§a经济 §8§l» §r",
+        "cashback": "§7您获得了 §c{amount} 金币§7的返现！",
+        "coin": {
+            "invalid": "§c请选择正面或反面",
+            "lose": "§7硬币落在 §a{result}§7，您输了！",
+            "win": "§7硬币落在 §a{result}§7！您赢得了 §c{amount} 金币§7！"
+        },
+        "dice": {
+            "invalid": "§c请选择 §a1 §c到 §a6 §c之间的数字",
+            "lose": "§7骰子落在 §a{result}§7，您输了！",
+            "win": "§7骰子落在 §a{result}§7！您赢得了 §c{amount} 金币§7！"
+        },
+        "higher": {
+            "invalid": "§c请选择1到{max}之间的数字",
+            "lose": "§7数字 §a{result} §7更小或相等，您输了！",
+            "win": "§7数字 §a{result} §7更大！您赢得了 §c{amount} 金币§7！"
+        },
+        "invalid_type": "§c无效的投注类型... 使用 §8/§cbet 查看可用类型",
+        "lower": {
+            "invalid": "§c请选择 §a1 §c到 §a{max} §c之间的数字",
+            "lose": "§7数字 §a{result} §7更大或相等，您输了！",
+            "win": "§7数字 §a{result} §7更小！您赢得了 §c{amount} 金币§7！"
+        },
+        "min": "§c最低投注为 {min} 金币...",
+        "ppt": {
+            "draw": "§7石头剪刀布平局！未扣除任何金币",
+            "invalid": "§c请选择§a石头§7、§a布 §7或§a剪刀",
+            "lose": "§7您在石头剪刀布中输了！",
+            "win": "§7您在石头剪刀布中赢了！§c{amount} 金币§7！"
+        },
+        "pvp": {
+            "_prefix": "",
+            "accept": {
+                "_prefix": "§a经济 §8§l» §r",
+                "target_insufficient": "§c{target} §7没有足够的金币接受此赌注...",
+                "none": "§c您没有待处理的赌注..."
+            },
+            "coin": {
+                "result": "§a经济 §8§l» §r§7硬币落在§8: §a{result}"
+            },
+            "dice": {
+                "result": "§a经济 §8§l» §r§7骰子结果§8: §a{challenger_roll} §7对 §a{target_roll}"
+            },
+            "invalid_type": "§a经济 §8§l» §r§cPvP赌注类型无效！可用类型§8:§7 骰子§8,§7 石头剪刀布§8,§7 硬币",
+            "lose": "§a经济 §8§l» §r§7您在与 §a{opponent}§7 的对决中输了！",
+            "ppt": {
+                "result": "§a经济 §8§l» §r§7结果§8: §a{challenger_choice} §7对 §a{target_choice}"
+            },
+            "self_challenge": "§a经济 §8§l» §r§c您不能挑战自己！",
+            "usage": "§a经济 §8§l» §r§c使用 §8/§cbet §8<§c类型§8> <§c玩家§8> <§c金额§8> <§c猜测§8>",
+            "win": "§a经济 §8§l» §r§7恭喜！您在与 §a{opponent}§7 的对决中赢得了 §c{amount} 金币§7！",
+            "deny": {
+                "_prefix": "§a经济 §8§l» §r",
+                "none": "§c您没有待处理的赌注...",
+                "success": "§7赌注挑战已成功拒绝...",
+                "notify": "§7{target} 拒绝了您的赌注挑战..."
+            },
+            "draw": "§a经济 §8§l» §r§7平局！未扣除任何金币",
+            "expired": "§a经济 §8§l» §r§c赌注挑战已过期...",
+            "insufficient_challenger": "§a经济 §8§l» §r§c挑战者没有足够的金币...",
+            "pending": "§a经济 §8§l» §r§c该玩家已有待处理的赌注挑战...",
+            "request": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §a赌注挑战 §8===-=-=-{n}§a经济 §8§l» §r§a{challenger} §7向您发起了 §c{amount} 金币 §7的 §e{type}§7 模式赌注！{n}§a经济 §8§l» §r§7使用 §a/bet 接受 §7接受或 §c/bet 拒绝 §7拒绝",
+            "sent": "§a经济 §8§l» §r§7赌注挑战已发送给 §a{target}§7！模式§8: §e{type}§8, §7金额§8: §c{amount} 金币",
+            "insufficient_target": "§a经济 §8§l» §r§c{target} §7没有足够的金币参与此赌注..."
+        },
+        "roulette": {
+            "invalid": "§c请选择1到{max}之间的数字",
+            "lose": "§7轮盘停在 §a{result}§7，您输了！",
+            "win": "§7轮盘停在 §a{result}§7！您赢得了 §c{amount} 金币§7！"
+        },
+        "types": "§7可用类型§8:§7 骰子§8,§7 石头剪刀布§8,§7 轮盘§8,§7 硬币§8,§7 更大§8,§7 更小",
+        "usage": "§c使用 §8/§cbet §8<§c类型§8> [§c玩家§8] <§c金额§8> <§c猜测§8>"
+    },
+    "bio": {
+        "_prefix": "§3个人资料 §8§l» §r",
+        "set": "§7个人简介已成功设置为 '§3{bio}§7'！",
+        "usage": "§c使用 §8/§c{label} §8<§c简介§8>"
+    },
+    "block": {
+        "_prefix": "§c系统 §8§l» §r",
+        "add": {
+            "already": "§c{player} 已被屏蔽！",
+            "limit": "§c已达到屏蔽上限...",
+            "self": "§c您不能屏蔽自己！",
+            "staff": "§c您不能屏蔽工作人员！",
+            "success": "§c{player}§7 已成功屏蔽",
+            "usage": "§c使用 §8/§c{label} add §8<§c玩家§8>"
+        },
+        "list": "§7已屏蔽玩家 §8(§f{count}§8):§7 {blocked}",
+        "remove": {
+            "all": "§7所有玩家已成功解除屏蔽！",
+            "notfound": "§c{player} 未被屏蔽...",
+            "success": "§c{player} §7已成功解除屏蔽",
+            "usage": "§c使用 §8/§c{label} remove §8<§c玩家§8|§c*§8>"
+        },
+        "usage": "§c使用 §8/§c{label} §8<§cadd§8|§cremove§8|§clist§8>",
+        "list_none": "§c您没有屏蔽任何玩家..."
+    },
+    "changepassword": {
+        "_prefix": "§e认证 §8§l» §r",
+        "usage": "§c使用 §8/§c{label} §8<§c当前密码§8> <§c新密码§8>"
+    },
+    "chat": {
+        "_prefix": "§c系统 §8§l» §r",
+        "disabled": "§c聊天已禁用...",
+        "nochars": "§c不允许使用这些字符...",
+        "nopromote": "§c禁止在聊天中宣传/提及其他服务器...{n}§c系统 §8§l» §r§c请记得阅读我们的 §8/§c规则 以避免处罚",
+        "nospam": "§c慢一点！不要刷屏...",
+        "toolong": "§c您的消息太长了... (最多 {max} 个字符)",
+        "noemoji": "§c不允许使用表情符号..."
+    },
+    "clan": {
+        "_prefix": "§e战队 §8§l» §r",
+        "accept": {
+            "error": "§c加入战队时出错...",
+            "no_invite": "§c您没有待处理的邀请...",
+            "success": "§7您已成功加入 §e{clan}"
+        },
+        "already_in_clan": "§c您已在战队中...",
+        "changetag": {
+            "error": "§c修改标签时出错...",
+            "success": "§7标签已成功修改为 §e{tag}§7！",
+            "usage": "§c使用 §8/§c{label} tag §8<§c标签§8>"
+        },
+        "chat": {
+            "toggle": {
+                "off": "§7战队聊天已关闭！",
+                "on": "§7战队聊天已开启！"
+            }
+        },
+        "create": {
+            "error": "§c创建战队时出错...",
+            "exists": "§c已存在同名或同标签的战队！",
+            "length": "§c名称须3-24个字符，标签须2-4个字符！",
+            "success": "§7战队创建成功！",
+            "usage": "§c使用 §8/§c{label} create §8<§c名称§8> §8<§c标签§8>"
+        },
+        "delete": {
+            "error": "§c删除战队时出错！",
+            "success": "§7战队已成功删除！"
+        },
+        "demote": {
+            "broadcast": "§e{player} §7已被降为普通成员！",
+            "error": "§c降职玩家时出错...",
+            "success": "§e{player} §7已成功降职！",
+            "usage": "§c使用 §8/§c{label} demote §8<§c玩家§8>"
+        },
+        "deny": {
+            "no_invite": "§c您没有待处理的邀请...",
+            "success": "§7邀请已成功拒绝"
+        },
+        "desc": {
+            "error": "§c修改描述时出错...",
+            "success": "§7描述已成功修改！",
+            "usage": "§c使用 §8/§c{label} desc §8<§c描述§8>"
+        },
+        "disband": {
+            "_prefix": "",
+            "broadcast": "§e战队 §8§l» §r§c战队已被解散..."
+        },
+        "info": {
+            "_prefix": "",
+            "description": "§e战队 §8§l» §r§7描述§8: §e{description}",
+            "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §7战队 §e{name} §7信息 §8===-=-=-=-",
+            "level": "§e战队 §8§l» §r§7等级§8: §e{level}",
+            "members": "§e战队 §8§l» §r§7成员 §8(§f{count}§8/§f{max}§8): §7{members}",
+            "owner": "§e战队 §8§l» §r§7队长§8: §e{owner}",
+            "tag": "§e战队 §8§l» §r§7标签§8: §e{tag}",
+            "type": "§e战队 §8§l» §r§7类型§8: §e{type}",
+            "usage": "§e战队 §8§l» §r§c使用 §8/§c{label} info §8<§c战队§8>",
+            "xp": "§e战队 §8§l» §r§7经验§8: §e{xp}",
+            "xp_needed": "§e战队 §8§l» §r§7升级所需XP§8: §e{xp_needed}"
+        },
+        "invite": {
+            "_prefix": "",
+            "already_in_clan": "§e战队 §8§l» §r§c该玩家已在战队中...",
+            "expired": "§e战队 §8§l» §r§c加入 {clan} 的邀请已过期...",
+            "not_private": "§e战队 §8§l» §r§c只有私人战队才能邀请...",
+            "received": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §e战队§8===-=-=-{n}§e战队 §8§l» §r§e{sender} §7邀请您加入战队 §e{clan}§7...{n}§e战队 §8§l» §r§7使用 §a/clan 接受 §7接受或 §c/clan 拒绝 §7拒绝",
+            "sent": "§e战队 §8§l» §r§7邀请已发送给 §e{player}§7！",
+            "usage": "§e战队 §8§l» §r§c使用 §8/§c{label} invite §8<§c玩家§8>"
+        },
+        "join": {
+            "_prefix": "",
+            "broadcast": "§e战队 §8§l» §r§e{player} §7加入了战队！"
+        },
+        "kick": {
+            "broadcast": "§e{player} §7已被踢出战队！",
+            "cant_kick_admin": "§c管理员不能踢出其他管理员...",
+            "cant_kick_owner": "§c您不能踢出战队队长...",
+            "error": "§c踢出玩家时出错...",
+            "kicked": "§c您已被踢出战队...",
+            "not_in_clan": "§c该玩家不在战队中...",
+            "success": "§7玩家已成功踢出！",
+            "usage": "§c使用 §8/§c{label} kick §8<§c玩家§8>"
+        },
+        "leave": {
+            "broadcast": "§e{player} §7离开了战队...",
+            "error": "§c退出战队时出错...",
+            "owner": "§c队长不能离开战队...",
+            "success": "§7您已成功退出战队！"
+        },
+        "level_up": "§7战队升级到了 §e{newLevel}§7 级！",
+        "not_found": "§c该战队不存在...",
+        "not_in_clan": "§c您不在任何战队中...",
+        "not_owner": "§c只有队长才能执行此操作...",
+        "not_owner_or_admin": "§c只有队长或管理员才能执行此操作...",
+        "promote": {
+            "broadcast": "§e{player} §7已被提升为管理员！",
+            "error": "§c提升玩家时出错...",
+            "success": "§e{player} §7已成功提升！",
+            "usage": "§c使用 §8/§c{label} promote §8<§c玩家§8>"
+        },
+        "request": {
+            "_prefix": "",
+            "closed": "§e战队 §8§l» §r§c该战队已关闭...",
+            "error": "§e战队 §8§l» §r§c处理请求时出错...",
+            "joined": "§e战队 §8§l» §r§7您已加入战队 §e{clan}§7！",
+            "private": "§e战队 §8§l» §r§c该战队是私人的...",
+            "received": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §e战队§8===-=-=-{n}§e战队 §8§l» §r§e{sender} §7想要加入战队...{n}§e战队 §8§l» §r§7使用 §a/clan requests 接受 {sender} §7接受或 §c/clan requests 拒绝 {sender} §7拒绝",
+            "sent": "§e战队 §8§l» §r§7申请已发送至 §e{clan}§7！",
+            "usage": "§e战队 §8§l» §r§c使用 §8/§c{label} request §8<§c战队§8>"
+        },
+        "requests": {
+            "accept": {
+                "all": "§7所有申请已接受！",
+                "error": "§c接受申请时出错！",
+                "success": "§7来自 §e{player} §7的申请已接受！",
+                "usage": "§c使用 §8/§c{label} requests accept §8<§c玩家§8>"
+            },
+            "deny": {
+                "all": "§7所有申请已拒绝...",
+                "error": "§c拒绝申请时出错！",
+                "success": "§7来自 §e{player} §7的申请已拒绝！",
+                "usage": "§c使用 §8/§c{label} requests deny §8<§c玩家§8>"
+            },
+            "none": "§c没有待处理的申请...",
+            "usage": "§c使用 §8/§c{label} requests §8<§caccept§8|§cdeny§8> §8<§c玩家§8|§c*§8>"
+        },
+        "tagcolor": {
+            "error": "§c修改标签颜色时出错！",
+            "invalid": "§c无效颜色...",
+            "not_unlocked": "§c您还未解锁该颜色...",
+            "success": "§7标签颜色已成功修改为 {color}§7！",
+            "usage": "§c使用 §8/§c{label} tagcolor §8<§c颜色§8>{n}§e战队 §8§l» §r§7可用颜色§8: {colors}"
+        },
+        "type": {
+            "error": "§c修改类型时出错...",
+            "invalid": "§c无效类型... 可用类型§8:§7 public§8,§7 invite§8,§7 private§8,§7 closed",
+            "success": "§7战队类型已成功修改为 §e{type}",
+            "usage": "§c使用 §8/§c{label} type §8<§c类型§8>"
+        },
+        "usage": "§c使用 §8/§c{label} §8<§ccreate§8|§cinvite§8|§ckick§8|§cdesc§8|§cleave§8|§cinfo§8|§ctype§8|§crequest§8|§cpromote§8|§cdemote§8|§ctag§8|§crequests§8|§cchat§8|§cdelete§8|§ctagcolor§8>",
+        "requests_list": "§7入队申请 §8(§f{count}§8):§7 {requests}"
+    },
+    "clear": {
+        "_prefix": "§c系统 §8§l» §r",
+        "success": "§7背包已成功清空！"
+    },
+    "clearchat": {
+        "_prefix": "§c系统 §8§l» §r",
+        "success": "§7聊天已被 §c{author}§7 清空！"
+    },
+    "clearchatme": {
+        "_prefix": "§c系统 §8§l» §r",
+        "success": "§7您的聊天已成功清空！"
+    },
+    "colorarmor": {
+        "_prefix": "§d彩§a色§e盔§b甲 §8§l» §r",
+        "invalid_world": "§c彩色盔甲只能在大厅使用...",
+        "off": "§7彩色盔甲已成功关闭",
+        "on": "§7彩色盔甲已成功开启"
+    },
+    "coords": {
+        "_prefix": "§c系统 §8§l» §r",
+        "position": "§7您的坐标§8: §c{x}§8, §c{y}§8, §c{z}"
+    },
+    "crown": {
+        "_prefix": "§6皇§e冠 §8§l» §r",
+        "invalid_world": "§c无法在此处激活皇冠...",
+        "off": "§7皇冠已成功关闭",
+        "on": "§7皇冠已成功开启"
+    },
+    "daily": {
+        "reward": {
+            "akunas": "§c{amount} 金币",
+            "milestone": "§5每日奖励 §8§l» §r§7恭喜！您已达到连续 §5{weeks} §7周！",
+            "multiplier": "§9{multiplier}倍 倍增器 §8(§5{duration}§8)",
+            "received": "§5每日奖励 §8§l» §r§7您收到了 {rewards}",
+            "streak": "§5每日奖励 §8§l» §r§7当前连续§8: §5{streak} §7天",
+            "xp": "§9{amount} XP",
+            "streak_lost": "§5每日奖励 §8§l» §r§c您失去了 {oldStreak} 天的连续记录..."
+        }
+    },
+    "delhome": {
+        "_prefix": "§c系统 §8§l» §r",
+        "not_exists": "§c您没有该名称的家...",
+        "not_in_survival": "§c您不在生存模式中...",
+        "success": "§7家 §c{home} §7已成功删除！",
+        "usage": "§c使用 §8/§c{label} §8<§c名称§8|§c*§8>",
+        "success_all": "§7所有家已成功删除！"
+    },
+    "fake": {
+        "_prefix": "§1伪装 §8§l» §r",
+        "disable": "§7伪装已成功关闭！",
+        "enable": {
+            "_prefix": "",
+            "usage": "§1伪装 §8§l» §r§c使用 §8/§c{label} on §8<§c名称§8>"
+        },
+        "invalid": {
+            "_prefix": "",
+            "name": "§1伪装 §8§l» §r§c无效名称..."
+        },
+        "registered": "§c该名称已在服务器中注册...",
+        "set": "§7伪装已成功开启！",
+        "usage": "§c使用 §8/§c{label} §8<§con§8|§coff§8|§crandom§8|§clist§8>"
+    },
+    "home": {
+        "_prefix": "§c系统 §8§l» §r",
+        "none": "§c您没有任何家...",
+        "not_exists": "§c您没有该名称的家...",
+        "not_in_survival": "§c您不在生存模式中...",
+        "success": "§7正在传送到 §c{home}§7...",
+        "usage": "§c使用 §8/§c{label} §8<§c名称§8>"
+    },
+    "homes": {
+        "_prefix": "§c系统 §8§l» §r",
+        "list": "§7您的家 §8(§f{count}§8):§7 {homes}",
+        "none": "§c您没有任何家..."
+    },
+    "itemid": {
+        "_prefix": "§c系统 §8§l» §r",
+        "info": "§7名称§8:§c {name}{n}§c系统 §8§l» §r§7ID§8:§c {id}§8:§c{meta}",
+        "noitem": "§c手中没有物品..."
+    },
+    "joinmsg": {
+        "automsg": {
+            "disabled": "§b进入 §8§l» §r§c您需要开启自动消息偏好才能使用进入消息..."
+        },
+        "list": {
+            "entry": "§b{id} §8§l» §r§7{message}",
+            "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §b进入消息 §8(§f{page}§8/§f{total}§8) ===-=-=-=-"
+        },
+        "messages": {
+            "_prefix": "§b进入 §8§l» §r",
+            "1": "§7哇！§b{player} §7降落到服务器了！",
+            "10": "§7戏剧性停顿... §b{player} §7进入了服务器！",
+            "11": "§b{player} §7进入了！",
+            "12": "§7注意！§b{player} §7刚刚出现了！",
+            "13": "§7宇宙微笑了... §b{player} §7进入了！",
+            "14": "§7新冒险从 §b{player}§7 上线开始！",
+            "15": "§7准备好了吗？§b{player} §7来统治了！",
+            "2": "§7有人叫援军吗？§b{player} §7到了！",
+            "3": "§7§b{player} §7气势汹汹地进来了！欢迎！",
+            "4": "§7来块披萨吧，§b{player}§7？欢迎！",
+            "5": "§7让开！§b{player} §7来了！",
+            "6": "§7雷达探测到活动... §b{player} §7进入了！",
+            "7": "§7传送完成！§b{player} §7出现在这里了！",
+            "8": "§7天气不错... 更何况有 §b{player} §7在线！",
+            "9": "§7传说出现了§8:§7 §b{player}§7 在我们之中！"
+        },
+        "off": {
+            "success": "§b进入 §8§l» §r§7进入消息已成功关闭！"
+        },
+        "on": {
+            "_prefix": "§b进入 §8§l» §r",
+            "invalid": "§c无效ID... 使用 §8/§c{label} list 查看可用ID",
+            "success": "§7进入消息已成功设置为 §b{id}§7！",
+            "usage": "§c使用 §8/§c{label} on §8<§cid§8>"
+        },
+        "usage": "§b进入 §8§l» §r§c使用 §8/§c{label} §8<§con§8|§coff§8|§clist§8>"
+    },
+    "kick": {
+        "broadcast": "§c系统 §8§l» §r§c{target} §7已被§c踢出 §7，原因：§c{reason}",
+        "kick": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§c您已被踢出...{n}§c原因§8:§c {reason}"
+    },
+    "lbc": {
+        "profile": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§3个人资料 §8§l» §r§7您的名称§8:§3 {name}{n}§3个人资料 §8§l» §r§7您的标签§8:§3 {tag}{n}§3个人资料 §8§l» §r§7您的战队§8:§3 {clan}{n}§3个人资料 §8§l» §r§7关于§8:§3 {about}{n}§3个人资料 §8§l» §r§7已婚§8:§7 {partner}{n}§3个人资料 §8§l» §r§7金币§8:§3 {akunas}{n}§8-=-=-=-=== §9等级 §8===-=-=-=-{n}§3个人资料 §8§l» §r§7您的等级§8:§3 {level}{n}§3个人资料 §8§l» §r§7您的经验§8:§3 {xp}{n}§3个人资料 §8§l» §r§7升级所需XP§8:§3 {xpneeded}{n}§8-=-=-=-=== §f统计 §8===-=-=-=-{n}§3个人资料 §8§l» §r§7§bSky§fWars§7 胜利§8:§3 {winssw}{n}§3个人资料 §8§l» §r§7§cThe§9Bridge§7 胜利§8:§3 {winstb}{n}§3个人资料 §8§l» §r§7§eMlg§fBlock§7 胜利§8:§3 {winsmlg}{n}§3个人资料 §8§l» §r§7§cBed§fWars§7 胜利§8:§3 {winsbw}{n}§3个人资料 §8§l» §r§7§bBlock§fSumo§7 胜利§8:§3 {winsbs}{n}§3个人资料 §8§l» §r§7§2决斗§7 胜利§8:§3 {winsduels}{n}§3个人资料 §8§l» §r§7击杀§8:§3 {kills}{n}§3个人资料 §8§l» §r§7在线时间§8:§3 {onlineTime}",
+        "profile_other": "§8-=-=-=-=== §fi§cAkuna§9MC §8- §7§3{name}§7 的资料 §8===-=-=-=-{n}§3个人资料 §8§l» §r§7标签§8:§3 {tag}{n}§3个人资料 §8§l» §r§7最后上线§8:§3 {lastOnline} §8(§7{lastOnlineSince}§7 前§8){n}§3个人资料 §8§l» §r§7战队§8:§3 {clan}{n}§3个人资料 §8§l» §r§7关于§8:§3 {about}{n}§3个人资料 §8§l» §r§7已婚§8:§7 {partner}{n}§3个人资料 §8§l» §r§7金币§8:§3 {akunas}{n}§8-=-=-=-=== §9等级 §8===-=-=-=-{n}§3个人资料 §8§l» §r§7等级§8:§3 {level}{n}§3个人资料 §8§l» §r§7经验§8:§3 {xp}{n}§3个人资料 §8§l» §r§7升级所需XP§8:§3 {xpneeded}{n}§8-=-=-=-=== §f统计 §8===-=-=-=-{n}§3个人资料 §8§l» §r§7§bSky§fWars§7 胜利§8:§3 {winssw}{n}§3个人资料 §8§l» §r§7§cThe§9Bridge§7 胜利§8:§3 {winstb}{n}§3个人资料 §8§l» §r§7§eMlg§fBlock§7 胜利§8:§3 {winsmlg}{n}§3个人资料 §8§l» §r§7§cBed§fWars§7 胜利§8:§3 {winsbw}{n}§3个人资料 §8§l» §r§7§bBlock§fSumo§7 胜利§8:§3 {winsbs}{n}§3个人资料 §8§l» §r§7§2决斗§7 胜利§8:§3 {winsduels}{n}§3个人资料 §8§l» §r§7击杀§8:§3 {kills}{n}§3个人资料 §8§l» §r§7在线时间§8:§3 {onlineTime}"
+    },
+    "lobby": {
+        "_prefix": "§c系统 §8§l» §r",
+        "cmd": "§7您已成功返回大厅！"
+    },
+    "locktell": {
+        "_prefix": "§1私信 §8§l» §r",
+        "already": {
+            "_prefix": "",
+            "locked": "§1私信 §8§l» §r§c您的私信已锁定，在聊天中输入@e解锁..."
+        },
+        "offlinetarget": "§c玩家离线，正在解锁私信...",
+        "success": {
+            "other": "§1{sender} §7与您锁定了私信...",
+            "self": "§7您与 §1{player}§7 的私信已锁定！在聊天中输入 §1@e §7解锁..."
+        },
+        "unlocked": {
+            "other": "§1{player} §7解锁了私信...",
+            "self": "§7您的私信已成功解锁！"
+        },
+        "usage": "§c使用 §8/§c{label} §8<§c玩家§8>"
+    },
+    "canal": {
+        "_prefix": "§9频道 §8§l» §r",
+        "current": "§7{channels}",
+        "switched": "§7{channels}",
+        "invalid": "§c该频道不存在，可用频道§8:§7 {channels}",
+        "unavailable": "§c该频道目前不可用...",
+        "usage": "§c使用 §8/§c{label} §8<§c频道§8>"
+    },
+    "reply": {
+        "_prefix": "§1私信 §8§l» §r",
+        "usage": "§c使用 §8/§c{label} §8<§c消息§8>",
+        "notell": "§c您最近没有收到私信..."
+    },
+    "login": {
+        "error": {
+            "nopassword": "§e认证 §8§l» §r§c您的账户没有密码。您通过设备自动认证"
+        },
+        "usage": "§e认证 §8§l» §r§c使用 §8/§c{label} §8<§c密码§8>"
+    },
+    "lottery": {
+        "_prefix": "§e彩票 §8§l» §r",
+        "broadcast": "§7当前彩票奖金为 §c{amount} 金币§7！距开奖还有 §e{time}§7，使用 §8/§7lottery 购买 §8<§7数量§8> 购票",
+        "buy_success": "§7您以 §c{cost} 金币§7购买了 §e{quantity} 张彩票§7！",
+        "buy_usage": "§c使用 §8/§c{label} 购买 §8<§c数量§8>",
+        "no_money": "§c您没有足够的金币购买 {amount} 张彩票...",
+        "no_tickets": "§7本轮没有彩票被售出。下一轮彩票即将开始！",
+        "prize": "§7当前奖金§8:§c {prize} 金币",
+        "status_header": "§7当前状态§8:",
+        "ticket_limit": "§c您不能购买这么多彩票...",
+        "ticket_price": "§7每张彩票 §c{price} 金币",
+        "tickets": "§7已售彩票§8:§e {tickets}",
+        "time": "§7剩余时间§8:§e {time}",
+        "usage": "§c使用 §8/§c{label} §8<§cstatus§8|§c购买§8>",
+        "win": "§7恭喜 §e{winner}§7，您在彩票中赢得了 §c{amount} 金币§7！"
+    },
+    "marriage": {
+        "accept": {
+            "_prefix": "§c系统 §8§l» §r",
+            "already": "§c您或您的伴侣已婚...",
+            "none": "§c您没有待处理的请求...",
+            "notify": "§c{partner} §7接受了您的求婚！",
+            "success": "§7您与 §c{partner}§7 结婚了！恭喜 :)"
+        },
+        "deny": {
+            "_prefix": "§c系统 §8§l» §r",
+            "none": "§c您没有待处理的请求...",
+            "notify": "§c{target} §7拒绝了您的求婚...",
+            "success": "§7求婚已成功拒绝..."
+        },
+        "divorce": {
+            "_prefix": "§c系统 §8§l» §r",
+            "all_success": "§7您已与所有伴侣离婚...",
+            "invalid": "§c无效伴侣或未与您结婚...",
+            "none": "§c您未婚...",
+            "notify": "§c{partner} §7与您离婚了...",
+            "specify": "§c使用 §8/§c{label} 离婚 §8<§c玩家§8|§c*§8>",
+            "success": "§7您与 §c{partner}§7 离婚了..."
+        },
+        "info": {
+            "entry": "§c系统 §8§l» §r§7伴侣§8:§d {partner} §8| §7自§8:§d {date} §8(§7{dateSince} §7前§8){n}§c系统 §8§l» §r§7您称呼§8:§d {nicknameGiven} §8| §7被称呼§8:§d {nicknameReceived}",
+            "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §d活跃婚姻 §8===-=-=-=-",
+            "no_nickname": "§7无昵称...§r",
+            "none": "§c系统 §8§l» §r§c您没有活跃的婚姻..."
+        },
+        "marry": {
+            "already": "§c系统 §8§l» §r§c您或该玩家已婚...",
+            "expired": "§c系统 §8§l» §r§c§c{sender} §7的求婚已过期...",
+            "limit": "§c系统 §8§l» §r§c您已达到婚姻上限！",
+            "pending": "§c系统 §8§l» §r§c该玩家已有待处理的请求...",
+            "request": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §d求婚§8===-=-=-{n}§c系统 §8§l» §r§d{sender} §7向您求婚了...{n}§c系统 §8§l» §r§7使用 §a/marriage 接受 §7接受或 §c/marriage 拒绝 §7拒绝",
+            "self": "§c系统 §8§l» §r§c您不能与自己结婚...",
+            "sent": "§c系统 §8§l» §r§7求婚已成功发送给 §c{target}§7！",
+            "target_limit": "§c系统 §8§l» §r§c该玩家已达到婚姻上限！",
+            "usage": "§c系统 §8§l» §r§c使用 §8/§c{label} 结婚 §8<§c玩家§8>"
+        },
+        "nick": {
+            "_prefix": "§c系统 §8§l» §r",
+            "success": "§7§c{partner} §7的昵称已成功设置为 '§c{nickname}§7'！",
+            "usage": "§c使用 §8/§c{label} nick §8<§c伴侣§8> <§c昵称§8>"
+        },
+        "partner": {
+            "_prefix": "§c系统 §8§l» §r",
+            "joined": "§7您的伴侣 §c{partner} §7进入了服务器！",
+            "left": "§c您的伴侣 {partner} 离开了服务器..."
+        },
+        "usage": "§c系统 §8§l» §r§c使用 §8/§c{label} §8<§c结婚§8|§c离婚§8|§cinfo§8|§cnick§8>"
+    },
+    "msgcolor": {
+        "_prefix": "§c系统 §8§l» §r",
+        "invalid": "§c无效颜色...",
+        "reset": "§7消息颜色已重置为默认！",
+        "success": "§7消息颜色已成功修改为 {color}§7！",
+        "usage": "§c使用 §8/§c{label} §8<§c颜色§8|§creset§8>{n}§c系统 §8§l» §r§7可用颜色§8: {colors}"
+    },
+    "mute": {
+        "_prefix": "§c系统 §8§l» §r",
+        "broadcast": "§c{target} §7已被§c永久禁言 §7，原因：§c{reason}",
+        "muted": "§c您已被永久禁言，原因：{reason}... §o您可以在 §chttps://loja.iakunamc.com 购买解禁"
+    },
+    "nametag": {
+        "add": {
+            "_prefix": "§6称号 §8§l» §r",
+            "limit": {
+                "_prefix": "",
+                "reached": "§6称号 §8§l» §r§c您已达到 {limit} 个称号的上限..."
+            },
+            "success": "§7称号 '§6{text}§7' 已成功添加！",
+            "too": {
+                "_prefix": "",
+                "long": "§6称号 §8§l» §r§c您的称号超过了 {limit} 个字符的限制..."
+            },
+            "usage": "§c使用 §8/§c{label} add §8<§c文本§8>"
+        },
+        "list": {
+            "none": "§6称号 §8§l» §r§c您没有任何称号..."
+        },
+        "off": {
+            "success": "§6称号 §8§l» §r§7称号已关闭..."
+        },
+        "remove": {
+            "_prefix": "§6称号 §8§l» §r",
+            "invalid": {
+                "_prefix": "",
+                "id": "§6称号 §8§l» §r§c无效ID... 使用 §8/§c{label} list 查看可用ID"
+            },
+            "success": "§7称号 §6{id} §7已成功删除！",
+            "usage": "§c使用 §8/§c{label} remove §8<§cid§8>"
+        },
+        "usage": "§6称号 §8§l» §r§c使用 §8/§c{label} §8<§cadd§8|§clist§8|§cremove§8|§coff§8>"
+    },
+    "nickcolor": {
+        "_prefix": "§c系统 §8§l» §r",
+        "invalid": "§c无效颜色...",
+        "reset": "§7名称颜色已重置为默认！",
+        "success": "§7名称颜色已成功修改为 {color}§7！",
+        "usage": "§c使用 §8/§c{label} §8<§c颜色§8|§creset§8>{n}§c系统 §8§l» §r§7可用颜色§8: {colors}"
+    },
+    "particle": {
+        "on": {
+            "usage": "§5粒子 §8§l» §r§c使用 §8/§c{label} on §8<§c粒子§8>"
+        }
+    },
+    "particles": {
+        "_prefix": "§5粒子 §8§l» §r",
+        "activated": "§7粒子 §5{type} §7已成功激活！",
+        "deactivated": "§7粒子已成功停用！",
+        "invalid_type": "§c无效粒子... 使用 §8/§c{label} list 查看可用列表",
+        "invalid_world": "§c无法在此处使用粒子...",
+        "list": "§7可用粒子列表 §8(§f{count}§8):§7 {particles}",
+        "no_active": "§c您没有激活任何粒子...",
+        "usage": "§c使用 §8/§c{label} §8<§con§8|§coff§8|§clist§8>"
+    },
+    "party": {
+        "_prefix": "§d队伍 §8§l» §r",
+        "chat": {
+            "off": "§7队伍聊天已关闭！",
+            "on": "§7队伍聊天已开启！"
+        },
+        "create": {
+            "already_in_party": "§c您已在队伍中...",
+            "error": "§c创建队伍时出错...",
+            "success": "§7队伍创建成功！使用 §8/§7party info §7查看队伍信息"
+        },
+        "info": {
+            "_prefix": "",
+            "code": "§d队伍 §8§l» §r§7代码§8: §d{code}",
+            "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §d队伍信息 §8===-=-=-=-",
+            "leader": "§d队伍 §8§l» §r§7队长§8: §d{leader}",
+            "members": "§d队伍 §8§l» §r§7成员§8: §d{current}§8/§d{max}",
+            "not_found": "§d队伍 §8§l» §r§c未找到队伍...",
+            "type": "§d队伍 §8§l» §r§7类型§8: §d{type}"
+        },
+        "join": {
+            "already_in_party": "§c您已在队伍中...",
+            "blocked": "§c您无法加入此队伍...",
+            "broadcast": "§d{player} §7加入了队伍！",
+            "closed": "§c此队伍已关闭...",
+            "error": "§c加入队伍时出错...",
+            "full": "§c队伍已满...",
+            "locked": "§c此队伍已锁定...",
+            "not_found": "§c未找到队伍...",
+            "success": "§7您加入了队伍！",
+            "usage": "§c使用 §8/§c{label} join §8<§c代码§8|§c玩家§8>"
+        },
+        "kick": {
+            "broadcast": "§d{player} §7已被踢出队伍！",
+            "error": "§c踢出玩家时出错...",
+            "kicked": "§c您已被踢出队伍！",
+            "not_in_party": "§c该玩家不在队伍中...",
+            "self": "§c您不能踢出自己！",
+            "success": "§7玩家已成功踢出！",
+            "usage": "§c使用 §8/§c{label} kick §8<§c玩家§8>"
+        },
+        "leader": {
+            "_prefix": "",
+            "changed": "§d队伍 §8§l» §r§d{old_leader} §7离开了服务器，新队长是 §d{new_leader}§7！",
+            "expired": "§d队伍 §8§l» §r§d{old_leader} §7未及时返回。新队长是 §d{new_leader}§7！"
+        },
+        "leave": {
+            "broadcast": "§d{player} §7离开了队伍...",
+            "error": "§c退出队伍时出错...",
+            "success": "§7您离开了队伍！"
+        },
+        "not_in_party": "§c您不在任何队伍中...",
+        "not_leader": "§c只有队长才能执行此操作...",
+        "quit": {
+            "_prefix": "",
+            "notify": "§d队伍 §8§l» §r§d{player} §7离开了服务器并退出了队伍...",
+            "leader_offline": "§d队伍 §8§l» §r§d{player} §7离开了服务器。他有 §d3分钟 §7返回，否则将失去队长身份。",
+            "leader_rejoined": "§d队伍 §8§l» §r§d{player} §7返回了服务器并恢复了队长身份！"
+        },
+        "transfer": {
+            "broadcast": "§d{new_leader} §7是新队长！",
+            "error": "§c转让队长时出错...",
+            "not_in_party": "§c该玩家不在队伍中...",
+            "received": "§7您获得了队伍队长身份！",
+            "self": "§c您不能将队长转让给自己！",
+            "success": "§7队长身份已转让给 §d{player}§7！",
+            "usage": "§c使用 §8/§c{label} transfer §8<§c玩家§8>"
+        },
+        "type": {
+            "broadcast": "§7队伍类型已修改为 §d{type}§7！",
+            "error": "§c修改类型时出错...",
+            "invalid": "§c无效类型... 可用类型§8: §7public§8, §7private§8, §7closed",
+            "success": "§7类型已修改为 §d{type}§7！",
+            "usage": "§c使用 §8/§c{label} type §8<§cpublic§8|§cprivate§8|§cclosed§8>"
+        },
+        "invite": {
+            "already_in_party": "§c该玩家已在队伍中...",
+            "already_invited": "§c该玩家已被邀请...",
+            "expired": "§d队伍 §8§l» §r§c来自 §d{sender} §7的邀请已过期...",
+            "received": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §d队伍邀请§8===-=-=-{n}§d队伍 §8§l» §r§d{player} §7邀请您加入队伍...{n}§d队伍 §8§l» §r§7使用 §a/party 接受 §7接受或 §c/party 拒绝 §7拒绝",
+            "self": "§c您不能邀请自己...",
+            "sent": "§d队伍 §8§l» §r§7邀请已发送给 §d{player}§7！",
+            "usage": "§c使用 §8/§c{label} invite §8<§c玩家§8>"
+        },
+        "accept": {
+            "no_invite": "§c您没有待处理的队伍邀请..."
+        },
+        "deny": {
+            "none": "§c您没有待处理的队伍邀请...",
+            "notify": "§d队伍 §8§l» §r§d{player} §7拒绝了您的邀请...",
+            "success": "§7邀请已拒绝！"
+        },
+        "usage": "§c使用 §8/§c{label} §8<§ccreate§8|§cjoin§8|§cleave§8|§ckick§8|§ctransfer§8|§cchat§8|§cinfo§8|§ctype§8|§cinvite§8|§caccept§8|§cdeny§8>"
+    },
+    "pets": {
+        "_prefix": "§3宠物 §8§l» §r",
+        "activated": "§7宠物已成功创建！",
+        "deactivated": "§7宠物已成功停用！",
+        "invalid_pet": "§c无效宠物... 使用 §8/§c{label} list 查看可用列表",
+        "invalid_world": "§c无法在此处召唤宠物...",
+        "list": "§7可用宠物列表 §8(§f{count}§8):§7 {pets}",
+        "no_active": "§c您没有激活任何宠物...",
+        "no_name": "§c使用 §8/§c{label} name §8<§c名称§8>",
+        "no_perm": "§c只有拥有VIP §f§lMoon §r§c或以上的玩家才能召唤宠物... §o请在 https://loja.iakunamc.com 购买",
+        "no_type": "§c使用 §8/§c{label} spawn §8<§c宠物§8> [§c名称§8]",
+        "renamed": "§7宠物名称已成功修改为 '§3{name}§7'！",
+        "to_adult": "§7宠物已成功变为成年！",
+        "to_baby": "§7宠物已成功变为幼崽！",
+        "usage": "§c使用 §8/§c{label} §8<§con§8|§crandom§8|§coff§8|§cname§8|§cbaby§8|§clist§8>"
+    },
+    "pin": {
+        "add": {
+            "_prefix": "§3PIN §8§l» §r",
+            "already": "§c您已有PIN...",
+            "success": "§7PIN已成功添加！",
+            "usage": "§c使用 §8/§c{label} add §8<§c4位PIN§8>"
+        },
+        "change": {
+            "_prefix": "§3PIN §8§l» §r",
+            "incorrect": "§c当前PIN错误...",
+            "success": "§7PIN已成功修改！",
+            "usage": "§c使用 §8/§c{label} change §8<§c当前PIN§8> <§c新PIN§8>"
+        },
+        "error": {
+            "incorrect": "§3PIN §8§l» §r§cPIN错误..."
+        },
+        "login": {
+            "timeout": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §3PIN §8===-=-=-=-{n}§c登录时间已过...",
+            "toomany": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §3PIN §8===-=-=-=-{n}§c认证尝试次数过多..."
+        },
+        "need": {
+            "login": "§3PIN §8§l» §r§7请在聊天中输入您的PIN完成认证"
+        },
+        "remove": {
+            "_prefix": "§3PIN §8§l» §r",
+            "incorrect": "§cPIN错误...",
+            "nopin": "§c您没有PIN...",
+            "success": "§7PIN已成功删除！",
+            "usage": "§c使用 §8/§c{label} remove §8<§c当前PIN§8>"
+        },
+        "success": {
+            "login": "§3PIN §8§l» §r§7认证成功！"
+        },
+        "usage": "§3PIN §8§l» §r§c使用 §8/§c{label} §8<§cadd§8|§cremove§8|§cchange§8>"
+    },
+    "pluscolor": {
+        "_prefix": "§c系统 §8§l» §r",
+        "invalid": "§c无效颜色...",
+        "reset": "§7+号颜色已重置为默认！",
+        "success": "§7+号颜色已成功修改为 {color}§7！",
+        "usage": "§c使用 §8/§c{label} §8<§c颜色§8|§creset§8>{n}§c系统 §8§l» §r§7可用颜色§8: {colors}"
+    },
+    "pref": {
+        "_prefix": "§c系统 §8§l» §r",
+        "disable": "§7偏好已成功关闭！",
+        "enable": "§7偏好已成功开启！",
+        "onlyvip": "§c只有拥有VIP §b§l§oAstral §r§c或以上的玩家才能修改此偏好... §o请在 https://loja.iakunamc.com 购买",
+        "reset": "§7所有偏好已重置为默认！",
+        "usage": "§c使用 §8/§c{label} §8<§c偏好§8|§creset§8>{n}§c系统 §8§l» §r§c可用偏好§8:§7 {prefs}"
+    },
+    "profanity": {
+        "_prefix": "§c系统 §8§l» §r",
+        "blocked": "§c请保持尊重"
+    },
+    "profile": {
+        "view": {
+            "disabled": "§3个人资料 §8§l» §r§c该玩家已关闭个人资料查看..."
+        }
+    },
+    "randomtp": {
+        "_prefix": "§c系统 §8§l» §r",
+        "no_safe_location": "§c无法找到安全位置...",
+        "success": "§7已传送到 §c{x}§8,§c {y}§8,§c {z}"
+    },
+    "register": {
+        "setpassword": {
+            "success": "§e认证 §8§l» §r§7密码设置成功！在新设备上使用 §8/§7login §8<§7密码§8> §7登录"
+        },
+        "usage": "§e认证 §8§l» §r§c使用 §8/§c{label} §8<§c密码§8>"
+    },
+    "repair": {
+        "_prefix": "§6修理 §8§l» §r",
+        "no_damage": "§c此物品已处于完美状态...",
+        "no_item": "§c手中没有物品...",
+        "no_repairable_items": "§c您的背包中没有可修理的物品...",
+        "not_in_survival": "§c您不在生存模式中...",
+        "not_repairable": "§c此物品无法修理...",
+        "success": "§7您修理了 §6{item} §7并恢复了 §6{durability} §7耐久度，花费 §c{cost} 金币§7！",
+        "success_all": "§6修理 §8§l» §r§7您修理了 §6{items} §7件物品，共恢复 §6{durability} §7耐久度，花费 §c{cost} 金币§7！"
+    },
+    "report": {
+        "_prefix": "§c系统 §8§l» §r",
+        "already_reported": "§c您已举报过该玩家...",
+        "noself": "§c您不能举报自己！",
+        "nostaff": "§c您不能举报工作人员！",
+        "sent": "§7您已成功以 §c{reason} §7为由举报了 §c{target}§7！",
+        "usage": "§c使用 §8/§c{label} §8<§c玩家§8> <§c原因§8>"
+    },
+    "requests": {
+        "_prefix": "§c系统 §8§l» §r",
+        "disabled": "§c该玩家已关闭接收请求..."
+    },
+    "restart": {
+        "kick": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§c重启中...",
+        "time": "§c系统 §8§l» §r§7服务器将在 §c{time}§7 后重启..."
+    },
+    "rules": {
+        "cmd": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §c规则 §8===-=-=-=-{n}§c系统 §8§l» §r§7禁止严重侮辱、歧视、骚扰、威胁、仇恨言论或宣扬极端主义意识形态{n}§c系统 §8§l» §r§7禁止宣传或提及其他服务器、网站、社交媒体或外部社区{n}§c系统 §8§l» §r§7禁止绕过过滤器、利用服务器漏洞或Bug{n}§c系统 §8§l» §r§7严禁使用外挂、自动点击器、Bug或任何形式的作弊 §8(§7包括2人操作和连射模式手柄§8){n}§c系统 §8§l» §r§7禁止盗号、冒充工作人员或欺骗其他玩家{n}§c系统 §8§l» §r§7禁止在单人模式或1v1中组队{n}§c系统 §8§l» §r§7禁止使用攻击性、不当或挑衅性的昵称、皮肤和建筑{n}§c系统 §8§l» §r§7禁止在聊天中过度使用大写、刷屏或重复消息{n}§c系统 §8§l» §r§7禁止妨碍工作人员工作、无视决定或侮辱服务器"
+    },
+    "scoreboard": {
+        "lobby": "{right}     §fi§cAkuna§9MC §8§l» §r§c大厅{n}{right}{bar}{n}{right}§8§l» §r§7名称§8:§c {name}{n}{right}§8§l» §r§7在线§8:§c {online}§8/§c{onlinemax}{n}{right}§8§l» §r§7延迟§8:§c {ping}ms{n}{right}{bar}{n}{n}{right}§c{address}",
+        "plot": "{right}   §fi§cAkuna§9MC §8§l» §r§9地块{n}{right}{bar}{n}{right}§8§l» §r§7名称§8:§9 {name}{n}{right}§8§l» §r§7在线§8:§9 {onlinemap}{n}{right}§8§l» §r§7地块§8:§9 {plots}{n}{right}{bar}{n}{n}{right}§9{address}",
+        "lobby_bw": "{right}  §fi§cAkuna§9MC §8§l» §r§cBed§fWars{n}{right}{bar}{n}{right}§8§l» §r§7胜利§8:§c {wins}{n}{right}§8§l» §r§7击杀§8:§c {kills}{n}{right}§8§l» §r§7最终击杀§8:§c {final_kills}{n}{right}§8§l» §r§7破床§8:§c {beds}{n}{right}{bar}{n}{n}{right}§c{address}",
+        "lobby_sw": "{right}  §fi§cAkuna§9MC §8§l» §r§bSky§fWars{n}{right}{bar}{n}{right}§8§l» §r§7胜利§8:§b {wins}{n}{right}§8§l» §r§7击杀§8:§b {kills}{n}{right}§8§l» §r§7场次§8:§b {plays}{n}{right}{bar}{n}{n}{right}§b{address}"
+    },
+    "server": {
+        "whitelist": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§c服务器正在维护{n}§cDiscord: https://discord.iakunamc.com",
+        "forcedshutdown": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§c服务器遭到强制关闭...",
+        "attack": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§c系统 §8§l» §r§7服务器正遭受DDoS攻击...{n}§7我们的防护系统已启动缓解措施。必要的保护已激活，但可能仍有延迟或断线{n}§c系统 §8§l» §r§7支持§8: §chttps://discord.iakunamc.com",
+        "info": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §f信息 §8===-=-=-=-{n}§c系统 §8» §r§7IP§8:§c iakunamc.com{n}§c系统 §8» §r§7端口§8:§c 19132{n}{n}§c系统 §8» §r§7Staff申请§8:§c https://staff.iakunamc.com{n}§c系统 §8» §r§7商店§8:§c https://loja.iakunamc.com{n}§c系统 §8» §r§7Discord§8:§c https://discord.iakunamc.com{n}{n}§fY§cT §8» §r§7300 订阅 §a+ §7宣传视频{n}§fMini§cYT §8» §r§750 订阅 §a+ §7宣传视频{n}§cYT§fmirin §8» §r§70 订阅 §a+ §7宣传视频{n}§c说明 §8» §r§7在标题/描述中放入IP，并每月宣传一次服务器以保持您的头衔",
+        "tps_low": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§c系统 §8§l» §r§7服务器似乎过载，我们的团队正在解决此问题..."
+    },
+    "sethome": {
+        "_prefix": "§c系统 §8§l» §r",
+        "already_exists": "§c已存在同名的家...",
+        "limit": "§c您已达到家的上限...",
+        "not_in_survival": "§c您不在生存模式中...",
+        "position_exists": "§c该位置已有家...",
+        "success": "§7家 §c{home} §7已成功创建！",
+        "usage": "§c使用 §8/§c{label} §8<§c名称§8>"
+    },
+    "shop": {
+        "_prefix": "§e商店 §8§l» §r",
+        "break": {
+            "not_owner": "§c只有商店主人才能移除商店...",
+            "success": "§7商店已成功移除",
+            "_prefix": "§eShop §8§l» §r"
+        },
+        "buy": {
+            "inventory_full": "§c背包已满...",
+            "not_enough_stock": "§c库存不足...",
+            "success": "§7您以 §c{price} 金币 §7从 §e{owner} §7购买了 §e{quantity}§7x {item}",
+            "_prefix": "§eShop §8§l» §r"
+        },
+        "chest_access_denied": "§c只有商店主人才能访问此箱子...",
+        "chest_not_found": "§c未找到商店箱子...",
+        "create": {
+            "chest_not_found": "§c请在告示牌后/下方放置箱子...",
+            "error": "§c创建商店时出错...",
+            "invalid_item": "§c无效物品ID...",
+            "invalid_price": "§c无效价格...",
+            "invalid_quantity": "§c无效数量...",
+            "success": "§7商店创建成功！",
+            "_prefix": "§eShop §8§l» §r"
+        },
+        "inventory_full": "§c背包已满...",
+        "not_in_survival": "§c您不在生存模式中...",
+        "owner": {
+            "notify_purchase": "§e{seller} §7出售了 §e{quantity}§7x {item}，获得 §c{price} 金币§7！",
+            "notify_sale": "§e{buyer} §7购买了 §e{quantity}§7x {item}，花费 §c{price} 金币§7！",
+            "_prefix": "§eShop §8§l» §r"
+        },
+        "purchase_error": "§c处理购买时出错...",
+        "purchase_summary": "§7您购买了 §7{items}，共花费 §c{total} 金币§7！",
+        "self_interact": "§c您不能与自己的商店互动...",
+        "sell": {
+            "chest_full": "§c商店箱子已满...",
+            "insufficient_items": "§c您没有足够的物品...",
+            "success": "§7您以 §c{price} 金币 §7向 §e{owner}§7 出售了 §e{quantity}§7x {item}§7！",
+            "_prefix": "§eShop §8§l» §r"
+        }
+    },
+    "sit": {
+        "_prefix": "§c系统 §8§l» §r",
+        "accept": {
+            "different_world": "§c您需要与玩家在同一世界...",
+            "none": "§c您没有待处理的携带请求...",
+            "notify": "§c{target} §7接受了您的携带请求！",
+            "offline": "§c发送请求的玩家已离开服务器...",
+            "sender_different_world": "§c{target} §7不再与您在同一世界...",
+            "sender_too_far": "§c{target} §7走太远了...",
+            "success": "§7您接受了来自 §c{sender}§7 的请求！",
+            "too_far": "§c太远了..."
+        },
+        "blockedworld": "§c您不能在此处坐下...",
+        "deny": {
+            "none": "§c您没有待处理的携带请求...",
+            "notify": "§c{target} §7拒绝了您的携带请求...",
+            "success": "§7携带请求已成功拒绝..."
+        },
+        "different_world": "§c您需要与玩家在同一世界...",
+        "expired": "§c来自 §c{sender} §7的携带请求已过期...",
+        "pending": "§c该玩家已有待处理的携带请求...",
+        "request": {
+            "_prefix": "",
+            "received": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §6携带请求 §8===-=-=-{n}§c系统 §8§l» §r§6{sender} §7想要携带您...{n}§c系统 §8§l» §r§7使用 §a/sitaccept §7接受或 §c/sitdeny §7拒绝",
+            "sent": "§c系统 §8§l» §r§7携带请求已发送给 §c{target}§7！"
+        },
+        "self": "§c您不能给自己发送请求...",
+        "success": "§7您成功坐下了！",
+        "too_far": "§c太远了..."
+    },
+    "sleep": {
+        "_prefix": "§c系统 §8§l» §r",
+        "blockedworld": "§c您不能在此处睡觉...",
+        "success": "§7您成功入睡了！好梦..."
+    },
+    "smelt": {
+        "_prefix": "§6熔炼 §8§l» §r",
+        "inventory_full": "§c背包已满...",
+        "no_blocks": "§c您没有可熔炼的矿石块...",
+        "not_in_survival": "§c您不在生存模式中...",
+        "success": "§7您将 §6{blocks} §7个矿石块熔炼成了 §6{ores} §7个矿石，花费 §c{cost} 金币§7！"
+    },
+    "tell": {
+        "_prefix": "§1私信 §8§l» §r",
+        "disabled": "§c该玩家已关闭私信...",
+        "noselferror": "§c您不能给自己发送消息",
+        "player": "§1{sender} §8§l»§r§7 您§8:§7 {msg}",
+        "sender": "§7您 §8§l»§r§1 {player}§8:§7 {msg}",
+        "usage": "§c使用 §8/§c{label} §8<§c玩家§8> <§c消息§8>",
+        "disabled_me": "§1私信 §8§l» §r§c您的私信已关闭..."
+    },
+    "tempban": {
+        "broadcast": "§c系统 §8§l» §r§c{target} §7已被§c临时封禁 §c{time} §7，原因：§c{reason}",
+        "kick": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§c您已被临时封禁...{n}§c名称§8:§c {name}{n}§c原因§8:§c {reason}{n}§c到期§8:§c {end}{n}§c日期§8:§c {timestamp}"
+    },
+    "tempmute": {
+        "_prefix": "§c系统 §8§l» §r",
+        "broadcast": "§c{target} §7已被§c临时禁言 §c{time} §7，原因：§c{reason}",
+        "muted": "§c您已被临时禁言，原因：{reason}。处罚到期时间：{end}{n}§c系统 §8§l» §r§c请记得阅读我们的 §8/§c规则 以避免处罚..."
+    },
+    "tpa": {
+        "expired": "§5传送 §8§l» §r§c来自 {sender} 的传送请求已过期...",
+        "noself": "§5传送 §8§l» §r§c您不能传送到自己那里...",
+        "not_in_survival": "§5传送 §8§l» §r§c您不在生存模式中...",
+        "pending": "§5传送 §8§l» §r§c该玩家已有待处理的传送请求...",
+        "received": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §5传送请求 §8===-=-=-=-{n}§5传送 §8§l» §r§5{sender} §7想要传送到您这里...{n}§5传送 §8§l» §r§7使用 §a/tpaccept §7接受或 §c/tpdeny §7拒绝",
+        "sent": "§5传送 §8§l» §r§7传送请求已发送给 §5{target}§7！",
+        "target_not_in_survival": "§5传送 §8§l» §r§c该玩家不在生存模式中...",
+        "usage": "§5传送 §8§l» §r§c使用 §8/§c{label} §8<§c玩家§8>"
+    },
+    "tpaccept": {
+        "_prefix": "§5传送 §8§l» §r",
+        "none": "§c您没有待处理的传送请求...",
+        "not_in_survival": "§c该玩家不在生存模式中...",
+        "success": "§7您接受了来自 §5{sender}§7 的传送请求！",
+        "success_target": "§5{target} §7接受了您的传送请求！"
+    },
+    "tpdeny": {
+        "_prefix": "§5传送 §8§l» §r",
+        "none": "§c您没有待处理的传送请求...",
+        "success": "§7您拒绝了来自 §5{sender}§7 的传送请求！",
+        "success_target": "§5{target} §7拒绝了您的传送请求..."
+    },
+    "warn": {
+        "_prefix": "§c系统 §8§l» §r",
+        "active_warning": "§c您有 {count} 条活跃警告... 使用 §8/§cwarns 查看...",
+        "received": "§7您因 §c{reason} §7收到了 §c{time} §7的警告{n}§c系统 §8§l» §r§c请记得阅读我们的 §8/§c规则 以避免处罚..."
+    },
+    "wings": {
+        "_prefix": "§6翅§e膀 §8§l» §r",
+        "invalid_world": "§c无法在此处激活翅膀...",
+        "off": "§7翅膀已成功关闭",
+        "on": "§7翅膀已成功开启"
+    },
+    "xp": {
+        "_prefix": "§9等级 §8§l» §r",
+        "gain": "§7您获得了 §9{xp} 经验§7！",
+        "gain_partner": "§7您从伴侣 §c{partner}§7 获得了 §9{xp} 经验§7！",
+        "levelup": "§7恭喜！您达到了 §9{newLevel} §7级",
+        "temp_multiplier": "§7您有一个 §9{boost}倍 §7的临时加速，持续 §9{time}"
+    },
+    "error": {
+        "_prefix": "§c系统 §8§l» §r",
+        "unknowncommand": "§c该命令不存在...",
+        "offlineplayer": "§c玩家离线",
+        "command": "§c哎呀，发生了错误！",
+        "noperm": "§c您没有使用此命令的权限...",
+        "invalid_page": "§c系统 §8§l» §r§c无效页面，只有 §c{total} §c页..."
+    },
+    "ping": {
+        "_prefix": "§c系统 §8§l» §r",
+        "self": "§7您的延迟为 §c{ping}ms",
+        "other": "§7§c{target}§7 的延迟为 §c{ping}ms"
+    },
+    "version": {
+        "_prefix": "§bApi §8§l» §r",
+        "command": "§fi§cAkuna§9MC §bApi §8'§7{codename}§8'{n}{n}§7作者§8:§b M4theuskkj{n}§7更新于§8:§b {lastupdate}"
+    },
+    "list": {
+        "_prefix": "§c系统 §8§l» §r",
+        "command": "§7在线玩家 §8(§f{online}§8/§f{maxOnline}§8):§7 {list}"
+    },
+    "mission": {
+        "_prefix": "§6任务 §8§l» §r",
+        "completed": "§7恭喜！您完成了任务 §6{mission}",
+        "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §6任务 §8===-=-=-=-",
+        "header_other": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §6{target}§7 的§6任务 §8===-=-=-=-",
+        "resetIn": "§7任务将在 §6{time} §7后重置",
+        "break": {
+            "_prefix": "",
+            "blocks": "§7破坏 {target} 个方块",
+            "beds": "§7在 §cBed§fWars §7中破坏 {target} 张床"
+        },
+        "kill": {
+            "_prefix": "",
+            "skywars": "§7在 §bSky§fWars §7中击杀 {target} 名玩家",
+            "pvp": "§7在 §bPvP Modes §7中击杀 {target} 名玩家",
+            "thebridge": "§7在 §cThe§9Bridge §7中击杀 {target} 名玩家",
+            "bedwars": "§7在 §cBed§fWars §7中击杀 {target} 名玩家",
+            "blocksumo": "§7在 §bBlock§fSumo §7中击杀 {target} 名玩家"
+        },
+        "win": {
+            "_prefix": "",
+            "bedwars": "§7赢得 {target} 场 §cBed§fWars",
+            "mlgblock": "§7赢得 {target} 场 §eMlg§fBlock",
+            "duels": "§7赢得 {target} 场 §2决斗",
+            "skywars": "§7赢得 {target} 场 §bSky§fWars",
+            "thebridge": "§7赢得 {target} 场 §cThe§9Bridge",
+            "blocksumo": "§7赢得 {target} 场 §bBlock§fSumo"
+        },
+        "place": {
+            "_prefix": "",
+            "blocks": "§7放置 {target} 个方块"
+        },
+        "complete": {
+            "_prefix": "",
+            "parkour": "§7完成 §5跑酷 §7{target} 次"
+        },
+        "score": {
+            "_prefix": "",
+            "thebridge": "§7在 §cThe§9Bridge §7中得 {target} 分"
+        },
+        "mine": {
+            "_prefix": "",
+            "coal": "§7挖掘 {target} 块煤矿",
+            "iron": "§7挖掘 {target} 块铁矿",
+            "gold": "§7挖掘 {target} 块金矿",
+            "diamond": "§7挖掘 {target} 块钻石矿",
+            "emerald": "§7挖掘 {target} 块绿宝石矿"
+        },
+        "get": {
+            "_prefix": "",
+            "wood": "§7收集 {target} 块木材"
+        },
+        "craft": {
+            "_prefix": "",
+            "items": "§7合成 {target} 件物品"
+        },
+        "no": {
+            "missions": "§c当前没有可用任务..."
+        },
+        "list": {
+            "item": {
+                "v2": "§7{name} §8- §7进度§8:§f {progress}§8/§f{target} §8- §7奖励§8: {reward}"
+            }
+        },
+        "reward": {
+            "xp_multiplier": "§7您获得了 §9XP倍增器 {multiplier}倍 §7，持续 §6{duration}"
+        },
+        "first": {
+            "kill": {
+                "_prefix": "",
+                "skywars": "§7在 §bSky§fWars §7中第一个击杀 {target} 次",
+                "bedwars": "§7在 §cBed§fWars §7中第一个击杀 {target} 次",
+                "thebridge": "§7在 §cThe§9Bridge §7中第一个击杀 {target} 次",
+                "blocksumo": "§7在 §bBlock§fSumo §7中第一个击杀 {target} 次"
+            }
+        },
+        "play": {
+            "bedwars": "§7游玩 {target} 场 §cBed§fWars",
+            "skywars": "§7游玩 {target} 场 §bSky§fWars"
+        },
+        "buy": {
+            "items": {
+                "_prefix": "",
+                "bedwars": "§7在 §cBed§fWars §7商店购买 {target} 件物品"
+            },
+            "upgrades": {
+                "_prefix": "",
+                "bedwars": "§7在 §cBed§fWars §7购买 {target} 次升级"
+            }
+        }
+    },
+    "missions": {
+        "_prefix": "§6任务 §8§l» §r",
+        "reset": "§7您可以使用 §8/§7resetmissions §7以 §c{cost} 金币§7重置任务"
+    },
+    "resetmissions": {
+        "_prefix": "§6任务 §8§l» §r",
+        "no_missions": "§c您没有可重置的任务！",
+        "success": "§7您的任务已成功重置！"
+    },
+    "cages": {
+        "_prefix": "§c笼子 §8§l» §r",
+        "usage": "§c请使用 §8/§c{label} §8<§cbuy§8|§cset§8|§cunset§8|§clist§8|§cinfo§8>",
+        "buy": {
+            "_prefix": "",
+            "usage": "§cCages §8§l» §r§c请使用 §8/§c{label} buy §8<§ccage§8> §8[§cminigame§8]",
+            "already_owned": "§cCages §8§l» §r§c您已经拥有此笼子...",
+            "success": "§cCages §8§l» §r§7笼子 §c{cage} §7已使用 §c{cost} 金币购买！"
+        },
+        "set": {
+            "_prefix": "",
+            "usage": "§cCages §8§l» §r§c请使用 §8/§c{label} set §8<§ccage§8> §8[§cminigame§8]",
+            "not_owned": "§cCages §8§l» §r§c您没有此笼子...",
+            "success": "§cCages §8§l» §r§7笼子 §c{cage} §7已激活！",
+            "failed": "§cCages §8§l» §r§c激活笼子失败..."
+        },
+        "unset": {
+            "_prefix": "",
+            "usage": "§cCages §8§l» §r§c请使用 §8/§c{label} unset §8<§cminigame§8>",
+            "success": "§cCages §8§l» §r§7{minigame} 的笼子已停用！"
+        },
+        "list": {
+            "_prefix": "",
+            "title": "§cCages §8§l» §r§7您的笼子§8:",
+            "owned": "§cCages §8§l» §r§7已拥有§8:§7 {cages}",
+            "unowned": "§cCages §8§l» §r§7未拥有§8:§7 {cages}"
+        },
+        "info": {
+            "_prefix": "",
+            "usage": "§cCages §8§l» §r§c请使用 §8/§c{label} info §8<§ccage§8> §8[§cminigame§8]",
+            "title": "§cCages §8§l» §r§7笼子 §c{cage}§8 的信息：",
+            "description": "§cCages §8§l» §r§7描述§8:§7 {description}",
+            "cost": "§cCages §8§l» §r§7价格§8:§c {cost} 金币",
+            "status": "§cCages §8§l» §r§7拥有§8:§7 {status}",
+            "active": "§cCages §8§l» §r§7已激活§8:§7 {active}"
+        },
+        "cage": {
+            "_prefix": "",
+            "not_found": "§cCages §8§l» §r§c未找到笼子..."
+        },
+        "minigame": {
+            "_prefix": "",
+            "invalid": "§cCages §8§l» §r§c无效小游戏..."
+        }
+    },
+    "cageswindow": {
+        "_prefix": "§c笼子 §8§l» §r",
+        "invalid_minigame": "§cCages §8§l» §r§c无效小游戏... 可用§8:§7 {minigames}",
+        "title": "§7笼子",
+        "disable": {
+            "_prefix": "",
+            "button_minigame": "§c停用笼子",
+            "button_all": "§c停用所有笼子",
+            "minigame_success": "§cCages §8§l» §r§7{minigame} §7的笼子已停用！",
+            "all_success": "§cCages §8§l» §r§7所有笼子已停用！",
+            "success": "§cCages §8§l» §r§7笼子 §c{cage} §7已停用！"
+        },
+        "set": {
+            "_prefix": "",
+            "success": "§cCages §8§l» §r§7笼子 §c{cage} §7已激活！"
+        },
+        "buy": {
+            "_prefix": "",
+            "title": "§7以 §c{cost} 金币§7购买笼子 §c{cage}§8？",
+            "success": "§c笼子 §8§l» §r§7笼子 §c{cage} §7购买成功！"
+        }
+    },
+    "cage": {
+        "prison": {
+            "description": "监狱石头笼子"
+        },
+        "iron": {
+            "description": "铁质笼子"
+        },
+        "bedrock": {
+            "description": "基岩笼子"
+        },
+        "gold": {
+            "description": "金质笼子"
+        },
+        "lapis": {
+            "description": "青金石笼子"
+        },
+        "obsidian": {
+            "description": "黑曜石笼子"
+        },
+        "wooden": {
+            "description": "木质笼子"
+        },
+        "ice": {
+            "description": "冰质笼子"
+        },
+        "rainbow": {
+            "description": "彩虹笼子"
+        },
+        "emerald": {
+            "description": "绿宝石笼子"
+        },
+        "diamond": {
+            "description": "钻石笼子"
+        },
+        "redstone": {
+            "description": "红石笼子"
+        },
+        "coal": {
+            "description": "煤矿笼子"
+        },
+        "bricks": {
+            "description": "砖块笼子"
+        },
+        "mossy": {
+            "description": "苔石笼子"
+        },
+        "chiseled": {
+            "description": "錾制石笼子"
+        },
+        "quartz": {
+            "description": "石英笼子"
+        },
+        "nether": {
+            "description": "地狱笼子"
+        },
+        "end": {
+            "description": "末地笼子"
+        },
+        "snow": {
+            "description": "雪质笼子"
+        },
+        "glowstone": {
+            "description": "萤石笼子"
+        },
+        "terracotta": {
+            "description": "陶土笼子"
+        }
+    },
+    "temprank": {
+        "_prefix": "§c系统 §8§l» §r",
+        "expiry": "§7您的 §c{rank} §7标签将在 §c{time}§7 后到期..."
+    },
+    "language": {
+        "_prefix": "§3语言 §8§l» §r",
+        "usage": "§c使用 §8/§c{label} §8<§c列表§8|§c语言§8>",
+        "list_header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §3语言 §8(§f{page}§8/§f{max}§8) §8===-=-=-=-",
+        "list_item": "§3{code} §8- §7{name}",
+        "changed": "§7语言已成功修改为 §3{name}§7！",
+        "invalid": "§c语言 §8\"§c{code}§8\"§c 不存在，使用 §8/§c{label} 列表 查看语言列表"
+    },
+    "skin": {
+        "_prefix": "§3皮肤 §8§l» §r",
+        "usage": "§c使用 §8/§c{label} §8<§clist§8|§cview§8|§con§8|§coff§8>",
+        "list": {
+            "_prefix": "",
+            "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §3皮肤 §8(§f{page}§8/§f{pages}§8){filter} ===-=-=-=-",
+            "entry": "§3{id} §8§l» §r§7{name} §8-§7 {type}",
+            "empty": "§3皮肤 §8§l» §r§c没有符合筛选条件的皮肤..."
+        },
+        "view": {
+            "_prefix": "",
+            "usage": "§3皮肤 §8§l» §r§c使用 §8/§c{label} view §8<§cid§8>",
+            "not_found": "§3皮肤 §8§l» §r§c未找到皮肤...",
+            "no_data": "§3皮肤 §8§l» §r§c未找到皮肤数据..."
+        },
+        "on": {
+            "_prefix": "",
+            "usage": "§3皮肤 §8§l» §r§c使用 §8/§c{label} on §8<§cid§8>",
+            "not_found": "§3皮肤 §8§l» §r§c未找到皮肤...",
+            "no_data": "§3皮肤 §8§l» §r§c未找到皮肤数据...",
+            "already_equipped": "§3皮肤 §8§l» §r§c您已在使用此皮肤...",
+            "success": "§3皮肤 §8§l» §r§7皮肤 §3{name} §7已成功激活！"
+        },
+        "off": {
+            "_prefix": "",
+            "none": "§3皮肤 §8§l» §r§c您没有任何皮肤...",
+            "success": "§3皮肤 §8§l» §r§7皮肤已成功移除"
+        }
+    }
+}
