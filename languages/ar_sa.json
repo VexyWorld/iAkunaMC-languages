@@ -1,0 +1,2536 @@
+{
+    "_displayname": "العربية",
+    "_authors": [
+        "M4theuskkj"
+    ],
+    "bedwars": {
+        "game": {
+            "_prefix": "§cBed§fWars §8§l» §r",
+            "waiting": "§cفي انتظار المزيد من اللاعبين...",
+            "countdown": "§7يبدأ خلال §c{time} ثوانٍ",
+            "returning": "§7العودة إلى اللوبي خلال §c{time} ثوانٍ",
+            "respawning": "§7إعادة الإحياء خلال §c{time} ثوانٍ",
+            "player_joined": "§c{player} §7انضم إلى المباراة §8(§f{count}§8/§f{max}§8)",
+            "player_left": "§c{player} §7غادر المباراة §8(§f{count}§8/§f{max}§8)",
+            "player_left_rejoin": "§c{player} §7غادر §8(§cإعادة انضمام§8)",
+            "player_returned": "§c{player} §7عاد إلى المباراة",
+            "custom_info": "§7أنت في غرفة مخصصة أنشأها §c{creator}",
+            "custom_no_stats": "§7هذه المباراة لا تحتسب إحصائيات، لعرض إعدادات الغرفة استخدم §8/§7bwcustom config"
+        },
+        "combat": {
+            "_prefix": "§cBed§fWars §8§l» §r",
+            "killed_by": "§7قُتل {victim} §r§7على يد {killer}",
+            "killed_by_final": "§7قُتل {victim} §r§7على يد {killer} §8(§cقتلة نهائية§8)",
+            "fell_void": "§7سقط {victim} §r§7في الفراغ",
+            "fell_void_final": "§7سقط {victim} §r§7في الفراغ §8(§cقتلة نهائية§8)",
+            "infected_by": "§7أُصيب {victim} §r§7بالعدوى من {killer}",
+            "eliminated_by": "§7تم القضاء على {victim} §r§7بواسطة {killer}",
+            "team_eliminated": "§cBed§fWars §8§l» §r§7تم القضاء على فريق {team} §r§7!",
+            "enderchest_drop": "§cBed§fWars §8§l» §r§7سقطت أغراض صندوق النهاية الخاص بـ {player} §7عند منصة الفريق!"
+        },
+        "bed": {
+            "_prefix": "§cBed§fWars §8§l» §r",
+            "destroyed": "§7دُمر سرير فريق {team} §r§7على يد {killer}",
+            "own_destroyed": "§cدُمر سريرك على يد {killer}§c! لن تعود للحياة بعد الآن..."
+        },
+        "trap": {
+            "_prefix": "§cBed§fWars §8§l» §r",
+            "enemy": "§cتم تفعيل فخ العدو!",
+            "own": "§cتم تفعيل فخ جزيرتك!"
+        },
+        "tracker": {
+            "tracking": "§cBed§fWars §8§l» §r§7جارٍ تعقب §c{player} §8§7 المسافة§8:§c {distance} §7مكعب"
+        },
+        "enderchest": {
+            "_prefix": "§cBed§fWars §8§l» §r",
+            "stored": "§7تم تخزين الأداة بنجاح",
+            "retrieved": "§7تم استرداد الأداة بنجاح",
+            "full": "§cصندوق النهاية ممتلئ...",
+            "empty": "§cصندوق النهاية فارغ...",
+            "inventory_full": "§cحقيبتك ممتلئة...",
+            "cant_store_tools": "§cلا يمكنك تخزين الأدوات!",
+            "cant_store_tools_menu": "§cلا يمكن تخزين الأدوات...",
+            "keep_sword": "§cيجب أن تحتفظ بسيف واحد على الأقل في حقيبتك!"
+        },
+        "drop": {
+            "combat_cancel": "§cBed§fWars §8§l» §r§cلا يمكنك إلقاء الأغراض أثناء القتال!"
+        },
+        "teams": {
+            "_prefix": "§cBed§fWars §8§l» §r",
+            "vip_only": "§cفقط اللاعبون برتبة §b§l§oAstral§r§c فأعلى يمكنهم اختيار الفريق! §oاحصل عليها من https://loja.iakunamc.com",
+            "moved_by_partner": "§7تم نقلك إلى فريق {team} §r§7بواسطة شريكك!",
+            "already_in_team": "§cأنت بالفعل في فريق {team}§r§c!",
+            "team_full": "§cفريق {team} §r§cممتلئ!",
+            "joined_team": "§7انضممت إلى فريق {team}§r §7بنجاح!",
+            "preference_set": "§7تم تعيين فريق {team} §r§7مفضلاً",
+            "invalid_team": "§cفريق غير صالح..."
+        },
+        "rejoin": {
+            "_prefix": "§cBed§fWars §8§l» §r",
+            "pending": "§7لقد غادرت مباراة جارية...",
+            "pending_hint": "§7استخدم §8/§7bedwars rejoin للعودة إلى المباراة",
+            "no_pending": "§cليس لديك إعادة انضمام معلقة!",
+            "expired": "§cانتهت صلاحية إعادة الانضمام!",
+            "game_ended": "§cانتهت المباراة أو دُمر السرير!"
+        },
+        "command": {
+            "_prefix": "§cBed§fWars §8§l» §r",
+            "usage": "§7للدخول استخدم §8/§7bw join §8<§7الوضع§8> §7أو §8/§7bw join §8<§7الكود§8>",
+            "usage_leave": "§7للمغادرة استخدم §8/§7bw leave",
+            "usage_full": "§7للدخول استخدم §8/§7bw join §8<§7solo§8|§7duo§8|§7trios§8|§7squad§8|§71v1§8|§7ultra§8|§7infection§8> §7أو §8/§7bw join §8<§7الكود§8>",
+            "invalid_mode": "§cوضع غير صالح... الأوضاع المتاحة§8:§7 {modes}",
+            "mode_full": "§cهذا الوضع ممتلئ...",
+            "invalid_code": "§cكود غير صالح أو الغرفة ممتلئة...",
+            "not_in_arena": "§cأنت لست في ساحة..."
+        },
+        "custom": {
+            "vip_only": "§cBed§fWars §8§l» §r§cفقط اللاعبون برتبة §7§o§lGalaxy§r§a+§c فأعلى يمكنهم إنشاء غرف مخصصة! §oاحصل عليها من https://loja.iakunamc.com",
+            "created": "§cBed§fWars §8§l» §r§7تم إنشاء الغرفة المخصصة بنجاح!",
+            "code": "§cBed§fWars §8§l» §r§7كود الغرفة: §c{code}",
+            "join_hint": "§cBed§fWars §8§l» §r§7يمكن للاعبين الآخرين الدخول باستخدام §8/§7bw join §c{code}",
+            "create_failed": "§cBed§fWars §8§l» §r§cتعذر إنشاء الغرفة المخصصة...",
+            "settings_ignored": "§cBed§fWars §8§l» §r§cتم تجاهل بعض الإعدادات...",
+            "not_in_custom": "§cBed§fWars §8§l» §r§cأنت لست في غرفة مخصصة...",
+            "no_settings_changed": "§cBed§fWars §8§l» §r§cلا توجد إعدادات مخصصة في هذه المباراة...",
+            "settings_header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §7إعدادات الغرفة المخصصة §8===-=-=-=-",
+            "create_usage": "§cBed§fWars §8§l» §r§cاستخدم §8/§cbwcustom create §8<§cالوضع§8> §8<§cالإعدادات§8>",
+            "no_settings": "§cBed§fWars §8§l» §r§cيجب تحديد تخصيص واحد على الأقل...",
+            "no_valid_settings": "§cBed§fWars §8§l» §r§cلا توجد إعدادات صالحة...",
+            "invalid_format": "§cBed§fWars §8§l» §r§cصيغة غير صالحة§8: §c{part} §8(§cاستخدم §ckey§8=§cvalue§8)",
+            "unknown_setting": "§cBed§fWars §8§l» §r§cإعداد غير معروف§8: §c{key}",
+            "unknown_item": "§cBed§fWars §8§l» §r§cعنصر غير معروف§8: §c{item}",
+            "unknown_upgrade": "§cBed§fWars §8§l» §r§cترقية غير معروفة§8: §c{upgrade}",
+            "time_zero": "§cBed§fWars §8§l» §r§cيجب أن يكون الوقت أكبر من صفر...",
+            "invalid_time": "§cBed§fWars §8§l» §r§cوقت غير صالح...",
+            "invalid_speed": "§cBed§fWars §8§l» §r§cسرعة غير صالحة...",
+            "speed_zero": "§cBed§fWars §8§l» §r§cيجب أن تكون السرعة أكبر من صفر...",
+            "speed_max": "§cBed§fWars §8§l» §r§cالسرعة القصوى هي 10x...",
+            "forge_level_range": "§cBed§fWars §8§l» §r§cيجب أن يكون مستوى المصهر بين 0 و 3...",
+            "generator_level_range": "§cBed§fWars §8§l» §r§cيجب أن يكون مستوى المولّد بين 1 و 3...",
+            "invalid_gen_item": "§cBed§fWars §8§l» §r§cعنصر مولد غير صالح§8: §c{item}={amount} §8(§cالحد الأقصى§8: §c64§8)",
+            "help": "§cBed§fWars §8§l» §r§7لإنشاء غرفة مخصصة استخدم §8/§7bwcustom create §8<§7الوضع§8> §8<§7الإعدادات§8>",
+            "help_config": "§cBed§fWars §8§l» §r§7لعرض إعدادات الغرفة استخدم §8/§7bwcustom config",
+            "help_list": "§cBed§fWars §8§l» §r§7لعرض التخصيصات المتاحة استخدم §8/§7bwcustom list §8<§7configs§8|§7items§8|§7upgrades§8>",
+            "list_usage": "§cBed§fWars §8§l» §r§cاستخدم §8/§cbwcustom list §8<§cconfigs§8|§citems§8|§cupgrades§8>",
+            "list_configs_header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §7الإعدادات المتاحة §8===-=-=-=-",
+            "list_items": "§cBed§fWars §8§l» §r§7العناصر المتاحة §8(§f{count}§8): §7{list}",
+            "list_upgrades": "§cBed§fWars §8§l» §r§7الترقيات المتاحة §8(§f{count}§8): §7{list}",
+            "show_blocked_items": "§cBed§fWars §8§l» §r§7العناصر المحظورة §8(§f{count}§8): §7{list}",
+            "show_blocked_upgrades": "§cBed§fWars §8§l» §r§7الترقيات المحظورة §8(§f{count}§8): §7{list}",
+            "show_upgrade_time": "§cBed§fWars §8§l» §r§7وقت الترقية§8: §c{time}",
+            "show_forge_speed": "§cBed§fWars §8§l» §r§7سرعة المصهر§8: §c{speed}x",
+            "show_diamond_time": "§cBed§fWars §8§l» §r§7§bمدة مولد الألماس§8: §c{time}",
+            "show_emerald_time": "§cBed§fWars §8§l» §r§7§2مدة مولد الزمرد§8: §c{time}",
+            "show_forge_level": "§cBed§fWars §8§l» §r§7مستوى المصهر§8: §c{level}",
+            "show_generator_level": "§cBed§fWars §8§l» §r§7مستوى المولدات§8: §c{level}",
+            "show_beds_destroyed": "§cBed§fWars §8§l» §r§7الأسرة المدمرة§8: {value}",
+            "beds_yes": "§aنعم",
+            "beds_no": "§cلا"
+        },
+        "menu": {
+            "_prefix": "§cBed§fWars §8§l» §r",
+            "invalid_mode": "§cوضع غير صالح... الأوضاع المتاحة§8:§7 {modes}",
+            "arena_not_found": "§cالساحة غير موجودة!",
+            "map_not_found": "§cالخريطة غير موجودة...",
+            "wrong_mode": "§cهذه الخريطة للوضع {mode}...",
+            "load_error": "§cخطأ في تحميل الساحة...",
+            "no_space": "§cلا توجد مساحة كافية في الساحة...",
+            "mode_full": "§cهذا الوضع ممتلئ...",
+            "click_favorite": "§7انقر على خريطة لإضافتها أو إزالتها من المفضلة",
+            "map_favorited": "§7أُضيفت الخريطة {map} إلى المفضلة",
+            "map_unfavorited": "§7أُزيلت الخريطة {map} من المفضلة",
+            "confirm_button": "§a§lتأكيد",
+            "cancel_button": "§c§lإلغاء"
+        },
+        "shop": {
+            "_prefix": "§cBed§fWars §8§l» §r",
+            "no_resources": "§cليس لديك موارد كافية لشراء هذا العنصر!",
+            "armor_better": "§cلديك هذا الدرع بالفعل أو أفضل منه!",
+            "inventory_full": "§cحقيبتك ممتلئة!",
+            "already_has_shears": "§cلديك مقص بالفعل!"
+        },
+        "upgrade": {
+            "_prefix": "§cBed§fWars §8§l» §r",
+            "max_level": "§c{name} §cفي المستوى الأقصى بالفعل!",
+            "need_diamonds": "§cتحتاج {amount} §bألماس §cإضافي!",
+            "purchased": "§c{player} §7رقّى {name} §7إلى المستوى §c{level}§7!"
+        },
+        "generator": {
+            "_prefix": "§cBed§fWars §8§l» §r",
+            "upgraded": "§7تمت ترقية مولدات {type} §7إلى المستوى §f{level}",
+            "beds_destroyed": "§cتم تدمير جميع الأسرة!"
+        },
+        "cooldown": {
+            "_prefix": "§cBed§fWars §8§l» §r",
+            "egg": "§cانتظر لاستخدام بيضة الجسر مرة أخرى!",
+            "irongolem": "§cانتظر لاستدعاء غولم حديدي مرة أخرى!",
+            "silverfish": "§cانتظر لاستدعاء السمكة الفضية مرة أخرى!",
+            "slingshot": "§cانتظر لاستخدام المقلاع مرة أخرى!",
+            "fireball": "§cانتظر لاستخدام كرة النار مرة أخرى!",
+            "sponge": "§cانتظر لاستخدام الإسفنجة مرة أخرى!",
+            "platform": "§cانتظر لاستخدام المنصة مرة أخرى!",
+            "bridge": "§cانتظر لاستخدام بانٍ الجسر مرة أخرى!",
+            "tower": "§cانتظر لاستخدام البرج المدمج مرة أخرى!"
+        },
+        "platform": {
+            "_prefix": "§cBed§fWars §8§l» §r",
+            "blocked": "§cلا يمكن إنشاء المنصة هنا..."
+        }
+    },
+    "teampvp": {
+        "_prefix": "§aTeamPvP §8§l» §r",
+        "usage": "§7للدخول استخدم §8/§7{label} entrar §8<§7الفريق§8>{n}§aTeamPvP §8§l» §r§7للمغادرة استخدم §8/§7{label} sair",
+        "join": {
+            "_prefix": "",
+            "usage": "§aTeamPvP §8§l» §r§cاستخدم §8/§c{label} entrar §8<§cالفريق§8>"
+        },
+        "teams": "§cالفرق المتاحة§8:§7 {teams}",
+        "sameteam": "§cلا يمكنك مهاجمة لاعب من فريقك!"
+    },
+    "parkour": {
+        "_prefix": "§5Parkour §8§l» §r",
+        "usage": "§7للدخول استخدم §8/§7{label} enter{n}§5Parkour §8§l» §r§7للمغادرة استخدم §8/§7{label} leave",
+        "finish": {
+            "time": "§7أكملت الباركور في §5{time}",
+            "personalbest": "§5رقم قياسي جديد! §7أفضل وقت لك§8:§5 {time}",
+            "noreward": "§7تهانينا، لقد أنهيت الباركور!",
+            "reward": "§7تهانينا، لقد أنهيت الباركور وحصلت على §7§lNightmare §r§7كمكافأة!"
+        }
+    },
+    "thebridge": {
+        "_prefix": "§cThe§9Bridge §8§l» §r",
+        "game": {
+            "waiting": "§cفي انتظار لاعب آخر...",
+            "countdown": "§7يبدأ خلال §c{time} ثوانٍ",
+            "releasing": "§7يتم التحرير خلال §c{time} ثوانٍ",
+            "returning": "§7العودة إلى اللوبي خلال §c{time} ثوانٍ",
+            "player_joined": "§c{player} §7انضم إلى المباراة",
+            "player_quit": "§c{player} §7غادر المباراة",
+            "point_scored": "§7سجل {player} نقطة",
+            "point_scored_final": "§7سجل {player} نقطة §8(§cالنقطة النهائية§8)",
+            "killed_by": "§c{victim} §7قُتل على يد §c{killer}",
+            "own_point": "§cلا يمكنك تسجيل نقطة في جهة فريقك"
+        },
+        "command": {
+            "usage": "§7للدخول استخدم §8/§7{label} entrar",
+            "no_arenas": "§cلا توجد ساحات متاحة حاليًا..."
+        },
+        "teams": {
+            "invalid": "§cفريق غير صالح...",
+            "already_in": "§cأنت بالفعل في فريق {team}§r§c!",
+            "full": "§cفريق {team} §r§cممتلئ!",
+            "joined": "§7انضممت إلى فريق {team}§r §7بنجاح!"
+        }
+    },
+    "skywars": {
+        "_prefix": "§fSky§bWars §8§l» §r",
+        "state": {
+            "waiting": "§cفي انتظار المزيد من اللاعبين...",
+            "starting": "§7يبدأ خلال §b{start} ثوانٍ",
+            "finish": "§7العودة إلى اللوبي خلال §b{time} ثوانٍ"
+        },
+        "player": {
+            "join": "§b{player} §7انضم إلى المباراة §8(§f{count}§8/§f{maxPlayers}§8)",
+            "quit": "§b{player} §7غادر المباراة §8(§f{count}§8/§f{maxPlayers}§8)",
+            "killed_by": "§b{player} §7قُتل على يد §b{killer} §8(§f{alive}§8/§f{maxPlayers}§8)",
+            "killed_void": "§b{player} §7سقط في الفراغ §8(§f{alive}§8/§f{maxPlayers}§8)"
+        },
+        "refill": {
+            "_prefix": "",
+            "done": "§7تمت إعادة تعبئة جميع الصناديق!"
+        },
+        "scoreboard": {
+            "_prefix": "",
+            "format": "{right} §fi§cAkuna§9MC §8§l» §r§fSky§bWars{n}{right}{bar}{n}{refill}{right}§8§l» §r§7الخريطة§8:§b {map}{n}{right}§8§l» §r§7الأحياء§8:§b {alive}{n}{right}§8§l» §r§7القتلات§8:§b {kills}{n}{right}{bar}{n}{n}{right}§biakunamc.com 19132"
+        },
+        "command": {
+            "usage": "§7للدخول استخدم §8/§7sw enter{n}§fSky§bWars §8§l» §r§7للمغادرة استخدم §8/§7sw leave",
+            "mode_not_exist": "§cالوضع {mode} غير موجود...",
+            "mode_full": "§cهذا الوضع ممتلئ...",
+            "not_in_arena": "§cأنت لست في ساحة..."
+        },
+        "voting": {
+            "player_voted": "§b{player} §7صوّت لـ{gamemode}",
+            "selected": "§7الوضع المختار§8:§b {gamemode}"
+        },
+        "caos": {
+            "tnt_spawn": "§cتي إن تي!",
+            "fire": "§6نار!",
+            "inventory_scramble": "§7تم بعثرة الحقائب!",
+            "teleport": "§7انتقال فوري!",
+            "launch": "§7تحلق!",
+            "tnt_rain": "§cمطر تي إن تي!",
+            "inventory_swap": "§eتم تبديل الحقائب!"
+        },
+        "menu": {
+            "invalid_mode": "§cوضع غير صالح... الأوضاع المتاحة§8:§7 {modes}",
+            "mode_full": "§cهذا الوضع ممتلئ...",
+            "arena_not_found": "§cالساحة غير موجودة!",
+            "map_not_found": "§cالخريطة غير موجودة...",
+            "wrong_mode": "§cهذه الخريطة للوضع {mode}...",
+            "load_error": "§cخطأ في تحميل الساحة...",
+            "no_space": "§cلا توجد مساحة كافية في الساحة...",
+            "click_favorite": "§7انقر على خريطة لإضافتها أو إزالتها من المفضلة",
+            "map_favorited": "§7أُضيفت الخريطة {map} إلى المفضلة",
+            "map_unfavorited": "§7أُزيلت الخريطة {map} من المفضلة",
+            "confirm_button": "§a§lتأكيد",
+            "cancel_button": "§c§lإلغاء"
+        },
+        "tracker": "§8§l» §r§7جارٍ تعقب §b{player} §8§l» §r§7المسافة: §b{distance} §7مكعب"
+    },
+    "mlgblock": {
+        "state": {
+            "_prefix": "§eMlg§fBlock §8§l» §r",
+            "waiting": "§cفي انتظار المزيد من اللاعبين...",
+            "starting": "§7يبدأ خلال §e{start} ثوانٍ",
+            "finish": "§7العودة إلى اللوبي خلال §e{time} ثوانٍ"
+        },
+        "player": {
+            "_prefix": "§eMlg§fBlock §8§l» §r",
+            "join": "§e{player} §7انضم إلى المباراة §8(§f{count}§8/§f{slots}§8)",
+            "quit": "§e{player} §7غادر المباراة §8(§f{count}§8/§f{slots}§8)",
+            "killed_by": "§e{player} §7قُتل على يد §e{killer} §8(§f{alive}§8/§f{slots}§8)",
+            "killed_void": "§e{player} §7سقط في الفراغ §8(§f{alive}§8/§f{slots}§8)"
+        },
+        "command": {
+            "_prefix": "§eMlg§fBlock §8§l» §r",
+            "usage": "§7استخدم §8/§7mlg §8<§7انضمام§8|§7مغادرة§8>",
+            "no_arenas": "§cلا توجد ساحات متاحة..."
+        },
+        "scoreboard": {
+            "format": "{right}§fi§cAkuna§9MC §8§l» §r§eMlg§fBlock{n}{right}{bar}{n}{right}§8§l» §r§7الخريطة§8:§e {map}{n}{right}§8§l» §r§7القتلات§8:§e {kills}{n}{right}§8§l» §r§7الأحياء§8:§e {alive}{n}{right}{bar}{n}{n}{right}§eiakunamc.com 19132"
+        }
+    },
+    "blocksumo": {
+        "state": {
+            "_prefix": "§bBlock§fSumo §8§l» §r",
+            "waiting": "§cفي انتظار المزيد من اللاعبين...",
+            "starting": "§7يبدأ خلال §b{start} ثوانٍ",
+            "finish": "§7العودة إلى اللوبي خلال §b{time} ثوانٍ"
+        },
+        "player": {
+            "_prefix": "§bBlock§fSumo §8§l» §r",
+            "join": "§b{player} §7انضم إلى المباراة §8(§f{count}§8/§f{slots}§8)",
+            "quit": "§b{player} §7غادر المباراة §8(§f{count}§8/§f{slots}§8)",
+            "killed_by": "§b{player} §7قُتل على يد §b{killer} §8(§f{alive}§8/§f{slots}§8)",
+            "killed_by_final": "§b{player} §7تم §cالقضاء عليه §7على يد §b{killer} §8(§f{alive}§8/§f{slots}§8)",
+            "killed_void": "§b{player} §7سقط في الفراغ §8(§f{alive}§8/§f{slots}§8)",
+            "respawning": "§7إعادة الإحياء خلال §b{time} ثوانٍ"
+        },
+        "command": {
+            "_prefix": "§bBlock§fSumo §8§l» §r",
+            "usage": "§7استخدم §8/§7blocksumo §8<§7انضمام§8|§7مغادرة§8>",
+            "no_arenas": "§cلا توجد ساحات متاحة..."
+        },
+        "scoreboard": {
+            "format": "{right}§fi§cAkuna§9MC §8§l» §r§bBlock§fSumo{n}{right}{bar}{n}{right}§8§l» §r§7الخريطة§8:§b {map}{n}{right}§8§l» §r§7القتلات§8:§b {kills}{n}{right}§8§l» §r§7الأرواح§8:§b {lives}{n}{right}{bar}{n}{n}{right}§biakunamc.com 19132"
+        }
+    },
+    "plot": {
+        "popup": {
+            "_prefix": "§9Plot §8§l» §r",
+            "owner": "§7ملكية §9{owner} §8- §7التقييم§8:§9 {rating}",
+            "rate": "§7أعجبك هذا البلوط؟ يمكنك تقييمه عبر §8/§7p rate!",
+            "available": "§7هذا البلوط شاغر! يمكنك الحصول عليه مقابل §c{price} أكونا §7باستخدام /p claim"
+        },
+        "command": {
+            "name": "plot",
+            "alias": "p",
+            "desc": "§7إدارة قطعك",
+            "usage": "§9Plot §8§l» §r§cاستخدم §8/§cplot §8<§cمساعده§8|§cأمر-فرعي§8> §8[§cخيارات§8]",
+            "unknown": "§9Plot §8§l» §r§cأمر فرعي غير معروف، استخدم §8/§cp help لرؤية الأوامر المتاحة"
+        },
+        "subcommand": {
+            "usage": "§9Plot §8§l» §r§cاستخدم {usage}"
+        },
+        "error": "§9Plot §8§l» §r§cعذرًا! حدث خطأ...",
+        "notinplot": "§9Plot §8§l» §r§cأنت لست داخل قطعة...",
+        "notowner": "§9Plot §8§l» §r§cأنت لا تملك هذه القطعة...",
+        "confirm": "confirm",
+        "help": {
+            "name": "مساعده",
+            "alias": "help",
+            "desc": "§7يعرض أوامر البلوط",
+            "usage": "§8/§cp help §8<§cصفحة§8>",
+            "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §9Plot §8(§f{page}§8/§f{total}§8) §8===-=-=-=-",
+            "entry": "§9Plot §8§l» §r§8/§7p {name} §8-§7 {desc}"
+        },
+        "addhelper": {
+            "name": "addhelper",
+            "alias": "addh",
+            "desc": "§7يضيف مساعدًا إلى قطعتك",
+            "usage": "§8/§cp addhelper §8<§cلاعب§8>",
+            "alreadyone": "§9Plot §8§l» §r§c{player} هو مساعد بالفعل...",
+            "success": "§9Plot §8§l» §r§9{player} §7أصبح مساعدًا لقطعتك",
+            "everyone": {
+                "success": "§9Plot §8§l» §r§7جميع اللاعبين الآن مساعدون لقطعتك!"
+            },
+            "offline": "§cالنظام §8§l» §r§cاللاعب غير متصل"
+        },
+        "removehelper": {
+            "name": "removehelper",
+            "alias": "delh",
+            "desc": "§7يزيل مساعدًا من قطعتك",
+            "usage": "§8/§cp removehelper §8<§cلاعب§8>",
+            "notone": "§9Plot §8§l» §r§c{player} ليس مساعدًا...",
+            "success": "§9Plot §8§l» §r§9{player} §7تمت إزالته من المساعدين...",
+            "everyone": {
+                "success": "§9Plot §8§l» §r§7تمت إزالة جميع اللاعبين من المساعدين!"
+            }
+        },
+        "claim": {
+            "name": "claim",
+            "alias": "c",
+            "desc": "§7تستحوذ على القطعة التي تقف فيها",
+            "usage": "§8/§cp claim §8<§cاسم§8>",
+            "yourplot": "§9Plot §8§l» §r§cلقد استحوذت على هذه القطعة بالفعل",
+            "alreadyclaimed": "§9Plot §8§l» §r§cهذه القطعة مملوكة بالفعل من قبل {owner}",
+            "nomoney": "§9Plot §8§l» §r§cمالك غير كافٍ للاستحواذ على هذه القطعة",
+            "success": "§9Plot §8§l» §r§7تم الاستحواذ على القطعة بنجاح!"
+        },
+        "auto": {
+            "name": "auto",
+            "alias": "a",
+            "desc": "§7ينتقل إلى أقرب قطعة شاغرة",
+            "usage": "§8/§cp auto",
+            "notplotworld": "§9Plot §8§l» §r§cأنت لست في عالم البلوطات...",
+            "success": "§9Plot §8§l» §r§7تم الانتقال إلى القطعة الشاغرة §9{x}§8;§9{z} §7بنجاح!",
+            "noplots": "§9Plot §8§l» §r§7لا توجد قطع متاحة..."
+        },
+        "dispose": {
+            "name": "dispose",
+            "alias": "d",
+            "desc": "§7تتخلى عن قطعتك",
+            "usage": "§8/§cp dispose",
+            "confirm": "§9Plot §8§l» §r§7هل أنت متأكد من التخلي عن القطعة §9{plot}§7؟ استخدم §8/§7p dispose confirm للتأكيد",
+            "success": "§9Plot §8§l» §r§7تم التخلي عن القطعة بنجاح!"
+        },
+        "reset": {
+            "name": "reset",
+            "alias": "r",
+            "desc": "§7تعيد ضبط قطعتك",
+            "usage": "§8/§cp reset",
+            "confirm": "§9Plot §8§l» §r§7هل أنت متأكد من إعادة ضبط القطعة §9{plot}§7؟ استخدم §8/§7p reset confirm للتأكيد",
+            "success": "§9Plot §8§l» §r§7تمت إعادة ضبط القطعة بنجاح!",
+            "already_clearing": "§9Plot §8§l» §r§cجاري إعادة ضبط هذه القطعة بالفعل..."
+        },
+        "clear": {
+            "name": "clear",
+            "alias": "cl",
+            "desc": "§7تنظف قطعتك",
+            "usage": "§8/§cp clear",
+            "confirm": "§9Plot §8§l» §r§7هل أنت متأكد من تنظيف القطعة §9{plot}§7؟ استخدم §8/§7p clear confirm للتأكيد",
+            "success": "§9Plot §8§l» §r§7تم تنظيف القطعة بنجاح!",
+            "already_clearing": "§9Plot §8§l» §r§cجاري تنظيف هذه القطعة بالفعل..."
+        },
+        "biome": {
+            "name": "biome",
+            "alias": "b",
+            "desc": "§7تغير المناخ الحيوي لقطعتك",
+            "usage": "§8/§cp biome §8[§cمناخ حيوي§8]",
+            "success": "§9Plot §8§l» §r§7تم تغيير المناخ الحيوي إلى §9{biome} §7بنجاح!",
+            "invalid": "§9Plot §8§l» §r§cهذا المناخ الحيوي غير موجود...",
+            "possible": "§9Plot §8§l» §r§7المناخات الحيوية المتاحة§8:§7 {biomes}"
+        },
+        "name": {
+            "name": "name",
+            "alias": "n",
+            "desc": "§7تعيين أو تغيير اسم القطعة",
+            "usage": "§8/§cp name §8<§cاسم§8>",
+            "success": "§9Plot §8§l» §r§7تم تغيير اسم القطعة إلى §7\"§9{name}§7\" بنجاح!"
+        },
+        "home": {
+            "name": "home",
+            "alias": "h",
+            "desc": "§7ينتقل إلى إحدى قطعك",
+            "usage": "§8/§cp home §8<§cمعرف§8>",
+            "noplots": "§9Plot §8§l» §r§cليس لديك أي قطع",
+            "notexist": "§9Plot §8§l» §r§cليس لديك قطعة بالمعرف {id}",
+            "success": "§9Plot §8§l» §r§7تم الانتقال إلى القطعة §9{plot} §7بنجاح!",
+            "error": "§9Plot §8§l» §r§cتعذر السفر إلى القطعة..."
+        },
+        "homes": {
+            "name": "homes",
+            "alias": "hs",
+            "desc": "§7يعرض قطعك",
+            "usage": "§8/§cp homes",
+            "noplots": "§9Plot §8§l» §r§cليس لديك أي قطع...",
+            "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §9القطع §8(§f{page}§8/§f{total}§8) §8===-=-=-=-",
+            "invalid_page": "§cالنظام §8§l» §r§cصفحة غير صالحة، يوجد §c{total} §cصفحات فقط..."
+        },
+        "info": {
+            "name": "info",
+            "alias": "i",
+            "desc": "§7يعرض معلومات عن قطعة",
+            "usage": "§8/§cp info",
+            "about": "§9Plot §8§l» §r§7معلومات عن القطعة §9{plot}",
+            "owner": "§9Plot §8§l» §r§7المالك§8:§9 {owner}",
+            "plotname": "§9Plot §8§l» §r§7الاسم§8:§9 {name}",
+            "helpers": "§9Plot §8§l» §r§7المساعدون §8(§f{count}§8):§7 {helpers}",
+            "biome": "§9Plot §8§l» §r§7المناخ الحيوي§8:§9 {biome}",
+            "rating": "§9Plot §8§l» §r§7التقييم§8:§9 {score} §8(§9{count} §7تقييمات§8)",
+            "allowed": "§9Plot §8§l» §r§7مسموح لهم §8(§f{count}§8):§7 {players}",
+            "denied": "§9Plot §8§l» §r§7محظورون §8(§f{count}§8):§7 {players}"
+        },
+        "generate": {
+            "name": "generate",
+            "alias": "gen",
+            "desc": "§7ينشئ عالم قطع جديدًا",
+            "usage": "§8/§cp generate §8<§cاسم§8>",
+            "exists": "§9Plot §8§l» §r§cالعالم {name} موجود بالفعل",
+            "success": "§9Plot §8§l» §r§7تم إنشاء عالم القطع بنجاح: {name}",
+            "error": "§9Plot §8§l» §r§cتعذر إنشاء العالم..."
+        },
+        "give": {
+            "name": "give",
+            "alias": "g",
+            "desc": "§7يهب قطعتك للاعب آخر",
+            "usage": "§8/§cp give §8<§cلاعب§8>",
+            "notonline": "§9Plot §8§l» §r§cاللاعب غير متصل",
+            "toself": "§9Plot §8§l» §r§cلا يمكنك إهداء قطعة لنفسك...",
+            "requests_disabled": "§cالنظام §8§l» §r§cهذا اللاعب عطّل استقبال الطلبات...",
+            "pending_exists": "§cالنظام §8§l» §r§cلدى هذا اللاعب طلب معلق بالفعل...",
+            "expired": "§9Plot §8§l» §r§cانتهت صلاحية طلب نقل القطعة...",
+            "sent": "§9Plot §8§l» §r§7تم إرسال طلب النقل إلى §9{player}§7!",
+            "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §7نقل §9Plot§8===-=-=-",
+            "request": "§9Plot §8§l» §r§9{player} §7يريد أن يهديك القطعة §9{x}§8;§9{z}",
+            "instructions": "§9Plot §8§l» §r§7استخدم §a/p accepttransfer للقبول §7أو §c/p denytransfer للرفض"
+        },
+        "warp": {
+            "name": "warp",
+            "alias": "w",
+            "desc": "§7ينتقل إلى قطعة",
+            "usage": "§8/§cp warp §8<§cمعرف§8>",
+            "wrongid": "§9Plot §8§l» §r§cيجب أن يكون المعرف بصيغة X;Z",
+            "notinplotworld": "§9Plot §8§l» §r§cأنت لست في عالم البلوطات...",
+            "unclaimed": "§9Plot §8§l» §r§cهذه القطعة ليست مملوكة لأحد...",
+            "success": "§9Plot §8§l» §r§7تم نقلك إلى القطعة §9{plot}§7!"
+        },
+        "resetplots": {
+            "name": "resetplots",
+            "alias": "rsp",
+            "desc": "§7تعيد ضبط كل قطع لاعب",
+            "usage": "§8/§cp resetplots §8<§cلاعب§8>"
+        },
+        "rate": {
+            "name": "rate",
+            "alias": "rate",
+            "desc": "§7تقيم قطعة",
+            "usage": "§8/§cp rate §8<§cالتقييم - 1 إلى 5§8>",
+            "invalid_range": "§9Plot §8§l» §r§cيجب أن يكون التقييم بين 1 و 5...",
+            "self": "§9Plot §8§l» §r§cلا يمكنك تقييم قطعتك الخاصة...",
+            "notify_owner": "§9Plot §8§l» §r §9{player} §7قيم قطعتك §9{x}§8;§9{z} §7بـ §9{rating} §7نجوم!",
+            "success": "§9Plot §8§l» §r§7تم تقييم القطعة بنجاح! متوسط التقييم§8:§9 {score}"
+        },
+        "top": {
+            "name": "top",
+            "alias": "best",
+            "desc": "§7يعرض أفضل 10 قطع تقييمًا",
+            "usage": "§8/§cp top",
+            "header": "§8-=-=-=-=== §bأفضل 10 §8- §9القطع §8===-=-=-=-",
+            "entry": "§9{pos} §8§l» §r§9{x}§8;§9{z} §8-§9 {owner} §8- §9{score} §8(§9{ratings} §7تقييمات§8)",
+            "noplots": "§9Plot §8§l» §r§cلم يتم العثور على قطع مقيَّمة..."
+        },
+        "allow": {
+            "name": "allow",
+            "desc": "§7يسمح للجميع أو للاعب بدخول قطعتك",
+            "usage": "§8/§cp allow §8<§cلاعب§8|§c*§8>",
+            "everyone": {
+                "success": "§9Plot §8§l» §r§7يمكن للجميع الآن دخول القطعة!"
+            },
+            "success": "§9Plot §8§l» §r§9{player} §7يمكنه الآن دخول القطعة!",
+            "already": {
+                "allowed": "§9Plot §8§l» §r§c{player} مسموح له بالفعل..."
+            }
+        },
+        "deny": {
+            "name": "deny",
+            "desc": "§7يمنع الجميع أو لاعبًا من دخول قطعتك",
+            "usage": "§8/§cp deny §8<§cلاعب§8|§c*§8>",
+            "everyone": {
+                "success": "§9Plot §8§l» §r§7تم منع الجميع!"
+            },
+            "success": "§9Plot §8§l» §r§9{player} §7تم منعه بنجاح!",
+            "already": {
+                "denied": "§9Plot §8§l» §r§c{player} ممنوع بالفعل..."
+            }
+        },
+        "biomecolor": {
+            "name": "biomecolor",
+            "desc": "§7يغير لون المناخ لقطعتك",
+            "usage": "§8/§cp biomecolor §8<§cr§8,§cg§8,§cb§8>",
+            "success": "§9Plot §8§l» §r§7تم تغيير لون المناخ إلى §9{r}§8,§9{g}§8,§9{b} §7بنجاح!",
+            "invalid_format": "§9Plot §8§l» §r§cاستخدم §8/§cp biomecolor §8<§cr§8,§cg§8,§cb§8>",
+            "invalid_type": "§9Plot §8§l» §r§cالألوان يجب أن تكون أرقامًا (صيغة rgb)...",
+            "invalid_range": "§9Plot §8§l» §r§cقيم الألوان يجب أن تكون بين 0 - 255..."
+        },
+        "accepttransfer": {
+            "name": "accepttransfer",
+            "desc": "§7يقبل نقل قطعة",
+            "usage": "§8/§cp accepttransfer",
+            "no_pending": "§cالنظام §8§l» §r§cليس لديك طلبات معلقة...",
+            "invalid_data": "§9Plot §8§l» §r§cبيانات قطعة غير صالحة...",
+            "not_exists": "§9Plot §8§l» §r§cالقطعة غير موجودة...",
+            "not_owner": "§9Plot §8§l» §r§cلم تعد القطعة مملوكة لـ {owner}...",
+            "success": "§9Plot §8§l» §r§7قبلت نقل القطعة §9{plot}§7!",
+            "notify_sender": "§9Plot §8§l» §r§c{player} §7قبل نقل القطعة §9{plot}§7!"
+        },
+        "denytransfer": {
+            "name": "denytransfer",
+            "desc": "§7يرفض نقل قطعة",
+            "usage": "§8/§cp denytransfer",
+            "no_pending": "§cالنظام §8§l» §r§cليس لديك طلبات معلقة...",
+            "success": "§9Plot §8§l» §r§7رفضت نقل القطعة...",
+            "notify_sender": "§9Plot §8§l» §r§9{player} §7رفض نقل القطعة..."
+        }
+    },
+    "cosmetic": {
+        "bedwars": {
+            "bed_break": {
+                "explosion": {
+                    "description": "انفجار مدمر عند كسر السرير"
+                },
+                "ores": {
+                    "description": "تنفجر خامات ثمينة حول السرير المدمر"
+                },
+                "rainbow": {
+                    "description": "انفجار ملون من الصوف عند كسر السرير"
+                }
+            },
+            "final_kill": {
+                "blood": {
+                    "description": "دم..."
+                },
+                "lightning": {
+                    "description": "صاعقة تضرب اللاعب المقتول"
+                },
+                "ez": {
+                    "description": "يعرض نص EZ"
+                },
+                "loser": {
+                    "description": "يعرض نص L"
+                },
+                "smoke": {
+                    "description": "سحابة دخان ترتفع فوق العدو المُقصى"
+                },
+                "critical": {
+                    "description": "جزيئات الضربة الحرجة تنفجر فوق العدو المُقصى"
+                }
+            },
+            "kill": {
+                "smoke": {
+                    "description": "سحابة دخان تظهر عند كل قتلة"
+                },
+                "critical": {
+                    "description": "جزيئات الضربة الحرجة تنفجر عند كل قتلة"
+                },
+                "hearts": {
+                    "description": "قلوب حمراء تطفو فوق الضحية"
+                }
+            },
+            "win": {
+                "firework": {
+                    "description": "ألعاب نارية ملونة تنفجر حول الفائز"
+                },
+                "enchant": {
+                    "description": "جزيئات سحرية تحيط بالفائز"
+                }
+            },
+            "wood_type": {
+                "oak": {
+                    "description": "خشب بلوط كلاسيكي"
+                },
+                "spruce": {
+                    "description": "خشب صنوبر داكن"
+                },
+                "birch": {
+                    "description": "خشب بتولا فاتح"
+                },
+                "jungle": {
+                    "description": "خشب غابة استوائي"
+                },
+                "acacia": {
+                    "description": "خشب أكاسيا محمر"
+                },
+                "dark_oak": {
+                    "description": "خشب بلوط داكن"
+                }
+            }
+        },
+        "skywars": {
+            "win": {
+                "firework": {
+                    "description": "ألعاب نارية ملونة تنفجر حول الفائز"
+                },
+                "enchant": {
+                    "description": "جزيئات سحرية تحيط بالفائز"
+                }
+            },
+            "kill": {
+                "smoke": {
+                    "description": "سحابة دخان تظهر عند كل قتلة"
+                },
+                "critical": {
+                    "description": "جزيئات الضربة الحرجة تنفجر عند كل قتلة"
+                },
+                "hearts": {
+                    "description": "قلوب حمراء تطفو فوق الضحية"
+                },
+                "blood": {
+                    "description": "دم يتناثر في موقع الضحية"
+                },
+                "lightning": {
+                    "description": "صاعقة تضرب الضحية عند الموت"
+                },
+                "ez": {
+                    "description": "EZ تظهر فوق الضحية"
+                },
+                "loser": {
+                    "description": "L تظهر فوق الضحية"
+                }
+            }
+        },
+        "blocksumo": {
+            "kill": {
+                "smoke": {
+                    "description": "سحابة دخان تظهر عند كل قتلة"
+                },
+                "critical": {
+                    "description": "جزيئات الضربة الحرجة تنفجر عند كل قتلة"
+                },
+                "hearts": {
+                    "description": "قلوب حمراء تطفو فوق الضحية"
+                },
+                "blood": {
+                    "description": "دم يتناثر في موقع الضحية"
+                },
+                "lightning": {
+                    "description": "صاعقة تضرب الضحية عند الموت"
+                },
+                "ez": {
+                    "description": "EZ تظهر فوق الضحية"
+                },
+                "loser": {
+                    "description": "L تظهر فوق الضحية"
+                }
+            },
+            "final_kill": {
+                "blood": {
+                    "description": "دم..."
+                },
+                "lightning": {
+                    "description": "صاعقة تضرب اللاعب المُقصى"
+                },
+                "ez": {
+                    "description": "يعرض نص EZ عند الإقصاء"
+                },
+                "loser": {
+                    "description": "يعرض نص L عند الإقصاء"
+                },
+                "smoke": {
+                    "description": "سحابة دخان ترتفع فوق العدو المُقصى"
+                },
+                "critical": {
+                    "description": "جزيئات الضربة الحرجة تنفجر فوق العدو المُقصى"
+                }
+            },
+            "win": {
+                "firework": {
+                    "description": "ألعاب نارية ملونة تنفجر حول الفائز"
+                },
+                "enchant": {
+                    "description": "جزيئات سحرية تحيط بالفائز"
+                }
+            },
+            "wool_color": {
+                "white": {
+                    "description": "صوف أبيض افتراضي"
+                },
+                "red": {
+                    "description": "صوف أحمر نابض"
+                },
+                "blue": {
+                    "description": "صوف أزرق قوي"
+                },
+                "green": {
+                    "description": "صوف أخضر زاهٍ"
+                },
+                "yellow": {
+                    "description": "صوف أصفر مشع"
+                },
+                "purple": {
+                    "description": "صوف بنفسجي غامض"
+                },
+                "pink": {
+                    "description": "صوف وردي رقيق"
+                },
+                "cyan": {
+                    "description": "صوف سماوي منعش"
+                },
+                "orange": {
+                    "description": "صوف برتقالي مفعم بالطاقة"
+                },
+                "black": {
+                    "description": "صوف أسود داكن"
+                }
+            }
+        }
+    },
+    "cosmetics": {
+        "usage": "§5تجميلات §8§l» §r§cاستخدم §8/§c{label} §8<§cbuy§8|§con§8|§coff§8|§clist§8|§cinfo§8>",
+        "buy": {
+            "_prefix": "§5تجميلات §8§l» §r",
+            "usage": "§cاستخدم §8/§c{label} buy §8<§cتجميلة§8> [اللعبة المصغرة] [النوع]",
+            "already_owned": "§cأنت تملك هذه التجميلة بالفعل!",
+            "perm_only": "§cهذه التجميلة حصرية بصلاحية!",
+            "success": "§7تم شراء التجميلة §5{cosmetic}§7 مقابل §c{cost} أكونا"
+        },
+        "set": {
+            "_prefix": "§5تجميلات §8§l» §r",
+            "usage": "§cاستخدم §8/§c{label} on §8<§cتجميلة§8> [§cاللعبة§8] [§cالنوع§8]",
+            "not_owned": "§cأنت لا تملك هذه التجميلة!",
+            "success": "§7تم تفعيل التجميلة §5{cosmetic}§7 بنجاح",
+            "failed": "§cفشل تفعيل التجميلة!"
+        },
+        "unset": {
+            "_prefix": "§5تجميلات §8§l» §r",
+            "usage": "§cاستخدم §8/§c{label} off §8<§cاللعبة§8> §8<§cالنوع§8>",
+            "success": "§7تم تفعيل التجميلة الافتراضية في §5{minigame} §8[§5{type}§8]"
+        },
+        "list": {
+            "_prefix": "§5تجميلات §8§l» §r",
+            "title": "§7قائمة التجميلات§8:",
+            "owned": "§7مملوكة§8:§7 {cosmetics}",
+            "unowned": "§7غير مملوكة§8:§7 {cosmetics}"
+        },
+        "info": {
+            "_prefix": "§5تجميلات §8§l» §r",
+            "usage": "§cاستخدم §8/§c{label} info §8<§cتجميلة§8> [§cاللعبة§8] [§cالنوع§8]",
+            "title": "§7معلومات عن §5{cosmetic}§8:",
+            "minigame": "§7اللعبة§8: §5{minigame}",
+            "type": "§7النوع§8: §5{type}",
+            "description": "§7الوصف§8: §5{description}",
+            "cost": "§7السعر§8:§c {cost} أكونا",
+            "perm_only": "§7الإتاحة§8: §5حصرية بصلاحية",
+            "status": "§7الحالة§8: §5{status}",
+            "active": "§7نشطة§8: §5{active}"
+        },
+        "cosmetic": {
+            "_prefix": "§5تجميلات §8§l» §r",
+            "not_found": "§cلم يتم العثور على التجميلة...",
+            "ambiguous": "§cهذا الاسم موجود في أكثر من نوع، يرجى تحديد اللعبة والنوع!"
+        },
+        "minigame": {
+            "invalid": "§5تجميلات §8§l» §r§cلعبة غير صالحة!"
+        },
+        "type": {
+            "invalid": "§5تجميلات §8§l» §r§cنوع تجميلة غير صالح!"
+        }
+    },
+    "cosmeticswindow": {
+        "title": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §5تجميلات §8===-=-=-=-",
+        "buy": {
+            "title": "§7شراء§8: §7{cosmetic} §8- §c{cost} أكونا",
+            "success": "§5تجميلات §8§l» §r§7اشتريت التجميلة §5{cosmetic} §7بنجاح!",
+            "confirm": "§aتأكيد",
+            "cancel": "§cإلغاء"
+        },
+        "invalid_minigame": "§5تجميلات §8§l» §r§cلعبة غير صالحة...",
+        "invalid_type": "§5تجميلات §8§l» §r§cنوع غير صالح...",
+        "perm_only_label": "§5حصرية بصلاحية",
+        "perm_required": "§5تجميلات §8§l» §r§cليس لديك صلاحية لهذه التجميلة!",
+        "set": {
+            "success": "§5تجميلات §8§l» §r§7تم تفعيل التجميلة §5{cosmetic} §7بنجاح!"
+        },
+        "disable": {
+            "success": "§5تجميلات §8§l» §r§7تم تعطيل التجميلة §5{cosmetic} §7بنجاح!",
+            "type_success": "§5تجميلات §8§l» §r§7تم تفعيل التجميلة الافتراضية في §5{minigame} §8[§5{type}§8]",
+            "minigame_success": "§5تجميلات §8§l» §r§7تم تفعيل التجميلات الافتراضية في §5{minigame}",
+            "all_success": "§5تجميلات §8§l» §r§7تم تعطيل جميع التجميلات",
+            "button_type": "§cتعطيل تجميلة النوع",
+            "button_minigame": "§cتعطيل تجميلات اللعبة",
+            "button_all": "§cتعطيل جميع التجميلات"
+        },
+        "nav": {
+            "back": "§c« العودة للقائمة",
+            "prev_page": "§a« الصفحة السابقة",
+            "current_page": "§8» §fالصفحة الحالية",
+            "next_page": "§aالصفحة التالية »"
+        },
+        "cost_label": "§c{cost} أكونا"
+    },
+    "pay": {
+        "_prefix": "§aالاقتصاد §8§l» §r",
+        "insufficient_balance": "§cليس لديك أكونا كافية لإجراء هذه العملية...",
+        "invalid_amount": "§cيجب أن يكون المبلغ رقمًا ولا يمكن أن يكون أقل من أو يساوي 0...",
+        "receive": "§7استلمت §c{amount} أكونا§7 من §a{player}§7!",
+        "success": "§7أرسلت §c{amount} أكونا§7 إلى حساب §a{target}§7 بنجاح!",
+        "usage": "§cاستخدم §8/§c{label} §8<§cلاعب§8> <§cمبلغ§8>"
+    },
+    "economy": {
+        "_prefix": "§aالاقتصاد §8§l» §r",
+        "tax_applied": "§cتم تطبيق ضريبة قدرها {tax} أكونا... إجمالي المخصوم: {total} أكونا"
+    },
+    "skill": {
+        "explosivebow": {
+            "description": "يحدث انفجارًا صغيرًا حيث يسقط سهمك"
+        },
+        "fury": {
+            "description": "عند قتل لاعب، تحصل على تأثيري السرعة والقوة لمدة 8 ثوانٍ"
+        },
+        "firearrow": {
+            "description": "تضرم السهام النار في الأعداء عند إصابتهم"
+        },
+        "slow": {
+            "description": "عند إصابة لاعب ببيضة، تطبق عليه تأثير البطء لمدة 4 ثوانٍ"
+        },
+        "tntegg": {
+            "description": "عند رمي بيضة، تستدعي تي إن تي!"
+        },
+        "switcher": {
+            "description": "عند إصابة شخص بكرة ثلج، تتبادل الأماكن معه"
+        },
+        "enderpearl": {
+            "description": "الآن يمكنك استخدام كرات الثلج كلآلئ إندر!"
+        },
+        "cheststealer": {
+            "description": "عند النقر على صندوق، تحصل على محتوياته تلقائيًا"
+        },
+        "featherboost": {
+            "description": "يزيد من قوة دفعتك بالريشة"
+        },
+        "bird": {
+            "description": "تحصل على ريشتين إضافيتين"
+        },
+        "thief": {
+            "description": "تحصل على 20% من ريش اللاعب عند قتله..."
+        },
+        "builder": {
+            "description": "يمنحك ضعف الكمية من المكعبات"
+        },
+        "sprinter": {
+            "description": "تحصل على سرعة II لمدة 11 ثانية",
+            "description_sw": "تحصل على سرعة II في بداية المباراة"
+        },
+        "killer": {
+            "description": "تحصل على تأثيري القوة وقفزة القوة عند قتل لاعب"
+        },
+        "tanker": {
+            "description": "تحصل على صدرية حديدية..."
+        },
+        "life": {
+            "description": "يمنحك 4 قلوب إضافية"
+        },
+        "hook": {
+            "description": "تجذب الأسهم العدو نحوك عند إصابته"
+        },
+        "miner": {
+            "description": "لديك Haste I لا نهائي"
+        },
+        "archer": {
+            "description": "اربح سهمًا عند إصابة الأعداء"
+        },
+        "slingshotboost": {
+            "description": "يزيد من قوة دفعة المقلاع"
+        },
+        "fireballboost": {
+            "description": "يزيد من قوة دفعة كرة النار على اللاعبين الآخرين"
+        },
+        "towerspeed": {
+            "description": "يزيد من سرعة بناء البرج المدمج"
+        },
+        "trapbuff": {
+            "description": "عند تفعيل فخك، تحصل على القوة والسرعة II لمدة 6 ثوانٍ"
+        },
+        "trapresistance": {
+            "description": "يقلل مدة تأثيرات الفخ السلبية بمقدار ثانيتين"
+        },
+        "bedbreaker": {
+            "description": "عند كسر سرير عدو، تحصل على سرعة II وقفزة عالية II لمدة 10 ثوانٍ"
+        }
+    },
+    "skills": {
+        "_prefix": "§aالمهارات §8§l» §r",
+        "usage": "§cاستخدم §8/§c{label} §8<§cbuy§8|§con§8|§coff§8|§clist§8|§cinfo§8>",
+        "buy": {
+            "usage": "§cاستخدم §8/§c{label} buy §8<§cمهارة§8> [اللعبة]",
+            "already_owned": "§cأنت تملك هذه المهارة بالفعل!",
+            "success": "§7تم شراء المهارة §a{skill}§7 مقابل §c{cost} أكونا"
+        },
+        "activate": {
+            "usage": "§cاستخدم §8/§c{label} on §8<§cمهارة§8> [اللعبة]",
+            "not_owned": "§cأنت لا تملك هذه المهارة!",
+            "already_active": "§cهذه المهارة نشطة بالفعل...",
+            "limit_reached": "§cوصلت إلى الحد الأقصى وهو {limit} مهارات نشطة...",
+            "success": "§7تم تفعيل المهارة §a{skill}§7 بنجاح",
+            "failed": "§cفشل تفعيل المهارة!"
+        },
+        "deactivate": {
+            "usage": "§cاستخدم §8/§c{label} off §8<§cاللعبة§8> <§cمهارة§8>",
+            "not_active": "§cهذه المهارة غير نشطة!",
+            "success": "§7تم تعطيل المهارة §a{skill}§7 بنجاح",
+            "all_success": "§7تم تعطيل جميع المهارات بنجاح",
+            "minigame_all_success": "§7تم تعطيل جميع مهارات §a{minigame} §7بنجاح!"
+        },
+        "list": {
+            "title": "§7قائمة المهارات§8:",
+            "owned": "§7مملوكة§8:§7 {skills}",
+            "unowned": "§7غير مملوكة§8:§7 {skills}"
+        },
+        "info": {
+            "usage": "§cاستخدم §8/§c{label} info §8<§cskill§8> [اللعبة]",
+            "title": "§7معلومات المهارة §a{skill}§8:",
+            "description": "§7الوصف§8: §a{description}",
+            "cost": "§7السعر§8:§c {cost} أكونا",
+            "status": "§7الحالة§8: §a{status}",
+            "active": "§7نشطة§8: §a{active}"
+        },
+        "skill": {
+            "not_found": "§cلم يتم العثور على المهارة..."
+        },
+        "cooldown": {
+            "tntegg": "§cمهارة Tntegg في فترة التهدئة...",
+            "enderpearl": "§cمهارة Enderpearl في فترة التهدئة...",
+            "cheststealer": "§cمهارة Cheststealer في فترة التهدئة...",
+            "hook": "§cمهارة Hook في فترة التهدئة...",
+            "archer": "§cمهارة Archer في فترة التهدئة..."
+        }
+    },
+    "skillswindow": {
+        "title": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §aمهارات §8===-=-=-=-",
+        "buy": {
+            "title": "§7شراء§8: §7{skill} §8- §c{cost} أكونا",
+            "success": "§aالمهارات §8§l» §r§7اشتريت المهارة §a{skill} §7بنجاح! عطل مهارة لتتمكن من تفعيلها...",
+            "success_active": "§aالمهارات §8§l» §r§7اشتريت وفعّلت المهارة §a{skill} §7بنجاح!",
+            "confirm": "§aتأكيد",
+            "cancel": "§cإلغاء"
+        },
+        "invalid_minigame": "§aالمهارات §8§l» §r§cلعبة غير صالحة...",
+        "activate": {
+            "_prefix": "§aالمهارات §8§l» §r",
+            "success": "§7تم تفعيل المهارة §a{skill} §7بنجاح!",
+            "limit_reached": "§cوصلت إلى حد {limit} مهارات نشطة لهذه اللعبة..."
+        },
+        "disable": {
+            "button_all": "§cتعطيل جميع المهارات",
+            "button_minigame": "§cتعطيل جميع مهارات اللعبة",
+            "success": "§aالمهارات §8§l» §r§7تم تعطيل المهارة §a{skill} §7بنجاح!",
+            "all_minigame_success": "§aالمهارات §8§l» §r§7تم تعطيل جميع مهارات §a{minigame} §7بنجاح!",
+            "all_success": "§aالمهارات §8§l» §r§7تم تعطيل جميع المهارات بنجاح"
+        },
+        "nav": {
+            "prev_page": "§a« الصفحة السابقة",
+            "current_page": "§8» §fالصفحة الحالية",
+            "next_page": "§aالصفحة التالية »"
+        }
+    },
+    "chest": {
+        "_prefix": "§aالمهارات §8§l» §r",
+        "empty": "§cالصندوق فارغ..."
+    },
+    "inventory": {
+        "_prefix": "§aالمهارات §8§l» §r",
+        "full": "§cالحقيبة ممتلئة..."
+    },
+    "kit": {
+        "rush": {
+            "description": "طقم الاندفاع"
+        },
+        "trap": {
+            "description": "طقم الأفخاخ..."
+        },
+        "xyp": {
+            "description": "طقم صممه srxyp"
+        },
+        "w3lton": {
+            "description": "طقم صممه W3lton (SrMathBR)"
+        },
+        "eco": {
+            "description": "طقم صممه zLitePvPz"
+        },
+        "mágico": {
+            "description": "طقم الجرعات"
+        },
+        "godness": {
+            "description": "طقم خاص للـVIP"
+        },
+        "yt": {
+            "description": "طقم خاص لليوتيوبرز"
+        },
+        "archer": {
+            "description": "طقم الرامي مع ريش وبيض"
+        },
+        "ninja": {
+            "description": "طقم النينجا بخفة الحركة"
+        },
+        "builder": {
+            "description": "طقم للبناء السريع"
+        },
+        "lumberjack": {
+            "description": "طقم الحطاب بالخشب"
+        },
+        "tank": {
+            "description": "طقم الدبابة بدفاع عالٍ"
+        },
+        "assassin": {
+            "description": "طقم القاتل المتخفي"
+        },
+        "scout": {
+            "description": "طقم الاستطلاع المتقدم"
+        },
+        "pyro": {
+            "description": "طقم محب الحرائق بالنار"
+        },
+        "miner": {
+            "description": "طقم التعدين"
+        },
+        "sniper": {
+            "description": "طقم القناص النخبة"
+        },
+        "juggernaut": {
+            "description": "طقم القوة الجبارة"
+        },
+        "thrower": {
+            "description": "طقم المقذوفات"
+        },
+        "medic": {
+            "description": "طقم المسعف بالشفاء"
+        }
+    },
+    "kits": {
+        "usage": "§9الأطقم §8§l» §r§cاستخدم §8/§c{label} §8<§cbuy§8|§con§8|§coff§8|§clist§8|§cinfo§8>",
+        "buy": {
+            "_prefix": "§9الأطقم §8§l» §r",
+            "usage": "§cاستخدم §8/§c{label} buy §8<§cطقم§8>",
+            "already_owned": "§cأنت تملك هذا الطقم بالفعل!",
+            "success": "§7تم شراء الطقم §9{kit}§7 مقابل §c{cost}",
+            "no_permission": "§cليس لديك صلاحية لشراء هذا الطقم!"
+        },
+        "set": {
+            "_prefix": "§9الأطقم §8§l» §r",
+            "usage": "§cاستخدم §8/§c{label} on §8<§cطقم§8>",
+            "not_owned": "§cأنت لا تملك هذا الطقم!",
+            "success": "§7تم تفعيل الطقم §9{kit}§7 بنجاح",
+            "failed": "§cفشل تفعيل الطقم!"
+        },
+        "unset": {
+            "_prefix": "§9الأطقم §8§l» §r",
+            "usage": "§cاستخدم §8/§c{label} off",
+            "success": "§7تم تعطيل الطقم"
+        },
+        "list": {
+            "_prefix": "§9الأطقم §8§l» §r",
+            "title": "§7قائمة الأطقم§8:",
+            "owned": "§7مملوكة§8:§7 {kits}",
+            "unowned": "§7غير مملوكة§8:§7 {kits}"
+        },
+        "info": {
+            "_prefix": "§9الأطقم §8§l» §r",
+            "usage": "§cاستخدم §8/§c{label} info §8<§cطقم§8>",
+            "title": "§7معلومات الطقم §9{kit}§8:",
+            "description": "§7الوصف§8: §9{description}",
+            "cost": "§7السعر§8:§c {cost}",
+            "status": "§7الحالة§8: §9{status}",
+            "active": "§7نشط§8: §9{active}"
+        },
+        "kit": {
+            "not_found": "§9الأطقم §8§l» §r§cالطقم غير موجود..."
+        }
+    },
+    "kitswindow": {
+        "title": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §9الأطقم §8===-=-=-=-",
+        "buy": {
+            "title": "§7شراء§8: §7{kit} §8- §c{cost}",
+            "success": "§9الأطقم §8§l» §r§7اشتريت الطقم §9{kit} §7بنجاح!",
+            "confirm": "§aتأكيد",
+            "cancel": "§cإلغاء"
+        },
+        "disable": {
+            "button": "§cتعطيل الطقم",
+            "success": "§9الأطقم §8§l» §r§7تم تعطيل الطقم بنجاح!",
+            "success_kit": "§9الأطقم §8§l» §r§7تم تعطيل الطقم §9{kit}"
+        },
+        "set": {
+            "success": "§9الأطقم §8§l» §r§7تم تفعيل الطقم §9{kit} §7بنجاح!"
+        },
+        "nav": {
+            "prev_page": "§a« الصفحة السابقة",
+            "current_page": "§8» §fالصفحة الحالية",
+            "next_page": "§aالصفحة التالية »"
+        }
+    },
+    "duels": {
+        "command": {
+            "_prefix": "§2المبارزات §8§l» §r",
+            "in_duel": "§cلا يمكنك استخدام هذا الأمر أثناء مبارزة!",
+            "player_only": "§cيمكن للاعبين فقط استخدام هذا الأمر..."
+        },
+        "status": {
+            "_prefix": "§2المبارزات §8§l» §r",
+            "starting": "§7بدأت المبارزة!",
+            "countdown": "§7يبدأ خلال §2{seconds} ثوانٍ",
+            "ending_countdown": "§7العودة إلى اللوبي خلال §2{seconds} ثوانٍ"
+        },
+        "item": {
+            "play_again": "§8-> §aالعب مجددًا",
+            "quit": "§8-> §cخروج"
+        },
+        "queue": {
+            "_prefix": "§2المبارزات §8§l» §r",
+            "not_found": "§cالنمط {kit} غير موجود!",
+            "joined": "§7انضممت إلى الطابور لنمط §2{mode} §r§7بنجاح!",
+            "left": "§7غادرت طابور نمط §c{mode}§7!",
+            "timeout": "§cتمت إزالتك تلقائيًا من الطابور لعدم توفر لاعبين آخرين..."
+        }
+    },
+    "addbalance": {
+        "_prefix": "§aالاقتصاد §8§l» §r",
+        "invalid_number": "§cيجب أن يكون المبلغ رقمًا ولا يمكن أن يكون أقل من أو يساوي 0...",
+        "receive": "§7استلمت §c{amount} أكونا§7!",
+        "success": "§7تمت إضافة §c{amount} أكونا §7إلى حساب §a{target} §7بنجاح!",
+        "usage": "§cاستخدم §8/§c{label} §8<§cلاعب§8> <§cمبلغ§8>"
+    },
+    "auth": {
+        "error": {
+            "_prefix": "§eAuth §8§l» §r",
+            "account": {
+                "_prefix": "",
+                "limit": "§eAuth §8§l» §r§cلقد وصلت إلى الحد الأقصى للحسابات المسجلة..."
+            },
+            "already": {
+                "haspassword": "§cلديك كلمة مرور بالفعل. لتغييرها استخدم §8/§cchangepassword...",
+                "loggedin": "§cأنت مسجل الدخول بالفعل...",
+                "registered": "§cأنت مسجل بالفعل..."
+            },
+            "clientid": {
+                "_prefix": "",
+                "mismatch": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §eAuth §8===-=-=-=-{n}§cهذا الحساب مسجل بالفعل على جهاز آخر..."
+            },
+            "incorrect": {
+                "_prefix": "",
+                "password": "§eAuth §8§l» §r§cكلمة المرور غير صحيحة..."
+            },
+            "invalidpassword": "§cيجب أن تحتوي كلمة المرور بين {minLength} و {maxLength} حرفًا وأن تستخدم فقط أحرفًا أو أرقامًا أو رموزًا شائعة (بدون لهجات أو إيموجي)",
+            "notregistered": "§cأنت غير مسجل...",
+            "password": {
+                "_prefix": "",
+                "match": "§eAuth §8§l» §r§cكلمتا المرور غير متطابقتين..."
+            },
+            "use": {
+                "_prefix": "",
+                "commands": "§eAuth §8§l» §r§cيجب توثيق حسابك لاستخدام الأوامر..."
+            },
+            "weakpassword": {
+                "login": "§cمن فضلك غير كلمة مرورك باستخدام §8/§cchp§c لأنها ضعيفة جدًا. سنمنع قريبًا دخول الحسابات بكلمات مرور ضعيفة...",
+                "register": "§cكلمة المرور ضعيفة جدًا، رجاءً اختر كلمة أخرى..."
+            }
+        },
+        "join": {
+            "_prefix": "",
+            "msg": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7مرحبًا §e{user}§7، أهلاً وسهلاً بك في §fi§cAkuna§9MC§7!"
+        },
+        "login": {
+            "_prefix": "",
+            "already": {
+                "_prefix": "",
+                "online": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §eAuth §8===-=-=-=-{n}§cهناك لاعب متصل بالفعل بهذا الاسم..."
+            },
+            "timeout": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §eAuth §8===-=-=-=-{n}§cانتهت مهلة تسجيل الدخول...",
+            "toomany": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §eAuth §8===-=-=-=-{n}§cمحاولات توثيق كثيرة جدًا..."
+        },
+        "need": {
+            "_prefix": "§eAuth §8§l» §r",
+            "login": "§7الرجاء تسجيل الدخول باستخدام §8/§7login §8<§7كلمة المرور§8>",
+            "register": "§7الرجاء التسجيل باستخدام §8/§7register §8<§7كلمة المرور§8>"
+        },
+        "success": {
+            "_prefix": "§eAuth §8§l» §r",
+            "auto": {
+                "_prefix": "",
+                "register": "§eAuth §8§l» §r§7أهلاً بك! تم إنشاء حسابك تلقائيًا. استخدم §8/§7register §8<§7كلمة المرور§8> §7لحمايته"
+            },
+            "autologin": "§7تم تسجيل دخولك تلقائيًا!",
+            "chp": "§7تم تغيير كلمة المرور بنجاح!",
+            "login": "§7تم تسجيل الدخول بنجاح!",
+            "register": "§7تم تسجيلك بنجاح! §cبتسجيلك فإنك توافق على §8/§crules قوانيننا..."
+        }
+    },
+    "automsg": {
+        "_prefix": "§cالنظام §8§l» §r",
+        "akuna_ai": "§7تعرف على §cAkuna§r§7، ذكاؤنا الاصطناعي! اكتب §8\"§cAkuna, سؤالك§8\" §7في الدردشة وهي ستجيبك!",
+        "block": "§7هل تعلم أنه يمكنك حظر اللاعبين؟ استخدم §8/§7block",
+        "daily": "§7هل تعلم أنه إذا سجلت دخولك يوميًا، تحصل على مكافأة يومية يمكن أن تعطي §cأكونا §7وحتى §9مضاعف خبرة§7؟",
+        "discord": "§7انضم إلى ديسكوردنا! §chttps://discord.iakunamc.com",
+        "exit_minigames": "§7للعودة إلى اللوبي من أي لعبة، استخدم §8/§clobby",
+        "friends": "§7ادعُ أصدقاءك للعب على خادمنا! يمكنك رؤية عنوان IP الخاص بنا بـ §8/§7ip",
+        "hackers": "§7رأيت هاكر؟ استخدم §8/§creport §8<§cالاسم§8> <§cالسبب§8> §7للإبلاغ عنه!",
+        "launch": "§7§ciAkunaMC §7موجودة منذ فبراير 2022 وتستمر في النمو بفضلك! شكرًا للعبك هنا!",
+        "marry": "§7يمكنك الزواج من لاعبين آخرين والحصول على 25% من خبرتهم! استخدم §8/§7marry",
+        "missions": "§7أكمل المهام اليومية لتربح مكافآت رائعة! استخدم §8/§cmissões §7لرؤية كل المهام المتاحة",
+        "nopromote": "§7لا تروج §cلخوادم في الدردشة أو التيل§7، فهذا سيعرضك لـ§cالحظر§7!",
+        "nosamepass": "§7لا تستخدم نفس كلمة المرور في خوادم أخرى! قد يخترق المخادعون حسابك... يمكنك استخدام §8/§cpin §7لحماية حسابك!",
+        "rules": "§7هل قرأت §8/§crules قوانيننا§7؟ عدم معرفتها لا يعفيك من §cالعقوبات§7!",
+        "staff": "§7هل تعلم أنه يمكنك الانضمام لطاقمنا؟ تفضل بزيارة §chttps://staff.iakunamc.com",
+        "yt": "§7سجل فيديو يروج لخادمنا على يوتيوب واربح رتبًا خاصة! لرؤية المتطلبات استخدم §8/§cyt"
+    },
+    "backpack": {
+        "_prefix": "§cالنظام §8§l» §r",
+        "buy": {
+            "already_exists": "§cلديك حقيبة ظهر بهذا الاسم بالفعل...",
+            "error": "§cخطأ في شراء الحقيبة...",
+            "invalid_length": "§cيجب أن يكون الاسم بين 3 و 20 حرفًا...",
+            "limit": "§cوصلت إلى الحد الأقصى للحقائب...",
+            "success": "§7تم شراء الحقيبة §c{name} §7بنجاح مقابل §c{cost} أكونا§7!",
+            "usage": "§cاستخدم §8/§c{label} buy §8<§cاسم§8>"
+        },
+        "delete": {
+            "confirm": "§7هل أنت متأكد من حذف الحقيبة §c{name}§7؟ إذا كنت متأكدًا، استخدم §8/§7{label} delete {name} confirm",
+            "error": "§cخطأ في حذف الحقيبة...",
+            "not_exists": "§cالحقيبة غير موجودة...",
+            "success": "§7تم حذف الحقيبة بنجاح!",
+            "usage": "§cاستخدم §8/§c{label} delete §8<§cاسم§8>"
+        },
+        "list": "§7حقائبك §8(§f{count}§8):§7 {backpacks}",
+        "not_in_survival": "§cأنت لست في طور البقاء...",
+        "open": {
+            "not_exists": "§cالحقيبة غير موجودة...",
+            "usage": "§cاستخدم §8/§c{label} open §8<§cاسم§8>"
+        },
+        "usage": "§cاستخدم §8/§c{label} §8<§cbuy§8|§copen§8|§cdelete§8|§clist§8>",
+        "list_none": "§cالنظام §8§l» §r§cليس لديك أي حقيبة..."
+    },
+    "balance": {
+        "_prefix": "§aالاقتصاد §8§l» §r",
+        "inactivity_tax_info": "§7كل يوم اثنين، إذا بقيت §c{days}ي §7دون تسجيل دخول، ستُفرض عليك ضريبة §c{percent}% §8(§c{amount} أكونا§8)§7. تزيد الضريبة كل أسبوع دون اتصال وكذلك حسب كمية الأكونا التي تملكها",
+        "other": "§a{target} §7لديه §c{amount} أكونا§7!",
+        "self": "§7لديك §c{amount} أكونا§7!"
+    },
+    "ban": {
+        "broadcast": "§cالنظام §8§l» §r§c{target} §7تم §cحظره نهائيًا §7بسبب §c{reason}",
+        "kick": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§cأنت محظور نهائيًا...{n}§cالاسم§8:§c {name}{n}§cالسبب§8:§c {reason}{n}§cالتاريخ§8:§c {timestamp}{n}{n}§7حظر غير عادل؟ تواصل مع دعمنا§8:{n}§chttps://discord.iakunamc.com §7عبر الديسكورد أو §csupport@iakunamc.com §7عبر البريد الإلكتروني"
+    },
+    "bet": {
+        "_prefix": "§aالاقتصاد §8§l» §r",
+        "cashback": "§7استرددت §c{amount} أكونا§7!",
+        "coin": {
+            "invalid": "§cاختر بين كتابة أو نقش",
+            "lose": "§7وقعت العملة على §a{result}§7، لقد خسرت!",
+            "win": "§7وقعت العملة على §a{result}§7! ربحت §c{amount} أكونا§7!"
+        },
+        "dice": {
+            "invalid": "§cاختر رقمًا بين §a1 §cو §a6",
+            "lose": "§7النرد وقع على §a{result}§7، لقد خسرت!",
+            "win": "§7النرد وقع على §a{result}§7! ربحت §c{amount} أكونا§7!"
+        },
+        "higher": {
+            "invalid": "§cاختر رقمًا بين 1 و {max}",
+            "lose": "§7الرقم §a{result} §7أقل أو يساوي، لقد خسرت!",
+            "win": "§7الرقم §a{result} §7أكبر! ربحت §c{amount} أكونا§7!"
+        },
+        "invalid_type": "§cنوع رهان غير صالح... استخدم §8/§cbet لرؤية الأنواع المتاحة",
+        "lower": {
+            "invalid": "§cاختر رقمًا بين §a1 §cو §a{max}",
+            "lose": "§7الرقم §a{result} §7أكبر أو يساوي، لقد خسرت!",
+            "win": "§7الرقم §a{result} §7أصغر! ربحت §c{amount} أكونا§7!"
+        },
+        "min": "§cالحد الأدنى للرهان هو {min} أكونا...",
+        "ppt": {
+            "draw": "§7تعادل في حجرة ورقة مقص! لم يُخصم أي مبلغ",
+            "invalid": "§cاختر بين §aحجرة§7، §aورقة §7أو §aمقص",
+            "lose": "§7خسرت في حجرة ورقة مقص!",
+            "win": "§7ربحت في حجرة ورقة مقص! §c{amount} أكونا§7!"
+        },
+        "pvp": {
+            "_prefix": "",
+            "accept": {
+                "_prefix": "§aالاقتصاد §8§l» §r",
+                "target_insufficient": "§c{target} لا يملك أكونا كافية لقبول هذا الرهان...",
+                "none": "§cليس لديك أي تحدٍ رهان معلق..."
+            },
+            "coin": {
+                "result": "§aالاقتصاد §8§l» §r§7وقعت العملة على§8: §a{result}"
+            },
+            "dice": {
+                "result": "§aالاقتصاد §8§l» §r§7نتيجة النرد§8: §a{challenger_roll} §7ضد §a{target_roll}"
+            },
+            "invalid_type": "§aالاقتصاد §8§l» §r§cنوع رهان غير صالح لـ PvP! الأنواع المتاحة§8:§7 نرد§8,§7 حجرة ورقة مقص§8,§7 عملة",
+            "lose": "§aالاقتصاد §8§l» §r§7خسرت التحدي ضد §a{opponent}§7!",
+            "ppt": {
+                "result": "§aالاقتصاد §8§l» §r§7النتيجة§8: §a{challenger_choice} §7ضد §a{target_choice}"
+            },
+            "self_challenge": "§aالاقتصاد §8§l» §r§cلا يمكنك تحدي نفسك!",
+            "usage": "§aالاقتصاد §8§l» §r§cاستخدم §8/§cbet §8<§cالنوع§8> <§cاللاعب§8> <§cالمبلغ§8> <§cالتوقع§8>",
+            "win": "§aالاقتصاد §8§l» §r§7تهانينا! ربحت §c{amount} أكونا §7ضد §a{opponent}§7!",
+            "deny": {
+                "_prefix": "§aالاقتصاد §8§l» §r",
+                "none": "§cليس لديك أي تحدٍ رهان معلق...",
+                "success": "§7تم رفض تحدي الرهان بنجاح...",
+                "notify": "§7{target} رفض تحدي الرهان الخاص بك..."
+            },
+            "draw": "§aالاقتصاد §8§l» §r§7تعادل! لم يُخصم أي مبلغ",
+            "expired": "§aالاقتصاد §8§l» §r§cانتهت صلاحية تحدي الرهان...",
+            "insufficient_challenger": "§aالاقتصاد §8§l» §r§cالمتحدي لا يملك أكونا كافية...",
+            "pending": "§aالاقتصاد §8§l» §r§cهذا اللاعب لديه تحدي رهان معلق بالفعل...",
+            "request": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §aتحدي الرهان §8===-=-=-{n}§aالاقتصاد §8§l» §r§a{challenger} §7تحداك في رهان بقيمة §c{amount} أكونا §7في نمط §e{type}§7!{n}§aالاقتصاد §8§l» §r§7استخدم §a/bet accept للقبول §7أو §c/bet deny للرفض",
+            "sent": "§aالاقتصاد §8§l» §r§7تم إرسال تحدي الرهان إلى §a{target}§7! النمط§8: §e{type}§8، §7المبلغ§8: §c{amount} أكونا",
+            "insufficient_target": "§aالاقتصاد §8§l» §r§c{target} لا يملك أكونا كافية للمشاركة في هذا الرهان..."
+        },
+        "roulette": {
+            "invalid": "§cاختر رقمًا بين 1 و {max}",
+            "lose": "§7الروليت توقف عند §a{result}§7، لقد خسرت!",
+            "win": "§7الروليت توقف عند §a{result}§7! ربحت §c{amount} أكونا§7!"
+        },
+        "types": "§7الأنواع المتاحة§8:§7 نرد§8,§7 حجرة ورقة مقص§8,§7 روليت§8,§7 عملة§8,§7 أعلى§8,§7 أقل",
+        "usage": "§cاستخدم §8/§cbet §8<§cالنوع§8> [§cاللاعب§8] <§cالمبلغ§8> <§cالتوقع§8>"
+    },
+    "bio": {
+        "_prefix": "§3الملف الشخصي §8§l» §r",
+        "set": "§7تم تعيين السيرة الذاتية إلى '§3{bio}§7' بنجاح!",
+        "usage": "§cاستخدم §8/§c{label} §8<§cسيرة ذاتية§8>"
+    },
+    "block": {
+        "_prefix": "§cالنظام §8§l» §r",
+        "add": {
+            "already": "§c{player} محظور بالفعل!",
+            "limit": "§cوصلت إلى حد الحظر...",
+            "self": "§cلا يمكنك حظر نفسك!",
+            "staff": "§cلا يمكنك حظر عضو من الطاقم!",
+            "success": "§c{player}§7 تم حظره بنجاح",
+            "usage": "§cاستخدم §8/§c{label} add §8<§cلاعب§8>"
+        },
+        "list": "§7اللاعبون المحظورون §8(§f{count}§8):§7 {blocked}",
+        "remove": {
+            "all": "§7تم رفع الحظر عن جميع اللاعبين بنجاح!",
+            "notfound": "§c{player} ليس محظورًا...",
+            "success": "§c{player} §7تم رفع الحظر عنه بنجاح",
+            "usage": "§cاستخدم §8/§c{label} remove §8<§cلاعب§8|§c*§8>"
+        },
+        "usage": "§cاستخدم §8/§c{label} §8<§cadd§8|§cremove§8|§clist§8>",
+        "list_none": "§cلم تحظر أي لاعب..."
+    },
+    "changepassword": {
+        "_prefix": "§eAuth §8§l» §r",
+        "usage": "§cاستخدم §8/§c{label} §8<§cكلمة المرور الحالية§8> <§cكلمة المرور الجديدة§8>"
+    },
+    "chat": {
+        "_prefix": "§cالنظام §8§l» §r",
+        "disabled": "§cالدردشة معطلة...",
+        "nochars": "§cغير مسموح باستخدام هذه الأحرف...",
+        "nopromote": "§cلا يسمح بالترويج و/أو ذكر خوادم أخرى في الدردشة...{n}§cالنظام §8§l» §r§cتذكر قراءة §8/§crules قوانيننا لتجنب العقوبات المستقبلية",
+        "nospam": "§cتمهل! لا ترسل سبام...",
+        "toolong": "§cرسالتك طويلة جدًا... (الحد الأقصى {max} حرف)",
+        "noemoji": "§cغير مسموح باستخدام الإيموجي..."
+    },
+    "clan": {
+        "_prefix": "§eالكلانات §8§l» §r",
+        "accept": {
+            "error": "§cخطأ في الانضمام للكلان...",
+            "no_invite": "§cليس لديك دعوات معلقة...",
+            "success": "§7انضممت إلى §e{clan} §7بنجاح"
+        },
+        "already_in_clan": "§cأنت بالفعل في كلان...",
+        "changetag": {
+            "error": "§cخطأ في تغيير الوسم...",
+            "success": "§7تم تغيير الوسم إلى §e{tag} §7بنجاح!",
+            "usage": "§cاستخدم §8/§c{label} tag §8<§cوسم§8>"
+        },
+        "chat": {
+            "toggle": {
+                "off": "§7تم تعطيل دردشة الكلان!",
+                "on": "§7تم تفعيل دردشة الكلان!"
+            }
+        },
+        "create": {
+            "error": "§cخطأ في إنشاء الكلان...",
+            "exists": "§cيوجد كلان بهذا الاسم أو الوسم بالفعل!",
+            "length": "§cيجب أن يكون الاسم من 3-24 حرفًا والوسم من 2-4 أحرف!",
+            "success": "§7تم إنشاء الكلان بنجاح!",
+            "usage": "§cاستخدم §8/§c{label} create §8<§cاسم§8> §8<§cوسم§8>"
+        },
+        "delete": {
+            "error": "§cخطأ في حذف الكلان!",
+            "success": "§7تم حذف الكلان بنجاح!"
+        },
+        "demote": {
+            "broadcast": "§e{player} §7تم تخفيض رتبته إلى عضو!",
+            "error": "§cخطأ في تخفيض رتبة اللاعب...",
+            "success": "§e{player} §7تم تخفيض رتبته بنجاح!",
+            "usage": "§cاستخدم §8/§c{label} demote §8<§cلاعب§8>"
+        },
+        "deny": {
+            "no_invite": "§cليس لديك دعوات معلقة...",
+            "success": "§7تم رفض الدعوة بنجاح"
+        },
+        "desc": {
+            "error": "§cخطأ في تغيير الوصف...",
+            "success": "§7تم تغيير الوصف بنجاح!",
+            "usage": "§cاستخدم §8/§c{label} desc §8<§cوصف§8>"
+        },
+        "disband": {
+            "_prefix": "",
+            "broadcast": "§eالكلانات §8§l» §r§cتم حذف الكلان..."
+        },
+        "info": {
+            "_prefix": "",
+            "description": "§eالكلانات §8§l» §r§7الوصف§8: §e{description}",
+            "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §7معلومات الكلان §e{name} §8===-=-=-=-",
+            "level": "§eالكلانات §8§l» §r§7المستوى§8: §e{level}",
+            "members": "§eالكلانات §8§l» §r§7الأعضاء §8(§f{count}§8/§f{max}§8): §7{members}",
+            "owner": "§eالكلانات §8§l» §r§7المالك§8: §e{owner}",
+            "tag": "§eالكلانات §8§l» §r§7الوسم§8: §e{tag}",
+            "type": "§eالكلانات §8§l» §r§7النوع§8: §e{type}",
+            "usage": "§eالكلانات §8§l» §r§cاستخدم §8/§c{label} info §8<§cكلان§8>",
+            "xp": "§eالكلانات §8§l» §r§7الخبرة§8: §e{xp}",
+            "xp_needed": "§eالكلانات §8§l» §r§7الخبرة المطلوبة لرفع المستوى§8: §e{xp_needed}"
+        },
+        "invite": {
+            "_prefix": "",
+            "already_in_clan": "§eالكلانات §8§l» §r§cاللاعب في كلان بالفعل...",
+            "expired": "§eالكلانات §8§l» §r§cانتهت صلاحية دعوة {clan}...",
+            "not_private": "§eالكلانات §8§l» §r§cفقط الكلانات الخاصة يمكنها الدعوة...",
+            "received": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §eالكلانات§8===-=-=-{n}§eالكلانات §8§l» §r§e{sender} §7دعاك إلى كلان §e{clan}§7...{n}§eالكلانات §8§l» §r§7استخدم §a/clan accept للقبول §7أو §c/clan deny للرفض",
+            "sent": "§eالكلانات §8§l» §r§7تم إرسال الدعوة إلى §e{player}§7!",
+            "usage": "§eالكلانات §8§l» §r§cاستخدم §8/§c{label} invite §8<§cلاعب§8>"
+        },
+        "join": {
+            "_prefix": "",
+            "broadcast": "§eالكلانات §8§l» §r§e{player} §7انضم إلى الكلان!"
+        },
+        "kick": {
+            "broadcast": "§e{player} §7تم طرده من الكلان!",
+            "cant_kick_admin": "§cلا يمكن للإداريين طرد إداريين آخرين...",
+            "cant_kick_owner": "§cلا يمكنك طرد مالك الكلان...",
+            "error": "§cخطأ في طرد اللاعب...",
+            "kicked": "§cتم طردك من الكلان...",
+            "not_in_clan": "§cاللاعب ليس في الكلان...",
+            "success": "§7تم طرد اللاعب بنجاح!",
+            "usage": "§cاستخدم §8/§c{label} kick §8<§cلاعب§8>"
+        },
+        "leave": {
+            "broadcast": "§e{player} §7غادر الكلان...",
+            "error": "§cخطأ في مغادرة الكلان...",
+            "owner": "§cلا يمكن للمالك مغادرة الكلان...",
+            "success": "§7غادرت الكلان بنجاح!"
+        },
+        "level_up": "§7رفع الكلان مستواه إلى §e{newLevel}§7!",
+        "not_found": "§cهذا الكلان غير موجود...",
+        "not_in_clan": "§cأنت لست في كلان...",
+        "not_owner": "§cفقط المالك يمكنه فعل ذلك...",
+        "not_owner_or_admin": "§cفقط المالك أو الإداريين يمكنهم فعل ذلك...",
+        "promote": {
+            "broadcast": "§e{player} §7تمت ترقيته إلى إداري!",
+            "error": "§cخطأ في ترقية اللاعب...",
+            "success": "§e{player} §7تمت ترقيته بنجاح!",
+            "usage": "§cاستخدم §8/§c{label} promote §8<§cلاعب§8>"
+        },
+        "request": {
+            "_prefix": "",
+            "closed": "§eالكلانات §8§l» §r§cهذا الكلان مغلق...",
+            "error": "§eالكلانات §8§l» §r§cخطأ في معالجة الطلب...",
+            "joined": "§eالكلانات §8§l» §r§7انضممت إلى كلان §e{clan}§7!",
+            "private": "§eالكلانات §8§l» §r§cهذا الكلان خاص...",
+            "received": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §eالكلانات§8===-=-=-{n}§eالكلانات §8§l» §r§e{sender} §7يريد الانضمام إلى الكلان...{n}§eالكلانات §8§l» §r§7استخدم §a/clan requests accept {sender} للقبول §7أو §c/clan requests deny {sender} للرفض",
+            "sent": "§eالكلانات §8§l» §r§7تم إرسال الطلب إلى §e{clan}§7!",
+            "usage": "§eالكلانات §8§l» §r§cاستخدم §8/§c{label} request §8<§cكلان§8>"
+        },
+        "requests": {
+            "accept": {
+                "all": "§7تم قبول جميع الطلبات!",
+                "error": "§cخطأ في قبول الطلب!",
+                "success": "§7تم قبول طلب §e{player}§7!",
+                "usage": "§cاستخدم §8/§c{label} requests accept §8<§cلاعب§8>"
+            },
+            "deny": {
+                "all": "§7تم رفض جميع الطلبات...",
+                "error": "§cخطأ في رفض الطلب!",
+                "success": "§7تم رفض طلب §e{player}§7!",
+                "usage": "§cاستخدم §8/§c{label} requests deny §8<§cلاعب§8>"
+            },
+            "none": "§cلا توجد طلبات معلقة...",
+            "usage": "§cاستخدم §8/§c{label} requests §8<§caccept§8|§cdeny§8> §8<§cلاعب§8|§c*§8>"
+        },
+        "tagcolor": {
+            "error": "§cخطأ في تغيير لون الوسم!",
+            "invalid": "§cلون غير صالح...",
+            "not_unlocked": "§cلم تفتح هذا اللون بعد...",
+            "success": "§7تم تغيير لون الوسم إلى {color}§7 بنجاح!",
+            "usage": "§cاستخدم §8/§c{label} tagcolor §8<§cلون§8>{n}§eالكلانات §8§l» §r§7الألوان المتاحة§8: {colors}"
+        },
+        "type": {
+            "error": "§cخطأ في تغيير النوع...",
+            "invalid": "§cنوع غير صالح... الأنواع المتاحة§8:§7 public§8,§7 invite§8,§7 private§8,§7 closed",
+            "success": "§7تم تغيير نوع الكلان إلى §e{type}§7 بنجاح",
+            "usage": "§cاستخدم §8/§c{label} type §8<§cنوع§8>"
+        },
+        "usage": "§cاستخدم §8/§c{label} §8<§ccreate§8|§cinvite§8|§ckick§8|§cdesc§8|§cleave§8|§cinfo§8|§ctype§8|§crequest§8|§cpromote§8|§cdemote§8|§ctag§8|§crequests§8|§cchat§8|§cdelete§8|§ctagcolor§8>",
+        "requests_list": "§7طلبات الانضمام §8(§f{count}§8):§7 {requests}"
+    },
+    "clear": {
+        "_prefix": "§cالنظام §8§l» §r",
+        "success": "§7تم مسح الحقيبة بنجاح!"
+    },
+    "clearchat": {
+        "_prefix": "§cالنظام §8§l» §r",
+        "success": "§7تم مسح الدردشة بواسطة §c{author}§7!"
+    },
+    "clearchatme": {
+        "_prefix": "§cالنظام §8§l» §r",
+        "success": "§7تم مسح دردشتك بنجاح!"
+    },
+    "colorarmor": {
+        "_prefix": "§dدرع§cم§aل§eو§bن §8§l» §r",
+        "invalid_world": "§cلا يمكن استخدام الدرع الملون إلا في اللوبي...",
+        "off": "§7تم تعطيل الدرع الملون بنجاح",
+        "on": "§7تم تفعيل الدرع الملون بنجاح"
+    },
+    "coords": {
+        "_prefix": "§cالنظام §8§l» §r",
+        "position": "§7إحداثياتك§8: §c{x}§8, §c{y}§8, §c{z}"
+    },
+    "crown": {
+        "_prefix": "§6ت§eا§6ج §8§l» §r",
+        "invalid_world": "§cلا يمكن تفعيل التاج هنا...",
+        "off": "§7تم تعطيل التاج بنجاح",
+        "on": "§7تم تفعيل التاج بنجاح"
+    },
+    "daily": {
+        "reward": {
+            "akunas": "§c{amount} أكونا",
+            "milestone": "§5المكافأة اليومية §8§l» §r§7تهانينا! وصلت إلى §5{weeks} §7أسابيع متتالية!",
+            "multiplier": "§9مضاعف {multiplier}x §8(§5{duration}§8)",
+            "received": "§5المكافأة اليومية §8§l» §r§7لقد تلقيت {rewards}",
+            "streak": "§5المكافأة اليومية §8§l» §r§7السلسلة الحالية§8: §5{streak} §7أيام",
+            "xp": "§9{amount} خبرة",
+            "streak_lost": "§5المكافأة اليومية §8§l» §r§cفقدت سلسلتك التي دامت {oldStreak} يومًا..."
+        }
+    },
+    "delhome": {
+        "_prefix": "§cالنظام §8§l» §r",
+        "not_exists": "§cليس لديك منزل بهذا الاسم...",
+        "not_in_survival": "§cأنت لست في طور البقاء...",
+        "success": "§7تم حذف المنزل §c{home} §7بنجاح!",
+        "usage": "§cاستخدم §8/§c{label} §8<§cاسم§8|§c*§8>",
+        "success_all": "§7تم حذف جميع المنازل بنجاح!"
+    },
+    "fake": {
+        "_prefix": "§1اسم مستعار §8§l» §r",
+        "disable": "§7تم تعطيل الاسم المستعار بنجاح!",
+        "enable": {
+            "_prefix": "",
+            "usage": "§1اسم مستعار §8§l» §r§cاستخدم §8/§c{label} on §8<§cاسم§8>"
+        },
+        "invalid": {
+            "_prefix": "",
+            "name": "§1اسم مستعار §8§l» §r§cاسم غير صالح..."
+        },
+        "registered": "§cهذا الاسم مسجل بالفعل في الخادم...",
+        "set": "§7تم تفعيل الاسم المستعار بنجاح!",
+        "usage": "§cاستخدم §8/§c{label} §8<§con§8|§coff§8|§crandom§8|§clist§8>"
+    },
+    "home": {
+        "_prefix": "§cالنظام §8§l» §r",
+        "none": "§cليس لديك أي منزل...",
+        "not_exists": "§cليس لديك منزل بهذا الاسم...",
+        "not_in_survival": "§cأنت لست في طور البقاء...",
+        "success": "§7جارٍ الانتقال إلى §c{home}§7...",
+        "usage": "§cاستخدم §8/§c{label} §8<§cاسم§8>"
+    },
+    "homes": {
+        "_prefix": "§cالنظام §8§l» §r",
+        "list": "§7منازلك §8(§f{count}§8):§7 {homes}",
+        "none": "§cليس لديك أي منزل..."
+    },
+    "itemid": {
+        "_prefix": "§cالنظام §8§l» §r",
+        "info": "§7الاسم§8:§c {name}{n}§cالنظام §8§l» §r§7المعرف§8:§c {id}§8:§c{meta}",
+        "noitem": "§cلا تحمل أي أداة في يدك..."
+    },
+    "joinmsg": {
+        "automsg": {
+            "disabled": "§bالدخول §8§l» §r§cيجب عليك تفعيل تفضيل الرسائل التلقائية لاستخدام رسائل الدخول..."
+        },
+        "list": {
+            "entry": "§b{id} §8§l» §r§7{message}",
+            "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §bرسائل الدخول §8(§f{page}§8/§f{total}§8) ===-=-=-=-"
+        },
+        "messages": {
+            "_prefix": "§bالدخول §8§l» §r",
+            "1": "§7أوبا! §b{player} §7هبط بالمظلة في الخادم!",
+            "10": "§7وقفة درامية... §b{player} §7دخل الخادم!",
+            "11": "§b{player} §7دخل!",
+            "12": "§7انتبهوا! §b{player} §7ظهر لتوه!",
+            "13": "§7ابتسم الكون... §b{player} §7دخل!",
+            "14": "§7مغامرات جديدة تبدأ مع §b{player}§7 متصل!",
+            "15": "§7مستعدون؟ §b{player} §7وصل ليسيطر!",
+            "2": "§7هل طلب أحد تعزيزات؟ §b{player} §7وصل!",
+            "3": "§7§b{player} §7دخل بقوة! اقترب!",
+            "4": "§7ما رأيك في بيتزا، §b{player}§7؟ أهلاً وسهلاً!",
+            "5": "§7أفسحوا الطريق! §b{player} §7وصل!",
+            "6": "§7الرادار رصد نشاطًا... §b{player} §7دخل!",
+            "7": "§7اكتمل الانتقال الآني! §b{player} §7ظهر هنا!",
+            "8": "§7جو رائع للعب... خاصة مع §b{player} §7متصل!",
+            "9": "§7ظهرت الأسطورة§8:§7 §b{player}§7 بيننا!"
+        },
+        "off": {
+            "success": "§bالدخول §8§l» §r§7تم تعطيل رسالة الدخول بنجاح!"
+        },
+        "on": {
+            "_prefix": "§bالدخول §8§l» §r",
+            "invalid": "§cمعرف غير صالح... استخدم §8/§c{label} list لرؤية المعرفات المتاحة",
+            "success": "§7تم تعيين رسالة الدخول إلى §b{id}§7 بنجاح!",
+            "usage": "§cاستخدم §8/§c{label} on §8<§cمعرف§8>"
+        },
+        "usage": "§bالدخول §8§l» §r§cاستخدم §8/§c{label} §8<§con§8|§coff§8|§clist§8>"
+    },
+    "kick": {
+        "broadcast": "§cالنظام §8§l» §r§c{target} §7تم §cطرده §7بسبب §c{reason}",
+        "kick": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§cلقد طُردت...{n}§cالسبب§8:§c {reason}"
+    },
+    "lbc": {
+        "profile": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§3الملف الشخصي §8§l» §r §7اسمك§8:§3 {name}{n}§3الملف الشخصي §8§l» §r §7رتبتك§8:§3 {tag}{n}§3الملف الشخصي §8§l» §r §7كلانك§8:§3 {clan}{n}§3الملف الشخصي §8§l» §r §7عنك§8:§3 {about}{n}§3الملف الشخصي §8§l» §r §7متزوج من§8:§7 {partner}{n}§3الملف الشخصي §8§l» §r §7الأكونا§8:§3 {akunas}{n}§8-=-=-=-=== §9المستويات §8===-=-=-=-{n}§3الملف الشخصي §8§l» §r §7مستواك§8:§3 {level}{n}§3الملف الشخصي §8§l» §r §7خبرتك§8:§3 {xp}{n}§3الملف الشخصي §8§l» §r §7الخبرة المطلوبة للتقدم§8:§3 {xpneeded}{n}§8-=-=-=-=== §fالإحصائيات §8===-=-=-=-{n}§3الملف الشخصي §8§l» §r §7فوزك في §bSky§fWars§8:§3 {winssw}{n}§3الملف الشخصي §8§l» §r §7فوزك في §cThe§9Bridge§8:§3 {winstb}{n}§3الملف الشخصي §8§l» §r §7فوزك في §eMlg§fBlock§8:§3 {winsmlg}{n}§3الملف الشخصي §8§l» §r §7فوزك في §cBed§fWars§8:§3 {winsbw}{n}§3الملف الشخصي §8§l» §r §7فوزك في §bBlock§fSumo§8:§3 {winsbs}{n}§3الملف الشخصي §8§l» §r §7فوزك في §2المبارزات§8:§3 {winsduels}{n}§3الملف الشخصي §8§l» §r §7قتلاتك§8:§3 {kills}{n}§3الملف الشخصي §8§l» §r §7وقت الاتصال§8:§3 {onlineTime}",
+        "profile_other": "§8-=-=-=-=== §fi§cAkuna§9MC §8- §7ملف §3{name} §8===-=-=-=-{n}§3الملف الشخصي §8§l» §r §7الرتبة§8:§3 {tag}{n}§3الملف الشخصي §8§l» §r §7آخر ظهور§8:§3 {lastOnline} §8(§7منذ §3{lastOnlineSince}§8){n}§3الملف الشخصي §8§l» §r §7الكلان§8:§3 {clan}{n}§3الملف الشخصي §8§l» §r §7عن اللاعب§8:§3 {about}{n}§3الملف الشخصي §8§l» §r §7متزوج من§8:§7 {partner}{n}§3الملف الشخصي §8§l» §r §7الأكونا§8:§3 {akunas}{n}§8-=-=-=-=== §9المستويات §8===-=-=-=-{n}§3الملف الشخصي §8§l» §r §7المستوى§8:§3 {level}{n}§3الملف الشخصي §8§l» §r §7الخبرة§8:§3 {xp}{n}§3الملف الشخصي §8§l» §r §7الخبرة المطلوبة للتقدم§8:§3 {xpneeded}{n}§8-=-=-=-=== §fالإحصائيات §8===-=-=-=-{n}§3الملف الشخصي §8§l» §r §7فوزه في §bSky§fWars§8:§3 {winssw}{n}§3الملف الشخصي §8§l» §r §7فوزه في §cThe§9Bridge§8:§3 {winstb}{n}§3الملف الشخصي §8§l» §r §7فوزه في §eMlg§fBlock§8:§3 {winsmlg}{n}§3الملف الشخصي §8§l» §r §7فوزه في §cBed§fWars§8:§3 {winsbw}{n}§3الملف الشخصي §8§l» §r §7فوزه في §bBlock§fSumo§8:§3 {winsbs}{n}§3الملف الشخصي §8§l» §r §7فوزه في §2المبارزات§8:§3 {winsduels}{n}§3الملف الشخصي §8§l» §r §7قتلاته§8:§3 {kills}{n}§3الملف الشخصي §8§l» §r §7وقت الاتصال§8:§3 {onlineTime}"
+    },
+    "lobby": {
+        "_prefix": "§cالنظام §8§l» §r",
+        "cmd": "§7عدت إلى اللوبي بنجاح!"
+    },
+    "locktell": {
+        "_prefix": "§1الهمس §8§l» §r",
+        "already": {
+            "_prefix": "",
+            "locked": "§1الهمس §8§l» §r§cهمسك مقفول بالفعل، اكتب @e في الدردشة لفتحه..."
+        },
+        "offlinetarget": "§cاللاعب غير متصل، جارٍ فتح الهمس...",
+        "success": {
+            "other": "§1{sender} §7قفل الهمس معك...",
+            "self": "§7تم قفل همسك مع §1{player}§7! اكتب §1@e §7في الدردشة لفتحه..."
+        },
+        "unlocked": {
+            "other": "§1{player} §7فتح الهمس...",
+            "self": "§7تم فتح همسك بنجاح!"
+        },
+        "usage": "§cاستخدم §8/§c{label} §8<§cلاعب§8>"
+    },
+    "canal": {
+        "_prefix": "§9القناة §8§l» §r",
+        "current": "§7{channels}",
+        "switched": "§7{channels}",
+        "invalid": "§cهذه القناة غير موجودة، القنوات المتاحة§8:§7 {channels}",
+        "unavailable": "§cهذه القناة غير متاحة حاليًا...",
+        "usage": "§cاستخدم §8/§c{label} §8<§cقناة§8>"
+    },
+    "reply": {
+        "_prefix": "§1الهمس §8§l» §r",
+        "usage": "§cاستخدم §8/§c{label} §8<§cرسالة§8>",
+        "notell": "§cلم تتلق أي همسات مؤخرًا..."
+    },
+    "login": {
+        "error": {
+            "nopassword": "§eAuth §8§l» §r§cحسابك ليس به كلمة مرور. يتم توثيقك تلقائيًا عبر جهازك"
+        },
+        "usage": "§eAuth §8§l» §r§cاستخدم §8/§c{label} §8<§cكلمة المرور§8>"
+    },
+    "lottery": {
+        "_prefix": "§eاليانصيب §8§l» §r",
+        "broadcast": "§7جائزة اليانصيب الحالية هي §c{amount} أكونا§7! متبقي §e{time} §7على السحب، اشترِ تذاكر عبر §8/§7lottery buy §8<§7عدد التذاكر§8>",
+        "buy_success": "§7اشتريت §e{quantity} تذكرة/تذاكر §7مقابل §c{cost} أكونا§7!",
+        "buy_usage": "§cاستخدم §8/§c{label} buy §8<§cتذاكر§8>",
+        "no_money": "§cليس لديك أكونا كافية لشراء {amount} تذكرة/تذاكر...",
+        "no_tickets": "§7لم تُبع أي تذاكر في هذه الجولة. سيبدأ اليانصيب القادم قريبًا!",
+        "prize": "§7الجائزة الحالية§8:§c {prize} أكونا",
+        "status_header": "§7الحالة الحالية§8:",
+        "ticket_limit": "§cلا يمكنك شراء هذا العدد من التذاكر...",
+        "ticket_price": "§7كل تذكرة بسعر §c{price} أكونا",
+        "tickets": "§7التذاكر المباعة§8:§e {tickets}",
+        "time": "§7الوقت المتبقي§8:§e {time}",
+        "usage": "§cاستخدم §8/§c{label} §8<§cstatus§8|§cbuy§8>",
+        "win": "§7تهانينا §e{winner}§7، ربحت §c{amount} أكونا §7لفوزك في اليانصيب!"
+    },
+    "marriage": {
+        "accept": {
+            "_prefix": "§cالنظام §8§l» §r",
+            "already": "§cأنت أو شريكك متزوجون بالفعل...",
+            "none": "§cليس لديك طلبات معلقة...",
+            "notify": "§c{partner} §7قبل طلب زواجك!",
+            "success": "§7تزوجت من §c{partner}§7! مبروك للزوجين :)"
+        },
+        "deny": {
+            "_prefix": "§cالنظام §8§l» §r",
+            "none": "§cليس لديك طلبات معلقة...",
+            "notify": "§c{target} §7رفض طلب زواجك...",
+            "success": "§7تم رفض طلب الزواج بنجاح..."
+        },
+        "divorce": {
+            "_prefix": "§cالنظام §8§l» §r",
+            "all_success": "§7طلقت جميع شركائك...",
+            "invalid": "§cشريك غير صالح أو ليس متزوجًا منك...",
+            "none": "§cأنت لست متزوجًا...",
+            "notify": "§c{partner} §7طلقك...",
+            "specify": "§cاستخدم §8/§c{label} divorce §8<§cلاعب§8|§c*§8>",
+            "success": "§7طلقت §c{partner}§7..."
+        },
+        "info": {
+            "entry": "§cالنظام §8§l» §r §7الشريك§8:§d {partner} §8| §7منذ§8:§d {date} §8(§7منذ §d{dateSince}§8){n}§cالنظام §8§l» §r §7لقبه§8:§d {nicknameGiven} §8| §7لقبك§8:§d {nicknameReceived}",
+            "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §dالزيجات النشطة §8===-=-=-=-",
+            "no_nickname": "§7لا يوجد لقب...§r",
+            "none": "§cالنظام §8§l» §r§cليس لديك زيجات نشطة..."
+        },
+        "marry": {
+            "already": "§cالنظام §8§l» §r§cأنت أو اللاعب متزوجون بالفعل...",
+            "expired": "§cالنظام §8§l» §r§cانتهت صلاحية طلب الزواج من §c{sender}§7...",
+            "limit": "§cالنظام §8§l» §r§cوصلت إلى حد الزيجات!",
+            "pending": "§cالنظام §8§l» §r§cهذا اللاعب لديه طلب معلق بالفعل...",
+            "request": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §dطلب زواج§8===-=-=-{n}§cالنظام §8§l» §r§d{sender} §7طلب يدك للزواج...{n}§cالنظام §8§l» §r §7استخدم §a/marriage accept للقبول §7أو §c/marriage deny للرفض",
+            "self": "§cالنظام §8§l» §r§cلا يمكنك الزواج من نفسك...",
+            "sent": "§cالنظام §8§l» §r§7تم إرسال طلب الزواج إلى §c{target}§7 بنجاح!",
+            "target_limit": "§cالنظام §8§l» §r§cاللاعب وصل إلى حد الزيجات!",
+            "usage": "§cالنظام §8§l» §r§cاستخدم §8/§c{label} marry §8<§cلاعب§8>"
+        },
+        "nick": {
+            "_prefix": "§cالنظام §8§l» §r",
+            "success": "§7تم تعيين لقب §c{partner}§7 إلى '§c{nickname}§7' بنجاح!",
+            "usage": "§cاستخدم §8/§c{label} nick §8<§cالشريك§8> <§cاللقب§8>"
+        },
+        "partner": {
+            "_prefix": "§cالنظام §8§l» §r",
+            "joined": "§7شريكك §c{partner} §7دخل الخادم!",
+            "left": "§cشريكك {partner} غادر الخادم..."
+        },
+        "usage": "§cالنظام §8§l» §r§cاستخدم §8/§c{label} §8<§cmarry§8|§cdivorce§8|§cinfo§8|§cnick§8>"
+    },
+    "msgcolor": {
+        "_prefix": "§cالنظام §8§l» §r",
+        "invalid": "§cلون غير صالح...",
+        "reset": "§7تم إعادة لون الرسائل إلى الافتراضي!",
+        "success": "§7تم تغيير لون الرسائل إلى {color}§7 بنجاح!",
+        "usage": "§cاستخدم §8/§c{label} §8<§cلون§8|§cإعادة§8>{n}§cالنظام §8§l» §r§7الألوان المتاحة§8: {colors}"
+    },
+    "mute": {
+        "_prefix": "§cالنظام §8§l» §r",
+        "broadcast": "§c{target} §7تم §cكتمه نهائيًا §7بسبب §c{reason}",
+        "muted": "§cتم كتمك نهائيًا بسبب {reason}... §oيمكنك شراء فك الكتم من §chttps://loja.iakunamc.com"
+    },
+    "nametag": {
+        "add": {
+            "_prefix": "§6بطاقات الاسم §8§l» §r",
+            "limit": {
+                "_prefix": "",
+                "reached": "§6بطاقات الاسم §8§l» §r§cوصلت إلى حد {limit} بطاقات اسم..."
+            },
+            "success": "§7تمت إضافة بطاقة الاسم '§6{text}§7' بنجاح!",
+            "too": {
+                "_prefix": "",
+                "long": "§6بطاقات الاسم §8§l» §r§cبطاقة اسمك تتجاوز حد {limit} حرفًا..."
+            },
+            "usage": "§cاستخدم §8/§c{label} add §8<§cنص§8>"
+        },
+        "list": {
+            "none": "§6بطاقات الاسم §8§l» §r§cليس لديك أي بطاقات اسم..."
+        },
+        "off": {
+            "success": "§6بطاقات الاسم §8§l» §r§7تم تعطيل بطاقات الاسم..."
+        },
+        "remove": {
+            "_prefix": "§6بطاقات الاسم §8§l» §r",
+            "invalid": {
+                "_prefix": "",
+                "id": "§6بطاقات الاسم §8§l» §r§cمعرف غير صالح... استخدم §8/§c{label} list لرؤية المعرفات المتاحة"
+            },
+            "success": "§7تمت إزالة بطاقة الاسم §6{id} §7بنجاح!",
+            "usage": "§cاستخدم §8/§c{label} remove §8<§cمعرف§8>"
+        },
+        "usage": "§6بطاقات الاسم §8§l» §r§cاستخدم §8/§c{label} §8<§cadd§8|§clist§8|§cremove§8|§coff§8>"
+    },
+    "nickcolor": {
+        "_prefix": "§cالنظام §8§l» §r",
+        "invalid": "§cلون غير صالح...",
+        "reset": "§7تم إعادة لون الاسم إلى الافتراضي!",
+        "success": "§7تم تغيير لون الاسم إلى {color}§7 بنجاح!",
+        "usage": "§cاستخدم §8/§c{label} §8<§cلون§8|§cإعادة§8>{n}§cالنظام §8§l» §r§7الألوان المتاحة§8: {colors}"
+    },
+    "particle": {
+        "on": {
+            "usage": "§5الجسيمات §8§l» §r§cاستخدم §8/§c{label} on §8<§cجسيم§8>"
+        }
+    },
+    "particles": {
+        "_prefix": "§5الجسيمات §8§l» §r",
+        "activated": "§7تم تفعيل الجسيم §5{type} §7بنجاح!",
+        "deactivated": "§7تم تعطيل الجسيمات بنجاح!",
+        "invalid_type": "§cجسيم غير صالح... يمكنك رؤية قائمة الجسيمات المتاحة عبر §8/§c{label} list",
+        "invalid_world": "§cلا يمكن استخدام الجسيمات هنا...",
+        "list": "§7قائمة الجسيمات المتاحة §8(§f{count}§8):§7 {particles}",
+        "no_active": "§cليس لديك أي جسيم نشط...",
+        "usage": "§cاستخدم §8/§c{label} §8<§con§8|§coff§8|§clist§8>"
+    },
+    "party": {
+        "_prefix": "§dالمجموعة §8§l» §r",
+        "chat": {
+            "off": "§7تم تعطيل دردشة المجموعة!",
+            "on": "§7تم تفعيل دردشة المجموعة!"
+        },
+        "create": {
+            "already_in_party": "§cأنت بالفعل في مجموعة...",
+            "error": "§cخطأ في إنشاء المجموعة...",
+            "success": "§7تم إنشاء المجموعة بنجاح! يمكنك رؤية معلومات مجموعتك عبر §8/§7party info"
+        },
+        "info": {
+            "_prefix": "",
+            "code": "§dالمجموعة §8§l» §r§7الكود§8: §d{code}",
+            "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §dمعلومات المجموعة §8===-=-=-=-",
+            "leader": "§dالمجموعة §8§l» §r§7القائد§8: §d{leader}",
+            "members": "§dالمجموعة §8§l» §r§7الأعضاء§8: §d{current}§8/§d{max}",
+            "not_found": "§dالمجموعة §8§l» §r§cالمجموعة غير موجودة...",
+            "type": "§dالمجموعة §8§l» §r§7النوع§8: §d{type}"
+        },
+        "join": {
+            "already_in_party": "§cأنت بالفعل في مجموعة...",
+            "blocked": "§cلا يمكنك الانضمام لهذه المجموعة...",
+            "broadcast": "§d{player} §7انضم إلى المجموعة!",
+            "closed": "§cهذه المجموعة مغلقة...",
+            "error": "§cخطأ في الانضمام للمجموعة...",
+            "full": "§cالمجموعة مكتملة...",
+            "locked": "§cهذه المجموعة مقفلة...",
+            "not_found": "§cالمجموعة غير موجودة...",
+            "success": "§7انضممت إلى المجموعة!",
+            "usage": "§cاستخدم §8/§c{label} join §8<§cالكود§8|§cاللاعب§8>"
+        },
+        "kick": {
+            "broadcast": "§d{player} §7تم طرده من المجموعة!",
+            "error": "§cخطأ في طرد اللاعب...",
+            "kicked": "§cتم طردك من المجموعة!",
+            "not_in_party": "§cاللاعب ليس في المجموعة...",
+            "self": "§cلا يمكنك طرد نفسك!",
+            "success": "§7تم طرد اللاعب بنجاح!",
+            "usage": "§cاستخدم §8/§c{label} kick §8<§cلاعب§8>"
+        },
+        "leader": {
+            "_prefix": "",
+            "changed": "§dالمجموعة §8§l» §r§d{old_leader} §7غادر الخادم، القائد الجديد هو §d{new_leader}§7!",
+            "expired": "§dالمجموعة §8§l» §r§d{old_leader} §7لم يعد في الوقت المناسب. القائد الجديد هو §d{new_leader}§7!"
+        },
+        "leave": {
+            "broadcast": "§d{player} §7غادر المجموعة...",
+            "error": "§cخطأ في مغادرة المجموعة...",
+            "success": "§7غادرت المجموعة!"
+        },
+        "not_in_party": "§cأنت لست في مجموعة...",
+        "not_leader": "§cفقط القائد يمكنه فعل ذلك...",
+        "quit": {
+            "_prefix": "",
+            "notify": "§dالمجموعة §8§l» §r§d{player} §7غادر الخادم وخرج من المجموعة...",
+            "leader_offline": "§dالمجموعة §8§l» §r§d{player} §7غادر الخادم. لديه §d3 دقائق §7للعودة وإلا سيفقد القيادة.",
+            "leader_rejoined": "§dالمجموعة §8§l» §r§d{player} §7عاد إلى الخادم واستعاد القيادة!"
+        },
+        "transfer": {
+            "broadcast": "§d{new_leader} §7هو القائد الجديد!",
+            "error": "§cخطأ في نقل القيادة...",
+            "not_in_party": "§cاللاعب ليس في المجموعة...",
+            "received": "§7تلقيت قيادة المجموعة!",
+            "self": "§cلا يمكنك نقل القيادة لنفسك!",
+            "success": "§7تم نقل القيادة إلى §d{player}§7!",
+            "usage": "§cاستخدم §8/§c{label} transfer §8<§cلاعب§8>"
+        },
+        "type": {
+            "broadcast": "§7تم تغيير نوع المجموعة إلى §d{type}§7!",
+            "error": "§cخطأ في تغيير النوع...",
+            "invalid": "§cنوع غير صالح... الأنواع المتاحة§8: §7public§8, §7private§8, §7closed",
+            "success": "§7تم تغيير النوع إلى §d{type}§7!",
+            "usage": "§cاستخدم §8/§c{label} type §8<§cpublic§8|§cprivate§8|§cclosed§8>"
+        },
+        "invite": {
+            "already_in_party": "§cهذا اللاعب في مجموعة بالفعل...",
+            "already_invited": "§cهذا اللاعب تمت دعوته بالفعل...",
+            "expired": "§dالمجموعة §8§l» §r§cانتهت صلاحية دعوة §d{sender}§7...",
+            "received": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §dدعوة مجموعة§8===-=-=-{n}§dالمجموعة §8§l» §r§d{player} §7دعاك إلى مجموعته...{n}§dالمجموعة §8§l» §r§7استخدم §a/party accept للقبول §7أو §c/party deny للرفض",
+            "self": "§cلا يمكنك دعوة نفسك...",
+            "sent": "§dالمجموعة §8§l» §r§7تم إرسال الدعوة إلى §d{player}§7!",
+            "usage": "§cاستخدم §8/§c{label} invite §8<§cلاعب§8>"
+        },
+        "accept": {
+            "no_invite": "§cليس لديك أي دعوة مجموعة معلقة..."
+        },
+        "deny": {
+            "none": "§cليس لديك أي دعوة مجموعة معلقة...",
+            "notify": "§dالمجموعة §8§l» §r§d{player} §7رفض دعوتك...",
+            "success": "§7تم رفض الدعوة!"
+        },
+        "usage": "§cاستخدم §8/§c{label} §8<§ccreate§8|§cjoin§8|§cleave§8|§ckick§8|§ctransfer§8|§cchat§8|§cinfo§8|§ctype§8|§cinvite§8|§caccept§8|§cdeny§8>"
+    },
+    "pets": {
+        "_prefix": "§3المرافقون §8§l» §r",
+        "activated": "§7تم استدعاء الرفيق بنجاح!",
+        "deactivated": "§7تم تعطيل الرفيق بنجاح!",
+        "invalid_pet": "§cرفيق غير صالح... يمكنك رؤية قائمة الرفقاء المتاحين عبر §8/§c{label} list",
+        "invalid_world": "§cلا يمكن استدعاء الرفقاء هنا...",
+        "list": "§7قائمة الرفقاء المتاحين §8(§f{count}§8):§7 {pets}",
+        "no_active": "§cليس لديك أي رفيق نشط...",
+        "no_name": "§cاستخدم §8/§c{label} name §8<§cاسم§8>",
+        "no_perm": "§cفقط اللاعبون برتبة §f§lMoon §r§cفي أي فئة أو أعلى يمكنهم استدعاء الرفقاء... §oاحصل عليها من https://loja.iakunamc.com",
+        "no_type": "§cاستخدم §8/§c{label} spawn §8<§cرفيق§8> [§cاسم§8]",
+        "renamed": "§7تم تغيير اسم الرفيق إلى '§3{name}§7' بنجاح!",
+        "to_adult": "§7تم تحويل الرفيق إلى بالغ بنجاح!",
+        "to_baby": "§7تم تحويل الرفيق إلى صغير بنجاح!",
+        "usage": "§cاستخدم §8/§c{label} §8<§con§8|§crandom§8|§coff§8|§cname§8|§cbaby§8|§clist§8>"
+    },
+    "pin": {
+        "add": {
+            "_prefix": "§3الرقم السري §8§l» §r",
+            "already": "§cلديك رقم سري بالفعل...",
+            "success": "§7تمت إضافة الرقم السري بنجاح!",
+            "usage": "§cاستخدم §8/§c{label} add §8<§cرقم سري من 4 أرقام§8>"
+        },
+        "change": {
+            "_prefix": "§3الرقم السري §8§l» §r",
+            "incorrect": "§cالرقم السري الحالي غير صحيح...",
+            "success": "§7تم تغيير الرقم السري بنجاح!",
+            "usage": "§cاستخدم §8/§c{label} change §8<§cالرقم السري الحالي§8> <§cالرقم السري الجديد§8>"
+        },
+        "error": {
+            "incorrect": "§3الرقم السري §8§l» §r§cالرقم السري غير صحيح..."
+        },
+        "login": {
+            "timeout": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §3الرقم السري §8===-=-=-=-{n}§cانتهت مهلة تسجيل الدخول...",
+            "toomany": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §3الرقم السري §8===-=-=-=-{n}§cمحاولات توثيق كثيرة جدًا..."
+        },
+        "need": {
+            "login": "§3الرقم السري §8§l» §r§7أدخل رقمك السري في الدردشة لإكمال التوثيق"
+        },
+        "remove": {
+            "_prefix": "§3الرقم السري §8§l» §r",
+            "incorrect": "§cالرقم السري غير صحيح...",
+            "nopin": "§cليس لديك رقم سري...",
+            "success": "§7تمت إزالة الرقم السري بنجاح!",
+            "usage": "§cاستخدم §8/§c{label} remove §8<§cالرقم السري الحالي§8>"
+        },
+        "success": {
+            "login": "§3الرقم السري §8§l» §r§7تم التوثيق بنجاح!"
+        },
+        "usage": "§3الرقم السري §8§l» §r§cاستخدم §8/§c{label} §8<§cadd§8|§cremove§8|§cchange§8>"
+    },
+    "pluscolor": {
+        "_prefix": "§cالنظام §8§l» §r",
+        "invalid": "§cلون غير صالح...",
+        "reset": "§7تم إعادة لون + إلى الافتراضي!",
+        "success": "§7تم تغيير لون + إلى {color}§7 بنجاح!",
+        "usage": "§cاستخدم §8/§c{label} §8<§cلون§8|§cإعادة§8>{n}§cالنظام §8§l» §r§7الألوان المتاحة§8: {colors}"
+    },
+    "pref": {
+        "_prefix": "§cالنظام §8§l» §r",
+        "disable": "§7تم تعطيل التفضيل بنجاح!",
+        "enable": "§7تم تفعيل التفضيل بنجاح!",
+        "onlyvip": "§cفقط اللاعبون برتبة §b§l§oAstral §r§cفي أي فئة أو أعلى يمكنهم تغيير هذا التفضيل... §oاحصل عليها من https://loja.iakunamc.com",
+        "reset": "§7تمت إعادة جميع التفضيلات إلى الافتراضي!",
+        "usage": "§cاستخدم §8/§c{label} §8<§cالتفضيل§8|§cإعادة§8>{n}§cالنظام §8§l» §r§cالتفضيلات المتاحة§8:§7 {prefs}"
+    },
+    "profanity": {
+        "_prefix": "§cالنظام §8§l» §r",
+        "blocked": "§cالرجاء التحلي بالاحترام"
+    },
+    "profile": {
+        "view": {
+            "disabled": "§3الملف الشخصي §8§l» §r§cاللاعب عطل عرض الملف الشخصي..."
+        }
+    },
+    "randomtp": {
+        "_prefix": "§cالنظام §8§l» §r",
+        "no_safe_location": "§cتعذر العثور على موقع آمن...",
+        "success": "§7تم نقلك إلى §c{x}§8, §c{y}§8, §c{z}"
+    },
+    "register": {
+        "setpassword": {
+            "success": "§eAuth §8§l» §r§7تم تعيين كلمة المرور بنجاح! في الأجهزة الجديدة استخدم §8/§7login §8<§7كلمة المرور§8> §7للدخول"
+        },
+        "usage": "§eAuth §8§l» §r§cاستخدم §8/§c{label} §8<§cكلمة المرور§8>"
+    },
+    "repair": {
+        "_prefix": "§6الإصلاح §8§l» §r",
+        "no_damage": "§cهذه الأداة بحالة ممتازة بالفعل...",
+        "no_item": "§cلا تحمل أي أداة في يدك...",
+        "no_repairable_items": "§cليس لديك أدوات قابلة للإصلاح في حقيبتك...",
+        "not_in_survival": "§cأنت لست في طور البقاء...",
+        "not_repairable": "§cهذه الأداة لا يمكن إصلاحها...",
+        "success": "§7أصلحت §6{item} §7واستعدت §6{durability} §7متانة مقابل §c{cost} أكونا§7!",
+        "success_all": "§6الإصلاح §8§l» §r§7أصلحت §6{items} §7أدوات واستعدت §6{durability} §7متانة إجمالية مقابل §c{cost} أكونا§7!"
+    },
+    "report": {
+        "_prefix": "§cالنظام §8§l» §r",
+        "already_reported": "§cلقد أبلغت عن هذا اللاعب بالفعل...",
+        "noself": "§cلا يمكنك الإبلاغ عن نفسك!",
+        "nostaff": "§cلا يمكنك الإبلاغ عن عضو من الطاقم!",
+        "sent": "§7لقد أبلغت عن §c{target} §7بسبب §c{reason} §7بنجاح!",
+        "usage": "§cاستخدم §8/§c{label} §8<§cلاعب§8> <§cالسبب§8>"
+    },
+    "requests": {
+        "_prefix": "§cالنظام §8§l» §r",
+        "disabled": "§cهذا اللاعب عطل استقبال الطلبات..."
+    },
+    "restart": {
+        "kick": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§cجاري إعادة التشغيل...",
+        "time": "§cالنظام §8§l» §r§7سيُعاد تشغيل الخادم خلال §c{time}§7..."
+    },
+    "rules": {
+        "cmd": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §cالقوانين §8===-=-=-=-{n}§cالنظام §8§l» §r §7يُمنع الإهانات الشديدة، التمييز، التحرش، التهديدات، خطاب الكراهية، أو الترويج لأيديولوجيات متطرفة{n}§cالنظام §8§l» §r §7يُمنع الترويج أو ذكر خوادم، مواقع، شبكات اجتماعية، أو مجتمعات خارجية أخرى{n}§cالنظام §8§l» §r §7يُمنع التحايل على المرشحات، أو استغلال الأخطاء، أو الثغرات في الخادم{n}§cالنظام §8§l» §r §7يُمنع منعًا باتًا استخدام الهاكات، النقر الآلي، الأخطاء أو أي نوع من الغش §8(§7يشمل ذلك اللعب الثنائي والأيدي ذات وضع التيربو§8){n}§cالنظام §8§l» §r §7يُمنع اختراق الحسابات، انتحال شخصية أعضاء الطاقم، أو الاحتيال على لاعبين آخرين{n}§cالنظام §8§l» §r §7يُمنع تشكيل فرق في الأطوار الفردية، 1 ضد 1، أو في المباريات التي لا يُسمح فيها بذلك{n}§cالنظام §8§l» §r §7يُمنع استخدام أسماء، أسطح، أو بنى مسيئة، غير لائقة، أو استفزازية{n}§cالنظام §8§l» §r §7يُمنع الاستخدام المفرط للحروف الكبيرة، التكرار، السبام، أو الرسائل المتكررة في الدردشة{n}§cالنظام §8§l» §r §7يُمنع إعاقة عمل الطاقم، عدم احترام القرارات، أو إهانة الخادم"
+    },
+    "scoreboard": {
+        "lobby": "{right}     §fi§cAkuna§9MC §8§l» §r§cاللوبي{n}{right}{bar}{n}{right}§8§l» §r§7الاسم§8:§c {name}{n}{right}§8§l» §r§7المتصلون§8:§c {online}§8/§c{onlinemax}{n}{right}§8§l» §r§7البنج§8:§c {ping}ms{n}{right}{bar}{n}{n}{right}§c{address}",
+        "plot": "{right}   §fi§cAkuna§9MC §8§l» §r§9القطعة{n}{right}{bar}{n}{right}§8§l» §r§7الاسم§8:§9 {name}{n}{right}§8§l» §r§7يلعب§8:§9 {onlinemap}{n}{right}§8§l» §r§7القطع§8:§9 {plots}{n}{right}{bar}{n}{n}{right}§9{address}",
+        "lobby_bw": "{right}  §fi§cAkuna§9MC §8§l» §r§cBed§fWars{n}{right}{bar}{n}{right}§8§l» §r§7الانتصارات§8:§c {wins}{n}{right}§8§l» §r§7القتلات§8:§c {kills}{n}{right}§8§l» §r§7القتلات النهائية§8:§c {final_kills}{n}{right}§8§l» §r§7الأسرة المكسورة§8:§c {beds}{n}{right}{bar}{n}{n}{right}§c{address}",
+        "lobby_sw": "{right}  §fi§cAkuna§9MC §8§l» §r§bSky§fWars{n}{right}{bar}{n}{right}§8§l» §r§7الانتصارات§8:§b {wins}{n}{right}§8§l» §r§7القتلات§8:§b {kills}{n}{right}§8§l» §r§7المباريات§8:§b {plays}{n}{right}{bar}{n}{n}{right}§b{address}"
+    },
+    "server": {
+        "info": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §fمعلومات §8===-=-=-=-{n}§cالنظام §8» §r§7IP§8:§c iakunamc.com{n}§cالنظام §8» §r§7المنفذ§8:§c 19132{n}{n}§cالنظام §8» §r§7طلب انضمام للطاقم§8:§c https://staff.iakunamc.com{n}§cالنظام §8» §r§7المتجر§8:§c https://loja.iakunamc.com{n}§cالنظام §8» §r§7الديسكورد§8:§c https://discord.iakunamc.com{n}{n}§fY§cT §8» §r§7300 مشترك §a+ §7فيديو ترويجي{n}§fMini§cYT §8» §r§750 مشترك §a+ §7فيديو ترويجي{n}§cYT§fmirin §8» §r§70 مشترك §a+ §7فيديو ترويجي{n}§cملاحظات §8» §r§7ضع IP في العنوان/الوصف وروج للخادم مرة شهريًا للحفاظ على رتبتك",
+        "whitelist": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§cالخادم تحت الصيانة{n}§cالديسكورد: https://discord.iakunamc.com",
+        "forcedshutdown": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§cتعرض الخادم لإيقاف قسري...",
+        "attack": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§cالنظام §8§l» §r§7الخادم يتعرض حاليًا لهجوم DDoS...{n}§7حمايتنا تخفف الهجوم بالفعل. تم تفعيل الحماية اللازمة، لكن قد يستمر وجود تأخير أو انقطاع{n}§cالنظام §8§l» §r§7الدعم§8: §chttps://discord.iakunamc.com",
+        "tps_low": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§cالنظام §8§l» §r§7يبدو أن الخادم مثقل، فريقنا يعمل بالفعل على حل المشكلة..."
+    },
+    "sethome": {
+        "_prefix": "§cالنظام §8§l» §r",
+        "already_exists": "§cلديك منزل بهذا الاسم بالفعل...",
+        "limit": "§cوصلت إلى حد المنازل...",
+        "not_in_survival": "§cأنت لست في طور البقاء...",
+        "position_exists": "§cيوجد منزل بالفعل في هذا الموقع...",
+        "success": "§7تم إنشاء المنزل §c{home} §7بنجاح!",
+        "usage": "§cاستخدم §8/§c{label} §8<§cاسم§8>"
+    },
+    "shop": {
+        "break": {
+            "_prefix": "§eالمتجر §8§l» §r",
+            "not_owner": "§cفقط المالك يمكنه إزالة المتجر...",
+            "success": "§7تمت إزالة المتجر بنجاح"
+        },
+        "buy": {
+            "_prefix": "§eالمتجر §8§l» §r",
+            "inventory_full": "§cالحقيبة ممتلئة...",
+            "not_enough_stock": "§cالمخزون غير كافٍ...",
+            "success": "§7اشتريت §e{quantity}§7x {item} مقابل §c{price} أكونا §7من §e{owner}"
+        },
+        "chest_access_denied": "§eالمتجر §8§l» §r§cفقط مالك المتجر يمكنه الوصول لهذا الصندوق...",
+        "chest_not_found": "§eالمتجر §8§l» §r§cصندوق المتجر غير موجود...",
+        "create": {
+            "_prefix": "§eالمتجر §8§l» §r",
+            "chest_not_found": "§cضع صندوقًا خلف/تحت اللافتة...",
+            "error": "§cخطأ في إنشاء المتجر...",
+            "invalid_item": "§cمعرف الأداة غير صالح...",
+            "invalid_price": "§cسعر غير صالح...",
+            "invalid_quantity": "§cكمية غير صالحة...",
+            "success": "§7تم إنشاء المتجر بنجاح!"
+        },
+        "inventory_full": "§eالمتجر §8§l» §r§cالحقيبة ممتلئة...",
+        "not_in_survival": "§eالمتجر §8§l» §r§cأنت لست في طور البقاء...",
+        "owner": {
+            "_prefix": "§eالمتجر §8§l» §r",
+            "notify_purchase": "§e{seller} §7باع §e{quantity}§7x {item} مقابل §c{price} أكونا§7!",
+            "notify_sale": "§e{buyer} §7اشترى §e{quantity}§7x {item} مقابل §c{price} أكونا§7!"
+        },
+        "purchase_error": "§eالمتجر §8§l» §r§cخطأ في معالجة الشراء...",
+        "purchase_summary": "§eالمتجر §8§l» §r§7اشتريت {items} بمجموع §c{total} أكونا§7!",
+        "self_interact": "§eالمتجر §8§l» §r§cلا يمكنك التفاعل مع متجرك الخاص...",
+        "sell": {
+            "_prefix": "§eالمتجر §8§l» §r",
+            "chest_full": "§cصندوق المتجر ممتلئ...",
+            "insufficient_items": "§cليس لديك عناصر كافية...",
+            "success": "§7بعت §e{quantity}§7x {item} مقابل §c{price} أكونا §7لـ §e{owner}§7!"
+        }
+    },
+    "sit": {
+        "_prefix": "§cالنظام §8§l» §r",
+        "accept": {
+            "different_world": "§cيجب أن تكون في نفس عالم اللاعب...",
+            "none": "§cليس لديك أي طلب حمل معلق...",
+            "notify": "§c{target} §7قبل طلبك لحمله!",
+            "offline": "§cاللاعب الذي أرسل الطلب غادر الخادم...",
+            "sender_different_world": "§c{target} §7لم يعد في نفس عالمك...",
+            "sender_too_far": "§c{target} §7ابتعد كثيرًا...",
+            "success": "§7قبلت طلب §c{sender}§7!",
+            "too_far": "§cبعيد جدًا..."
+        },
+        "blockedworld": "§cلا يمكنك الجلوس هنا...",
+        "deny": {
+            "none": "§cليس لديك أي طلب حمل معلق...",
+            "notify": "§c{target} §7رفض طلبك لحمله...",
+            "success": "§7تم رفض طلب الحمل بنجاح..."
+        },
+        "different_world": "§cيجب أن تكون في نفس عالم اللاعب...",
+        "expired": "§cانتهت صلاحية طلب الحمل من §c{sender}§7...",
+        "pending": "§cهذا اللاعب لديه طلب حمل معلق بالفعل...",
+        "request": {
+            "_prefix": "",
+            "received": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §6طلب الحمل §8===-=-=-{n}§cالنظام §8§l» §r§6{sender} §7يريد حملك...{n}§cالنظام §8§l» §r§7استخدم §a/sitaccept للقبول §7أو §c/sitdeny للرفض",
+            "sent": "§cالنظام §8§l» §r§7تم إرسال طلب الحمل إلى §c{target}§7!"
+        },
+        "self": "§cلا يمكنك إرسال طلب لنفسك...",
+        "success": "§7جلست بنجاح!",
+        "too_far": "§cبعيد جدًا..."
+    },
+    "sleep": {
+        "_prefix": "§cالنظام §8§l» §r",
+        "blockedworld": "§cلا يمكنك النوم هنا...",
+        "success": "§7نمت بنجاح! أحلامًا سعيدة..."
+    },
+    "smelt": {
+        "_prefix": "§6الفرن §8§l» §r",
+        "inventory_full": "§cالحقيبة ممتلئة...",
+        "no_blocks": "§cليس لديك كتل خامات لصهرها...",
+        "not_in_survival": "§cأنت لست في طور البقاء...",
+        "success": "§7صهرت §6{blocks} §7كتلة إلى §6{ores} §7خامات مقابل §c{cost} أكونا§7!"
+    },
+    "tell": {
+        "_prefix": "§1الهمس §8§l» §r",
+        "disabled": "§cهذا اللاعب معطل الهمس...",
+        "noselferror": "§cلا يمكنك إرسال رسالة لنفسك",
+        "player": "§1{sender} §8§l»§r§7 أنت§8:§7 {msg}",
+        "sender": "§7أنت §8§l»§r§1 {player}§8:§7 {msg}",
+        "usage": "§cاستخدم §8/§c{label} §8<§cلاعب§8> <§cرسالة§8>",
+        "disabled_me": "§1الهمس §8§l» §r§cهمسك معطل..."
+    },
+    "tempban": {
+        "broadcast": "§cالنظام §8§l» §r§c{target} §7تم §cحظره مؤقتًا §7لمدة §c{time} §7بسبب §c{reason}",
+        "kick": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§cلقد تم حظرك مؤقتًا...{n}§cالاسم§8:§c {name}{n}§cالسبب§8:§c {reason}{n}§cينتهي في§8:§c {end}{n}§cالتاريخ§8:§c {timestamp}"
+    },
+    "tempmute": {
+        "_prefix": "§cالنظام §8§l» §r",
+        "broadcast": "§c{target} §7تم §cكتمه مؤقتًا §7لمدة §c{time} §7بسبب §c{reason}",
+        "muted": "§cتم كتمك مؤقتًا بسبب {reason}. تنتهي العقوبة في {end}{n}§cالنظام §8§l» §r§cتذكر قراءة §8/§crules قوانيننا لتجنب العقوبات..."
+    },
+    "tpa": {
+        "expired": "§5النقل الآني §8§l» §r§cانتهت صلاحية طلب النقل الآني من {sender}...",
+        "noself": "§5النقل الآني §8§l» §r§cلا يمكنك الانتقال إلى نفسك...",
+        "not_in_survival": "§5النقل الآني §8§l» §r§cأنت لست في طور البقاء...",
+        "pending": "§5النقل الآني §8§l» §r§cهذا اللاعب لديه طلب نقل آني معلق بالفعل...",
+        "received": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §5طلب النقل الآني §8===-=-=-=-{n}§5النقل الآني §8§l» §r§5{sender} §7يريد الانتقال إليك...{n}§5النقل الآني §8§l» §r§7استخدم §a/tpaccept للقبول §7أو §c/tpdeny للرفض",
+        "sent": "§5النقل الآني §8§l» §r§7تم إرسال طلب النقل الآني إلى §5{target}§7!",
+        "target_not_in_survival": "§5النقل الآني §8§l» §r§cاللاعب المستهدف ليس في طور البقاء...",
+        "usage": "§5النقل الآني §8§l» §r§cاستخدم §8/§c{label} §8<§cلاعب§8>"
+    },
+    "tpaccept": {
+        "_prefix": "§5النقل الآني §8§l» §r",
+        "none": "§cليس لديك أي طلب نقل آني معلق...",
+        "not_in_survival": "§cاللاعب ليس في طور البقاء...",
+        "success": "§7قبلت طلب النقل الآني من §5{sender}§7!",
+        "success_target": "§5{target} §7قبل طلب نقلك الآني!"
+    },
+    "tpdeny": {
+        "_prefix": "§5النقل الآني §8§l» §r",
+        "none": "§cليس لديك أي طلب نقل آني معلق...",
+        "success": "§7رفضت طلب النقل الآني من §5{sender}§7!",
+        "success_target": "§5{target} §7رفض طلب نقلك الآني!"
+    },
+    "warn": {
+        "_prefix": "§cالنظام §8§l» §r",
+        "active_warning": "§cلديك {count} تحذير/تحذيرات نشطة... استخدم §8/§cwarns للعرض...",
+        "received": "§7تم تحذيرك لمدة §c{time} §7بسبب §c{reason}{n}§cالنظام §8§l» §r§cتذكر قراءة §8/§crules قوانيننا لتجنب العقوبات..."
+    },
+    "wings": {
+        "_prefix": "§6ال§eأج§6نح§eة §8§l» §r",
+        "invalid_world": "§cلا يمكن تفعيل الأجنحة هنا...",
+        "off": "§7تم تعطيل الأجنحة بنجاح",
+        "on": "§7تم تفعيل الأجنحة بنجاح"
+    },
+    "xp": {
+        "_prefix": "§9المستويات §8§l» §r",
+        "gain": "§7ربحت §9{xp} خبرة§7!",
+        "gain_partner": "§7ربحت §9{xp} خبرة §7من شريكك §c{partner}§7!",
+        "levelup": "§7تهانينا! وصلت إلى المستوى §9{newLevel}",
+        "temp_multiplier": "§7لديك دفعة مؤقتة §9{boost}x §7نشطة لمدة §9{time}"
+    },
+    "error": {
+        "_prefix": "§cالنظام §8§l» §r",
+        "unknowncommand": "§cهذا الأمر غير موجود...",
+        "offlineplayer": "§cاللاعب غير متصل",
+        "command": "§cحدث خطأ!",
+        "noperm": "§cليس لديك صلاحية لاستخدام هذا الأمر...",
+        "invalid_page": "§cالنظام §8§l» §r§cصفحة غير صالحة، يوجد §c{total} §cصفحات فقط..."
+    },
+    "ping": {
+        "_prefix": "§cالنظام §8§l» §r",
+        "self": "§7البنج الخاص بك هو §c{ping}ms",
+        "other": "§7بنج اللاعب §c{target} §7هو §c{ping}ms"
+    },
+    "version": {
+        "_prefix": "§bApi §8§l» §r",
+        "command": "§fi§cAkuna§9MC §bApi §8'§7{codename}§8'{n}{n}§7المؤلف§8:§b M4theuskkj{n}§7آخر تحديث§8:§b {lastupdate}"
+    },
+    "list": {
+        "_prefix": "§cالنظام §8§l» §r",
+        "command": "§7اللاعبون المتصلون §8(§f{online}§8/§f{maxOnline}§8):§7 {list}"
+    },
+    "mission": {
+        "_prefix": "§6المهام §8§l» §r",
+        "completed": "§7تهانينا! أكملت المهمة §6{mission}",
+        "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §6المهام §8===-=-=-=-",
+        "header_other": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §6مهام §7اللاعب §6{target} §8===-=-=-=-",
+        "resetIn": "§7تتجدد المهام خلال §6{time}",
+        "break": {
+            "_prefix": "",
+            "blocks": "§7اكسر {target} كتلة",
+            "beds": "§7دمر {target} سرير في §cBed§fWars"
+        },
+        "kill": {
+            "_prefix": "",
+            "skywars": "§7اقتل {target} لاعبين في §bSky§fWars",
+            "pvp": "§7اقتل {target} لاعبين في §bأطوار القتال",
+            "thebridge": "§7اقتل {target} لاعبين في §cThe§9Bridge",
+            "bedwars": "§7اقتل {target} لاعبين في §cBed§fWars",
+            "blocksumo": "§7اقتل {target} لاعبين في §bBlock§fSumo"
+        },
+        "win": {
+            "_prefix": "",
+            "bedwars": "§7اربح {target} مباريات §cBed§fWars",
+            "mlgblock": "§7اربح {target} مباريات §eMlg§fBlock",
+            "duels": "§7اربح {target} مبارزة",
+            "skywars": "§7اربح {target} مباريات §bSky§fWars",
+            "thebridge": "§7اربح {target} مباريات §cThe§9Bridge",
+            "blocksumo": "§7اربح {target} مباريات §bBlock§fSumo"
+        },
+        "place": {
+            "_prefix": "",
+            "blocks": "§7ضع {target} كتلة"
+        },
+        "complete": {
+            "_prefix": "",
+            "parkour": "§7أكمل §5Parkour §7{target} مرة"
+        },
+        "score": {
+            "_prefix": "",
+            "thebridge": "§7سجل {target} نقاط في §cThe§9Bridge"
+        },
+        "mine": {
+            "_prefix": "",
+            "coal": "§7عدّن {target} فحم",
+            "iron": "§7عدّن {target} حديد",
+            "gold": "§7عدّن {target} ذهب",
+            "diamond": "§7عدّن {target} ألماس",
+            "emerald": "§7عدّن {target} زمرد"
+        },
+        "get": {
+            "_prefix": "",
+            "wood": "§7اجمع {target} خشب"
+        },
+        "craft": {
+            "_prefix": "",
+            "items": "§7اصنع {target} أدوات"
+        },
+        "no": {
+            "missions": "§cلا توجد مهام في الوقت الحالي..."
+        },
+        "list": {
+            "item": {
+                "v2": "§7{name} §8- §7التقدم§8:§f {progress}§8/§f{target} §8- §7المكافأة§8: {reward}"
+            }
+        },
+        "reward": {
+            "xp_multiplier": "§7تلقيت §9مضاعف خبرة {multiplier}x §7لمدة §6{duration}"
+        },
+        "first": {
+            "kill": {
+                "_prefix": "",
+                "skywars": "§7كن أول من يقتل في §bSky§fWars {target} مرات",
+                "bedwars": "§7كن أول من يقتل في §cBed§fWars {target} مرات",
+                "thebridge": "§7كن أول من يقتل في §cThe§9Bridge {target} مرات",
+                "blocksumo": "§7كن أول من يقتل في §bBlock§fSumo {target} مرات"
+            }
+        },
+        "play": {
+            "_prefix": "",
+            "bedwars": "§7العب {target} مباريات §cBed§fWars",
+            "skywars": "§7العب {target} مباريات §bSky§fWars"
+        },
+        "buy": {
+            "items": {
+                "_prefix": "",
+                "bedwars": "§7اشترِ {target} عناصر في متجر §cBed§fWars"
+            },
+            "upgrades": {
+                "_prefix": "",
+                "bedwars": "§7اشترِ {target} ترقيات في §cBed§fWars"
+            }
+        }
+    },
+    "missions": {
+        "_prefix": "§6المهام §8§l» §r",
+        "reset": "§7يمكنك إعادة تعيينها مقابل §c{cost} أكونا §7باستخدام §8/§7resetmissions"
+    },
+    "resetmissions": {
+        "_prefix": "§6المهام §8§l» §r",
+        "no_missions": "§cليس لديك مهام لإعادة تعيينها!",
+        "success": "§7تمت إعادة تعيين مهامك بنجاح!"
+    },
+    "cages": {
+        "_prefix": "§cالأقفاص §8§l» §r",
+        "usage": "§cاستخدم §8/§c{label} §8<§cbuy§8|§cset§8|§cunset§8|§clist§8|§cinfo§8>",
+        "buy": {
+            "_prefix": "",
+            "usage": "§cالأقفاص §8§l» §r§cاستخدم §8/§c{label} buy §8<§cقفص§8> §8[§cاللعبة§8]",
+            "already_owned": "§cالأقفاص §8§l» §r§cأنت تملك هذا القفص بالفعل...",
+            "success": "§cالأقفاص §8§l» §r§7تم شراء القفص §c{cage} §7مقابل §c{cost} أكونا§7!"
+        },
+        "set": {
+            "_prefix": "",
+            "usage": "§cالأقفاص §8§l» §r§cاستخدم §8/§c{label} set §8<§cقفص§8> §8[§cاللعبة§8]",
+            "not_owned": "§cالأقفاص §8§l» §r§cأنت لا تملك هذا القفص...",
+            "success": "§cالأقفاص §8§l» §r§7تم تفعيل القفص §c{cage} §7بنجاح!",
+            "failed": "§cالأقفاص §8§l» §r§cخطأ في تفعيل القفص..."
+        },
+        "unset": {
+            "_prefix": "",
+            "usage": "§cالأقفاص §8§l» §r§cاستخدم §8/§c{label} unset §8<§cاللعبة§8>",
+            "success": "§cالأقفاص §8§l» §r§7تم تعطيل قفص {minigame} §7بنجاح!"
+        },
+        "list": {
+            "_prefix": "",
+            "title": "§cالأقفاص §8§l» §r§7أقفاصك§8:",
+            "owned": "§cالأقفاص §8§l» §r§7المملوكة§8:§7 {cages}",
+            "unowned": "§cالأقفاص §8§l» §r§7غير المملوكة§8:§7 {cages}"
+        },
+        "info": {
+            "_prefix": "",
+            "usage": "§cالأقفاص §8§l» §r§cاستخدم §8/§c{label} info §8<§cقفص§8> §8[§cاللعبة§8]",
+            "title": "§cالأقفاص §8§l» §r§7معلومات القفص §c{cage}§8:",
+            "description": "§cالأقفاص §8§l» §r§7الوصف§8:§7 {description}",
+            "cost": "§cالأقفاص §8§l» §r§7السعر§8:§c {cost} أكونا",
+            "status": "§cالأقفاص §8§l» §r§7مملوك§8:§7 {status}",
+            "active": "§cالأقفاص §8§l» §r§7نشط§8:§7 {active}"
+        },
+        "cage": {
+            "_prefix": "",
+            "not_found": "§cالأقفاص §8§l» §r§cالقفص غير موجود..."
+        },
+        "minigame": {
+            "_prefix": "",
+            "invalid": "§cالأقفاص §8§l» §r§cلعبة غير صالحة..."
+        }
+    },
+    "cageswindow": {
+        "_prefix": "§cالأقفاص §8§l» §r",
+        "invalid_minigame": "§cلعبة غير صالحة... المتاحة§8:§7 {minigames}",
+        "title": "§7الأقفاص",
+        "disable": {
+            "_prefix": "",
+            "button_minigame": "§cتعطيل القفص",
+            "button_all": "§cتعطيل جميع الأقفاص",
+            "minigame_success": "§cالأقفاص §8§l» §r§7تم تعطيل قفص {minigame}§7!",
+            "all_success": "§cالأقفاص §8§l» §r§7تم تعطيل جميع الأقفاص!",
+            "success": "§cالأقفاص §8§l» §r§7تم تعطيل القفص §c{cage}§7!"
+        },
+        "set": {
+            "_prefix": "",
+            "success": "§cالأقفاص §8§l» §r§7تم تفعيل القفص §c{cage}§7!"
+        },
+        "buy": {
+            "_prefix": "",
+            "title": "§7شراء القفص §c{cage} §7مقابل §c{cost} أكونا§8?",
+            "success": "§cالأقفاص §8§l» §r§7تم شراء القفص §c{cage}§7!"
+        }
+    },
+    "cage": {
+        "prison": {
+            "description": "قفص حجر السجن"
+        },
+        "iron": {
+            "description": "قفص حديدي"
+        },
+        "bedrock": {
+            "description": "قفص صخر الأديم"
+        },
+        "gold": {
+            "description": "قفص ذهبي"
+        },
+        "lapis": {
+            "description": "قفص لازوردي"
+        },
+        "obsidian": {
+            "description": "قفص سبجي"
+        },
+        "wooden": {
+            "description": "قفص خشبي"
+        },
+        "ice": {
+            "description": "قفص جليدي"
+        },
+        "rainbow": {
+            "description": "قفص قوس قزح"
+        },
+        "emerald": {
+            "description": "قفص زمردي"
+        },
+        "diamond": {
+            "description": "قفص ألماسي"
+        },
+        "redstone": {
+            "description": "قفص ريدستون"
+        },
+        "coal": {
+            "description": "قفص فحمي"
+        },
+        "bricks": {
+            "description": "قفص طوبي"
+        },
+        "mossy": {
+            "description": "قفص حجر مطحلب"
+        },
+        "chiseled": {
+            "description": "قفص حجر منحوت"
+        },
+        "quartz": {
+            "description": "قفص كوارتز"
+        },
+        "nether": {
+            "description": "قفص نيثري"
+        },
+        "end": {
+            "description": "قفص إندر"
+        },
+        "snow": {
+            "description": "قفص ثلجي"
+        },
+        "glowstone": {
+            "description": "قفص حجر متوهج"
+        },
+        "terracotta": {
+            "description": "قفص طين مشوي"
+        }
+    },
+    "temprank": {
+        "_prefix": "§cالنظام §8§l» §r",
+        "expiry": "§7رتبتك §c{rank} §7ستنتهي خلال §c{time}§7..."
+    },
+    "language": {
+        "_prefix": "§3اللغة §8§l» §r",
+        "usage": "§cاستخدم §8/§c{label} §8<§clist§8|§cاللغة§8>",
+        "list_header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §3اللغات §8(§f{page}§8/§f{max}§8) §8===-=-=-=-",
+        "list_item": "§3{code} §8- §7{name}",
+        "changed": "§7تم تغيير اللغة إلى §3{name} §7بنجاح!",
+        "invalid": "§cاللغة §8\"§c{code}§8\"§c غير موجودة، استخدم §8/§c{label} list لرؤية اللغات المتاحة"
+    },
+    "skin": {
+        "_prefix": "§3الأسطح §8§l» §r",
+        "usage": "§cاستخدم §8/§c{label} §8<§clist§8|§cview§8|§con§8|§coff§8>",
+        "list": {
+            "_prefix": "",
+            "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §3الأسطح §8(§f{page}§8/§f{pages}§8){filter} ===-=-=-=-",
+            "entry": "§3{id} §8§l» §r§7{name} {type}",
+            "empty": "§3الأسطح §8§l» §r§cلم يتم العثور على أسطح بهذه الفلاتر..."
+        },
+        "view": {
+            "_prefix": "",
+            "usage": "§3الأسطح §8§l» §r§cاستخدم §8/§c{label} view §8<§cمعرف§8>",
+            "not_found": "§3الأسطح §8§l» §r§cالسطح §8'§f{id}§8'§c غير موجود...",
+            "no_data": "§3الأسطح §8§l» §r§cبيانات السطح §8'§f{id}§8'§c غير موجودة..."
+        },
+        "on": {
+            "_prefix": "",
+            "usage": "§3الأسطح §8§l» §r§cاستخدم §8/§c{label} on §8<§cمعرف§8>",
+            "not_found": "§3الأسطح §8§l» §r§cالسطح §8'§f{id}§8'§c غير موجود...",
+            "no_data": "§3الأسطح §8§l» §r§cبيانات السطح §8'§f{id}§8'§c غير موجودة على الخادم...",
+            "already_equipped": "§3الأسطح §8§l» §r§cأنت ترتدي السطح §f{name}§c بالفعل...",
+            "success": "§3الأسطح §8§l» §r§7تم تجهيز السطح §3{name} §7بنجاح!"
+        },
+        "off": {
+            "_prefix": "",
+            "none": "§3الأسطح §8§l» §r§cليس لديك أي سطح فهرس نشط...",
+            "success": "§3الأسطح §8§l» §r§7تمت إزالة سطح الفهرس، تمت استعادة سطحك الأصلي!"
+        }
+    }
+}
