@@ -1,8 +1,7 @@
 {
     "_displayname": "English (US)",
     "_authors": [
-        "M4theuskkj",
-        "lyscamp"
+        "M4theuskkj"
     ],
     "bedwars": {
         "game": {
@@ -180,10 +179,10 @@
     },
     "teampvp": {
         "_prefix": "§aTeamPvP §8§l» §r",
-        "usage": "§7To join use §8/§7{label} enter §8<§7team§8>{n}§aTeamPvP §8§l» §7To leave use §8/§7{label} leave",
+        "usage": "§7To join use §8/§7{label} entrar §8<§7team§8>{n}§aTeamPvP §8§l» §7To leave use §8/§7{label} sair",
         "join": {
             "_prefix": "",
-            "usage": "§aTeamPvP §8§l» §r§cUse §8/§c{label} join §8<§cteam§8>"
+            "usage": "§aTeamPvP §8§l» §r§cUse §8/§c{label} entrar §8<§cteam§8>"
         },
         "teams": "§cAvailable teams§8:§7 {teams}",
         "sameteam": "§cYou cannot attack a player from your own team!"
@@ -207,13 +206,13 @@
             "returning": "§7Returning to lobby in §c{time}s",
             "player_joined": "§c{player} §7joined the match",
             "player_quit": "§c{player} §7left the match",
-            "point_scored": "{player} §7scored the final point",
-            "point_scored_final": "{player} §7scored a point §8(§cEnds point§8)",
+            "point_scored": "{player} §7scored a point",
+            "point_scored_final": "{player} §7scored a point §8(§cFinal Point§8)",
             "killed_by": "§c{victim} §7was killed by §c{killer}",
             "own_point": "§cYou cannot score a point on your own team's side"
         },
         "command": {
-            "usage": "§7To join use §8/§7{label} enter",
+            "usage": "§7To join use §8/§7{label} entrar",
             "no_arenas": "§cNo arenas available at the moment..."
         },
         "teams": {
