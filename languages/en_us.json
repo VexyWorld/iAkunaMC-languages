@@ -334,8 +334,6 @@
             "available": "§7This plot is free! Claim it for §c{price} Akunas §7with /p claim"
         },
         "command": {
-            "name": "plot",
-            "alias": "p",
             "desc": "§7Manage your plots",
             "usage": "§9Plot §8§l» §r§cUse §8/§cplot §8<§chelp§8|§csub-cmd§8> §8[§coptions§8]",
             "unknown": "§9Plot §8§l» §r§cUnknown subcommand, use §8/§cp help to see available commands"
@@ -348,16 +346,12 @@
         "notowner": "§9Plot §8§l» §r§cYou don't own this plot...",
         "confirm": "confirm",
         "help": {
-            "name": "help",
-            "alias": "help",
             "desc": "§7Shows Plot commands",
             "usage": "§8/§cp help §8<§cpage§8>",
             "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §9Plot §8(§f{page}§8/§f{total}§8) §8===-=-=-=-",
             "entry": "§9Plot §8§l» §r§8/§7p {name} §8-§7 {desc}"
         },
         "addhelper": {
-            "name": "addhelper",
-            "alias": "addh",
             "desc": "§7Adds a helper to your plot",
             "usage": "§8/§cp addhelper §8<§cplayer§8>",
             "alreadyone": "§9Plot §8§l» §r§c{player} is already a helper...",
@@ -368,8 +362,6 @@
             "offline": "§cSystem §8§l» §r§cPlayer is offline"
         },
         "removehelper": {
-            "name": "removehelper",
-            "alias": "delh",
             "desc": "§7Removes a helper from your plot",
             "usage": "§8/§cp removehelper §8<§cplayer§8>",
             "notone": "§9Plot §8§l» §r§c{player} is not a helper...",
@@ -379,8 +371,6 @@
             }
         },
         "claim": {
-            "name": "claim",
-            "alias": "c",
             "desc": "§7Claims the plot you are standing in",
             "usage": "§8/§cp claim §8<§cname§8>",
             "yourplot": "§9Plot §8§l» §r§cYou already claimed this plot",
@@ -389,8 +379,6 @@
             "success": "§9Plot §8§l» §r§7Plot claimed successfully!"
         },
         "auto": {
-            "name": "auto",
-            "alias": "a",
             "desc": "§7Teleports to the next free plot",
             "usage": "§8/§cp auto",
             "notplotworld": "§9Plot §8§l» §r§cYou are not in the Plot world...",
@@ -398,16 +386,12 @@
             "noplots": "§9Plot §8§l» §r§7No plots available..."
         },
         "dispose": {
-            "name": "dispose",
-            "alias": "d",
             "desc": "§7Discards your plot",
             "usage": "§8/§cp dispose",
             "confirm": "§9Plot §8§l» §r§7Are you sure you want to discard plot §9{plot}§7? Use §8/§7p dispose confirm",
             "success": "§9Plot §8§l» §r§7Plot discarded successfully!"
         },
         "reset": {
-            "name": "reset",
-            "alias": "r",
             "desc": "§7Resets your plot",
             "usage": "§8/§cp reset",
             "confirm": "§9Plot §8§l» §r§7Are you sure you want to reset plot §9{plot}§7? Use §8/§7p reset confirm",
@@ -415,8 +399,6 @@
             "already_clearing": "§9Plot §8§l» §r§cThis plot is already being reset..."
         },
         "clear": {
-            "name": "clear",
-            "alias": "cl",
             "desc": "§7Clears your plot",
             "usage": "§8/§cp clear",
             "confirm": "§9Plot §8§l» §r§7Are you sure you want to clear plot §9{plot}§7? Use §8/§7p clear confirm",
@@ -424,24 +406,13 @@
             "already_clearing": "§9Plot §8§l» §r§cThis plot is already being cleared..."
         },
         "biome": {
-            "name": "biome",
-            "alias": "b",
             "desc": "§7Changes the biome of your plot",
             "usage": "§8/§cp biome §8[§cbiome§8]",
             "success": "§9Plot §8§l» §r§7Plot biome changed to §9{biome} §7successfully!",
             "invalid": "§9Plot §8§l» §r§cThis biome does not exist...",
             "possible": "§9Plot §8§l» §r§7Available biomes§8:§7 {biomes}"
         },
-        "name": {
-            "name": "name",
-            "alias": "n",
-            "desc": "§7Sets or changes the plot name",
-            "usage": "§8/§cp name §8<§cname§8>",
-            "success": "§9Plot §8§l» §r§7Plot name changed to §7\"§9{name}§7\" successfully!"
-        },
         "home": {
-            "name": "home",
-            "alias": "h",
             "desc": "§7Teleports to one of your plots",
             "usage": "§8/§cp home §8<§cid§8>",
             "noplots": "§9Plot §8§l» §r§cYou have no plots",
@@ -450,8 +421,6 @@
             "error": "§9Plot §8§l» §r§cCould not travel to the plot..."
         },
         "homes": {
-            "name": "homes",
-            "alias": "hs",
             "desc": "§7Shows your plots",
             "usage": "§8/§cp homes",
             "noplots": "§9Plot §8§l» §r§cYou have no plots...",
@@ -459,8 +428,6 @@
             "invalid_page": "§cSystem §8§l» §r§cInvalid page, there are only §c{total} §cpages..."
         },
         "info": {
-            "name": "info",
-            "alias": "i",
             "desc": "§7Shows information about a plot",
             "usage": "§8/§cp info",
             "about": "§9Plot §8§l» §r§7Information about plot §9{plot}",
@@ -473,8 +440,6 @@
             "denied": "§9Plot §8§l» §r§7Denied §8(§f{count}§8):§7 {players}"
         },
         "generate": {
-            "name": "generate",
-            "alias": "gen",
             "desc": "§7Generates a new plot world",
             "usage": "§8/§cp generate §8<§cname§8>",
             "exists": "§9Plot §8§l» §r§cWorld {name} already exists",
@@ -482,8 +447,6 @@
             "error": "§9Plot §8§l» §r§cThe world could not be generated..."
         },
         "give": {
-            "name": "give",
-            "alias": "g",
             "desc": "§7Gives your plot to another player",
             "usage": "§8/§cp give §8<§cplayer§8>",
             "notonline": "§9Plot §8§l» §r§cPlayer is offline",
@@ -497,8 +460,6 @@
             "instructions": "§9Plot §8§l» §r§7Use §a/p accepttransfer §7to accept or §c/p denytransfer §7to decline"
         },
         "warp": {
-            "name": "warp",
-            "alias": "w",
             "desc": "§7Teleports to a plot",
             "usage": "§8/§cp warp §8<§cid§8>",
             "wrongid": "§9Plot §8§l» §r§cThe id must be in X;Z format",
@@ -507,14 +468,10 @@
             "success": "§9Plot §8§l» §r§7You were teleported to plot §9{plot}§7!"
         },
         "resetplots": {
-            "name": "resetplots",
-            "alias": "rsp",
             "desc": "§7Resets all plots of a player",
             "usage": "§8/§cp resetplots §8<§cplayer§8>"
         },
         "rate": {
-            "name": "rate",
-            "alias": "rate",
             "desc": "§7Rates a plot",
             "usage": "§8/§cp rate §8<§cscore - 1 to 5§8>",
             "invalid_range": "§9Plot §8§l» §r§cThe rating must be between 1 and 5...",
@@ -523,8 +480,6 @@
             "success": "§9Plot §8§l» §r§7Rating submitted! Plot average rating§8:§9 {score}"
         },
         "top": {
-            "name": "top",
-            "alias": "best",
             "desc": "§7Shows the top 10 highest rated plots",
             "usage": "§8/§cp top",
             "header": "§8-=-=-=-=== §bTop 10 §8- §9Plots §8===-=-=-=-",
@@ -532,7 +487,6 @@
             "noplots": "§9Plot §8§l» §r§cNo rated plots found..."
         },
         "allow": {
-            "name": "allow",
             "desc": "§7Allows all or a player to enter your plot",
             "usage": "§8/§cp allow §8<§cplayer§8|§c*§8>",
             "everyone": {
@@ -544,7 +498,6 @@
             }
         },
         "deny": {
-            "name": "deny",
             "desc": "§7Blocks all or a player from entering your plot",
             "usage": "§8/§cp deny §8<§cplayer§8|§c*§8>",
             "everyone": {
@@ -556,7 +509,6 @@
             }
         },
         "biomecolor": {
-            "name": "biomecolor",
             "desc": "§7Changes the biome color of your plot",
             "usage": "§8/§cp biomecolor §8<§cr§8,§cg§8,§cb§8>",
             "success": "§9Plot §8§l» §r§7Biome color changed to §9{r}§8,§9{g}§8,§9{b} §7successfully!",
@@ -565,7 +517,6 @@
             "invalid_range": "§9Plot §8§l» §r§cColor values must be between 0 - 255..."
         },
         "accepttransfer": {
-            "name": "accepttransfer",
             "desc": "§7Accepts a plot transfer",
             "usage": "§8/§cp accepttransfer",
             "no_pending": "§cSystem §8§l» §r§cYou have no pending requests...",
@@ -576,7 +527,6 @@
             "notify_sender": "§9Plot §8§l» §r§c{player} §7accepted the plot transfer §9{plot}§7!"
         },
         "denytransfer": {
-            "name": "denytransfer",
             "desc": "§7Denies a plot transfer",
             "usage": "§8/§cp denytransfer",
             "no_pending": "§cSystem §8§l» §r§cYou have no pending requests...",
@@ -1687,8 +1637,8 @@
         "kick": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§cYou have been kicked...{n}§cReason§8:§c {reason}"
     },
     "lbc": {
-        "profile": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§3Profile §8§l» §r§7Your name§8:§3 {name}{n}§3Profile §8§l» §r§7Your rank§8:§3 {tag}{n}§3Profile §8§l» §r§7Your clan§8:§3 {clan}{n}§3Profile §8§l» §r§7About§8:§3 {about}{n}§3Profile §8§l» §r§7Married to§8:§7 {partner}{n}§3Profile §8§l» §r§7Akunas§8:§3 {akunas}{n}§8-=-=-=-=== §9Levels §8===-=-=-=-{n}§3Profile §8§l» §r§7Your level§8:§3 {level}{n}§3Profile §8§l» §r§7Your xp§8:§3 {xp}{n}§3Profile §8§l» §r§7XP needed to level up§8:§3 {xpneeded}{n}§8-=-=-=-=== §fStatistics §8===-=-=-=-{n}§3Profile §8§l» §r§7Your §bSky§fWars wins§8:§3 {winssw}{n}§3Profile §8§l» §r§7Your §cThe§9Bridge wins§8:§3 {winstb}{n}§3Profile §8§l» §r§7Your §eMlg§fBlock wins§8:§3 {winsmlg}{n}§3Profile §8§l» §r§7Your §cBed§fWars wins§8:§3 {winsbw}{n}§3Profile §8§l» §r§7Your §bBlock§fSumo wins§8:§3 {winsbs}{n}§3Profile §8§l» §r§7Your §2Duels wins§8:§3 {winsduels}{n}§3Profile §8§l» §r§7Your Kills§8:§3 {kills}{n}§3Profile §8§l» §r§7Online time§8:§3 {onlineTime}",
-        "profile_other": "§8-=-=-=-=== §fi§cAkuna§9MC §8- §7Profile of §3{name} §8===-=-=-=-{n}§3Profile §8§l» §r§7Rank§8:§3 {tag}{n}§3Profile §8§l» §r§7Last online§8:§3 {lastOnline} §8(§7§3{lastOnlineSince} ago§8){n}§3Profile §8§l» §r§7Clan§8:§3 {clan}{n}§3Profile §8§l» §r§7About§8:§3 {about}{n}§3Profile §8§l» §r§7Married to§8:§7 {partner}{n}§3Profile §8§l» §r§7Akunas§8:§3 {akunas}{n}§8-=-=-=-=== §9Levels §8===-=-=-=-{n}§3Profile §8§l» §r§7Level§8:§3 {level}{n}§3Profile §8§l» §r§7Xp§8:§3 {xp}{n}§3Profile §8§l» §r§7XP needed to level up§8:§3 {xpneeded}{n}§8-=-=-=-=== §fStatistics §8===-=-=-=-{n}§3Profile §8§l» §r§7§bSky§fWars wins§8:§3 {winssw}{n}§3Profile §8§l» §r§7§cThe§9Bridge wins§8:§3 {winstb}{n}§3Profile §8§l» §r§7§eMlg§fBlock wins§8:§3 {winsmlg}{n}§3Profile §8§l» §r§7§cBed§fWars wins§8:§3 {winsbw}{n}§3Profile §8§l» §r§7§bBlock§fSumo wins§8:§3 {winsbs}{n}§3Profile §8§l» §r§7§2Duels wins§8:§3 {winsduels}{n}§3Profile §8§l» §r§7Kills§8:§3 {kills}{n}§3Profile §8§l» §r§7Online time§8:§3 {onlineTime}"
+        "profile": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§3Profile §8§l» §r§7Your name§8:§3 {name}{n}§3Profile §8§l» §r§7Your rank§8:§3 {tag}{n}§3Profile §8§l» §r§7Your clan§8:§3 {clan}{n}§3Profile §8§l» §r§7About§8:§3 {about}{n}§3Profile §8§l» §r§7Married to§8:§7 {partner}{n}§3Profile §8§l» §r§7Akunas§8:§3 {akunas}{n}§8-=-=-=-=== §9Levels §8===-=-=-=-{n}§3Profile §8§l» §r§7Your level§8:§3 {level}{n}§3Profile §8§l» §r§7Your xp§8:§3 {xp}{n}§3Profile §8§l» §r§7XP needed to level up§8:§3 {xpneeded}{n}§8-=-=-=-=== §fStatistics §8===-=-=-=-{n}§3Profile §8§l» §r§7Your §bSky§fWars §7wins§8:§3 {winssw}{n}§3Profile §8§l» §r§7Your §cThe§9Bridge §7wins§8:§3 {winstb}{n}§3Profile §8§l» §r§7Your §eMlg§fBlock §7wins§8:§3 {winsmlg}{n}§3Profile §8§l» §r§7Your §cBed§fWars §7wins§8:§3 {winsbw}{n}§3Profile §8§l» §r§7Your §bBlock§fSumo §7wins§8:§3 {winsbs}{n}§3Profile §8§l» §r§7Your §2Duels §7wins§8:§3 {winsduels}{n}§3Profile §8§l» §r§7Your Kills§8:§3 {kills}{n}§3Profile §8§l» §r§7Online time§8:§3 {onlineTime}",
+        "profile_other": "§8-=-=-=-=== §fi§cAkuna§9MC §8- §7Profile of §3{name} §8===-=-=-=-{n}§3Profile §8§l» §r§7Rank§8:§3 {tag}{n}§3Profile §8§l» §r§7Last online§8:§3 {lastOnline} §8(§7§3{lastOnlineSince} ago§8){n}§3Profile §8§l» §r§7Clan§8:§3 {clan}{n}§3Profile §8§l» §r§7About§8:§3 {about}{n}§3Profile §8§l» §r§7Married to§8:§7 {partner}{n}§3Profile §8§l» §r§7Akunas§8:§3 {akunas}{n}§8-=-=-=-=== §9Levels §8===-=-=-=-{n}§3Profile §8§l» §r§7Level§8:§3 {level}{n}§3Profile §8§l» §r§7Xp§8:§3 {xp}{n}§3Profile §8§l» §r§7XP needed to level up§8:§3 {xpneeded}{n}§8-=-=-=-=== §fStatistics §8===-=-=-=-{n}§3Profile §8§l» §r§7§bSky§fWars §7wins§8:§3 {winssw}{n}§3Profile §8§l» §r§7§cThe§9Bridge §7wins§8:§3 {winstb}{n}§3Profile §8§l» §r§7§eMlg§fBlock §7wins§8:§3 {winsmlg}{n}§3Profile §8§l» §r§7§cBed§fWars §7wins§8:§3 {winsbw}{n}§3Profile §8§l» §r§7§bBlock§fSumo §7wins§8:§3 {winsbs}{n}§3Profile §8§l» §r§7§2Duels §7wins§8:§3 {winsduels}{n}§3Profile §8§l» §r§7Kills§8:§3 {kills}{n}§3Profile §8§l» §r§7Online time§8:§3 {onlineTime}"
     },
     "lobby": {
         "_prefix": "§cSystem §8§l» §r",
@@ -2277,10 +2227,10 @@
         },
         "win": {
             "_prefix": "",
-            "bedwars": "§7Win {target} §cBed§fWars matches",
-            "mlgblock": "§7Win {target} §eMlg§fBlock matches",
+            "bedwars": "§7Win {target} §cBed§fWars §7matches",
+            "mlgblock": "§7Win {target} §eMlg§fBlock §7matches",
             "duels": "§7Win {target} §2Duels",
-            "skywars": "§7Win {target} §bSky§fWars matches",
+            "skywars": "§7Win {target} §bSky§fWars §7matches",
             "thebridge": "§7Win {target} §cThe§9Bridge §7matches",
             "blocksumo": "§7Win {target} §bBlock§fSumo §7matches"
         },
@@ -2327,20 +2277,20 @@
             "kill": {
                 "_prefix": "",
                 "skywars": "§7Be the first to kill in §bSky§fWars §7{target} times",
-                "bedwars": "§7Be the 1st to kill in §cBed§fWars {target} times",
-                "thebridge": "§7Be the 1st to kill in §cThe§9Bridge {target} times",
-                "blocksumo": "§7Be the 1st to kill in §bBlock§fSumo {target} times"
+                "bedwars": "§7Be the 1st to kill in §cBed§fWars §7{target} times",
+                "thebridge": "§7Be the 1st to kill in §cThe§9Bridge §7{target} times",
+                "blocksumo": "§7Be the 1st to kill in §bBlock§fSumo §7{target} times"
             }
         },
         "play": {
             "_prefix": "",
-            "bedwars": "§7Play {target} §cBed§fWars matches",
-            "skywars": "§7Play {target} §bSky§fWars matches"
+            "bedwars": "§7Play {target} §cBed§fWars §7matches",
+            "skywars": "§7Play {target} §bSky§fWars §7matches"
         },
         "buy": {
             "items": {
                 "_prefix": "",
-                "bedwars": "§7Buy {target} items in the §cBed§fWars shop"
+                "bedwars": "§7Buy {target} items in the §cBed§fWars §7shop"
             },
             "upgrades": {
                 "_prefix": "",

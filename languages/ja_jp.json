@@ -389,10 +389,8 @@
             "success": "§7プロットを正常に確保しました！",
             "already_claimed": "§cすでにプロットを持っています...",
             "no_plots": "§c利用可能なプロットがありません...",
-            "alias": "c",
             "alreadyclaimed": "§9Plot §8§l» §r§cThis plot is already claimed by {owner}",
             "desc": "§7Claims the plot you are standing in",
-            "name": "claim",
             "nomoney": "§9Plot §8§l» §r§cYou don't have enough money to claim this plot",
             "usage": "§8/§cp claim §8<§cname§8>",
             "yourplot": "§9Plot §8§l» §r§cYou already claimed this plot"
@@ -404,10 +402,8 @@
         "home": {
             "not_owner": "§cプロットを持っていません...",
             "not_found": "§cプロットが見つかりません...",
-            "alias": "h",
             "desc": "§7Teleports to one of your plots",
             "error": "§9Plot §8§l» §r§cCould not travel to the plot...",
-            "name": "home",
             "noplots": "§9Plot §8§l» §r§cYou have no plots",
             "notexist": "§9Plot §8§l» §r§cYou don't have a plot with id {id}",
             "success": "§9Plot §8§l» §r§7Teleported to plot §9{plot} §7successfully!",
@@ -419,7 +415,6 @@
         "accepttransfer": {
             "desc": "§7Accepts a plot transfer",
             "invalid_data": "§9Plot §8§l» §r§cInvalid plot data...",
-            "name": "accepttransfer",
             "no_pending": "§cSystem §8§l» §r§cYou have no pending requests...",
             "not_exists": "§9Plot §8§l» §r§cThe plot does not exist...",
             "not_owner": "§9Plot §8§l» §r§cThe plot no longer belongs to {owner}...",
@@ -428,13 +423,11 @@
             "usage": "§8/§cp accepttransfer"
         },
         "addhelper": {
-            "alias": "addh",
             "alreadyone": "§9Plot §8§l» §r§c{player} is already a helper...",
             "desc": "§7Adds a helper to your plot",
             "everyone": {
                 "success": "§9Plot §8§l» §r§7All players are now helpers on your plot!"
             },
-            "name": "addhelper",
             "offline": "§cSystem §8§l» §r§cPlayer is offline",
             "success": "§9Plot §8§l» §r§9{player} §7is now a helper on your plot",
             "usage": "§8/§cp addhelper §8<§cplayer§8>"
@@ -447,24 +440,19 @@
             "everyone": {
                 "success": "§9Plot §8§l» §r§7All players can now enter the plot!"
             },
-            "name": "allow",
             "success": "§9Plot §8§l» §r§9{player} §7can now enter the plot!",
             "usage": "§8/§cp allow §8<§cplayer§8|§c*§8>"
         },
         "auto": {
-            "alias": "a",
             "desc": "§7Teleports to the next free plot",
-            "name": "auto",
             "noplots": "§9Plot §8§l» §r§7No plots available...",
             "notplotworld": "§9Plot §8§l» §r§cYou are not in the Plot world...",
             "success": "§9Plot §8§l» §r§7Teleported to free plot §9{x}§8;§9{z} §7successfully!",
             "usage": "§8/§cp auto"
         },
         "biome": {
-            "alias": "b",
             "desc": "§7Changes the biome of your plot",
             "invalid": "§9Plot §8§l» §r§cThis biome does not exist...",
-            "name": "biome",
             "possible": "§9Plot §8§l» §r§7Available biomes§8:§7 {biomes}",
             "success": "§9Plot §8§l» §r§7Plot biome changed to §9{biome} §7successfully!",
             "usage": "§8/§cp biome §8[§cbiome§8]"
@@ -474,23 +462,18 @@
             "invalid_format": "§9Plot §8§l» §r§cUse §8/§cp biomecolor §8<§cr§8,§cg§8,§cb§8>",
             "invalid_range": "§9Plot §8§l» §r§cColor values must be between 0 - 255...",
             "invalid_type": "§9Plot §8§l» §r§cColors must be numbers (rgb format)...",
-            "name": "biomecolor",
             "success": "§9Plot §8§l» §r§7Biome color changed to §9{r}§8,§9{g}§8,§9{b} §7successfully!",
             "usage": "§8/§cp biomecolor §8<§cr§8,§cg§8,§cb§8>"
         },
         "clear": {
-            "alias": "cl",
             "already_clearing": "§9Plot §8§l» §r§cThis plot is already being cleared...",
             "confirm": "§9Plot §8§l» §r§7Are you sure you want to clear plot §9{plot}§7? Use §8/§7p clear confirm",
             "desc": "§7Clears your plot",
-            "name": "clear",
             "success": "§9Plot §8§l» §r§7Plot cleared successfully!",
             "usage": "§8/§cp clear"
         },
         "command": {
-            "alias": "p",
             "desc": "§7Manage your plots",
-            "name": "plot",
             "unknown": "§9Plot §8§l» §r§cUnknown subcommand, use §8/§cp help to see available commands",
             "usage": "§9Plot §8§l» §r§cUse §8/§cplot §8<§chelp§8|§csub-cmd§8> §8[§coptions§8]"
         },
@@ -503,43 +486,35 @@
             "everyone": {
                 "success": "§9Plot §8§l» §r§7All players were blocked!"
             },
-            "name": "deny",
             "success": "§9Plot §8§l» §r§9{player} §7was blocked successfully!",
             "usage": "§8/§cp deny §8<§cplayer§8|§c*§8>"
         },
         "denytransfer": {
             "desc": "§7Denies a plot transfer",
-            "name": "denytransfer",
             "no_pending": "§cSystem §8§l» §r§cYou have no pending requests...",
             "notify_sender": "§9Plot §8§l» §r§9{player} §7declined the plot transfer...",
             "success": "§9Plot §8§l» §r§7You declined the plot transfer...",
             "usage": "§8/§cp denytransfer"
         },
         "dispose": {
-            "alias": "d",
             "confirm": "§9Plot §8§l» §r§7Are you sure you want to discard plot §9{plot}§7? Use §8/§7p dispose confirm",
             "desc": "§7Discards your plot",
-            "name": "dispose",
             "success": "§9Plot §8§l» §r§7Plot discarded successfully!",
             "usage": "§8/§cp dispose"
         },
         "error": "§9Plot §8§l» §r§cOops! Something went wrong...",
         "generate": {
-            "alias": "gen",
             "desc": "§7Generates a new plot world",
             "error": "§9Plot §8§l» §r§cThe world could not be generated...",
             "exists": "§9Plot §8§l» §r§cWorld {name} already exists",
-            "name": "generate",
             "success": "§9Plot §8§l» §r§7Plot world generated successfully: {name}",
             "usage": "§8/§cp generate §8<§cname§8>"
         },
         "give": {
-            "alias": "g",
             "desc": "§7Gives your plot to another player",
             "expired": "§9Plot §8§l» §r§cThe plot transfer request has expired...",
             "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §7Plot §9Transfer§8===-=-=-",
             "instructions": "§9Plot §8§l» §r§7Use §a/p accepttransfer §7to accept or §c/p denytransfer §7to decline",
-            "name": "give",
             "notonline": "§9Plot §8§l» §r§cPlayer is offline",
             "pending_exists": "§cSystem §8§l» §r§cThis player already has a pending request...",
             "request": "§9Plot §8§l» §r§9{player} §7wants to give you plot §9{x}§8;§9{z}",
@@ -549,42 +524,29 @@
             "usage": "§8/§cp give §8<§cplayer§8>"
         },
         "help": {
-            "alias": "help",
             "desc": "§7Shows Plot commands",
             "entry": "§9Plot §8§l» §r§8/§7p {name} §8-§7 {desc}",
             "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §9Plot §8(§f{page}§8/§f{total}§8) §8===-=-=-=-",
-            "name": "help",
             "usage": "§8/§cp help §8<§cpage§8>"
         },
         "homes": {
-            "alias": "hs",
             "desc": "§7Shows your plots",
             "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §9Plots §8(§f{page}§8/§f{total}§8) §8===-=-=-=-",
             "invalid_page": "§cSystem §8§l» §r§cInvalid page, there are only §c{total} §cpages...",
-            "name": "homes",
             "noplots": "§9Plot §8§l» §r§cYou have no plots...",
             "usage": "§8/§cp homes"
         },
         "info": {
             "about": "§9Plot §8§l» §r§7Information about plot §9{plot}",
-            "alias": "i",
             "allowed": "§9Plot §8§l» §r§7Allowed §8(§f{count}§8):§7 {players}",
             "biome": "§9Plot §8§l» §r§7Biome§8:§9 {biome}",
             "denied": "§9Plot §8§l» §r§7Denied §8(§f{count}§8):§7 {players}",
             "desc": "§7Shows information about a plot",
             "helpers": "§9Plot §8§l» §r§7Helpers §8(§f{count}§8):§7 {helpers}",
-            "name": "info",
             "owner": "§9Plot §8§l» §r§7Owner§8:§9 {owner}",
             "plotname": "§9Plot §8§l» §r§7Name§8:§9 {name}",
             "rating": "§9Plot §8§l» §r§7Rating§8:§9 {score} §8(§9{count} §7ratings§8)",
             "usage": "§8/§cp info"
-        },
-        "name": {
-            "alias": "n",
-            "desc": "§7Sets or changes the plot name",
-            "name": "name",
-            "success": "§9Plot §8§l» §r§7Plot name changed to §7\"§9{name}§7\" successfully!",
-            "usage": "§8/§cp name §8<§cname§8>"
         },
         "notinplot": "§9Plot §8§l» §r§cYou are not inside a plot...",
         "notowner": "§9Plot §8§l» §r§cYou don't own this plot...",
@@ -595,57 +557,45 @@
             "rate": "§7Like this plot? Rate it with §8/§7p rate!"
         },
         "rate": {
-            "alias": "rate",
             "desc": "§7Rates a plot",
             "invalid_range": "§9Plot §8§l» §r§cThe rating must be between 1 and 5...",
-            "name": "rate",
             "notify_owner": "§9Plot §8§l» §r §9{player} §7rated your plot §9{x}§8;§9{z} §7with §9{rating} §7stars!",
             "self": "§9Plot §8§l» §r§cYou cannot rate your own plot...",
             "success": "§9Plot §8§l» §r§7Rating submitted! Plot average rating§8:§9 {score}",
             "usage": "§8/§cp rate §8<§cscore - 1 to 5§8>"
         },
         "removehelper": {
-            "alias": "delh",
             "desc": "§7Removes a helper from your plot",
             "everyone": {
                 "success": "§9Plot §8§l» §r§7All players were removed from helpers!"
             },
-            "name": "removehelper",
             "notone": "§9Plot §8§l» §r§c{player} is not a helper...",
             "success": "§9Plot §8§l» §r§9{player} §7was removed from helpers...",
             "usage": "§8/§cp removehelper §8<§cplayer§8>"
         },
         "reset": {
-            "alias": "r",
             "already_clearing": "§9Plot §8§l» §r§cThis plot is already being reset...",
             "confirm": "§9Plot §8§l» §r§7Are you sure you want to reset plot §9{plot}§7? Use §8/§7p reset confirm",
             "desc": "§7Resets your plot",
-            "name": "reset",
             "success": "§9Plot §8§l» §r§7Plot reset successfully!",
             "usage": "§8/§cp reset"
         },
         "resetplots": {
-            "alias": "rsp",
             "desc": "§7Resets all plots of a player",
-            "name": "resetplots",
             "usage": "§8/§cp resetplots §8<§cplayer§8>"
         },
         "subcommand": {
             "usage": "§9Plot §8§l» §r§cUsage: {usage}"
         },
         "top": {
-            "alias": "best",
             "desc": "§7Shows the top 10 highest rated plots",
             "entry": "§9{pos} §8§l» §r§9{x}§8;§9{z} §8-§9 {owner} §8- §9{score} §8(§9{ratings} §7Ratings§8)",
             "header": "§8-=-=-=-=== §bTop 10 §8- §9Plots §8===-=-=-=-",
-            "name": "top",
             "noplots": "§9Plot §8§l» §r§cNo rated plots found...",
             "usage": "§8/§cp top"
         },
         "warp": {
-            "alias": "w",
             "desc": "§7Teleports to a plot",
-            "name": "warp",
             "notinplotworld": "§9Plot §8§l» §r§cYou are not in the Plot world...",
             "success": "§9Plot §8§l» §r§7You were teleported to plot §9{plot}§7!",
             "unclaimed": "§9Plot §8§l» §r§cThis plot doesn't belong to anyone...",

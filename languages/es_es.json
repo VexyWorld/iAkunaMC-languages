@@ -334,8 +334,6 @@
             "available": "§7¡Esta parcela está libre! Reclámala por §c{price} Akunas §7con /p claim"
         },
         "command": {
-            "name": "plot",
-            "alias": "p",
             "desc": "§7Gestiona tus parcelas",
             "usage": "§9Plot §8§l» §r§cUsa §8/§cplot §8<§cayuda§8|§csub-cmd§8> §8[§copciones§8]",
             "unknown": "§9Plot §8§l» §r§cSubcomando desconocido, usa §8/§cp ayuda para ver comandos disponibles"
@@ -348,16 +346,12 @@
         "notowner": "§9Plot §8§l» §r§cNo eres el dueño de esta parcela...",
         "confirm": "confirm",
         "help": {
-            "name": "ayuda",
-            "alias": "help",
             "desc": "§7Muestra los comandos de Plot",
             "usage": "§8/§cp help §8<§cpágina§8>",
             "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §9Plot §8(§f{page}§8/§f{total}§8) §8===-=-=-=-",
             "entry": "§9Plot §8§l» §r§8/§7p {name} §8-§7 {desc}"
         },
         "addhelper": {
-            "name": "addhelper",
-            "alias": "addh",
             "desc": "§7Añade un ayudante a tu parcela",
             "usage": "§8/§cp addhelper §8<§cjugador§8>",
             "alreadyone": "§9Plot §8§l» §r§c{player} ya es un ayudante...",
@@ -368,8 +362,6 @@
             "offline": "§cSistema §8§l» §r§cJugador desconectado"
         },
         "removehelper": {
-            "name": "removehelper",
-            "alias": "delh",
             "desc": "§7Elimina un ayudante de tu parcela",
             "usage": "§8/§cp removehelper §8<§cjugador§8>",
             "notone": "§9Plot §8§l» §r§c{player} no es un ayudante...",
@@ -379,8 +371,6 @@
             }
         },
         "claim": {
-            "name": "claim",
-            "alias": "c",
             "desc": "§7Reclama la parcela en la que estás",
             "usage": "§8/§cp claim §8<§cnombre§8>",
             "yourplot": "§9Plot §8§l» §r§cYa reclamaste esta parcela",
@@ -389,8 +379,6 @@
             "success": "§9Plot §8§l» §r§7¡Parcela reclamada con éxito!"
         },
         "auto": {
-            "name": "auto",
-            "alias": "a",
             "desc": "§7Teleporta a la próxima parcela libre",
             "usage": "§8/§cp auto",
             "notplotworld": "§9Plot §8§l» §r§cNo estás en el mundo Plot...",
@@ -398,16 +386,12 @@
             "noplots": "§9Plot §8§l» §r§7No hay parcelas disponibles..."
         },
         "dispose": {
-            "name": "dispose",
-            "alias": "d",
             "desc": "§7Descarta tu parcela",
             "usage": "§8/§cp dispose",
             "confirm": "§9Plot §8§l» §r§7¿Seguro que deseas descartar la parcela §9{plot}§7? Usa §8/§7p dispose confirm",
             "success": "§9Plot §8§l» §r§7¡Parcela descartada con éxito!"
         },
         "reset": {
-            "name": "reset",
-            "alias": "r",
             "desc": "§7Resetea tu parcela",
             "usage": "§8/§cp reset",
             "confirm": "§9Plot §8§l» §r§7¿Seguro que deseas resetear la parcela §9{plot}§7? Usa §8/§7p reset confirm",
@@ -415,8 +399,6 @@
             "already_clearing": "§9Plot §8§l» §r§cEsta parcela ya está siendo reseteada..."
         },
         "clear": {
-            "name": "clear",
-            "alias": "cl",
             "desc": "§7Limpia tu parcela",
             "usage": "§8/§cp clear",
             "confirm": "§9Plot §8§l» §r§7¿Seguro que deseas limpiar la parcela §9{plot}§7? Usa §8/§7p clear confirm",
@@ -424,24 +406,13 @@
             "already_clearing": "§9Plot §8§l» §r§cEsta parcela ya está siendo limpiada..."
         },
         "biome": {
-            "name": "biome",
-            "alias": "b",
             "desc": "§7Cambia el bioma de tu parcela",
             "usage": "§8/§cp biome §8[§cbioma§8]",
             "success": "§9Plot §8§l» §r§7¡Bioma de la parcela cambiado a §9{biome} §7con éxito!",
             "invalid": "§9Plot §8§l» §r§cEste bioma no existe...",
             "possible": "§9Plot §8§l» §r§7Biomas disponibles§8:§7 {biomes}"
         },
-        "name": {
-            "name": "name",
-            "alias": "n",
-            "desc": "§7Establece o cambia el nombre de la parcela",
-            "usage": "§8/§cp name §8<§cnombre§8>",
-            "success": "§9Plot §8§l» §r§7¡Nombre de la parcela cambiado a §7\"§9{name}§7\" con éxito!"
-        },
         "home": {
-            "name": "home",
-            "alias": "h",
             "desc": "§7Viaja a una de tus parcelas",
             "usage": "§8/§cp home §8<§cid§8>",
             "noplots": "§9Plot §8§l» §r§cNo tienes ninguna parcela",
@@ -450,8 +421,6 @@
             "error": "§9Plot §8§l» §r§cNo se pudo viajar a la parcela..."
         },
         "homes": {
-            "name": "homes",
-            "alias": "hs",
             "desc": "§7Muestra tus parcelas",
             "usage": "§8/§cp homes",
             "noplots": "§9Plot §8§l» §r§cNo tienes ninguna parcela...",
@@ -459,8 +428,6 @@
             "invalid_page": "§cSistema §8§l» §r§cPágina inválida, solo hay §c{total} §cpáginas..."
         },
         "info": {
-            "name": "info",
-            "alias": "i",
             "desc": "§7Muestra información sobre una parcela",
             "usage": "§8/§cp info",
             "about": "§9Plot §8§l» §r§7Información sobre la parcela §9{plot}",
@@ -473,8 +440,6 @@
             "denied": "§9Plot §8§l» §r§7Bloqueados §8(§f{count}§8):§7 {players}"
         },
         "generate": {
-            "name": "generate",
-            "alias": "gen",
             "desc": "§7Genera un nuevo mundo de parcelas",
             "usage": "§8/§cp generate §8<§cnombre§8>",
             "exists": "§9Plot §8§l» §r§cEl mundo {name} ya existe",
@@ -482,8 +447,6 @@
             "error": "§9Plot §8§l» §r§cEl mundo no pudo ser generado..."
         },
         "give": {
-            "name": "give",
-            "alias": "g",
             "desc": "§7Da tu parcela a otro jugador",
             "usage": "§8/§cp give §8<§cjugador§8>",
             "notonline": "§9Plot §8§l» §r§cJugador desconectado",
@@ -497,8 +460,6 @@
             "instructions": "§9Plot §8§l» §r§7Usa §a/p accepttransfer §7para aceptar o §c/p denytransfer §7para rechazar"
         },
         "warp": {
-            "name": "warp",
-            "alias": "w",
             "desc": "§7Teleporta a una parcela",
             "usage": "§8/§cp warp §8<§cid§8>",
             "wrongid": "§9Plot §8§l» §r§cEl id debe estar en formato X;Z",
@@ -507,14 +468,10 @@
             "success": "§9Plot §8§l» §r§7¡Fuiste teleportado a la parcela §9{plot}§7!"
         },
         "resetplots": {
-            "name": "resetplots",
-            "alias": "rsp",
             "desc": "§7Resetea todas las parcelas de un jugador",
             "usage": "§8/§cp resetplots §8<§cjugador§8>"
         },
         "rate": {
-            "name": "rate",
-            "alias": "rate",
             "desc": "§7Valora una parcela",
             "usage": "§8/§cp rate §8<§cnota - 1 a 5§8>",
             "invalid_range": "§9Plot §8§l» §r§cLa nota debe estar entre 1 y 5...",
@@ -523,8 +480,6 @@
             "success": "§9Plot §8§l» §r§7¡Valoración enviada! Nota promedio de la parcela§8:§9 {score}"
         },
         "top": {
-            "name": "top",
-            "alias": "best",
             "desc": "§7Muestra el top 10 de parcelas mejor valoradas",
             "usage": "§8/§cp top",
             "header": "§8-=-=-=-=== §bTop 10 §8- §9Plots §8===-=-=-=-",
@@ -532,7 +487,6 @@
             "noplots": "§9Plot §8§l» §r§cNo se encontraron parcelas valoradas..."
         },
         "allow": {
-            "name": "allow",
             "desc": "§7Permite a todos o a un jugador entrar en tu parcela",
             "usage": "§8/§cp allow §8<§cjugador§8|§c*§8>",
             "everyone": {
@@ -544,7 +498,6 @@
             }
         },
         "deny": {
-            "name": "deny",
             "desc": "§7Bloquea a todos o a un jugador de entrar en tu parcela",
             "usage": "§8/§cp deny §8<§cjugador§8|§c*§8>",
             "everyone": {
@@ -556,7 +509,6 @@
             }
         },
         "biomecolor": {
-            "name": "biomecolor",
             "desc": "§7Cambia el color del bioma de tu parcela",
             "usage": "§8/§cp biomecolor §8<§cr§8,§cg§8,§cb§8>",
             "success": "§9Plot §8§l» §r§7¡Color del bioma cambiado a §9{r}§8,§9{g}§8,§9{b} §7con éxito!",
@@ -565,7 +517,6 @@
             "invalid_range": "§9Plot §8§l» §r§cLos valores de color deben estar entre 0 - 255..."
         },
         "accepttransfer": {
-            "name": "accepttransfer",
             "desc": "§7Acepta una transferencia de parcela",
             "usage": "§8/§cp accepttransfer",
             "no_pending": "§cSistema §8§l» §r§cNo tienes ninguna solicitud pendiente...",
@@ -576,7 +527,6 @@
             "notify_sender": "§9Plot §8§l» §r§c{player} §7aceptó la transferencia de la parcela §9{plot}§7!"
         },
         "denytransfer": {
-            "name": "denytransfer",
             "desc": "§7Rechaza una transferencia de parcela",
             "usage": "§8/§cp denytransfer",
             "no_pending": "§cSistema §8§l» §r§cNo tienes ninguna solicitud pendiente...",
@@ -2323,9 +2273,9 @@
             "kill": {
                 "_prefix": "",
                 "skywars": "§7Sé el 1° en matar en §bSky§fWars §7{target} veces",
-                "bedwars": "§7Sé el 1° en matar en §cBed§fWars {target} veces",
-                "thebridge": "§7Sé el 1° en matar en §cThe§9Bridge {target} veces",
-                "blocksumo": "§7Sé el 1° en matar en §bBlock§fSumo {target} veces"
+                "bedwars": "§7Sé el 1° en matar en §cBed§fWars §7{target} veces",
+                "thebridge": "§7Sé el 1° en matar en §cThe§9Bridge §7{target} veces",
+                "blocksumo": "§7Sé el 1° en matar en §bBlock§fSumo §7{target} veces"
             }
         },
         "play": {
