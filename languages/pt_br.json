@@ -334,8 +334,6 @@
             "available": "§7Essa plot está livre! Você pode adquiri-la por §c{price} Akunas §7usando /p claim"
         },
         "command": {
-            "name": "plot",
-            "alias": "p",
             "desc": "§7Gerencie suas plots",
             "usage": "§9Plot §8§l» §r§cUtilize §8/§cplot §8<§cajuda§8|§csub-cmd§8> §8[§copções§8]",
             "unknown": "§9Plot §8§l» §r§cSubcomando desconhecido, utilize §8/§cp ajuda para ver a lista de comandos disponíveis"
@@ -348,16 +346,12 @@
         "notowner": "§9Plot §8§l» §r§cVocê não possui essa plot...",
         "confirm": "confirm",
         "help": {
-            "name": "ajuda",
-            "alias": "help",
             "desc": "§7Mostra os comandos do Plot",
             "usage": "§8/§cp help §8<§cpágina§8>",
             "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §9Plot §8(§f{page}§8/§f{total}§8) §8===-=-=-=-",
             "entry": "§9Plot §8§l» §r§8/§7p {name} §8-§7 {desc}"
         },
         "addhelper": {
-            "name": "addhelper",
-            "alias": "addh",
             "desc": "§7Adiciona um ajudante à sua plot",
             "usage": "§8/§cp addhelper §8<§cjogador§8>",
             "alreadyone": "§9Plot §8§l» §r§c{player} já é um ajudante...",
@@ -368,8 +362,6 @@
             "offline": "§cSistema §8§l» §r§cJogador offline"
         },
         "removehelper": {
-            "name": "removehelper",
-            "alias": "delh",
             "desc": "§7Remove um ajudante da sua plot",
             "usage": "§8/§cp removehelper §8<§cjogador§8>",
             "notone": "§9Plot §8§l» §r§c{player} não é um ajudante...",
@@ -379,8 +371,6 @@
             }
         },
         "claim": {
-            "name": "claim",
-            "alias": "c",
             "desc": "§7Reivindica a plot em que você está",
             "usage": "§8/§cp claim §8<§cnome§8>",
             "yourplot": "§9Plot §8§l» §r§cVocê já reivindicou essa plot",
@@ -389,8 +379,6 @@
             "success": "§9Plot §8§l» §r§7Você reivindicou a plot com sucesso!"
         },
         "auto": {
-            "name": "auto",
-            "alias": "a",
             "desc": "§7Teleporta para a próxima plot livre",
             "usage": "§8/§cp auto",
             "notplotworld": "§9Plot §8§l» §r§cVocê não está no Plot...",
@@ -398,16 +386,12 @@
             "noplots": "§9Plot §8§l» §r§7Não há plots disponíveis..."
         },
         "dispose": {
-            "name": "dispose",
-            "alias": "d",
             "desc": "§7Descarta a sua plot",
             "usage": "§8/§cp dispose",
             "confirm": "§9Plot §8§l» §r§7Tem certeza de que deseja descartar a plot §9{plot}§7? Se sim, utilize §8/§7p dispose confirm",
             "success": "§9Plot §8§l» §r§7Plot descartada com sucesso!"
         },
         "reset": {
-            "name": "reset",
-            "alias": "r",
             "desc": "§7Reseta a sua plot",
             "usage": "§8/§cp reset",
             "confirm": "§9Plot §8§l» §r§7Tem certeza de que deseja resetar a plot §9{plot}§7? Se sim, utilize §8/§7p reset confirm",
@@ -415,8 +399,6 @@
             "already_clearing": "§9Plot §8§l» §r§cEssa plot já está sendo resetada..."
         },
         "clear": {
-            "name": "clear",
-            "alias": "cl",
             "desc": "§7Limpa a sua plot",
             "usage": "§8/§cp clear",
             "confirm": "§9Plot §8§l» §r§7Tem certeza de que deseja limpar a plot §9{plot}§7? Se sim, utilize §8/§7p clear confirm",
@@ -424,24 +406,13 @@
             "already_clearing": "§9Plot §8§l» §r§cEssa plot já está sendo limpa..."
         },
         "biome": {
-            "name": "biome",
-            "alias": "b",
             "desc": "§7Muda o bioma da sua plot",
             "usage": "§8/§cp biome §8[§cbioma§8]",
             "success": "§9Plot §8§l» §r§7Bioma da plot alterado para §9{biome} §7com sucesso!",
             "invalid": "§9Plot §8§l» §r§cEsse bioma não existe...",
             "possible": "§9Plot §8§l» §r§7Os biomas disponíveis são§8:§7 {biomes}"
         },
-        "name": {
-            "name": "name",
-            "alias": "n",
-            "desc": "§7Define ou altera o nome da plot",
-            "usage": "§8/§cp name §8<§cnome§8>",
-            "success": "§9Plot §8§l» §r§7O nome da plot foi alterado para §7\"§9{name}§7\" com sucesso!"
-        },
         "home": {
-            "name": "home",
-            "alias": "h",
             "desc": "§7Viaje para uma plot sua",
             "usage": "§8/§cp home §8<§cid§8>",
             "noplots": "§9Plot §8§l» §r§cVocê não possui nenhuma plot",
@@ -450,8 +421,6 @@
             "error": "§9Plot §8§l» §r§cNão foi possível viajar para a plot..."
         },
         "homes": {
-            "name": "homes",
-            "alias": "hs",
             "desc": "§7Mostra suas plots",
             "usage": "§8/§cp homes",
             "noplots": "§9Plot §8§l» §r§cVocê não possui nenhuma plot...",
@@ -459,8 +428,6 @@
             "invalid_page": "§cSistema §8§l» §r§cPágina inválida, existem apenas §c{total} §cpáginas..."
         },
         "info": {
-            "name": "info",
-            "alias": "i",
             "desc": "§7Mostra informações sobre uma plot",
             "usage": "§8/§cp info",
             "about": "§9Plot §8§l» §r§7Informações sobre a plot §9{plot}",
@@ -473,8 +440,6 @@
             "denied": "§9Plot §8§l» §r§7Bloqueados §8(§f{count}§8):§7 {players}"
         },
         "generate": {
-            "name": "generate",
-            "alias": "gen",
             "desc": "§7Gera um novo mundo de plots",
             "usage": "§8/§cp generate §8<§cnome§8>",
             "exists": "§9Plot §8§l» §r§cO mundo {name} já existe",
@@ -482,8 +447,6 @@
             "error": "§9Plot §8§l» §r§cO mundo não pôde ser gerado..."
         },
         "give": {
-            "name": "give",
-            "alias": "g",
             "desc": "§7Dá sua plot para outra pessoa",
             "usage": "§8/§cp give §8<§cjogador§8>",
             "notonline": "§9Plot §8§l» §r§cJogador offline",
@@ -497,8 +460,6 @@
             "instructions": "§9Plot §8§l» §r§7Utilize §a/p accepttransfer §7para aceitar §7ou §c/p denytransfer §7para recusar"
         },
         "warp": {
-            "name": "warp",
-            "alias": "w",
             "desc": "§7Teleporta para uma plot",
             "usage": "§8/§cp warp §8<§cid§8>",
             "wrongid": "§9Plot §8§l» §r§cO id deve estar no formato X;Z",
@@ -507,14 +468,10 @@
             "success": "§9Plot §8§l» §r§7Você foi teleportado(a) para a plot §9{plot}§7!"
         },
         "resetplots": {
-            "name": "resetplots",
-            "alias": "rsp",
             "desc": "§7Reseta todas as plots de um jogador",
             "usage": "§8/§cp resetplots §8<§cjogador§8>"
         },
         "rate": {
-            "name": "rate",
-            "alias": "avaliar",
             "desc": "§7Avalia uma plot",
             "usage": "§8/§cp rate §8<§cnota - 1 a 5§8>",
             "invalid_range": "§9Plot §8§l» §r§cA nota deve ser maior que 1 e menor que 5...",
@@ -523,8 +480,6 @@
             "success": "§9Plot §8§l» §r§7Avaliação feita com sucesso! Nota total da plot§8:§9 {score}"
         },
         "top": {
-            "name": "top",
-            "alias": "best",
             "desc": "§7Mostra o top 10 plots com mais avaliações",
             "usage": "§8/§cp top",
             "header": "§8-=-=-=-=== §bTop 10 §8- §9Plots §8===-=-=-=-",
@@ -532,7 +487,6 @@
             "noplots": "§9Plot §8§l» §r§cNenhuma plot com avaliações encontrada..."
         },
         "allow": {
-            "name": "allow",
             "desc": "§7Permite todos ou um jogador entrar na sua plot",
             "usage": "§8/§cp allow §8<§cjogador§8|§c*§8>",
             "everyone": {
@@ -544,7 +498,6 @@
             }
         },
         "deny": {
-            "name": "deny",
             "desc": "§7Bloqueia todos ou um jogador de entrar na sua plot",
             "usage": "§8/§cp deny §8<§cjogador§8|§c*§8>",
             "everyone": {
@@ -556,7 +509,6 @@
             }
         },
         "biomecolor": {
-            "name": "biomecolor",
             "desc": "§7Altera a cor do bioma da sua plot",
             "usage": "§8/§cp biomecolor §8<§cr§8,§cg§8,§cb§8>",
             "success": "§9Plot §8§l» §r§7Cor do bioma alterada para §9{r}§8,§9{g}§8,§9{b} §7com sucesso!",
@@ -565,7 +517,6 @@
             "invalid_range": "§9Plot §8§l» §r§cOs valores de cor devem estar entre 0 - 255..."
         },
         "accepttransfer": {
-            "name": "accepttransfer",
             "desc": "§7Aceita uma transferência de plot",
             "usage": "§8/§cp accepttransfer",
             "no_pending": "§cSistema §8§l» §r§cVocê não possui nenhum pedido pendente...",
@@ -576,7 +527,6 @@
             "notify_sender": "§9Plot §8§l» §r§c{player} §7aceitou a transferência da plot §9{plot}§7!"
         },
         "denytransfer": {
-            "name": "denytransfer",
             "desc": "§7Recusa uma transferência de plot",
             "usage": "§8/§cp denytransfer",
             "no_pending": "§cSistema §8§l» §r§cVocê não possui nenhum pedido pendente...",

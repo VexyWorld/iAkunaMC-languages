@@ -18,6 +18,7 @@
             "custom_no_stats": "§7Cette partie ne compte pas les statistiques, utilisez §8/§7bwcustom config pour voir les paramètres"
         },
         "combat": {
+            "_prefix": "§cBed§fWars §8§l» §r",
             "killed_by": "{victim} §r§7a été tué(e) par {killer}",
             "killed_by_final": "{victim} §r§7a été tué(e) par {killer} §8(§cKill Final§8)",
             "fell_void": "{victim} §r§7est tombé(e) dans le vide",
@@ -333,8 +334,6 @@
             "available": "§7Ce plot est libre! Acquérez-le pour §c{price} Akunas §7avec /p claim"
         },
         "command": {
-            "name": "plot",
-            "alias": "p",
             "desc": "§7Gérez vos plots",
             "usage": "§9Plot §8§l» §r§cUtilisez §8/§cplot §8<§cajuda§8|§csub-cmd§8> §8[§coptions§8]",
             "unknown": "§9Plot §8§l» §r§cSous-commande inconnue, utilisez §8/§cp ajuda pour voir la liste"
@@ -347,16 +346,12 @@
         "notowner": "§9Plot §8§l» §r§cVous ne possédez pas ce plot...",
         "confirm": "confirm",
         "help": {
-            "name": "ajuda",
-            "alias": "help",
             "desc": "§7Affiche les commandes du Plot",
             "usage": "§8/§cp help §8<§cpage§8>",
             "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §9Plot §8(§f{page}§8/§f{total}§8) §8===-=-=-=-",
             "entry": "§9Plot §8§l» §r§8/§7p {name} §8-§7 {desc}"
         },
         "addhelper": {
-            "name": "addhelper",
-            "alias": "addh",
             "desc": "§7Ajoute un assistant à votre plot",
             "usage": "§8/§cp addhelper §8<§cjoueur§8>",
             "alreadyone": "§9Plot §8§l» §r§c{player} est déjà un assistant...",
@@ -367,8 +362,6 @@
             "offline": "§cSystème §8§l» §r§cJoueur hors ligne"
         },
         "removehelper": {
-            "name": "removehelper",
-            "alias": "delh",
             "desc": "§7Retire un assistant de votre plot",
             "usage": "§8/§cp removehelper §8<§cjoueur§8>",
             "notone": "§9Plot §8§l» §r§c{player} n'est pas un assistant...",
@@ -378,8 +371,6 @@
             }
         },
         "claim": {
-            "name": "claim",
-            "alias": "c",
             "desc": "§7Revendique le plot sur lequel vous êtes",
             "usage": "§8/§cp claim §8<§cnom§8>",
             "yourplot": "§9Plot §8§l» §r§cVous avez déjà revendiqué ce plot",
@@ -388,8 +379,6 @@
             "success": "§9Plot §8§l» §r§7Vous avez revendiqué le plot avec succès!"
         },
         "auto": {
-            "name": "auto",
-            "alias": "a",
             "desc": "§7Téléporte vers le prochain plot libre",
             "usage": "§8/§cp auto",
             "notplotworld": "§9Plot §8§l» §r§cVous n'êtes pas dans le Plot...",
@@ -397,16 +386,12 @@
             "noplots": "§9Plot §8§l» §r§7Aucun plot disponible..."
         },
         "dispose": {
-            "name": "dispose",
-            "alias": "d",
             "desc": "§7Abandonne votre plot",
             "usage": "§8/§cp dispose",
             "confirm": "§9Plot §8§l» §r§7Êtes-vous sûr de vouloir abandonner le plot §9{plot}§7? Si oui, utilisez §8/§7p dispose confirm",
             "success": "§9Plot §8§l» §r§7Plot abandonné avec succès!"
         },
         "reset": {
-            "name": "reset",
-            "alias": "r",
             "desc": "§7Réinitialise votre plot",
             "usage": "§8/§cp reset",
             "confirm": "§9Plot §8§l» §r§7Êtes-vous sûr de vouloir réinitialiser le plot §9{plot}§7? Si oui, utilisez §8/§7p reset confirm",
@@ -414,8 +399,6 @@
             "already_clearing": "§9Plot §8§l» §r§cCe plot est déjà en cours de réinitialisation..."
         },
         "clear": {
-            "name": "clear",
-            "alias": "cl",
             "desc": "§7Nettoie votre plot",
             "usage": "§8/§cp clear",
             "confirm": "§9Plot §8§l» §r§7Êtes-vous sûr de vouloir nettoyer le plot §9{plot}§7? Si oui, utilisez §8/§7p clear confirm",
@@ -423,24 +406,13 @@
             "already_clearing": "§9Plot §8§l» §r§cCe plot est déjà en cours de nettoyage..."
         },
         "biome": {
-            "name": "biome",
-            "alias": "b",
             "desc": "§7Change le biome de votre plot",
             "usage": "§8/§cp biome §8[§cbiome§8]",
             "success": "§9Plot §8§l» §r§7Biome du plot changé pour §9{biome} §7avec succès!",
             "invalid": "§9Plot §8§l» §r§cCe biome n'existe pas...",
             "possible": "§9Plot §8§l» §r§7Les biomes disponibles sont§8:§7 {biomes}"
         },
-        "name": {
-            "name": "name",
-            "alias": "n",
-            "desc": "§7Définit ou modifie le nom du plot",
-            "usage": "§8/§cp name §8<§cnom§8>",
-            "success": "§9Plot §8§l» §r§7Le nom du plot a été changé pour §7\"§9{name}§7\" avec succès!"
-        },
         "home": {
-            "name": "home",
-            "alias": "h",
             "desc": "§7Voyage vers un de vos plots",
             "usage": "§8/§cp home §8<§cid§8>",
             "noplots": "§9Plot §8§l» §r§cVous ne possédez aucun plot",
@@ -449,8 +421,6 @@
             "error": "§9Plot §8§l» §r§cImpossible de voyager vers le plot..."
         },
         "homes": {
-            "name": "homes",
-            "alias": "hs",
             "desc": "§7Affiche vos plots",
             "usage": "§8/§cp homes",
             "noplots": "§9Plot §8§l» §r§cVous ne possédez aucun plot...",
@@ -458,8 +428,6 @@
             "invalid_page": "§cSystème §8§l» §r§cPage invalide, il y a seulement §c{total} §cpages..."
         },
         "info": {
-            "name": "info",
-            "alias": "i",
             "desc": "§7Affiche des informations sur un plot",
             "usage": "§8/§cp info",
             "about": "§9Plot §8§l» §r§7Informations sur le plot §9{plot}",
@@ -472,8 +440,6 @@
             "denied": "§9Plot §8§l» §r§7Bloqués §8(§f{count}§8):§7 {players}"
         },
         "generate": {
-            "name": "generate",
-            "alias": "gen",
             "desc": "§7Génère un nouveau monde de plots",
             "usage": "§8/§cp generate §8<§cnom§8>",
             "exists": "§9Plot §8§l» §r§cLe monde {name} existe déjà",
@@ -481,8 +447,6 @@
             "error": "§9Plot §8§l» §r§cLe monde n'a pas pu être généré..."
         },
         "give": {
-            "name": "give",
-            "alias": "g",
             "desc": "§7Donne votre plot à quelqu'un d'autre",
             "usage": "§8/§cp give §8<§cjoueur§8>",
             "notonline": "§9Plot §8§l» §r§cJoueur hors ligne",
@@ -496,8 +460,6 @@
             "instructions": "§9Plot §8§l» §r§7Utilisez §a/p accepttransfer §7pour accepter §7ou §c/p denytransfer §7pour refuser"
         },
         "warp": {
-            "name": "warp",
-            "alias": "w",
             "desc": "§7Téléporte vers un plot",
             "usage": "§8/§cp warp §8<§cid§8>",
             "wrongid": "§9Plot §8§l» §r§cL'id doit être au format X;Z",
@@ -506,14 +468,10 @@
             "success": "§9Plot §8§l» §r§7Vous avez été téléporté(e) vers le plot §9{plot}§7!"
         },
         "resetplots": {
-            "name": "resetplots",
-            "alias": "rsp",
             "desc": "§7Réinitialise tous les plots d'un joueur",
             "usage": "§8/§cp resetplots §8<§cjoueur§8>"
         },
         "rate": {
-            "name": "rate",
-            "alias": "avaliar",
             "desc": "§7Évalue un plot",
             "usage": "§8/§cp rate §8<§cnote - 1 à 5§8>",
             "invalid_range": "§9Plot §8§l» §r§cLa note doit être entre 1 et 5...",
@@ -522,8 +480,6 @@
             "success": "§9Plot §8§l» §r§7Évaluation effectuée avec succès! Note totale du plot§8:§9 {score}"
         },
         "top": {
-            "name": "top",
-            "alias": "best",
             "desc": "§7Affiche le top 10 des plots les mieux notés",
             "usage": "§8/§cp top",
             "header": "§8-=-=-=-=== §bTop 10 §8- §9Plots §8===-=-=-=-",
@@ -531,7 +487,6 @@
             "noplots": "§9Plot §8§l» §r§cAucun plot avec des évaluations trouvé..."
         },
         "allow": {
-            "name": "allow",
             "desc": "§7Autorise tous ou un joueur à entrer dans votre plot",
             "usage": "§8/§cp allow §8<§cjoueur§8|§c*§8>",
             "everyone": {
@@ -543,7 +498,6 @@
             }
         },
         "deny": {
-            "name": "deny",
             "desc": "§7Bloque tous ou un joueur d'entrer dans votre plot",
             "usage": "§8/§cp deny §8<§cjoueur§8|§c*§8>",
             "everyone": {
@@ -555,7 +509,6 @@
             }
         },
         "biomecolor": {
-            "name": "biomecolor",
             "desc": "§7Change la couleur du biome de votre plot",
             "usage": "§8/§cp biomecolor §8<§cr§8,§cg§8,§cb§8>",
             "success": "§9Plot §8§l» §r§7Couleur du biome changée pour §9{r}§8,§9{g}§8,§9{b} §7avec succès!",
@@ -564,7 +517,6 @@
             "invalid_range": "§9Plot §8§l» §r§cLes valeurs de couleur doivent être entre 0 et 255..."
         },
         "accepttransfer": {
-            "name": "accepttransfer",
             "desc": "§7Accepte un transfert de plot",
             "usage": "§8/§cp accepttransfer",
             "no_pending": "§cSystème §8§l» §r§cVous n'avez aucune demande en attente...",
@@ -575,7 +527,6 @@
             "notify_sender": "§9Plot §8§l» §r§c{player} §7a accepté le transfert du plot §9{plot}§7!"
         },
         "denytransfer": {
-            "name": "denytransfer",
             "desc": "§7Refuse un transfert de plot",
             "usage": "§8/§cp denytransfer",
             "no_pending": "§cSystème §8§l» §r§cVous n'avez aucune demande en attente...",
@@ -2334,10 +2285,10 @@
         "first": {
             "kill": {
                 "_prefix": "",
-                "skywars": "§7Soyez le 1er à tuer dans §bSky§fWars {target} fois",
-                "bedwars": "§7Soyez le 1er à tuer dans §cBed§fWars {target} fois",
-                "thebridge": "§7Soyez le 1er à tuer dans §cThe§9Bridge {target} fois",
-                "blocksumo": "§7Soyez le 1er à tuer dans §bBlock§fSumo {target} fois"
+                "skywars": "§7Soyez le 1er à tuer dans §bSky§fWars §7{target} fois",
+                "bedwars": "§7Soyez le 1er à tuer dans §cBed§fWars §7{target} fois",
+                "thebridge": "§7Soyez le 1er à tuer dans §cThe§9Bridge §7{target} fois",
+                "blocksumo": "§7Soyez le 1er à tuer dans §bBlock§fSumo §7{target} fois"
             }
         },
         "play": {

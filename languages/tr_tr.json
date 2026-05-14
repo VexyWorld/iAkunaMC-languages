@@ -334,8 +334,6 @@
             "available": "§7Bu plot boş! §c{price} Akuna §7karşılığında /p claim ile sahiplen"
         },
         "command": {
-            "name": "plot",
-            "alias": "p",
             "desc": "§7Plotlarını yönet",
             "usage": "§9Plot §8§l» §r§cKullanım: §8/§cplot §8<§chelp§8|§calt-kmt§8> §8[§cseçenekler§8]",
             "unknown": "§9Plot §8§l» §r§cBilinmeyen alt komut, mevcut komutları görmek için §8/§cp help kullan"
@@ -348,16 +346,12 @@
         "notowner": "§9Plot §8§l» §r§cBu plotun sahibi değilsin...",
         "confirm": "confirm",
         "help": {
-            "name": "yardım",
-            "alias": "help",
             "desc": "§7Plot komutlarını gösterir",
             "usage": "§8/§cp help §8<§csayfa§8>",
             "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §9Plot §8(§f{page}§8/§f{total}§8) §8===-=-=-=-",
             "entry": "§9Plot §8§l» §r§8/§7p {name} §8-§7 {desc}"
         },
         "addhelper": {
-            "name": "yardımcıekle",
-            "alias": "addh",
             "desc": "§7Plotuna bir yardımcı ekler",
             "usage": "§8/§cp addhelper §8<§coyuncu§8>",
             "alreadyone": "§9Plot §8§l» §r§c{player} zaten bir yardımcı...",
@@ -368,8 +362,6 @@
             "offline": "§cSistem §8§l» §r§cOyuncu çevrimdışı"
         },
         "removehelper": {
-            "name": "yardımcıçıkar",
-            "alias": "delh",
             "desc": "§7Plotundan bir yardımcıyı çıkarır",
             "usage": "§8/§cp removehelper §8<§coyuncu§8>",
             "notone": "§9Plot §8§l» §r§c{player} bir yardımcı değil...",
@@ -379,8 +371,6 @@
             }
         },
         "claim": {
-            "name": "sahiplen",
-            "alias": "c",
             "desc": "§7Bulunduğun plotu sahiplenir",
             "usage": "§8/§cp claim §8<§cad§8>",
             "yourplot": "§9Plot §8§l» §r§cBu plotu zaten sahiplendin",
@@ -389,8 +379,6 @@
             "success": "§9Plot §8§l» §r§7Plot başarıyla sahiplenildi!"
         },
         "auto": {
-            "name": "oto",
-            "alias": "a",
             "desc": "§7Bir sonraki boş plota ışınlanır",
             "usage": "§8/§cp auto",
             "notplotworld": "§9Plot §8§l» §r§cPlot dünyasında değilsin...",
@@ -398,16 +386,12 @@
             "noplots": "§9Plot §8§l» §r§7Mevcut plot yok..."
         },
         "dispose": {
-            "name": "vazgeç",
-            "alias": "d",
             "desc": "§7Plotunu bırakır",
             "usage": "§8/§cp dispose",
             "confirm": "§9Plot §8§l» §r§7Plotu §9{plot}§7 bırakmak istediğine emin misin? Evetse §8/§7p dispose confirm kullan",
             "success": "§9Plot §8§l» §r§7Plot başarıyla bırakıldı!"
         },
         "reset": {
-            "name": "sıfırla",
-            "alias": "r",
             "desc": "§7Plotunu sıfırlar",
             "usage": "§8/§cp reset",
             "confirm": "§9Plot §8§l» §r§7Plotu §9{plot}§7 sıfırlamak istediğine emin misin? Evetse §8/§7p reset confirm kullan",
@@ -415,8 +399,6 @@
             "already_clearing": "§9Plot §8§l» §r§cBu plot zaten sıfırlanıyor..."
         },
         "clear": {
-            "name": "temizle",
-            "alias": "cl",
             "desc": "§7Plotunu temizler",
             "usage": "§8/§cp clear",
             "confirm": "§9Plot §8§l» §r§7Plotu §9{plot}§7 temizlemek istediğine emin misin? Evetse §8/§7p clear confirm kullan",
@@ -424,24 +406,13 @@
             "already_clearing": "§9Plot §8§l» §r§cBu plot zaten temizleniyor..."
         },
         "biome": {
-            "name": "biyom",
-            "alias": "b",
             "desc": "§7Plotunun biyomunu değiştirir",
             "usage": "§8/§cp biome §8[§cbiyom§8]",
             "success": "§9Plot §8§l» §r§7Plot biyomu §9{biome} §7olarak başarıyla değiştirildi!",
             "invalid": "§9Plot §8§l» §r§cBu biyom mevcut değil...",
             "possible": "§9Plot §8§l» §r§7Mevcut biyomlar§8:§7 {biomes}"
         },
-        "name": {
-            "name": "isim",
-            "alias": "n",
-            "desc": "§7Plotun adını ayarlar veya değiştirir",
-            "usage": "§8/§cp name §8<§cad§8>",
-            "success": "§9Plot §8§l» §r§7Plot adı §7\"§9{name}§7\" olarak başarıyla değiştirildi!"
-        },
         "home": {
-            "name": "ev",
-            "alias": "h",
             "desc": "§7Plotlarından birine ışınlanır",
             "usage": "§8/§cp home §8<§cid§8>",
             "noplots": "§9Plot §8§l» §r§cHiç plotun yok",
@@ -450,8 +421,6 @@
             "error": "§9Plot §8§l» §r§cPlota seyahat edilemedi..."
         },
         "homes": {
-            "name": "evler",
-            "alias": "hs",
             "desc": "§7Plotlarını gösterir",
             "usage": "§8/§cp homes",
             "noplots": "§9Plot §8§l» §r§cHiç plotun yok...",
@@ -459,8 +428,6 @@
             "invalid_page": "§cSistem §8§l» §r§cGeçersiz sayfa, yalnızca §c{total} §csayfa var..."
         },
         "info": {
-            "name": "bilgi",
-            "alias": "i",
             "desc": "§7Bir plot hakkında bilgi gösterir",
             "usage": "§8/§cp info",
             "about": "§9Plot §8§l» §r§7Plot §9{plot} hakkında bilgi",
@@ -473,8 +440,6 @@
             "denied": "§9Plot §8§l» §r§7Engellenenler §8(§f{count}§8):§7 {players}"
         },
         "generate": {
-            "name": "oluştur",
-            "alias": "gen",
             "desc": "§7Yeni bir plot dünyası oluşturur",
             "usage": "§8/§cp generate §8<§cad§8>",
             "exists": "§9Plot §8§l» §r§c{name} dünyası zaten var",
@@ -482,8 +447,6 @@
             "error": "§9Plot §8§l» §r§cDünya oluşturulamadı..."
         },
         "give": {
-            "name": "ver",
-            "alias": "g",
             "desc": "§7Plotunu başka bir oyuncuya verir",
             "usage": "§8/§cp give §8<§coyuncu§8>",
             "notonline": "§9Plot §8§l» §r§cOyuncu çevrimdışı",
@@ -497,8 +460,6 @@
             "instructions": "§9Plot §8§l» §r§7Kabul etmek için §a/p accepttransfer, reddetmek için §c/p denytransfer kullan"
         },
         "warp": {
-            "name": "ışınlan",
-            "alias": "w",
             "desc": "§7Bir plota ışınlanır",
             "usage": "§8/§cp warp §8<§cid§8>",
             "wrongid": "§9Plot §8§l» §r§cKimlik X;Z biçiminde olmalıdır",
@@ -507,14 +468,10 @@
             "success": "§9Plot §8§l» §r§7§9{plot}§7 plotuna ışınlandın!"
         },
         "resetplots": {
-            "name": "plotlarısıfırla",
-            "alias": "rsp",
             "desc": "§7Bir oyuncunun tüm plotlarını sıfırlar",
             "usage": "§8/§cp resetplots §8<§coyuncu§8>"
         },
         "rate": {
-            "name": "oyla",
-            "alias": "değerlendir",
             "desc": "§7Bir plotu değerlendirir",
             "usage": "§8/§cp rate §8<§cpuan - 1 ila 5§8>",
             "invalid_range": "§9Plot §8§l» §r§cPuan 1 ile 5 arasında olmalıdır...",
@@ -523,8 +480,6 @@
             "success": "§9Plot §8§l» §r§7Değerlendirme yapıldı! Plot ortalama puanı§8:§9 {score}"
         },
         "top": {
-            "name": "top",
-            "alias": "eniyi",
             "desc": "§7En yüksek puanlı 10 plotu gösterir",
             "usage": "§8/§cp top",
             "header": "§8-=-=-=-=== §bTop 10 §8- §9Plotlar §8===-=-=-=-",
@@ -532,7 +487,6 @@
             "noplots": "§9Plot §8§l» §r§cDeğerlendirilmiş plot bulunamadı..."
         },
         "allow": {
-            "name": "izniver",
             "desc": "§7Herkese veya bir oyuncuya plotuna giriş izni verir",
             "usage": "§8/§cp allow §8<§coyuncu§8|§c*§8>",
             "everyone": {
@@ -544,7 +498,6 @@
             }
         },
         "deny": {
-            "name": "engelle",
             "desc": "§7Herkese veya bir oyuncuya plotuna girişi engeller",
             "usage": "§8/§cp deny §8<§coyuncu§8|§c*§8>",
             "everyone": {
@@ -556,7 +509,6 @@
             }
         },
         "biomecolor": {
-            "name": "biyomrengi",
             "desc": "§7Plotunun biyom rengini değiştirir",
             "usage": "§8/§cp biomecolor §8<§cr§8,§cg§8,§cb§8>",
             "success": "§9Plot §8§l» §r§7Biyom rengi §9{r}§8,§9{g}§8,§9{b} §7olarak başarıyla değiştirildi!",
@@ -565,7 +517,6 @@
             "invalid_range": "§9Plot §8§l» §r§cRenk değerleri 0 - 255 arasında olmalıdır..."
         },
         "accepttransfer": {
-            "name": "transferionayla",
             "desc": "§7Bir plot transferini kabul eder",
             "usage": "§8/§cp accepttransfer",
             "no_pending": "§cSistem §8§l» §r§cBekleyen isteğin yok...",
@@ -576,7 +527,6 @@
             "notify_sender": "§9Plot §8§l» §r§c{player} §7§9{plot}§7 plotunun transferini kabul etti!"
         },
         "denytransfer": {
-            "name": "transferireddet",
             "desc": "§7Bir plot transferini reddeder",
             "usage": "§8/§cp denytransfer",
             "no_pending": "§cSistem §8§l» §r§cBekleyen isteğin yok...",
@@ -1687,8 +1637,8 @@
         "kick": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§cAtıldın...{n}§cSebep§8:§c {reason}"
     },
     "lbc": {
-        "profile": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§3Profil §8§l» §r §7İsmin§8:§3 {name}{n}§3Profil §8§l» §r §7Rütben§8:§3 {tag}{n}§3Profil §8§l» §r §7Klanın§8:§3 {clan}{n}§3Profil §8§l» §r §7Hakkında§8:§3 {about}{n}§3Profil §8§l» §r §7Evli olduğu kişi§8:§7 {partner}{n}§3Profil §8§l» §r §7Akuna§8:§3 {akunas}{n}§8-=-=-=-=== §9Seviyeler §8===-=-=-=-{n}§3Profil §8§l» §r §7Seviyen§8:§3 {level}{n}§3Profil §8§l» §r §7XP'n§8:§3 {xp}{n}§3Profil §8§l» §r §7Seviye atlamak için gereken XP§8:§3 {xpneeded}{n}§8-=-=-=-=== §fİstatistikler §8===-=-=-=-{n}§3Profil §8§l» §r §7§bSky§fWars galibiyetlerin§8:§3 {winssw}{n}§3Profil §8§l» §r §7§cThe§9Bridge galibiyetlerin§8:§3 {winstb}{n}§3Profil §8§l» §r §7§eMlg§fBlock galibiyetlerin§8:§3 {winsmlg}{n}§3Profil §8§l» §r §7§cBed§fWars galibiyetlerin§8:§3 {winsbw}{n}§3Profil §8§l» §r §7§bBlock§fSumo galibiyetlerin§8:§3 {winsbs}{n}§3Profil §8§l» §r §7§2Düello galibiyetlerin§8:§3 {winsduels}{n}§3Profil §8§l» §r §7Öldürmelerin§8:§3 {kills}{n}§3Profil §8§l» §r §7Çevrimiçi süren§8:§3 {onlineTime}",
-        "profile_other": "§8-=-=-=-=== §fi§cAkuna§9MC §8- §7§3{name} Profili §8===-=-=-=-{n}§3Profil §8§l» §r §7Rütbe§8:§3 {tag}{n}§3Profil §8§l» §r §7Son giriş§8:§3 {lastOnline} §8(§7§3{lastOnlineSince} önce§8){n}§3Profil §8§l» §r §7Klan§8:§3 {clan}{n}§3Profil §8§l» §r §7Hakkında§8:§3 {about}{n}§3Profil §8§l» §r §7Evli olduğu kişi§8:§7 {partner}{n}§3Profil §8§l» §r §7Akuna§8:§3 {akunas}{n}§8-=-=-=-=== §9Seviyeler §8===-=-=-=-{n}§3Profil §8§l» §r §7Seviye§8:§3 {level}{n}§3Profil §8§l» §r §7Xp§8:§3 {xp}{n}§3Profil §8§l» §r §7Seviye atlamak için gereken XP§8:§3 {xpneeded}{n}§8-=-=-=-=== §fİstatistikler §8===-=-=-=-{n}§3Profil §8§l» §r §7§bSky§fWars galibiyetleri§8:§3 {winssw}{n}§3Profil §8§l» §r §7§cThe§9Bridge galibiyetleri§8:§3 {winstb}{n}§3Profil §8§l» §r §7§eMlg§fBlock galibiyetleri§8:§3 {winsmlg}{n}§3Profil §8§l» §r §7§cBed§fWars galibiyetleri§8:§3 {winsbw}{n}§3Profil §8§l» §r §7§bBlock§fSumo galibiyetleri§8:§3 {winsbs}{n}§3Profil §8§l» §r §7§2Düello galibiyetleri§8:§3 {winsduels}{n}§3Profil §8§l» §r §7Öldürmeler§8:§3 {kills}{n}§3Profil §8§l» §r §7Çevrimiçi süre§8:§3 {onlineTime}"
+        "profile": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§3Profil §8§l» §r §7İsmin§8:§3 {name}{n}§3Profil §8§l» §r §7Rütben§8:§3 {tag}{n}§3Profil §8§l» §r §7Klanın§8:§3 {clan}{n}§3Profil §8§l» §r §7Hakkında§8:§3 {about}{n}§3Profil §8§l» §r §7Evli olduğu kişi§8:§7 {partner}{n}§3Profil §8§l» §r §7Akuna§8:§3 {akunas}{n}§8-=-=-=-=== §9Seviyeler §8===-=-=-=-{n}§3Profil §8§l» §r §7Seviyen§8:§3 {level}{n}§3Profil §8§l» §r §7XP'n§8:§3 {xp}{n}§3Profil §8§l» §r §7Seviye atlamak için gereken XP§8:§3 {xpneeded}{n}§8-=-=-=-=== §fİstatistikler §8===-=-=-=-{n}§3Profil §8§l» §r §7§bSky§fWars §7galibiyetlerin§8:§3 {winssw}{n}§3Profil §8§l» §r §7§cThe§9Bridge §7galibiyetlerin§8:§3 {winstb}{n}§3Profil §8§l» §r §7§eMlg§fBlock §7galibiyetlerin§8:§3 {winsmlg}{n}§3Profil §8§l» §r §7§cBed§fWars §7galibiyetlerin§8:§3 {winsbw}{n}§3Profil §8§l» §r §7§bBlock§fSumo §7galibiyetlerin§8:§3 {winsbs}{n}§3Profil §8§l» §r §7§2Düello §7galibiyetlerin§8:§3 {winsduels}{n}§3Profil §8§l» §r §7Öldürmelerin§8:§3 {kills}{n}§3Profil §8§l» §r §7Çevrimiçi süren§8:§3 {onlineTime}",
+        "profile_other": "§8-=-=-=-=== §fi§cAkuna§9MC §8- §7§3{name} Profili §8===-=-=-=-{n}§3Profil §8§l» §r §7Rütbe§8:§3 {tag}{n}§3Profil §8§l» §r §7Son giriş§8:§3 {lastOnline} §8(§7§3{lastOnlineSince} önce§8){n}§3Profil §8§l» §r §7Klan§8:§3 {clan}{n}§3Profil §8§l» §r §7Hakkında§8:§3 {about}{n}§3Profil §8§l» §r §7Evli olduğu kişi§8:§7 {partner}{n}§3Profil §8§l» §r §7Akuna§8:§3 {akunas}{n}§8-=-=-=-=== §9Seviyeler §8===-=-=-=-{n}§3Profil §8§l» §r §7Seviye§8:§3 {level}{n}§3Profil §8§l» §r §7Xp§8:§3 {xp}{n}§3Profil §8§l» §r §7Seviye atlamak için gereken XP§8:§3 {xpneeded}{n}§8-=-=-=-=== §fİstatistikler §8===-=-=-=-{n}§3Profil §8§l» §r §7§bSky§fWars §7galibiyetleri§8:§3 {winssw}{n}§3Profil §8§l» §r §7§cThe§9Bridge §7galibiyetleri§8:§3 {winstb}{n}§3Profil §8§l» §r §7§eMlg§fBlock §7galibiyetleri§8:§3 {winsmlg}{n}§3Profil §8§l» §r §7§cBed§fWars §7galibiyetleri§8:§3 {winsbw}{n}§3Profil §8§l» §r §7§bBlock§fSumo §7galibiyetleri§8:§3 {winsbs}{n}§3Profil §8§l» §r §7§2Düello §7galibiyetleri§8:§3 {winsduels}{n}§3Profil §8§l» §r §7Öldürmeler§8:§3 {kills}{n}§3Profil §8§l» §r §7Çevrimiçi süre§8:§3 {onlineTime}"
     },
     "lobby": {
         "_prefix": "§cSistem §8§l» §r",
@@ -2265,24 +2215,24 @@
         "break": {
             "_prefix": "",
             "blocks": "§7{target} blok kır",
-            "beds": "§7§cBed§fWars içinde {target} yatak kır"
+            "beds": "§7§cBed§fWars §7içinde {target} yatak kır"
         },
         "kill": {
             "_prefix": "",
-            "skywars": "§7§bSky§fWars içinde {target} oyuncu öldür",
+            "skywars": "§7§bSky§fWars §7içinde {target} oyuncu öldür",
             "pvp": "§7§bPvP Modlarında {target} oyuncu öldür",
-            "thebridge": "§7§cThe§9Bridge içinde {target} oyuncu öldür",
-            "bedwars": "§7§cBed§fWars içinde {target} oyuncu öldür",
-            "blocksumo": "§7§bBlock§fSumo içinde {target} oyuncu öldür"
+            "thebridge": "§7§cThe§9Bridge §7içinde {target} oyuncu öldür",
+            "bedwars": "§7§cBed§fWars §7içinde {target} oyuncu öldür",
+            "blocksumo": "§7§bBlock§fSumo §7içinde {target} oyuncu öldür"
         },
         "win": {
             "_prefix": "",
-            "bedwars": "§7{target} §cBed§fWars maçı kazan",
-            "mlgblock": "§7{target} §eMlg§fBlock maçı kazan",
-            "duels": "§7{target} §2Düello kazan",
-            "skywars": "§7{target} §bSky§fWars maçı kazan",
-            "thebridge": "§7{target} §cThe§9Bridge maçı kazan",
-            "blocksumo": "§7{target} §bBlock§fSumo maçı kazan"
+            "bedwars": "§7{target} §cBed§fWars §7maçı kazan",
+            "mlgblock": "§7{target} §eMlg§fBlock §7maçı kazan",
+            "duels": "§7{target} §2Düello §7kazan",
+            "skywars": "§7{target} §bSky§fWars §7maçı kazan",
+            "thebridge": "§7{target} §cThe§9Bridge §7maçı kazan",
+            "blocksumo": "§7{target} §bBlock§fSumo §7maçı kazan"
         },
         "place": {
             "_prefix": "",
@@ -2294,7 +2244,7 @@
         },
         "score": {
             "_prefix": "",
-            "thebridge": "§7§cThe§9Bridge içinde {target} sayı yap"
+            "thebridge": "§7§cThe§9Bridge §7içinde {target} sayı yap"
         },
         "mine": {
             "_prefix": "",
@@ -2326,25 +2276,25 @@
         "first": {
             "kill": {
                 "_prefix": "",
-                "skywars": "§7§bSky§fWars içinde {target} kez ilk öldüren ol",
-                "bedwars": "§7§cBed§fWars içinde {target} kez ilk öldüren ol",
-                "thebridge": "§7§cThe§9Bridge içinde {target} kez ilk öldüren ol",
-                "blocksumo": "§7§bBlock§fSumo içinde {target} kez ilk öldüren ol"
+                "skywars": "§7§bSky§fWars §7içinde {target} kez ilk öldüren ol",
+                "bedwars": "§7§cBed§fWars §7içinde {target} kez ilk öldüren ol",
+                "thebridge": "§7§cThe§9Bridge §7içinde {target} kez ilk öldüren ol",
+                "blocksumo": "§7§bBlock§fSumo §7içinde {target} kez ilk öldüren ol"
             }
         },
         "play": {
             "_prefix": "",
-            "bedwars": "§7{target} §cBed§fWars maçı oyna",
-            "skywars": "§7{target} §bSky§fWars maçı oyna"
+            "bedwars": "§7{target} §cBed§fWars §7maçı oyna",
+            "skywars": "§7{target} §bSky§fWars §7maçı oyna"
         },
         "buy": {
             "items": {
                 "_prefix": "",
-                "bedwars": "§7§cBed§fWars dükkanından {target} eşya satın al"
+                "bedwars": "§7§cBed§fWars §7dükkanından {target} eşya satın al"
             },
             "upgrades": {
                 "_prefix": "",
-                "bedwars": "§7§cBed§fWars içinde {target} yükseltme satın al"
+                "bedwars": "§7§cBed§fWars §7içinde {target} yükseltme satın al"
             }
         }
     },

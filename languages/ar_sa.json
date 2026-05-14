@@ -120,7 +120,7 @@
             "show_upgrade_time": "§cBed§fWars §8§l» §r§7وقت الترقية§8: §c{time}",
             "show_forge_speed": "§cBed§fWars §8§l» §r§7سرعة المصهر§8: §c{speed}x",
             "show_diamond_time": "§cBed§fWars §8§l» §r§7§bمدة مولد الألماس§8: §c{time}",
-            "show_emerald_time": "§cBed§fWars §8§l» §r§7§2مدة مولد الزمرد§8: §c{time}",
+            "show_emerald_time": "§cBed§fWars §8§l» §r§7§2مدة §7مولد الزمرد§8: §c{time}",
             "show_forge_level": "§cBed§fWars §8§l» §r§7مستوى المصهر§8: §c{level}",
             "show_generator_level": "§cBed§fWars §8§l» §r§7مستوى المولدات§8: §c{level}",
             "show_beds_destroyed": "§cBed§fWars §8§l» §r§7الأسرة المدمرة§8: {value}",
@@ -334,8 +334,6 @@
             "available": "§7هذا البلوط شاغر! يمكنك الحصول عليه مقابل §c{price} أكونا §7باستخدام /p claim"
         },
         "command": {
-            "name": "plot",
-            "alias": "p",
             "desc": "§7إدارة قطعك",
             "usage": "§9Plot §8§l» §r§cاستخدم §8/§cplot §8<§cمساعده§8|§cأمر-فرعي§8> §8[§cخيارات§8]",
             "unknown": "§9Plot §8§l» §r§cأمر فرعي غير معروف، استخدم §8/§cp help لرؤية الأوامر المتاحة"
@@ -348,16 +346,12 @@
         "notowner": "§9Plot §8§l» §r§cأنت لا تملك هذه القطعة...",
         "confirm": "confirm",
         "help": {
-            "name": "مساعده",
-            "alias": "help",
             "desc": "§7يعرض أوامر البلوط",
             "usage": "§8/§cp help §8<§cصفحة§8>",
             "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §9Plot §8(§f{page}§8/§f{total}§8) §8===-=-=-=-",
             "entry": "§9Plot §8§l» §r§8/§7p {name} §8-§7 {desc}"
         },
         "addhelper": {
-            "name": "addhelper",
-            "alias": "addh",
             "desc": "§7يضيف مساعدًا إلى قطعتك",
             "usage": "§8/§cp addhelper §8<§cلاعب§8>",
             "alreadyone": "§9Plot §8§l» §r§c{player} هو مساعد بالفعل...",
@@ -368,8 +362,6 @@
             "offline": "§cالنظام §8§l» §r§cاللاعب غير متصل"
         },
         "removehelper": {
-            "name": "removehelper",
-            "alias": "delh",
             "desc": "§7يزيل مساعدًا من قطعتك",
             "usage": "§8/§cp removehelper §8<§cلاعب§8>",
             "notone": "§9Plot §8§l» §r§c{player} ليس مساعدًا...",
@@ -379,8 +371,6 @@
             }
         },
         "claim": {
-            "name": "claim",
-            "alias": "c",
             "desc": "§7تستحوذ على القطعة التي تقف فيها",
             "usage": "§8/§cp claim §8<§cاسم§8>",
             "yourplot": "§9Plot §8§l» §r§cلقد استحوذت على هذه القطعة بالفعل",
@@ -389,8 +379,6 @@
             "success": "§9Plot §8§l» §r§7تم الاستحواذ على القطعة بنجاح!"
         },
         "auto": {
-            "name": "auto",
-            "alias": "a",
             "desc": "§7ينتقل إلى أقرب قطعة شاغرة",
             "usage": "§8/§cp auto",
             "notplotworld": "§9Plot §8§l» §r§cأنت لست في عالم البلوطات...",
@@ -398,16 +386,12 @@
             "noplots": "§9Plot §8§l» §r§7لا توجد قطع متاحة..."
         },
         "dispose": {
-            "name": "dispose",
-            "alias": "d",
             "desc": "§7تتخلى عن قطعتك",
             "usage": "§8/§cp dispose",
             "confirm": "§9Plot §8§l» §r§7هل أنت متأكد من التخلي عن القطعة §9{plot}§7؟ استخدم §8/§7p dispose confirm للتأكيد",
             "success": "§9Plot §8§l» §r§7تم التخلي عن القطعة بنجاح!"
         },
         "reset": {
-            "name": "reset",
-            "alias": "r",
             "desc": "§7تعيد ضبط قطعتك",
             "usage": "§8/§cp reset",
             "confirm": "§9Plot §8§l» §r§7هل أنت متأكد من إعادة ضبط القطعة §9{plot}§7؟ استخدم §8/§7p reset confirm للتأكيد",
@@ -415,8 +399,6 @@
             "already_clearing": "§9Plot §8§l» §r§cجاري إعادة ضبط هذه القطعة بالفعل..."
         },
         "clear": {
-            "name": "clear",
-            "alias": "cl",
             "desc": "§7تنظف قطعتك",
             "usage": "§8/§cp clear",
             "confirm": "§9Plot §8§l» §r§7هل أنت متأكد من تنظيف القطعة §9{plot}§7؟ استخدم §8/§7p clear confirm للتأكيد",
@@ -424,24 +406,13 @@
             "already_clearing": "§9Plot §8§l» §r§cجاري تنظيف هذه القطعة بالفعل..."
         },
         "biome": {
-            "name": "biome",
-            "alias": "b",
             "desc": "§7تغير المناخ الحيوي لقطعتك",
             "usage": "§8/§cp biome §8[§cمناخ حيوي§8]",
             "success": "§9Plot §8§l» §r§7تم تغيير المناخ الحيوي إلى §9{biome} §7بنجاح!",
             "invalid": "§9Plot §8§l» §r§cهذا المناخ الحيوي غير موجود...",
             "possible": "§9Plot §8§l» §r§7المناخات الحيوية المتاحة§8:§7 {biomes}"
         },
-        "name": {
-            "name": "name",
-            "alias": "n",
-            "desc": "§7تعيين أو تغيير اسم القطعة",
-            "usage": "§8/§cp name §8<§cاسم§8>",
-            "success": "§9Plot §8§l» §r§7تم تغيير اسم القطعة إلى §7\"§9{name}§7\" بنجاح!"
-        },
         "home": {
-            "name": "home",
-            "alias": "h",
             "desc": "§7ينتقل إلى إحدى قطعك",
             "usage": "§8/§cp home §8<§cمعرف§8>",
             "noplots": "§9Plot §8§l» §r§cليس لديك أي قطع",
@@ -450,8 +421,6 @@
             "error": "§9Plot §8§l» §r§cتعذر السفر إلى القطعة..."
         },
         "homes": {
-            "name": "homes",
-            "alias": "hs",
             "desc": "§7يعرض قطعك",
             "usage": "§8/§cp homes",
             "noplots": "§9Plot §8§l» §r§cليس لديك أي قطع...",
@@ -459,8 +428,6 @@
             "invalid_page": "§cالنظام §8§l» §r§cصفحة غير صالحة، يوجد §c{total} §cصفحات فقط..."
         },
         "info": {
-            "name": "info",
-            "alias": "i",
             "desc": "§7يعرض معلومات عن قطعة",
             "usage": "§8/§cp info",
             "about": "§9Plot §8§l» §r§7معلومات عن القطعة §9{plot}",
@@ -473,8 +440,6 @@
             "denied": "§9Plot §8§l» §r§7محظورون §8(§f{count}§8):§7 {players}"
         },
         "generate": {
-            "name": "generate",
-            "alias": "gen",
             "desc": "§7ينشئ عالم قطع جديدًا",
             "usage": "§8/§cp generate §8<§cاسم§8>",
             "exists": "§9Plot §8§l» §r§cالعالم {name} موجود بالفعل",
@@ -482,8 +447,6 @@
             "error": "§9Plot §8§l» §r§cتعذر إنشاء العالم..."
         },
         "give": {
-            "name": "give",
-            "alias": "g",
             "desc": "§7يهب قطعتك للاعب آخر",
             "usage": "§8/§cp give §8<§cلاعب§8>",
             "notonline": "§9Plot §8§l» §r§cاللاعب غير متصل",
@@ -497,8 +460,6 @@
             "instructions": "§9Plot §8§l» §r§7استخدم §a/p accepttransfer للقبول §7أو §c/p denytransfer للرفض"
         },
         "warp": {
-            "name": "warp",
-            "alias": "w",
             "desc": "§7ينتقل إلى قطعة",
             "usage": "§8/§cp warp §8<§cمعرف§8>",
             "wrongid": "§9Plot §8§l» §r§cيجب أن يكون المعرف بصيغة X;Z",
@@ -507,14 +468,10 @@
             "success": "§9Plot §8§l» §r§7تم نقلك إلى القطعة §9{plot}§7!"
         },
         "resetplots": {
-            "name": "resetplots",
-            "alias": "rsp",
             "desc": "§7تعيد ضبط كل قطع لاعب",
             "usage": "§8/§cp resetplots §8<§cلاعب§8>"
         },
         "rate": {
-            "name": "rate",
-            "alias": "rate",
             "desc": "§7تقيم قطعة",
             "usage": "§8/§cp rate §8<§cالتقييم - 1 إلى 5§8>",
             "invalid_range": "§9Plot §8§l» §r§cيجب أن يكون التقييم بين 1 و 5...",
@@ -523,8 +480,6 @@
             "success": "§9Plot §8§l» §r§7تم تقييم القطعة بنجاح! متوسط التقييم§8:§9 {score}"
         },
         "top": {
-            "name": "top",
-            "alias": "best",
             "desc": "§7يعرض أفضل 10 قطع تقييمًا",
             "usage": "§8/§cp top",
             "header": "§8-=-=-=-=== §bأفضل 10 §8- §9القطع §8===-=-=-=-",
@@ -532,7 +487,6 @@
             "noplots": "§9Plot §8§l» §r§cلم يتم العثور على قطع مقيَّمة..."
         },
         "allow": {
-            "name": "allow",
             "desc": "§7يسمح للجميع أو للاعب بدخول قطعتك",
             "usage": "§8/§cp allow §8<§cلاعب§8|§c*§8>",
             "everyone": {
@@ -544,7 +498,6 @@
             }
         },
         "deny": {
-            "name": "deny",
             "desc": "§7يمنع الجميع أو لاعبًا من دخول قطعتك",
             "usage": "§8/§cp deny §8<§cلاعب§8|§c*§8>",
             "everyone": {
@@ -556,7 +509,6 @@
             }
         },
         "biomecolor": {
-            "name": "biomecolor",
             "desc": "§7يغير لون المناخ لقطعتك",
             "usage": "§8/§cp biomecolor §8<§cr§8,§cg§8,§cb§8>",
             "success": "§9Plot §8§l» §r§7تم تغيير لون المناخ إلى §9{r}§8,§9{g}§8,§9{b} §7بنجاح!",
@@ -565,7 +517,6 @@
             "invalid_range": "§9Plot §8§l» §r§cقيم الألوان يجب أن تكون بين 0 - 255..."
         },
         "accepttransfer": {
-            "name": "accepttransfer",
             "desc": "§7يقبل نقل قطعة",
             "usage": "§8/§cp accepttransfer",
             "no_pending": "§cالنظام §8§l» §r§cليس لديك طلبات معلقة...",
@@ -576,7 +527,6 @@
             "notify_sender": "§9Plot §8§l» §r§c{player} §7قبل نقل القطعة §9{plot}§7!"
         },
         "denytransfer": {
-            "name": "denytransfer",
             "desc": "§7يرفض نقل قطعة",
             "usage": "§8/§cp denytransfer",
             "no_pending": "§cالنظام §8§l» §r§cليس لديك طلبات معلقة...",
@@ -1168,8 +1118,8 @@
         "status": {
             "_prefix": "§2المبارزات §8§l» §r",
             "starting": "§7بدأت المبارزة!",
-            "countdown": "§7يبدأ خلال §2{seconds} ثوانٍ",
-            "ending_countdown": "§7العودة إلى اللوبي خلال §2{seconds} ثوانٍ"
+            "countdown": "§7يبدأ خلال §2{seconds} §7ثوانٍ",
+            "ending_countdown": "§7العودة إلى اللوبي خلال §2{seconds} §7ثوانٍ"
         },
         "item": {
             "play_again": "§8-> §aالعب مجددًا",
@@ -2326,10 +2276,10 @@
         "first": {
             "kill": {
                 "_prefix": "",
-                "skywars": "§7كن أول من يقتل في §bSky§fWars {target} مرات",
-                "bedwars": "§7كن أول من يقتل في §cBed§fWars {target} مرات",
-                "thebridge": "§7كن أول من يقتل في §cThe§9Bridge {target} مرات",
-                "blocksumo": "§7كن أول من يقتل في §bBlock§fSumo {target} مرات"
+                "skywars": "§7كن أول من يقتل في §bSky§fWars §7{target} مرات",
+                "bedwars": "§7كن أول من يقتل في §cBed§fWars §7{target} مرات",
+                "thebridge": "§7كن أول من يقتل في §cThe§9Bridge §7{target} مرات",
+                "blocksumo": "§7كن أول من يقتل في §bBlock§fSumo §7{target} مرات"
             }
         },
         "play": {
