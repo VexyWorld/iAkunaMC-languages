@@ -2029,6 +2029,7 @@
         "lobby_sw": "{right}  §fi§cAkuna§9MC §8§l» §r§bSky§fWars{n}{right}{bar}{n}{right}§8§l» §r§7Vitórias§8:§b {wins}{n}{right}§8§l» §r§7Kills§8:§b {kills}{n}{right}§8§l» §r§7Partidas§8:§b {plays}{n}{right}{bar}{n}{n}{right}§b{address}"
     },
     "server": {
+        "info": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §fInformações §8===-=-=-=-{n}§cSistema §8» §r§7IP§8:§c iakunamc.com{n}§cSistema §8» §r§7Porta§8:§c 19132{n}{n}§cSistema §8» §r§7Formulário para Staff§8:§c https://staff.iakunamc.com{n}§cSistema §8» §r§7Loja§8:§c https://loja.iakunamc.com{n}§cSistema §8» §r§7Discord§8:§c https://discord.iakunamc.com{n}{n}§fY§cT §8» §r§7300 inscritos §a+ §7Vídeo de divulgação{n}§fMini§cYT §8» §r§750 inscritos §a+ §7Vídeo de divulgação{n}§cYT§fmirim §8» §r§70 inscritos §a+ §7Vídeo de divulgação{n}§cObservações §8» §r§7Coloque o IP no título/descrição e divulgue o servidor uma vez por mês para manter sua tag",
         "whitelist": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§cServidor em manutenção{n}§cDiscord: https://discord.iakunamc.com",
         "forcedshutdown": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§cO servidor sofreu um desligamento forçado...",
         "attack": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§cSistema §8§l» §r§7O servidor está sob ataque DDoS no momento...{n}§7Nossa proteção já está mitigando o ataque. As proteções necessárias foram ativadas, mas ainda pode haver lag ou desconexão{n}§cSistema §8§l» §r§7Suporte§8: §chttps://discord.iakunamc.com",
