@@ -2612,5 +2612,19 @@
             "none": "§3スキン §8§l» §r§cスキンがありません...",
             "success": "§3スキン §8§l» §r§7スキンを正常に削除しました"
         }
+    },
+    "discord": {
+        "_prefix": "§9Discord §8§l» §r",
+        "error": {
+            "not_registered": "§cアカウントをリンクするには登録が必要です。"
+        },
+        "link": {
+            "bot_command": "§7Discordサーバーに参加してください §8(§9https://discord.iakunamc.com§8)§7、コマンドチャットに行き §8/§7link {code} を使用してください",
+            "expires": "§7コードは5分で期限切れになります...",
+        },
+        "unlink": {
+            "success": "§7アカウントのリンクが解除されました...",
+            "not_linked": "§cアカウントがリンクされていません..."
+        }
     }
 }

@@ -1131,6 +1131,14 @@
             "joined": "§7You successfully joined the queue for §2{mode} §r§7mode!",
             "left": "§7You left the queue for the §c{mode}§7 mode!",
             "timeout": "§cYou were automatically removed from the queue because no other available players were found..."
+        },
+        "bot": {
+            "_prefix": "§2Duels §8§l» §r",
+            "started": "§7Bot duel started! Difficulty: {difficulty}",
+            "no_arenas": "§cNo arenas available at the moment.",
+            "invalid_kit": "§cInvalid kit: §7{kit}",
+            "already_in_duel": "§cYou are already in a bot duel.",
+            "already_in_any": "§cYou are already in a duel or queue."
         }
     },
     "addbalance": {
@@ -2481,6 +2489,20 @@
             "_prefix": "",
             "none": "§3Skins §8§l» §r§cYou have no catalog skin active...",
             "success": "§3Skins §8§l» §r§7Catalog skin removed, your original skin has been restored!"
+        }
+    },
+    "discord": {
+        "_prefix": "§9Discord §8§l» §r",
+        "error": {
+            "not_registered": "§cYou need to be registered to link your account."
+        },
+        "link": {
+            "bot_command": "§7Join our Discord server §8(§9https://discord.iakunamc.com§8)§7, go to the commands chat and use §8/§7link {code}",
+            "expires": "§7The code expires in 5 minutes...",
+        },
+        "unlink": {
+            "success": "§7Your account has been unlinked successfully...",
+            "not_linked": "§cYour account is not linked..."
         }
     }
 }

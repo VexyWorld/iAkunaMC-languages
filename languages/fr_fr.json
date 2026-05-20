@@ -2491,5 +2491,19 @@
             "none": "§3Skins §8§l» §r§cVous n'avez aucun skin...",
             "success": "§3Skins §8§l» §r§7Skin supprimé avec succès"
         }
+    },
+    "discord": {
+        "_prefix": "§9Discord §8§l» §r",
+        "error": {
+            "not_registered": "§cVous devez être inscrit(e) pour lier votre compte."
+        },
+        "link": {
+            "bot_command": "§7Rejoignez notre serveur Discord §8(§9https://discord.iakunamc.com§8)§7, allez dans le chat de commandes et utilisez §8/§7lier {code}",
+            "expires": "§7Le code expire dans 5 minutes...",
+        },
+        "unlink": {
+            "success": "§7Votre compte a été délié avec succès...",
+            "not_linked": "§cVotre compte n'est pas lié..."
+        }
     }
 }

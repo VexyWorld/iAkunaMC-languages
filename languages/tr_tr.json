@@ -2482,5 +2482,19 @@
             "none": "§3Ciltler §8§l» §r§cAktif bir katalog cildin yok...",
             "success": "§3Ciltler §8§l» §r§7Katalog cildi kaldırıldı, orijinal cildin geri yüklendi!"
         }
+    },
+    "discord": {
+        "_prefix": "§9Discord §8§l» §r",
+        "error": {
+            "not_registered": "§cHesabınızı bağlamak için kayıtlı olmanız gerekir."
+        },
+        "link": {
+            "bot_command": "§7Discord sunucumuza katılın §8(§9https://discord.iakunamc.com§8)§7, komut sohbetine gidin ve §8/§7bağla {code} kullanın",
+            "expires": "§7Kod 5 dakika içinde sona erer...",
+        },
+        "unlink": {
+            "success": "§7Hesabınız başarıyla bağlantısı kesildi...",
+            "not_linked": "§cHesabınız bağlı değil..."
+        }
     }
 }

@@ -1131,6 +1131,14 @@
             "joined": "§7¡Te uniste exitosamente a la cola del modo §2{mode}§r§7!",
             "left": "§7¡Saliste de la cola del modo §c{mode}§7!",
             "timeout": "§cFuiste eliminado(a) de la cola automáticamente, ya que no se encontraron otros jugadores disponibles..."
+        },
+        "bot": {
+            "_prefix": "§2Duelos §8§l» §r",
+            "started": "§7¡Duelo contra bot iniciado! Dificultad: {difficulty}",
+            "no_arenas": "§cNo hay arenas disponibles en este momento.",
+            "invalid_kit": "§cKit inválido: §7{kit}",
+            "already_in_duel": "§cYa estás en un duelo contra bot.",
+            "already_in_any": "§cYa estás en un duelo o cola."
         }
     },
     "addbalance": {
@@ -2477,6 +2485,20 @@
             "_prefix": "",
             "none": "§3Skins §8§l» §r§cNo tienes ninguna skin de catálogo activa...",
             "success": "§3Skins §8§l» §r§7Skin de catálogo eliminada, tu skin original ha sido restaurada!"
+        }
+    },
+    "discord": {
+        "_prefix": "§9Discord §8§l» §r",
+        "error": {
+            "not_registered": "§cNecesitas estar registrado(a) para vincular tu cuenta."
+        },
+        "link": {
+            "bot_command": "§7Únete a nuestro servidor de Discord §8(§9https://discord.iakunamc.com§8)§7, ve al chat de comandos y usa §8/§7vincular {code}",
+            "expires": "§7El código expira en 5 minutos...",
+        },
+        "unlink": {
+            "success": "§7Tu cuenta ha sido desvinculada exitosamente...",
+            "not_linked": "§cTu cuenta no está vinculada..."
         }
     }
 }
