@@ -2493,7 +2493,7 @@
         },
         "link": {
             "bot_command": "§7Entre no nosso servidor do discord §8(§9https://discord.iakunamc.com§8)§7, vá para o chat de comandos e utilize §8/§7vincular {code}",
-            "expires": "§7O código expira em 5 minutos...",
+            "expires": "§7O código expira em 5 minutos..."
         },
         "unlink": {
             "success": "§7Sua conta foi desvinculada com sucesso...",

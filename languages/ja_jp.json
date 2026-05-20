@@ -2620,7 +2620,7 @@
         },
         "link": {
             "bot_command": "§7Discordサーバーに参加してください §8(§9https://discord.iakunamc.com§8)§7、コマンドチャットに行き §8/§7link {code} を使用してください",
-            "expires": "§7コードは5分で期限切れになります...",
+            "expires": "§7コードは5分で期限切れになります..."
         },
         "unlink": {
             "success": "§7アカウントのリンクが解除されました...",

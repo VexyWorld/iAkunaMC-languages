@@ -2619,7 +2619,7 @@
         },
         "link": {
             "bot_command": "§7加入我们的Discord服务器 §8(§9https://discord.iakunamc.com§8)§7，前往命令聊天频道并使用 §8/§7绑定 {code}",
-            "expires": "§7验证码将在5分钟后过期...",
+            "expires": "§7验证码将在5分钟后过期..."
         },
         "unlink": {
             "success": "§7您的账户已成功解绑...",

@@ -2490,7 +2490,7 @@
         },
         "link": {
             "bot_command": "§7Discord sunucumuza katılın §8(§9https://discord.iakunamc.com§8)§7, komut sohbetine gidin ve §8/§7bağla {code} kullanın",
-            "expires": "§7Kod 5 dakika içinde sona erer...",
+            "expires": "§7Kod 5 dakika içinde sona erer..."
         },
         "unlink": {
             "success": "§7Hesabınız başarıyla bağlantısı kesildi...",

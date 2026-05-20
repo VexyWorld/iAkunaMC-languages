@@ -2499,7 +2499,7 @@
         },
         "link": {
             "bot_command": "§7Rejoignez notre serveur Discord §8(§9https://discord.iakunamc.com§8)§7, allez dans le chat de commandes et utilisez §8/§7lier {code}",
-            "expires": "§7Le code expire dans 5 minutes...",
+            "expires": "§7Le code expire dans 5 minutes..."
         },
         "unlink": {
             "success": "§7Votre compte a été délié avec succès...",

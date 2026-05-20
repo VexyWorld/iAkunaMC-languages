@@ -2498,7 +2498,7 @@
         },
         "link": {
             "bot_command": "§7Join our Discord server §8(§9https://discord.iakunamc.com§8)§7, go to the commands chat and use §8/§7link {code}",
-            "expires": "§7The code expires in 5 minutes...",
+            "expires": "§7The code expires in 5 minutes..."
         },
         "unlink": {
             "success": "§7Your account has been unlinked successfully...",
