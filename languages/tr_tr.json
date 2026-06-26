@@ -1925,38 +1925,48 @@
     },
     "pin": {
         "add": {
-            "_prefix": "§3Pin §8§l» §r",
-            "already": "§cZaten bir pinin var...",
-            "success": "§7Pin başarıyla eklendi!",
-            "usage": "§cKullanım: §8/§c{label} add §8<§c4 haneli PIN§8>"
+            "already": "§3Pin §8§l» §r§cZaten bir PIN'iniz var...",
+            "success": "§3Pin §8§l» §r§7PIN başarıyla eklendi!",
+            "usage": "§3Pin §8§l» §r§cKullanım: §8/§c{label} add §8<§c4 haneli PIN§8>",
+            "_prefix": "§3Pin §8§l» §r"
         },
         "change": {
-            "_prefix": "§3Pin §8§l» §r",
-            "incorrect": "§cMevcut pin yanlış...",
-            "success": "§7Pin başarıyla değiştirildi!",
-            "usage": "§cKullanım: §8/§c{label} change §8<§cmevcut pin§8> <§cyeni pin§8>"
+            "incorrect": "§3Pin §8§l» §r§cMevcut PIN yanlış...",
+            "success": "§3Pin §8§l» §r§7PIN başarıyla değiştirildi!",
+            "usage": "§3Pin §8§l» §r§cKullanım: §8/§c{label} change §8<§cmevcut PIN§8> <§cyeni PIN§8>",
+            "_prefix": "§3Pin §8§l» §r"
+        },
+        "discord": {
+            "not_linked": "§3Pin §8§l» §r§cDiscord hesabınız bağlı değil...",
+            "disabled": "§3Pin §8§l» §r§7Discord 2FA başarıyla devre dışı bırakıldı",
+            "enabled": "§3Pin §8§l» §r§7Discord 2FA başarıyla etkinleştirildi"
+        },
+        "email": {
+            "no_email": "§3Pin §8§l» §r§cÖnce bir e-posta bağlamalısınız...",
+            "disabled": "§3Pin §8§l» §r§7E-posta 2FA başarıyla devre dışı bırakıldı",
+            "enabled": "§3Pin §8§l» §r§7E-posta 2FA §b{email} §7için etkinleştirildi!"
         },
         "error": {
-            "incorrect": "§3Pin §8§l» §r§cPin yanlış..."
+            "incorrect": "§3Pin §8§l» §r§cYanlış PIN..."
         },
         "login": {
-            "timeout": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §3Pin §8===-=-=-=-{n}§cGiriş süren doldu...",
+            "timeout": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §3Pin §8===-=-=-=-{n}§cGiriş süreniz doldu...",
             "toomany": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §3Pin §8===-=-=-=-{n}§cÇok fazla kimlik doğrulama denemesi..."
         },
         "need": {
-            "login": "§3Pin §8§l» §r§7Kimlik doğrulamayı tamamlamak için sohbete pinini gir"
+            "login": "§3Pin §8§l» §r§7Kimlik doğrulamayı tamamlamak için PIN'inizi sohbete yazın"
         },
         "remove": {
-            "_prefix": "§3Pin §8§l» §r",
-            "incorrect": "§cPin yanlış...",
-            "nopin": "§cPin'in yok...",
-            "success": "§7Pin başarıyla kaldırıldı!",
-            "usage": "§cKullanım: §8/§c{label} remove §8<§cmevcut pin§8>"
+            "incorrect": "§3Pin §8§l» §r§cYanlış PIN...",
+            "nopin": "§3Pin §8§l» §r§cPIN'iniz yok...",
+            "success": "§3Pin §8§l» §r§7PIN başarıyla kaldırıldı!",
+            "usage": "§cKullanım: §8/§c{label} remove §8<§cmevcut PIN§8>",
+            "_prefix": "§3Pin §8§l» §r"
         },
         "success": {
-            "login": "§3Pin §8§l» §r§7Başarıyla doğrulandın!"
+            "login": "§3Pin §8§l» §r§7Kimlik doğrulama başarılı!"
         },
-        "usage": "§3Pin §8§l» §r§cKullanım: §8/§c{label} §8<§cadd§8|§cremove§8|§cchange§8>"
+        "usage": "§3Pin §8§l» §r§cKullanım: §8/§c{label} §8<§cadd§8|§cremove§8|§cchange§8|§cdiscord§8|§cemail§8>"
     },
     "pluscolor": {
         "_prefix": "§cSistem §8§l» §r",
@@ -2026,7 +2036,8 @@
         "lobby": "{right}     §fi§cAkuna§9MC §8§l» §r§cLobi{n}{right}{bar}{n}{right}§8§l» §r§7İsim§8:§c {name}{n}{right}§8§l» §r§7Çevrimiçi§8:§c {online}§8/§c{onlinemax}{n}{right}§8§l» §r§7Ping§8:§c {ping}ms{n}{right}{bar}{n}{n}{right}§c{address}",
         "plot": "{right}   §fi§cAkuna§9MC §8§l» §r§9Arsa{n}{right}{bar}{n}{right}§8§l» §r§7İsim§8:§9 {name}{n}{right}§8§l» §r§7Oynuyor§8:§9 {onlinemap}{n}{right}§8§l» §r§7Arsalar§8:§9 {plots}{n}{right}{bar}{n}{n}{right}§9{address}",
         "lobby_bw": "{right}  §fi§cAkuna§9MC §8§l» §r§cBed§fWars{n}{right}{bar}{n}{right}§8§l» §r§7Galibiyet§8:§c {wins}{n}{right}§8§l» §r§7Öldürme§8:§c {kills}{n}{right}§8§l» §r§7Son Öldürme§8:§c {final_kills}{n}{right}§8§l» §r§7Kırılan Yatak§8:§c {beds}{n}{right}{bar}{n}{n}{right}§c{address}",
-        "lobby_sw": "{right}  §fi§cAkuna§9MC §8§l» §r§bSky§fWars{n}{right}{bar}{n}{right}§8§l» §r§7Galibiyet§8:§b {wins}{n}{right}§8§l» §r§7Öldürme§8:§b {kills}{n}{right}§8§l» §r§7Maç§8:§b {plays}{n}{right}{bar}{n}{n}{right}§b{address}"
+        "lobby_sw": "{right}  §fi§cAkuna§9MC §8§l» §r§bSky§fWars{n}{right}{bar}{n}{right}§8§l» §r§7Galibiyet§8:§b {wins}{n}{right}§8§l» §r§7Öldürme§8:§b {kills}{n}{right}§8§l» §r§7Maç§8:§b {plays}{n}{right}{bar}{n}{n}{right}§b{address}",
+        "lobby_tntrun": "{right}  §fi§cAkuna§9MC §8§l» §r§6TNT§cRun{n}{right}{bar}{n}{right}§8§l» §r§7Zafer§8:§6 {wins}{n}{right}§8§l» §r§7Ölüm§8:§6 {kills}{n}{right}§8§l» §r§7Oyun§8:§6 {plays}{n}{right}{bar}{n}{n}{right}§6{address}"
     },
     "server": {
         "info": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §fBilgi §8===-=-=-=-{n}§cSistem §8» §r§7IP§8:§c iakunamc.com{n}§cSistem §8» §r§7Port§8:§c 19132{n}{n}§cSistem §8» §r§7Yetkili Başvurusu§8:§c https://staff.iakunamc.com{n}§cSistem §8» §r§7Market§8:§c https://loja.iakunamc.com{n}§cSistem §8» §r§7Discord§8:§c https://discord.iakunamc.com{n}{n}§fY§cT §8» §r§7300 abone §a+ §7Tanıtım videosu{n}§fMini§cYT §8» §r§750 abone §a+ §7Tanıtım videosu{n}§cYT§fmirin §8» §r§70 abone §a+ §7Tanıtım videosu{n}§cNotlar §8» §r§7IP'yi başlığa/açıklamaya koy ve rütbeni korumak için ayda bir sunucuyu tanıt",
@@ -2232,7 +2243,8 @@
             "duels": "§7{target} §2Düello §7kazan",
             "skywars": "§7{target} §bSky§fWars §7maçı kazan",
             "thebridge": "§7{target} §cThe§9Bridge §7maçı kazan",
-            "blocksumo": "§7{target} §bBlock§fSumo §7maçı kazan"
+            "blocksumo": "§7{target} §bBlock§fSumo §7maçı kazan",
+            "tntrun": "TNTRun maçı kazanmak"
         },
         "place": {
             "_prefix": "",
@@ -2495,6 +2507,64 @@
         "unlink": {
             "success": "§7Hesabınız başarıyla bağlantısı kesildi...",
             "not_linked": "§cHesabınız bağlı değil..."
+        }
+    },
+    "email": {
+        "usage": "§bEmail §8§l» §r§cKullanım: §8/§c{label} §8<§clink§8|§cverify§8|§cunlink§8|§c2fa§8>",
+        "link": {
+            "usage": "§bEmail §8§l» §r§cKullanım: §8/§c{label} link §8<§ceposta§8>",
+            "invalid": "§bEmail §8§l» §r§cGeçersiz e-posta...",
+            "already": "§bEmail §8§l» §r§cBu e-posta zaten bağlı...",
+            "sent": "§bEmail §8§l» §r§7Doğrulama kodu §b{email} §7adresine gönderildi!"
+        },
+        "verify": {
+            "usage": "§bEmail §8§l» §r§cKullanım: §8/§c{label} verify §8<§ckod§8>",
+            "expired": "§bEmail §8§l» §r§cDoğrulama kodunun süresi doldu...",
+            "invalid": "§bEmail §8§l» §r§cGeçersiz doğrulama kodu...",
+            "success": "§bEmail §8§l» §r§7E-posta §b{email} §7başarıyla doğrulandı!"
+        },
+        "unlink": {
+            "not_linked": "§bEmail §8§l» §r§cBağlı bir e-postanız yok...",
+            "success": "§bEmail §8§l» §r§7E-posta bağlantısı başarıyla kaldırıldı!"
+        },
+        "2fa": {
+            "no_email": "§bEmail §8§l» §r§cÖnce bir e-posta bağlamalısınız...",
+            "disabled": "§bEmail §8§l» §r§7E-posta 2FA başarıyla devre dışı bırakıldı",
+            "enabled": "§bEmail §8§l» §r§7E-posta 2FA §b{email} §7için etkinleştirildi!"
+        }
+    },
+    "maze": {
+        "usage": "§5Maze §8§l» §r§cKullanım: §8/§c{label} §8<§centrar§8|§cjoin§8|§cplay§8|§csair§8|§cquit§8|§cleave§8>"
+    },
+    "twofa": {
+        "discord": {
+            "need": "§eAuth §8§l» §r§7Kimlik doğrulamak için Discord'da §e{code} §7kodunu kullanın"
+        },
+        "email": {
+            "need": "§eAuth §8§l» §r§7E-postanıza gönderilen kodu §8/§cverify §8<§ckod§8> ile girin"
+        }
+    },
+    "tntrun": {
+        "_prefix": "§cTNT§fRun §8§l» §r",
+        "state": {
+            "waiting": "§cDaha fazla oyuncu bekleniyor...",
+            "starting": "§7§c{start}s§7 içinde başlıyor"
+        },
+        "player": {
+            "join": "§c{player}§7 maça katıldı §8(§f{count}§8/§f{maxPlayers}§8)",
+            "quit": "§c{player}§7 maçtan ayrıldı §8(§f{count}§8/§f{maxPlayers}§8)",
+            "died": "§c{player}§7 öldü §8(§f{alive}§8/§f{maxPlayers}§8)"
+        },
+        "game": {
+            "returning": "§7Lobiye §c{time}s§7 içinde dönülüyor"
+        },
+        "command": {
+            "usage": "§7Katılmak için §8/§7tntrun join§7 kullanın{n}§cTNT§fRun §8§l» §r§7Ayrılmak için §8/§7tntrun leave§7 kullanın",
+            "already_in_arena": "§cZaten bir arenadasın...",
+            "no_space": "§cMüsait arena yok..."
+        },
+        "scoreboard": {
+            "format": "{right}§fi§cAkuna§9MC §8§l» §r§cTNT§fRun{n}{right}{bar}{n}{right}§8§l» §r§7Harita§8:§c {map}{n}{right}§8§l» §r§7Hayatta§8:§c {alive}{n}{right}§8§l» §r§7Süre§8:§c {time}{n}{right}{bar}{n}{n}{right}§ciakunamc.com 19132"
         }
     }
 }

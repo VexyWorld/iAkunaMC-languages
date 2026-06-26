@@ -2054,38 +2054,48 @@
     },
     "pin": {
         "add": {
-            "_prefix": "§3PIN §8§l» §r",
-            "already": "§cすでにPINがあります...",
-            "success": "§7PINを正常に追加しました！",
-            "usage": "§c§8/§c{label} add §8<§c4桁のPIN§8> を使用してください"
+            "already": "§3Pin §8§l» §r§c既にPINが設定されています...",
+            "success": "§3Pin §8§l» §r§7PINが正常に追加されました！",
+            "usage": "§3Pin §8§l» §r§c使用法: §8/§c{label} add §8<§c4桁のPIN§8>",
+            "_prefix": "§3Pin §8§l» §r"
         },
         "change": {
-            "_prefix": "§3PIN §8§l» §r",
-            "incorrect": "§c現在のPINが間違っています...",
-            "success": "§7PINを正常に変更しました！",
-            "usage": "§c§8/§c{label} change §8<§c現在のPIN§8> <§c新しいPIN§8> を使用してください"
+            "incorrect": "§3Pin §8§l» §r§c現在のPINが間違っています...",
+            "success": "§3Pin §8§l» §r§7PINが正常に変更されました！",
+            "usage": "§3Pin §8§l» §r§c使用法: §8/§c{label} change §8<§c現在のPIN§8> <§c新しいPIN§8>",
+            "_prefix": "§3Pin §8§l» §r"
+        },
+        "discord": {
+            "not_linked": "§3Pin §8§l» §r§cDiscordアカウントがリンクされていません...",
+            "disabled": "§3Pin §8§l» §r§7Discord 2FAが無効になりました",
+            "enabled": "§3Pin §8§l» §r§7Discord 2FAが有効になりました"
+        },
+        "email": {
+            "no_email": "§3Pin §8§l» §r§c最初にメールアドレスをリンクしてください...",
+            "disabled": "§3Pin §8§l» §r§7メール2FAが無効になりました",
+            "enabled": "§3Pin §8§l» §r§7メール2FAが §b{email} §7に対して有効になりました！"
         },
         "error": {
-            "incorrect": "§3PIN §8§l» §r§cPINが間違っています..."
+            "incorrect": "§3Pin §8§l» §r§cPINが間違っています..."
         },
         "login": {
-            "timeout": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §3PIN §8===-=-=-=-{n}§cログイン時間が終了しました...",
-            "toomany": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §3PIN §8===-=-=-=-{n}§c認証の試行が多すぎます..."
+            "timeout": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §3Pin §8===-=-=-=-{n}§cログイン時間が切れました...",
+            "toomany": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §3Pin §8===-=-=-=-{n}§c認証試行回数が多すぎます..."
         },
         "need": {
-            "login": "§3PIN §8§l» §r§7認証を完了するためにチャットにPINを入力してください"
+            "login": "§3Pin §8§l» §r§7認証を完了するには、チャットでPINを入力してください"
         },
         "remove": {
-            "_prefix": "§3PIN §8§l» §r",
-            "incorrect": "§cPINが間違っています...",
-            "nopin": "§cPINがありません...",
-            "success": "§7PINを正常に削除しました！",
-            "usage": "§c§8/§c{label} remove §8<§c現在のPIN§8> を使用してください"
+            "incorrect": "§3Pin §8§l» §r§cPINが間違っています...",
+            "nopin": "§3Pin §8§l» §r§cPINが設定されていません...",
+            "success": "§3Pin §8§l» §r§7PINが正常に削除されました！",
+            "usage": "§c使用法: §8/§c{label} remove §8<§c現在のPIN§8>",
+            "_prefix": "§3Pin §8§l» §r"
         },
         "success": {
-            "login": "§3PIN §8§l» §r§7認証に成功しました！"
+            "login": "§3Pin §8§l» §r§7認証に成功しました！"
         },
-        "usage": "§3PIN §8§l» §r§c§8/§c{label} §8<§cadd§8|§cremove§8|§cchange§8> を使用してください"
+        "usage": "§3Pin §8§l» §r§c使用法: §8/§c{label} §8<§cadd§8|§cremove§8|§cchange§8|§cdiscord§8|§cemail§8>"
     },
     "pluscolor": {
         "_prefix": "§cシステム §8§l» §r",
@@ -2155,13 +2165,14 @@
         "lobby": "{right}     §fi§cAkuna§9MC §8§l» §r§cロビー{n}{right}{bar}{n}{right}§8§l» §r§7名前§8:§c {name}{n}{right}§8§l» §r§7オンライン§8:§c {online}§8/§c{onlinemax}{n}{right}§8§l» §r§7PING§8:§c {ping}ms{n}{right}{bar}{n}{n}{right}§c{address}",
         "plot": "{right}   §fi§cAkuna§9MC §8§l» §r§9プロット{n}{right}{bar}{n}{right}§8§l» §r§7名前§8:§9 {name}{n}{right}§8§l» §r§7プレイ中§8:§9 {onlinemap}{n}{right}§8§l» §r§7プロット§8:§9 {plots}{n}{right}{bar}{n}{n}{right}§9{address}",
         "lobby_bw": "{right}  §fi§cAkuna§9MC §8§l» §r§cBed§fWars{n}{right}{bar}{n}{right}§8§l» §r§7勝利§8:§c {wins}{n}{right}§8§l» §r§7キル§8:§c {kills}{n}{right}§8§l» §r§7ファイナルキル§8:§c {final_kills}{n}{right}§8§l» §r§7ベッド破壊§8:§c {beds}{n}{right}{bar}{n}{n}{right}§c{address}",
-        "lobby_sw": "{right}  §fi§cAkuna§9MC §8§l» §r§bSky§fWars{n}{right}{bar}{n}{right}§8§l» §r§7勝利§8:§b {wins}{n}{right}§8§l» §r§7キル§8:§b {kills}{n}{right}§8§l» §r§7試合§8:§b {plays}{n}{right}{bar}{n}{n}{right}§b{address}"
+        "lobby_sw": "{right}  §fi§cAkuna§9MC §8§l» §r§bSky§fWars{n}{right}{bar}{n}{right}§8§l» §r§7勝利§8:§b {wins}{n}{right}§8§l» §r§7キル§8:§b {kills}{n}{right}§8§l» §r§7試合§8:§b {plays}{n}{right}{bar}{n}{n}{right}§b{address}",
+        "lobby_tntrun": "{right}  §fi§cAkuna§9MC §8§l» §r§6TNT§cRun{n}{right}{bar}{n}{right}§8§l» §r§7勝利§8:§6 {wins}{n}{right}§8§l» §r§7キル§8:§6 {kills}{n}{right}§8§l» §r§7プレイ§8:§6 {plays}{n}{right}{bar}{n}{n}{right}§6{address}"
     },
     "server": {
+        "info": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §f情報 §8===-=-=-=-{n}§cシステム §8» §r§7IP§8:§c iakunamc.com{n}§cシステム §8» §r§7ポート§8:§c 19132{n}{n}§cシステム §8» §r§7スタッフ応募§8:§c https://staff.iakunamc.com{n}§cシステム §8» §r§7ストア§8:§c https://loja.iakunamc.com{n}§cシステム §8» §r§7Discord§8:§c https://discord.iakunamc.com{n}{n}§fY§cT §8» §r§7300 登録者 §a+ §7プロモーション動画{n}§fMini§cYT §8» §r§750 登録者 §a+ §7プロモーション動画{n}§cYT§fmirin §8» §r§70 登録者 §a+ §7プロモーション動画{n}§c注意 §8» §r§7タイトル/説明にIPを入れ、月に1回サーバーを宣伝してランクを維持してください",
         "whitelist": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§cサーバーはメンテナンス中です{n}§cDiscord: https://discord.iakunamc.com",
         "forcedshutdown": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§cサーバーが強制シャットダウンされました...",
         "attack": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§cシステム §8§l» §r§7サーバーがDDoS攻撃を受けています...{n}§7プロテクションは既に緩和中です。必要な保護が有効になりましたが、遅延や切断が発生する可能性があります{n}§cシステム §8§l» §r§7サポート§8: §chttps://discord.iakunamc.com",
-        "info": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §f情報 §8===-=-=-=-{n}§cシステム §8» §r§7IP§8:§c iakunamc.com{n}§cシステム §8» §r§7ポート§8:§c 19132{n}{n}§cシステム §8» §r§7スタッフ応募§8:§c https://staff.iakunamc.com{n}§cシステム §8» §r§7ストア§8:§c https://loja.iakunamc.com{n}§cシステム §8» §r§7Discord§8:§c https://discord.iakunamc.com{n}{n}§fY§cT §8» §r§7300 登録者 §a+ §7プロモーション動画{n}§fMini§cYT §8» §r§750 登録者 §a+ §7プロモーション動画{n}§cYT§fmirin §8» §r§70 登録者 §a+ §7プロモーション動画{n}§c注意 §8» §r§7タイトル/説明にIPを入れ、月に1回サーバーを宣伝してランクを維持してください",
         "tps_low": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§cシステム §8§l» §r§7サーバーが過負荷のようです。スタッフが既に対応中です..."
     },
     "sethome": {
@@ -2362,7 +2373,8 @@
             "duels": "§7§2デュエル §7で {target} 試合勝利する",
             "skywars": "§7§bSky§fWars §7で {target} 試合勝利する",
             "thebridge": "§7§cThe§9Bridge §7で {target} 試合勝利する",
-            "blocksumo": "§7§bBlock§fSumo §7で {target} 試合勝利する"
+            "blocksumo": "§7§bBlock§fSumo §7で {target} 試合勝利する",
+            "tntrun": "TNTRunで勝利"
         },
         "place": {
             "_prefix": "",
@@ -2625,6 +2637,64 @@
         "unlink": {
             "success": "§7アカウントのリンクが解除されました...",
             "not_linked": "§cアカウントがリンクされていません..."
+        }
+    },
+    "email": {
+        "usage": "§bEmail §8§l» §r§c使用法: §8/§c{label} §8<§clink§8|§cverify§8|§cunlink§8|§c2fa§8>",
+        "link": {
+            "usage": "§bEmail §8§l» §r§c使用法: §8/§c{label} link §8<§cメールアドレス§8>",
+            "invalid": "§bEmail §8§l» §r§c無効なメールアドレスです...",
+            "already": "§bEmail §8§l» §r§cこのメールアドレスは既にリンクされています...",
+            "sent": "§bEmail §8§l» §r§7確認コードを §b{email} §7に送信しました！"
+        },
+        "verify": {
+            "usage": "§bEmail §8§l» §r§c使用法: §8/§c{label} verify §8<§cコード§8>",
+            "expired": "§bEmail §8§l» §r§c確認コードの有効期限が切れました...",
+            "invalid": "§bEmail §8§l» §r§c無効な確認コードです...",
+            "success": "§bEmail §8§l» §r§7メール §b{email} §7の確認が完了しました！"
+        },
+        "unlink": {
+            "not_linked": "§bEmail §8§l» §r§cメールアドレスがリンクされていません...",
+            "success": "§bEmail §8§l» §r§7メールアドレスのリンクを解除しました！"
+        },
+        "2fa": {
+            "no_email": "§bEmail §8§l» §r§c最初にメールアドレスをリンクしてください...",
+            "disabled": "§bEmail §8§l» §r§7メール2FAが無効になりました",
+            "enabled": "§bEmail §8§l» §r§7メール2FAが §b{email} §7に対して有効になりました！"
+        }
+    },
+    "maze": {
+        "usage": "§5Maze §8§l» §r§c使用法: §8/§c{label} §8<§centrar§8|§cjoin§8|§cplay§8|§csair§8|§cquit§8|§cleave§8>"
+    },
+    "twofa": {
+        "discord": {
+            "need": "§eAuth §8§l» §r§7認証するにはDiscordでコード §e{code} §7を使用してください"
+        },
+        "email": {
+            "need": "§eAuth §8§l» §r§7メールに送信されたコードを §8/§cverify §8<§cコード§8> で入力してください"
+        }
+    },
+    "tntrun": {
+        "_prefix": "§cTNT§fRun §8§l» §r",
+        "state": {
+            "waiting": "§c他のプレイヤーを待っています...",
+            "starting": "§7§c{start}s§7後に開始"
+        },
+        "player": {
+            "join": "§c{player}§7が参加しました §8(§f{count}§8/§f{maxPlayers}§8)",
+            "quit": "§c{player}§7が退出しました §8(§f{count}§8/§f{maxPlayers}§8)",
+            "died": "§c{player}§7が死亡しました §8(§f{alive}§8/§f{maxPlayers}§8)"
+        },
+        "game": {
+            "returning": "§7§c{time}s§7後にロビーに戻ります"
+        },
+        "command": {
+            "usage": "§7参加するには §8/§7tntrun join§7 を使用{n}§cTNT§fRun §8§l» §r§7退出するには §8/§7tntrun leave§7 を使用",
+            "already_in_arena": "§cすでにアリーナにいます...",
+            "no_space": "§c利用可能なアリーナがありません..."
+        },
+        "scoreboard": {
+            "format": "{right}§fi§cAkuna§9MC §8§l» §r§cTNT§fRun{n}{right}{bar}{n}{right}§8§l» §r§7マップ§8:§c {map}{n}{right}§8§l» §r§7生存§8:§c {alive}{n}{right}§8§l» §r§7時間§8:§c {time}{n}{right}{bar}{n}{n}{right}§ciakunamc.com 19132"
         }
     }
 }

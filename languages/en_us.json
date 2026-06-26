@@ -1131,14 +1131,6 @@
             "joined": "§7You successfully joined the queue for §2{mode} §r§7mode!",
             "left": "§7You left the queue for the §c{mode}§7 mode!",
             "timeout": "§cYou were automatically removed from the queue because no other available players were found..."
-        },
-        "bot": {
-            "_prefix": "§2Duels §8§l» §r",
-            "started": "§7Bot duel started! Difficulty: {difficulty}",
-            "no_arenas": "§cNo arenas available at the moment.",
-            "invalid_kit": "§cInvalid kit: §7{kit}",
-            "already_in_duel": "§cYou are already in a bot duel.",
-            "already_in_any": "§cYou are already in a duel or queue."
         }
     },
     "addbalance": {
@@ -1964,7 +1956,17 @@
         "success": {
             "login": "§3Pin §8§l» §r§7Authenticated successfully!"
         },
-        "usage": "§3Pin §8§l» §r§cUse §8/§c{label} §8<§cadd§8|§cremove§8|§cchange§8>"
+        "discord": {
+            "not_linked": "§3Pin §8§l» §r§cYour Discord account is not linked...",
+            "disabled": "§3Pin §8§l» §r§7Discord 2FA disabled successfully",
+            "enabled": "§3Pin §8§l» §r§7Discord 2FA enabled successfully"
+        },
+        "email": {
+            "no_email": "§3Pin §8§l» §r§cYou need to link an email first...",
+            "disabled": "§3Pin §8§l» §r§7Email 2FA disabled successfully",
+            "enabled": "§3Pin §8§l» §r§7Email 2FA enabled for §b{email}§7!"
+        },
+        "usage": "§3Pin §8§l» §r§cUse §8/§c{label} §8<§cadd§8|§cremove§8|§cchange§8|§cdiscord§8|§cemail§8>"
     },
     "pluscolor": {
         "_prefix": "§cSystem §8§l» §r",
@@ -2034,7 +2036,8 @@
         "lobby": "{right}     §fi§cAkuna§9MC §8§l» §r§cLobby{n}{right}{bar}{n}{right}§8§l» §r§7Name§8:§c {name}{n}{right}§8§l» §r§7Online§8:§c {online}§8/§c{onlinemax}{n}{right}§8§l» §r§7Ping§8:§c {ping}ms{n}{right}{bar}{n}{n}{right}§c{address}",
         "plot": "{right}   §fi§cAkuna§9MC §8§l» §r§9Plot{n}{right}{bar}{n}{right}§8§l» §r§7Name§8:§9 {name}{n}{right}§8§l» §r§7Playing§8:§9 {onlinemap}{n}{right}§8§l» §r§7Plots§8:§9 {plots}{n}{right}{bar}{n}{n}{right}§9{address}",
         "lobby_bw": "{right}  §fi§cAkuna§9MC §8§l» §r§cBed§fWars{n}{right}{bar}{n}{right}§8§l» §r§7Wins§8:§c {wins}{n}{right}§8§l» §r§7Kills§8:§c {kills}{n}{right}§8§l» §r§7Final Kills§8:§c {final_kills}{n}{right}§8§l» §r§7Beds Broken§8:§c {beds}{n}{right}{bar}{n}{n}{right}§c{address}",
-        "lobby_sw": "{right}  §fi§cAkuna§9MC §8§l» §r§bSky§fWars{n}{right}{bar}{n}{right}§8§l» §r§7Wins§8:§b {wins}{n}{right}§8§l» §r§7Kills§8:§b {kills}{n}{right}§8§l» §r§7Games§8:§b {plays}{n}{right}{bar}{n}{n}{right}§b{address}"
+        "lobby_sw": "{right}  §fi§cAkuna§9MC §8§l» §r§bSky§fWars{n}{right}{bar}{n}{right}§8§l» §r§7Wins§8:§b {wins}{n}{right}§8§l» §r§7Kills§8:§b {kills}{n}{right}§8§l» §r§7Games§8:§b {plays}{n}{right}{bar}{n}{n}{right}§b{address}",
+        "lobby_tntrun": "{right}  §fi§cAkuna§9MC §8§l» §r§6TNT§cRun{n}{right}{bar}{n}{right}§8§l» §r§7Wins§8:§6 {wins}{n}{right}§8§l» §r§7Kills§8:§6 {kills}{n}{right}§8§l» §r§7Games§8:§6 {plays}{n}{right}{bar}{n}{n}{right}§6{address}"
     },
     "server": {
         "info": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §fInformation §8===-=-=-=-{n}§cSystem §8» §r§7IP§8:§c iakunamc.com{n}§cSystem §8» §r§7Port§8:§c 19132{n}{n}§cSystem §8» §r§7Staff Application§8:§c https://staff.iakunamc.com{n}§cSystem §8» §r§7Store§8:§c https://loja.iakunamc.com{n}§cSystem §8» §r§7Discord§8:§c https://discord.iakunamc.com{n}{n}§fY§cT §8» §r§7300 subscribers §a+ §7Promotional video{n}§fMini§cYT §8» §r§750 subscribers §a+ §7Promotional video{n}§cYT§fmirin §8» §r§70 subscribers §a+ §7Promotional video{n}§cNotes §8» §r§7Put the IP in the title/description and promote the server once a month to maintain your rank",
@@ -2240,7 +2243,8 @@
             "duels": "§7Win {target} §2Duels",
             "skywars": "§7Win {target} §bSky§fWars §7matches",
             "thebridge": "§7Win {target} §cThe§9Bridge §7matches",
-            "blocksumo": "§7Win {target} §bBlock§fSumo §7matches"
+            "blocksumo": "§7Win {target} §bBlock§fSumo §7matches",
+            "tntrun": "Win a TNTRun match"
         },
         "place": {
             "_prefix": "",
@@ -2503,6 +2507,64 @@
         "unlink": {
             "success": "§7Your account has been unlinked successfully...",
             "not_linked": "§cYour account is not linked..."
+        }
+    },
+    "email": {
+        "usage": "§bEmail §8§l» §r§cUse §8/§c{label} §8<§clink§8|§cverify§8|§cunlink§8|§c2fa§8>",
+        "link": {
+            "usage": "§bEmail §8§l» §r§cUse §8/§c{label} link §8<§cemail§8>",
+            "invalid": "§bEmail §8§l» §r§cInvalid email...",
+            "already": "§bEmail §8§l» §r§cThis email is already linked...",
+            "sent": "§bEmail §8§l» §r§7A verification code has been sent to §b{email}§7!"
+        },
+        "verify": {
+            "usage": "§bEmail §8§l» §r§cUse §8/§c{label} verify §8<§ccode§8>",
+            "expired": "§bEmail §8§l» §r§cThe verification code has expired...",
+            "invalid": "§bEmail §8§l» §r§cInvalid verification code...",
+            "success": "§bEmail §8§l» §r§7Email §b{email} §7verified successfully!"
+        },
+        "unlink": {
+            "not_linked": "§bEmail §8§l» §r§cYou don't have an email linked...",
+            "success": "§bEmail §8§l» §r§7Email unlinked successfully!"
+        },
+        "2fa": {
+            "no_email": "§bEmail §8§l» §r§cYou need to link an email first...",
+            "disabled": "§bEmail §8§l» §r§7Email 2FA disabled successfully",
+            "enabled": "§bEmail §8§l» §r§7Email 2FA enabled for §b{email}§7!"
+        }
+    },
+    "maze": {
+        "usage": "§5Maze §8§l» §r§cUse §8/§c{label} §8<§centrar§8|§cjoin§8|§cplay§8|§csair§8|§cquit§8|§cleave§8>"
+    },
+    "twofa": {
+        "discord": {
+            "need": "§eAuth §8§l» §r§7Use the code §e{code} §7in Discord to authenticate"
+        },
+        "email": {
+            "need": "§eAuth §8§l» §r§7Enter the code sent to your email using §8/§cverify §8<§ccode§8>"
+        }
+    },
+    "tntrun": {
+        "_prefix": "§cTNT§fRun §8§l» §r",
+        "state": {
+            "waiting": "§cWaiting for more players...",
+            "starting": "§7Starting in §c{start}s"
+        },
+        "player": {
+            "join": "§c{player} §7joined the match §8(§f{count}§8/§f{maxPlayers}§8)",
+            "quit": "§c{player} §7left the match §8(§f{count}§8/§f{maxPlayers}§8)",
+            "died": "§c{player} §7died §8(§f{alive}§8/§f{maxPlayers}§8)"
+        },
+        "game": {
+            "returning": "§7Returning to lobby in §c{time}s"
+        },
+        "command": {
+            "usage": "§7To join use §8/§7tntrun join{n}§cTNT§fRun §8§l» §r§7To leave use §8/§7tntrun leave",
+            "already_in_arena": "§cYou are already in an arena...",
+            "no_space": "§cNo arenas available..."
+        },
+        "scoreboard": {
+            "format": "{right}§fi§cAkuna§9MC §8§l» §r§cTNT§fRun{n}{right}{bar}{n}{right}§8§l» §r§7Map§8:§c {map}{n}{right}§8§l» §r§7Alive§8:§c {alive}{n}{right}§8§l» §r§7Time§8:§c {time}{n}{right}{bar}{n}{n}{right}§ciakunamc.com 19132"
         }
     }
 }

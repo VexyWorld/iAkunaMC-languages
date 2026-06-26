@@ -1925,38 +1925,48 @@
     },
     "pin": {
         "add": {
-            "_prefix": "§3الرقم السري §8§l» §r",
-            "already": "§cلديك رقم سري بالفعل...",
-            "success": "§7تمت إضافة الرقم السري بنجاح!",
-            "usage": "§cاستخدم §8/§c{label} add §8<§cرقم سري من 4 أرقام§8>"
+            "already": "§3Pin §8§l» §r§cلديك بالفعل رقم PIN...",
+            "success": "§3Pin §8§l» §r§7تمت إضافة PIN بنجاح!",
+            "usage": "§3Pin §8§l» §r§cاستخدم §8/§c{label} add §8<§cرمز PIN المكون من 4 أرقام§8>",
+            "_prefix": "§3Pin §8§l» §r"
         },
         "change": {
-            "_prefix": "§3الرقم السري §8§l» §r",
-            "incorrect": "§cالرقم السري الحالي غير صحيح...",
-            "success": "§7تم تغيير الرقم السري بنجاح!",
-            "usage": "§cاستخدم §8/§c{label} change §8<§cالرقم السري الحالي§8> <§cالرقم السري الجديد§8>"
+            "incorrect": "§3Pin §8§l» §r§cرمز PIN الحالي غير صحيح...",
+            "success": "§3Pin §8§l» §r§7تم تغيير PIN بنجاح!",
+            "usage": "§3Pin §8§l» §r§cاستخدم §8/§c{label} change §8<§cPIN الحالي§8> <§cPIN الجديد§8>",
+            "_prefix": "§3Pin §8§l» §r"
+        },
+        "discord": {
+            "not_linked": "§3Pin §8§l» §r§cحساب Discord الخاص بك غير مرتبط...",
+            "disabled": "§3Pin §8§l» §r§7تم تعطيل المصادقة الثنائية عبر Discord بنجاح",
+            "enabled": "§3Pin §8§l» §r§7تم تفعيل المصادقة الثنائية عبر Discord بنجاح"
+        },
+        "email": {
+            "no_email": "§3Pin §8§l» §r§cيجب عليك ربط بريد إلكتروني أولاً...",
+            "disabled": "§3Pin §8§l» §r§7تم تعطيل المصادقة الثنائية عبر البريد الإلكتروني بنجاح",
+            "enabled": "§3Pin §8§l» §r§7تم تفعيل المصادقة الثنائية عبر البريد الإلكتروني لـ §b{email}§7!"
         },
         "error": {
-            "incorrect": "§3الرقم السري §8§l» §r§cالرقم السري غير صحيح..."
+            "incorrect": "§3Pin §8§l» §r§cرمز PIN غير صحيح..."
         },
         "login": {
-            "timeout": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §3الرقم السري §8===-=-=-=-{n}§cانتهت مهلة تسجيل الدخول...",
-            "toomany": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §3الرقم السري §8===-=-=-=-{n}§cمحاولات توثيق كثيرة جدًا..."
+            "timeout": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §3Pin §8===-=-=-=-{n}§cانتهت مهلة تسجيل الدخول...",
+            "toomany": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §3Pin §8===-=-=-=-{n}§cمحاولات مصادقة كثيرة جداً..."
         },
         "need": {
-            "login": "§3الرقم السري §8§l» §r§7أدخل رقمك السري في الدردشة لإكمال التوثيق"
+            "login": "§3Pin §8§l» §r§7أدخل رقم PIN الخاص بك في الدردشة لإكمال المصادقة"
         },
         "remove": {
-            "_prefix": "§3الرقم السري §8§l» §r",
-            "incorrect": "§cالرقم السري غير صحيح...",
-            "nopin": "§cليس لديك رقم سري...",
-            "success": "§7تمت إزالة الرقم السري بنجاح!",
-            "usage": "§cاستخدم §8/§c{label} remove §8<§cالرقم السري الحالي§8>"
+            "incorrect": "§3Pin §8§l» §r§cرمز PIN غير صحيح...",
+            "nopin": "§3Pin §8§l» §r§cليس لديك رقم PIN...",
+            "success": "§3Pin §8§l» §r§7تمت إزالة PIN بنجاح!",
+            "usage": "§cاستخدم §8/§c{label} remove §8<§cPIN الحالي§8>",
+            "_prefix": "§3Pin §8§l» §r"
         },
         "success": {
-            "login": "§3الرقم السري §8§l» §r§7تم التوثيق بنجاح!"
+            "login": "§3Pin §8§l» §r§7تم المصادقة بنجاح!"
         },
-        "usage": "§3الرقم السري §8§l» §r§cاستخدم §8/§c{label} §8<§cadd§8|§cremove§8|§cchange§8>"
+        "usage": "§3Pin §8§l» §r§cاستخدم §8/§c{label} §8<§cadd§8|§cremove§8|§cchange§8|§cdiscord§8|§cemail§8>"
     },
     "pluscolor": {
         "_prefix": "§cالنظام §8§l» §r",
@@ -2026,7 +2036,8 @@
         "lobby": "{right}     §fi§cAkuna§9MC §8§l» §r§cاللوبي{n}{right}{bar}{n}{right}§8§l» §r§7الاسم§8:§c {name}{n}{right}§8§l» §r§7المتصلون§8:§c {online}§8/§c{onlinemax}{n}{right}§8§l» §r§7البنج§8:§c {ping}ms{n}{right}{bar}{n}{n}{right}§c{address}",
         "plot": "{right}   §fi§cAkuna§9MC §8§l» §r§9القطعة{n}{right}{bar}{n}{right}§8§l» §r§7الاسم§8:§9 {name}{n}{right}§8§l» §r§7يلعب§8:§9 {onlinemap}{n}{right}§8§l» §r§7القطع§8:§9 {plots}{n}{right}{bar}{n}{n}{right}§9{address}",
         "lobby_bw": "{right}  §fi§cAkuna§9MC §8§l» §r§cBed§fWars{n}{right}{bar}{n}{right}§8§l» §r§7الانتصارات§8:§c {wins}{n}{right}§8§l» §r§7القتلات§8:§c {kills}{n}{right}§8§l» §r§7القتلات النهائية§8:§c {final_kills}{n}{right}§8§l» §r§7الأسرة المكسورة§8:§c {beds}{n}{right}{bar}{n}{n}{right}§c{address}",
-        "lobby_sw": "{right}  §fi§cAkuna§9MC §8§l» §r§bSky§fWars{n}{right}{bar}{n}{right}§8§l» §r§7الانتصارات§8:§b {wins}{n}{right}§8§l» §r§7القتلات§8:§b {kills}{n}{right}§8§l» §r§7المباريات§8:§b {plays}{n}{right}{bar}{n}{n}{right}§b{address}"
+        "lobby_sw": "{right}  §fi§cAkuna§9MC §8§l» §r§bSky§fWars{n}{right}{bar}{n}{right}§8§l» §r§7الانتصارات§8:§b {wins}{n}{right}§8§l» §r§7القتلات§8:§b {kills}{n}{right}§8§l» §r§7المباريات§8:§b {plays}{n}{right}{bar}{n}{n}{right}§b{address}",
+        "lobby_tntrun": "{right}  §fi§cAkuna§9MC §8§l» §r§6TNT§cRun{n}{right}{bar}{n}{right}§8§l» §r§7انتصارات§8:§6 {wins}{n}{right}§8§l» §r§7قتل§8:§6 {kills}{n}{right}§8§l» §r§7مباريات§8:§6 {plays}{n}{right}{bar}{n}{n}{right}§6{address}"
     },
     "server": {
         "info": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §fمعلومات §8===-=-=-=-{n}§cالنظام §8» §r§7IP§8:§c iakunamc.com{n}§cالنظام §8» §r§7المنفذ§8:§c 19132{n}{n}§cالنظام §8» §r§7طلب انضمام للطاقم§8:§c https://staff.iakunamc.com{n}§cالنظام §8» §r§7المتجر§8:§c https://loja.iakunamc.com{n}§cالنظام §8» §r§7الديسكورد§8:§c https://discord.iakunamc.com{n}{n}§fY§cT §8» §r§7300 مشترك §a+ §7فيديو ترويجي{n}§fMini§cYT §8» §r§750 مشترك §a+ §7فيديو ترويجي{n}§cYT§fmirin §8» §r§70 مشترك §a+ §7فيديو ترويجي{n}§cملاحظات §8» §r§7ضع IP في العنوان/الوصف وروج للخادم مرة شهريًا للحفاظ على رتبتك",
@@ -2232,7 +2243,8 @@
             "duels": "§7اربح {target} مبارزة",
             "skywars": "§7اربح {target} مباريات §bSky§fWars",
             "thebridge": "§7اربح {target} مباريات §cThe§9Bridge",
-            "blocksumo": "§7اربح {target} مباريات §bBlock§fSumo"
+            "blocksumo": "§7اربح {target} مباريات §bBlock§fSumo",
+            "tntrun": "الفوز بمباراة TNTRun"
         },
         "place": {
             "_prefix": "",
@@ -2495,6 +2507,64 @@
         "unlink": {
             "success": "§7تم إلغاء ربط حسابك بنجاح...",
             "not_linked": "§cحسابك غير مرتبط..."
+        }
+    },
+    "email": {
+        "usage": "§bEmail §8§l» §r§cاستخدم §8/§c{label} §8<§clink§8|§cverify§8|§cunlink§8|§c2fa§8>",
+        "link": {
+            "usage": "§bEmail §8§l» §r§cاستخدم §8/§c{label} link §8<§cbremail§8>",
+            "invalid": "§bEmail §8§l» §r§cالبريد الإلكتروني غير صالح...",
+            "already": "§bEmail §8§l» §r§cهذا البريد الإلكتروني مرتبط بالفعل...",
+            "sent": "§bEmail §8§l» §r§7تم إرسال رمز التحقق إلى §b{email}§7!"
+        },
+        "verify": {
+            "usage": "§bEmail §8§l» §r§cاستخدم §8/§c{label} verify §8<§ccode§8>",
+            "expired": "§bEmail §8§l» §r§cانتهت صلاحية رمز التحقق...",
+            "invalid": "§bEmail §8§l» §r§cرمز التحقق غير صالح...",
+            "success": "§bEmail §8§l» §r§7تم التحقق من البريد الإلكتروني §b{email} §7بنجاح!"
+        },
+        "unlink": {
+            "not_linked": "§bEmail §8§l» §r§cليس لديك بريد إلكتروني مرتبط...",
+            "success": "§bEmail §8§l» §r§7تم إلغاء ربط البريد الإلكتروني بنجاح!"
+        },
+        "2fa": {
+            "no_email": "§bEmail §8§l» §r§cيجب عليك ربط بريد إلكتروني أولاً...",
+            "disabled": "§bEmail §8§l» §r§7تم تعطيل المصادقة الثنائية عبر البريد الإلكتروني بنجاح",
+            "enabled": "§bEmail §8§l» §r§7تم تفعيل المصادقة الثنائية عبر البريد الإلكتروني لـ §b{email}§7!"
+        }
+    },
+    "maze": {
+        "usage": "§5Maze §8§l» §r§cاستخدم §8/§c{label} §8<§centrar§8|§cjoin§8|§cplay§8|§csair§8|§cquit§8|§cleave§8>"
+    },
+    "twofa": {
+        "discord": {
+            "need": "§eAuth §8§l» §r§cUse the code §e{code} §7in Discord to authenticate"
+        },
+        "email": {
+            "need": "§eAuth §8§l» §r§cEnter the code sent to your email using §8/§cverify §8<§ccode§8>"
+        }
+    },
+    "tntrun": {
+        "_prefix": "§cTNT§fRun §8§l» §r",
+        "state": {
+            "waiting": "§cفي انتظار المزيد من اللاعبين...",
+            "starting": "§7يبدأ في §c{start}s"
+        },
+        "player": {
+            "join": "§c{player}§7 انضم للمباراة §8(§f{count}§8/§f{maxPlayers}§8)",
+            "quit": "§c{player}§7 غادر المباراة §8(§f{count}§8/§f{maxPlayers}§8)",
+            "died": "§c{player}§7 مات §8(§f{alive}§8/§f{maxPlayers}§8)"
+        },
+        "game": {
+            "returning": "§7العودة إلى الصالة في §c{time}s"
+        },
+        "command": {
+            "usage": "§7للانضمام §8/§7tntrun join{n}§cTNT§fRun §8§l» §r§7للمغادرة §8/§7tntrun leave",
+            "already_in_arena": "§cأنت بالفعل في الساحة...",
+            "no_space": "§cلا توجد ساحات متاحة..."
+        },
+        "scoreboard": {
+            "format": "{right}§fi§cAkuna§9MC §8§l» §r§cTNT§fRun{n}{right}{bar}{n}{right}§8§l» §r§7الخريطة§8:§c {map}{n}{right}§8§l» §r§7أحياء§8:§c {alive}{n}{right}§8§l» §r§7الوقت§8:§c {time}{n}{right}{bar}{n}{n}{right}§ciakunamc.com 19132"
         }
     }
 }

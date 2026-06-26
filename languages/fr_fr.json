@@ -1933,38 +1933,48 @@
     },
     "pin": {
         "add": {
-            "_prefix": "§3Pin §8§l» §r",
-            "already": "§cVous possédez déjà un pin...",
-            "success": "§7Pin ajouté avec succès!",
-            "usage": "§cUtilisez §8/§c{label} add §8<§cpin de 4 chiffres§8>"
+            "already": "§3Pin §8§l» §r§cVous avez déjà un PIN...",
+            "success": "§3Pin §8§l» §r§7PIN ajouté avec succès !",
+            "usage": "§3Pin §8§l» §r§cUtilisez §8/§c{label} add §8<§cPIN à 4 chiffres§8>",
+            "_prefix": "§3Pin §8§l» §r"
         },
         "change": {
-            "_prefix": "§3Pin §8§l» §r",
-            "incorrect": "§cPin actuel incorrect...",
-            "success": "§7Pin changé avec succès!",
-            "usage": "§cUtilisez §8/§c{label} change §8<§cpin actuel§8> <§cnouveau pin§8>"
+            "incorrect": "§3Pin §8§l» §r§cPIN actuel incorrect...",
+            "success": "§3Pin §8§l» §r§7PIN modifié avec succès !",
+            "usage": "§3Pin §8§l» §r§cUtilisez §8/§c{label} change §8<§cPIN actuel§8> <§cnouveau PIN§8>",
+            "_prefix": "§3Pin §8§l» §r"
+        },
+        "discord": {
+            "not_linked": "§3Pin §8§l» §r§cVotre compte Discord n'est pas lié...",
+            "disabled": "§3Pin §8§l» §r§72FA Discord désactivé avec succès",
+            "enabled": "§3Pin §8§l» §r§72FA Discord activé avec succès"
+        },
+        "email": {
+            "no_email": "§3Pin §8§l» §r§cVous devez d'abord lier un email...",
+            "disabled": "§3Pin §8§l» §r§72FA par email désactivé avec succès",
+            "enabled": "§3Pin §8§l» §r§72FA par email activé pour §b{email}§7!"
         },
         "error": {
-            "incorrect": "§3Pin §8§l» §r§cPin incorrect..."
+            "incorrect": "§3Pin §8§l» §r§cPIN incorrect..."
         },
         "login": {
-            "timeout": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §3Pin §8===-=-=-=-{n}§cVotre temps de connexion est écoulé...",
+            "timeout": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §3Pin §8===-=-=-=-{n}§cVotre temps de connexion a expiré...",
             "toomany": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §3Pin §8===-=-=-=-{n}§cTrop de tentatives d'authentification..."
         },
         "need": {
-            "login": "§3Pin §8§l» §r§7Entrez votre pin dans le chat pour compléter l'authentification"
+            "login": "§3Pin §8§l» §r§7Entrez votre PIN dans le chat pour compléter l'authentification"
         },
         "remove": {
-            "_prefix": "§3Pin §8§l» §r",
-            "incorrect": "§cPin incorrect...",
-            "nopin": "§cVous ne possédez pas de pin...",
-            "success": "§7Pin supprimé avec succès!",
-            "usage": "§cUtilisez §8/§c{label} remove §8<§cpin actuel§8>"
+            "incorrect": "§3Pin §8§l» §r§cPIN incorrect...",
+            "nopin": "§3Pin §8§l» §r§cVous n'avez pas de PIN...",
+            "success": "§3Pin §8§l» §r§7PIN supprimé avec succès !",
+            "usage": "§cUtilisez §8/§c{label} remove §8<§cPIN actuel§8>",
+            "_prefix": "§3Pin §8§l» §r"
         },
         "success": {
-            "login": "§3Pin §8§l» §r§7Authentifié(e) avec succès!"
+            "login": "§3Pin §8§l» §r§7Authentifié avec succès !"
         },
-        "usage": "§3Pin §8§l» §r§cUtilisez §8/§c{label} §8<§cadd§8|§cremove§8|§cchange§8>"
+        "usage": "§3Pin §8§l» §r§cUtilisez §8/§c{label} §8<§cadd§8|§cremove§8|§cchange§8|§cdiscord§8|§cemail§8>"
     },
     "pluscolor": {
         "_prefix": "§cSystème §8§l» §r",
@@ -2034,13 +2044,14 @@
         "lobby": "{right}     §fi§cAkuna§9MC §8§l» §r§cLobby{n}{right}{bar}{n}{right}§8§l» §r§7Nom§8:§c {name}{n}{right}§8§l» §r§7En ligne§8:§c {online}§8/§c{onlinemax}{n}{right}§8§l» §r§7Ping§8:§c {ping}ms{n}{right}{bar}{n}{n}{right}§c{address}",
         "plot": "{right}   §fi§cAkuna§9MC §8§l» §r§9Plot{n}{right}{bar}{n}{right}§8§l» §r§7Nom§8:§9 {name}{n}{right}§8§l» §r§7Jouant§8:§9 {onlinemap}{n}{right}§8§l» §r§7Plots§8:§9 {plots}{n}{right}{bar}{n}{n}{right}§9{address}",
         "lobby_bw": "{right}  §fi§cAkuna§9MC §8§l» §r§cBed§fWars{n}{right}{bar}{n}{right}§8§l» §r§7Victoires§8:§c {wins}{n}{right}§8§l» §r§7Kills§8:§c {kills}{n}{right}§8§l» §r§7Kills Finaux§8:§c {final_kills}{n}{right}§8§l» §r§7Lits Détruits§8:§c {beds}{n}{right}{bar}{n}{n}{right}§c{address}",
-        "lobby_sw": "{right}  §fi§cAkuna§9MC §8§l» §r§bSky§fWars{n}{right}{bar}{n}{right}§8§l» §r§7Victoires§8:§b {wins}{n}{right}§8§l» §r§7Kills§8:§b {kills}{n}{right}§8§l» §r§7Parties§8:§b {plays}{n}{right}{bar}{n}{n}{right}§b{address}"
+        "lobby_sw": "{right}  §fi§cAkuna§9MC §8§l» §r§bSky§fWars{n}{right}{bar}{n}{right}§8§l» §r§7Victoires§8:§b {wins}{n}{right}§8§l» §r§7Kills§8:§b {kills}{n}{right}§8§l» §r§7Parties§8:§b {plays}{n}{right}{bar}{n}{n}{right}§b{address}",
+        "lobby_tntrun": "{right}  §fi§cAkuna§9MC §8§l» §r§6TNT§cRun{n}{right}{bar}{n}{right}§8§l» §r§7Victoires§8:§6 {wins}{n}{right}§8§l» §r§7Kills§8:§6 {kills}{n}{right}§8§l» §r§7Parties§8:§6 {plays}{n}{right}{bar}{n}{n}{right}§6{address}"
     },
     "server": {
+        "info": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §fInformation §8===-=-=-=-{n}§cSystème §8» §r§7IP§8:§c iakunamc.com{n}§cSystème §8» §r§7Port§8:§c 19132{n}{n}§cSystème §8» §r§7Candidature Staff§8:§c https://staff.iakunamc.com{n}§cSystème §8» §r§7Boutique§8:§c https://loja.iakunamc.com{n}§cSystème §8» §r§7Discord§8:§c https://discord.iakunamc.com{n}{n}§fY§cT §8» §r§7300 abonnés §a+ §7Vidéo promotionnelle{n}§fMini§cYT §8» §r§750 abonnés §a+ §7Vidéo promotionnelle{n}§cYT§fmirin §8» §r§70 abonné §a+ §7Vidéo promotionnelle{n}§cNotes §8» §r§7Mettez l'IP dans le titre/description et promouvez le serveur une fois par mois pour conserver votre grade",
         "whitelist": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§cServeur en maintenance{n}§cDiscord: https://discord.iakunamc.com",
         "forcedshutdown": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§cLe serveur a subi un arrêt forcé...",
         "attack": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§cSystème §8§l» §r§7Le serveur subit une attaque DDoS...{n}§7Notre protection atténue déjà l'attaque. Les protections nécessaires ont été activées, mais il peut encore y avoir du lag ou des déconnexions{n}§cSystème §8§l» §r§7Support§8: §chttps://discord.iakunamc.com",
-        "info": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §fInformation §8===-=-=-=-{n}§cSystème §8» §r§7IP§8:§c iakunamc.com{n}§cSystème §8» §r§7Port§8:§c 19132{n}{n}§cSystème §8» §r§7Candidature Staff§8:§c https://staff.iakunamc.com{n}§cSystème §8» §r§7Boutique§8:§c https://loja.iakunamc.com{n}§cSystème §8» §r§7Discord§8:§c https://discord.iakunamc.com{n}{n}§fY§cT §8» §r§7300 abonnés §a+ §7Vidéo promotionnelle{n}§fMini§cYT §8» §r§750 abonnés §a+ §7Vidéo promotionnelle{n}§cYT§fmirin §8» §r§70 abonné §a+ §7Vidéo promotionnelle{n}§cNotes §8» §r§7Mettez l'IP dans le titre/description et promouvez le serveur une fois par mois pour conserver votre grade",
         "tps_low": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§cSystème §8§l» §r§7Il semble que le serveur soit surchargé, notre équipe travaille déjà à résoudre ce problème..."
     },
     "sethome": {
@@ -2241,7 +2252,8 @@
             "duels": "§7Gagnez {target} parties de §2Duels",
             "skywars": "§7Gagnez {target} parties de §bSky§fWars",
             "thebridge": "§7Gagnez {target} parties de §cThe§9Bridge",
-            "blocksumo": "§7Gagnez {target} parties de §bBlock§fSumo"
+            "blocksumo": "§7Gagnez {target} parties de §bBlock§fSumo",
+            "tntrun": "Gagner une partie de TNTRun"
         },
         "place": {
             "_prefix": "",
@@ -2504,6 +2516,64 @@
         "unlink": {
             "success": "§7Votre compte a été délié avec succès...",
             "not_linked": "§cVotre compte n'est pas lié..."
+        }
+    },
+    "email": {
+        "usage": "§bEmail §8§l» §r§cUtilisez §8/§c{label} §8<§clink§8|§cverify§8|§cunlink§8|§c2fa§8>",
+        "link": {
+            "usage": "§bEmail §8§l» §r§cUtilisez §8/§c{label} link §8<§cemail§8>",
+            "invalid": "§bEmail §8§l» §r§cEmail invalide...",
+            "already": "§bEmail §8§l» §r§cCet email est déjà lié...",
+            "sent": "§bEmail §8§l» §r§7Un code de vérification a été envoyé à §b{email}§7 !"
+        },
+        "verify": {
+            "usage": "§bEmail §8§l» §r§cUtilisez §8/§c{label} verify §8<§ccode§8>",
+            "expired": "§bEmail §8§l» §r§cLe code de vérification a expiré...",
+            "invalid": "§bEmail §8§l» §r§cCode de vérification invalide...",
+            "success": "§bEmail §8§l» §r§7Email §b{email} §7vérifié avec succès !"
+        },
+        "unlink": {
+            "not_linked": "§bEmail §8§l» §r§cVous n'avez pas d'email lié...",
+            "success": "§bEmail §8§l» §r§7Email délié avec succès !"
+        },
+        "2fa": {
+            "no_email": "§bEmail §8§l» §r§cVous devez d'abord lier un email...",
+            "disabled": "§bEmail §8§l» §r§72FA par email désactivé avec succès",
+            "enabled": "§bEmail §8§l» §r§72FA par email activé pour §b{email}§7 !"
+        }
+    },
+    "maze": {
+        "usage": "§5Maze §8§l» §r§cUtilisez §8/§c{label} §8<§centrar§8|§cjoin§8|§cplay§8|§csair§8|§cquit§8|§cleave§8>"
+    },
+    "twofa": {
+        "discord": {
+            "need": "§eAuth §8§l» §r§7Utilisez le code §e{code} §7sur Discord pour vous authentifier"
+        },
+        "email": {
+            "need": "§eAuth §8§l» §r§7Saisissez le code envoyé à votre email avec §8/§cverify §8<§ccode§8>"
+        }
+    },
+    "tntrun": {
+        "_prefix": "§cTNT§fRun §8§l» §r",
+        "state": {
+            "waiting": "§cEn attente de joueurs...",
+            "starting": "§7Début dans §c{start}s"
+        },
+        "player": {
+            "join": "§c{player}§7 a rejoint §8(§f{count}§8/§f{maxPlayers}§8)",
+            "quit": "§c{player}§7 a quitté §8(§f{count}§8/§f{maxPlayers}§8)",
+            "died": "§c{player}§7 est mort §8(§f{alive}§8/§f{maxPlayers}§8)"
+        },
+        "game": {
+            "returning": "§7Retour au lobby dans §c{time}s"
+        },
+        "command": {
+            "usage": "§7Pour rejoindre §8/§7tntrun join{n}§cTNT§fRun §8§l» §r§7Pour quitter §8/§7tntrun leave",
+            "already_in_arena": "§cVous êtes déjà dans une arène...",
+            "no_space": "§cAucune arène disponible..."
+        },
+        "scoreboard": {
+            "format": "{right}§fi§cAkuna§9MC §8§l» §r§cTNT§fRun{n}{right}{bar}{n}{right}§8§l» §r§7Carte§8:§c {map}{n}{right}§8§l» §r§7En vie§8:§c {alive}{n}{right}§8§l» §r§7Temps§8:§c {time}{n}{right}{bar}{n}{n}{right}§ciakunamc.com 19132"
         }
     }
 }

@@ -1131,14 +1131,6 @@
             "joined": "§7¡Te uniste exitosamente a la cola del modo §2{mode}§r§7!",
             "left": "§7¡Saliste de la cola del modo §c{mode}§7!",
             "timeout": "§cFuiste eliminado(a) de la cola automáticamente, ya que no se encontraron otros jugadores disponibles..."
-        },
-        "bot": {
-            "_prefix": "§2Duelos §8§l» §r",
-            "started": "§7¡Duelo contra bot iniciado! Dificultad: {difficulty}",
-            "no_arenas": "§cNo hay arenas disponibles en este momento.",
-            "invalid_kit": "§cKit inválido: §7{kit}",
-            "already_in_duel": "§cYa estás en un duelo contra bot.",
-            "already_in_any": "§cYa estás en un duelo o cola."
         }
     },
     "addbalance": {
@@ -1933,38 +1925,48 @@
     },
     "pin": {
         "add": {
-            "_prefix": "§3Pin §8§l» §r",
-            "already": "§cYa tienes un PIN...",
-            "success": "§7¡PIN añadido correctamente!",
-            "usage": "§cUsa §8/§c{label} add §8<§cPIN de 4 dígitos§8>"
+            "already": "§3Pin §8§l» §r§cYa tienes un PIN...",
+            "success": "§3Pin §8§l» §r§7PIN añadido con éxito!",
+            "usage": "§3Pin §8§l» §r§cUse §8/§c{label} add §8<§cPIN de 4 dígitos§8>",
+            "_prefix": "§3Pin §8§l» §r"
         },
         "change": {
-            "_prefix": "§3Pin §8§l» §r",
-            "incorrect": "§cEl PIN actual es incorrecto...",
-            "success": "§7¡PIN cambiado correctamente!",
-            "usage": "§cUsa §8/§c{label} change §8<§cPIN actual§8> <§cnuevo PIN§8>"
+            "incorrect": "§3Pin §8§l» §r§cPIN actual incorrecto...",
+            "success": "§3Pin §8§l» §r§7PIN cambiado con éxito!",
+            "usage": "§3Pin §8§l» §r§cUse §8/§c{label} change §8<§cPIN actual§8> <§cnuevo PIN§8>",
+            "_prefix": "§3Pin §8§l» §r"
+        },
+        "discord": {
+            "not_linked": "§3Pin §8§l» §r§cTu cuenta de Discord no está vinculada...",
+            "disabled": "§3Pin §8§l» §r§72FA de Discord desactivado con éxito",
+            "enabled": "§3Pin §8§l» §r§72FA de Discord activado con éxito"
+        },
+        "email": {
+            "no_email": "§3Pin §8§l» §r§cNecesitas vincular un email primero...",
+            "disabled": "§3Pin §8§l» §r§72FA de email desactivado con éxito",
+            "enabled": "§3Pin §8§l» §r§72FA de email activado para §b{email}§7!"
         },
         "error": {
             "incorrect": "§3Pin §8§l» §r§cPIN incorrecto..."
         },
         "login": {
-            "timeout": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §3Pin §8===-=-=-=-{n}§c¡Tu tiempo de inicio de sesión ha expirado...",
+            "timeout": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §3Pin §8===-=-=-=-{n}§cTu tiempo de inicio de sesión ha expirado...",
             "toomany": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §3Pin §8===-=-=-=-{n}§cDemasiados intentos de autenticación..."
         },
         "need": {
             "login": "§3Pin §8§l» §r§7Ingresa tu PIN en el chat para completar la autenticación"
         },
         "remove": {
-            "_prefix": "§3Pin §8§l» §r",
-            "incorrect": "§cPIN incorrecto...",
-            "nopin": "§cNo tienes un PIN...",
-            "success": "§7¡PIN eliminado correctamente!",
-            "usage": "§cUsa §8/§c{label} remove §8<§cPIN actual§8>"
+            "incorrect": "§3Pin §8§l» §r§cPIN incorrecto...",
+            "nopin": "§3Pin §8§l» §r§cNo tienes un PIN...",
+            "success": "§3Pin §8§l» §r§7PIN eliminado con éxito!",
+            "usage": "§cUse §8/§c{label} remove §8<§cPIN actual§8>",
+            "_prefix": "§3Pin §8§l» §r"
         },
         "success": {
-            "login": "§3Pin §8§l» §r§7¡Autenticado/a correctamente!"
+            "login": "§3Pin §8§l» §r§7Autenticado con éxito!"
         },
-        "usage": "§3Pin §8§l» §r§cUsa §8/§c{label} §8<§cadd§8|§cremove§8|§cchange§8>"
+        "usage": "§3Pin §8§l» §r§cUse §8/§c{label} §8<§cadd§8|§cremove§8|§cchange§8|§cdiscord§8|§cemail§8>"
     },
     "pluscolor": {
         "_prefix": "§cSistema §8§l» §r",
@@ -2034,7 +2036,8 @@
         "lobby": "{right}     §fi§cAkuna§9MC §8§l» §r§cLobby{n}{right}{bar}{n}{right}§8§l» §r§7Nombre§8:§c {name}{n}{right}§8§l» §r§7En línea§8:§c {online}§8/§c{onlinemax}{n}{right}§8§l» §r§7Ping§8:§c {ping}ms{n}{right}{bar}{n}{n}{right}§c{address}",
         "plot": "{right}   §fi§cAkuna§9MC §8§l» §r§9Plot{n}{right}{bar}{n}{right}§8§l» §r§7Nombre§8:§9 {name}{n}{right}§8§l» §r§7Jugando§8:§9 {onlinemap}{n}{right}§8§l» §r§7Parcelas§8:§9 {plots}{n}{right}{bar}{n}{n}{right}§9{address}",
         "lobby_bw": "{right}  §fi§cAkuna§9MC §8§l» §r§cBed§fWars{n}{right}{bar}{n}{right}§8§l» §r§7Victorias§8:§c {wins}{n}{right}§8§l» §r§7Kills§8:§c {kills}{n}{right}§8§l» §r§7Kills Finales§8:§c {final_kills}{n}{right}§8§l» §r§7Camas Destruidas§8:§c {beds}{n}{right}{bar}{n}{n}{right}§c{address}",
-        "lobby_sw": "{right}  §fi§cAkuna§9MC §8§l» §r§bSky§fWars{n}{right}{bar}{n}{right}§8§l» §r§7Victorias§8:§b {wins}{n}{right}§8§l» §r§7Kills§8:§b {kills}{n}{right}§8§l» §r§7Partidas§8:§b {plays}{n}{right}{bar}{n}{n}{right}§b{address}"
+        "lobby_sw": "{right}  §fi§cAkuna§9MC §8§l» §r§bSky§fWars{n}{right}{bar}{n}{right}§8§l» §r§7Victorias§8:§b {wins}{n}{right}§8§l» §r§7Kills§8:§b {kills}{n}{right}§8§l» §r§7Partidas§8:§b {plays}{n}{right}{bar}{n}{n}{right}§b{address}",
+        "lobby_tntrun": "{right}  §fi§cAkuna§9MC §8§l» §r§6TNT§cRun{n}{right}{bar}{n}{right}§8§l» §r§7Victorias§8:§6 {wins}{n}{right}§8§l» §r§7Kills§8:§6 {kills}{n}{right}§8§l» §r§7Partidas§8:§6 {plays}{n}{right}{bar}{n}{n}{right}§6{address}"
     },
     "server": {
         "info": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §fInformación §8===-=-=-=-{n}§cSistema §8» §r§7IP§8:§c iakunamc.com{n}§cSistema §8» §r§7Puerto§8:§c 19132{n}{n}§cSistema §8» §r§7Formulario para Staff§8:§c https://staff.iakunamc.com{n}§cSistema §8» §r§7Tienda§8:§c https://loja.iakunamc.com{n}§cSistema §8» §r§7Discord§8:§c https://discord.iakunamc.com{n}{n}§fY§cT §8» §r§7300 suscriptores §a+ §7Video promocional{n}§fMini§cYT §8» §r§750 suscriptores §a+ §7Video promocional{n}§cYT§fmirin §8» §r§70 suscriptores §a+ §7Video promocional{n}§cNotas §8» §r§7Coloca la IP en el título/descripción y promociona el servidor una vez al mes para mantener tu rango",
@@ -2056,12 +2059,14 @@
         "_prefix": "§eTienda §8§l» §r",
         "break": {
             "not_owner": "§cSolo el dueño puede eliminar la tienda...",
-            "success": "§7Tienda eliminada con éxito"
+            "success": "§7Tienda eliminada con éxito",
+            "_prefix": "§eLoja §8§l» §r"
         },
         "buy": {
             "inventory_full": "§cInventario lleno...",
             "not_enough_stock": "§cStock insuficiente...",
-            "success": "§7Compraste §e{quantity}§7x {item} por §c{price} Akunas §7de §e{owner}"
+            "success": "§7Compraste §e{quantity}§7x {item} por §c{price} Akunas §7de §e{owner}",
+            "_prefix": "§eLoja §8§l» §r"
         },
         "chest_access_denied": "§cSolo el dueño de la tienda puede acceder a este cofre...",
         "chest_not_found": "§cCofre de la tienda no encontrado...",
@@ -2071,13 +2076,15 @@
             "invalid_item": "§cID de ítem inválido...",
             "invalid_price": "§cPrecio inválido...",
             "invalid_quantity": "§cCantidad inválida...",
-            "success": "§7¡Tienda creada con éxito!"
+            "success": "§7¡Tienda creada con éxito!",
+            "_prefix": "§eLoja §8§l» §r"
         },
         "inventory_full": "§c¡Inventario lleno...",
         "not_in_survival": "§cNo estás en modo supervivencia...",
         "owner": {
             "notify_purchase": "§e{seller} §7vendió §e{quantity}§7x {item} por §c{price} Akunas§7!",
-            "notify_sale": "§e{buyer} §7compró §e{quantity}§7x {item} por §c{price} Akunas§7!"
+            "notify_sale": "§e{buyer} §7compró §e{quantity}§7x {item} por §c{price} Akunas§7!",
+            "_prefix": "§eLoja §8§l» §r"
         },
         "purchase_error": "§cError al procesar la compra...",
         "purchase_summary": "§7¡Compraste §7{items} por un total de §c{total} Akunas§7!",
@@ -2085,7 +2092,8 @@
         "sell": {
             "chest_full": "§c¡El cofre de la tienda está lleno...",
             "insufficient_items": "§cNo tienes suficientes ítems...",
-            "success": "§7¡Vendiste §e{quantity}§7x {item} por §c{price} Akunas §7a §e{owner}§7!"
+            "success": "§7¡Vendiste §e{quantity}§7x {item} por §c{price} Akunas §7a §e{owner}§7!",
+            "_prefix": "§eLoja §8§l» §r"
         }
     },
     "sit": {
@@ -2236,7 +2244,8 @@
             "duels": "§7Gana {target} §2Duelos",
             "skywars": "§7Gana {target} partidas de §bSky§fWars",
             "thebridge": "§7Gana {target} partidas de §cThe§9Bridge",
-            "blocksumo": "§7Gana {target} partidas de §bBlock§fSumo"
+            "blocksumo": "§7Gana {target} partidas de §bBlock§fSumo",
+            "tntrun": "Ganhar una partida de TNTRun"
         },
         "place": {
             "_prefix": "",
@@ -2499,6 +2508,64 @@
         "unlink": {
             "success": "§7Tu cuenta ha sido desvinculada exitosamente...",
             "not_linked": "§cTu cuenta no está vinculada..."
+        }
+    },
+    "email": {
+        "usage": "§bEmail §8§l» §r§cUse §8/§c{label} §8<§clink§8|§cverify§8|§cunlink§8|§c2fa§8>",
+        "link": {
+            "usage": "§bEmail §8§l» §r§cUse §8/§c{label} link §8<§cemail§8>",
+            "invalid": "§bEmail §8§l» §r§cEmail inválido...",
+            "already": "§bEmail §8§l» §r§cEste email ya está vinculado...",
+            "sent": "§bEmail §8§l» §r§7Se ha enviado un código de verificación a §b{email}§7!"
+        },
+        "verify": {
+            "usage": "§bEmail §8§l» §r§cUse §8/§c{label} verify §8<§ccódigo§8>",
+            "expired": "§bEmail §8§l» §r§cEl código de verificación ha expirado...",
+            "invalid": "§bEmail §8§l» §r§cCódigo de verificación inválido...",
+            "success": "§bEmail §8§l» §r§7Email §b{email} §7verificado con éxito!"
+        },
+        "unlink": {
+            "not_linked": "§bEmail §8§l» §r§cNo tienes un email vinculado...",
+            "success": "§bEmail §8§l» §r§7Email desvinculado con éxito!"
+        },
+        "2fa": {
+            "no_email": "§bEmail §8§l» §r§cNecesitas vincular un email primero...",
+            "disabled": "§bEmail §8§l» §r§72FA de email desactivado con éxito",
+            "enabled": "§bEmail §8§l» §r§72FA de email activado para §b{email}§7!"
+        }
+    },
+    "maze": {
+        "usage": "§5Maze §8§l» §r§cUse §8/§c{label} §8<§centrar§8|§cjoin§8|§cplay§8|§csair§8|§cquit§8|§cleave§8>"
+    },
+    "twofa": {
+        "discord": {
+            "need": "§eAuth §8§l» §r§7Usa el código §e{code} §7en Discord para autenticarte"
+        },
+        "email": {
+            "need": "§eAuth §8§l» §r§7Ingresa el código enviado a tu email usando §8/§cverify §8<§ccódigo§8>"
+        }
+    },
+    "tntrun": {
+        "_prefix": "§cTNT§fRun §8§l» §r",
+        "state": {
+            "waiting": "§cEsperando más jugadores...",
+            "starting": "§7Empezando en §c{start}s"
+        },
+        "player": {
+            "join": "§c{player} §7se unió al partido §8(§f{count}§8/§f{maxPlayers}§8)",
+            "quit": "§c{player} §7salió del partido §8(§f{count}§8/§f{maxPlayers}§8)",
+            "died": "§c{player} §7murió §8(§f{alive}§8/§f{maxPlayers}§8)"
+        },
+        "game": {
+            "returning": "§7Regresando al lobby en §c{time}s"
+        },
+        "command": {
+            "usage": "§7Para unirse usa §8/§7tntrun join{n}§cTNT§fRun §8§l» §r§7Para salir usa §8/§7tntrun leave",
+            "already_in_arena": "§cYa estás en una arena...",
+            "no_space": "§cNo hay arenas disponibles..."
+        },
+        "scoreboard": {
+            "format": "{right}§fi§cAkuna§9MC §8§l» §r§cTNT§fRun{n}{right}{bar}{n}{right}§8§l» §r§7Mapa§8:§c {map}{n}{right}§8§l» §r§7Vivos§8:§c {alive}{n}{right}§8§l» §r§7Tiempo§8:§c {time}{n}{right}{bar}{n}{n}{right}§ciakunamc.com 19132"
         }
     }
 }

@@ -2054,38 +2054,48 @@
     },
     "pin": {
         "add": {
-            "_prefix": "§3PIN §8§l» §r",
-            "already": "§c您已有PIN...",
-            "success": "§7PIN已成功添加！",
-            "usage": "§c使用 §8/§c{label} add §8<§c4位PIN§8>"
+            "already": "§3Pin §8§l» §r§c您已经设置了PIN...",
+            "success": "§3Pin §8§l» §r§7PIN添加成功！",
+            "usage": "§3Pin §8§l» §r§c使用 §8/§c{label} add §8<§c4位PIN§8>",
+            "_prefix": "§3Pin §8§l» §r"
         },
         "change": {
-            "_prefix": "§3PIN §8§l» §r",
-            "incorrect": "§c当前PIN错误...",
-            "success": "§7PIN已成功修改！",
-            "usage": "§c使用 §8/§c{label} change §8<§c当前PIN§8> <§c新PIN§8>"
+            "incorrect": "§3Pin §8§l» §r§c当前PIN不正确...",
+            "success": "§3Pin §8§l» §r§7PIN修改成功！",
+            "usage": "§3Pin §8§l» §r§c使用 §8/§c{label} change §8<§c当前PIN§8> <§c新PIN§8>",
+            "_prefix": "§3Pin §8§l» §r"
+        },
+        "discord": {
+            "not_linked": "§3Pin §8§l» §r§c您的Discord账户未绑定...",
+            "disabled": "§3Pin §8§l» §r§7Discord双重认证已禁用",
+            "enabled": "§3Pin §8§l» §r§7Discord双重认证已启用"
+        },
+        "email": {
+            "no_email": "§3Pin §8§l» §r§c请先绑定邮箱...",
+            "disabled": "§3Pin §8§l» §r§7邮箱双重认证已禁用",
+            "enabled": "§3Pin §8§l» §r§7邮箱双重认证已为 §b{email}§7 启用！"
         },
         "error": {
-            "incorrect": "§3PIN §8§l» §r§cPIN错误..."
+            "incorrect": "§3Pin §8§l» §r§cPIN不正确..."
         },
         "login": {
-            "timeout": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §3PIN §8===-=-=-=-{n}§c登录时间已过...",
-            "toomany": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §3PIN §8===-=-=-=-{n}§c认证尝试次数过多..."
+            "timeout": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §3Pin §8===-=-=-=-{n}§c登录时间已过期...",
+            "toomany": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §3Pin §8===-=-=-=-{n}§c认证尝试次数过多..."
         },
         "need": {
-            "login": "§3PIN §8§l» §r§7请在聊天中输入您的PIN完成认证"
+            "login": "§3Pin §8§l» §r§7请在聊天框中输入您的PIN以完成认证"
         },
         "remove": {
-            "_prefix": "§3PIN §8§l» §r",
-            "incorrect": "§cPIN错误...",
-            "nopin": "§c您没有PIN...",
-            "success": "§7PIN已成功删除！",
-            "usage": "§c使用 §8/§c{label} remove §8<§c当前PIN§8>"
+            "incorrect": "§3Pin §8§l» §r§cPIN不正确...",
+            "nopin": "§3Pin §8§l» §r§c您没有设置PIN...",
+            "success": "§3Pin §8§l» §r§7PIN已成功移除！",
+            "usage": "§c使用 §8/§c{label} remove §8<§c当前PIN§8>",
+            "_prefix": "§3Pin §8§l» §r"
         },
         "success": {
-            "login": "§3PIN §8§l» §r§7认证成功！"
+            "login": "§3Pin §8§l» §r§7认证成功！"
         },
-        "usage": "§3PIN §8§l» §r§c使用 §8/§c{label} §8<§cadd§8|§cremove§8|§cchange§8>"
+        "usage": "§3Pin §8§l» §r§c使用 §8/§c{label} §8<§cadd§8|§cremove§8|§cchange§8|§cdiscord§8|§cemail§8>"
     },
     "pluscolor": {
         "_prefix": "§c系统 §8§l» §r",
@@ -2155,13 +2165,14 @@
         "lobby": "{right}     §fi§cAkuna§9MC §8§l» §r§c大厅{n}{right}{bar}{n}{right}§8§l» §r§7名称§8:§c {name}{n}{right}§8§l» §r§7在线§8:§c {online}§8/§c{onlinemax}{n}{right}§8§l» §r§7延迟§8:§c {ping}ms{n}{right}{bar}{n}{n}{right}§c{address}",
         "plot": "{right}   §fi§cAkuna§9MC §8§l» §r§9地块{n}{right}{bar}{n}{right}§8§l» §r§7名称§8:§9 {name}{n}{right}§8§l» §r§7在线§8:§9 {onlinemap}{n}{right}§8§l» §r§7地块§8:§9 {plots}{n}{right}{bar}{n}{n}{right}§9{address}",
         "lobby_bw": "{right}  §fi§cAkuna§9MC §8§l» §r§cBed§fWars{n}{right}{bar}{n}{right}§8§l» §r§7胜利§8:§c {wins}{n}{right}§8§l» §r§7击杀§8:§c {kills}{n}{right}§8§l» §r§7最终击杀§8:§c {final_kills}{n}{right}§8§l» §r§7破床§8:§c {beds}{n}{right}{bar}{n}{n}{right}§c{address}",
-        "lobby_sw": "{right}  §fi§cAkuna§9MC §8§l» §r§bSky§fWars{n}{right}{bar}{n}{right}§8§l» §r§7胜利§8:§b {wins}{n}{right}§8§l» §r§7击杀§8:§b {kills}{n}{right}§8§l» §r§7场次§8:§b {plays}{n}{right}{bar}{n}{n}{right}§b{address}"
+        "lobby_sw": "{right}  §fi§cAkuna§9MC §8§l» §r§bSky§fWars{n}{right}{bar}{n}{right}§8§l» §r§7胜利§8:§b {wins}{n}{right}§8§l» §r§7击杀§8:§b {kills}{n}{right}§8§l» §r§7场次§8:§b {plays}{n}{right}{bar}{n}{n}{right}§b{address}",
+        "lobby_tntrun": "{right}  §fi§cAkuna§9MC §8§l» §r§6TNT§cRun{n}{right}{bar}{n}{right}§8§l» §r§7胜利§8:§6 {wins}{n}{right}§8§l» §r§7击杀§8:§6 {kills}{n}{right}§8§l» §r§7游戏§8:§6 {plays}{n}{right}{bar}{n}{n}{right}§6{address}"
     },
     "server": {
+        "info": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §f信息 §8===-=-=-=-{n}§c系统 §8» §r§7IP§8:§c iakunamc.com{n}§c系统 §8» §r§7端口§8:§c 19132{n}{n}§c系统 §8» §r§7Staff申请§8:§c https://staff.iakunamc.com{n}§c系统 §8» §r§7商店§8:§c https://loja.iakunamc.com{n}§c系统 §8» §r§7Discord§8:§c https://discord.iakunamc.com{n}{n}§fY§cT §8» §r§7300 订阅 §a+ §7宣传视频{n}§fMini§cYT §8» §r§750 订阅 §a+ §7宣传视频{n}§cYT§fmirin §8» §r§70 订阅 §a+ §7宣传视频{n}§c说明 §8» §r§7在标题/描述中放入IP，并每月宣传一次服务器以保持您的头衔",
         "whitelist": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§c服务器正在维护{n}§cDiscord: https://discord.iakunamc.com",
         "forcedshutdown": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§c服务器遭到强制关闭...",
         "attack": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§c系统 §8§l» §r§7服务器正遭受DDoS攻击...{n}§7我们的防护系统已启动缓解措施。必要的保护已激活，但可能仍有延迟或断线{n}§c系统 §8§l» §r§7支持§8: §chttps://discord.iakunamc.com",
-        "info": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §f信息 §8===-=-=-=-{n}§c系统 §8» §r§7IP§8:§c iakunamc.com{n}§c系统 §8» §r§7端口§8:§c 19132{n}{n}§c系统 §8» §r§7Staff申请§8:§c https://staff.iakunamc.com{n}§c系统 §8» §r§7商店§8:§c https://loja.iakunamc.com{n}§c系统 §8» §r§7Discord§8:§c https://discord.iakunamc.com{n}{n}§fY§cT §8» §r§7300 订阅 §a+ §7宣传视频{n}§fMini§cYT §8» §r§750 订阅 §a+ §7宣传视频{n}§cYT§fmirin §8» §r§70 订阅 §a+ §7宣传视频{n}§c说明 §8» §r§7在标题/描述中放入IP，并每月宣传一次服务器以保持您的头衔",
         "tps_low": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§c系统 §8§l» §r§7服务器似乎过载，我们的团队正在解决此问题..."
     },
     "sethome": {
@@ -2362,7 +2373,8 @@
             "duels": "§7赢得 {target} 场 §2决斗",
             "skywars": "§7赢得 {target} 场 §bSky§fWars",
             "thebridge": "§7赢得 {target} 场 §cThe§9Bridge",
-            "blocksumo": "§7赢得 {target} 场 §bBlock§fSumo"
+            "blocksumo": "§7赢得 {target} 场 §bBlock§fSumo",
+            "tntrun": "赢得一场TNTRun比赛"
         },
         "place": {
             "_prefix": "",
@@ -2414,7 +2426,8 @@
         },
         "play": {
             "bedwars": "§7游玩 {target} 场 §cBed§fWars",
-            "skywars": "§7游玩 {target} 场 §bSky§fWars"
+            "skywars": "§7游玩 {target} 场 §bSky§fWars",
+            "_prefix": "§6Missões §8§l» §r"
         },
         "buy": {
             "items": {
@@ -2624,6 +2637,64 @@
         "unlink": {
             "success": "§7您的账户已成功解绑...",
             "not_linked": "§c您的账户未绑定..."
+        }
+    },
+    "email": {
+        "usage": "§bEmail §8§l» §r§c使用 §8/§c{label} §8<§clink§8|§cverify§8|§cunlink§8|§c2fa§8>",
+        "link": {
+            "usage": "§bEmail §8§l» §r§c使用 §8/§c{label} link §8<§c邮箱地址§8>",
+            "invalid": "§bEmail §8§l» §r§c无效的邮箱...",
+            "already": "§bEmail §8§l» §r§c此邮箱已绑定...",
+            "sent": "§bEmail §8§l» §r§7验证码已发送至 §b{email}§7！"
+        },
+        "verify": {
+            "usage": "§bEmail §8§l» §r§c使用 §8/§c{label} verify §8<§c验证码§8>",
+            "expired": "§bEmail §8§l» §r§c验证码已过期...",
+            "invalid": "§bEmail §8§l» §r§c无效的验证码...",
+            "success": "§bEmail §8§l» §r§7邮箱 §b{email} §7验证成功！"
+        },
+        "unlink": {
+            "not_linked": "§bEmail §8§l» §r§c您没有绑定邮箱...",
+            "success": "§bEmail §8§l» §r§7邮箱已成功解绑！"
+        },
+        "2fa": {
+            "no_email": "§bEmail §8§l» §r§c请先绑定邮箱...",
+            "disabled": "§bEmail §8§l» §r§7邮箱双重认证已禁用",
+            "enabled": "§bEmail §8§l» §r§7邮箱双重认证已为 §b{email}§7 启用！"
+        }
+    },
+    "maze": {
+        "usage": "§5Maze §8§l» §r§c使用 §8/§c{label} §8<§centrar§8|§cjoin§8|§cplay§8|§csair§8|§cquit§8|§cleave§8>"
+    },
+    "twofa": {
+        "discord": {
+            "need": "§eAuth §8§l» §r§7请在Discord中使用代码 §e{code} §7进行身份验证"
+        },
+        "email": {
+            "need": "§eAuth §8§l» §r§7请输入发送到您邮箱的代码，使用 §8/§cverify §8<§c代码§8>"
+        }
+    },
+    "tntrun": {
+        "_prefix": "§cTNT§fRun §8§l» §r",
+        "state": {
+            "waiting": "§c等待更多玩家...",
+            "starting": "§7§c{start}s§7后开始"
+        },
+        "player": {
+            "join": "§c{player}§7加入了比赛 §8(§f{count}§8/§f{maxPlayers}§8)",
+            "quit": "§c{player}§7离开了比赛 §8(§f{count}§8/§f{maxPlayers}§8)",
+            "died": "§c{player}§7死亡了 §8(§f{alive}§8/§f{maxPlayers}§8)"
+        },
+        "game": {
+            "returning": "§7§c{time}s§7后返回大厅"
+        },
+        "command": {
+            "usage": "§7加入使用 §8/§7tntrun join{n}§cTNT§fRun §8§l» §r§7离开使用 §8/§7tntrun leave",
+            "already_in_arena": "§c你已经在竞技场中...",
+            "no_space": "§c没有可用的竞技场..."
+        },
+        "scoreboard": {
+            "format": "{right}§fi§cAkuna§9MC §8§l» §r§cTNT§fRun{n}{right}{bar}{n}{right}§8§l» §r§7地图§8:§c {map}{n}{right}§8§l» §r§7存活§8:§c {alive}{n}{right}§8§l» §r§7时间§8:§c {time}{n}{right}{bar}{n}{n}{right}§ciakunamc.com 19132"
         }
     }
 }
