@@ -2374,7 +2374,7 @@
             "skywars": "§7赢得 {target} 场 §bSky§fWars",
             "thebridge": "§7赢得 {target} 场 §cThe§9Bridge",
             "blocksumo": "§7赢得 {target} 场 §bBlock§fSumo",
-            "tntrun": "赢得一场TNTRun比赛"
+            "tntrun": "§7赢得 {target} 场 §cTNT§fRun"
         },
         "place": {
             "_prefix": "",
@@ -2427,6 +2427,7 @@
         "play": {
             "bedwars": "§7游玩 {target} 场 §cBed§fWars",
             "skywars": "§7游玩 {target} 场 §bSky§fWars",
+            "tntrun": "§7游玩 {target} 场 §cTNT§fRun",
             "_prefix": "§6Missões §8§l» §r"
         },
         "buy": {

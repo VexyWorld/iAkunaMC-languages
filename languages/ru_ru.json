@@ -2253,7 +2253,7 @@
             "skywars": "§7Выиграйте {target} матчей §bSky§fWars",
             "thebridge": "§7Выиграйте {target} матчей §cThe§9Bridge",
             "blocksumo": "§7Выиграйте {target} матчей §bBlock§fSumo",
-            "tntrun": "Выиграть матч в TNTRun"
+            "tntrun": "§7Выиграйте {target} матчей §cTNT§fRun"
         },
         "place": {
             "_prefix": "",
@@ -2306,7 +2306,8 @@
         "play": {
             "_prefix": "",
             "bedwars": "§7Сыграйте {target} матчей §cBed§fWars",
-            "skywars": "§7Сыграйте {target} матчей §bSky§fWars"
+            "skywars": "§7Сыграйте {target} матчей §bSky§fWars",
+            "tntrun": "§7Сыграйте {target} матчей §cTNT§fRun"
         },
         "buy": {
             "items": {

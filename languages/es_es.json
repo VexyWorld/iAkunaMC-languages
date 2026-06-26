@@ -2245,7 +2245,7 @@
             "skywars": "§7Gana {target} partidas de §bSky§fWars",
             "thebridge": "§7Gana {target} partidas de §cThe§9Bridge",
             "blocksumo": "§7Gana {target} partidas de §bBlock§fSumo",
-            "tntrun": "Ganhar una partida de TNTRun"
+            "tntrun": "§7Gana {target} partidas de §cTNT§fRun"
         },
         "place": {
             "_prefix": "",
@@ -2298,7 +2298,8 @@
         "play": {
             "_prefix": "",
             "bedwars": "§7Juega {target} partidas de §cBed§fWars",
-            "skywars": "§7Juega {target} partidas de §bSky§fWars"
+            "skywars": "§7Juega {target} partidas de §bSky§fWars",
+            "tntrun": "§7Juega {target} partidas de §cTNT§fRun"
         },
         "buy": {
             "items": {

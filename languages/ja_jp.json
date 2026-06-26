@@ -2374,7 +2374,7 @@
             "skywars": "§7§bSky§fWars §7で {target} 試合勝利する",
             "thebridge": "§7§cThe§9Bridge §7で {target} 試合勝利する",
             "blocksumo": "§7§bBlock§fSumo §7で {target} 試合勝利する",
-            "tntrun": "TNTRunで勝利"
+            "tntrun": "§7§cTNT§fRun §7で {target} 試合勝利する"
         },
         "place": {
             "_prefix": "",
@@ -2427,7 +2427,8 @@
         "play": {
             "_prefix": "",
             "bedwars": "§7§cBed§fWars §7を {target} 試合プレイする",
-            "skywars": "§7§bSky§fWars §7を {target} 試合プレイする"
+            "skywars": "§7§bSky§fWars §7を {target} 試合プレイする",
+            "tntrun": "§7§cTNT§fRun §7を {target} 試合プレイする"
         },
         "buy": {
             "items": {

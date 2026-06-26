@@ -2244,7 +2244,7 @@
             "skywars": "§7اربح {target} مباريات §bSky§fWars",
             "thebridge": "§7اربح {target} مباريات §cThe§9Bridge",
             "blocksumo": "§7اربح {target} مباريات §bBlock§fSumo",
-            "tntrun": "الفوز بمباراة TNTRun"
+            "tntrun": "§7اربح {target} مباريات §cTNT§fRun"
         },
         "place": {
             "_prefix": "",
@@ -2297,7 +2297,8 @@
         "play": {
             "_prefix": "",
             "bedwars": "§7العب {target} مباريات §cBed§fWars",
-            "skywars": "§7العب {target} مباريات §bSky§fWars"
+            "skywars": "§7العب {target} مباريات §bSky§fWars",
+            "tntrun": "§7العب {target} مباريات §cTNT§fRun"
         },
         "buy": {
             "items": {

@@ -2244,7 +2244,7 @@
             "skywars": "§7{target} §bSky§fWars §7maçı kazan",
             "thebridge": "§7{target} §cThe§9Bridge §7maçı kazan",
             "blocksumo": "§7{target} §bBlock§fSumo §7maçı kazan",
-            "tntrun": "TNTRun maçı kazanmak"
+            "tntrun": "§7{target} §cTNT§fRun §7maçı kazan"
         },
         "place": {
             "_prefix": "",
@@ -2297,7 +2297,8 @@
         "play": {
             "_prefix": "",
             "bedwars": "§7{target} §cBed§fWars §7maçı oyna",
-            "skywars": "§7{target} §bSky§fWars §7maçı oyna"
+            "skywars": "§7{target} §bSky§fWars §7maçı oyna",
+            "tntrun": "§7{target} §cTNT§fRun §7maçı oyna"
         },
         "buy": {
             "items": {
