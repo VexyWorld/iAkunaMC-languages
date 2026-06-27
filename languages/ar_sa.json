@@ -236,7 +236,6 @@
             "killed_void": "§b{player} §7سقط في الفراغ §8(§f{alive}§8/§f{maxPlayers}§8)"
         },
         "refill": {
-            "_prefix": "",
             "done": "§7تمت إعادة تعبئة جميع الصناديق!"
         },
         "scoreboard": {
@@ -2539,10 +2538,10 @@
     },
     "twofa": {
         "discord": {
-            "need": "§eAuth §8§l» §r§cUse the code §e{code} §7in Discord to authenticate"
+            "need": "§eAuth §8§l» §r§cاستخدم الكود §e{code} §7في Discord للتوثيق"
         },
         "email": {
-            "need": "§eAuth §8§l» §r§cEnter the code sent to your email using §8/§cverify §8<§ccode§8>"
+            "need": "§eAuth §8§l» §r§cأدخل الكود المرسل إلى بريدك الإلكتروني باستخدام §8/§cverify §8<§ccode§8>"
         }
     },
     "tntrun": {
@@ -2561,10 +2560,10 @@
         },
         "command": {
             "usage": "§7للانضمام §8/§7tntrun join{n}§cTNT§fRun §8§l» §r§7للمغادرة §8/§7tntrun leave",
-            "already_in_arena": "§cأنت بالفعل في الساحة...",
             "no_space": "§cلا توجد ساحات متاحة..."
         },
         "scoreboard": {
+            "_prefix": "",
             "format": "{right}§fi§cAkuna§9MC §8§l» §r§cTNT§fRun{n}{right}{bar}{n}{right}§8§l» §r§7الخريطة§8:§c {map}{n}{right}§8§l» §r§7أحياء§8:§c {alive}{n}{right}§8§l» §r§7الوقت§8:§c {time}{n}{right}{bar}{n}{n}{right}§ciakunamc.com 19132"
         }
     }
