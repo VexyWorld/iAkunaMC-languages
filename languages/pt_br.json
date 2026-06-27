@@ -236,7 +236,6 @@
             "killed_void": "§b{player} §7caiu no void §8(§f{alive}§8/§f{maxPlayers}§8)"
         },
         "refill": {
-            "_prefix": "",
             "done": "§7Todos os baús foram preenchidos novamente!"
         },
         "scoreboard": {
@@ -2562,10 +2561,10 @@
         },
         "command": {
             "usage": "§7Para entrar utilize §8/§7tntrun join{n}§cTNT§fRun §8§l» §r§7Para sair utilize §8/§7tntrun leave",
-            "already_in_arena": "§cVocê já está em uma arena...",
             "no_space": "§cNão há arenas disponíveis..."
         },
         "scoreboard": {
+            "_prefix": "",
             "format": "{right}§fi§cAkuna§9MC §8§l» §r§cTNT§fRun{n}{right}{bar}{n}{right}§8§l» §r§7Mapa§8:§c {map}{n}{right}§8§l» §r§7Vivos§8:§c {alive}{n}{right}§8§l» §r§7Tempo§8:§c {time}{n}{right}{bar}{n}{n}{right}§ciakunamc.com 19132"
         }
     }

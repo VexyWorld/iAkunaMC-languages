@@ -291,7 +291,6 @@
             "quit": "§b{player} §7left the match §8(§f{count}§8/§f{maxPlayers}§8)"
         },
         "refill": {
-            "_prefix": "",
             "done": "§7All chests have been refilled!"
         },
         "scoreboard": {
@@ -389,11 +388,11 @@
             "success": "§7プロットを正常に確保しました！",
             "already_claimed": "§cすでにプロットを持っています...",
             "no_plots": "§c利用可能なプロットがありません...",
-            "alreadyclaimed": "§9Plot §8§l» §r§cThis plot is already claimed by {owner}",
-            "desc": "§7Claims the plot you are standing in",
-            "nomoney": "§9Plot §8§l» §r§cYou don't have enough money to claim this plot",
+            "alreadyclaimed": "§9プロット §8§l» §r§cこのプロットは既に {owner} が確保しています",
+            "desc": "§7立っているプロットを確保します",
+            "nomoney": "§9プロット §8§l» §r§cこのプロットを確保するお金がありません",
             "usage": "§8/§cp claim §8<§cname§8>",
-            "yourplot": "§9Plot §8§l» §r§cYou already claimed this plot"
+            "yourplot": "§9プロット §8§l» §r§cこのプロットは既に確保しています"
         },
         "unclaim": {
             "success": "§7プロットを正常に放棄しました！",
@@ -402,205 +401,205 @@
         "home": {
             "not_owner": "§cプロットを持っていません...",
             "not_found": "§cプロットが見つかりません...",
-            "desc": "§7Teleports to one of your plots",
-            "error": "§9Plot §8§l» §r§cCould not travel to the plot...",
-            "noplots": "§9Plot §8§l» §r§cYou have no plots",
-            "notexist": "§9Plot §8§l» §r§cYou don't have a plot with id {id}",
-            "success": "§9Plot §8§l» §r§7Teleported to plot §9{plot} §7successfully!",
+            "desc": "§7あなたのプロットにテレポートします",
+            "error": "§9プロット §8§l» §r§cプロットに移動できませんでした...",
+            "noplots": "§9プロット §8§l» §r§cプロットを持っていません",
+            "notexist": "§9プロット §8§l» §r§cID {id} のプロットを持っていません",
+            "success": "§9プロット §8§l» §r§7プロット §9{plot} §7に正常にテレポートしました！",
             "usage": "§8/§cp home §8<§cid§8>"
         },
         "visit": {
             "not_found": "§c{player} のプロットが見つかりません..."
         },
         "accepttransfer": {
-            "desc": "§7Accepts a plot transfer",
-            "invalid_data": "§9Plot §8§l» §r§cInvalid plot data...",
-            "no_pending": "§cSystem §8§l» §r§cYou have no pending requests...",
-            "not_exists": "§9Plot §8§l» §r§cThe plot does not exist...",
-            "not_owner": "§9Plot §8§l» §r§cThe plot no longer belongs to {owner}...",
-            "notify_sender": "§9Plot §8§l» §r§c{player} §7accepted the plot transfer §9{plot}§7!",
-            "success": "§9Plot §8§l» §r§7You accepted the plot transfer §9{plot}§7!",
+            "desc": "§7プロットの譲渡を受け入れます",
+            "invalid_data": "§9プロット §8§l» §r§c無効なプロットデータ...",
+            "no_pending": "§cシステム §8§l» §r§c保留中のリクエストがありません...",
+            "not_exists": "§9プロット §8§l» §r§cそのプロットは存在しません...",
+            "not_owner": "§9プロット §8§l» §r§cそのプロットは {owner} のものではありません...",
+            "notify_sender": "§9プロット §8§l» §r§c{player} §7がプロット譲渡 §9{plot}§7を受け入れました！",
+            "success": "§9プロット §8§l» §r§7プロット譲渡 §9{plot}§7を受け入れました！",
             "usage": "§8/§cp accepttransfer"
         },
         "addhelper": {
-            "alreadyone": "§9Plot §8§l» §r§c{player} is already a helper...",
-            "desc": "§7Adds a helper to your plot",
+            "alreadyone": "§9プロット §8§l» §r§c{player} は既にヘルパーです...",
+            "desc": "§7プロットにヘルパーを追加します",
             "everyone": {
-                "success": "§9Plot §8§l» §r§7All players are now helpers on your plot!"
+                "success": "§9プロット §8§l» §r§7全プレイヤーがヘルパーになりました！"
             },
-            "offline": "§cSystem §8§l» §r§cPlayer is offline",
-            "success": "§9Plot §8§l» §r§9{player} §7is now a helper on your plot",
+            "offline": "§cシステム §8§l» §r§cプレイヤーはオフラインです",
+            "success": "§9プロット §8§l» §r§9{player} §7がヘルパーになりました",
             "usage": "§8/§cp addhelper §8<§cplayer§8>"
         },
         "allow": {
             "already": {
-                "allowed": "§9Plot §8§l» §r§c{player} is already allowed..."
+                "allowed": "§9プロット §8§l» §r§c{player} は既に許可されています..."
             },
-            "desc": "§7Allows all or a player to enter your plot",
+            "desc": "§7全プレイヤーまたは特定のプレイヤーがプロットに入れるようにします",
             "everyone": {
-                "success": "§9Plot §8§l» §r§7All players can now enter the plot!"
+                "success": "§9プロット §8§l» §r§7全プレイヤーがプロットに入れるようになりました！"
             },
-            "success": "§9Plot §8§l» §r§9{player} §7can now enter the plot!",
+            "success": "§9プロット §8§l» §r§9{player} §7がプロットに入れるようになりました！",
             "usage": "§8/§cp allow §8<§cplayer§8|§c*§8>"
         },
         "auto": {
-            "desc": "§7Teleports to the next free plot",
-            "noplots": "§9Plot §8§l» §r§7No plots available...",
-            "notplotworld": "§9Plot §8§l» §r§cYou are not in the Plot world...",
-            "success": "§9Plot §8§l» §r§7Teleported to free plot §9{x}§8;§9{z} §7successfully!",
+            "desc": "§7次の空きプロットにテレポートします",
+            "noplots": "§9プロット §8§l» §r§7空きプロットがありません...",
+            "notplotworld": "§9プロット §8§l» §r§cプロットワールドにいません...",
+            "success": "§9プロット §8§l» §r§7空きプロット §9{x}§8;§9{z} §7に正常にテレポートしました！",
             "usage": "§8/§cp auto"
         },
         "biome": {
-            "desc": "§7Changes the biome of your plot",
-            "invalid": "§9Plot §8§l» §r§cThis biome does not exist...",
-            "possible": "§9Plot §8§l» §r§7Available biomes§8:§7 {biomes}",
-            "success": "§9Plot §8§l» §r§7Plot biome changed to §9{biome} §7successfully!",
+            "desc": "§7プロットのバイオームを変更します",
+            "invalid": "§9プロット §8§l» §r§cこのバイオームは存在しません...",
+            "possible": "§9プロット §8§l» §r§7利用可能なバイオーム§8:§7 {biomes}",
+            "success": "§9プロット §8§l» §r§7プロットのバイオームが §9{biome} §7に正常に変更されました！",
             "usage": "§8/§cp biome §8[§cbiome§8]"
         },
         "biomecolor": {
-            "desc": "§7Changes the biome color of your plot",
-            "invalid_format": "§9Plot §8§l» §r§cUse §8/§cp biomecolor §8<§cr§8,§cg§8,§cb§8>",
-            "invalid_range": "§9Plot §8§l» §r§cColor values must be between 0 - 255...",
-            "invalid_type": "§9Plot §8§l» §r§cColors must be numbers (rgb format)...",
-            "success": "§9Plot §8§l» §r§7Biome color changed to §9{r}§8,§9{g}§8,§9{b} §7successfully!",
+            "desc": "§7プロットのバイオームカラーを変更します",
+            "invalid_format": "§9プロット §8§l» §r§c使用方法 §8/§cp biomecolor §8<§cr§8,§cg§8,§cb§8>",
+            "invalid_range": "§9プロット §8§l» §r§c色の値は 0 - 255 の間でなければなりません...",
+            "invalid_type": "§9プロット §8§l» §r§c色は数字（RGB形式）でなければなりません...",
+            "success": "§9プロット §8§l» §r§7バイオームカラーが §9{r}§8,§9{g}§8,§9{b} §7に正常に変更されました！",
             "usage": "§8/§cp biomecolor §8<§cr§8,§cg§8,§cb§8>"
         },
         "clear": {
-            "already_clearing": "§9Plot §8§l» §r§cThis plot is already being cleared...",
-            "confirm": "§9Plot §8§l» §r§7Are you sure you want to clear plot §9{plot}§7? Use §8/§7p clear confirm",
-            "desc": "§7Clears your plot",
-            "success": "§9Plot §8§l» §r§7Plot cleared successfully!",
+            "already_clearing": "§9プロット §8§l» §r§cこのプロットは既にクリア中です...",
+            "confirm": "§9プロット §8§l» §r§7プロット §9{plot}§7 をクリアしてもよろしいですか？ §8/§7p clear confirm を使用してください",
+            "desc": "§7プロットをクリアします",
+            "success": "§9プロット §8§l» §r§7プロットが正常にクリアされました！",
             "usage": "§8/§cp clear"
         },
         "command": {
-            "desc": "§7Manage your plots",
-            "unknown": "§9Plot §8§l» §r§cUnknown subcommand, use §8/§cp help to see available commands",
-            "usage": "§9Plot §8§l» §r§cUse §8/§cplot §8<§chelp§8|§csub-cmd§8> §8[§coptions§8]"
+            "desc": "§7プロットを管理します",
+            "unknown": "§9プロット §8§l» §r§c不明なサブコマンドです。§8/§cp help で利用可能なコマンドを確認してください",
+            "usage": "§9プロット §8§l» §r§c使用方法 §8/§cplot §8<§chelp§8|§cサブコマンド§8> §8[§coptions§8]"
         },
-        "confirm": "confirm",
+        "confirm": "確認",
         "deny": {
             "already": {
-                "denied": "§9Plot §8§l» §r§c{player} is already blocked..."
+                "denied": "§9プロット §8§l» §r§c{player} は既にブロックされています..."
             },
-            "desc": "§7Blocks all or a player from entering your plot",
+            "desc": "§7全プレイヤーまたは特定のプレイヤーがプロットに入れないようにします",
             "everyone": {
-                "success": "§9Plot §8§l» §r§7All players were blocked!"
+                "success": "§9プロット §8§l» §r§7全プレイヤーがブロックされました！"
             },
-            "success": "§9Plot §8§l» §r§9{player} §7was blocked successfully!",
+            "success": "§9プロット §8§l» §r§9{player} §7が正常にブロックされました！",
             "usage": "§8/§cp deny §8<§cplayer§8|§c*§8>"
         },
         "denytransfer": {
-            "desc": "§7Denies a plot transfer",
-            "no_pending": "§cSystem §8§l» §r§cYou have no pending requests...",
-            "notify_sender": "§9Plot §8§l» §r§9{player} §7declined the plot transfer...",
-            "success": "§9Plot §8§l» §r§7You declined the plot transfer...",
+            "desc": "§7プロットの譲渡を拒否します",
+            "no_pending": "§cシステム §8§l» §r§c保留中のリクエストがありません...",
+            "notify_sender": "§9プロット §8§l» §r§9{player} §7がプロット譲渡を拒否しました...",
+            "success": "§9プロット §8§l» §r§7プロット譲渡を拒否しました...",
             "usage": "§8/§cp denytransfer"
         },
         "dispose": {
-            "confirm": "§9Plot §8§l» §r§7Are you sure you want to discard plot §9{plot}§7? Use §8/§7p dispose confirm",
-            "desc": "§7Discards your plot",
-            "success": "§9Plot §8§l» §r§7Plot discarded successfully!",
+            "confirm": "§9プロット §8§l» §r§7プロット §9{plot}§7 を破棄してもよろしいですか？ §8/§7p dispose confirm を使用してください",
+            "desc": "§7プロットを破棄します",
+            "success": "§9プロット §8§l» §r§7プロットが正常に破棄されました！",
             "usage": "§8/§cp dispose"
         },
-        "error": "§9Plot §8§l» §r§cOops! Something went wrong...",
+        "error": "§9プロット §8§l» §r§cエラー！問題が発生しました...",
         "generate": {
-            "desc": "§7Generates a new plot world",
-            "error": "§9Plot §8§l» §r§cThe world could not be generated...",
-            "exists": "§9Plot §8§l» §r§cWorld {name} already exists",
-            "success": "§9Plot §8§l» §r§7Plot world generated successfully: {name}",
+            "desc": "§7新しいプロットワールドを生成します",
+            "error": "§9プロット §8§l» §r§cワールドを生成できませんでした...",
+            "exists": "§9プロット §8§l» §r§cワールド {name} は既に存在します",
+            "success": "§9プロット §8§l» §r§7プロットワールドが正常に生成されました：{name}",
             "usage": "§8/§cp generate §8<§cname§8>"
         },
         "give": {
-            "desc": "§7Gives your plot to another player",
-            "expired": "§9Plot §8§l» §r§cThe plot transfer request has expired...",
-            "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §7Plot §9Transfer§8===-=-=-",
-            "instructions": "§9Plot §8§l» §r§7Use §a/p accepttransfer §7to accept or §c/p denytransfer §7to decline",
-            "notonline": "§9Plot §8§l» §r§cPlayer is offline",
-            "pending_exists": "§cSystem §8§l» §r§cThis player already has a pending request...",
-            "request": "§9Plot §8§l» §r§9{player} §7wants to give you plot §9{x}§8;§9{z}",
-            "requests_disabled": "§cSystem §8§l» §r§cThis player has disabled receiving requests...",
-            "sent": "§9Plot §8§l» §r§7Transfer request sent to §9{player}§7!",
-            "toself": "§9Plot §8§l» §r§cYou can't give a plot to yourself...",
+            "desc": "§7プロットを他のプレイヤーに譲渡します",
+            "expired": "§9プロット §8§l» §r§cプロット譲渡リクエストが期限切れです...",
+            "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §7プロット §9譲渡§8===-=-=-",
+            "instructions": "§9プロット §8§l» §r§7§a/p accepttransfer §7で受け入れるか §c/p denytransfer §7で拒否してください",
+            "notonline": "§9プロット §8§l» §r§cプレイヤーはオフラインです",
+            "pending_exists": "§cシステム §8§l» §r§cこのプレイヤーには既に保留中のリクエストがあります...",
+            "request": "§9プロット §8§l» §r§9{player} §7がプロット §9{x}§8;§9{z} §7を譲渡したいています",
+            "requests_disabled": "§cシステム §8§l» §r§cこのプレイヤーはリクエスト受信を無効にしています...",
+            "sent": "§9プロット §8§l» §r§7譲渡リクエストが §9{player}§7 に送信されました！",
+            "toself": "§9プロット §8§l» §r§c自分自身にプロットを譲渡することはできません...",
             "usage": "§8/§cp give §8<§cplayer§8>"
         },
         "help": {
-            "desc": "§7Shows Plot commands",
-            "entry": "§9Plot §8§l» §r§8/§7p {name} §8-§7 {desc}",
-            "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §9Plot §8(§f{page}§8/§f{total}§8) §8===-=-=-=-",
+            "desc": "§7プロットコマンドを表示します",
+            "entry": "§9プロット §8§l» §r§8/§7p {name} §8-§7 {desc}",
+            "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §9プロット §8(§f{page}§8/§f{total}§8) §8===-=-=-=-",
             "usage": "§8/§cp help §8<§cpage§8>"
         },
         "homes": {
-            "desc": "§7Shows your plots",
-            "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §9Plots §8(§f{page}§8/§f{total}§8) §8===-=-=-=-",
-            "invalid_page": "§cSystem §8§l» §r§cInvalid page, there are only §c{total} §cpages...",
-            "noplots": "§9Plot §8§l» §r§cYou have no plots...",
+            "desc": "§7あなたのプロットを表示します",
+            "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §9プロット §8(§f{page}§8/§f{total}§8) §8===-=-=-=-",
+            "invalid_page": "§cシステム §8§l» §r§c無効なページです。§c{total} §cページのみあります...",
+            "noplots": "§9プロット §8§l» §r§cプロットを持っていません...",
             "usage": "§8/§cp homes"
         },
         "info": {
-            "about": "§9Plot §8§l» §r§7Information about plot §9{plot}",
-            "allowed": "§9Plot §8§l» §r§7Allowed §8(§f{count}§8):§7 {players}",
-            "biome": "§9Plot §8§l» §r§7Biome§8:§9 {biome}",
-            "denied": "§9Plot §8§l» §r§7Denied §8(§f{count}§8):§7 {players}",
-            "desc": "§7Shows information about a plot",
-            "helpers": "§9Plot §8§l» §r§7Helpers §8(§f{count}§8):§7 {helpers}",
-            "owner": "§9Plot §8§l» §r§7Owner§8:§9 {owner}",
-            "plotname": "§9Plot §8§l» §r§7Name§8:§9 {name}",
-            "rating": "§9Plot §8§l» §r§7Rating§8:§9 {score} §8(§9{count} §7ratings§8)",
+            "about": "§9プロット §8§l» §r§7プロット §9{plot} §7の情報",
+            "allowed": "§9プロット §8§l» §r§7許可済み §8(§f{count}§8):§7 {players}",
+            "biome": "§9プロット §8§l» §r§7バイオーム§8:§9 {biome}",
+            "denied": "§9プロット §8§l» §r§7ブロック済み §8(§f{count}§8):§7 {players}",
+            "desc": "§7プロットの情報を表示します",
+            "helpers": "§9プロット §8§l» §r§7ヘルパー §8(§f{count}§8):§7 {helpers}",
+            "owner": "§9プロット §8§l» §r§7所有者§8:§9 {owner}",
+            "plotname": "§9プロット §8§l» §r§7名前§8:§9 {name}",
+            "rating": "§9プロット §8§l» §r§7評価§8:§9 {score} §8(§9{count} §7件の評価§8)",
             "usage": "§8/§cp info"
         },
-        "notinplot": "§9Plot §8§l» §r§cYou are not inside a plot...",
-        "notowner": "§9Plot §8§l» §r§cYou don't own this plot...",
+        "notinplot": "§9プロット §8§l» §r§cプロットの中にいません...",
+        "notowner": "§9プロット §8§l» §r§cこのプロットの所有者ではありません...",
         "popup": {
-            "_prefix": "§9Plot §8§l» §r",
-            "available": "§7This plot is free! Claim it for §c{price} Akunas §7with /p claim",
-            "owner": "§7Owned by §9{owner} §8- §7Rating§8:§9 {rating}",
-            "rate": "§7Like this plot? Rate it with §8/§7p rate!"
+            "_prefix": "§9プロット §8§l» §r",
+            "available": "§7このプロットは空きです！ /p claim で §c{price} Akunas §7で確保できます",
+            "owner": "§7所有者§8:§9 {owner} §8- §7評価§8:§9 {rating}",
+            "rate": "§7このプロットが好きですか？ §8/§7p rate §7で評価してください！"
         },
         "rate": {
-            "desc": "§7Rates a plot",
-            "invalid_range": "§9Plot §8§l» §r§cThe rating must be between 1 and 5...",
-            "notify_owner": "§9Plot §8§l» §r §9{player} §7rated your plot §9{x}§8;§9{z} §7with §9{rating} §7stars!",
-            "self": "§9Plot §8§l» §r§cYou cannot rate your own plot...",
-            "success": "§9Plot §8§l» §r§7Rating submitted! Plot average rating§8:§9 {score}",
-            "usage": "§8/§cp rate §8<§cscore - 1 to 5§8>"
+            "desc": "§7プロットを評価します",
+            "invalid_range": "§9プロット §8§l» §r§c評価は 1 から 5 の間でなければなりません...",
+            "notify_owner": "§9プロット §8§l» §r §9{player} §7がプロット §9{x}§8;§9{z} §7を §9{rating} §7星で評価しました！",
+            "self": "§9プロット §8§l» §r§c自分のプロットを評価することはできません...",
+            "success": "§9プロット §8§l» §r§7評価が送信されました！ プロットの平均評価§8:§9 {score}",
+            "usage": "§8/§cp rate §8<§cscore - 1 から 5§8>"
         },
         "removehelper": {
-            "desc": "§7Removes a helper from your plot",
+            "desc": "§7プロットからヘルパーを削除します",
             "everyone": {
-                "success": "§9Plot §8§l» §r§7All players were removed from helpers!"
+                "success": "§9プロット §8§l» §r§7全プレイヤーがヘルパーから削除されました！"
             },
-            "notone": "§9Plot §8§l» §r§c{player} is not a helper...",
-            "success": "§9Plot §8§l» §r§9{player} §7was removed from helpers...",
+            "notone": "§9プロット §8§l» §r§c{player} はヘルパーではありません...",
+            "success": "§9プロット §8§l» §r§9{player} §7がヘルパーから削除されました...",
             "usage": "§8/§cp removehelper §8<§cplayer§8>"
         },
         "reset": {
-            "already_clearing": "§9Plot §8§l» §r§cThis plot is already being reset...",
-            "confirm": "§9Plot §8§l» §r§7Are you sure you want to reset plot §9{plot}§7? Use §8/§7p reset confirm",
-            "desc": "§7Resets your plot",
-            "success": "§9Plot §8§l» §r§7Plot reset successfully!",
+            "already_clearing": "§9プロット §8§l» §r§cこのプロットは既にリセット中です...",
+            "confirm": "§9プロット §8§l» §r§7プロット §9{plot}§7 をリセットしてもよろしいですか？ §8/§7p reset confirm を使用してください",
+            "desc": "§7プロットをリセットします",
+            "success": "§9プロット §8§l» §r§7プロットが正常にリセットされました！",
             "usage": "§8/§cp reset"
         },
         "resetplots": {
-            "desc": "§7Resets all plots of a player",
+            "desc": "§7プレイヤーの全プロットをリセットします",
             "usage": "§8/§cp resetplots §8<§cplayer§8>"
         },
         "subcommand": {
-            "usage": "§9Plot §8§l» §r§cUsage: {usage}"
+            "usage": "§9プロット §8§l» §r§c使用方法：{usage}"
         },
         "top": {
-            "desc": "§7Shows the top 10 highest rated plots",
-            "entry": "§9{pos} §8§l» §r§9{x}§8;§9{z} §8-§9 {owner} §8- §9{score} §8(§9{ratings} §7Ratings§8)",
-            "header": "§8-=-=-=-=== §bTop 10 §8- §9Plots §8===-=-=-=-",
-            "noplots": "§9Plot §8§l» §r§cNo rated plots found...",
+            "desc": "§7評価の高いトップ10プロットを表示します",
+            "entry": "§9{pos} §8§l» §r§9{x}§8;§9{z} §8-§9 {owner} §8- §9{score} §8(§9{ratings} §7件の評価§8)",
+            "header": "§8-=-=-=-=== §bトップ10 §8- §9プロット §8===-=-=-=-",
+            "noplots": "§9プロット §8§l» §r§c評価されたプロットが見つかりません...",
             "usage": "§8/§cp top"
         },
         "warp": {
-            "desc": "§7Teleports to a plot",
-            "notinplotworld": "§9Plot §8§l» §r§cYou are not in the Plot world...",
-            "success": "§9Plot §8§l» §r§7You were teleported to plot §9{plot}§7!",
-            "unclaimed": "§9Plot §8§l» §r§cThis plot doesn't belong to anyone...",
+            "desc": "§7プロットにテレポートします",
+            "notinplotworld": "§9プロット §8§l» §r§cプロットワールドにいません...",
+            "success": "§9プロット §8§l» §r§7プロット §9{plot}§7 にテレポートしました！",
+            "unclaimed": "§9プロット §8§l» §r§cこのプロットは誰のものでもありません...",
             "usage": "§8/§cp warp §8<§cid§8>",
-            "wrongid": "§9Plot §8§l» §r§cThe id must be in X;Z format"
+            "wrongid": "§9プロット §8§l» §r§cIDはX;Z形式でなければなりません"
         }
     },
     "cosmetic": {
@@ -618,190 +617,190 @@
         "bedwars": {
             "bed_break": {
                 "explosion": {
-                    "description": "A devastating explosion when breaking the bed"
+                    "description": "ベッドを壊すと壊滅的な爆発が発生"
                 },
                 "ores": {
-                    "description": "Precious ores explode around the destroyed bed"
+                    "description": "破壊されたベッドの周囲で貴重な鉱石が爆発"
                 },
                 "rainbow": {
-                    "description": "A colorful wool explosion when breaking the bed"
+                    "description": "ベッドを壊すとカラフルな羊毛の爆発が発生"
                 }
             },
             "final_kill": {
                 "blood": {
-                    "description": "Blood..."
+                    "description": "血液..."
                 },
                 "critical": {
-                    "description": "Critical particles explode over the eliminated enemy"
+                    "description": "敵を排除した時にクリティカルパーティクルが爆発"
                 },
                 "ez": {
-                    "description": "Displays an EZ text"
+                    "description": "EZテキストを表示"
                 },
                 "lightning": {
-                    "description": "A lightning bolt strikes the killed player"
+                    "description": "雷がプレイヤーに落ちる"
                 },
                 "loser": {
-                    "description": "Displays an L text"
+                    "description": "Lテキストを表示"
                 },
                 "smoke": {
-                    "description": "A cloud of smoke rises over the eliminated enemy"
+                    "description": "煙の雲が敵の上に立ち上る"
                 }
             },
             "kill": {
                 "critical": {
-                    "description": "Critical particles explode on each kill"
+                    "description": "キルごとにクリティカルパーティクルが爆発"
                 },
                 "hearts": {
-                    "description": "Red hearts float over the victim"
+                    "description": "赤いハートが受害者の上に浮かぶ"
                 },
                 "smoke": {
-                    "description": "A cloud of smoke marks each kill"
+                    "description": "キルごとに煙の雲が表示される"
                 }
             },
             "win": {
                 "enchant": {
-                    "description": "Magical particles surround the winner"
+                    "description": "勝者を魔法のパーティクルが囲む"
                 },
                 "firework": {
-                    "description": "Colorful fireworks explode around the winner"
+                    "description": "勝者の周囲でカラフルな花火が爆発"
                 }
             },
             "wood_type": {
                 "acacia": {
-                    "description": "Reddish acacia wood"
+                    "description": "赤みのあるアカシア材"
                 },
                 "birch": {
-                    "description": "Light birch wood"
+                    "description": "明るい樺材"
                 },
                 "dark_oak": {
-                    "description": "Dark oak wood"
+                    "description": "暗いオーク材"
                 },
                 "jungle": {
-                    "description": "Exotic jungle wood"
+                    "description": "エキゾチックなジャングル材"
                 },
                 "oak": {
-                    "description": "Classic oak wood"
+                    "description": "クラシックなオーク材"
                 },
                 "spruce": {
-                    "description": "Dark spruce wood"
+                    "description": "暗いトウヒ材"
                 }
             }
         },
         "blocksumo": {
             "final_kill": {
                 "blood": {
-                    "description": "Blood..."
+                    "description": "血液..."
                 },
                 "critical": {
-                    "description": "Critical particles explode over the eliminated enemy"
+                    "description": "敵を排除した時にクリティカルパーティクルが爆発"
                 },
                 "ez": {
-                    "description": "Displays EZ text on final kill"
+                    "description": "最終キル時にEZテキストを表示"
                 },
                 "lightning": {
-                    "description": "A lightning bolt strikes the eliminated player"
+                    "description": "雷が排除されたプレイヤーに落ちる"
                 },
                 "loser": {
-                    "description": "Displays L text on final kill"
+                    "description": "最終キル時にLテキストを表示"
                 },
                 "smoke": {
-                    "description": "A smoke cloud rises over the eliminated enemy"
+                    "description": "煙の雲が敵の上に立ち上る"
                 }
             },
             "kill": {
                 "blood": {
-                    "description": "Blood splatters at the victim position"
+                    "description": "受害者の位置に血しぶきが飛び散る"
                 },
                 "critical": {
-                    "description": "Critical particles explode on each kill"
+                    "description": "キルごとにクリティカルパーティクルが爆発"
                 },
                 "ez": {
-                    "description": "EZ floats above the victim"
+                    "description": "EZテキストが受害者の上に浮かぶ"
                 },
                 "hearts": {
-                    "description": "Red hearts float over the victim"
+                    "description": "赤いハートが受害者の上に浮かぶ"
                 },
                 "lightning": {
-                    "description": "A lightning bolt strikes the victim on death"
+                    "description": "雷が受害者に落ちる"
                 },
                 "loser": {
-                    "description": "L floats above the victim"
+                    "description": "Lテキストが受害者の上に浮かぶ"
                 },
                 "smoke": {
-                    "description": "A smoke cloud marks each kill"
+                    "description": "キルごとに煙の雲が表示される"
                 }
             },
             "win": {
                 "enchant": {
-                    "description": "Magical particles surround the winner"
+                    "description": "勝者を魔法のパーティクルが囲む"
                 },
                 "firework": {
-                    "description": "Colorful fireworks explode around the winner"
+                    "description": "勝者の周囲でカラフルな花火が爆発"
                 }
             },
             "wool_color": {
                 "black": {
-                    "description": "Dark black wool"
+                    "description": "暗い黒羊毛"
                 },
                 "blue": {
-                    "description": "Intense blue wool"
+                    "description": "鮮やかな青羊毛"
                 },
                 "cyan": {
-                    "description": "Refreshing cyan wool"
+                    "description": "爽やかなシアン羊毛"
                 },
                 "green": {
-                    "description": "Bright green wool"
+                    "description": "明るい緑羊毛"
                 },
                 "orange": {
-                    "description": "Energetic orange wool"
+                    "description": "エネルギッシュなオレンジ羊毛"
                 },
                 "pink": {
-                    "description": "Delicate pink wool"
+                    "description": "繊細なピンク羊毛"
                 },
                 "purple": {
-                    "description": "Mysterious purple wool"
+                    "description": "神秘的な紫羊毛"
                 },
                 "red": {
-                    "description": "Vibrant red wool"
+                    "description": "鮮やかな赤羊毛"
                 },
                 "white": {
-                    "description": "Default white wool"
+                    "description": "デフォルトの白羊毛"
                 },
                 "yellow": {
-                    "description": "Radiant yellow wool"
+                    "description": "輝く黄色羊毛"
                 }
             }
         },
         "skywars": {
             "kill": {
                 "blood": {
-                    "description": "Blood splatters at the victim position"
+                    "description": "受害者の位置に血しぶきが飛び散る"
                 },
                 "critical": {
-                    "description": "Critical particles explode on each kill"
+                    "description": "キルごとにクリティカルパーティクルが爆発"
                 },
                 "ez": {
-                    "description": "EZ floats above the victim"
+                    "description": "EZテキストが受害者の上に浮かぶ"
                 },
                 "hearts": {
-                    "description": "Red hearts float over the victim"
+                    "description": "赤いハートが受害者の上に浮かぶ"
                 },
                 "lightning": {
-                    "description": "A lightning bolt strikes the victim on death"
+                    "description": "雷が受害者に落ちる"
                 },
                 "loser": {
-                    "description": "L floats above the victim"
+                    "description": "Lテキストが受害者の上に浮かぶ"
                 },
                 "smoke": {
-                    "description": "A smoke cloud marks each kill"
+                    "description": "キルごとに煙の雲が表示される"
                 }
             },
             "win": {
                 "enchant": {
-                    "description": "Magical particles surround the winner"
+                    "description": "勝者を魔法のパーティクルが囲む"
                 },
                 "firework": {
-                    "description": "Colorful fireworks explode around the winner"
+                    "description": "勝者の周囲でカラフルな花火が爆発"
                 }
             }
         }
@@ -922,80 +921,80 @@
         "no_active": "§cアクティブなスキルがありません...",
         "usage": "§c§8/§c{label} §8<§con§8|§coff§8|§clist§8> を使用してください",
         "archer": {
-            "description": "Gain an arrow when hitting enemies"
+            "description": "敵を攻撃した時に矢を獲得"
         },
         "bedbreaker": {
-            "description": "When breaking an enemy bed, you receive Speed II and Jump Boost II for 10 seconds"
+            "description": "敵のベッドを壊すと、速度IIとジャンプブーストIIを10秒間獲得"
         },
         "bird": {
-            "description": "You receive 2 extra feathers"
+            "description": "追加で2本の羽根を獲得"
         },
         "builder": {
-            "description": "Gives you double the blocks"
+            "description": "ブロックが2倍に"
         },
         "cheststealer": {
-            "description": "When clicking on a chest, you automatically receive its items"
+            "description": "チェストをクリックすると自動的にアイテムを取得"
         },
         "enderpearl": {
-            "description": "Now you can use snowballs as an ender pearl!"
+            "description": "雪球をエンダーパールとして使用可能に！"
         },
         "explosivebow": {
-            "description": "Causes a small explosion where your arrow lands"
+            "description": "矢が着地した場所で小さな爆発を起こす"
         },
         "featherboost": {
-            "description": "Increases your feather boost"
+            "description": "羽根ブーストが増加"
         },
         "firearrow": {
-            "description": "Arrows set enemies on fire upon hitting them"
+            "description": "矢が敵に当たると着火させる"
         },
         "fireballboost": {
-            "description": "Increases the fireball boost on other players"
+            "description": "他のプレイヤーへのファイアボールブーストが増加"
         },
         "fury": {
-            "description": "When killing a player, you receive Speed and Strength effects for 8 seconds"
+            "description": "プレイヤーを倒すと、速度と力の効果を8秒間獲得"
         },
         "hook": {
-            "description": "Arrows pull the enemy forward when hitting them"
+            "description": "矢が敵に当たると前方に引き寄せる"
         },
         "killer": {
-            "description": "You receive Strength and Jump Boost effects when killing a player"
+            "description": "プレイヤーを倒すと力とジャンプブーストの効果を獲得"
         },
         "life": {
-            "description": "Gives you 4 extra hearts"
+            "description": "追加で4つのハートを獲得"
         },
         "miner": {
-            "description": "You have infinite Haste I"
+            "description": "無限のヘイストIを保持"
         },
         "slingshotboost": {
-            "description": "Increases the Estilingue boost"
+            "description": "スリングショットブーストが増加"
         },
         "slow": {
-            "description": "When hitting a player with an egg, you apply a slowness effect for 4 seconds"
+            "description": "卵でプレイヤーに当たると、4秒間スロウ効果を付与"
         },
         "sprinter": {
-            "description": "You receive Speed II for 11 seconds",
-            "description_sw": "You receive Speed II at the start of the match"
+            "description": "速度IIを11秒間獲得",
+            "description_sw": "試合開始時に速度IIを獲得"
         },
         "switcher": {
-            "description": "When hitting someone with a snowball, you switch places with that person"
+            "description": "雪球で誰かに当たると、その人と場所を交換"
         },
         "tanker": {
-            "description": "You receive an iron chestplate"
+            "description": "鉄のチェストプレートを獲得"
         },
         "thief": {
-            "description": "Receive 20% of the player's feathers when killing them..."
+            "description": "プレイヤーを倒した時に羽毛の20%を獲得..."
         },
         "tntegg": {
-            "description": "When throwing an egg, you spawn a TNT!"
+            "description": "卵を投げるとTNTを生成！"
         },
         "towerspeed": {
-            "description": "Increases the building speed of the compact tower"
+            "description": "コンパクトタワーの建築速度が増加"
         },
         "trapbuff": {
-            "description": "When your trap is activated, you gain Strength and Speed II for 6 seconds"
+            "description": "トラップが発動すると、力と速度IIを6秒間獲得"
         },
         "trapresistance": {
-            "description": "Reduces the duration of negative trap effects by 2 seconds"
+            "description": "トラップの負の効果の持続時間を2秒短縮"
         }
     },
     "skills": {
@@ -1107,67 +1106,67 @@
         "no_active": "§cアクティブなキットがありません...",
         "no_permission": "§cキット §9{kit}§c を使用する権限がありません！",
         "archer": {
-            "description": "Archer kit with feathers and eggs"
+            "description": "羽根と卵を使った弓箭手キット"
         },
         "assassin": {
-            "description": "Stealth assassin kit"
+            "description": "ステルス暗殺者キット"
         },
         "builder": {
-            "description": "Kit for quick building"
+            "description": "素早い建築用キット"
         },
         "eco": {
-            "description": "Kit created by zLitePvPz"
+            "description": "zLitePvPzが作成したキット"
         },
         "godness": {
-            "description": "Special kit for VIPs"
+            "description": "VIP専用キット"
         },
         "juggernaut": {
-            "description": "Brute force kit"
+            "description": "強力な近接キット"
         },
         "lumberjack": {
-            "description": "Lumberjack kit with wood"
+            "description": "木材を備えた木こりキット"
         },
         "medic": {
-            "description": "Medic kit with healing"
+            "description": "回復能力を備えた医療キット"
         },
         "miner": {
-            "description": "Mining kit"
+            "description": "採掘キット"
         },
         "mágico": {
-            "description": "Potion kit"
+            "description": "ポーションキット"
         },
         "ninja": {
-            "description": "Ninja kit with mobility"
+            "description": "高機動性忍者キット"
         },
         "pyro": {
-            "description": "Pyromaniac kit with fire"
+            "description": "火炎を備えた放火キット"
         },
         "rush": {
-            "description": "Rush kit"
+            "description": "ラッシュキット"
         },
         "scout": {
-            "description": "Advanced scouting kit"
+            "description": "高度な偵察キット"
         },
         "sniper": {
-            "description": "Elite sniper kit"
+            "description": "エリートスナイパーキット"
         },
         "tank": {
-            "description": "Tank kit with high defense"
+            "description": "高防御タンクキット"
         },
         "thrower": {
-            "description": "Projectile kit"
+            "description": "投擲キット"
         },
         "trap": {
-            "description": "Trap kit..."
+            "description": "トラップキット..."
         },
         "w3lton": {
-            "description": "Kit created by W3lton (SrMathBR)"
+            "description": "W3lton (SrMathBR)が作成したキット"
         },
         "xyp": {
-            "description": "Kit created by srxyp"
+            "description": "srxypが作成したキット"
         },
         "yt": {
-            "description": "Special kit for Youtubers"
+            "description": "YouTuber専用キット"
         }
     },
     "kits": {
@@ -2691,10 +2690,10 @@
         },
         "command": {
             "usage": "§7参加するには §8/§7tntrun join§7 を使用{n}§cTNT§fRun §8§l» §r§7退出するには §8/§7tntrun leave§7 を使用",
-            "already_in_arena": "§cすでにアリーナにいます...",
             "no_space": "§c利用可能なアリーナがありません..."
         },
         "scoreboard": {
+            "_prefix": "",
             "format": "{right}§fi§cAkuna§9MC §8§l» §r§cTNT§fRun{n}{right}{bar}{n}{right}§8§l» §r§7マップ§8:§c {map}{n}{right}§8§l» §r§7生存§8:§c {alive}{n}{right}§8§l» §r§7時間§8:§c {time}{n}{right}{bar}{n}{n}{right}§ciakunamc.com 19132"
         }
     }

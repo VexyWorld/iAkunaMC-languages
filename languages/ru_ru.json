@@ -236,7 +236,6 @@
             "killed_void": "§b{player} §7упал(а) в пустоту §8(§f{alive}§8/§f{maxPlayers}§8)"
         },
         "refill": {
-            "_prefix": "",
             "done": "§7Все сундуки снова заполнены!"
         },
         "scoreboard": {
@@ -2570,10 +2569,10 @@
         },
         "command": {
             "usage": "§7Для входа §8/§7tntrun join{n}§cTNT§fRun §8§l» §r§7Для выхода §8/§7tntrun leave",
-            "already_in_arena": "§cВы уже в арене...",
             "no_space": "§cНет доступных арен..."
         },
         "scoreboard": {
+            "_prefix": "",
             "format": "{right}§fi§cAkuna§9MC §8§l» §r§cTNT§fRun{n}{right}{bar}{n}{right}§8§l» §r§7Карта§8:§c {map}{n}{right}§8§l» §r§7Живы§8:§c {alive}{n}{right}§8§l» §r§7Время§8:§c {time}{n}{right}{bar}{n}{n}{right}§ciakunamc.com 19132"
         }
     }

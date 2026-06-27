@@ -291,7 +291,6 @@
             "quit": "§b{player} §7left the match §8(§f{count}§8/§f{maxPlayers}§8)"
         },
         "refill": {
-            "_prefix": "",
             "done": "§7All chests have been refilled!"
         },
         "scoreboard": {
@@ -389,11 +388,11 @@
             "success": "§7地块已成功领取！",
             "already_claimed": "§c您已有一个地块...",
             "no_plots": "§c没有可用的地块...",
-            "alreadyclaimed": "§9Plot §8§l» §r§cThis plot is already claimed by {owner}",
-            "desc": "§7Claims the plot you are standing in",
-            "nomoney": "§9Plot §8§l» §r§cYou don't have enough money to claim this plot",
+            "alreadyclaimed": "§9地块 §8§l» §r§c此地块已被 {owner} 领取",
+            "desc": "§7领取您当前站立的地块",
+            "nomoney": "§9地块 §8§l» §r§c您没有足够的金钱来领取此地块",
             "usage": "§8/§cp claim §8<§cname§8>",
-            "yourplot": "§9Plot §8§l» §r§cYou already claimed this plot"
+            "yourplot": "§9地块 §8§l» §r§c您已领取了此地块"
         },
         "unclaim": {
             "success": "§7地块已成功放弃！",
@@ -402,205 +401,205 @@
         "home": {
             "not_owner": "§c您没有地块...",
             "not_found": "§c未找到地块...",
-            "desc": "§7Teleports to one of your plots",
-            "error": "§9Plot §8§l» §r§cCould not travel to the plot...",
-            "noplots": "§9Plot §8§l» §r§cYou have no plots",
-            "notexist": "§9Plot §8§l» §r§cYou don't have a plot with id {id}",
-            "success": "§9Plot §8§l» §r§7Teleported to plot §9{plot} §7successfully!",
+            "desc": "§7传送到您的一个地块",
+            "error": "§9地块 §8§l» §r§c无法传送到该地块...",
+            "noplots": "§9地块 §8§l» §r§c您没有地块",
+            "notexist": "§9地块 §8§l» §r§c您没有ID为 {id} 的地块",
+            "success": "§9地块 §8§l» §r§7已成功传送到地块 §9{plot}§7！",
             "usage": "§8/§cp home §8<§cid§8>"
         },
         "visit": {
             "not_found": "§c未找到 {player} 的地块..."
         },
         "accepttransfer": {
-            "desc": "§7Accepts a plot transfer",
-            "invalid_data": "§9Plot §8§l» §r§cInvalid plot data...",
-            "no_pending": "§cSystem §8§l» §r§cYou have no pending requests...",
-            "not_exists": "§9Plot §8§l» §r§cThe plot does not exist...",
-            "not_owner": "§9Plot §8§l» §r§cThe plot no longer belongs to {owner}...",
-            "notify_sender": "§9Plot §8§l» §r§c{player} §7accepted the plot transfer §9{plot}§7!",
-            "success": "§9Plot §8§l» §r§7You accepted the plot transfer §9{plot}§7!",
+            "desc": "§7接受地块转让",
+            "invalid_data": "§9地块 §8§l» §r§c无效的地块数据...",
+            "no_pending": "§c系统 §8§l» §r§c您没有待处理的请求...",
+            "not_exists": "§9地块 §8§l» §r§c该地块不存在...",
+            "not_owner": "§9地块 §8§l» §r§c该地块不再属于 {owner}...",
+            "notify_sender": "§9地块 §8§l» §r§c{player} §7接受了地块转让 §9{plot}§7！",
+            "success": "§9地块 §8§l» §r§7您接受了地块转让 §9{plot}§7！",
             "usage": "§8/§cp accepttransfer"
         },
         "addhelper": {
-            "alreadyone": "§9Plot §8§l» §r§c{player} is already a helper...",
-            "desc": "§7Adds a helper to your plot",
+            "alreadyone": "§9地块 §8§l» §r§c{player} 已经是帮手...",
+            "desc": "§7为您的地块添加帮手",
             "everyone": {
-                "success": "§9Plot §8§l» §r§7All players are now helpers on your plot!"
+                "success": "§9地块 §8§l» §r§7所有玩家现在都是您地块的帮手！"
             },
-            "offline": "§cSystem §8§l» §r§cPlayer is offline",
-            "success": "§9Plot §8§l» §r§9{player} §7is now a helper on your plot",
+            "offline": "§c系统 §8§l» §r§c玩家离线",
+            "success": "§9地块 §8§l» §r§9{player} §7现在是您地块的帮手",
             "usage": "§8/§cp addhelper §8<§cplayer§8>"
         },
         "allow": {
             "already": {
-                "allowed": "§9Plot §8§l» §r§c{player} is already allowed..."
+                "allowed": "§9地块 §8§l» §r§c{player} 已经被允许..."
             },
-            "desc": "§7Allows all or a player to enter your plot",
+            "desc": "§7允许所有人或特定玩家进入您的地块",
             "everyone": {
-                "success": "§9Plot §8§l» §r§7All players can now enter the plot!"
+                "success": "§9地块 §8§l» §r§7所有玩家现在都可以进入地块！"
             },
-            "success": "§9Plot §8§l» §r§9{player} §7can now enter the plot!",
+            "success": "§9地块 §8§l» §r§9{player} §7现在可以进入地块！",
             "usage": "§8/§cp allow §8<§cplayer§8|§c*§8>"
         },
         "auto": {
-            "desc": "§7Teleports to the next free plot",
-            "noplots": "§9Plot §8§l» §r§7No plots available...",
-            "notplotworld": "§9Plot §8§l» §r§cYou are not in the Plot world...",
-            "success": "§9Plot §8§l» §r§7Teleported to free plot §9{x}§8;§9{z} §7successfully!",
+            "desc": "§7传送到下一个空闲地块",
+            "noplots": "§9地块 §8§l» §r§7没有可用的地块...",
+            "notplotworld": "§9地块 §8§l» §r§c您不在地块世界中...",
+            "success": "§9地块 §8§l» §r§7已成功传送到空闲地块 §9{x}§8;§9{z}§7！",
             "usage": "§8/§cp auto"
         },
         "biome": {
-            "desc": "§7Changes the biome of your plot",
-            "invalid": "§9Plot §8§l» §r§cThis biome does not exist...",
-            "possible": "§9Plot §8§l» §r§7Available biomes§8:§7 {biomes}",
-            "success": "§9Plot §8§l» §r§7Plot biome changed to §9{biome} §7successfully!",
+            "desc": "§7更改您地块的生物群系",
+            "invalid": "§9地块 §8§l» §r§c此生物群系不存在...",
+            "possible": "§9地块 §8§l» §r§7可用生物群系§8:§7 {biomes}",
+            "success": "§9地块 §8§l» §r§7地块生物群系已成功更改为 §9{biome}§7！",
             "usage": "§8/§cp biome §8[§cbiome§8]"
         },
         "biomecolor": {
-            "desc": "§7Changes the biome color of your plot",
-            "invalid_format": "§9Plot §8§l» §r§cUse §8/§cp biomecolor §8<§cr§8,§cg§8,§cb§8>",
-            "invalid_range": "§9Plot §8§l» §r§cColor values must be between 0 - 255...",
-            "invalid_type": "§9Plot §8§l» §r§cColors must be numbers (rgb format)...",
-            "success": "§9Plot §8§l» §r§7Biome color changed to §9{r}§8,§9{g}§8,§9{b} §7successfully!",
+            "desc": "§7更改您地块的生物群系颜色",
+            "invalid_format": "§9地块 §8§l» §r§c使用 §8/§cp biomecolor §8<§cr§8,§cg§8,§cb§8>",
+            "invalid_range": "§9地块 §8§l» §r§c颜色值必须在 0 - 255 之间...",
+            "invalid_type": "§9地块 §8§l» §r§c颜色必须是数字（RGB格式）...",
+            "success": "§9地块 §8§l» §r§7生物群系颜色已成功更改为 §9{r}§8,§9{g}§8,§9{b}§7！",
             "usage": "§8/§cp biomecolor §8<§cr§8,§cg§8,§cb§8>"
         },
         "clear": {
-            "already_clearing": "§9Plot §8§l» §r§cThis plot is already being cleared...",
-            "confirm": "§9Plot §8§l» §r§7Are you sure you want to clear plot §9{plot}§7? Use §8/§7p clear confirm",
-            "desc": "§7Clears your plot",
-            "success": "§9Plot §8§l» §r§7Plot cleared successfully!",
+            "already_clearing": "§9地块 §8§l» §r§c此地块正在被清理...",
+            "confirm": "§9地块 §8§l» §r§7您确定要清理地块 §9{plot}§7 吗？使用 §8/§7p clear confirm",
+            "desc": "§7清理您的地块",
+            "success": "§9地块 §8§l» §r§7地块已成功清理！",
             "usage": "§8/§cp clear"
         },
         "command": {
-            "desc": "§7Manage your plots",
-            "unknown": "§9Plot §8§l» §r§cUnknown subcommand, use §8/§cp help to see available commands",
-            "usage": "§9Plot §8§l» §r§cUse §8/§cplot §8<§chelp§8|§csub-cmd§8> §8[§coptions§8]"
+            "desc": "§7管理您的地块",
+            "unknown": "§9地块 §8§l» §r§c未知子命令，使用 §8/§cp help 查看可用命令",
+            "usage": "§9地块 §8§l» §r§c使用 §8/§cplot §8<§chelp§8|§c子命令§8> §8[§coptions§8]"
         },
-        "confirm": "confirm",
+        "confirm": "确认",
         "deny": {
             "already": {
-                "denied": "§9Plot §8§l» §r§c{player} is already blocked..."
+                "denied": "§9地块 §8§l» §r§c{player} 已经被阻止..."
             },
-            "desc": "§7Blocks all or a player from entering your plot",
+            "desc": "§7阻止所有人或特定玩家进入您的地块",
             "everyone": {
-                "success": "§9Plot §8§l» §r§7All players were blocked!"
+                "success": "§9地块 §8§l» §r§7所有玩家已被阻止！"
             },
-            "success": "§9Plot §8§l» §r§9{player} §7was blocked successfully!",
+            "success": "§9地块 §8§l» §r§9{player} §7已被成功阻止！",
             "usage": "§8/§cp deny §8<§cplayer§8|§c*§8>"
         },
         "denytransfer": {
-            "desc": "§7Denies a plot transfer",
-            "no_pending": "§cSystem §8§l» §r§cYou have no pending requests...",
-            "notify_sender": "§9Plot §8§l» §r§9{player} §7declined the plot transfer...",
-            "success": "§9Plot §8§l» §r§7You declined the plot transfer...",
+            "desc": "§7拒绝地块转让",
+            "no_pending": "§c系统 §8§l» §r§c您没有待处理的请求...",
+            "notify_sender": "§9地块 §8§l» §r§9{player} §7拒绝了地块转让...",
+            "success": "§9地块 §8§l» §r§7您拒绝了地块转让...",
             "usage": "§8/§cp denytransfer"
         },
         "dispose": {
-            "confirm": "§9Plot §8§l» §r§7Are you sure you want to discard plot §9{plot}§7? Use §8/§7p dispose confirm",
-            "desc": "§7Discards your plot",
-            "success": "§9Plot §8§l» §r§7Plot discarded successfully!",
+            "confirm": "§9地块 §8§l» §r§7您确定要丢弃地块 §9{plot}§7 吗？使用 §8/§7p dispose confirm",
+            "desc": "§7丢弃您的地块",
+            "success": "§9地块 §8§l» §r§7地块已成功丢弃！",
             "usage": "§8/§cp dispose"
         },
-        "error": "§9Plot §8§l» §r§cOops! Something went wrong...",
+        "error": "§9地块 §8§l» §r§c出错了！出了点问题...",
         "generate": {
-            "desc": "§7Generates a new plot world",
-            "error": "§9Plot §8§l» §r§cThe world could not be generated...",
-            "exists": "§9Plot §8§l» §r§cWorld {name} already exists",
-            "success": "§9Plot §8§l» §r§7Plot world generated successfully: {name}",
+            "desc": "§7生成新的地块世界",
+            "error": "§9地块 §8§l» §r§c无法生成世界...",
+            "exists": "§9地块 §8§l» §r§c世界 {name} 已存在",
+            "success": "§9地块 §8§l» §r§7地块世界已成功生成：{name}",
             "usage": "§8/§cp generate §8<§cname§8>"
         },
         "give": {
-            "desc": "§7Gives your plot to another player",
-            "expired": "§9Plot §8§l» §r§cThe plot transfer request has expired...",
-            "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §7Plot §9Transfer§8===-=-=-",
-            "instructions": "§9Plot §8§l» §r§7Use §a/p accepttransfer §7to accept or §c/p denytransfer §7to decline",
-            "notonline": "§9Plot §8§l» §r§cPlayer is offline",
-            "pending_exists": "§cSystem §8§l» §r§cThis player already has a pending request...",
-            "request": "§9Plot §8§l» §r§9{player} §7wants to give you plot §9{x}§8;§9{z}",
-            "requests_disabled": "§cSystem §8§l» §r§cThis player has disabled receiving requests...",
-            "sent": "§9Plot §8§l» §r§7Transfer request sent to §9{player}§7!",
-            "toself": "§9Plot §8§l» §r§cYou can't give a plot to yourself...",
+            "desc": "§7将您的地块转让给其他玩家",
+            "expired": "§9地块 §8§l» §r§c地块转让请求已过期...",
+            "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §7地块 §9转让§8===-=-=-",
+            "instructions": "§9地块 §8§l» §r§7使用 §a/p accepttransfer §7接受或 §c/p denytransfer §7拒绝",
+            "notonline": "§9地块 §8§l» §r§c玩家离线",
+            "pending_exists": "§c系统 §8§l» §r§c此玩家已有待处理的请求...",
+            "request": "§9地块 §8§l» §r§9{player} §7想将地块 §9{x}§8;§9{z} §7转让给您",
+            "requests_disabled": "§c系统 §8§l» §r§c此玩家已禁用接收请求...",
+            "sent": "§9地块 §8§l» §r§7转让请求已发送给 §9{player}§7！",
+            "toself": "§9地块 §8§l» §r§c您不能将地块转让给自己...",
             "usage": "§8/§cp give §8<§cplayer§8>"
         },
         "help": {
-            "desc": "§7Shows Plot commands",
-            "entry": "§9Plot §8§l» §r§8/§7p {name} §8-§7 {desc}",
-            "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §9Plot §8(§f{page}§8/§f{total}§8) §8===-=-=-=-",
+            "desc": "§7显示地块命令",
+            "entry": "§9地块 §8§l» §r§8/§7p {name} §8-§7 {desc}",
+            "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §9地块 §8(§f{page}§8/§f{total}§8) §8===-=-=-=-",
             "usage": "§8/§cp help §8<§cpage§8>"
         },
         "homes": {
-            "desc": "§7Shows your plots",
-            "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §9Plots §8(§f{page}§8/§f{total}§8) §8===-=-=-=-",
-            "invalid_page": "§cSystem §8§l» §r§cInvalid page, there are only §c{total} §cpages...",
-            "noplots": "§9Plot §8§l» §r§cYou have no plots...",
+            "desc": "§7显示您的地块",
+            "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §9地块 §8(§f{page}§8/§f{total}§8) §8===-=-=-=-",
+            "invalid_page": "§c系统 §8§l» §r§c无效页面，只有 §c{total} §c页...",
+            "noplots": "§9地块 §8§l» §r§c您没有地块...",
             "usage": "§8/§cp homes"
         },
         "info": {
-            "about": "§9Plot §8§l» §r§7Information about plot §9{plot}",
-            "allowed": "§9Plot §8§l» §r§7Allowed §8(§f{count}§8):§7 {players}",
-            "biome": "§9Plot §8§l» §r§7Biome§8:§9 {biome}",
-            "denied": "§9Plot §8§l» §r§7Denied §8(§f{count}§8):§7 {players}",
-            "desc": "§7Shows information about a plot",
-            "helpers": "§9Plot §8§l» §r§7Helpers §8(§f{count}§8):§7 {helpers}",
-            "owner": "§9Plot §8§l» §r§7Owner§8:§9 {owner}",
-            "plotname": "§9Plot §8§l» §r§7Name§8:§9 {name}",
-            "rating": "§9Plot §8§l» §r§7Rating§8:§9 {score} §8(§9{count} §7ratings§8)",
+            "about": "§9地块 §8§l» §r§7关于地块 §9{plot} 的信息",
+            "allowed": "§9地块 §8§l» §r§7允许 §8(§f{count}§8):§7 {players}",
+            "biome": "§9地块 §8§l» §r§7生物群系§8:§9 {biome}",
+            "denied": "§9地块 §8§l» §r§7拒绝 §8(§f{count}§8):§7 {players}",
+            "desc": "§7显示地块信息",
+            "helpers": "§9地块 §8§l» §r§7帮手 §8(§f{count}§8):§7 {helpers}",
+            "owner": "§9地块 §8§l» §r§7所有者§8:§9 {owner}",
+            "plotname": "§9地块 §8§l» §r§7名称§8:§9 {name}",
+            "rating": "§9地块 §8§l» §r§7评分§8:§9 {score} §8(§9{count} §7个评分§8)",
             "usage": "§8/§cp info"
         },
-        "notinplot": "§9Plot §8§l» §r§cYou are not inside a plot...",
-        "notowner": "§9Plot §8§l» §r§cYou don't own this plot...",
+        "notinplot": "§9地块 §8§l» §r§c您不在地块内...",
+        "notowner": "§9地块 §8§l» §r§c您不拥有此地块...",
         "popup": {
-            "_prefix": "§9Plot §8§l» §r",
-            "available": "§7This plot is free! Claim it for §c{price} Akunas §7with /p claim",
-            "owner": "§7Owned by §9{owner} §8- §7Rating§8:§9 {rating}",
-            "rate": "§7Like this plot? Rate it with §8/§7p rate!"
+            "_prefix": "§9地块 §8§l» §r",
+            "available": "§7此地块空闲！使用 /p claim 以 §c{price} Akunas §7领取",
+            "owner": "§7所有者§8:§9 {owner} §8- §7评分§8:§9 {rating}",
+            "rate": "§7喜欢这个地块？使用 §8/§7p rate §7评分！"
         },
         "rate": {
-            "desc": "§7Rates a plot",
-            "invalid_range": "§9Plot §8§l» §r§cThe rating must be between 1 and 5...",
-            "notify_owner": "§9Plot §8§l» §r §9{player} §7rated your plot §9{x}§8;§9{z} §7with §9{rating} §7stars!",
-            "self": "§9Plot §8§l» §r§cYou cannot rate your own plot...",
-            "success": "§9Plot §8§l» §r§7Rating submitted! Plot average rating§8:§9 {score}",
-            "usage": "§8/§cp rate §8<§cscore - 1 to 5§8>"
+            "desc": "§7为地块评分",
+            "invalid_range": "§9地块 §8§l» §r§c评分必须在 1 到 5 之间...",
+            "notify_owner": "§9地块 §8§l» §r §9{player} §7为您的地块 §9{x}§8;§9{z} §7评分 §9{rating} §7星！",
+            "self": "§9地块 §8§l» §r§c您不能为自己的地块评分...",
+            "success": "§9地块 §8§l» §r§7评分已提交！地块平均评分§8:§9 {score}",
+            "usage": "§8/§cp rate §8<§cscore - 1 到 5§8>"
         },
         "removehelper": {
-            "desc": "§7Removes a helper from your plot",
+            "desc": "§7从您的地块移除帮手",
             "everyone": {
-                "success": "§9Plot §8§l» §r§7All players were removed from helpers!"
+                "success": "§9地块 §8§l» §r§7所有玩家已从帮手中移除！"
             },
-            "notone": "§9Plot §8§l» §r§c{player} is not a helper...",
-            "success": "§9Plot §8§l» §r§9{player} §7was removed from helpers...",
+            "notone": "§9地块 §8§l» §r§c{player} 不是帮手...",
+            "success": "§9地块 §8§l» §r§9{player} §7已从帮手中移除...",
             "usage": "§8/§cp removehelper §8<§cplayer§8>"
         },
         "reset": {
-            "already_clearing": "§9Plot §8§l» §r§cThis plot is already being reset...",
-            "confirm": "§9Plot §8§l» §r§7Are you sure you want to reset plot §9{plot}§7? Use §8/§7p reset confirm",
-            "desc": "§7Resets your plot",
-            "success": "§9Plot §8§l» §r§7Plot reset successfully!",
+            "already_clearing": "§9地块 §8§l» §r§c此地块正在被重置...",
+            "confirm": "§9地块 §8§l» §r§7您确定要重置地块 §9{plot}§7 吗？使用 §8/§7p reset confirm",
+            "desc": "§7重置您的地块",
+            "success": "§9地块 §8§l» §r§7地块已成功重置！",
             "usage": "§8/§cp reset"
         },
         "resetplots": {
-            "desc": "§7Resets all plots of a player",
+            "desc": "§7重置玩家的所有地块",
             "usage": "§8/§cp resetplots §8<§cplayer§8>"
         },
         "subcommand": {
-            "usage": "§9Plot §8§l» §r§cUsage: {usage}"
+            "usage": "§9地块 §8§l» §r§c用法：{usage}"
         },
         "top": {
-            "desc": "§7Shows the top 10 highest rated plots",
-            "entry": "§9{pos} §8§l» §r§9{x}§8;§9{z} §8-§9 {owner} §8- §9{score} §8(§9{ratings} §7Ratings§8)",
-            "header": "§8-=-=-=-=== §bTop 10 §8- §9Plots §8===-=-=-=-",
-            "noplots": "§9Plot §8§l» §r§cNo rated plots found...",
+            "desc": "§7显示评分最高的10个地块",
+            "entry": "§9{pos} §8§l» §r§9{x}§8;§9{z} §8-§9 {owner} §8- §9{score} §8(§9{ratings} §7个评分§8)",
+            "header": "§8-=-=-=-=== §b前10名 §8- §9地块 §8===-=-=-=-",
+            "noplots": "§9地块 §8§l» §r§c未找到已评分的地块...",
             "usage": "§8/§cp top"
         },
         "warp": {
-            "desc": "§7Teleports to a plot",
-            "notinplotworld": "§9Plot §8§l» §r§cYou are not in the Plot world...",
-            "success": "§9Plot §8§l» §r§7You were teleported to plot §9{plot}§7!",
-            "unclaimed": "§9Plot §8§l» §r§cThis plot doesn't belong to anyone...",
+            "desc": "§7传送到一个地块",
+            "notinplotworld": "§9地块 §8§l» §r§c您不在地块世界中...",
+            "success": "§9地块 §8§l» §r§7您已被传送到地块 §9{plot}§7！",
+            "unclaimed": "§9地块 §8§l» §r§c此地块不属于任何人...",
             "usage": "§8/§cp warp §8<§cid§8>",
-            "wrongid": "§9Plot §8§l» §r§cThe id must be in X;Z format"
+            "wrongid": "§9地块 §8§l» §r§cID必须为X;Z格式"
         }
     },
     "cosmetic": {
@@ -618,190 +617,190 @@
         "bedwars": {
             "bed_break": {
                 "explosion": {
-                    "description": "A devastating explosion when breaking the bed"
+                    "description": "破坏床时发生毁灭性爆炸"
                 },
                 "ores": {
-                    "description": "Precious ores explode around the destroyed bed"
+                    "description": "被破坏的床周围珍贵矿石爆炸"
                 },
                 "rainbow": {
-                    "description": "A colorful wool explosion when breaking the bed"
+                    "description": "破坏床时彩色羊毛爆炸"
                 }
             },
             "final_kill": {
                 "blood": {
-                    "description": "Blood..."
+                    "description": "血液..."
                 },
                 "critical": {
-                    "description": "Critical particles explode over the eliminated enemy"
+                    "description": "被消灭的敌人上方爆出暴击粒子"
                 },
                 "ez": {
-                    "description": "Displays an EZ text"
+                    "description": "显示EZ文字"
                 },
                 "lightning": {
-                    "description": "A lightning bolt strikes the killed player"
+                    "description": "闪电击中被击杀的玩家"
                 },
                 "loser": {
-                    "description": "Displays an L text"
+                    "description": "显示L文字"
                 },
                 "smoke": {
-                    "description": "A cloud of smoke rises over the eliminated enemy"
+                    "description": "被消灭的敌人上方升起烟雾云"
                 }
             },
             "kill": {
                 "critical": {
-                    "description": "Critical particles explode on each kill"
+                    "description": "每次击杀时爆出暴击粒子"
                 },
                 "hearts": {
-                    "description": "Red hearts float over the victim"
+                    "description": "受害者上方飘浮红心"
                 },
                 "smoke": {
-                    "description": "A cloud of smoke marks each kill"
+                    "description": "每次击杀时烟雾云标记"
                 }
             },
             "win": {
                 "enchant": {
-                    "description": "Magical particles surround the winner"
+                    "description": "获胜者周围环绕魔法粒子"
                 },
                 "firework": {
-                    "description": "Colorful fireworks explode around the winner"
+                    "description": "获胜者周围彩色烟花爆炸"
                 }
             },
             "wood_type": {
                 "acacia": {
-                    "description": "Reddish acacia wood"
+                    "description": "红色金合欢木"
                 },
                 "birch": {
-                    "description": "Light birch wood"
+                    "description": "浅色桦木"
                 },
                 "dark_oak": {
-                    "description": "Dark oak wood"
+                    "description": "深色橡木"
                 },
                 "jungle": {
-                    "description": "Exotic jungle wood"
+                    "description": "异域丛林木"
                 },
                 "oak": {
-                    "description": "Classic oak wood"
+                    "description": "经典橡木"
                 },
                 "spruce": {
-                    "description": "Dark spruce wood"
+                    "description": "深色云杉木"
                 }
             }
         },
         "blocksumo": {
             "final_kill": {
                 "blood": {
-                    "description": "Blood..."
+                    "description": "血液..."
                 },
                 "critical": {
-                    "description": "Critical particles explode over the eliminated enemy"
+                    "description": "被消灭的敌人上方爆出暴击粒子"
                 },
                 "ez": {
-                    "description": "Displays EZ text on final kill"
+                    "description": "最终击杀时显示EZ文字"
                 },
                 "lightning": {
-                    "description": "A lightning bolt strikes the eliminated player"
+                    "description": "闪电击中被消灭的玩家"
                 },
                 "loser": {
-                    "description": "Displays L text on final kill"
+                    "description": "最终击杀时显示L文字"
                 },
                 "smoke": {
-                    "description": "A smoke cloud rises over the eliminated enemy"
+                    "description": "被消灭的敌人上方升起烟雾云"
                 }
             },
             "kill": {
                 "blood": {
-                    "description": "Blood splatters at the victim position"
+                    "description": "受害者位置溅出血迹"
                 },
                 "critical": {
-                    "description": "Critical particles explode on each kill"
+                    "description": "每次击杀时爆出暴击粒子"
                 },
                 "ez": {
-                    "description": "EZ floats above the victim"
+                    "description": "EZ文字飘浮在受害者上方"
                 },
                 "hearts": {
-                    "description": "Red hearts float over the victim"
+                    "description": "受害者上方飘浮红心"
                 },
                 "lightning": {
-                    "description": "A lightning bolt strikes the victim on death"
+                    "description": "受害者死亡时闪电击中"
                 },
                 "loser": {
-                    "description": "L floats above the victim"
+                    "description": "L文字飘浮在受害者上方"
                 },
                 "smoke": {
-                    "description": "A smoke cloud marks each kill"
+                    "description": "每次击杀时烟雾云标记"
                 }
             },
             "win": {
                 "enchant": {
-                    "description": "Magical particles surround the winner"
+                    "description": "获胜者周围环绕魔法粒子"
                 },
                 "firework": {
-                    "description": "Colorful fireworks explode around the winner"
+                    "description": "获胜者周围彩色烟花爆炸"
                 }
             },
             "wool_color": {
                 "black": {
-                    "description": "Dark black wool"
+                    "description": "深黑色羊毛"
                 },
                 "blue": {
-                    "description": "Intense blue wool"
+                    "description": "深蓝色羊毛"
                 },
                 "cyan": {
-                    "description": "Refreshing cyan wool"
+                    "description": "清爽青色羊毛"
                 },
                 "green": {
-                    "description": "Bright green wool"
+                    "description": "明亮绿色羊毛"
                 },
                 "orange": {
-                    "description": "Energetic orange wool"
+                    "description": "活力橙色羊毛"
                 },
                 "pink": {
-                    "description": "Delicate pink wool"
+                    "description": "精致粉色羊毛"
                 },
                 "purple": {
-                    "description": "Mysterious purple wool"
+                    "description": "神秘紫色羊毛"
                 },
                 "red": {
-                    "description": "Vibrant red wool"
+                    "description": "鲜艳红色羊毛"
                 },
                 "white": {
-                    "description": "Default white wool"
+                    "description": "默认白色羊毛"
                 },
                 "yellow": {
-                    "description": "Radiant yellow wool"
+                    "description": "灿烂黄色羊毛"
                 }
             }
         },
         "skywars": {
             "kill": {
                 "blood": {
-                    "description": "Blood splatters at the victim position"
+                    "description": "受害者位置溅出血迹"
                 },
                 "critical": {
-                    "description": "Critical particles explode on each kill"
+                    "description": "每次击杀时爆出暴击粒子"
                 },
                 "ez": {
-                    "description": "EZ floats above the victim"
+                    "description": "EZ文字飘浮在受害者上方"
                 },
                 "hearts": {
-                    "description": "Red hearts float over the victim"
+                    "description": "受害者上方飘浮红心"
                 },
                 "lightning": {
-                    "description": "A lightning bolt strikes the victim on death"
+                    "description": "受害者死亡时闪电击中"
                 },
                 "loser": {
-                    "description": "L floats above the victim"
+                    "description": "L文字飘浮在受害者上方"
                 },
                 "smoke": {
-                    "description": "A smoke cloud marks each kill"
+                    "description": "每次击杀时烟雾云标记"
                 }
             },
             "win": {
                 "enchant": {
-                    "description": "Magical particles surround the winner"
+                    "description": "获胜者周围环绕魔法粒子"
                 },
                 "firework": {
-                    "description": "Colorful fireworks explode around the winner"
+                    "description": "获胜者周围彩色烟花爆炸"
                 }
             }
         }
@@ -922,80 +921,80 @@
         "no_active": "§c您没有激活任何技能...",
         "usage": "§c使用 §8/§c{label} §8<§con§8|§coff§8|§clist§8>",
         "archer": {
-            "description": "Gain an arrow when hitting enemies"
+            "description": "击中敌人时获得箭矢"
         },
         "bedbreaker": {
-            "description": "When breaking an enemy bed, you receive Speed II and Jump Boost II for 10 seconds"
+            "description": "破坏敌人床时获得速度II和跳跃提升II，持续10秒"
         },
         "bird": {
-            "description": "You receive 2 extra feathers"
+            "description": "获得2根额外羽毛"
         },
         "builder": {
-            "description": "Gives you double the blocks"
+            "description": "获得双倍方块"
         },
         "cheststealer": {
-            "description": "When clicking on a chest, you automatically receive its items"
+            "description": "点击箱子时自动获取物品"
         },
         "enderpearl": {
-            "description": "Now you can use snowballs as an ender pearl!"
+            "description": "现在可以用雪球作为末影珍珠！"
         },
         "explosivebow": {
-            "description": "Causes a small explosion where your arrow lands"
+            "description": "箭矢着陆时引起小型爆炸"
         },
         "featherboost": {
-            "description": "Increases your feather boost"
+            "description": "增加羽毛推进力"
         },
         "firearrow": {
-            "description": "Arrows set enemies on fire upon hitting them"
+            "description": "箭矢击中敌人时使其着火"
         },
         "fireballboost": {
-            "description": "Increases the fireball boost on other players"
+            "description": "增加对其他玩家的火球推进力"
         },
         "fury": {
-            "description": "When killing a player, you receive Speed and Strength effects for 8 seconds"
+            "description": "击杀玩家时获得速度和力量效果，持续8秒"
         },
         "hook": {
-            "description": "Arrows pull the enemy forward when hitting them"
+            "description": "箭矢击中敌人时将其拉向前方"
         },
         "killer": {
-            "description": "You receive Strength and Jump Boost effects when killing a player"
+            "description": "击杀玩家时获得力量和跳跃提升效果"
         },
         "life": {
-            "description": "Gives you 4 extra hearts"
+            "description": "获得4颗额外心"
         },
         "miner": {
-            "description": "You have infinite Haste I"
+            "description": "拥有无限急迫I"
         },
         "slingshotboost": {
-            "description": "Increases the Estilingue boost"
+            "description": "增加弹弓推进力"
         },
         "slow": {
-            "description": "When hitting a player with an egg, you apply a slowness effect for 4 seconds"
+            "description": "用鸡蛋击中玩家时施加缓慢效果，持续4秒"
         },
         "sprinter": {
-            "description": "You receive Speed II for 11 seconds",
-            "description_sw": "You receive Speed II at the start of the match"
+            "description": "获得速度II，持续11秒",
+            "description_sw": "比赛开始时获得速度II"
         },
         "switcher": {
-            "description": "When hitting someone with a snowball, you switch places with that person"
+            "description": "用雪球击中某人时与其交换位置"
         },
         "tanker": {
-            "description": "You receive an iron chestplate"
+            "description": "获得铁胸甲"
         },
         "thief": {
-            "description": "Receive 20% of the player's feathers when killing them..."
+            "description": "击杀玩家时获得其20%的羽毛..."
         },
         "tntegg": {
-            "description": "When throwing an egg, you spawn a TNT!"
+            "description": "投掷鸡蛋时生成TNT！"
         },
         "towerspeed": {
-            "description": "Increases the building speed of the compact tower"
+            "description": "增加紧凑塔的建造速度"
         },
         "trapbuff": {
-            "description": "When your trap is activated, you gain Strength and Speed II for 6 seconds"
+            "description": "陷阱被激活时获得力量和速度II，持续6秒"
         },
         "trapresistance": {
-            "description": "Reduces the duration of negative trap effects by 2 seconds"
+            "description": "减少负面陷阱效果持续时间2秒"
         }
     },
     "skills": {
@@ -1107,67 +1106,67 @@
         "no_active": "§c您没有激活任何套装...",
         "no_permission": "§c您没有权限使用套装 §9{kit}§c！",
         "archer": {
-            "description": "Archer kit with feathers and eggs"
+            "description": "弓箭手套装，配备羽毛和鸡蛋"
         },
         "assassin": {
-            "description": "Stealth assassin kit"
+            "description": "隐形刺客套装"
         },
         "builder": {
-            "description": "Kit for quick building"
+            "description": "快速建造套装"
         },
         "eco": {
-            "description": "Kit created by zLitePvPz"
+            "description": "由zLitePvPz创建的套装"
         },
         "godness": {
-            "description": "Special kit for VIPs"
+            "description": "VIP专属套装"
         },
         "juggernaut": {
-            "description": "Brute force kit"
+            "description": "强力近战套装"
         },
         "lumberjack": {
-            "description": "Lumberjack kit with wood"
+            "description": "伐木工套装，配备木材"
         },
         "medic": {
-            "description": "Medic kit with healing"
+            "description": "医疗兵套装，配备治疗"
         },
         "miner": {
-            "description": "Mining kit"
+            "description": "采矿套装"
         },
         "mágico": {
-            "description": "Potion kit"
+            "description": "药水套装"
         },
         "ninja": {
-            "description": "Ninja kit with mobility"
+            "description": "忍者套装，高机动性"
         },
         "pyro": {
-            "description": "Pyromaniac kit with fire"
+            "description": "纵火狂套装，配备火焰"
         },
         "rush": {
-            "description": "Rush kit"
+            "description": "突击套装"
         },
         "scout": {
-            "description": "Advanced scouting kit"
+            "description": "高级侦察套装"
         },
         "sniper": {
-            "description": "Elite sniper kit"
+            "description": "精英狙击手套装"
         },
         "tank": {
-            "description": "Tank kit with high defense"
+            "description": "坦克套装，高防御"
         },
         "thrower": {
-            "description": "Projectile kit"
+            "description": "投掷套装"
         },
         "trap": {
-            "description": "Trap kit..."
+            "description": "陷阱套装..."
         },
         "w3lton": {
-            "description": "Kit created by W3lton (SrMathBR)"
+            "description": "由W3lton (SrMathBR)创建的套装"
         },
         "xyp": {
-            "description": "Kit created by srxyp"
+            "description": "由srxyp创建的套装"
         },
         "yt": {
-            "description": "Special kit for Youtubers"
+            "description": "Youtuber专属套装"
         }
     },
     "kits": {
@@ -2691,10 +2690,10 @@
         },
         "command": {
             "usage": "§7加入使用 §8/§7tntrun join{n}§cTNT§fRun §8§l» §r§7离开使用 §8/§7tntrun leave",
-            "already_in_arena": "§c你已经在竞技场中...",
             "no_space": "§c没有可用的竞技场..."
         },
         "scoreboard": {
+            "_prefix": "",
             "format": "{right}§fi§cAkuna§9MC §8§l» §r§cTNT§fRun{n}{right}{bar}{n}{right}§8§l» §r§7地图§8:§c {map}{n}{right}§8§l» §r§7存活§8:§c {alive}{n}{right}§8§l» §r§7时间§8:§c {time}{n}{right}{bar}{n}{n}{right}§ciakunamc.com 19132"
         }
     }

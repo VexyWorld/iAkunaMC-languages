@@ -236,7 +236,6 @@
             "killed_void": "§b{player} §7fell into the void §8(§f{alive}§8/§f{maxPlayers}§8)"
         },
         "refill": {
-            "_prefix": "",
             "done": "§7All chests have been refilled!"
         },
         "scoreboard": {
@@ -2561,10 +2560,10 @@
         },
         "command": {
             "usage": "§7To join use §8/§7tntrun join{n}§cTNT§fRun §8§l» §r§7To leave use §8/§7tntrun leave",
-            "already_in_arena": "§cYou are already in an arena...",
             "no_space": "§cNo arenas available..."
         },
         "scoreboard": {
+            "_prefix": "",
             "format": "{right}§fi§cAkuna§9MC §8§l» §r§cTNT§fRun{n}{right}{bar}{n}{right}§8§l» §r§7Map§8:§c {map}{n}{right}§8§l» §r§7Alive§8:§c {alive}{n}{right}§8§l» §r§7Time§8:§c {time}{n}{right}{bar}{n}{n}{right}§ciakunamc.com 19132"
         }
     }

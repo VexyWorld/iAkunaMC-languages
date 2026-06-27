@@ -236,7 +236,6 @@
             "killed_void": "§b{player} §7boşluğa düştü §8(§f{alive}§8/§f{maxPlayers}§8)"
         },
         "refill": {
-            "_prefix": "",
             "done": "§7Tüm sandıklar yeniden dolduruldu!"
         },
         "scoreboard": {
@@ -2561,10 +2560,10 @@
         },
         "command": {
             "usage": "§7Katılmak için §8/§7tntrun join§7 kullanın{n}§cTNT§fRun §8§l» §r§7Ayrılmak için §8/§7tntrun leave§7 kullanın",
-            "already_in_arena": "§cZaten bir arenadasın...",
             "no_space": "§cMüsait arena yok..."
         },
         "scoreboard": {
+            "_prefix": "",
             "format": "{right}§fi§cAkuna§9MC §8§l» §r§cTNT§fRun{n}{right}{bar}{n}{right}§8§l» §r§7Harita§8:§c {map}{n}{right}§8§l» §r§7Hayatta§8:§c {alive}{n}{right}§8§l» §r§7Süre§8:§c {time}{n}{right}{bar}{n}{n}{right}§ciakunamc.com 19132"
         }
     }

@@ -236,7 +236,6 @@
             "killed_void": "§b{player} §7est tombé(e) dans le vide §8(§f{alive}§8/§f{maxPlayers}§8)"
         },
         "refill": {
-            "_prefix": "",
             "done": "§7Tous les coffres ont été remplis à nouveau!"
         },
         "scoreboard": {
@@ -2042,7 +2041,7 @@
     },
     "scoreboard": {
         "lobby": "{right}     §fi§cAkuna§9MC §8§l» §r§cLobby{n}{right}{bar}{n}{right}§8§l» §r§7Nom§8:§c {name}{n}{right}§8§l» §r§7En ligne§8:§c {online}§8/§c{onlinemax}{n}{right}§8§l» §r§7Ping§8:§c {ping}ms{n}{right}{bar}{n}{n}{right}§c{address}",
-        "plot": "{right}   §fi§cAkuna§9MC §8§l» §r§9Plot{n}{right}{bar}{n}{right}§8§l» §r§7Nom§8:§9 {name}{n}{right}§8§l» §r§7Jouant§8:§9 {onlinemap}{n}{right}§8§l» §r§7Plots§8:§9 {plots}{n}{right}{bar}{n}{n}{right}§9{address}",
+        "plot": "{right}   §fi§cAkuna§9MC §8§l» §r§9Parcelle{n}{right}{bar}{n}{right}§8§l» §r§7Nom§8:§9 {name}{n}{right}§8§l» §r§7Jouant§8:§9 {onlinemap}{n}{right}§8§l» §r§7Parcelles§8:§9 {plots}{n}{right}{bar}{n}{n}{right}§9{address}",
         "lobby_bw": "{right}  §fi§cAkuna§9MC §8§l» §r§cBed§fWars{n}{right}{bar}{n}{right}§8§l» §r§7Victoires§8:§c {wins}{n}{right}§8§l» §r§7Kills§8:§c {kills}{n}{right}§8§l» §r§7Kills Finaux§8:§c {final_kills}{n}{right}§8§l» §r§7Lits Détruits§8:§c {beds}{n}{right}{bar}{n}{n}{right}§c{address}",
         "lobby_sw": "{right}  §fi§cAkuna§9MC §8§l» §r§bSky§fWars{n}{right}{bar}{n}{right}§8§l» §r§7Victoires§8:§b {wins}{n}{right}§8§l» §r§7Kills§8:§b {kills}{n}{right}§8§l» §r§7Parties§8:§b {plays}{n}{right}{bar}{n}{n}{right}§b{address}",
         "lobby_tntrun": "{right}  §fi§cAkuna§9MC §8§l» §r§6TNT§cRun{n}{right}{bar}{n}{right}§8§l» §r§7Victoires§8:§6 {wins}{n}{right}§8§l» §r§7Kills§8:§6 {kills}{n}{right}§8§l» §r§7Parties§8:§6 {plays}{n}{right}{bar}{n}{n}{right}§6{address}"
@@ -2570,10 +2569,10 @@
         },
         "command": {
             "usage": "§7Pour rejoindre §8/§7tntrun join{n}§cTNT§fRun §8§l» §r§7Pour quitter §8/§7tntrun leave",
-            "already_in_arena": "§cVous êtes déjà dans une arène...",
             "no_space": "§cAucune arène disponible..."
         },
         "scoreboard": {
+            "_prefix": "",
             "format": "{right}§fi§cAkuna§9MC §8§l» §r§cTNT§fRun{n}{right}{bar}{n}{right}§8§l» §r§7Carte§8:§c {map}{n}{right}§8§l» §r§7En vie§8:§c {alive}{n}{right}§8§l» §r§7Temps§8:§c {time}{n}{right}{bar}{n}{n}{right}§ciakunamc.com 19132"
         }
     }
