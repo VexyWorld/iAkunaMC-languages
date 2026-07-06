@@ -2158,14 +2158,14 @@
         "time": "§c系统 §8§l» §r§7服务器将在 §c{time}§7 后重启..."
     },
     "rules": {
-        "cmd": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §c规则 §8===-=-=-=-{n}§c系统 §8§l» §r§7禁止严重侮辱、歧视、骚扰、威胁、仇恨言论或宣扬极端主义意识形态{n}§c系统 §8§l» §r§7禁止宣传或提及其他服务器、网站、社交媒体或外部社区{n}§c系统 §8§l» §r§7禁止绕过过滤器、利用服务器漏洞或Bug{n}§c系统 §8§l» §r§7严禁使用外挂、自动点击器、Bug或任何形式的作弊 §8(§7包括2人操作和连射模式手柄§8){n}§c系统 §8§l» §r§7禁止盗号、冒充工作人员或欺骗其他玩家{n}§c系统 §8§l» §r§7禁止在单人模式或1v1中组队{n}§c系统 §8§l» §r§7禁止使用攻击性、不当或挑衅性的昵称、皮肤和建筑{n}§c系统 §8§l» §r§7禁止在聊天中过度使用大写、刷屏或重复消息{n}§c系统 §8§l» §r§7禁止妨碍工作人员工作、无视决定或侮辱服务器"
+        "cmd": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §c规则 §8===-=-=-=-{n}§c系统 §8§l» §r§7请尊重所有玩家。严厉辱骂、歧视、骚扰和威胁均被禁止{n}§c系统 §8§l» §r§7禁止宣传其他服务器、网站、社交媒体或外部社区{n}§c系统 §8§l» §r§7禁止刷屏、垃圾信息、滥用大写字母或污染聊天{n}§c系统 §8§l» §r§7禁止利用漏洞、绕过限制或服务器缺陷{n}§c系统 §8§l» §r§7禁止使用作弊、自动连点器、宏、修改客户端或任何作弊行为{n}§c系统 §8§l» §r§7不要帮助使用作弊的玩家{n}§c系统 §8§l» §r§7禁止盗取账号、诈骗或冒充工作人员{n}§c系统 §8§l» §r§7禁止在单人模式或禁止组队的模式中组队{n}§c系统 §8§l» §r§7禁止使用违规或冒犯性的名称、皮肤和内容{n}§c系统 §8§l» §r§7禁止操纵比赛、排行榜、活动或系统以获取不正当优势{n}§c系统 §8§l» §r§7禁止妨碍工作人员工作或逃避处罚{n}§c系统 §8§l» §r§7损害其他玩家体验或未明确列出的行为也可能受到处罚"
     },
     "scoreboard": {
         "lobby": "{right}     §fi§cAkuna§9MC §8§l» §r§c大厅{n}{right}{bar}{n}{right}§8§l» §r§7名称§8:§c {name}{n}{right}§8§l» §r§7在线§8:§c {online}§8/§c{onlinemax}{n}{right}§8§l» §r§7延迟§8:§c {ping}ms{n}{right}{bar}{n}{n}{right}§c{address}",
         "plot": "{right}   §fi§cAkuna§9MC §8§l» §r§9地块{n}{right}{bar}{n}{right}§8§l» §r§7名称§8:§9 {name}{n}{right}§8§l» §r§7在线§8:§9 {onlinemap}{n}{right}§8§l» §r§7地块§8:§9 {plots}{n}{right}{bar}{n}{n}{right}§9{address}",
         "lobby_bw": "{right}  §fi§cAkuna§9MC §8§l» §r§cBed§fWars{n}{right}{bar}{n}{right}§8§l» §r§7胜利§8:§c {wins}{n}{right}§8§l» §r§7击杀§8:§c {kills}{n}{right}§8§l» §r§7最终击杀§8:§c {final_kills}{n}{right}§8§l» §r§7破床§8:§c {beds}{n}{right}{bar}{n}{n}{right}§c{address}",
         "lobby_sw": "{right}  §fi§cAkuna§9MC §8§l» §r§bSky§fWars{n}{right}{bar}{n}{right}§8§l» §r§7胜利§8:§b {wins}{n}{right}§8§l» §r§7击杀§8:§b {kills}{n}{right}§8§l» §r§7场次§8:§b {plays}{n}{right}{bar}{n}{n}{right}§b{address}",
-        "lobby_tntrun": "{right}  §fi§cAkuna§9MC §8§l» §r§6TNT§cRun{n}{right}{bar}{n}{right}§8§l» §r§7胜利§8:§6 {wins}{n}{right}§8§l» §r§7击杀§8:§6 {kills}{n}{right}§8§l» §r§7游戏§8:§6 {plays}{n}{right}{bar}{n}{n}{right}§6{address}"
+        "lobby_tntrun": "{right}  §fi§cAkuna§9MC §8§l» §r§cTNT§fRun{n}{right}{bar}{n}{right}§8§l» §r§7胜利§8:§c {wins}{n}{right}§8§l» §r§7游戏§8:§c {plays}{n}{right}{bar}{n}{n}{right}§c{address}"
     },
     "server": {
         "info": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §f信息 §8===-=-=-=-{n}§c系统 §8» §r§7IP§8:§c iakunamc.com{n}§c系统 §8» §r§7端口§8:§c 19132{n}{n}§c系统 §8» §r§7Staff申请§8:§c https://staff.iakunamc.com{n}§c系统 §8» §r§7商店§8:§c https://loja.iakunamc.com{n}§c系统 §8» §r§7Discord§8:§c https://discord.iakunamc.com{n}{n}§fY§cT §8» §r§7300 订阅 §a+ §7宣传视频{n}§fMini§cYT §8» §r§750 订阅 §a+ §7宣传视频{n}§cYT§fmirin §8» §r§70 订阅 §a+ §7宣传视频{n}§c说明 §8» §r§7在标题/描述中放入IP，并每月宣传一次服务器以保持您的头衔",
