@@ -2036,7 +2036,8 @@
         "plot": "{right}   §fi§cAkuna§9MC §8§l» §r§9Arsa{n}{right}{bar}{n}{right}§8§l» §r§7İsim§8:§9 {name}{n}{right}§8§l» §r§7Oynuyor§8:§9 {onlinemap}{n}{right}§8§l» §r§7Arsalar§8:§9 {plots}{n}{right}{bar}{n}{n}{right}§9{address}",
         "lobby_bw": "{right}  §fi§cAkuna§9MC §8§l» §r§cBed§fWars{n}{right}{bar}{n}{right}§8§l» §r§7Galibiyet§8:§c {wins}{n}{right}§8§l» §r§7Öldürme§8:§c {kills}{n}{right}§8§l» §r§7Son Öldürme§8:§c {final_kills}{n}{right}§8§l» §r§7Kırılan Yatak§8:§c {beds}{n}{right}{bar}{n}{n}{right}§c{address}",
         "lobby_sw": "{right}  §fi§cAkuna§9MC §8§l» §r§bSky§fWars{n}{right}{bar}{n}{right}§8§l» §r§7Galibiyet§8:§b {wins}{n}{right}§8§l» §r§7Öldürme§8:§b {kills}{n}{right}§8§l» §r§7Maç§8:§b {plays}{n}{right}{bar}{n}{n}{right}§b{address}",
-        "lobby_tntrun": "{right}  §fi§cAkuna§9MC §8§l» §r§cTNT§fRun{n}{right}{bar}{n}{right}§8§l» §r§7Zafer§8:§6 {wins}{n}{right}§8§l» §r§7Oyun§8:§c {plays}{n}{right}{bar}{n}{n}{right}§c{address}"
+        "lobby_tntrun": "{right}  §fi§cAkuna§9MC §8§l» §r§cTNT§fRun{n}{right}{bar}{n}{right}§8§l» §r§7Zafer§8:§6 {wins}{n}{right}§8§l» §r§7Oyun§8:§c {plays}{n}{right}{bar}{n}{n}{right}§c{address}",
+        "lobby_blockparty": "{right} §fi§cAkuna§9MC §8§l» §r§dBlock§fParty{n}{right}{bar}{n}{right}§8§l» §r§7Galibiyet§8:§d {wins}{n}{right}§8§l» §r§7Maçlar§8:§d {plays}{n}{right}{bar}{n}{n}{right}§d{address}"
     },
     "server": {
         "info": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §fBilgi §8===-=-=-=-{n}§cSistem §8» §r§7IP§8:§c iakunamc.com{n}§cSistem §8» §r§7Port§8:§c 19132{n}{n}§cSistem §8» §r§7Yetkili Başvurusu§8:§c https://staff.iakunamc.com{n}§cSistem §8» §r§7Market§8:§c https://loja.iakunamc.com{n}§cSistem §8» §r§7Discord§8:§c https://discord.iakunamc.com{n}{n}§fY§cT §8» §r§7300 abone §a+ §7Tanıtım videosu{n}§fMini§cYT §8» §r§750 abone §a+ §7Tanıtım videosu{n}§cYT§fmirin §8» §r§70 abone §a+ §7Tanıtım videosu{n}§cNotlar §8» §r§7IP'yi başlığa/açıklamaya koy ve rütbeni korumak için ayda bir sunucuyu tanıt",
@@ -2092,7 +2093,8 @@
             "chest_full": "§cDükkan sandığı dolu...",
             "insufficient_items": "§cYeterli eşyan yok...",
             "success": "§7§e{owner}§7 adlı oyuncuya §e{quantity}§7x {item} sattın. Kazanç: §c{price} Akuna §7!"
-        }
+        },
+        "_prefix": "§eMağaza §8§l» §r"
     },
     "sit": {
         "_prefix": "§cSistem §8§l » §r",
@@ -2243,7 +2245,8 @@
             "skywars": "§7{target} §bSky§fWars §7maçı kazan",
             "thebridge": "§7{target} §cThe§9Bridge §7maçı kazan",
             "blocksumo": "§7{target} §bBlock§fSumo §7maçı kazan",
-            "tntrun": "§7{target} §cTNT§fRun §7maçı kazan"
+            "tntrun": "§7{target} §cTNT§fRun §7maçı kazan",
+            "blockparty": "§7§dBlock§fParty §7'de {target} maç kazanın"
         },
         "place": {
             "_prefix": "",
@@ -2297,7 +2300,8 @@
             "_prefix": "",
             "bedwars": "§7{target} §cBed§fWars §7maçı oyna",
             "skywars": "§7{target} §bSky§fWars §7maçı oyna",
-            "tntrun": "§7{target} §cTNT§fRun §7maçı oyna"
+            "tntrun": "§7{target} §cTNT§fRun §7maçı oyna",
+            "blockparty": "§7§dBlock§fParty §7'de {target} maç oynayın"
         },
         "buy": {
             "items": {
@@ -2534,14 +2538,28 @@
         }
     },
     "maze": {
-        "usage": "§5Maze §8§l» §r§cKullanım: §8/§c{label} §8<§centrar§8|§cjoin§8|§cplay§8|§csair§8|§cquit§8|§cleave§8>"
+        "usage": "§7Katılmak için kullan §8/§7{label} entrar{n}§5Parkour §8§l» §r§7Ayrılmak için kullan §8/§7{label} sair",
+        "_prefix": "§5Maze §8§l» §r",
+        "finish": {
+            "noreward": "§7Tebrikler, labirenti bitirdin!",
+            "reward": "§7Tebrikler, labirenti bitirdin ve §7§lNightmare §r§7ödülünü kazandın!"
+        }
     },
     "twofa": {
         "discord": {
             "need": "§eAuth §8§l» §r§7Kimlik doğrulamak için Discord'da §e{code} §7kodunu kullanın"
         },
         "email": {
-            "need": "§eAuth §8§l» §r§7E-postanıza gönderilen kodu §8/§cverify §8<§ckod§8> ile girin"
+            "need": "§eAuth §8§l» §r§7E-postanıza gönderilen kodu §8/§cverify §8<§ckod§8> ile girin",
+            "not_required": "§eAuth §8§l» §r§cEmail modunda 2fa etkin değil...",
+            "code": {
+                "usage": "§eAuth §8§l» §r§cKullan §8/§c{label} §8<§ckod§8>"
+            },
+            "email": {
+                "expired": "§eAuth §8§l» §r§cKodun süresi doldu...",
+                "invalid": "§eAuth §8§l» §r§cGeçersiz kod...",
+                "success": "§eAuth §8§l» §r§7Başarıyla doğrulandı!"
+            }
         }
     },
     "tntrun": {
@@ -2565,6 +2583,29 @@
         "scoreboard": {
             "_prefix": "",
             "format": "{right}§fi§cAkuna§9MC §8§l» §r§cTNT§fRun{n}{right}{bar}{n}{right}§8§l» §r§7Harita§8:§c {map}{n}{right}§8§l» §r§7Hayatta§8:§c {alive}{n}{right}§8§l» §r§7Süre§8:§c {time}{n}{right}{bar}{n}{n}{right}§ciakunamc.com 19132"
+        }
+    },
+    "blockparty": {
+        "_prefix": "§dBlock§fParty §8§l» §r",
+        "state": {
+            "waiting": "§cDaha fazla oyuncu bekleniyor...",
+            "starting": "§7§d{start}s §7içinde başlıyor"
+        },
+        "player": {
+            "join": "§d{player} §7maça katıldı §8(§f{count}§8/§f{maxPlayers}§8)",
+            "quit": "§d{player} §7maçtan ayrıldı §8(§f{count}§8/§f{maxPlayers}§8)",
+            "died": "§d{player} §7öldü §8(§f{alive}§8/§f{maxPlayers}§8)"
+        },
+        "color": {
+            "selected": "§7§d{color} §7rengine gidin!",
+            "removing": "§7Zemin §d{time}s §7içinde kaybolacak"
+        },
+        "game": {
+            "returning": "§7§d{time}s §7içinde lobiye dönülüyor"
+        },
+        "command": {
+            "usage": "§7Katılmak için §8/§7{label} join{n}§dBlock§fParty §8§l» §r§7Ayrılmak için §8/§7{label} leave",
+            "no_space": "§cArena mevcut değil..."
         }
     }
 }

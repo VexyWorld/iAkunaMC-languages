@@ -2036,7 +2036,8 @@
         "plot": "{right}   §fi§cAkuna§9MC §8§l» §r§9Parcela{n}{right}{bar}{n}{right}§8§l» §r§7Nombre§8:§9 {name}{n}{right}§8§l» §r§7Jugando§8:§9 {onlinemap}{n}{right}§8§l» §r§7Parcelas§8:§9 {plots}{n}{right}{bar}{n}{n}{right}§9{address}",
         "lobby_bw": "{right}  §fi§cAkuna§9MC §8§l» §r§cBed§fWars{n}{right}{bar}{n}{right}§8§l» §r§7Victorias§8:§c {wins}{n}{right}§8§l» §r§7Kills§8:§c {kills}{n}{right}§8§l» §r§7Kills Finales§8:§c {final_kills}{n}{right}§8§l» §r§7Camas Destruidas§8:§c {beds}{n}{right}{bar}{n}{n}{right}§c{address}",
         "lobby_sw": "{right}  §fi§cAkuna§9MC §8§l» §r§bSky§fWars{n}{right}{bar}{n}{right}§8§l» §r§7Victorias§8:§b {wins}{n}{right}§8§l» §r§7Kills§8:§b {kills}{n}{right}§8§l» §r§7Partidas§8:§b {plays}{n}{right}{bar}{n}{n}{right}§b{address}",
-        "lobby_tntrun": "{right}  §fi§cAkuna§9MC §8§l» §r§cTNT§fRun{n}{right}{bar}{n}{right}§8§l» §r§7Victorias§8:§c {wins}{n}{right}§8§l» §r§7Partidas§8:§c {plays}{n}{right}{bar}{n}{n}{right}§c{address}"
+        "lobby_tntrun": "{right}  §fi§cAkuna§9MC §8§l» §r§cTNT§fRun{n}{right}{bar}{n}{right}§8§l» §r§7Victorias§8:§c {wins}{n}{right}§8§l» §r§7Partidas§8:§c {plays}{n}{right}{bar}{n}{n}{right}§c{address}",
+        "lobby_blockparty": "{right} §fi§cAkuna§9MC §8§l» §r§dBlock§fParty{n}{right}{bar}{n}{right}§8§l» §r§7Victorias§8:§d {wins}{n}{right}§8§l» §r§7Partidas§8:§d {plays}{n}{right}{bar}{n}{n}{right}§d{address}"
     },
     "server": {
         "info": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §fInformación §8===-=-=-=-{n}§cSistema §8» §r§7IP§8:§c iakunamc.com{n}§cSistema §8» §r§7Puerto§8:§c 19132{n}{n}§cSistema §8» §r§7Formulario para Staff§8:§c https://staff.iakunamc.com{n}§cSistema §8» §r§7Tienda§8:§c https://loja.iakunamc.com{n}§cSistema §8» §r§7Discord§8:§c https://discord.iakunamc.com{n}{n}§fY§cT §8» §r§7300 suscriptores §a+ §7Video promocional{n}§fMini§cYT §8» §r§750 suscriptores §a+ §7Video promocional{n}§cYT§fmirin §8» §r§70 suscriptores §a+ §7Video promocional{n}§cNotas §8» §r§7Coloca la IP en el título/descripción y promociona el servidor una vez al mes para mantener tu rango",
@@ -2244,7 +2245,8 @@
             "skywars": "§7Gana {target} partidas de §bSky§fWars",
             "thebridge": "§7Gana {target} partidas de §cThe§9Bridge",
             "blocksumo": "§7Gana {target} partidas de §bBlock§fSumo",
-            "tntrun": "§7Gana {target} partidas de §cTNT§fRun"
+            "tntrun": "§7Gana {target} partidas de §cTNT§fRun",
+            "blockparty": "§7Gana {target} partidas de §dBlock§fParty"
         },
         "place": {
             "_prefix": "",
@@ -2298,7 +2300,8 @@
             "_prefix": "",
             "bedwars": "§7Juega {target} partidas de §cBed§fWars",
             "skywars": "§7Juega {target} partidas de §bSky§fWars",
-            "tntrun": "§7Juega {target} partidas de §cTNT§fRun"
+            "tntrun": "§7Juega {target} partidas de §cTNT§fRun",
+            "blockparty": "§7Juega {target} partidas de §dBlock§fParty"
         },
         "buy": {
             "items": {
@@ -2535,14 +2538,28 @@
         }
     },
     "maze": {
-        "usage": "§5Maze §8§l» §r§cUse §8/§c{label} §8<§centrar§8|§cjoin§8|§cplay§8|§csair§8|§cquit§8|§cleave§8>"
+        "usage": "§7Para unirte usa §8/§7{label} entrar{n}§5Parkour §8§l» §r§7Para salir usa §8/§7{label} sair",
+        "_prefix": "§5Maze §8§l» §r",
+        "finish": {
+            "noreward": "§7¡Felicidades, has finalizado el laberinto!",
+            "reward": "§7¡Felicidades, has finalizado el laberinto y recibiste §7§lNightmare §r§7como recompensa!"
+        }
     },
     "twofa": {
         "discord": {
             "need": "§eAuth §8§l» §r§7Usa el código §e{code} §7en Discord para autenticarte"
         },
         "email": {
-            "need": "§eAuth §8§l» §r§7Ingresa el código enviado a tu email usando §8/§cverify §8<§ccódigo§8>"
+            "need": "§eAuth §8§l» §r§7Ingresa el código enviado a tu email usando §8/§cverify §8<§ccódigo§8>",
+            "not_required": "§eAuth §8§l» §r§cNo tienes el 2fa activado en el modo Email...",
+            "code": {
+                "usage": "§eAuth §8§l» §r§cUsa §8/§c{label} §8<§ccódigo§8>"
+            },
+            "email": {
+                "expired": "§eAuth §8§l» §r§cEl código expiró...",
+                "invalid": "§eAuth §8§l» §r§cCódigo inválido...",
+                "success": "§eAuth §8§l» §r§7¡Autenticado con éxito!"
+            }
         }
     },
     "tntrun": {
@@ -2566,6 +2583,29 @@
         "scoreboard": {
             "_prefix": "",
             "format": "{right}§fi§cAkuna§9MC §8§l» §r§cTNT§fRun{n}{right}{bar}{n}{right}§8§l» §r§7Mapa§8:§c {map}{n}{right}§8§l» §r§7Vivos§8:§c {alive}{n}{right}§8§l» §r§7Tiempo§8:§c {time}{n}{right}{bar}{n}{n}{right}§ciakunamc.com 19132"
+        }
+    },
+    "blockparty": {
+        "_prefix": "§dBlock§fParty §8§l» §r",
+        "state": {
+            "waiting": "§cEsperando más jugadores...",
+            "starting": "§7Empezando en §d{start}s"
+        },
+        "player": {
+            "join": "§d{player} §7se unió a la partida §8(§f{count}§8/§f{maxPlayers}§8)",
+            "quit": "§d{player} §7salió de la partida §8(§f{count}§8/§f{maxPlayers}§8)",
+            "died": "§d{player} §7murió §8(§f{alive}§8/§f{maxPlayers}§8)"
+        },
+        "color": {
+            "selected": "§7Ve al color §d{color}§7!",
+            "removing": "§7El suelo desaparecerá en §d{time}s"
+        },
+        "game": {
+            "returning": "§7Volviendo al lobby en §d{time}s"
+        },
+        "command": {
+            "usage": "§7Para entrar usa §8/§7{label} join{n}§dBlock§fParty §8§l» §r§7Para salir usa §8/§7{label} leave",
+            "no_space": "§cNo hay arenas disponibles..."
         }
     }
 }

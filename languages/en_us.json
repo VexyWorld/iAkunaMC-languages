@@ -2036,7 +2036,8 @@
         "plot": "{right}   §fi§cAkuna§9MC §8§l» §r§9Plot{n}{right}{bar}{n}{right}§8§l» §r§7Name§8:§9 {name}{n}{right}§8§l» §r§7Playing§8:§9 {onlinemap}{n}{right}§8§l» §r§7Plots§8:§9 {plots}{n}{right}{bar}{n}{n}{right}§9{address}",
         "lobby_bw": "{right}  §fi§cAkuna§9MC §8§l» §r§cBed§fWars{n}{right}{bar}{n}{right}§8§l» §r§7Wins§8:§c {wins}{n}{right}§8§l» §r§7Kills§8:§c {kills}{n}{right}§8§l» §r§7Final Kills§8:§c {final_kills}{n}{right}§8§l» §r§7Beds Broken§8:§c {beds}{n}{right}{bar}{n}{n}{right}§c{address}",
         "lobby_sw": "{right}  §fi§cAkuna§9MC §8§l» §r§bSky§fWars{n}{right}{bar}{n}{right}§8§l» §r§7Wins§8:§b {wins}{n}{right}§8§l» §r§7Kills§8:§b {kills}{n}{right}§8§l» §r§7Games§8:§b {plays}{n}{right}{bar}{n}{n}{right}§b{address}",
-        "lobby_tntrun": "{right}  §fi§cAkuna§9MC §8§l» §r§cTNT§fRun{n}{right}{bar}{n}{right}§8§l» §r§7Wins§8:§c {wins}{n}{right}§8§l» §r§7Games§8:§c {plays}{n}{right}{bar}{n}{n}{right}§c{address}"
+        "lobby_tntrun": "{right}  §fi§cAkuna§9MC §8§l» §r§cTNT§fRun{n}{right}{bar}{n}{right}§8§l» §r§7Wins§8:§c {wins}{n}{right}§8§l» §r§7Games§8:§c {plays}{n}{right}{bar}{n}{n}{right}§c{address}",
+        "lobby_blockparty": "{right} §fi§cAkuna§9MC §8§l» §r§dBlock§fParty{n}{right}{bar}{n}{right}§8§l» §r§7Wins§8:§d {wins}{n}{right}§8§l» §r§7Matches§8:§d {plays}{n}{right}{bar}{n}{n}{right}§d{address}"
     },
     "server": {
         "info": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §fInformation §8===-=-=-=-{n}§cSystem §8» §r§7IP§8:§c iakunamc.com{n}§cSystem §8» §r§7Port§8:§c 19132{n}{n}§cSystem §8» §r§7Staff Application§8:§c https://staff.iakunamc.com{n}§cSystem §8» §r§7Store§8:§c https://loja.iakunamc.com{n}§cSystem §8» §r§7Discord§8:§c https://discord.iakunamc.com{n}{n}§fY§cT §8» §r§7300 subscribers §a+ §7Promotional video{n}§fMini§cYT §8» §r§750 subscribers §a+ §7Promotional video{n}§cYT§fmirin §8» §r§70 subscribers §a+ §7Promotional video{n}§cNotes §8» §r§7Put the IP in the title/description and promote the server once a month to maintain your rank",
@@ -2092,7 +2093,8 @@
             "chest_full": "§cThe shop chest is full...",
             "insufficient_items": "§cYou don't have enough items...",
             "success": "§7You sold §e{quantity}§7x {item} for §c{price} Akunas §7to §e{owner}§7!"
-        }
+        },
+        "_prefix": "§eShop §8§l» §r"
     },
     "sit": {
         "_prefix": "§cSystem §8§l » §r",
@@ -2243,7 +2245,8 @@
             "skywars": "§7Win {target} §bSky§fWars §7matches",
             "thebridge": "§7Win {target} §cThe§9Bridge §7matches",
             "blocksumo": "§7Win {target} §bBlock§fSumo §7matches",
-            "tntrun": "§7Win {target} §cTNT§fRun §7matches"
+            "tntrun": "§7Win {target} §cTNT§fRun §7matches",
+            "blockparty": "§7Win {target} matches of §dBlock§fParty"
         },
         "place": {
             "_prefix": "",
@@ -2297,7 +2300,8 @@
             "_prefix": "",
             "bedwars": "§7Play {target} §cBed§fWars §7matches",
             "skywars": "§7Play {target} §bSky§fWars §7matches",
-            "tntrun": "§7Play {target} §cTNT§fRun §7matches"
+            "tntrun": "§7Play {target} §cTNT§fRun §7matches",
+            "blockparty": "§7Play {target} matches of §dBlock§fParty"
         },
         "buy": {
             "items": {
@@ -2534,14 +2538,28 @@
         }
     },
     "maze": {
-        "usage": "§5Maze §8§l» §r§cUse §8/§c{label} §8<§centrar§8|§cjoin§8|§cplay§8|§csair§8|§cquit§8|§cleave§8>"
+        "usage": "§7To join use §8/§7{label} entrar{n}§5Parkour §8§l» §r§7To leave use §8/§7{label} sair",
+        "_prefix": "§5Maze §8§l» §r",
+        "finish": {
+            "noreward": "§7Congratulations, you finished the maze!",
+            "reward": "§7Congratulations, you finished the maze and received §7§lNightmare §r§7as a reward!"
+        }
     },
     "twofa": {
         "discord": {
             "need": "§eAuth §8§l» §r§7Use the code §e{code} §7in Discord to authenticate"
         },
         "email": {
-            "need": "§eAuth §8§l» §r§7Enter the code sent to your email using §8/§cverify §8<§ccode§8>"
+            "need": "§eAuth §8§l» §r§7Enter the code sent to your email using §8/§cverify §8<§ccode§8>",
+            "not_required": "§eAuth §8§l» §r§cYou don't have 2fa enabled in Email mode...",
+            "code": {
+                "usage": "§eAuth §8§l» §r§cUse §8/§c{label} §8<§ccode§8>"
+            },
+            "email": {
+                "expired": "§eAuth §8§l» §r§cThe code expired...",
+                "invalid": "§eAuth §8§l» §r§cInvalid code...",
+                "success": "§eAuth §8§l» §r§7Authenticated successfully!"
+            }
         }
     },
     "tntrun": {
@@ -2565,6 +2583,29 @@
         "scoreboard": {
             "_prefix": "",
             "format": "{right}§fi§cAkuna§9MC §8§l» §r§cTNT§fRun{n}{right}{bar}{n}{right}§8§l» §r§7Map§8:§c {map}{n}{right}§8§l» §r§7Alive§8:§c {alive}{n}{right}§8§l» §r§7Time§8:§c {time}{n}{right}{bar}{n}{n}{right}§ciakunamc.com 19132"
+        }
+    },
+    "blockparty": {
+        "_prefix": "§dBlock§fParty §8§l» §r",
+        "state": {
+            "waiting": "§cWaiting for more players...",
+            "starting": "§7Starting in §d{start}s"
+        },
+        "player": {
+            "join": "§d{player} §7joined the match §8(§f{count}§8/§f{maxPlayers}§8)",
+            "quit": "§d{player} §7left the match §8(§f{count}§8/§f{maxPlayers}§8)",
+            "died": "§d{player} §7died §8(§f{alive}§8/§f{maxPlayers}§8)"
+        },
+        "color": {
+            "selected": "§7Go to color §d{color}§7!",
+            "removing": "§7The floor will disappear in §d{time}s"
+        },
+        "game": {
+            "returning": "§7Returning to lobby in §d{time}s"
+        },
+        "command": {
+            "usage": "§7To join use §8/§7{label} join{n}§dBlock§fParty §8§l» §r§7To leave use §8/§7{label} leave",
+            "no_space": "§cNo arenas available..."
         }
     }
 }

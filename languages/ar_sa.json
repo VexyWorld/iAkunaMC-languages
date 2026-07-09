@@ -2036,7 +2036,8 @@
         "plot": "{right}   §fi§cAkuna§9MC §8§l» §r§9القطعة{n}{right}{bar}{n}{right}§8§l» §r§7الاسم§8:§9 {name}{n}{right}§8§l» §r§7يلعب§8:§9 {onlinemap}{n}{right}§8§l» §r§7القطع§8:§9 {plots}{n}{right}{bar}{n}{n}{right}§9{address}",
         "lobby_bw": "{right}  §fi§cAkuna§9MC §8§l» §r§cBed§fWars{n}{right}{bar}{n}{right}§8§l» §r§7الانتصارات§8:§c {wins}{n}{right}§8§l» §r§7القتلات§8:§c {kills}{n}{right}§8§l» §r§7القتلات النهائية§8:§c {final_kills}{n}{right}§8§l» §r§7الأسرة المكسورة§8:§c {beds}{n}{right}{bar}{n}{n}{right}§c{address}",
         "lobby_sw": "{right}  §fi§cAkuna§9MC §8§l» §r§bSky§fWars{n}{right}{bar}{n}{right}§8§l» §r§7الانتصارات§8:§b {wins}{n}{right}§8§l» §r§7القتلات§8:§b {kills}{n}{right}§8§l» §r§7المباريات§8:§b {plays}{n}{right}{bar}{n}{n}{right}§b{address}",
-        "lobby_tntrun": "{right}  §fi§cAkuna§9MC §8§l» §r§cTNT§fRun{n}{right}{bar}{n}{right}§8§l» §r§7انتصارات§8:§c {wins}{n}{right}§8§l» §r§7مباريات§8:§c {plays}{n}{right}{bar}{n}{n}{right}§c{address}"
+        "lobby_tntrun": "{right}  §fi§cAkuna§9MC §8§l» §r§cTNT§fRun{n}{right}{bar}{n}{right}§8§l» §r§7انتصارات§8:§c {wins}{n}{right}§8§l» §r§7مباريات§8:§c {plays}{n}{right}{bar}{n}{n}{right}§c{address}",
+        "lobby_blockparty": "{right} §fi§cAkuna§9MC §8§l» §r§dBlock§fParty{n}{right}{bar}{n}{right}§8§l» §r§7انتصارات§8:§d {wins}{n}{right}§8§l» §r§7مباريات§8:§d {plays}{n}{right}{bar}{n}{n}{right}§d{address}"
     },
     "server": {
         "info": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §fمعلومات §8===-=-=-=-{n}§cالنظام §8» §r§7IP§8:§c iakunamc.com{n}§cالنظام §8» §r§7المنفذ§8:§c 19132{n}{n}§cالنظام §8» §r§7طلب انضمام للطاقم§8:§c https://staff.iakunamc.com{n}§cالنظام §8» §r§7المتجر§8:§c https://loja.iakunamc.com{n}§cالنظام §8» §r§7الديسكورد§8:§c https://discord.iakunamc.com{n}{n}§fY§cT §8» §r§7300 مشترك §a+ §7فيديو ترويجي{n}§fMini§cYT §8» §r§750 مشترك §a+ §7فيديو ترويجي{n}§cYT§fmirin §8» §r§70 مشترك §a+ §7فيديو ترويجي{n}§cملاحظات §8» §r§7ضع IP في العنوان/الوصف وروج للخادم مرة شهريًا للحفاظ على رتبتك",
@@ -2092,7 +2093,8 @@
             "chest_full": "§cصندوق المتجر ممتلئ...",
             "insufficient_items": "§cليس لديك عناصر كافية...",
             "success": "§7بعت §e{quantity}§7x {item} مقابل §c{price} أكونا §7لـ §e{owner}§7!"
-        }
+        },
+        "_prefix": "§eالمتجر §8§l» §r"
     },
     "sit": {
         "_prefix": "§cالنظام §8§l» §r",
@@ -2243,7 +2245,8 @@
             "skywars": "§7اربح {target} مباريات §bSky§fWars",
             "thebridge": "§7اربح {target} مباريات §cThe§9Bridge",
             "blocksumo": "§7اربح {target} مباريات §bBlock§fSumo",
-            "tntrun": "§7اربح {target} مباريات §cTNT§fRun"
+            "tntrun": "§7اربح {target} مباريات §cTNT§fRun",
+            "blockparty": "§7اربح {target} مباراة في §dBlock§fParty"
         },
         "place": {
             "_prefix": "",
@@ -2297,7 +2300,8 @@
             "_prefix": "",
             "bedwars": "§7العب {target} مباريات §cBed§fWars",
             "skywars": "§7العب {target} مباريات §bSky§fWars",
-            "tntrun": "§7العب {target} مباريات §cTNT§fRun"
+            "tntrun": "§7العب {target} مباريات §cTNT§fRun",
+            "blockparty": "§7العب {target} مباراة في §dBlock§fParty"
         },
         "buy": {
             "items": {
@@ -2534,14 +2538,28 @@
         }
     },
     "maze": {
-        "usage": "§5Maze §8§l» §r§cاستخدم §8/§c{label} §8<§centrar§8|§cjoin§8|§cplay§8|§csair§8|§cquit§8|§cleave§8>"
+        "usage": "§7للانضمام استخدم §8/§7{label} entrar{n}§5Parkour §8§l» §r§7لمغادرة استخدم §8/§7{label} sair",
+        "_prefix": "§5Maze §8§l» §r",
+        "finish": {
+            "noreward": "§7تهانينا، لقد أكملت المتاهة!",
+            "reward": "§7تهانينا، لقد أكملت المتاهة وحصلت على §7§lNightmare §r§7كجائزة!"
+        }
     },
     "twofa": {
         "discord": {
             "need": "§eAuth §8§l» §r§cاستخدم الكود §e{code} §7في Discord للتوثيق"
         },
         "email": {
-            "need": "§eAuth §8§l» §r§cأدخل الكود المرسل إلى بريدك الإلكتروني باستخدام §8/§cverify §8<§ccode§8>"
+            "need": "§eAuth §8§l» §r§cأدخل الكود المرسل إلى بريدك الإلكتروني باستخدام §8/§cverify §8<§ccode§8>",
+            "not_required": "§eAuth §8§l» §r§cليس لديك 2fa مُفعّل في وضع Email...",
+            "code": {
+                "usage": "§eAuth §8§l» §r§cاستخدم §8/§c{label} §8<§cالرمز§8>"
+            },
+            "email": {
+                "expired": "§eAuth §8§l» §r§cانتهت صلاحية الرمز...",
+                "invalid": "§eAuth §8§l» §r§cرمز غير صالح...",
+                "success": "§eAuth §8§l» §r§7تم التحقق بنجاح!"
+            }
         }
     },
     "tntrun": {
@@ -2565,6 +2583,29 @@
         "scoreboard": {
             "_prefix": "",
             "format": "{right}§fi§cAkuna§9MC §8§l» §r§cTNT§fRun{n}{right}{bar}{n}{right}§8§l» §r§7الخريطة§8:§c {map}{n}{right}§8§l» §r§7أحياء§8:§c {alive}{n}{right}§8§l» §r§7الوقت§8:§c {time}{n}{right}{bar}{n}{n}{right}§ciakunamc.com 19132"
+        }
+    },
+    "blockparty": {
+        "_prefix": "§dBlock§fParty §8§l» §r",
+        "state": {
+            "waiting": "§cبانتظار المزيد من اللاعبين...",
+            "starting": "§7يبدأ في §d{start}s"
+        },
+        "player": {
+            "join": "§d{player} §7انضم المباراة §8(§f{count}§8/§f{maxPlayers}§8)",
+            "quit": "§d{player} §7غادر المباراة §8(§f{count}§8/§f{maxPlayers}§8)",
+            "died": "§d{player} §7مات §8(§f{alive}§8/§f{maxPlayers}§8)"
+        },
+        "color": {
+            "selected": "§7اذهب إلى اللون §d{color}§7!",
+            "removing": "§7سيختفي الأرضية في §d{time}s"
+        },
+        "game": {
+            "returning": "§7العودة إلى الصالة في §d{time}s"
+        },
+        "command": {
+            "usage": "§7للانضمام §8/§7{label} join{n}§dBlock§fParty §8§l» §r§7للمغادرة §8/§7{label} leave",
+            "no_space": "§cلا توجد ساحات متاحة..."
         }
     }
 }

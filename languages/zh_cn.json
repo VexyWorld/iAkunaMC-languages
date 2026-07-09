@@ -200,16 +200,10 @@
     "thebridge": {
         "_prefix": "§cThe§9Bridge §8§l» §r",
         "game": {
-            "_prefix": "§cThe§9Bridge §8§l» §r",
             "waiting": "§c等待更多玩家...",
             "countdown": "§7即将在 §c{time}秒 §7后开始",
             "returning": "§7将在 §c{time}秒 §7后返回大厅",
-            "respawning": "§7将在 §c{time}秒 §7后重生",
             "player_joined": "§c{player} §7加入了游戏 §8(§f{count}§8/§f{max}§8)",
-            "player_left": "§c{player} §7离开了游戏 §8(§f{count}§8/§f{max}§8)",
-            "score": "§c{player} §7为队伍 {team} §r§7得分！",
-            "win": "§7队伍 {team} §r§7赢得了游戏！",
-            "tie": "§7平局！",
             "killed_by": "§c{victim} §7was killed by §c{killer}",
             "own_point": "§cYou cannot score a point on your own team's side",
             "player_quit": "§c{player} §7left the match",
@@ -217,16 +211,8 @@
             "point_scored_final": "{player} §7scored a point §8(§cFinal Point§8)",
             "releasing": "§7Releasing in §c{time}s"
         },
-        "combat": {
-            "killed_by": "{victim} §r§7被 {killer} §r§7击杀",
-            "fell_void": "{victim} §r§7掉入了虚空"
-        },
         "command": {
-            "_prefix": "§cThe§9Bridge §8§l» §r",
             "usage": "§7加入请使用 §8/§7{label} join §8<§7模式§8>",
-            "usage_leave": "§7离开请使用 §8/§7{label} leave",
-            "invalid_mode": "§c无效模式... 可用模式§8:§7 {modes}",
-            "not_in_arena": "§c您不在竞技场中...",
             "no_arenas": "§cNo arenas available at the moment..."
         },
         "teams": {
@@ -237,30 +223,13 @@
         }
     },
     "skywars": {
-        "game": {
-            "_prefix": "§bSky§fWars §8§l» §r",
-            "waiting": "§c等待更多玩家...",
-            "countdown": "§7即将在 §b{time}秒 §7后开始",
-            "returning": "§7将在 §b{time}秒 §7后返回大厅",
-            "player_joined": "§b{player} §7加入了游戏 §8(§f{count}§8/§f{max}§8)",
-            "player_left": "§b{player} §7离开了游戏 §8(§f{count}§8/§f{max}§8)",
-            "win": "§b{player} §7赢得了游戏！"
-        },
-        "combat": {
-            "killed_by": "{victim} §r§7被 {killer} §r§7击杀",
-            "fell_void": "{victim} §r§7掉入了虚空"
-        },
         "command": {
-            "_prefix": "§bSky§fWars §8§l» §r",
             "usage": "§7加入请使用 §8/§7{label} join §8<§7模式§8>",
-            "usage_leave": "§7离开请使用 §8/§7{label} leave",
-            "invalid_mode": "§c无效模式... 可用模式§8:§7 {modes}",
             "not_in_arena": "§c您不在竞技场中...",
             "mode_full": "§cThis mode is full...",
             "mode_not_exist": "§cMode {mode} does not exist..."
         },
         "menu": {
-            "_prefix": "§bSky§fWars §8§l» §r",
             "invalid_mode": "§c无效模式... 可用模式§8:§7 {modes}",
             "arena_not_found": "§c未找到竞技场！",
             "map_not_found": "§c未找到地图...",
@@ -309,22 +278,9 @@
         }
     },
     "mlgblock": {
-        "_prefix": "§eMlg§fBlock §8§l» §r",
-        "game": {
-            "waiting": "§e等待更多玩家...",
-            "countdown": "§7即将在 §e{time}秒 §7后开始",
-            "returning": "§7将在 §e{time}秒 §7后返回大厅",
-            "player_joined": "§e{player} §7加入了游戏 §8(§f{count}§8/§f{max}§8)",
-            "player_left": "§e{player} §7离开了游戏 §8(§f{count}§8/§f{max}§8)",
-            "win": "§e{player} §7赢得了游戏！",
-            "failed": "§e{player} §7失败了！",
-            "survived": "§e{player} §7成功落地！"
-        },
         "command": {
             "_prefix": "§eMlg§fBlock §8§l» §r",
             "usage": "§7加入请使用 §8/§7{label} join",
-            "usage_leave": "§7离开请使用 §8/§7{label} leave",
-            "not_in_arena": "§c您不在竞技场中...",
             "no_arenas": "§cNo arenas available..."
         },
         "player": {
@@ -345,22 +301,9 @@
         }
     },
     "blocksumo": {
-        "_prefix": "§bBlock§fSumo §8§l» §r",
-        "game": {
-            "waiting": "§b等待更多玩家...",
-            "countdown": "§7即将在 §b{time}秒 §7后开始",
-            "returning": "§7将在 §b{time}秒 §7后返回大厅",
-            "player_joined": "§b{player} §7加入了游戏 §8(§f{count}§8/§f{max}§8)",
-            "player_left": "§b{player} §7离开了游戏 §8(§f{count}§8/§f{max}§8)",
-            "win": "§b{player} §7赢得了游戏！",
-            "eliminated": "§b{player} §7被淘汰了！",
-            "killed_by": "{victim} §r§7被 {killer} §r§7击杀"
-        },
         "command": {
             "_prefix": "§bBlock§fSumo §8§l» §r",
             "usage": "§7加入请使用 §8/§7{label} join",
-            "usage_leave": "§7离开请使用 §8/§7{label} leave",
-            "not_in_arena": "§c您不在竞技场中...",
             "no_arenas": "§cNo arenas available..."
         },
         "player": {
@@ -383,33 +326,21 @@
         }
     },
     "plot": {
-        "_prefix": "§9地块 §8§l» §r",
         "claim": {
             "success": "§7地块已成功领取！",
-            "already_claimed": "§c您已有一个地块...",
-            "no_plots": "§c没有可用的地块...",
             "alreadyclaimed": "§9地块 §8§l» §r§c此地块已被 {owner} 领取",
             "desc": "§7领取您当前站立的地块",
             "nomoney": "§9地块 §8§l» §r§c您没有足够的金钱来领取此地块",
             "usage": "§8/§cp claim §8<§cname§8>",
             "yourplot": "§9地块 §8§l» §r§c您已领取了此地块"
         },
-        "unclaim": {
-            "success": "§7地块已成功放弃！",
-            "not_owner": "§c您不是此地块的主人..."
-        },
         "home": {
-            "not_owner": "§c您没有地块...",
-            "not_found": "§c未找到地块...",
             "desc": "§7传送到您的一个地块",
             "error": "§9地块 §8§l» §r§c无法传送到该地块...",
             "noplots": "§9地块 §8§l» §r§c您没有地块",
             "notexist": "§9地块 §8§l» §r§c您没有ID为 {id} 的地块",
             "success": "§9地块 §8§l» §r§7已成功传送到地块 §9{plot}§7！",
             "usage": "§8/§cp home §8<§cid§8>"
-        },
-        "visit": {
-            "not_found": "§c未找到 {player} 的地块..."
         },
         "accepttransfer": {
             "desc": "§7接受地块转让",
@@ -603,17 +534,6 @@
         }
     },
     "cosmetic": {
-        "_prefix": "§5装饰 §8§l» §r",
-        "trail": {
-            "activated": "§7轨迹 §5{type} §7已成功激活！",
-            "deactivated": "§7轨迹已成功停用！",
-            "invalid": "§c无效轨迹..."
-        },
-        "gadget": {
-            "activated": "§7装备 §5{type} §7已成功激活！",
-            "deactivated": "§7装备已成功停用！",
-            "invalid": "§c无效装备..."
-        },
         "bedwars": {
             "bed_break": {
                 "explosion": {
@@ -806,18 +726,12 @@
         }
     },
     "cosmetics": {
-        "_prefix": "§5装饰 §8§l» §r",
-        "activated": "§7装饰 §5{type} §7已成功激活！",
-        "deactivated": "§7装饰已成功停用！",
-        "invalid_type": "§c无效装饰... 使用 §8/§c{label} list 查看可用列表",
-        "invalid_world": "§c无法在此处使用装饰...",
         "list": {
             "_prefix": "§5Cosmetics §8§l» §r",
             "owned": "§7已拥有§8:§7 {cosmetics}",
             "title": "§7装饰列表§8:",
             "unowned": "§7未拥有§8:§7 {cosmetics}"
         },
-        "no_active": "§c您没有激活任何装饰...",
         "usage": "§5Cosmetics §8§l» §r§c请使用 §8/§c{label} §8<§cbuy§8|§con§8|§coff§8|§clist§8|§cinfo§8>",
         "buy": {
             "_prefix": "§5Cosmetics §8§l» §r",
@@ -844,8 +758,7 @@
             "usage": "§c请使用 §8/§c{label} info §8<§ccosmetic§8> [§cminigame§8] [§ctype§8]"
         },
         "minigame": {
-            "invalid": "§5Cosmetics §8§l» §r§c无效小游戏！",
-            "_prefix": ""
+            "invalid": "§5Cosmetics §8§l» §r§c无效小游戏！"
         },
         "set": {
             "_prefix": "§5Cosmetics §8§l» §r",
@@ -875,7 +788,6 @@
             "success": "§5装饰 §8§l» §r§7装饰 §5{cosmetic} §7已成功激活！"
         },
         "disable": {
-            "button": "§c停用装饰",
             "success": "§5装饰 §8§l» §r§7装饰已成功停用！",
             "all_success": "§5Cosmetics §8§l» §r§7所有装饰已禁用",
             "button_all": "§c禁用所有装饰",
@@ -899,10 +811,6 @@
     "pay": {
         "_prefix": "§a经济 §8§l» §r",
         "invalid_amount": "§c金额必须是数字且不能小于或等于0...",
-        "not_enough": "§c您没有足够的金币...",
-        "received": "§7您收到了来自 §a{sender} §7的 §c{amount} 金币§7！",
-        "self": "§c您不能给自己转账！",
-        "sent": "§7您成功向 §a{target} §7转账了 §c{amount} 金币§7！",
         "usage": "§c使用 §8/§c{label} §8<§c玩家§8> <§c金额§8>",
         "insufficient_balance": "§cYou don't have enough Akunas to make this transaction...",
         "receive": "§7You received §c{amount} Akunas§7 from §a{player}§7!",
@@ -910,16 +818,9 @@
     },
     "economy": {
         "_prefix": "§a经济 §8§l» §r",
-        "not_enough": "§c您没有足够的金币...",
         "tax_applied": "§cA tax of {tax} Akunas was applied... Total debited: {total} Akunas"
     },
     "skill": {
-        "_prefix": "§6技能 §8§l» §r",
-        "activated": "§7技能 §6{skill} §7已成功激活！",
-        "deactivated": "§7技能已成功停用！",
-        "invalid": "§c无效技能...",
-        "no_active": "§c您没有激活任何技能...",
-        "usage": "§c使用 §8/§c{label} §8<§con§8|§coff§8|§clist§8>",
         "archer": {
             "description": "击中敌人时获得箭矢"
         },
@@ -999,17 +900,11 @@
     },
     "skills": {
         "_prefix": "§a技能 §8§l» §r",
-        "activated": "§7技能 §6{type} §7已成功激活！",
-        "deactivated": "§7技能已成功停用！",
-        "invalid_type": "§c无效技能... 使用 §8/§c{label} list 查看可用列表",
-        "invalid_world": "§c无法在此处使用技能...",
         "list": {
             "owned": "§7已拥有§8:§7 {skills}",
             "title": "§7技能列表§8:",
-            "unowned": "§7未拥有§8:§7 {skills}",
-            "_prefix": ""
+            "unowned": "§7未拥有§8:§7 {skills}"
         },
-        "no_active": "§c您没有激活任何技能...",
         "usage": "§c请使用 §8/§c{label} §8<§cbuy§8|§con§8|§coff§8|§clist§8|§cinfo§8>",
         "activate": {
             "already_active": "§c此技能已激活...",
@@ -1022,8 +917,7 @@
         "buy": {
             "already_owned": "§c您已经拥有此技能！",
             "success": "§7技能 §a{skill}§7 已使用 §c{cost} 金币购买",
-            "usage": "§c请使用 §8/§c{label} buy §8<§cskill§8> [minigame]",
-            "_prefix": ""
+            "usage": "§c请使用 §8/§c{label} buy §8<§cskill§8> [minigame]"
         },
         "cooldown": {
             "archer": "§c技能 Archer 冷却中...",
@@ -1045,12 +939,10 @@
             "description": "§7描述§8: §a{description}",
             "status": "§7状态§8: §a{status}",
             "title": "§7技能 §a{skill}§7 的信息§8:",
-            "usage": "§c请使用 §8/§c{label} info §8<§cskill§8> [minigame]",
-            "_prefix": ""
+            "usage": "§c请使用 §8/§c{label} info §8<§cskill§8> [minigame]"
         },
         "skill": {
-            "not_found": "§aSkills §8§l» §r§c未找到技能...",
-            "_prefix": ""
+            "not_found": "§aSkills §8§l» §r§c未找到技能..."
         }
     },
     "skillswindow": {
@@ -1062,11 +954,7 @@
             "cancel": "§c取消",
             "success_active": "§aSkills §8§l» §r§7You successfully purchased and activated the skill §a{skill} §7!"
         },
-        "set": {
-            "success": "§6技能 §8§l» §r§7技能 §6{skill} §7已成功激活！"
-        },
         "disable": {
-            "button": "§c停用技能",
             "success": "§6技能 §8§l» §r§7技能已成功停用！",
             "all_minigame_success": "§a技能 §8§l» §r§7来自 §a{minigame} §7的所有技能已停用！",
             "all_success": "§a技能 §8§l» §r§7所有技能已停用",
@@ -1087,24 +975,13 @@
     },
     "chest": {
         "_prefix": "§6宝箱 §8§l» §r",
-        "opened": "§7您开启了一个 §6{type} §7宝箱！",
-        "no_chest": "§c您没有可开启的宝箱...",
-        "usage": "§c使用 §8/§c{label} §8<§c类型§8>",
         "empty": "§cChest is empty..."
     },
     "inventory": {
         "_prefix": "§cSystem §8§l» §r",
-        "full": "§c您的背包已满...",
-        "saved": "§7背包已保存！",
-        "restored": "§7背包已恢复！"
+        "full": "§c您的背包已满..."
     },
     "kit": {
-        "_prefix": "§9套装 §8§l» §r",
-        "activated": "§7套装 §9{kit} §7已成功激活！",
-        "deactivated": "§7套装已成功停用！",
-        "invalid": "§c无效套装...",
-        "no_active": "§c您没有激活任何套装...",
-        "no_permission": "§c您没有权限使用套装 §9{kit}§c！",
         "archer": {
             "description": "弓箭手套装，配备羽毛和鸡蛋"
         },
@@ -1170,17 +1047,12 @@
         }
     },
     "kits": {
-        "_prefix": "§9套件 §8§l» §r",
-        "activated": "§7套装 §9{type} §7已成功激活！",
-        "deactivated": "§7套装已成功停用！",
-        "invalid_type": "§c无效套装... 使用 §8/§c{label} list 查看可用列表",
         "list": {
             "_prefix": "§9Kits §8§l» §r",
             "owned": "§7已拥有§8:§7 {kits}",
             "title": "§7套件列表§8:",
             "unowned": "§7未拥有§8:§7 {kits}"
         },
-        "no_active": "§c您没有激活任何套装...",
         "usage": "§c请使用 §8/§c{label} §8<§cbuy§8|§con§8|§coff§8|§clist§8|§cinfo§8>",
         "buy": {
             "_prefix": "§9Kits §8§l» §r",
@@ -1199,8 +1071,7 @@
             "usage": "§c请使用 §8/§c{label} info §8<§ckit§8>"
         },
         "kit": {
-            "not_found": "§9Kits §8§l» §r§c未找到套件...",
-            "_prefix": ""
+            "not_found": "§9Kits §8§l» §r§c未找到套件..."
         },
         "set": {
             "_prefix": "§9Kits §8§l» §r",
@@ -2165,7 +2036,8 @@
         "plot": "{right}   §fi§cAkuna§9MC §8§l» §r§9地块{n}{right}{bar}{n}{right}§8§l» §r§7名称§8:§9 {name}{n}{right}§8§l» §r§7在线§8:§9 {onlinemap}{n}{right}§8§l» §r§7地块§8:§9 {plots}{n}{right}{bar}{n}{n}{right}§9{address}",
         "lobby_bw": "{right}  §fi§cAkuna§9MC §8§l» §r§cBed§fWars{n}{right}{bar}{n}{right}§8§l» §r§7胜利§8:§c {wins}{n}{right}§8§l» §r§7击杀§8:§c {kills}{n}{right}§8§l» §r§7最终击杀§8:§c {final_kills}{n}{right}§8§l» §r§7破床§8:§c {beds}{n}{right}{bar}{n}{n}{right}§c{address}",
         "lobby_sw": "{right}  §fi§cAkuna§9MC §8§l» §r§bSky§fWars{n}{right}{bar}{n}{right}§8§l» §r§7胜利§8:§b {wins}{n}{right}§8§l» §r§7击杀§8:§b {kills}{n}{right}§8§l» §r§7场次§8:§b {plays}{n}{right}{bar}{n}{n}{right}§b{address}",
-        "lobby_tntrun": "{right}  §fi§cAkuna§9MC §8§l» §r§cTNT§fRun{n}{right}{bar}{n}{right}§8§l» §r§7胜利§8:§c {wins}{n}{right}§8§l» §r§7游戏§8:§c {plays}{n}{right}{bar}{n}{n}{right}§c{address}"
+        "lobby_tntrun": "{right}  §fi§cAkuna§9MC §8§l» §r§cTNT§fRun{n}{right}{bar}{n}{right}§8§l» §r§7胜利§8:§c {wins}{n}{right}§8§l» §r§7游戏§8:§c {plays}{n}{right}{bar}{n}{n}{right}§c{address}",
+        "lobby_blockparty": "{right} §fi§cAkuna§9MC §8§l» §r§dBlock§fParty{n}{right}{bar}{n}{right}§8§l» §r§7胜利§8:§d {wins}{n}{right}§8§l» §r§7比赛§8:§d {plays}{n}{right}{bar}{n}{n}{right}§d{address}"
     },
     "server": {
         "info": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §f信息 §8===-=-=-=-{n}§c系统 §8» §r§7IP§8:§c iakunamc.com{n}§c系统 §8» §r§7端口§8:§c 19132{n}{n}§c系统 §8» §r§7Staff申请§8:§c https://staff.iakunamc.com{n}§c系统 §8» §r§7商店§8:§c https://loja.iakunamc.com{n}§c系统 §8» §r§7Discord§8:§c https://discord.iakunamc.com{n}{n}§fY§cT §8» §r§7300 订阅 §a+ §7宣传视频{n}§fMini§cYT §8» §r§750 订阅 §a+ §7宣传视频{n}§cYT§fmirin §8» §r§70 订阅 §a+ §7宣传视频{n}§c说明 §8» §r§7在标题/描述中放入IP，并每月宣传一次服务器以保持您的头衔",
@@ -2373,7 +2245,8 @@
             "skywars": "§7赢得 {target} 场 §bSky§fWars",
             "thebridge": "§7赢得 {target} 场 §cThe§9Bridge",
             "blocksumo": "§7赢得 {target} 场 §bBlock§fSumo",
-            "tntrun": "§7赢得 {target} 场 §cTNT§fRun"
+            "tntrun": "§7赢得 {target} 场 §cTNT§fRun",
+            "blockparty": "§7在§dBlock§fParty §7中赢得{target}场"
         },
         "place": {
             "_prefix": "",
@@ -2427,7 +2300,8 @@
             "bedwars": "§7游玩 {target} 场 §cBed§fWars",
             "skywars": "§7游玩 {target} 场 §bSky§fWars",
             "tntrun": "§7游玩 {target} 场 §cTNT§fRun",
-            "_prefix": "§6Missões §8§l» §r"
+            "_prefix": "§6Missões §8§l» §r",
+            "blockparty": "§7在§dBlock§fParty §7中玩{target}场"
         },
         "buy": {
             "items": {
@@ -2664,14 +2538,28 @@
         }
     },
     "maze": {
-        "usage": "§5Maze §8§l» §r§c使用 §8/§c{label} §8<§centrar§8|§cjoin§8|§cplay§8|§csair§8|§cquit§8|§cleave§8>"
+        "usage": "§7输入 §8/§7{label} entrar 以加入{n}§5Parkour §8§l» §r§7输入 §8/§7{label} sair 以离开",
+        "_prefix": "§5Maze §8§l» §r",
+        "finish": {
+            "noreward": "§7恭喜你，完成了迷宫！",
+            "reward": "§7恭喜你完成了迷宫，并获得了 §7§lNightmare §r§7作为奖励！"
+        }
     },
     "twofa": {
         "discord": {
             "need": "§eAuth §8§l» §r§7请在Discord中使用代码 §e{code} §7进行身份验证"
         },
         "email": {
-            "need": "§eAuth §8§l» §r§7请输入发送到您邮箱的代码，使用 §8/§cverify §8<§c代码§8>"
+            "need": "§eAuth §8§l» §r§7请输入发送到您邮箱的代码，使用 §8/§cverify §8<§c代码§8>",
+            "not_required": "§eAuth §8§l» §r§c你在邮箱模式下未启用2fa...",
+            "code": {
+                "usage": "§eAuth §8§l» §r§c使用 §8/§c{label} §8<§c代码§8>"
+            },
+            "email": {
+                "expired": "§eAuth §8§l» §r§c验证码已过期...",
+                "invalid": "§eAuth §8§l» §r§c无效的验证码...",
+                "success": "§eAuth §8§l» §r§7验证成功！"
+            }
         }
     },
     "tntrun": {
@@ -2695,6 +2583,29 @@
         "scoreboard": {
             "_prefix": "",
             "format": "{right}§fi§cAkuna§9MC §8§l» §r§cTNT§fRun{n}{right}{bar}{n}{right}§8§l» §r§7地图§8:§c {map}{n}{right}§8§l» §r§7存活§8:§c {alive}{n}{right}§8§l» §r§7时间§8:§c {time}{n}{right}{bar}{n}{n}{right}§ciakunamc.com 19132"
+        }
+    },
+    "blockparty": {
+        "_prefix": "§dBlock§fParty §8§l» §r",
+        "state": {
+            "waiting": "§c等待更多玩家...",
+            "starting": "§7§d{start}s §7后开始"
+        },
+        "player": {
+            "join": "§d{player} §7加入了比赛 §8(§f{count}§8/§f{maxPlayers}§8)",
+            "quit": "§d{player} §7离开了比赛 §8(§f{count}§8/§f{maxPlayers}§8)",
+            "died": "§d{player} §7死亡了 §8(§f{alive}§8/§f{maxPlayers}§8)"
+        },
+        "color": {
+            "selected": "§7前往颜色 §d{color}§7!",
+            "removing": "§7地面将在§d{time}s §7后消失"
+        },
+        "game": {
+            "returning": "§7§d{time}s §7后返回大厅"
+        },
+        "command": {
+            "usage": "§7加入使用 §8/§7{label} join{n}§dBlock§fParty §8§l» §r§7离开使用 §8/§7{label} leave",
+            "no_space": "§c没有可用的竞技场..."
         }
     }
 }
