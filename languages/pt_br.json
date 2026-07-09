@@ -1926,13 +1926,13 @@
         "add": {
             "already": "§3Pin §8§l» §r§cVocê já possui um PIN...",
             "success": "§3Pin §8§l» §r§7PIN adicionado com sucesso!",
-            "usage": "§3Pin §8§l» §r§cUse §8/§c{label} add §8<§cPIN de 4 dígitos§8>",
+            "usage": "§3Pin §8§l» §r§cUtilize §8/§c{label} add §8<§cPIN de 4 dígitos§8>",
             "_prefix": "§3Pin §8§l» §r"
         },
         "change": {
             "incorrect": "§3Pin §8§l» §r§cPIN atual incorreto...",
             "success": "§3Pin §8§l» §r§7PIN alterado com sucesso!",
-            "usage": "§3Pin §8§l» §r§cUse §8/§c{label} change §8<§cPIN atual§8> <§cnovo PIN§8>",
+            "usage": "§3Pin §8§l» §r§cUtilize §8/§c{label} change §8<§cPIN atual§8> <§cnovo PIN§8>",
             "_prefix": "§3Pin §8§l» §r"
         },
         "discord": {
@@ -1965,7 +1965,7 @@
         "success": {
             "login": "§3Pin §8§l» §r§7Autenticado com sucesso!"
         },
-        "usage": "§3Pin §8§l» §r§cUse §8/§c{label} §8<§cadd§8|§cremove§8|§cchange§8|§cdiscord§8|§cemail§8>"
+        "usage": "§3Pin §8§l» §r§cUtilize §8/§c{label} §8<§cadd§8|§cremove§8|§cchange§8|§cdiscord§8|§cemail§8>"
     },
     "pluscolor": {
         "_prefix": "§cSistema §8§l» §r",
@@ -2036,7 +2036,8 @@
         "plot": "{right}   §fi§cAkuna§9MC §8§l» §r§9Plot{n}{right}{bar}{n}{right}§8§l» §r§7Nome§8:§9 {name}{n}{right}§8§l» §r§7Jogando§8:§9 {onlinemap}{n}{right}§8§l» §r§7Plots§8:§9 {plots}{n}{right}{bar}{n}{n}{right}§9{address}",
         "lobby_bw": "{right}  §fi§cAkuna§9MC §8§l» §r§cBed§fWars{n}{right}{bar}{n}{right}§8§l» §r§7Vitórias§8:§c {wins}{n}{right}§8§l» §r§7Kills§8:§c {kills}{n}{right}§8§l» §r§7Kills Finais§8:§c {final_kills}{n}{right}§8§l» §r§7Camas Destruídas§8:§c {beds}{n}{right}{bar}{n}{n}{right}§c{address}",
         "lobby_sw": "{right}  §fi§cAkuna§9MC §8§l» §r§bSky§fWars{n}{right}{bar}{n}{right}§8§l» §r§7Vitórias§8:§b {wins}{n}{right}§8§l» §r§7Kills§8:§b {kills}{n}{right}§8§l» §r§7Partidas§8:§b {plays}{n}{right}{bar}{n}{n}{right}§b{address}",
-        "lobby_tntrun": "{right}  §fi§cAkuna§9MC §8§l» §r§cTNT§fRun{n}{right}{bar}{n}{right}§8§l» §r§7Vitórias§8:§c {wins}{n}{right}§8§l» §r§7Partidas§8:§c {plays}{n}{right}{bar}{n}{n}{right}§c{address}"
+        "lobby_tntrun": "{right}  §fi§cAkuna§9MC §8§l» §r§cTNT§fRun{n}{right}{bar}{n}{right}§8§l» §r§7Vitórias§8:§c {wins}{n}{right}§8§l» §r§7Partidas§8:§c {plays}{n}{right}{bar}{n}{n}{right}§c{address}",
+        "lobby_blockparty": "{right} §fi§cAkuna§9MC §8§l» §r§dBlock§fParty{n}{right}{bar}{n}{right}§8§l» §r§7Vitórias§8:§d {wins}{n}{right}§8§l» §r§7Partidas§8:§d {plays}{n}{right}{bar}{n}{n}{right}§d{address}"
     },
     "server": {
         "info": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §fInformações §8===-=-=-=-{n}§cSistema §8» §r§7IP§8:§c iakunamc.com{n}§cSistema §8» §r§7Porta§8:§c 19132{n}{n}§cSistema §8» §r§7Formulário para Staff§8:§c https://staff.iakunamc.com{n}§cSistema §8» §r§7Loja§8:§c https://loja.iakunamc.com{n}§cSistema §8» §r§7Discord§8:§c https://discord.iakunamc.com{n}{n}§fY§cT §8» §r§7300 inscritos §a+ §7Vídeo divulgando{n}§fMini§cYT §8» §r§750 inscritos §a+ §7Vídeo divulgando{n}§cYT§fmirin §8» §r§70 inscritos §a+ §7Vídeo divulgando{n}§cNotas §8» §r§7Coloque o IP no título/descrição e divulgue o servidor uma vez por mês para manter sua tag",
@@ -2244,7 +2245,8 @@
             "skywars": "§7Ganhe {target} partidas de §bSky§fWars",
             "thebridge": "§7Ganhe {target} partidas de §cThe§9Bridge",
             "blocksumo": "§7Ganhe {target} partidas de §bBlock§fSumo",
-            "tntrun": "§7Ganhe {target} partidas de §cTNT§fRun"
+            "tntrun": "§7Ganhe {target} partidas de §cTNT§fRun",
+            "blockparty": "§7Ganhe {target} partidas de §dBlock§fParty"
         },
         "place": {
             "_prefix": "",
@@ -2298,7 +2300,8 @@
             "_prefix": "",
             "bedwars": "§7Jogue {target} partidas de §cBed§fWars",
             "skywars": "§7Jogue {target} partidas de §bSky§fWars",
-            "tntrun": "§7Jogue {target} partidas de §cTNT§fRun"
+            "tntrun": "§7Jogue {target} partidas de §cTNT§fRun",
+            "blockparty": "§7Jogue {target} partidas de §dBlock§fParty"
         },
         "buy": {
             "items": {
@@ -2511,15 +2514,15 @@
         }
     },
     "email": {
-        "usage": "§bEmail §8§l» §r§cUse §8/§c{label} §8<§clink§8|§cverify§8|§cunlink§8|§c2fa§8>",
+        "usage": "§bEmail §8§l» §r§cUtilize §8/§c{label} §8<§clink§8|§cverify§8|§cunlink§8|§c2fa§8>",
         "link": {
-            "usage": "§bEmail §8§l» §r§cUse §8/§c{label} link §8<§cemail§8>",
+            "usage": "§bEmail §8§l» §r§cUtilize §8/§c{label} link §8<§cemail§8>",
             "invalid": "§bEmail §8§l» §r§cEmail inválido...",
-            "already": "§bEmail §8§l» §r§cEste email já está vinculado...",
+            "already": "§bEmail §8§l» §r§cEsse email já está vinculado...",
             "sent": "§bEmail §8§l» §r§7Um código de verificação foi enviado para §b{email}§7!"
         },
         "verify": {
-            "usage": "§bEmail §8§l» §r§cUse §8/§c{label} verify §8<§ccódigo§8>",
+            "usage": "§bEmail §8§l» §r§cUtilize §8/§c{label} verify §8<§ccódigo§8>",
             "expired": "§bEmail §8§l» §r§cO código de verificação expirou...",
             "invalid": "§bEmail §8§l» §r§cCódigo de verificação inválido...",
             "success": "§bEmail §8§l» §r§7Email §b{email} §7verificado com sucesso!"
@@ -2535,14 +2538,28 @@
         }
     },
     "maze": {
-        "usage": "§5Maze §8§l» §r§cUse §8/§c{label} §8<§centrar§8|§cjoin§8|§cplay§8|§csair§8|§cquit§8|§cleave§8>"
+        "_prefix": "§5Maze §8§l» §r",
+        "usage": "§7Para entrar utilize §8/§7{label} entrar{n}§5Parkour §8§l» §r§7Para sair utilize §8/§7{label} sair",
+        "finish": {
+            "noreward": "§7Parabéns, você finalizou o labirinto!",
+            "reward": "§7Parabéns, você finalizou o labirinto e recebeu §7§lNightmare §r§7como recompensa!"
+        }
     },
     "twofa": {
         "discord": {
-            "need": "§eAuth §8§l» §r§7Use o código §e{code} §7no Discord para autenticar"
+            "need": "§eAuth §8§l» §r§7Utilize o código §e{code} §7no Discord para autenticar"
         },
         "email": {
-            "need": "§eAuth §8§l» §r§7Insira o código enviado ao seu email usando §8/§cverify §8<§ccódigo§8>"
+            "need": "§eAuth §8§l» §r§7Insira o código enviado ao seu email usando §8/§7verify §8<§7código§8>",
+            "not_required": "§eAuth §8§l» §r§cVocê não possui o 2fa ativado no modo Email...",
+            "code": {
+                "usage": "§eAuth §8§l» §r§cUtilize §8/§c{label} §8<§ccódigo§8>"
+            },
+            "email": {
+                "expired": "§eAuth §8§l» §r§cO código expirou...",
+                "invalid": "§eAuth §8§l» §r§cCódigo inválido...",
+                "success": "§eAuth §8§l» §r§7Autenticado com sucesso!"
+            }
         }
     },
     "tntrun": {
@@ -2560,12 +2577,35 @@
             "returning": "§7Voltando ao lobby em §c{time}s"
         },
         "command": {
-            "usage": "§7Para entrar utilize §8/§7tntrun join{n}§cTNT§fRun §8§l» §r§7Para sair utilize §8/§7tntrun leave",
+            "usage": "§7Para entrar utilize §8/§7{label} join{n}§cTNT§fRun §8§l» §r§7Para sair utilize §8/§7{label} leave",
             "no_space": "§cNão há arenas disponíveis..."
         },
         "scoreboard": {
             "_prefix": "",
             "format": "{right}§fi§cAkuna§9MC §8§l» §r§cTNT§fRun{n}{right}{bar}{n}{right}§8§l» §r§7Mapa§8:§c {map}{n}{right}§8§l» §r§7Vivos§8:§c {alive}{n}{right}§8§l» §r§7Tempo§8:§c {time}{n}{right}{bar}{n}{n}{right}§ciakunamc.com 19132"
+        }
+    },
+    "blockparty": {
+        "_prefix": "§dBlock§fParty §8§l» §r",
+        "state": {
+            "waiting": "§cAguardando mais jogadores...",
+            "starting": "§7Começando em §d{start}s"
+        },
+        "player": {
+            "join": "§d{player} §7entrou na partida §8(§f{count}§8/§f{maxPlayers}§8)",
+            "quit": "§d{player} §7saiu da partida §8(§f{count}§8/§f{maxPlayers}§8)",
+            "died": "§d{player} §7morreu §8(§f{alive}§8/§f{maxPlayers}§8)"
+        },
+        "color": {
+            "selected": "§7Vá para a cor §d{color}§7!",
+            "removing": "§7O chão vai sumir em §d{time}s"
+        },
+        "game": {
+            "returning": "§7Voltando ao lobby em §d{time}s"
+        },
+        "command": {
+            "usage": "§7Para entrar utilize §8/§7{label} entrar{n}§dBlock§fParty §8§l» §r§7Para sair utilize §8/§7{label} sair",
+            "no_space": "§cNão há arenas disponíveis..."
         }
     }
 }

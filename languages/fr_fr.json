@@ -770,13 +770,11 @@
             "ambiguous": "§cCe nom existe dans plusieurs types, veuillez préciser le mini-jeu et le type !"
         },
         "minigame": {
-            "invalid": "§5Cosmetics §8§l» §r§cMini-jeu invalide !",
-            "_prefix": ""
+            "invalid": "§5Cosmetics §8§l» §r§cMini-jeu invalide !"
         },
         "type": {
             "invalid": "§5Cosmetics §8§l» §r§cType de cosmétique invalide !"
-        },
-        "_prefix": "§5Cosmétiques §8§l» §r"
+        }
     },
     "cosmeticswindow": {
         "title": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §5Cosmétiques §8===-=-=-=-",
@@ -906,8 +904,7 @@
         "buy": {
             "usage": "§cUtilisez §8/§c{label} buy §8<§cskill§8> [minigame]",
             "already_owned": "§cVous possédez déjà cette compétence !",
-            "success": "§7Compétence §a{skill}§7 achetée pour §c{cost} Akunas",
-            "_prefix": ""
+            "success": "§7Compétence §a{skill}§7 achetée pour §c{cost} Akunas"
         },
         "activate": {
             "usage": "§cUtilisez §8/§c{label} on §8<§cskill§8> [minigame]",
@@ -927,8 +924,7 @@
         "list": {
             "title": "§7Liste des compétences§8:",
             "owned": "§7Possédées§8:§7 {skills}",
-            "unowned": "§7Non possédées§8:§7 {skills}",
-            "_prefix": ""
+            "unowned": "§7Non possédées§8:§7 {skills}"
         },
         "info": {
             "usage": "§cUtilisez §8/§c{label} info §8<§cskill§8> [minigame]",
@@ -936,12 +932,10 @@
             "description": "§7Description§8: §a{description}",
             "cost": "§7Prix§8:§c {cost} Akunas",
             "status": "§7Statut§8: §a{status}",
-            "active": "§7Active§8: §a{active}",
-            "_prefix": ""
+            "active": "§7Active§8: §a{active}"
         },
         "skill": {
-            "not_found": "§aSkills §8§l» §r§cCompétence introuvable...",
-            "_prefix": ""
+            "not_found": "§aSkills §8§l» §r§cCompétence introuvable..."
         },
         "cooldown": {
             "tntegg": "§cLa compétence Tntegg est en recharge...",
@@ -1089,10 +1083,8 @@
             "active": "§7Actif§8: §9{active}"
         },
         "kit": {
-            "not_found": "§9Kits §8§l» §r§cKit introuvable...",
-            "_prefix": ""
-        },
-        "_prefix": "§9Kits §8§l» §r"
+            "not_found": "§9Kits §8§l» §r§cKit introuvable..."
+        }
     },
     "kitswindow": {
         "title": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §9Kits §8===-=-=-=-",
@@ -2044,7 +2036,8 @@
         "plot": "{right}   §fi§cAkuna§9MC §8§l» §r§9Parcelle{n}{right}{bar}{n}{right}§8§l» §r§7Nom§8:§9 {name}{n}{right}§8§l» §r§7Jouant§8:§9 {onlinemap}{n}{right}§8§l» §r§7Parcelles§8:§9 {plots}{n}{right}{bar}{n}{n}{right}§9{address}",
         "lobby_bw": "{right}  §fi§cAkuna§9MC §8§l» §r§cBed§fWars{n}{right}{bar}{n}{right}§8§l» §r§7Victoires§8:§c {wins}{n}{right}§8§l» §r§7Kills§8:§c {kills}{n}{right}§8§l» §r§7Kills Finaux§8:§c {final_kills}{n}{right}§8§l» §r§7Lits Détruits§8:§c {beds}{n}{right}{bar}{n}{n}{right}§c{address}",
         "lobby_sw": "{right}  §fi§cAkuna§9MC §8§l» §r§bSky§fWars{n}{right}{bar}{n}{right}§8§l» §r§7Victoires§8:§b {wins}{n}{right}§8§l» §r§7Kills§8:§b {kills}{n}{right}§8§l» §r§7Parties§8:§b {plays}{n}{right}{bar}{n}{n}{right}§b{address}",
-        "lobby_tntrun": "{right}  §fi§cAkuna§9MC §8§l» §r§cTNT§fRun{n}{right}{bar}{n}{right}§8§l» §r§7Victoires§8:§c {wins}{n}{right}§8§l» §r§7Parties§8:§c {plays}{n}{right}{bar}{n}{n}{right}§c{address}"
+        "lobby_tntrun": "{right}  §fi§cAkuna§9MC §8§l» §r§cTNT§fRun{n}{right}{bar}{n}{right}§8§l» §r§7Victoires§8:§c {wins}{n}{right}§8§l» §r§7Parties§8:§c {plays}{n}{right}{bar}{n}{n}{right}§c{address}",
+        "lobby_blockparty": "{right} §fi§cAkuna§9MC §8§l» §r§dBlock§fParty{n}{right}{bar}{n}{right}§8§l» §r§7Victoires§8:§d {wins}{n}{right}§8§l» §r§7Parties§8:§d {plays}{n}{right}{bar}{n}{n}{right}§d{address}"
     },
     "server": {
         "info": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §fInformation §8===-=-=-=-{n}§cSystème §8» §r§7IP§8:§c iakunamc.com{n}§cSystème §8» §r§7Port§8:§c 19132{n}{n}§cSystème §8» §r§7Candidature Staff§8:§c https://staff.iakunamc.com{n}§cSystème §8» §r§7Boutique§8:§c https://loja.iakunamc.com{n}§cSystème §8» §r§7Discord§8:§c https://discord.iakunamc.com{n}{n}§fY§cT §8» §r§7300 abonnés §a+ §7Vidéo promotionnelle{n}§fMini§cYT §8» §r§750 abonnés §a+ §7Vidéo promotionnelle{n}§cYT§fmirin §8» §r§70 abonné §a+ §7Vidéo promotionnelle{n}§cNotes §8» §r§7Mettez l'IP dans le titre/description et promouvez le serveur une fois par mois pour conserver votre grade",
@@ -2252,7 +2245,8 @@
             "skywars": "§7Gagnez {target} parties de §bSky§fWars",
             "thebridge": "§7Gagnez {target} parties de §cThe§9Bridge",
             "blocksumo": "§7Gagnez {target} parties de §bBlock§fSumo",
-            "tntrun": "§7Gagnez {target} parties de §cTNT§fRun"
+            "tntrun": "§7Gagnez {target} parties de §cTNT§fRun",
+            "blockparty": "§7Gagnez {target} parties de §dBlock§fParty"
         },
         "place": {
             "_prefix": "",
@@ -2306,7 +2300,8 @@
             "_prefix": "",
             "bedwars": "§7Jouez {target} parties de §cBed§fWars",
             "skywars": "§7Jouez {target} parties de §bSky§fWars",
-            "tntrun": "§7Jouez {target} parties de §cTNT§fRun"
+            "tntrun": "§7Jouez {target} parties de §cTNT§fRun",
+            "blockparty": "§7Jouez {target} parties de §dBlock§fParty"
         },
         "buy": {
             "items": {
@@ -2543,14 +2538,28 @@
         }
     },
     "maze": {
-        "usage": "§5Maze §8§l» §r§cUtilisez §8/§c{label} §8<§centrar§8|§cjoin§8|§cplay§8|§csair§8|§cquit§8|§cleave§8>"
+        "usage": "§7Pour rejoindre utilisez §8/§7{label} entrar{n}§5Parkour §8§l» §r§7Pour quitter utilisez §8/§7{label} sair",
+        "_prefix": "§5Maze §8§l» §r",
+        "finish": {
+            "noreward": "§7Félicitations, vous avez terminé le labyrinthe !",
+            "reward": "§7Félicitations, vous avez terminé le labyrinthe et reçu §7§lNightmare §r§7comme récompense !"
+        }
     },
     "twofa": {
         "discord": {
             "need": "§eAuth §8§l» §r§7Utilisez le code §e{code} §7sur Discord pour vous authentifier"
         },
         "email": {
-            "need": "§eAuth §8§l» §r§7Saisissez le code envoyé à votre email avec §8/§cverify §8<§ccode§8>"
+            "need": "§eAuth §8§l» §r§7Saisissez le code envoyé à votre email avec §8/§cverify §8<§ccode§8>",
+            "not_required": "§eAuth §8§l» §r§cVous n'avez pas le 2fa activé en mode Email...",
+            "code": {
+                "usage": "§eAuth §8§l» §r§cUtilisez §8/§c{label} §8<§ccode§8>"
+            },
+            "email": {
+                "expired": "§eAuth §8§l» §r§cLe code a expiré...",
+                "invalid": "§eAuth §8§l» §r§cCode invalide...",
+                "success": "§eAuth §8§l» §r§7Authentifié avec succès !"
+            }
         }
     },
     "tntrun": {
@@ -2574,6 +2583,29 @@
         "scoreboard": {
             "_prefix": "",
             "format": "{right}§fi§cAkuna§9MC §8§l» §r§cTNT§fRun{n}{right}{bar}{n}{right}§8§l» §r§7Carte§8:§c {map}{n}{right}§8§l» §r§7En vie§8:§c {alive}{n}{right}§8§l» §r§7Temps§8:§c {time}{n}{right}{bar}{n}{n}{right}§ciakunamc.com 19132"
+        }
+    },
+    "blockparty": {
+        "_prefix": "§dBlock§fParty §8§l» §r",
+        "state": {
+            "waiting": "§cEn attente de plus de joueurs...",
+            "starting": "§7Début dans §d{start}s"
+        },
+        "player": {
+            "join": "§d{player} §7a rejoint la partie §8(§f{count}§8/§f{maxPlayers}§8)",
+            "quit": "§d{player} §7a quitté la partie §8(§f{count}§8/§f{maxPlayers}§8)",
+            "died": "§d{player} §7est mort §8(§f{alive}§8/§f{maxPlayers}§8)"
+        },
+        "color": {
+            "selected": "§7Allez à la couleur §d{color}§7!",
+            "removing": "§7Le sol va disparaître dans §d{time}s"
+        },
+        "game": {
+            "returning": "§7Retour au lobby dans §d{time}s"
+        },
+        "command": {
+            "usage": "§7Pour rejoindre §8/§7{label} join{n}§dBlock§fParty §8§l» §r§7Pour quitter §8/§7{label} leave",
+            "no_space": "§cPas d'arènes disponibles..."
         }
     }
 }

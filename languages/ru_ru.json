@@ -770,13 +770,11 @@
             "ambiguous": "§cЭто название существует в нескольких типах, уточните мини-игру и тип!"
         },
         "minigame": {
-            "invalid": "§5Cosmetics §8§l» §r§cНеверная мини-игра!",
-            "_prefix": ""
+            "invalid": "§5Cosmetics §8§l» §r§cНеверная мини-игра!"
         },
         "type": {
             "invalid": "§5Cosmetics §8§l» §r§cНеверный тип косметики!"
-        },
-        "_prefix": "§5Косметика §8§l» §r"
+        }
     },
     "cosmeticswindow": {
         "title": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §5Косметика §8===-=-=-=-",
@@ -906,8 +904,7 @@
         "buy": {
             "usage": "§cИспользуйте §8/§c{label} buy §8<§cskill§8> [minigame]",
             "already_owned": "§cУ вас уже есть этот навык!",
-            "success": "§7Навык §a{skill}§7 куплен за §c{cost} Акун",
-            "_prefix": ""
+            "success": "§7Навык §a{skill}§7 куплен за §c{cost} Акун"
         },
         "activate": {
             "usage": "§cИспользуйте §8/§c{label} on §8<§cskill§8> [minigame]",
@@ -927,8 +924,7 @@
         "list": {
             "title": "§7Список навыков§8:",
             "owned": "§7Приобретены§8:§7 {skills}",
-            "unowned": "§7Не приобретены§8:§7 {skills}",
-            "_prefix": ""
+            "unowned": "§7Не приобретены§8:§7 {skills}"
         },
         "info": {
             "usage": "§cИспользуйте §8/§c{label} info §8<§cskill§8> [minigame]",
@@ -936,12 +932,10 @@
             "description": "§7Описание§8: §a{description}",
             "cost": "§7Цена§8:§c {cost} Акун",
             "status": "§7Статус§8: §a{status}",
-            "active": "§7Активен§8: §a{active}",
-            "_prefix": ""
+            "active": "§7Активен§8: §a{active}"
         },
         "skill": {
-            "not_found": "§aSkills §8§l» §r§cНавык не найден...",
-            "_prefix": ""
+            "not_found": "§aSkills §8§l» §r§cНавык не найден..."
         },
         "cooldown": {
             "tntegg": "§cНавык Tntegg на перезарядке...",
@@ -1089,10 +1083,8 @@
             "active": "§7Активен§8: §9{active}"
         },
         "kit": {
-            "not_found": "§9Kits §8§l» §r§cНабор не найден...",
-            "_prefix": ""
-        },
-        "_prefix": "§9Наборы §8§l» §r"
+            "not_found": "§9Kits §8§l» §r§cНабор не найден..."
+        }
     },
     "kitswindow": {
         "title": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §9Наборы §8===-=-=-=-",
@@ -2044,7 +2036,8 @@
         "plot": "{right}   §fi§cAkuna§9MC §8§l» §r§9Участок{n}{right}{bar}{n}{right}§8§l» §r§7Имя§8:§9 {name}{n}{right}§8§l» §r§7Играет§8:§9 {onlinemap}{n}{right}§8§l» §r§7Участки§8:§9 {plots}{n}{right}{bar}{n}{n}{right}§9{address}",
         "lobby_bw": "{right}  §fi§cAkuna§9MC §8§l» §r§cBed§fWars{n}{right}{bar}{n}{right}§8§l» §r§7Победы§8:§c {wins}{n}{right}§8§l» §r§7Убийства§8:§c {kills}{n}{right}§8§l» §r§7Финальные убийства§8:§c {final_kills}{n}{right}§8§l» §r§7Сломано кроватей§8:§c {beds}{n}{right}{bar}{n}{n}{right}§c{address}",
         "lobby_sw": "{right}  §fi§cAkuna§9MC §8§l» §r§bSky§fWars{n}{right}{bar}{n}{right}§8§l» §r§7Победы§8:§b {wins}{n}{right}§8§l» §r§7Убийства§8:§b {kills}{n}{right}§8§l» §r§7Матчи§8:§b {plays}{n}{right}{bar}{n}{n}{right}§b{address}",
-        "lobby_tntrun": "{right}  §fi§cAkuna§9MC §8§l» §r§cTNT§fRun{n}{right}{bar}{n}{right}§8§l» §r§7Победы§8:§c {wins}{n}{right}§8§l» §r§7Игры§8:§c {plays}{n}{right}{bar}{n}{n}{right}§c{address}"
+        "lobby_tntrun": "{right}  §fi§cAkuna§9MC §8§l» §r§cTNT§fRun{n}{right}{bar}{n}{right}§8§l» §r§7Победы§8:§c {wins}{n}{right}§8§l» §r§7Игры§8:§c {plays}{n}{right}{bar}{n}{n}{right}§c{address}",
+        "lobby_blockparty": "{right} §fi§cAkuna§9MC §8§l» §r§dBlock§fParty{n}{right}{bar}{n}{right}§8§l» §r§7Победы§8:§d {wins}{n}{right}§8§l» §r§7Матчи§8:§d {plays}{n}{right}{bar}{n}{n}{right}§d{address}"
     },
     "server": {
         "info": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §fИнформация §8===-=-=-=-{n}§cСистема §8» §r§7IP§8:§c iakunamc.com{n}§cСистема §8» §r§7Порт§8:§c 19132{n}{n}§cСистема §8» §r§7Заявка в Staff§8:§c https://staff.iakunamc.com{n}§cСистема §8» §r§7Магазин§8:§c https://loja.iakunamc.com{n}§cСистема §8» §r§7Discord§8:§c https://discord.iakunamc.com{n}{n}§fY§cT §8» §r§7300 подписчиков §a+ §7Рекламное видео{n}§fMini§cYT §8» §r§750 подписчиков §a+ §7Рекламное видео{n}§cYT§fmirin §8» §r§70 подписчиков §a+ §7Рекламное видео{n}§cПримечания §8» §r§7Укажите IP в названии/описании и продвигайте сервер раз в месяц, чтобы сохранить свой ранг",
@@ -2252,7 +2245,8 @@
             "skywars": "§7Выиграйте {target} матчей §bSky§fWars",
             "thebridge": "§7Выиграйте {target} матчей §cThe§9Bridge",
             "blocksumo": "§7Выиграйте {target} матчей §bBlock§fSumo",
-            "tntrun": "§7Выиграйте {target} матчей §cTNT§fRun"
+            "tntrun": "§7Выиграйте {target} матчей §cTNT§fRun",
+            "blockparty": "§7Выиграйте {target} матчей в §dBlock§fParty"
         },
         "place": {
             "_prefix": "",
@@ -2306,7 +2300,8 @@
             "_prefix": "",
             "bedwars": "§7Сыграйте {target} матчей §cBed§fWars",
             "skywars": "§7Сыграйте {target} матчей §bSky§fWars",
-            "tntrun": "§7Сыграйте {target} матчей §cTNT§fRun"
+            "tntrun": "§7Сыграйте {target} матчей §cTNT§fRun",
+            "blockparty": "§7Сыграйте {target} матчей в §dBlock§fParty"
         },
         "buy": {
             "items": {
@@ -2543,14 +2538,28 @@
         }
     },
     "maze": {
-        "usage": "§5Maze §8§l» §r§cИспользуйте §8/§c{label} §8<§centrar§8|§cjoin§8|§cplay§8|§csair§8|§cquit§8|§cleave§8>"
+        "usage": "§7Чтобы войти, используйте §8/§7{label} entrar{n}§5Parkour §8§l» §r§7Чтобы выйти, используйте §8/§7{label} sair",
+        "_prefix": "§5Maze §8§l» §r",
+        "finish": {
+            "noreward": "§7Поздравляем, вы прошли лабиринт!",
+            "reward": "§7Поздравляем, вы прошли лабиринт и получили §7§lNightmare §r§7в качестве награды!"
+        }
     },
     "twofa": {
         "discord": {
             "need": "§eAuth §8§l» §r§7Используйте код §e{code} §7в Discord для аутентификации"
         },
         "email": {
-            "need": "§eAuth §8§l» §r§7Введите код, отправленный на вашу почту, через §8/§cverify §8<§cкод§8>"
+            "need": "§eAuth §8§l» §r§7Введите код, отправленный на вашу почту, через §8/§cverify §8<§cкод§8>",
+            "not_required": "§eAuth §8§l» §r§cУ вас не включена 2fa в режиме Email...",
+            "code": {
+                "usage": "§eAuth §8§l» §r§cИспользуйте §8/§c{label} §8<§cкод§8>"
+            },
+            "email": {
+                "expired": "§eAuth §8§l» §r§cСрок действия кода истёк...",
+                "invalid": "§eAuth §8§l» §r§cНеверный код...",
+                "success": "§eAuth §8§l» §r§7Успешная аутентификация!"
+            }
         }
     },
     "tntrun": {
@@ -2574,6 +2583,29 @@
         "scoreboard": {
             "_prefix": "",
             "format": "{right}§fi§cAkuna§9MC §8§l» §r§cTNT§fRun{n}{right}{bar}{n}{right}§8§l» §r§7Карта§8:§c {map}{n}{right}§8§l» §r§7Живы§8:§c {alive}{n}{right}§8§l» §r§7Время§8:§c {time}{n}{right}{bar}{n}{n}{right}§ciakunamc.com 19132"
+        }
+    },
+    "blockparty": {
+        "_prefix": "§dBlock§fParty §8§l» §r",
+        "state": {
+            "waiting": "§cОжидание игроков...",
+            "starting": "§7Начало через §d{start}s"
+        },
+        "player": {
+            "join": "§d{player} §7присоединился к матчу §8(§f{count}§8/§f{maxPlayers}§8)",
+            "quit": "§d{player} §7покинул матч §8(§f{count}§8/§f{maxPlayers}§8)",
+            "died": "§d{player} §7погиб §8(§f{alive}§8/§f{maxPlayers}§8)"
+        },
+        "color": {
+            "selected": "§7Перейдите к цвету §d{color}§7!",
+            "removing": "§7Пол исчезнет через §d{time}s"
+        },
+        "game": {
+            "returning": "§7Возврат в лобби через §d{time}s"
+        },
+        "command": {
+            "usage": "§7Для входа §8/§7{label} join{n}§dBlock§fParty §8§l» §r§7Для выхода §8/§7{label} leave",
+            "no_space": "§cАрены недоступны..."
         }
     }
 }
