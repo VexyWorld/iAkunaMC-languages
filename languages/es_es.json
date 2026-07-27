@@ -2519,7 +2519,8 @@
             "usage": "§bEmail §8§l» §r§cUse §8/§c{label} link §8<§cemail§8>",
             "invalid": "§bEmail §8§l» §r§cEmail inválido...",
             "already": "§bEmail §8§l» §r§cEste email ya está vinculado...",
-            "sent": "§bEmail §8§l» §r§7Se ha enviado un código de verificación a §b{email}§7!"
+            "sent": "§bEmail §8§l» §r§7Se ha enviado un código de verificación a §b{email}§7!",
+            "cooldown": "§bEmail §8§l» §r§cEspera §b{seconds}s §cantes de solicitar otro código..."
         },
         "verify": {
             "usage": "§bEmail §8§l» §r§cUse §8/§c{label} verify §8<§ccódigo§8>",
@@ -2538,7 +2539,7 @@
         }
     },
     "maze": {
-        "usage": "§7Para unirte usa §8/§7{label} entrar{n}§5Parkour §8§l» §r§7Para salir usa §8/§7{label} sair",
+        "usage": "§7Para unirte usa §8/§7{label} entrar{n}§5Maze §8§l» §r§7Para salir usa §8/§7{label} sair",
         "_prefix": "§5Maze §8§l» §r",
         "finish": {
             "noreward": "§7¡Felicidades, has finalizado el laberinto!",

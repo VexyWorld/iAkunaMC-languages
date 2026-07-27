@@ -2519,7 +2519,8 @@
             "usage": "§bEmail §8§l» §r§c使用法: §8/§c{label} link §8<§cメールアドレス§8>",
             "invalid": "§bEmail §8§l» §r§c無効なメールアドレスです...",
             "already": "§bEmail §8§l» §r§cこのメールアドレスは既にリンクされています...",
-            "sent": "§bEmail §8§l» §r§7確認コードを §b{email} §7に送信しました！"
+            "sent": "§bEmail §8§l» §r§7確認コードを §b{email} §7に送信しました！",
+            "cooldown": "§bEmail §8§l» §r§c別のコードをリクエストする前に §b{seconds}秒 §c待ってください..."
         },
         "verify": {
             "usage": "§bEmail §8§l» §r§c使用法: §8/§c{label} verify §8<§cコード§8>",
@@ -2538,7 +2539,7 @@
         }
     },
     "maze": {
-        "usage": "§7参加するには §8/§7{label} entrar{n}§5Parkour §8§l» §r§7退出するには §8/§7{label} sair",
+        "usage": "§7参加するには §8/§7{label} entrar{n}§5Maze §8§l» §r§7退出するには §8/§7{label} sair",
         "_prefix": "§5Maze §8§l» §r",
         "finish": {
             "noreward": "§7おめでとうございます、迷路をクリアしました！",

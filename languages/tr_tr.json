@@ -2519,7 +2519,8 @@
             "usage": "§bEmail §8§l» §r§cKullanım: §8/§c{label} link §8<§ceposta§8>",
             "invalid": "§bEmail §8§l» §r§cGeçersiz e-posta...",
             "already": "§bEmail §8§l» §r§cBu e-posta zaten bağlı...",
-            "sent": "§bEmail §8§l» §r§7Doğrulama kodu §b{email} §7adresine gönderildi!"
+            "sent": "§bEmail §8§l» §r§7Doğrulama kodu §b{email} §7adresine gönderildi!",
+            "cooldown": "§bEmail §8§l» §r§cBaşka bir kod istemeden önce §b{seconds}sn §cbekleyin..."
         },
         "verify": {
             "usage": "§bEmail §8§l» §r§cKullanım: §8/§c{label} verify §8<§ckod§8>",
@@ -2538,7 +2539,7 @@
         }
     },
     "maze": {
-        "usage": "§7Katılmak için kullan §8/§7{label} entrar{n}§5Parkour §8§l» §r§7Ayrılmak için kullan §8/§7{label} sair",
+        "usage": "§7Katılmak için kullan §8/§7{label} entrar{n}§5Maze §8§l» §r§7Ayrılmak için kullan §8/§7{label} sair",
         "_prefix": "§5Maze §8§l» §r",
         "finish": {
             "noreward": "§7Tebrikler, labirenti bitirdin!",
