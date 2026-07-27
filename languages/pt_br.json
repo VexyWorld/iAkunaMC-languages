@@ -2519,7 +2519,8 @@
             "usage": "§bEmail §8§l» §r§cUtilize §8/§c{label} link §8<§cemail§8>",
             "invalid": "§bEmail §8§l» §r§cEmail inválido...",
             "already": "§bEmail §8§l» §r§cEsse email já está vinculado...",
-            "sent": "§bEmail §8§l» §r§7Um código de verificação foi enviado para §b{email}§7!"
+            "sent": "§bEmail §8§l» §r§7Um código de verificação foi enviado para §b{email}§7!",
+            "cooldown": "§bEmail §8§l» §r§cAguarde §b{seconds}s §cantes de solicitar outro código..."
         },
         "verify": {
             "usage": "§bEmail §8§l» §r§cUtilize §8/§c{label} verify §8<§ccódigo§8>",
@@ -2539,7 +2540,7 @@
     },
     "maze": {
         "_prefix": "§5Maze §8§l» §r",
-        "usage": "§7Para entrar utilize §8/§7{label} entrar{n}§5Parkour §8§l» §r§7Para sair utilize §8/§7{label} sair",
+        "usage": "§7Para entrar utilize §8/§7{label} entrar{n}§5Maze §8§l» §r§7Para sair utilize §8/§7{label} sair",
         "finish": {
             "noreward": "§7Parabéns, você finalizou o labirinto!",
             "reward": "§7Parabéns, você finalizou o labirinto e recebeu §7§lNightmare §r§7como recompensa!"

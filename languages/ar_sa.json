@@ -2519,7 +2519,8 @@
             "usage": "§bEmail §8§l» §r§cاستخدم §8/§c{label} link §8<§cbremail§8>",
             "invalid": "§bEmail §8§l» §r§cالبريد الإلكتروني غير صالح...",
             "already": "§bEmail §8§l» §r§cهذا البريد الإلكتروني مرتبط بالفعل...",
-            "sent": "§bEmail §8§l» §r§7تم إرسال رمز التحقق إلى §b{email}§7!"
+            "sent": "§bEmail §8§l» §r§7تم إرسال رمز التحقق إلى §b{email}§7!",
+            "cooldown": "§bEmail §8§l» §r§cانتظر §b{seconds}ث §cقبل طلب رمز آخر..."
         },
         "verify": {
             "usage": "§bEmail §8§l» §r§cاستخدم §8/§c{label} verify §8<§ccode§8>",
@@ -2538,7 +2539,7 @@
         }
     },
     "maze": {
-        "usage": "§7للانضمام استخدم §8/§7{label} entrar{n}§5Parkour §8§l» §r§7لمغادرة استخدم §8/§7{label} sair",
+        "usage": "§7للانضمام استخدم §8/§7{label} entrar{n}§5Maze §8§l» §r§7لمغادرة استخدم §8/§7{label} sair",
         "_prefix": "§5Maze §8§l» §r",
         "finish": {
             "noreward": "§7تهانينا، لقد أكملت المتاهة!",

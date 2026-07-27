@@ -2519,7 +2519,8 @@
             "usage": "§bEmail §8§l» §r§c使用 §8/§c{label} link §8<§c邮箱地址§8>",
             "invalid": "§bEmail §8§l» §r§c无效的邮箱...",
             "already": "§bEmail §8§l» §r§c此邮箱已绑定...",
-            "sent": "§bEmail §8§l» §r§7验证码已发送至 §b{email}§7！"
+            "sent": "§bEmail §8§l» §r§7验证码已发送至 §b{email}§7！",
+            "cooldown": "§bEmail §8§l» §r§c请等待 §b{seconds}秒 §c后再请求新验证码..."
         },
         "verify": {
             "usage": "§bEmail §8§l» §r§c使用 §8/§c{label} verify §8<§c验证码§8>",
@@ -2538,7 +2539,7 @@
         }
     },
     "maze": {
-        "usage": "§7输入 §8/§7{label} entrar 以加入{n}§5Parkour §8§l» §r§7输入 §8/§7{label} sair 以离开",
+        "usage": "§7输入 §8/§7{label} entrar 以加入{n}§5Maze §8§l» §r§7输入 §8/§7{label} sair 以离开",
         "_prefix": "§5Maze §8§l» §r",
         "finish": {
             "noreward": "§7恭喜你，完成了迷宫！",
