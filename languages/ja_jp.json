@@ -2205,6 +2205,18 @@
         "noperm": "§cこのコマンドを使用する権限がありません...",
         "invalid_page": "§cシステム §8§l» §r§c無効なページです。ページ数は §c{total} §cページのみです..."
     },
+    "tags": {
+        "_prefix": "§bTags §8§l» §r",
+        "usage": "§c使用§8: §8/§c{label} §8<§con§8|§clist§8>",
+        "on": {
+            "usage": "§c使用§8: §8/§c{label} on §8<§ctag§8>",
+            "not_owned": "§cこのタグを所有していません...",
+            "success": "§7タグを正常に有効化しました"
+        },
+        "list": "§7あなたのタグ§8: §7{tags}",
+        "expired": "§cタグ {tag} は期限切れになりました...",
+        "received": "§7タグ {tag} を受け取りました! §8/§7{label} on {tag} で有効化してください..."
+    },
     "ping": {
         "_prefix": "§cシステム §8§l» §r",
         "self": "§7PINGは §c{ping}ms §7です",
@@ -2608,5 +2620,38 @@
             "usage": "§7参加するには §8/§7{label} join{n}§dBlock§fParty §8§l» §r§7退出するには §8/§7{label} leave",
             "no_space": "§cアリーナが利用できません..."
         }
+    },
+    "title": {
+        "usage": "§6タイトル §8§l» §r§c§8/§c{label} §8<§clist§8|§con§8|§coff§8|§cview§8|§cbuy§8> §cを使用してください",
+        "list": {
+            "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §6タイトル §8(§f{atual}§8/§f{total}§8) ===-=-=-=-",
+            "entry": "§6{id} §8§l» §r{titulo} §8(§7{status}§8){tempo}",
+            "none": "§6タイトル §8§l» §r§cタイトルがありません..."
+        },
+        "on": {
+            "_prefix": "§6タイトル §8§l» §r",
+            "usage": "§8/§c{label} on §8<§cid§8> §cを使用してください",
+            "error_not_owned": "§cこのタイトルを所有していません...",
+            "error_invalid_id": "§cタイトルが見つかりません...",
+            "success": "§7タイトル §6{titulo} §7が有効になりました！"
+        },
+        "off": {
+            "_prefix": "§6タイトル §8§l» §r",
+            "success": "§7タイトルを無効化しました！"
+        },
+        "view": {
+            "_prefix": "§6タイトル §8§l» §r",
+            "usage": "§8/§c{label} view §8<§cid§8> §cを使用してください",
+            "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §6{titulo} §8===-=-=-=-",
+            "price": "§7価格§8:§c {preco}"
+        },
+        "buy": {
+            "_prefix": "§6タイトル §8§l» §r",
+            "usage": "§8/§c{label} buy §8<§cid§8> §cを使用してください",
+            "error_owned": "§cこのタイトルは既に所有しています...",
+            "error_staff_only": "§cこのタイトルは購入できません...",
+            "success": "§7タイトル §6{titulo} §7を購入しました！"
+        },
+        "expired": "§6タイトル §8§l» §r§7タイトル §6{titulo} §7の期限が切れました..."
     }
 }
