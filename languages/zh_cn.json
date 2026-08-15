@@ -2205,6 +2205,18 @@
         "noperm": "§c您没有使用此命令的权限...",
         "invalid_page": "§c系统 §8§l» §r§c无效页面，只有 §c{total} §c页..."
     },
+    "tags": {
+        "_prefix": "§bTags §8§l» §r",
+        "usage": "§c使用 §8/§c{label} §8<§con§8|§clist§8>",
+        "on": {
+            "usage": "§c使用 §8/§c{label} on §8<§ctag§8>",
+            "not_owned": "§c你不拥有这个标签...",
+            "success": "§7标签已成功激活"
+        },
+        "list": "§7你的标签§8: §7{tags}",
+        "expired": "§c你的标签 {tag} 已过期...",
+        "received": "§7你收到了标签 {tag}! 使用 §8/§7{label} on {tag} 来激活它..."
+    },
     "ping": {
         "_prefix": "§c系统 §8§l» §r",
         "self": "§7您的延迟为 §c{ping}ms",
@@ -2608,5 +2620,38 @@
             "usage": "§7加入使用 §8/§7{label} join{n}§dBlock§fParty §8§l» §r§7离开使用 §8/§7{label} leave",
             "no_space": "§c没有可用的竞技场..."
         }
+    },
+    "title": {
+        "usage": "§6称号 §8§l» §r§c使用 §8/§c{label} §8<§clist§8|§con§8|§coff§8|§cview§8|§cbuy§8>",
+        "list": {
+            "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §6称号 §8(§f{atual}§8/§f{total}§8) ===-=-=-=-",
+            "entry": "§6{id} §8§l» §r{titulo} §8(§7{status}§8){tempo}",
+            "none": "§6称号 §8§l» §r§c你还没有任何称号..."
+        },
+        "on": {
+            "_prefix": "§6称号 §8§l» §r",
+            "usage": "§c使用 §8/§c{label} on §8<§cid§8>",
+            "error_not_owned": "§c你没有这个称号...",
+            "error_invalid_id": "§c称号未找到...",
+            "success": "§7称号 §6{titulo} §7已成功激活！"
+        },
+        "off": {
+            "_prefix": "§6称号 §8§l» §r",
+            "success": "§7称号已成功停用！"
+        },
+        "view": {
+            "_prefix": "§6称号 §8§l» §r",
+            "usage": "§c使用 §8/§c{label} view §8<§cid§8>",
+            "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §6{titulo} §8===-=-=-=-",
+            "price": "§7价格§8:§c {preco}"
+        },
+        "buy": {
+            "_prefix": "§6称号 §8§l» §r",
+            "usage": "§c使用 §8/§c{label} buy §8<§cid§8>",
+            "error_owned": "§c你已经拥有这个称号...",
+            "error_staff_only": "§c这个称号无法购买...",
+            "success": "§7称号 §6{titulo} §7已成功购买！"
+        },
+        "expired": "§6称号 §8§l» §r§7你的称号 §6{titulo} §7已过期..."
     }
 }

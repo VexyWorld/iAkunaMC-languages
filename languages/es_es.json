@@ -2205,6 +2205,18 @@
         "noperm": "§cNo tienes permiso para usar este comando...",
         "invalid_page": "§cSistema §8§l» §r§cPágina inválida, solo hay §c{total} §cpáginas..."
     },
+    "tags": {
+        "_prefix": "§bTags §8§l» §r",
+        "usage": "§cUsa §8/§c{label} §8<§con§8|§clist§8>",
+        "on": {
+            "usage": "§cUsa §8/§c{label} on §8<§ctag§8>",
+            "not_owned": "§cNo tienes esta tag...",
+            "success": "§7Tag activada con éxito"
+        },
+        "list": "§7Tus tags§8: §7{tags}",
+        "expired": "§cTu tag {tag} expiró...",
+        "received": "§7Recibiste la tag {tag}! Usa §8/§7{label} on {tag} para activarla..."
+    },
     "ping": {
         "_prefix": "§cSistema §8§l» §r",
         "self": "§7Tu ping es de §c{ping}ms",
@@ -2608,5 +2620,38 @@
             "usage": "§7Para entrar usa §8/§7{label} join{n}§dBlock§fParty §8§l» §r§7Para salir usa §8/§7{label} leave",
             "no_space": "§cNo hay arenas disponibles..."
         }
+    },
+    "title": {
+        "usage": "§6Títulos §8§l» §r§cUsa §8/§c{label} §8<§clist§8|§con§8|§coff§8|§cview§8|§cbuy§8>",
+        "list": {
+            "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §6Títulos §8(§f{atual}§8/§f{total}§8) ===-=-=-=-",
+            "entry": "§6{id} §8§l» §r{titulo} §8(§7{status}§8){tempo}",
+            "none": "§6Títulos §8§l» §r§cNo tienes ningún título..."
+        },
+        "on": {
+            "_prefix": "§6Títulos §8§l» §r",
+            "usage": "§cUsa §8/§c{label} on §8<§cid§8>",
+            "error_not_owned": "§cNo posees este título...",
+            "error_invalid_id": "§cTítulo no encontrado...",
+            "success": "§7Título §6{titulo} §7activado con éxito!"
+        },
+        "off": {
+            "_prefix": "§6Títulos §8§l» §r",
+            "success": "§7Título desactivado con éxito!"
+        },
+        "view": {
+            "_prefix": "§6Títulos §8§l» §r",
+            "usage": "§cUsa §8/§c{label} view §8<§cid§8>",
+            "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §6{titulo} §8===-=-=-=-",
+            "price": "§7Precio§8:§c {preco}"
+        },
+        "buy": {
+            "_prefix": "§6Títulos §8§l» §r",
+            "usage": "§cUsa §8/§c{label} buy §8<§cid§8>",
+            "error_owned": "§cYa posees este título...",
+            "error_staff_only": "§cEste título no se puede comprar...",
+            "success": "§7Título §6{titulo} §7comprado con éxito!"
+        },
+        "expired": "§6Títulos §8§l» §r§7Tu título §6{titulo} §7ha expirado..."
     }
 }

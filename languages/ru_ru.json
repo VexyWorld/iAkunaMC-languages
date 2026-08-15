@@ -2205,6 +2205,18 @@
         "noperm": "§cУ вас нет прав для использования этой команды...",
         "invalid_page": "§cСистема §8§l» §r§cНеверная страница, всего §c{total} §cстраниц..."
     },
+    "tags": {
+        "_prefix": "§bTags §8§l» §r",
+        "usage": "§cИспользуйте §8/§c{label} §8<§con§8|§clist§8>",
+        "on": {
+            "usage": "§cИспользуйте §8/§c{label} on §8<§ctag§8>",
+            "not_owned": "§cУ вас нет этого тега...",
+            "success": "§7Тег успешно активирован"
+        },
+        "list": "§7Ваши теги§8: §7{tags}",
+        "expired": "§cВаш тег {tag} истёк...",
+        "received": "§7Вы получили тег {tag}! Используйте §8/§7{label} on {tag} для его активации..."
+    },
     "ping": {
         "_prefix": "§cСистема §8§l» §r",
         "self": "§7Ваш пинг §c{ping}мс",
@@ -2608,5 +2620,38 @@
             "usage": "§7Для входа §8/§7{label} join{n}§dBlock§fParty §8§l» §r§7Для выхода §8/§7{label} leave",
             "no_space": "§cАрены недоступны..."
         }
+    },
+    "title": {
+        "usage": "§6Титулы §8§l» §r§cИспользуйте §8/§c{label} §8<§clist§8|§con§8|§coff§8|§cview§8|§cbuy§8>",
+        "list": {
+            "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §6Титулы §8(§f{atual}§8/§f{total}§8) ===-=-=-=-",
+            "entry": "§6{id} §8§l» §r{titulo} §8(§7{status}§8){tempo}",
+            "none": "§6Титулы §8§l» §r§cУ вас нет титулов..."
+        },
+        "on": {
+            "_prefix": "§6Титулы §8§l» §r",
+            "usage": "§cИспользуйте §8/§c{label} on §8<§cid§8>",
+            "error_not_owned": "§cУ вас нет этого титула...",
+            "error_invalid_id": "§cТитул не найден...",
+            "success": "§7Титул §6{titulo} §7успешно активирован!"
+        },
+        "off": {
+            "_prefix": "§6Титулы §8§l» §r",
+            "success": "§7Титул успешно отключён!"
+        },
+        "view": {
+            "_prefix": "§6Титулы §8§l» §r",
+            "usage": "§cИспользуйте §8/§c{label} view §8<§cid§8>",
+            "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §6{titulo} §8===-=-=-=-",
+            "price": "§7Цена§8:§c {preco}"
+        },
+        "buy": {
+            "_prefix": "§6Титулы §8§l» §r",
+            "usage": "§cИспользуйте §8/§c{label} buy §8<§cid§8>",
+            "error_owned": "§cУ вас уже есть этот титул...",
+            "error_staff_only": "§cЭтот титул нельзя купить...",
+            "success": "§7Титул §6{titulo} §7успешно куплен!"
+        },
+        "expired": "§6Титулы §8§l» §r§7Ваш титул §6{titulo} §7истёк..."
     }
 }
