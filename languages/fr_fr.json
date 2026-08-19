@@ -531,6 +531,12 @@
             "no_pending": "§cSystème §8§l» §r§cVous n'avez aucune demande en attente...",
             "success": "§9Plot §8§l» §r§7Vous avez refusé le transfert du plot...",
             "notify_sender": "§9Plot §8§l» §r§9{player} §7a refusé le transfert du plot..."
+        },
+        "setdesc": {
+            "desc": "§7Définit la description de votre plot",
+            "usage": "§8/§cp setdesc §8<§cdescription§8>",
+            "empty": "§9Plot §8§l» §r§cUtilisez §8/§cp setdesc §8<§cdescription§8> pour définir une description...",
+            "success": "§9Plot §8§l» §r§7Description du plot modifiée avec succès !"
         }
     },
     "cosmetic": {
@@ -2334,6 +2340,302 @@
         "_prefix": "§6Missions §8§l» §r",
         "no_missions": "§cVous n'avez pas de missions à réinitialiser!",
         "success": "§7Vos missions ont été réinitialisées avec succès!"
+    },
+    "achievement": {
+        "_prefix": "§6Succès §8§l» §r",
+        "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §6Succès §8(§f{unlocked}§8/§f{total}§8) ===-=-=-=-",
+        "header_other": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §6Succès §7de §6{target} §8(§f{unlocked}§8/§f{total}§8) ===-=-=-=-",
+        "footer": "§7Utilisez §8/§7{label} voir §8<§7id§8> §7pour voir les détails d'un succès...",
+        "no": {
+            "_prefix": "",
+            "achievements": "§6Succès §8§l» §r§cAucun succès trouvé..."
+        },
+        "list": {
+            "_prefix": "",
+            "item": "§6{id} §8§l» §r§6{name} §8- {progress} §8(§6{current}§8/§6{target}§8)"
+        },
+        "view": {
+            "_prefix": "",
+            "usage": "§6Succès §8§l» §r§cUtilisez §8/§c{label} voir §8<§cid§8>",
+            "not": {
+                "found": "§6Succès §8§l» §r§cSuccès non trouvé..."
+            },
+            "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §7Succès §6{name} §8===-=-=-=-",
+            "category": "§6Succès §8§l» §r§7Catégorie§8: §6{category}",
+            "description": "§6Succès §8§l» §r§7Description§8: §6{description}",
+            "progress": "§6Succès §8§l» §r§7Progrès§8: §6{progress}",
+            "status": {
+                "unlocked": "§6Succès §8§l» §r§7Statut§8: §aDébloqué §8(§6{date}§8)",
+                "locked": "§6Succès §8§l» §r§7Statut§8: §cVerrouillé"
+            },
+            "rewards": "§6Succès §8§l» §r§7Récompenses§8:§7 {rewards}",
+            "reward": {
+                "akunas": "§c{amount} Akunas",
+                "xp": "§9{amount} XP",
+                "title": "§dTitre§8: §d{name}",
+                "group": {
+                    "temp": "§7Tag §9{name} §8(§9{duration})",
+                    "perm": "§7Tag §9{name} §8(§9permanent)"
+                },
+                "multiplier": "§9Multiplicateur XP §6{amount}§7x §8(§6{duration}§8)"
+            }
+        },
+        "unlock": {
+            "_prefix": "",
+            "message": "§6Succès §8§l» §r§7Félicitations ! Vous avez débloqué le succès §6{achievement}§7 !",
+            "reward": {
+                "received": "§6Succès §8§l» §r§7Récompenses reçues§8: §6{rewards}"
+            }
+        },
+        "bw": {
+            "_prefix": "",
+            "win": {
+                "one": "§7Première Victoire en §cBed§fWars",
+                "fifty": "§7Vétéran de §cBed§fWars",
+                "onehundred": "§7Légende de §cBed§fWars"
+            },
+            "play": {
+                "ten": "§7Joueur de §cBed§fWars",
+                "fifty": "§7Habitué de §cBed§fWars"
+            },
+            "kill": {
+                "onehundred": "§7Chasseur de §cBed§fWars",
+                "fivehundred": "§7Prédateur de §cBed§fWars"
+            },
+            "first": {
+                "win": "§7Glorieux Commencement"
+            }
+        },
+        "sw": {
+            "_prefix": "",
+            "win": {
+                "one": "§7Première Victoire en §bSky§fWars",
+                "fifty": "§7Vétéran de §bSky§fWars",
+                "onehundred": "§7Légende de §bSky§fWars"
+            },
+            "play": {
+                "ten": "§7Joueur de §bSky§fWars",
+                "fifty": "§7Habitué de §bSky§fWars"
+            },
+            "kill": {
+                "onehundred": "§7Chasseur de §bSky§fWars",
+                "fivehundred": "§7Prédateur de §bSky§fWars"
+            },
+            "first": {
+                "win": "§7Glorieux Commencement"
+            }
+        },
+        "bs": {
+            "_prefix": "",
+            "win": {
+                "one": "§7Première Victoire en §bBlock§fSumo",
+                "fifty": "§7Vétéran de §bBlock§fSumo"
+            },
+            "play": {
+                "ten": "§7Joueur de §bBlock§fSumo"
+            },
+            "kill": {
+                "onehundred": "§7Chasseur de §bBlock§fSumo"
+            },
+            "first": {
+                "win": "§7Glorieux Commencement"
+            }
+        },
+        "pvp": {
+            "_prefix": "",
+            "kill": {
+                "onehundred": "§7Chasseur d'Âmes",
+                "fivehundred": "§7Prédateur Suprême",
+                "onethousand": "§7Légende du PvP"
+            },
+            "first": {
+                "kill": "§7Premier Élimination"
+            }
+        },
+        "build": {
+            "_prefix": "",
+            "blocks": {
+                "onethousand": "§7Constructeur Débutant",
+                "tenthousand": "§7Constructeur Expérimenté",
+                "fiftythousand": "§7Maître Constructeur"
+            }
+        },
+        "mine": {
+            "_prefix": "",
+            "total": {
+                "onethousand": "§7Mineur Débutant",
+                "tenthousand": "§7Mineur Expérimenté"
+            },
+            "coal": {
+                "onehundred": "§7Chasseur de Charbon"
+            },
+            "iron": {
+                "onehundred": "§7Forgeron de Fer"
+            },
+            "gold": {
+                "fifty": "§7Chasseur d'Or"
+            },
+            "diamond": {
+                "twentyfive": "§7Chasseur de Diamants"
+            },
+            "emerald": {
+                "ten": "§7Chasseur d'Émeraudes"
+            }
+        },
+        "social": {
+            "_prefix": "",
+            "marry": "§7Âmes Sœurs",
+            "party": {
+                "create": "§7Chef de Groupe"
+            },
+            "chat": {
+                "onethousand": "§7Bavard",
+                "tenthousand": "§7Légende du Chat"
+            }
+        },
+        "general": {
+            "_prefix": "",
+            "level": {
+                "ten": "§7Montée en Niveau",
+                "twentyfive": "§7Joueur Dédié",
+                "fifty": "§7Vétéran du Serveur",
+                "onehundred": "§7Légende Vivante"
+            },
+            "wins": {
+                "onehundred": "§7Gagnant Constant",
+                "fivehundred": "§7Machine à Victoires"
+            },
+            "play": {
+                "onehundred": "§7Joueur Régulier",
+                "fivehundred": "§7Accro du Serveur"
+            },
+            "missions": {
+                "fifty": "§7Accomplisseur de Missions",
+                "onehundred": "§7Maître des Missions"
+            }
+        },
+        "desc": {
+            "_prefix": "",
+            "bw": {
+                "win": {
+                    "one": "Gagnez votre première partie de BedWars",
+                    "fifty": "Gagnez 50 parties de BedWars",
+                    "onehundred": "Gagnez 100 parties de BedWars"
+                },
+                "play": {
+                    "ten": "Jouez à 10 parties de BedWars",
+                    "fifty": "Jouez à 50 parties de BedWars"
+                },
+                "kill": {
+                    "onehundred": "Tuez 100 joueurs en BedWars",
+                    "fivehundred": "Tuez 500 joueurs en BedWars"
+                },
+                "first": {
+                    "win": "Gagnez votre première partie de BedWars"
+                }
+            },
+            "sw": {
+                "win": {
+                    "one": "Gagnez votre première partie de SkyWars",
+                    "fifty": "Gagnez 50 parties de SkyWars",
+                    "onehundred": "Gagnez 100 parties de SkyWars"
+                },
+                "play": {
+                    "ten": "Jouez à 10 parties de SkyWars",
+                    "fifty": "Jouez à 50 parties de SkyWars"
+                },
+                "kill": {
+                    "onehundred": "Tuez 100 joueurs en SkyWars",
+                    "fivehundred": "Tuez 500 joueurs en SkyWars"
+                },
+                "first": {
+                    "win": "Gagnez votre première partie de SkyWars"
+                }
+            },
+            "bs": {
+                "win": {
+                    "one": "Gagnez votre première partie de BlockSumo",
+                    "fifty": "Gagnez 50 parties de BlockSumo"
+                },
+                "play": {
+                    "ten": "Jouez à 10 parties de BlockSumo"
+                },
+                "kill": {
+                    "onehundred": "Tuez 100 joueurs en BlockSumo"
+                },
+                "first": {
+                    "win": "Gagnez votre première partie de BlockSumo"
+                }
+            },
+            "pvp": {
+                "kill": {
+                    "onehundred": "Tuez 100 joueurs en PvP",
+                    "fivehundred": "Tuez 500 joueurs en PvP",
+                    "onethousand": "Tuez 1000 joueurs en PvP"
+                },
+                "first": {
+                    "kill": "Tuez votre premier joueur en PvP"
+                }
+            },
+            "build": {
+                "blocks": {
+                    "onethousand": "Placez 1000 blocs",
+                    "tenthousand": "Placez 10000 blocs",
+                    "fiftythousand": "Placez 50000 blocs"
+                }
+            },
+            "mine": {
+                "total": {
+                    "onethousand": "Minez 1000 blocs au total",
+                    "tenthousand": "Minez 10000 blocs au total"
+                },
+                "coal": {
+                    "onehundred": "Minez 100 charbons"
+                },
+                "iron": {
+                    "onehundred": "Minez 100 fers"
+                },
+                "gold": {
+                    "fifty": "Minez 50 ors"
+                },
+                "diamond": {
+                    "twentyfive": "Minez 25 diamants"
+                },
+                "emerald": {
+                    "ten": "Minez 10 émeraudes"
+                }
+            },
+            "social": {
+                "marry": "Épousez un autre joueur",
+                "party": {
+                    "create": "Créez un groupe"
+                },
+                "chat": {
+                    "onethousand": "Envoyez 1000 messages de chat",
+                    "tenthousand": "Envoyez 10000 messages de chat"
+                }
+            },
+            "general": {
+                "level": {
+                    "ten": "Atteignez le niveau 10",
+                    "twentyfive": "Atteignez le niveau 25",
+                    "fifty": "Atteignez le niveau 50",
+                    "onehundred": "Atteignez le niveau 100"
+                },
+                "wins": {
+                    "onehundred": "Gagnez 100 parties au total",
+                    "fivehundred": "Gagnez 500 parties au total"
+                },
+                "play": {
+                    "onehundred": "Jouez à 100 parties au total",
+                    "fivehundred": "Jouez à 500 parties au total"
+                },
+                "missions": {
+                    "fifty": "Complétez 50 missions",
+                    "onehundred": "Complétez 100 missions"
+                }
+            }
+        }
     },
     "cages": {
         "_prefix": "§cCages §8§l» §r",

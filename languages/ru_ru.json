@@ -526,11 +526,17 @@
             "notify_sender": "§9Участок §8§l» §r§c{player} §7принял(а) передачу участка §9{plot}§7!"
         },
         "denytransfer": {
-            "desc": "§7Отказывается от передачи участка",
+            "desc": "§7Отклоняет передачу участка",
             "usage": "§8/§cp denytransfer",
             "no_pending": "§cСистема §8§l» §r§cУ вас нет ожидающих запросов...",
-            "success": "§9Участок §8§l» §r§7Вы отказались от передачи участка...",
-            "notify_sender": "§9Участок §8§l» §r§9{player} §7отказался(ась) от передачи участка..."
+            "success": "§9Участок §8§l» §r§7Вы отклонили передачу участка...",
+            "notify_sender": "§9Участок §8§l» §r§9{player} §7отклонил передачу участка..."
+        },
+        "setdesc": {
+            "desc": "§7Устанавливает описание вашего участка",
+            "usage": "§8/§cp setdesc §8<§cописание§8>",
+            "empty": "§9Участок §8§l» §r§cИспользуйте §8/§cp setdesc §8<§cописание§8> для установки описания...",
+            "success": "§9Участок §8§l» §r§7Описание участка успешно изменено!"
         }
     },
     "cosmetic": {
@@ -2334,6 +2340,302 @@
         "_prefix": "§6Миссии §8§l» §r",
         "no_missions": "§cУ вас нет миссий для сброса!",
         "success": "§7Ваши миссии успешно сброшены!"
+    },
+    "achievement": {
+        "_prefix": "§6Достижения §8§l» §r",
+        "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §6Достижения §8(§f{unlocked}§8/§f{total}§8) ===-=-=-=-",
+        "header_other": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §6Достижения §7игрока §6{target} §8(§f{unlocked}§8/§f{total}§8) ===-=-=-=-",
+        "footer": "§7Используйте §8/§7{label} view §8<§7id§8> §7чтобы посмотреть подробности достижения...",
+        "no": {
+            "_prefix": "",
+            "achievements": "§6Достижения §8§l» §r§cДостижения не найдены..."
+        },
+        "list": {
+            "_prefix": "",
+            "item": "§6{id} §8§l» §r§6{name} §8- {progress} §8(§6{current}§8/§6{target}§8)"
+        },
+        "view": {
+            "_prefix": "",
+            "usage": "§6Достижения §8§l» §r§cИспользуйте §8/§c{label} view §8<§cid§8>",
+            "not": {
+                "found": "§6Достижения §8§l» §r§cДостижение не найдено..."
+            },
+            "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §7Достижение §6{name} §8===-=-=-=-",
+            "category": "§6Достижения §8§l» §r§7Категория§8: §6{category}",
+            "description": "§6Достижения §8§l» §r§7Описание§8: §6{description}",
+            "progress": "§6Достижения §8§l» §r§7Прогресс§8: §6{progress}",
+            "status": {
+                "unlocked": "§6Достижения §8§l» §r§7Статус§8: §aРазблокировано §8(§6{date}§8)",
+                "locked": "§6Достижения §8§l» §r§7Статус§8: §cЗаблокировано"
+            },
+            "rewards": "§6Достижения §8§l» §r§7Награды§8:§7 {rewards}",
+            "reward": {
+                "akunas": "§c{amount} Akunas",
+                "xp": "§9{amount} XP",
+                "title": "§dТитул§8: §d{name}",
+                "group": {
+                    "temp": "§7Тег §9{name} §8(§9{duration})",
+                    "perm": "§7Тег §9{name} §8(§9постоянный)"
+                },
+                "multiplier": "§9Множитель XP §6{amount}§7x §8(§6{duration}§8)"
+            }
+        },
+        "unlock": {
+            "_prefix": "",
+            "message": "§6Достижения §8§l» §r§7Поздравляем! Вы разблокировали достижение §6{achievement}§7!",
+            "reward": {
+                "received": "§6Достижения §8§l» §r§7Получены награды§8: §6{rewards}"
+            }
+        },
+        "bw": {
+            "_prefix": "",
+            "win": {
+                "one": "§7Первая победа в §cBed§fWars",
+                "fifty": "§7Ветеран §cBed§fWars",
+                "onehundred": "§7Легенда §cBed§fWars"
+            },
+            "play": {
+                "ten": "§7Игрок §cBed§fWars",
+                "fifty": "§7Постоянный игрок §cBed§fWars"
+            },
+            "kill": {
+                "onehundred": "§7Охотник §cBed§fWars",
+                "fivehundred": "§7Хищник §cBed§fWars"
+            },
+            "first": {
+                "win": "§7Славное начало"
+            }
+        },
+        "sw": {
+            "_prefix": "",
+            "win": {
+                "one": "§7Первая победа в §bSky§fWars",
+                "fifty": "§7Ветеран §bSky§fWars",
+                "onehundred": "§7Легенда §bSky§fWars"
+            },
+            "play": {
+                "ten": "§7Игрок §bSky§fWars",
+                "fifty": "§7Постоянный игрок §bSky§fWars"
+            },
+            "kill": {
+                "onehundred": "§7Охотник §bSky§fWars",
+                "fivehundred": "§7Хищник §bSky§fWars"
+            },
+            "first": {
+                "win": "§7Славное начало"
+            }
+        },
+        "bs": {
+            "_prefix": "",
+            "win": {
+                "one": "§7Первая победа в §bBlock§fSumo",
+                "fifty": "§7Ветеран §bBlock§fSumo"
+            },
+            "play": {
+                "ten": "§7Игрок §bBlock§fSumo"
+            },
+            "kill": {
+                "onehundred": "§7Охотник §bBlock§fSumo"
+            },
+            "first": {
+                "win": "§7Славное начало"
+            }
+        },
+        "pvp": {
+            "_prefix": "",
+            "kill": {
+                "onehundred": "§7Охотник за душами",
+                "fivehundred": "§7Верховный хищник",
+                "onethousand": "§7Легенда PvP"
+            },
+            "first": {
+                "kill": "§7Первое убийство"
+            }
+        },
+        "build": {
+            "_prefix": "",
+            "blocks": {
+                "onethousand": "§7Начинающий строитель",
+                "tenthousand": "§7Опытный строитель",
+                "fiftythousand": "§7Мастер строитель"
+            }
+        },
+        "mine": {
+            "_prefix": "",
+            "total": {
+                "onethousand": "§7Начинающий шахтёр",
+                "tenthousand": "§7Опытный шахтёр"
+            },
+            "coal": {
+                "onehundred": "§7Охотник за углём"
+            },
+            "iron": {
+                "onehundred": "§7Кузнец"
+            },
+            "gold": {
+                "fifty": "§7Охотник за золотом"
+            },
+            "diamond": {
+                "twentyfive": "§7Охотник за алмазами"
+            },
+            "emerald": {
+                "ten": "§7Охотник за изумрудами"
+            }
+        },
+        "social": {
+            "_prefix": "",
+            "marry": "§7Сродственные души",
+            "party": {
+                "create": "§7Лидер группы"
+            },
+            "chat": {
+                "onethousand": "§7Болтун",
+                "tenthousand": "§7Легенда чата"
+            }
+        },
+        "general": {
+            "_prefix": "",
+            "level": {
+                "ten": "§7Повышение уровня",
+                "twentyfive": "§7Преданный игрок",
+                "fifty": "§7Ветеран сервера",
+                "onehundred": "§7Живая легенда"
+            },
+            "wins": {
+                "onehundred": "§7Стабильный победитель",
+                "fivehundred": "§7Машина побед"
+            },
+            "play": {
+                "onehundred": "§7Постоянный игрок",
+                "fivehundred": "§7Зависимый от сервера"
+            },
+            "missions": {
+                "fifty": "§7Выполнитель миссий",
+                "onehundred": "§7Мастер миссий"
+            }
+        },
+        "desc": {
+            "_prefix": "",
+            "bw": {
+                "win": {
+                    "one": "Выиграйте первый матч BedWars",
+                    "fifty": "Выиграйте 50 матчей BedWars",
+                    "onehundred": "Выиграйте 100 матчей BedWars"
+                },
+                "play": {
+                    "ten": "Сыграйте 10 матчей BedWars",
+                    "fifty": "Сыграйте 50 матчей BedWars"
+                },
+                "kill": {
+                    "onehundred": "Убейте 100 игроков в BedWars",
+                    "fivehundred": "Убейте 500 игроков в BedWars"
+                },
+                "first": {
+                    "win": "Выиграйте первый матч BedWars"
+                }
+            },
+            "sw": {
+                "win": {
+                    "one": "Выиграйте первый матч SkyWars",
+                    "fifty": "Выиграйте 50 матчей SkyWars",
+                    "onehundred": "Выиграйте 100 матчей SkyWars"
+                },
+                "play": {
+                    "ten": "Сыграйте 10 матчей SkyWars",
+                    "fifty": "Сыграйте 50 матчей SkyWars"
+                },
+                "kill": {
+                    "onehundred": "Убейте 100 игроков в SkyWars",
+                    "fivehundred": "Убейте 500 игроков в SkyWars"
+                },
+                "first": {
+                    "win": "Выиграйте первый матч SkyWars"
+                }
+            },
+            "bs": {
+                "win": {
+                    "one": "Выиграйте первый матч BlockSumo",
+                    "fifty": "Выиграйте 50 матчей BlockSumo"
+                },
+                "play": {
+                    "ten": "Сыграйте 10 матчей BlockSumo"
+                },
+                "kill": {
+                    "onehundred": "Убейте 100 игроков в BlockSumo"
+                },
+                "first": {
+                    "win": "Выиграйте первый матч BlockSumo"
+                }
+            },
+            "pvp": {
+                "kill": {
+                    "onehundred": "Убейте 100 игроков в PvP",
+                    "fivehundred": "Убейте 500 игроков в PvP",
+                    "onethousand": "Убейте 1000 игроков в PvP"
+                },
+                "first": {
+                    "kill": "Убейте первого игрока в PvP"
+                }
+            },
+            "build": {
+                "blocks": {
+                    "onethousand": "Установите 1000 блоков",
+                    "tenthousand": "Установите 10000 блоков",
+                    "fiftythousand": "Установите 50000 блоков"
+                }
+            },
+            "mine": {
+                "total": {
+                    "onethousand": "Добудьте 1000 блоков всего",
+                    "tenthousand": "Добудьте 10000 блоков всего"
+                },
+                "coal": {
+                    "onehundred": "Добудьте 100 угля"
+                },
+                "iron": {
+                    "onehundred": "Добудьте 100 железа"
+                },
+                "gold": {
+                    "fifty": "Добудьте 50 золота"
+                },
+                "diamond": {
+                    "twentyfive": "Добудьте 25 алмазов"
+                },
+                "emerald": {
+                    "ten": "Добудьте 10 изумрудов"
+                }
+            },
+            "social": {
+                "marry": "Поженитесь с другим игроком",
+                "party": {
+                    "create": "Создайте группу"
+                },
+                "chat": {
+                    "onethousand": "Отправьте 1000 сообщений в чат",
+                    "tenthousand": "Отправьте 10000 сообщений в чат"
+                }
+            },
+            "general": {
+                "level": {
+                    "ten": "Достигните 10 уровня",
+                    "twentyfive": "Достигните 25 уровня",
+                    "fifty": "Достигните 50 уровня",
+                    "onehundred": "Достигните 100 уровня"
+                },
+                "wins": {
+                    "onehundred": "Выиграйте 100 матчей всего",
+                    "fivehundred": "Выиграйте 500 матчей всего"
+                },
+                "play": {
+                    "onehundred": "Сыграйте 100 матчей всего",
+                    "fivehundred": "Сыграйте 500 матчей всего"
+                },
+                "missions": {
+                    "fifty": "Выполните 50 миссий",
+                    "onehundred": "Выполните 100 миссий"
+                }
+            }
+        }
     },
     "cages": {
         "_prefix": "§cКлетки §8§l» §r",
