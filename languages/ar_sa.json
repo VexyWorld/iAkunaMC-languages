@@ -528,9 +528,15 @@
         "denytransfer": {
             "desc": "§7يرفض نقل قطعة",
             "usage": "§8/§cp denytransfer",
-            "no_pending": "§cالنظام §8§l» §r§cليس لديك طلبات معلقة...",
-            "success": "§9Plot §8§l» §r§7رفضت نقل القطعة...",
-            "notify_sender": "§9Plot §8§l» §r§9{player} §7رفض نقل القطعة..."
+            "no_pending": "§cنظام §8§l» §r§cليس لديك طلبات معلقة...",
+            "success": "§9القطعة §8§l» §r§7رفضت نقل القطعة...",
+            "notify_sender": "§9القطعة §8§l» §r§9{player} §7رفض نقل القطعة..."
+        },
+        "setdesc": {
+            "desc": "§7يحدد وصف قطعتك",
+            "usage": "§8/§cp setdesc §8<§cوصف§8>",
+            "empty": "§9القطعة §8§l» §r§cاستخدم §8/§cp setdesc §8<§cوصف§8> لتحديد وصف...",
+            "success": "§9القطعة §8§l» §r§7تم تغيير وصف القطعة بنجاح!"
         }
     },
     "cosmetic": {
@@ -2334,6 +2340,302 @@
         "_prefix": "§6المهام §8§l» §r",
         "no_missions": "§cليس لديك مهام لإعادة تعيينها!",
         "success": "§7تمت إعادة تعيين مهامك بنجاح!"
+    },
+    "achievement": {
+        "_prefix": "§6الإنجازات §8§l» §r",
+        "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §6الإنجازات §8(§f{unlocked}§8/§f{total}§8) ===-=-=-=-",
+        "header_other": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §6إنجازات §7لـ §6{target} §8(§f{unlocked}§8/§f{total}§8) ===-=-=-=-",
+        "footer": "§7استخدم §8/§7{label} view §8<§7id§8> §7لعرض تفاصيل الإنجاز...",
+        "no": {
+            "_prefix": "",
+            "achievements": "§6الإنجازات §8§l» §r§cلم يتم العثور على إنجازات..."
+        },
+        "list": {
+            "_prefix": "",
+            "item": "§6{id} §8§l» §r§6{name} §8- {progress} §8(§6{current}§8/§6{target}§8)"
+        },
+        "view": {
+            "_prefix": "",
+            "usage": "§6الإنجازات §8§l» §r§cاستخدم §8/§c{label} view §8<§cid§8>",
+            "not": {
+                "found": "§6الإنجازات §8§l» §r§cلم يتم العثور على الإنجاز..."
+            },
+            "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §7الإنجاز §6{name} §8===-=-=-=-",
+            "category": "§6الإنجازات §8§l» §r§7الفئة§8: §6{category}",
+            "description": "§6الإنجازات §8§l» §r§7الوصف§8: §6{description}",
+            "progress": "§6الإنجازات §8§l» §r§7التقدم§8: §6{progress}",
+            "status": {
+                "unlocked": "§6الإنجازات §8§l» §r§7الحالة§8: §aتم فتحه §8(§6{date}§8)",
+                "locked": "§6الإنجازات §8§l» §r§7الحالة§8: §cمقفل"
+            },
+            "rewards": "§6الإنجازات §8§l» §r§7المكافآت§8:§7 {rewards}",
+            "reward": {
+                "akunas": "§c{amount} Akunas",
+                "xp": "§9{amount} XP",
+                "title": "§dاللقب§8: §d{name}",
+                "group": {
+                    "temp": "§7علامة §9{name} §8(§9{duration})",
+                    "perm": "§7علامة §9{name} §8(§9دائمة)"
+                },
+                "multiplier": "§9مضاعف XP §6{amount}§7x §8(§6{duration}§8)"
+            }
+        },
+        "unlock": {
+            "_prefix": "",
+            "message": "§6الإنجازات §8§l» §r§7تهانينا! لقد فتحت الإنجاز §6{achievement}§7!",
+            "reward": {
+                "received": "§6الإنجازات §8§l» §r§7المكافآت المستلمة§8: §6{rewards}"
+            }
+        },
+        "bw": {
+            "_prefix": "",
+            "win": {
+                "one": "§7أول فوز في §cBed§fWars",
+                "fifty": "§7محترف §cBed§fWars",
+                "onehundred": "§7أسطورة §cBed§fWars"
+            },
+            "play": {
+                "ten": "§7لاعب §cBed§fWars",
+                "fifty": "§7لاعب منتظم في §cBed§fWars"
+            },
+            "kill": {
+                "onehundred": "§7صياد §cBed§fWars",
+                "fivehundred": "§7مفترس §cBed§fWars"
+            },
+            "first": {
+                "win": "§7بداية مجيدة"
+            }
+        },
+        "sw": {
+            "_prefix": "",
+            "win": {
+                "one": "§7أول فوز في §bSky§fWars",
+                "fifty": "§7محترف §bSky§fWars",
+                "onehundred": "§7أسطورة §bSky§fWars"
+            },
+            "play": {
+                "ten": "§7لاعب §bSky§fWars",
+                "fifty": "§7لاعب منتظم في §bSky§fWars"
+            },
+            "kill": {
+                "onehundred": "§7صياد §bSky§fWars",
+                "fivehundred": "§7مفترس §bSky§fWars"
+            },
+            "first": {
+                "win": "§7بداية مجيدة"
+            }
+        },
+        "bs": {
+            "_prefix": "",
+            "win": {
+                "one": "§7أول فوز في §bBlock§fSumo",
+                "fifty": "§7محترف §bBlock§fSumo"
+            },
+            "play": {
+                "ten": "§7لاعب §bBlock§fSumo"
+            },
+            "kill": {
+                "onehundred": "§7صياد §bBlock§fSumo"
+            },
+            "first": {
+                "win": "§7بداية مجيدة"
+            }
+        },
+        "pvp": {
+            "_prefix": "",
+            "kill": {
+                "onehundred": "§7صياد الأرواح",
+                "fivehundred": "§7مفترس عالي",
+                "onethousand": "§7أسطورة PvP"
+            },
+            "first": {
+                "kill": "§7أول قتل"
+            }
+        },
+        "build": {
+            "_prefix": "",
+            "blocks": {
+                "onethousand": "§7بناء مبتدئ",
+                "tenthousand": "§7بناء خبير",
+                "fiftythousand": "§7خبير بناء"
+            }
+        },
+        "mine": {
+            "_prefix": "",
+            "total": {
+                "onethousand": "§7منجم مبتدئ",
+                "tenthousand": "§7منجم خبير"
+            },
+            "coal": {
+                "onehundred": "§7صياد الفحم"
+            },
+            "iron": {
+                "onehundred": "§7صانع الحديد"
+            },
+            "gold": {
+                "fifty": "§7صياد الذهب"
+            },
+            "diamond": {
+                "twentyfive": "§7صياد الألماس"
+            },
+            "emerald": {
+                "ten": "§7صياد الزمرد"
+            }
+        },
+        "social": {
+            "_prefix": "",
+            "marry": "§7أرواح توأم",
+            "party": {
+                "create": "§7قائد المجموعة"
+            },
+            "chat": {
+                "onethousand": "§7ثرثار",
+                "tenthousand": "§7أسطورة الدردشة"
+            }
+        },
+        "general": {
+            "_prefix": "",
+            "level": {
+                "ten": "§7الارتقاء للمستوى 10",
+                "twentyfive": "§7الارتقاء للمستوى 25",
+                "fifty": "§7الارتقاء للمستوى 50",
+                "onehundred": "§7الارتقاء للمستوى 100"
+            },
+            "wins": {
+                "onehundred": "§7فائز مستمر",
+                "fivehundred": "§7آلة الانتصارات"
+            },
+            "play": {
+                "onehundred": "§7لاعب منتظم",
+                "fivehundred": "§7مدمن على الخادم"
+            },
+            "missions": {
+                "fifty": "§7منجز المهام",
+                "onehundred": "§7خبير المهام"
+            }
+        },
+        "desc": {
+            "_prefix": "",
+            "bw": {
+                "win": {
+                    "one": "اربح أول مباراة في BedWars",
+                    "fifty": "اربح 50 مباراة في BedWars",
+                    "onehundred": "اربح 100 مباراة في BedWars"
+                },
+                "play": {
+                    "ten": "العب 10 مباريات في BedWars",
+                    "fifty": "العب 50 مباراة في BedWars"
+                },
+                "kill": {
+                    "onehundred": "اقتل 100 لاعب في BedWars",
+                    "fivehundred": "اقتل 500 لاعب في BedWars"
+                },
+                "first": {
+                    "win": "اربح أول مباراة في BedWars"
+                }
+            },
+            "sw": {
+                "win": {
+                    "one": "اربح أول مباراة في SkyWars",
+                    "fifty": "اربح 50 مباراة في SkyWars",
+                    "onehundred": "اربح 100 مباراة في SkyWars"
+                },
+                "play": {
+                    "ten": "العب 10 مباريات في SkyWars",
+                    "fifty": "العب 50 مباراة في SkyWars"
+                },
+                "kill": {
+                    "onehundred": "اقتل 100 لاعب في SkyWars",
+                    "fivehundred": "اقتل 500 لاعب في SkyWars"
+                },
+                "first": {
+                    "win": "اربح أول مباراة في SkyWars"
+                }
+            },
+            "bs": {
+                "win": {
+                    "one": "اربح أول مباراة في BlockSumo",
+                    "fifty": "اربح 50 مباراة في BlockSumo"
+                },
+                "play": {
+                    "ten": "العب 10 مباريات في BlockSumo"
+                },
+                "kill": {
+                    "onehundred": "اقتل 100 لاعب في BlockSumo"
+                },
+                "first": {
+                    "win": "اربح أول مباراة في BlockSumo"
+                }
+            },
+            "pvp": {
+                "kill": {
+                    "onehundred": "اقتل 100 لاعب في PvP",
+                    "fivehundred": "اقتل 500 لاعب في PvP",
+                    "onethousand": "اقتل 1000 لاعب في PvP"
+                },
+                "first": {
+                    "kill": "اقتل أول لاعب في PvP"
+                }
+            },
+            "build": {
+                "blocks": {
+                    "onethousand": "ضع 1000 كتلة",
+                    "tenthousand": "ضع 10000 كتلة",
+                    "fiftythousand": "ضع 50000 كتلة"
+                }
+            },
+            "mine": {
+                "total": {
+                    "onethousand": "استخرج 1000 كتلة إجمالاً",
+                    "tenthousand": "استخرج 10000 كتلة إجمالاً"
+                },
+                "coal": {
+                    "onehundred": "استخرج 100 فحم"
+                },
+                "iron": {
+                    "onehundred": "استخرج 100 حديد"
+                },
+                "gold": {
+                    "fifty": "استخرج 50 ذهب"
+                },
+                "diamond": {
+                    "twentyfive": "استخرج 25 ماس"
+                },
+                "emerald": {
+                    "ten": "استخرج 10 زمرد"
+                }
+            },
+            "social": {
+                "marry": "تزوج من لاعب آخر",
+                "party": {
+                    "create": "أنشئ مجموعة"
+                },
+                "chat": {
+                    "onethousand": "أرسل 1000 رسالة دردشة",
+                    "tenthousand": "أرسل 10000 رسالة دردشة"
+                }
+            },
+            "general": {
+                "level": {
+                    "ten": " reached level 10",
+                    "twentyfive": " reached level 25",
+                    "fifty": " reached level 50",
+                    "onehundred": " reached level 100"
+                },
+                "wins": {
+                    "onehundred": "اربح 100 مباراة إجمالاً",
+                    "fivehundred": "اربح 500 مباراة إجمالاً"
+                },
+                "play": {
+                    "onehundred": "العب 100 مباراة إجمالاً",
+                    "fivehundred": "العب 500 مباراة إجمالاً"
+                },
+                "missions": {
+                    "fifty": "أكمل 50 مهمة",
+                    "onehundred": "أكمل 100 مهمة"
+                }
+            }
+        }
     },
     "cages": {
         "_prefix": "§cالأقفاص §8§l» §r",

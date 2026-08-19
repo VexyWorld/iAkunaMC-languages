@@ -528,9 +528,15 @@
         "denytransfer": {
             "desc": "§7Bir plot transferini reddeder",
             "usage": "§8/§cp denytransfer",
-            "no_pending": "§cSistem §8§l» §r§cBekleyen isteğin yok...",
-            "success": "§9Plot §8§l» §r§7Plot transferini reddettin...",
+            "no_pending": "§cSistem §8§l» §r§cBekleyen isteğiniz yok...",
+            "success": "§9Plot §8§l» §r§7Plot transferini reddettiniz...",
             "notify_sender": "§9Plot §8§l» §r§9{player} §7plot transferini reddetti..."
+        },
+        "setdesc": {
+            "desc": "§7Plotunuzun açıklamasını ayarlar",
+            "usage": "§8/§cp setdesc §8<§caçıklama§8>",
+            "empty": "§9Plot §8§l» §r§c§8/§cp setdesc §8<§caçıklama§8> ile açıklama ayarlayın...",
+            "success": "§9Plot §8§l» §r§7Plot açıklaması başarıyla değiştirildi!"
         }
     },
     "cosmetic": {
@@ -2334,6 +2340,302 @@
         "_prefix": "§6Görevler §8§l» §r",
         "no_missions": "§cSıfırlanacak görevin yok!",
         "success": "§7Görevlerin başarıyla sıfırlandı!"
+    },
+    "achievement": {
+        "_prefix": "§6Başarılar §8§l» §r",
+        "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §6Başarılar §8(§f{unlocked}§8/§f{total}§8) ===-=-=-=-",
+        "header_other": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §6{target} §7Başarıları §8(§f{unlocked}§8/§f{total}§8) ===-=-=-=-",
+        "footer": "§7Başarı detaylarını görmek için §8/§7{label} view §8<§7id§8> §7kullanın...",
+        "no": {
+            "_prefix": "",
+            "achievements": "§6Başarılar §8§l» §r§cBaşarı bulunamadı..."
+        },
+        "list": {
+            "_prefix": "",
+            "item": "§6{id} §8§l» §r§6{name} §8- {progress} §8(§6{current}§8/§6{target}§8)"
+        },
+        "view": {
+            "_prefix": "",
+            "usage": "§6Başarılar §8§l» §r§c§8/§c{label} view §8<§cid§8> §7kullanın",
+            "not": {
+                "found": "§6Başarılar §8§l» §r§cBaşarı bulunamadı..."
+            },
+            "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §7Başarı §6{name} §8===-=-=-=-",
+            "category": "§6Başarılar §8§l» §r§7Kategori§8: §6{category}",
+            "description": "§6Başarılar §8§l» §r§7Açıklama§8: §6{description}",
+            "progress": "§6Başarılar §8§l» §r§7İlerleme§8: §6{progress}",
+            "status": {
+                "unlocked": "§6Başarılar §8§l» §r§7Durum§8: §aAçıldı §8(§6{date}§8)",
+                "locked": "§6Başarılar §8§l» §r§7Durum§8: §cKilitli"
+            },
+            "rewards": "§6Başarılar §8§l» §r§7Ödüller§8:§7 {rewards}",
+            "reward": {
+                "akunas": "§c{amount} Akunas",
+                "xp": "§9{amount} XP",
+                "title": "§dUnvan§8: §d{name}",
+                "group": {
+                    "temp": "§7Etiket §9{name} §8(§9{duration})",
+                    "perm": "§7Etiket §9{name} §8(§9kalıcı)"
+                },
+                "multiplier": "§9XP Çarpanı §6{amount}§7x §8(§6{duration}§8)"
+            }
+        },
+        "unlock": {
+            "_prefix": "",
+            "message": "§6Başarılar §8§l» §r§7Tebrikler! §6{achievement} §7başarısını açtınız!",
+            "reward": {
+                "received": "§6Başarılar §8§l» §r§7Ödüller alındı§8: §6{rewards}"
+            }
+        },
+        "bw": {
+            "_prefix": "",
+            "win": {
+                "one": "§7§cBed§fWars §7'de İlk Zafer",
+                "fifty": "§7§cBed§fWars §7Veteranı",
+                "onehundred": "§7§cBed§fWars §7Efsanesi"
+            },
+            "play": {
+                "ten": "§7§cBed§fWars §7Oyuncusu",
+                "fifty": "§7§cBed§fWars §7Düzenlisi"
+            },
+            "kill": {
+                "onehundred": "§7§cBed§fWars §7Avcısı",
+                "fivehundred": "§7§cBed§fWars §7Yırtıcısı"
+            },
+            "first": {
+                "win": "§7Şanlı Başlangıç"
+            }
+        },
+        "sw": {
+            "_prefix": "",
+            "win": {
+                "one": "§7§bSky§fWars §7'de İlk Zafer",
+                "fifty": "§7§bSky§fWars §7Veteranı",
+                "onehundred": "§7§bSky§fWars §7Efsanesi"
+            },
+            "play": {
+                "ten": "§7§bSky§fWars §7Oyuncusu",
+                "fifty": "§7§bSky§fWars §7Düzenlisi"
+            },
+            "kill": {
+                "onehundred": "§7§bSky§fWars §7Avcısı",
+                "fivehundred": "§7§bSky§fWars §7Yırtıcısı"
+            },
+            "first": {
+                "win": "§7Şanlı Başlangıç"
+            }
+        },
+        "bs": {
+            "_prefix": "",
+            "win": {
+                "one": "§7§bBlock§fSumo §7'de İlk Zafer",
+                "fifty": "§7§bBlock§fSumo §7Veteranı"
+            },
+            "play": {
+                "ten": "§7§bBlock§fSumo §7Oyuncusu"
+            },
+            "kill": {
+                "onehundred": "§7§bBlock§fSumo §7Avcısı"
+            },
+            "first": {
+                "win": "§7Şanlı Başlangıç"
+            }
+        },
+        "pvp": {
+            "_prefix": "",
+            "kill": {
+                "onehundred": "§7Ruh Avcısı",
+                "fivehundred": "§7Yüce Yırtıcı",
+                "onethousand": "§7PvP Efsanesi"
+            },
+            "first": {
+                "kill": "§7İlk Kill"
+            }
+        },
+        "build": {
+            "_prefix": "",
+            "blocks": {
+                "onethousand": "§7Acemi İnşaatçı",
+                "tenthousand": "§7Deneyimli İnşaatçı",
+                "fiftythousand": "§7Usta İnşaatçı"
+            }
+        },
+        "mine": {
+            "_prefix": "",
+            "total": {
+                "onethousand": "§7Acemi Madenci",
+                "tenthousand": "§7Deneyimli Madenci"
+            },
+            "coal": {
+                "onehundred": "§7Kömür Avcısı"
+            },
+            "iron": {
+                "onehundred": "§7Demir Ustası"
+            },
+            "gold": {
+                "fifty": "§7Altın Avcısı"
+            },
+            "diamond": {
+                "twentyfive": "§7Elmas Avcısı"
+            },
+            "emerald": {
+                "ten": "§7Zümrüt Avcısı"
+            }
+        },
+        "social": {
+            "_prefix": "",
+            "marry": "§7Ruh Eşleri",
+            "party": {
+                "create": "§7Grup Lideri"
+            },
+            "chat": {
+                "onethousand": "§7Geveze",
+                "tenthousand": "§7Sohbet Efsanesi"
+            }
+        },
+        "general": {
+            "_prefix": "",
+            "level": {
+                "ten": "§7Seviye Atlama",
+                "twentyfive": "§7Sadık Oyuncu",
+                "fifty": "§7Sunucu Veteranı",
+                "onehundred": "§7Yaşayan Efsane"
+            },
+            "wins": {
+                "onehundred": "§7Tutarlı Kazanan",
+                "fivehundred": "§7Zafer Makinesi"
+            },
+            "play": {
+                "onehundred": "§7Düzenli Oyuncu",
+                "fivehundred": "§7Sunucu Bağımlısı"
+            },
+            "missions": {
+                "fifty": "§7Görev Tamamlayıcı",
+                "onehundred": "§7Görev Ustası"
+            }
+        },
+        "desc": {
+            "_prefix": "",
+            "bw": {
+                "win": {
+                    "one": "İlk BedWars maçını kazan",
+                    "fifty": "50 BedWars maçı kazan",
+                    "onehundred": "100 BedWars maçı kazan"
+                },
+                "play": {
+                    "ten": "10 BedWars maçı oyna",
+                    "fifty": "50 BedWars maçı oyna"
+                },
+                "kill": {
+                    "onehundred": "BedWars'da 100 oyuncu öldür",
+                    "fivehundred": "BedWars'da 500 oyuncu öldür"
+                },
+                "first": {
+                    "win": "İlk BedWars maçını kazan"
+                }
+            },
+            "sw": {
+                "win": {
+                    "one": "İlk SkyWars maçını kazan",
+                    "fifty": "50 SkyWars maçı kazan",
+                    "onehundred": "100 SkyWars maçı kazan"
+                },
+                "play": {
+                    "ten": "10 SkyWars maçı oyna",
+                    "fifty": "50 SkyWars maçı oyna"
+                },
+                "kill": {
+                    "onehundred": "SkyWars'da 100 oyuncu öldür",
+                    "fivehundred": "SkyWars'da 500 oyuncu öldür"
+                },
+                "first": {
+                    "win": "İlk SkyWars maçını kazan"
+                }
+            },
+            "bs": {
+                "win": {
+                    "one": "İlk BlockSumo maçını kazan",
+                    "fifty": "50 BlockSumo maçı kazan"
+                },
+                "play": {
+                    "ten": "10 BlockSumo maçı oyna"
+                },
+                "kill": {
+                    "onehundred": "BlockSumo'da 100 oyuncu öldür"
+                },
+                "first": {
+                    "win": "İlk BlockSumo maçını kazan"
+                }
+            },
+            "pvp": {
+                "kill": {
+                    "onehundred": "PvP'de 100 oyuncu öldür",
+                    "fivehundred": "PvP'de 500 oyuncu öldür",
+                    "onethousand": "PvP'de 1000 oyuncu öldür"
+                },
+                "first": {
+                    "kill": "PvP'de ilk oyuncuyu öldür"
+                }
+            },
+            "build": {
+                "blocks": {
+                    "onethousand": "1000 blok yerleştir",
+                    "tenthousand": "10000 blok yerleştir",
+                    "fiftythousand": "50000 blok yerleştir"
+                }
+            },
+            "mine": {
+                "total": {
+                    "onethousand": "Toplam 1000 blok maden",
+                    "tenthousand": "Toplam 10000 blok maden"
+                },
+                "coal": {
+                    "onehundred": "100 kömür maden"
+                },
+                "iron": {
+                    "onehundred": "100 demir maden"
+                },
+                "gold": {
+                    "fifty": "50 altın maden"
+                },
+                "diamond": {
+                    "twentyfive": "25 elmas maden"
+                },
+                "emerald": {
+                    "ten": "10 zümrüt maden"
+                }
+            },
+            "social": {
+                "marry": "Başka bir oyuncuyla evlen",
+                "party": {
+                    "create": "Bir grup oluştur"
+                },
+                "chat": {
+                    "onethousand": "1000 sohbet mesajı gönder",
+                    "tenthousand": "10000 sohbet mesajı gönder"
+                }
+            },
+            "general": {
+                "level": {
+                    "ten": "10. seviyeye ulaş",
+                    "twentyfive": "25. seviyeye ulaş",
+                    "fifty": "50. seviyeye ulaş",
+                    "onehundred": "100. seviyeye ulaş"
+                },
+                "wins": {
+                    "onehundred": "Toplam 100 maç kazan",
+                    "fivehundred": "Toplam 500 maç kazan"
+                },
+                "play": {
+                    "onehundred": "Toplam 100 maç oyna",
+                    "fivehundred": "Toplam 500 maç oyna"
+                },
+                "missions": {
+                    "fifty": "50 görev tamamla",
+                    "onehundred": "100 görev tamamla"
+                }
+            }
+        }
     },
     "cages": {
         "_prefix": "§cKafesler §8§l» §r",

@@ -426,6 +426,12 @@
             "success": "§9地块 §8§l» §r§7您拒绝了地块转让...",
             "usage": "§8/§cp denytransfer"
         },
+        "setdesc": {
+            "desc": "§7设置您的地块描述",
+            "empty": "§9地块 §8§l» §r§c使用 §8/§cp setdesc §8<§c描述§8> 来设置描述...",
+            "success": "§9地块 §8§l» §r§7地块描述已成功更改！",
+            "usage": "§8/§cp setdesc §8<§c描述§8>"
+        },
         "dispose": {
             "confirm": "§9地块 §8§l» §r§7您确定要丢弃地块 §9{plot}§7 吗？使用 §8/§7p dispose confirm",
             "desc": "§7丢弃您的地块",
@@ -2334,6 +2340,302 @@
         "_prefix": "§6任务 §8§l» §r",
         "no_missions": "§c您没有可重置的任务！",
         "success": "§7您的任务已成功重置！"
+    },
+    "achievement": {
+        "_prefix": "§6成就 §8§l» §r",
+        "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §6成就 §8(§f{unlocked}§8/§f{total}§8) ===-=-=-=-",
+        "header_other": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §6{target} §7的成就 §8(§f{unlocked}§8/§f{total}§8) ===-=-=-=-",
+        "footer": "§7使用 §8/§7{label} view §8<§7id§8> §7查看成就详情...",
+        "no": {
+            "_prefix": "",
+            "achievements": "§6成就 §8§l» §r§c未找到成就..."
+        },
+        "list": {
+            "_prefix": "",
+            "item": "§6{id} §8§l» §r§6{name} §8- {progress} §8(§6{current}§8/§6{target}§8)"
+        },
+        "view": {
+            "_prefix": "",
+            "usage": "§6成就 §8§l» §r§c使用 §8/§c{label} view §8<§cid§8>",
+            "not": {
+                "found": "§6成就 §8§l» §r§c未找到成就..."
+            },
+            "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §7成就 §6{name} §8===-=-=-=-",
+            "category": "§6成就 §8§l» §r§7类别§8: §6{category}",
+            "description": "§6成就 §8§l» §r§7描述§8: §6{description}",
+            "progress": "§6成就 §8§l» §r§7进度§8: §6{progress}",
+            "status": {
+                "unlocked": "§6成就 §8§l» §r§7状态§8: §a已解锁 §8(§6{date}§8)",
+                "locked": "§6成就 §8§l» §r§7状态§8: §c已锁定"
+            },
+            "rewards": "§6成就 §8§l» §r§7奖励§8:§7 {rewards}",
+            "reward": {
+                "akunas": "§c{amount} Akunas",
+                "xp": "§9{amount} XP",
+                "title": "§d称号§8: §d{name}",
+                "group": {
+                    "temp": "§7标签 §9{name} §8(§9{duration})",
+                    "perm": "§7标签 §9{name} §8(§9永久)"
+                },
+                "multiplier": "§9经验倍率 §6{amount}§7x §8(§6{duration}§8)"
+            }
+        },
+        "unlock": {
+            "_prefix": "",
+            "message": "§6成就 §8§l» §r§7恭喜！您解锁了成就 §6{achievement}§7！",
+            "reward": {
+                "received": "§6成就 §8§l» §r§7收到奖励§8: §6{rewards}"
+            }
+        },
+        "bw": {
+            "_prefix": "",
+            "win": {
+                "one": "§7在 §cBed§fWars §7中首次获胜",
+                "fifty": "§7§cBed§fWars §7老手",
+                "onehundred": "§7§cBed§fWars §7传奇"
+            },
+            "play": {
+                "ten": "§7§cBed§fWars §7玩家",
+                "fifty": "§7§cBed§fWars §7常客"
+            },
+            "kill": {
+                "onehundred": "§7§cBed§fWars §7猎手",
+                "fivehundred": "§7§cBed§fWars §7掠食者"
+            },
+            "first": {
+                "win": "§7辉煌的开始"
+            }
+        },
+        "sw": {
+            "_prefix": "",
+            "win": {
+                "one": "§7在 §bSky§fWars §7中首次获胜",
+                "fifty": "§7§bSky§fWars §7老手",
+                "onehundred": "§7§bSky§fWars §7传奇"
+            },
+            "play": {
+                "ten": "§7§bSky§fWars §7玩家",
+                "fifty": "§7§bSky§fWars §7常客"
+            },
+            "kill": {
+                "onehundred": "§7§bSky§fWars §7猎手",
+                "fivehundred": "§7§bSky§fWars §7掠食者"
+            },
+            "first": {
+                "win": "§7辉煌的开始"
+            }
+        },
+        "bs": {
+            "_prefix": "",
+            "win": {
+                "one": "§7在 §bBlock§fSumo §7中首次获胜",
+                "fifty": "§7§bBlock§fSumo §7老手"
+            },
+            "play": {
+                "ten": "§7§bBlock§fSumo §7玩家"
+            },
+            "kill": {
+                "onehundred": "§7§bBlock§fSumo §7猎手"
+            },
+            "first": {
+                "win": "§7辉煌的开始"
+            }
+        },
+        "pvp": {
+            "_prefix": "",
+            "kill": {
+                "onehundred": "§7灵魂猎手",
+                "fivehundred": "§7至高掠食者",
+                "onethousand": "§7PvP传奇"
+            },
+            "first": {
+                "kill": "§7首次击杀"
+            }
+        },
+        "build": {
+            "_prefix": "",
+            "blocks": {
+                "onethousand": "§7新手建筑师",
+                "tenthousand": "§7经验丰富的建筑师",
+                "fiftythousand": "§7建筑大师"
+            }
+        },
+        "mine": {
+            "_prefix": "",
+            "total": {
+                "onethousand": "§7新手矿工",
+                "tenthousand": "§7经验丰富的矿工"
+            },
+            "coal": {
+                "onehundred": "§7煤炭猎手"
+            },
+            "iron": {
+                "onehundred": "§7铁匠"
+            },
+            "gold": {
+                "fifty": "§7黄金猎手"
+            },
+            "diamond": {
+                "twentyfive": "§7钻石猎手"
+            },
+            "emerald": {
+                "ten": "§7绿宝石猎手"
+            }
+        },
+        "social": {
+            "_prefix": "",
+            "marry": "§7灵魂伴侣",
+            "party": {
+                "create": "§7队伍领袖"
+            },
+            "chat": {
+                "onethousand": "§7话痨",
+                "tenthousand": "§7聊天传奇"
+            }
+        },
+        "general": {
+            "_prefix": "",
+            "level": {
+                "ten": "§7升级",
+                "twentyfive": "§7忠实玩家",
+                "fifty": "§7服务器老手",
+                "onehundred": "§7活传奇"
+            },
+            "wins": {
+                "onehundred": "§7常胜将军",
+                "fivehundred": "§7胜利机器"
+            },
+            "play": {
+                "onehundred": "§7常驻玩家",
+                "fivehundred": "§7服务器沉迷者"
+            },
+            "missions": {
+                "fifty": "§7任务完成者",
+                "onehundred": "§7任务大师"
+            }
+        },
+        "desc": {
+            "_prefix": "",
+            "bw": {
+                "win": {
+                    "one": "赢得第一场BedWars比赛",
+                    "fifty": "赢得50场BedWars比赛",
+                    "onehundred": "赢得100场BedWars比赛"
+                },
+                "play": {
+                    "ten": "进行10场BedWars比赛",
+                    "fifty": "进行50场BedWars比赛"
+                },
+                "kill": {
+                    "onehundred": "在BedWars中击杀100名玩家",
+                    "fivehundred": "在BedWars中击杀500名玩家"
+                },
+                "first": {
+                    "win": "赢得第一场BedWars比赛"
+                }
+            },
+            "sw": {
+                "win": {
+                    "one": "赢得第一场SkyWars比赛",
+                    "fifty": "赢得50场SkyWars比赛",
+                    "onehundred": "赢得100场SkyWars比赛"
+                },
+                "play": {
+                    "ten": "进行10场SkyWars比赛",
+                    "fifty": "进行50场SkyWars比赛"
+                },
+                "kill": {
+                    "onehundred": "在SkyWars中击杀100名玩家",
+                    "fivehundred": "在SkyWars中击杀500名玩家"
+                },
+                "first": {
+                    "win": "赢得第一场SkyWars比赛"
+                }
+            },
+            "bs": {
+                "win": {
+                    "one": "赢得第一场BlockSumo比赛",
+                    "fifty": "赢得50场BlockSumo比赛"
+                },
+                "play": {
+                    "ten": "进行10场BlockSumo比赛"
+                },
+                "kill": {
+                    "onehundred": "在BlockSumo中击杀100名玩家"
+                },
+                "first": {
+                    "win": "赢得第一场BlockSumo比赛"
+                }
+            },
+            "pvp": {
+                "kill": {
+                    "onehundred": "在PvP中击杀100名玩家",
+                    "fivehundred": "在PvP中击杀500名玩家",
+                    "onethousand": "在PvP中击杀1000名玩家"
+                },
+                "first": {
+                    "kill": "在PvP中击杀第一名玩家"
+                }
+            },
+            "build": {
+                "blocks": {
+                    "onethousand": "放置1000个方块",
+                    "tenthousand": "放置10000个方块",
+                    "fiftythousand": "放置50000个方块"
+                }
+            },
+            "mine": {
+                "total": {
+                    "onethousand": "总共挖取1000个方块",
+                    "tenthousand": "总共挖取10000个方块"
+                },
+                "coal": {
+                    "onehundred": "挖取100个煤炭"
+                },
+                "iron": {
+                    "onehundred": "挖取100个铁矿"
+                },
+                "gold": {
+                    "fifty": "挖取50个金矿"
+                },
+                "diamond": {
+                    "twentyfive": "挖取25个钻石"
+                },
+                "emerald": {
+                    "ten": "挖取10个绿宝石"
+                }
+            },
+            "social": {
+                "marry": "与其他玩家结婚",
+                "party": {
+                    "create": "创建队伍"
+                },
+                "chat": {
+                    "onethousand": "发送1000条聊天消息",
+                    "tenthousand": "发送10000条聊天消息"
+                }
+            },
+            "general": {
+                "level": {
+                    "ten": "达到10级",
+                    "twentyfive": "达到25级",
+                    "fifty": "达到50级",
+                    "onehundred": "达到100级"
+                },
+                "wins": {
+                    "onehundred": "总共赢得100场比赛",
+                    "fivehundred": "总共赢得500场比赛"
+                },
+                "play": {
+                    "onehundred": "总共进行100场比赛",
+                    "fivehundred": "总共进行500场比赛"
+                },
+                "missions": {
+                    "fifty": "完成50个任务",
+                    "onehundred": "完成100个任务"
+                }
+            }
+        }
     },
     "cages": {
         "_prefix": "§c笼子 §8§l» §r",

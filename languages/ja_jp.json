@@ -426,6 +426,12 @@
             "success": "§9プロット §8§l» §r§7プロット譲渡を拒否しました...",
             "usage": "§8/§cp denytransfer"
         },
+        "setdesc": {
+            "desc": "§7プロットの説明を設定します",
+            "empty": "§9プロット §8§l» §r§c§8/§cp setdesc §8<§c説明§8> を使用して説明を設定してください...",
+            "success": "§9プロット §8§l» §r§7プロットの説明が正常に変更されました！",
+            "usage": "§8/§cp setdesc §8<§c説明§8>"
+        },
         "dispose": {
             "confirm": "§9プロット §8§l» §r§7プロット §9{plot}§7 を破棄してもよろしいですか？ §8/§7p dispose confirm を使用してください",
             "desc": "§7プロットを破棄します",
@@ -2334,6 +2340,302 @@
         "_prefix": "§6ミッション §8§l» §r",
         "no_missions": "§cリセットするミッションがありません！",
         "success": "§7ミッションを正常にリセットしました！"
+    },
+    "achievement": {
+        "_prefix": "§6実績 §8§l» §r",
+        "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §6実績 §8(§f{unlocked}§8/§f{total}§8) ===-=-=-=-",
+        "header_other": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §6{target} §7の実績 §8(§f{unlocked}§8/§f{total}§8) ===-=-=-=-",
+        "footer": "§7§8/§7{label} view §8<§7id§8> §7を使用して実績の詳細を確認...",
+        "no": {
+            "_prefix": "",
+            "achievements": "§6実績 §8§l» §r§c実績が見つかりませんでした..."
+        },
+        "list": {
+            "_prefix": "",
+            "item": "§6{id} §8§l» §r§6{name} §8- {progress} §8(§6{current}§8/§6{target}§8)"
+        },
+        "view": {
+            "_prefix": "",
+            "usage": "§6実績 §8§l» §r§c§8/§c{label} view §8<§cid§8> §7を使用してください",
+            "not": {
+                "found": "§6実績 §8§l» §r§c実績が見つかりませんでした..."
+            },
+            "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §7実績 §6{name} §8===-=-=-=-",
+            "category": "§6実績 §8§l» §r§7カテゴリ§8: §6{category}",
+            "description": "§6実績 §8§l» §r§7説明§8: §6{description}",
+            "progress": "§6実績 §8§l» §r§7進捗§8: §6{progress}",
+            "status": {
+                "unlocked": "§6実績 §8§l» §r§7ステータス§8: §a解除済み §8(§6{date}§8)",
+                "locked": "§6実績 §8§l» §r§7ステータス§8: §cロック中"
+            },
+            "rewards": "§6実績 §8§l» §r§7報酬§8:§7 {rewards}",
+            "reward": {
+                "akunas": "§c{amount} Akunas",
+                "xp": "§9{amount} XP",
+                "title": "§dタイトル§8: §d{name}",
+                "group": {
+                    "temp": "§7タグ §9{name} §8(§9{duration})",
+                    "perm": "§7タグ §9{name} §8(§9期間無制限)"
+                },
+                "multiplier": "§9XPマルチプライヤー §6{amount}§7x §8(§6{duration}§8)"
+            }
+        },
+        "unlock": {
+            "_prefix": "",
+            "message": "§6実績 §8§l» §r§7おめでとうございます！実績 §6{achievement} §7を解除しました！",
+            "reward": {
+                "received": "§6実績 §8§l» §r§7報酬を受け取りました§8: §6{rewards}"
+            }
+        },
+        "bw": {
+            "_prefix": "",
+            "win": {
+                "one": "§7§cBed§fWars §7で初めて勝利",
+                "fifty": "§7§cBed§fWars §7ベテラン",
+                "onehundred": "§7§cBed§fWars §7リーガンド"
+            },
+            "play": {
+                "ten": "§7§cBed§fWars §7プレイヤー",
+                "fifty": "§7§cBed§fWars §7常連"
+            },
+            "kill": {
+                "onehundred": "§7§cBed§fWars §7ハンター",
+                "fivehundred": "§7§cBed§fWars §7プレデター"
+            },
+            "first": {
+                "win": "§7栄光の始まり"
+            }
+        },
+        "sw": {
+            "_prefix": "",
+            "win": {
+                "one": "§7§bSky§fWars §7で初めて勝利",
+                "fifty": "§7§bSky§fWars §7ベテラン",
+                "onehundred": "§7§bSky§fWars §7リーガンド"
+            },
+            "play": {
+                "ten": "§7§bSky§fWars §7プレイヤー",
+                "fifty": "§7§bSky§fWars §7常連"
+            },
+            "kill": {
+                "onehundred": "§7§bSky§fWars §7ハンター",
+                "fivehundred": "§7§bSky§fWars §7プレデター"
+            },
+            "first": {
+                "win": "§7栄光の始まり"
+            }
+        },
+        "bs": {
+            "_prefix": "",
+            "win": {
+                "one": "§7§bBlock§fSumo §7で初めて勝利",
+                "fifty": "§7§bBlock§fSumo §7ベテラン"
+            },
+            "play": {
+                "ten": "§7§bBlock§fSumo §7プレイヤー"
+            },
+            "kill": {
+                "onehundred": "§7§bBlock§fSumo §7ハンター"
+            },
+            "first": {
+                "win": "§7栄光の始まり"
+            }
+        },
+        "pvp": {
+            "_prefix": "",
+            "kill": {
+                "onehundred": "§7ソウルハンター",
+                "fivehundred": "§7最高のプレデター",
+                "onethousand": "§7PvPリーガンド"
+            },
+            "first": {
+                "kill": "§7最初のキル"
+            }
+        },
+        "build": {
+            "_prefix": "",
+            "blocks": {
+                "onethousand": "§7ビギナービルダー",
+                "tenthousand": "§7経験豊富なビルダー",
+                "fiftythousand": "§7マスタービルダー"
+            }
+        },
+        "mine": {
+            "_prefix": "",
+            "total": {
+                "onethousand": "§7ビギナーマイナー",
+                "tenthousand": "§7経験豊富なマイナー"
+            },
+            "coal": {
+                "onehundred": "§7石炭ハンター"
+            },
+            "iron": {
+                "onehundred": "§7鉄の鍛冶師"
+            },
+            "gold": {
+                "fifty": "§7金ハンター"
+            },
+            "diamond": {
+                "twentyfive": "§7ダイヤハンター"
+            },
+            "emerald": {
+                "ten": "§7エメラルドハンター"
+            }
+        },
+        "social": {
+            "_prefix": "",
+            "marry": "§7ソウルメイト",
+            "party": {
+                "create": "§7パーティー リーダー"
+            },
+            "chat": {
+                "onethousand": "§7おしゃべり好き",
+                "tenthousand": "§7チャットリーガンド"
+            }
+        },
+        "general": {
+            "_prefix": "",
+            "level": {
+                "ten": "§7レベルアップ",
+                "twentyfive": "§7熱心なプレイヤー",
+                "fifty": "§7サーバーベテラン",
+                "onehundred": "§7生きた伝説"
+            },
+            "wins": {
+                "onehundred": "§7勝ち続ける者",
+                "fivehundred": "§7勝利マシン"
+            },
+            "play": {
+                "onehundred": "§7常連プレイヤー",
+                "fivehundred": "§7サーバー中毒者"
+            },
+            "missions": {
+                "fifty": "§7ミッション達成者",
+                "onehundred": "§7ミッションマスター"
+            }
+        },
+        "desc": {
+            "_prefix": "",
+            "bw": {
+                "win": {
+                    "one": "BedWarsで最初の勝利を収める",
+                    "fifty": "BedWarsで50勝する",
+                    "onehundred": "BedWarsで100勝する"
+                },
+                "play": {
+                    "ten": "BedWarsを10プレイする",
+                    "fifty": "BedWarsを50プレイする"
+                },
+                "kill": {
+                    "onehundred": "BedWarsで100キルする",
+                    "fivehundred": "BedWarsで500キルする"
+                },
+                "first": {
+                    "win": "BedWarsで最初の勝利を収める"
+                }
+            },
+            "sw": {
+                "win": {
+                    "one": "SkyWarsで最初の勝利を収める",
+                    "fifty": "SkyWarsで50勝する",
+                    "onehundred": "SkyWarsで100勝する"
+                },
+                "play": {
+                    "ten": "SkyWarsを10プレイする",
+                    "fifty": "SkyWarsを50プレイする"
+                },
+                "kill": {
+                    "onehundred": "SkyWarsで100キルする",
+                    "fivehundred": "SkyWarsで500キルする"
+                },
+                "first": {
+                    "win": "SkyWarsで最初の勝利を収める"
+                }
+            },
+            "bs": {
+                "win": {
+                    "one": "BlockSumoで最初の勝利を収める",
+                    "fifty": "BlockSumoで50勝する"
+                },
+                "play": {
+                    "ten": "BlockSumoを10プレイする"
+                },
+                "kill": {
+                    "onehundred": "BlockSumoで100キルする"
+                },
+                "first": {
+                    "win": "BlockSumoで最初の勝利を収める"
+                }
+            },
+            "pvp": {
+                "kill": {
+                    "onehundred": "PvPで100キルする",
+                    "fivehundred": "PvPで500キルする",
+                    "onethousand": "PvPで1000キルする"
+                },
+                "first": {
+                    "kill": "PvPで最初のキルをする"
+                }
+            },
+            "build": {
+                "blocks": {
+                    "onethousand": "1000ブロックを設置する",
+                    "tenthousand": "10000ブロックを設置する",
+                    "fiftythousand": "50000ブロックを設置する"
+                }
+            },
+            "mine": {
+                "total": {
+                    "onethousand": "合計1000ブロックを採掘する",
+                    "tenthousand": "合計10000ブロックを採掘する"
+                },
+                "coal": {
+                    "onehundred": "石炭を100個採掘する"
+                },
+                "iron": {
+                    "onehundred": "鉄を100個採掘する"
+                },
+                "gold": {
+                    "fifty": "金を50個採掘する"
+                },
+                "diamond": {
+                    "twentyfive": "ダイヤを25個採掘する"
+                },
+                "emerald": {
+                    "ten": "エメラルドを10個採掘する"
+                }
+            },
+            "social": {
+                "marry": "他のプレイヤーと結婚する",
+                "party": {
+                    "create": "パーティーを作成する"
+                },
+                "chat": {
+                    "onethousand": "チャットで1000メッセージを送る",
+                    "tenthousand": "チャットで10000メッセージを送る"
+                }
+            },
+            "general": {
+                "level": {
+                    "ten": "レベル10に達する",
+                    "twentyfive": "レベル25に達する",
+                    "fifty": "レベル50に達する",
+                    "onehundred": "レベル100に達する"
+                },
+                "wins": {
+                    "onehundred": "合計100勝する",
+                    "fivehundred": "合計500勝する"
+                },
+                "play": {
+                    "onehundred": "合計100プレイする",
+                    "fivehundred": "合計500プレイする"
+                },
+                "missions": {
+                    "fifty": "ミッションを50個達成する",
+                    "onehundred": "ミッションを100個達成する"
+                }
+            }
+        }
     },
     "cages": {
         "_prefix": "§cケージ §8§l» §r",
