@@ -523,7 +523,7 @@
             "not_exists": "§9Plot §8§l» §r§cLa parcela no existe...",
             "not_owner": "§9Plot §8§l» §r§cLa parcela ya no pertenece a {owner}...",
             "success": "§9Plot §8§l» §r§7¡Aceptaste la transferencia de la parcela §9{plot}§7!",
-            "notify_sender": "§9Plot §8§l» §r§c{player} §7aceptó la transferencia de la parcela §9{plot}§7!"
+            "notify_sender": "§9Plot §8§l» §r§9{player} §7aceptó la transferencia de la parcela §9{plot}§7!"
         },
         "denytransfer": {
             "desc": "§7Rechaza una transferencia de parcela",

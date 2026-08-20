@@ -523,7 +523,7 @@
             "not_exists": "§9Plot §8§l» §r§cPlot mevcut değil...",
             "not_owner": "§9Plot §8§l» §r§cPlot artık {owner} adlı oyuncuya ait değil...",
             "success": "§9Plot §8§l» §r§7§9{plot}§7 plotunun transferini kabul ettin!",
-            "notify_sender": "§9Plot §8§l» §r§c{player} §7§9{plot}§7 plotunun transferini kabul etti!"
+            "notify_sender": "§9Plot §8§l» §r§9{player} §7§9{plot}§7 plotunun transferini kabul etti!"
         },
         "denytransfer": {
             "desc": "§7Bir plot transferini reddeder",
