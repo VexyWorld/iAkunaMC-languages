@@ -523,7 +523,7 @@
             "not_exists": "§9Plot §8§l» §r§cA plot não existe...",
             "not_owner": "§9Plot §8§l» §r§cA plot não pertence mais a {owner}...",
             "success": "§9Plot §8§l» §r§7Você aceitou a transferência da plot §9{plot}§7!",
-            "notify_sender": "§9Plot §8§l» §r§c{player} §7aceitou a transferência da plot §9{plot}§7!"
+            "notify_sender": "§9Plot §8§l» §r§9{player} §7aceitou a transferência da plot §9{plot}§7!"
         },
         "denytransfer": {
             "desc": "§7Recusa uma transferência de plot",

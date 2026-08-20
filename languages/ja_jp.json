@@ -348,7 +348,7 @@
             "no_pending": "§cシステム §8§l» §r§c保留中のリクエストがありません...",
             "not_exists": "§9プロット §8§l» §r§cそのプロットは存在しません...",
             "not_owner": "§9プロット §8§l» §r§cそのプロットは {owner} のものではありません...",
-            "notify_sender": "§9プロット §8§l» §r§c{player} §7がプロット譲渡 §9{plot}§7を受け入れました！",
+            "notify_sender": "§9プロット §8§l» §r§9{player} §7がプロット譲渡 §9{plot}§7を受け入れました！",
             "success": "§9プロット §8§l» §r§7プロット譲渡 §9{plot}§7を受け入れました！",
             "usage": "§8/§cp accepttransfer"
         },

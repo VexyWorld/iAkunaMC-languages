@@ -523,7 +523,7 @@
             "not_exists": "§9Plot §8§l» §r§cالقطعة غير موجودة...",
             "not_owner": "§9Plot §8§l» §r§cلم تعد القطعة مملوكة لـ {owner}...",
             "success": "§9Plot §8§l» §r§7قبلت نقل القطعة §9{plot}§7!",
-            "notify_sender": "§9Plot §8§l» §r§c{player} §7قبل نقل القطعة §9{plot}§7!"
+            "notify_sender": "§9Plot §8§l» §r§9{player} §7قبل نقل القطعة §9{plot}§7!"
         },
         "denytransfer": {
             "desc": "§7يرفض نقل قطعة",

@@ -348,7 +348,7 @@
             "no_pending": "§c系统 §8§l» §r§c您没有待处理的请求...",
             "not_exists": "§9地块 §8§l» §r§c该地块不存在...",
             "not_owner": "§9地块 §8§l» §r§c该地块不再属于 {owner}...",
-            "notify_sender": "§9地块 §8§l» §r§c{player} §7接受了地块转让 §9{plot}§7！",
+            "notify_sender": "§9地块 §8§l» §r§9{player} §7接受了地块转让 §9{plot}§7！",
             "success": "§9地块 §8§l» §r§7您接受了地块转让 §9{plot}§7！",
             "usage": "§8/§cp accepttransfer"
         },
