@@ -1182,7 +1182,7 @@
         },
         "join": {
             "_prefix": "",
-            "msg": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7Olá §e{user}§7, seja muito bem-vindo(a) a §fi§cAkuna§9MC§7!"
+            "msg": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7Olá §e{user}§7, seja muito bem-vindo(a) a §fi§cAkuna§9MC§7!{n}§r{n}§8(§9!§8){n}§cLoja §8§l» §r§e25% de desconto no Vip §7§l§oGalaxy§r§a+ §8- §eAdquira o seu em §ohttps://discord.iakunamc.com §r§8-> §eSupport por R$ 8,99{n}§8(§9!§8)"
         },
         "login": {
             "_prefix": "",
