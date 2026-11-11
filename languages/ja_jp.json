@@ -1208,67 +1208,6 @@
             "chp": "§7パスワードが正常に変更されました！",
             "login": "§7ログインしました！",
             "register": "§7正常に登録されました！§c登録することで §8/§cルール §cに同意したことになります..."
-        },
-        "captcha": {
-            "_prefix": "",
-            "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §eCaptcha §8===-=-=-=-{n}§eCaptcha §8§l» §r§7続行するにはBOT対策認証を完了してください！",
-            "success": "§eCaptcha §8§l» §r§a認証が完了しました！",
-            "wrong_retry": "§eCaptcha §8§l» §r§c不正解です！残り試行回数§8: §e{remaining}",
-            "must_complete": "§eCaptcha §8§l» §r§cコマンドを使用する前にBOT対策認証を完了してください...",
-            "timeout": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §eCaptcha §8===-=-=-=-{n}§c認証の制限時間が切れました...",
-            "toomany": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §eCaptcha §8===-=-=-=-{n}§c認証の失敗回数が上限に達しました...",
-            "math": {
-                "prompt": "§eCaptcha §8§l» §r§7§e{expression} §7の答えは？チャットに数字だけ入力してください",
-                "popup": "§eCaptcha §8| §f{expression} §8= §e? §8(§c{seconds}s§8)"
-            },
-            "word": {
-                "pool": "AKUNA,DIAMOND,EMERALD,SWORD,DRAGON,PORTAL,CASTLE,STAR,VICTORY,SHIELD,PICKAXE,REDSTONE,OBSIDIAN,ARCHER,COMBAT,TREASURE,CROWN,TROPHY,ARENA,PHOENIX,SAPPHIRE,RUBY",
-                "prompt": "§eCaptcha §8§l» §r§7続行するにはチャットに §e{word} §7と入力してください",
-                "popup": "§eCaptcha §8| §7入力§8: §e{word} §8(§c{seconds}s§8)"
-            },
-            "window": {
-                "title": "§8選択: {item}",
-                "item_label": "§e§l?",
-                "prompt": "§eCaptcha §8§l» §r§7開いたメニューで {item} §7を選択してください §8(§7または §8/§7captcha§8)",
-                "popup": "§eCaptcha §8| §7{item} §7を選択 §8(§c{seconds}s§8)",
-                "use_menu": "§eCaptcha §8§l» §r§cメニューから正しいアイテムを選択してください！閉じた場合は §8/§ccaptcha"
-            },
-            "map": {
-                "item_name": "§r§e認証マップ",
-                "prompt": "§eCaptcha §8§l» §r§7§e手に持っている地図§7を見て表示されたコードをチャットに入力してください",
-                "popup": "§eCaptcha §8| §7地図のコードを入力 §8(§c{seconds}s§8)"
-            },
-            "items": {
-                "diamond": "§bダイヤモンド",
-                "emerald": "§aエメラルド",
-                "gold_ingot": "§6金インゴット",
-                "iron_ingot": "§f鉄インゴット",
-                "apple": "§cリンゴ",
-                "golden_apple": "§e金のリンゴ",
-                "book": "§6本",
-                "compass": "§7コンパス",
-                "clock": "§e時計",
-                "diamond_sword": "§bダイヤの剣",
-                "bow": "§6弓",
-                "bread": "§eパン",
-                "cake": "§fケーキ",
-                "bone": "§f骨",
-                "tnt": "§cTNT",
-                "bookshelf": "§6本棚",
-                "obsidian": "§5黒曜石",
-                "glowstone": "§eグロウストーン"
-            },
-            "cmd": {
-                "_prefix": "§eCaptcha §8§l» §r",
-                "no_active": "§c保留中の認証チャレンジはありません...",
-                "usage": "§c使用方法 §8/§c{label} §8<§cstatus§8|§csurge§8|§ctest§8>",
-                "status": "§7Surge§8: {active} §8(§7モード§8: §e{mode}§8, §7参加§8: §e{recent}§8/§e{threshold} §e{window}s§8, §7残り§8: §e{remaining}s§8){n}§eCaptcha §8§l» §r§7有効タイプ§8: §7{types}",
-                "surge_usage": "§c使用方法 §8/§c{label} surge §8<§con§8|§coff§8|§cauto§8>",
-                "surge_updated": "§7BOT対策モードを §e{mode} §7に設定しました！",
-                "test_usage": "§c使用方法 §8/§c{label} test §8<§cmath§8|§cword§8|§cwindow§8|§cmap§8> [§cプレイヤー§8]",
-                "test_started": "§e{player} §7に §e{type} §7認証を開始しました！",
-                "player_offline": "§cプレイヤー {player} はオフラインです..."
-            }
         }
     },
     "automsg": {
@@ -3016,11 +2955,5 @@
             "success": "§7タイトル §6{titulo} §7を購入しました！"
         },
         "expired": "§6タイトル §8§l» §r§7タイトル §6{titulo} §7の期限が切れました..."
-    },
-    "command": {
-        "_prefix": "§cシステム §8§l» §r",
-        "only": {
-            "ingame": "§cこのコマンドはゲーム内でのみ使用できます..."
-        }
     }
 }

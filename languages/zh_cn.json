@@ -1208,67 +1208,6 @@
             "chp": "§7密码修改成功！",
             "login": "§7登录成功！",
             "register": "§7注册成功！§c注册即表示您同意我们的 §8/§c规则..."
-        },
-        "captcha": {
-            "_prefix": "",
-            "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §eCaptcha §8===-=-=-=-{n}§eCaptcha §8§l» §r§7请完成防机器人验证以继续！",
-            "success": "§eCaptcha §8§l» §r§a验证成功完成！",
-            "wrong_retry": "§eCaptcha §8§l» §r§c回答错误！剩余尝试次数§8: §e{remaining}",
-            "must_complete": "§eCaptcha §8§l» §r§c请先完成防机器人验证再使用命令...",
-            "timeout": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §eCaptcha §8===-=-=-=-{n}§c您的验证码验证时间已过期...",
-            "toomany": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §eCaptcha §8===-=-=-=-{n}§c验证码错误次数过多...",
-            "math": {
-                "prompt": "§eCaptcha §8§l» §r§7§e{expression} §7等于多少？请在聊天中仅输入结果",
-                "popup": "§eCaptcha §8| §f{expression} §8= §e? §8(§c{seconds}s§8)"
-            },
-            "word": {
-                "pool": "AKUNA,DIAMOND,EMERALD,SWORD,DRAGON,PORTAL,CASTLE,STAR,VICTORY,SHIELD,PICKAXE,REDSTONE,OBSIDIAN,ARCHER,COMBAT,TREASURE,CROWN,TROPHY,ARENA,PHOENIX,SAPPHIRE,RUBY",
-                "prompt": "§eCaptcha §8§l» §r§7请在聊天中输入 §e{word} §7以继续",
-                "popup": "§eCaptcha §8| §7输入§8: §e{word} §8(§c{seconds}s§8)"
-            },
-            "window": {
-                "title": "§8点击: {item}",
-                "item_label": "§e§l?",
-                "prompt": "§eCaptcha §8§l» §r§7请在打开的菜单中选择 {item} §8(§7或输入 §8/§7captcha§8)",
-                "popup": "§eCaptcha §8| §7选择 {item} §8(§c{seconds}s§8)",
-                "use_menu": "§eCaptcha §8§l» §r§c请在窗口中选择正确的物品！如果关闭请输入 §8/§ccaptcha"
-            },
-            "map": {
-                "item_name": "§r§e验证地图",
-                "prompt": "§eCaptcha §8§l» §r§7请查看§e手中的地图§7并在聊天中输入显示的代码",
-                "popup": "§eCaptcha §8| §7输入地图上的代码 §8(§c{seconds}s§8)"
-            },
-            "items": {
-                "diamond": "§b钻石",
-                "emerald": "§a绿宝石",
-                "gold_ingot": "§6金锭",
-                "iron_ingot": "§f铁锭",
-                "apple": "§c苹果",
-                "golden_apple": "§e金苹果",
-                "book": "§6书",
-                "compass": "§7指南针",
-                "clock": "§e时钟",
-                "diamond_sword": "§b钻石剑",
-                "bow": "§6弓",
-                "bread": "§e面包",
-                "cake": "§f蛋糕",
-                "bone": "§f骨头",
-                "tnt": "§cTNT",
-                "bookshelf": "§6书架",
-                "obsidian": "§5黑曜石",
-                "glowstone": "§e荧石"
-            },
-            "cmd": {
-                "_prefix": "§eCaptcha §8§l» §r",
-                "no_active": "§c您当前没有待完成的验证挑战...",
-                "usage": "§c用法 §8/§c{label} §8<§cstatus§8|§csurge§8|§ctest§8>",
-                "status": "§7Surge§8: {active} §8(§7模式§8: §e{mode}§8, §7加入§8: §e{recent}§8/§e{threshold} §e{window}s§8, §7剩余§8: §e{remaining}s§8){n}§eCaptcha §8§l» §r§7已启用类型§8: §7{types}",
-                "surge_usage": "§c用法 §8/§c{label} surge §8<§con§8|§coff§8|§cauto§8>",
-                "surge_updated": "§7防机器人模式已设置为 §e{mode}§7！",
-                "test_usage": "§c用法 §8/§c{label} test §8<§cmath§8|§cword§8|§cwindow§8|§cmap§8> [§c玩家§8]",
-                "test_started": "§7已为 §e{player} §7启动 §e{type} §7验证！",
-                "player_offline": "§c玩家 {player} 不在线..."
-            }
         }
     },
     "automsg": {
@@ -3016,11 +2955,5 @@
             "success": "§7称号 §6{titulo} §7已成功购买！"
         },
         "expired": "§6称号 §8§l» §r§7你的称号 §6{titulo} §7已过期..."
-    },
-    "command": {
-        "_prefix": "§c系统 §8§l» §r",
-        "only": {
-            "ingame": "§c此命令只能在游戏内使用..."
-        }
     }
 }

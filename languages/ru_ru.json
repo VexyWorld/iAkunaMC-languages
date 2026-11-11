@@ -1208,67 +1208,6 @@
             "chp": "§7Пароль успешно изменён!",
             "login": "§7Вход выполнен успешно!",
             "register": "§7Вы успешно зарегистрированы! §cРегистрируясь, вы соглашаетесь с нашими §8/§cправилами..."
-        },
-        "captcha": {
-            "_prefix": "",
-            "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §eCaptcha §8===-=-=-=-{n}§eCaptcha §8§l» §r§7Пройдите проверку анти-бот, чтобы продолжить!",
-            "success": "§eCaptcha §8§l» §r§aПроверка успешно пройдена!",
-            "wrong_retry": "§eCaptcha §8§l» §r§cНеверный ответ! Осталось попыток§8: §e{remaining}",
-            "must_complete": "§eCaptcha §8§l» §r§cЗавершите проверку анти-бот перед использованием команд...",
-            "timeout": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §eCaptcha §8===-=-=-=-{n}§cВремя на прохождение капчи истекло...",
-            "toomany": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §eCaptcha §8===-=-=-=-{n}§cСлишком много неверных попыток капчи...",
-            "math": {
-                "prompt": "§eCaptcha §8§l» §r§7Сколько будет §e{expression}§7? Напишите только ответ в чат",
-                "popup": "§eCaptcha §8| §f{expression} §8= §e? §8(§c{seconds}s§8)"
-            },
-            "word": {
-                "pool": "AKUNA,DIAMOND,EMERALD,SWORD,DRAGON,PORTAL,CASTLE,STAR,VICTORY,SHIELD,PICKAXE,REDSTONE,OBSIDIAN,ARCHER,COMBAT,TREASURE,CROWN,TROPHY,ARENA,PHOENIX,SAPPHIRE,RUBY",
-                "prompt": "§eCaptcha §8§l» §r§7Введите слово §e{word} §7в чат, чтобы продолжить",
-                "popup": "§eCaptcha §8| §7Введите§8: §e{word} §8(§c{seconds}s§8)"
-            },
-            "window": {
-                "title": "§8Нажмите: {item}",
-                "item_label": "§e§l?",
-                "prompt": "§eCaptcha §8§l» §r§7Выберите {item} §7в открытом меню §8(§7или §8/§7captcha§8)",
-                "popup": "§eCaptcha §8| §7Выберите {item} §8(§c{seconds}s§8)",
-                "use_menu": "§eCaptcha §8§l» §r§cВыберите нужный предмет в окне! Если закрылось, введите §8/§ccaptcha"
-            },
-            "map": {
-                "item_name": "§r§eКарта Проверки",
-                "prompt": "§eCaptcha §8§l» §r§7Посмотрите на §eкарту в руке §7и введите код в чат",
-                "popup": "§eCaptcha §8| §7Введите код с карты §8(§c{seconds}s§8)"
-            },
-            "items": {
-                "diamond": "§bАлмаз",
-                "emerald": "§aИзумруд",
-                "gold_ingot": "§6Золотой слиток",
-                "iron_ingot": "§fЖелезный слиток",
-                "apple": "§cЯблоко",
-                "golden_apple": "§eЗолотое яблоко",
-                "book": "§6Книга",
-                "compass": "§7Компас",
-                "clock": "§eЧасы",
-                "diamond_sword": "§bАлмазный меч",
-                "bow": "§6Лук",
-                "bread": "§eХлеб",
-                "cake": "§fТорт",
-                "bone": "§fКость",
-                "tnt": "§cТНТ",
-                "bookshelf": "§6Книжная полка",
-                "obsidian": "§5Обсидиан",
-                "glowstone": "§eСветокамень"
-            },
-            "cmd": {
-                "_prefix": "§eCaptcha §8§l» §r",
-                "no_active": "§cУ вас нет активной проверки капчи...",
-                "usage": "§cИспользуйте §8/§c{label} §8<§cstatus§8|§csurge§8|§ctest§8>",
-                "status": "§7Surge§8: {active} §8(§7режим§8: §e{mode}§8, §7входы§8: §e{recent}§8/§e{threshold} §7за §e{window}s§8, §7осталось§8: §e{remaining}s§8){n}§eCaptcha §8§l» §r§7Активные типы§8: §7{types}",
-                "surge_usage": "§cИспользуйте §8/§c{label} surge §8<§con§8|§coff§8|§cauto§8>",
-                "surge_updated": "§7Режим анти-бота изменён на §e{mode}§7!",
-                "test_usage": "§cИспользуйте §8/§c{label} test §8<§cmath§8|§cword§8|§cwindow§8|§cmap§8> [§cигрок§8]",
-                "test_started": "§7Проверка §e{type} §7запущена для §e{player}§7!",
-                "player_offline": "§cИгрок {player} не в сети..."
-            }
         }
     },
     "automsg": {
@@ -3016,11 +2955,5 @@
             "success": "§7Титул §6{titulo} §7успешно куплен!"
         },
         "expired": "§6Титулы §8§l» §r§7Ваш титул §6{titulo} §7истёк..."
-    },
-    "command": {
-        "_prefix": "§cСистема §8§l» §r",
-        "only": {
-            "ingame": "§cЭту команду можно использовать только в игре..."
-        }
     }
 }

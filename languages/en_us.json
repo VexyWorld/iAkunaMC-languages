@@ -1208,67 +1208,6 @@
             "chp": "§7Your password has been changed successfully!",
             "login": "§7Login successful!",
             "register": "§7You have been registered successfully! §cBy registering, you agree to our §8/§crules..."
-        },
-        "captcha": {
-            "_prefix": "",
-            "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §eCaptcha §8===-=-=-=-{n}§eCaptcha §8§l» §r§7Complete the anti-bot verification to continue!",
-            "success": "§eCaptcha §8§l» §r§aVerification completed successfully!",
-            "wrong_retry": "§eCaptcha §8§l» §r§cIncorrect answer! Remaining attempts§8: §e{remaining}",
-            "must_complete": "§eCaptcha §8§l» §r§cComplete the anti-bot challenge before using commands...",
-            "timeout": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §eCaptcha §8===-=-=-=-{n}§cYour captcha verification time has expired...",
-            "toomany": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §eCaptcha §8===-=-=-=-{n}§cToo many failed captcha attempts...",
-            "math": {
-                "prompt": "§eCaptcha §8§l» §r§7What is §e{expression}§7? Type only the result in chat",
-                "popup": "§eCaptcha §8| §f{expression} §8= §e? §8(§c{seconds}s§8)"
-            },
-            "word": {
-                "pool": "AKUNA,DIAMOND,EMERALD,SWORD,DRAGON,PORTAL,CASTLE,STAR,VICTORY,SHIELD,PICKAXE,REDSTONE,OBSIDIAN,ARCHER,COMBAT,TREASURE,CROWN,TROPHY,ARENA,PHOENIX,SAPPHIRE,RUBY",
-                "prompt": "§eCaptcha §8§l» §r§7Type the word §e{word} §7in chat to continue",
-                "popup": "§eCaptcha §8| §7Type§8: §e{word} §8(§c{seconds}s§8)"
-            },
-            "window": {
-                "title": "§8Click: {item}",
-                "item_label": "§e§l?",
-                "prompt": "§eCaptcha §8§l» §r§7Select {item} §7in the open menu §8(§7or use §8/§7captcha§8)",
-                "popup": "§eCaptcha §8| §7Select {item} §8(§c{seconds}s§8)",
-                "use_menu": "§eCaptcha §8§l» §r§cSelect the correct item in the window! If closed, use §8/§ccaptcha"
-            },
-            "map": {
-                "item_name": "§r§eVerification Map",
-                "prompt": "§eCaptcha §8§l» §r§7Look at the §emap in your hand §7and type the code shown in chat",
-                "popup": "§eCaptcha §8| §7Type the map code §8(§c{seconds}s§8)"
-            },
-            "items": {
-                "diamond": "§bDiamond",
-                "emerald": "§aEmerald",
-                "gold_ingot": "§6Gold Ingot",
-                "iron_ingot": "§fIron Ingot",
-                "apple": "§cApple",
-                "golden_apple": "§eGolden Apple",
-                "book": "§6Book",
-                "compass": "§7Compass",
-                "clock": "§eClock",
-                "diamond_sword": "§bDiamond Sword",
-                "bow": "§6Bow",
-                "bread": "§eBread",
-                "cake": "§fCake",
-                "bone": "§fBone",
-                "tnt": "§cTNT",
-                "bookshelf": "§6Bookshelf",
-                "obsidian": "§5Obsidian",
-                "glowstone": "§eGlowstone"
-            },
-            "cmd": {
-                "_prefix": "§eCaptcha §8§l» §r",
-                "no_active": "§cYou have no pending captcha challenge...",
-                "usage": "§cUse §8/§c{label} §8<§cstatus§8|§csurge§8|§ctest§8>",
-                "status": "§7Surge§8: {active} §8(§7mode§8: §e{mode}§8, §7joins§8: §e{recent}§8/§e{threshold} §7in §e{window}s§8, §7left§8: §e{remaining}s§8){n}§eCaptcha §8§l» §r§7Enabled types§8: §7{types}",
-                "surge_usage": "§cUse §8/§c{label} surge §8<§con§8|§coff§8|§cauto§8>",
-                "surge_updated": "§7Anti-bot surge mode set to §e{mode}§7!",
-                "test_usage": "§cUse §8/§c{label} test §8<§cmath§8|§cword§8|§cwindow§8|§cmap§8> [§cplayer§8]",
-                "test_started": "§7Started §e{type} §7challenge for §e{player}§7!",
-                "player_offline": "§cPlayer {player} is not online..."
-            }
         }
     },
     "automsg": {
@@ -3016,11 +2955,5 @@
             "success": "§7Title §6{titulo} §7purchased successfully!"
         },
         "expired": "§6Titles §8§l» §r§7Your title §6{titulo} §7has expired..."
-    },
-    "command": {
-        "_prefix": "§cSystem §8§l» §r",
-        "only": {
-            "ingame": "§cThis command can only be used in-game..."
-        }
     }
 }

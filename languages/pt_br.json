@@ -1208,67 +1208,6 @@
             "chp": "§7Sua senha foi alterada com sucesso!",
             "login": "§7Login efetuado com sucesso!",
             "register": "§7Você foi registrado(a) com sucesso! §cAo se registrar, você concorda com nossas §8/§cregras..."
-        },
-        "captcha": {
-            "_prefix": "",
-            "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §eCaptcha §8===-=-=-=-{n}§eCaptcha §8§l» §r§7Complete a verificação anti-bot para continuar!",
-            "success": "§eCaptcha §8§l» §r§aVerificação concluída com sucesso!",
-            "wrong_retry": "§eCaptcha §8§l» §r§cResposta incorreta! Tentativas restantes§8: §e{remaining}",
-            "must_complete": "§eCaptcha §8§l» §r§cConclua o desafio anti-bot antes de usar comandos...",
-            "timeout": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §eCaptcha §8===-=-=-=-{n}§cSeu tempo para concluir o captcha acabou...",
-            "toomany": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §eCaptcha §8===-=-=-=-{n}§cMuitas tentativas incorretas no captcha...",
-            "math": {
-                "prompt": "§eCaptcha §8§l» §r§7Quanto é §e{expression}§7? Digite apenas o resultado no chat",
-                "popup": "§eCaptcha §8| §f{expression} §8= §e? §8(§c{seconds}s§8)"
-            },
-            "word": {
-                "pool": "AKUNA,DIAMANTE,ESMERALDA,ESPADA,DRAGAO,PORTAL,CASTELO,ESTRELA,VITORIA,ESCUDO,PICARETA,REDSTONE,OBSIDIANA,ARQUEIRO,COMBATE,TESOURO,COROA,TROFEU,ARENA,FENIX,SAFIRA,RUBI",
-                "prompt": "§eCaptcha §8§l» §r§7Digite a palavra §e{word} §7no chat para continuar",
-                "popup": "§eCaptcha §8| §7Digite§8: §e{word} §8(§c{seconds}s§8)"
-            },
-            "window": {
-                "title": "§8Clique em: {item}",
-                "item_label": "§e§l?",
-                "prompt": "§eCaptcha §8§l» §r§7Selecione {item} §7no menu aberto §8(§7ou use §8/§7captcha§8)",
-                "popup": "§eCaptcha §8| §7Selecione {item} §8(§c{seconds}s§8)",
-                "use_menu": "§eCaptcha §8§l» §r§cSelecione o item correto na janela! Se fechou, use §8/§ccaptcha"
-            },
-            "map": {
-                "item_name": "§r§eMapa de Verificação",
-                "prompt": "§eCaptcha §8§l» §r§7Olhe para o §emapa na sua mão §7e digite o código exibido no chat",
-                "popup": "§eCaptcha §8| §7Digite o código do mapa §8(§c{seconds}s§8)"
-            },
-            "items": {
-                "diamond": "§bDiamante",
-                "emerald": "§aEsmeralda",
-                "gold_ingot": "§6Barra de Ouro",
-                "iron_ingot": "§fBarra de Ferro",
-                "apple": "§cMaçã",
-                "golden_apple": "§eMaçã Dourada",
-                "book": "§6Livro",
-                "compass": "§7Bússola",
-                "clock": "§eRelógio",
-                "diamond_sword": "§bEspada de Diamante",
-                "bow": "§6Arco",
-                "bread": "§ePão",
-                "cake": "§fBolo",
-                "bone": "§fOsso",
-                "tnt": "§cTNT",
-                "bookshelf": "§6Estante de Livros",
-                "obsidian": "§5Obsidiana",
-                "glowstone": "§ePedra Luminosa"
-            },
-            "cmd": {
-                "_prefix": "§eCaptcha §8§l» §r",
-                "no_active": "§cVocê não possui nenhum desafio de captcha pendente...",
-                "usage": "§cUtilize §8/§c{label} §8<§cstatus§8|§csurge§8|§ctest§8>",
-                "status": "§7Surge§8: {active} §8(§7modo§8: §e{mode}§8, §7entradas§8: §e{recent}§8/§e{threshold} §7em §e{window}s§8, §7restante§8: §e{remaining}s§8){n}§eCaptcha §8§l» §r§7Tipos ativos§8: §7{types}",
-                "surge_usage": "§cUtilize §8/§c{label} surge §8<§con§8|§coff§8|§cauto§8>",
-                "surge_updated": "§7Modo do anti-bot alterado para §e{mode}§7!",
-                "test_usage": "§cUtilize §8/§c{label} test §8<§cmath§8|§cword§8|§cwindow§8|§cmap§8> [§cjogador§8]",
-                "test_started": "§7Desafio §e{type} §7iniciado para §e{player}§7!",
-                "player_offline": "§cO jogador {player} não está online..."
-            }
         }
     },
     "automsg": {
@@ -3016,11 +2955,5 @@
             "success": "§7Título §6{titulo} §7comprado com sucesso!"
         },
         "expired": "§6Títulos §8§l» §r§7Seu título §6{titulo} §7expirou..."
-    },
-    "command": {
-        "_prefix": "§cSistema §8§l» §r",
-        "only": {
-            "ingame": "§cEste comando só pode ser utilizado dentro do jogo..."
-        }
     }
 }
