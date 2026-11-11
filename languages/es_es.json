@@ -1,129 +1,129 @@
 {
-    "_displayname": "Español (España)",
+    "_displayname": "Español",
     "_authors": [
         "M4theuskkj"
     ],
     "bedwars": {
         "game": {
             "_prefix": "§cBed§fWars §8§l» §r",
-            "waiting": "§cEsperando más jugadores...",
-            "countdown": "§7Comenzando en §c{time}s",
+            "waiting": "§cEsperando a más jugadores...",
+            "countdown": "§7Empieza en §c{time}s",
             "returning": "§7Volviendo al lobby en §c{time}s",
-            "respawning": "§7Renaciendo en §c{time}s",
-            "player_joined": "§c{player} §7entró a la partida §8(§f{count}§8/§f{max}§8)",
-            "player_left": "§c{player} §7salió de la partida §8(§f{count}§8/§f{max}§8)",
-            "player_left_rejoin": "§c{player} §7salió §8(§cRejoin§8)",
+            "respawning": "§7Reviviendo en §c{time}s",
+            "player_joined": "§c{player} §7se metió a la partida §8(§f{count}§8/§f{max}§8)",
+            "player_left": "§c{player} §7se salió de la partida §8(§f{count}§8/§f{max}§8)",
+            "player_left_rejoin": "§c{player} §7se salió §8(§cPuede volver§8)",
             "player_returned": "§c{player} §7volvió a la partida",
             "custom_info": "§7Estás en una sala personalizada creada por §c{creator}",
-            "custom_no_stats": "§7Esta partida no cuenta estadísticas, puedes ver la configuración con §8/§7bwcustom config"
+            "custom_no_stats": "§7Esta partida no cuenta para las stats, puedes ver la config con §8/§7bwcustom config"
         },
         "combat": {
             "_prefix": "§cBed§fWars §8§l» §r",
-            "killed_by": "{victim} §r§7fue matado(a) por {killer}",
-            "killed_by_final": "{victim} §r§7fue matado(a) por {killer} §8(§cKill Final§8)",
-            "fell_void": "{victim} §r§7cayó al vacío",
-            "fell_void_final": "{victim} §r§7cayó al vacío §8(§cKill Final§8)",
+            "killed_by": "{victim} §r§7fue eliminado(a) por {killer}",
+            "killed_by_final": "{victim} §r§7fue eliminado(a) por {killer} §8(§cKill Final§8)",
+            "fell_void": "{victim} §r§7se cayó al vacío",
+            "fell_void_final": "{victim} §r§7se cayó al vacío §8(§cKill Final§8)",
             "infected_by": "{victim} §r§7fue infectado(a) por {killer}",
             "eliminated_by": "{victim} §r§7fue eliminado(a) por {killer}",
-            "team_eliminated": "§cBed§fWars §8§l» §r§7¡El equipo {team} §r§7fue eliminado!",
-            "enderchest_drop": "§cBed§fWars §8§l» §r§7Los objetos del endercofre de {player} §7fueron dropeados en la forja del equipo!"
+            "team_eliminated": "§cBed§fWars §8§l» §r§7¡El equipo {team} §r§7quedó fuera!",
+            "enderchest_drop": "§cBed§fWars §8§l» §r§7Las cosas del endercofre de {player} §7cayeron en la forja de su equipo!"
         },
         "bed": {
             "_prefix": "§cBed§fWars §8§l» §r",
             "destroyed": "§7La cama del equipo {team} §r§7fue destruida por {killer}",
-            "own_destroyed": "§c¡Tu cama fue destruida por {killer}§c! Ya no podrás reaparecer..."
+            "own_destroyed": "§c¡Te destruyeron la cama, {killer}§c! Ya no vas a poder revivir..."
         },
         "trap": {
             "_prefix": "§cBed§fWars §8§l» §r",
-            "enemy": "§c¡Trampa enemiga activada!",
-            "own": "§c¡La trampa de tu isla fue activada!"
+            "enemy": "§c¡Se activó una trampa enemiga!",
+            "own": "§c¡Se activó la trampa de tu isla!"
         },
         "tracker": {
-            "tracking": "§cBed§fWars §8§l» §r§7Rastreando §c{player} §8§7 Distancia§8:§c {distance} §7bloques"
+            "tracking": "§cBed§fWars §8§l» §r§7Rastreando a §c{player} §8§7 Distancia§8:§c {distance} §7bloques"
         },
         "enderchest": {
             "_prefix": "§cBed§fWars §8§l» §r",
-            "stored": "§7Objeto guardado exitosamente",
-            "retrieved": "§7Objeto retirado exitosamente",
+            "stored": "§7Guardaste el item bien",
+            "retrieved": "§7Sacaste el item bien",
             "full": "§cTu endercofre está lleno...",
             "empty": "§cTu endercofre está vacío...",
             "inventory_full": "§cTu inventario está lleno...",
             "cant_store_tools": "§c¡No puedes guardar herramientas!",
-            "cant_store_tools_menu": "§cNo es posible guardar herramientas...",
-            "keep_sword": "§c¡Debes mantener al menos una espada en tu inventario!"
+            "cant_store_tools_menu": "§cNo se pueden guardar herramientas...",
+            "keep_sword": "§c¡Tienes que tener al menos una espada en el inventario!"
         },
         "drop": {
-            "combat_cancel": "§cBed§fWars §8§l» §r§c¡No puedes soltar objetos en combate!"
+            "combat_cancel": "§cBed§fWars §8§l» §r§c¡No puedes tirar items en combate!"
         },
         "teams": {
             "_prefix": "§cBed§fWars §8§l» §r",
-            "vip_only": "§cSolo jugadores con rango §b§l§oAstral§r§c o superior pueden elegir equipos! §oAdquiérelo en https://loja.iakunamc.com",
-            "moved_by_partner": "§7Fuiste movido al equipo {team} §r§7por tu compañero!",
+            "vip_only": "§c¡Solo los que tienen rango §b§l§oAstral§r§c o más pueden elegir equipo! §oCómpralo en https://loja.iakunamc.com",
+            "moved_by_partner": "§7Tu compañero te movió al equipo {team} §r§7!",
             "already_in_team": "§c¡Ya estás en el equipo {team}§r§c!",
             "team_full": "§c¡El equipo {team} §r§cestá lleno!",
-            "joined_team": "§7¡Te uniste al equipo {team}§r §7exitosamente!",
-            "preference_set": "§7Equipo {team} §r§7establecido como preferido",
+            "joined_team": "§7¡Te metiste al equipo {team}§r §7bien!",
+            "preference_set": "§7Equipo {team} §r§7puesto como preferido",
             "invalid_team": "§cEquipo inválido..."
         },
         "rejoin": {
             "_prefix": "§cBed§fWars §8§l» §r",
-            "pending": "§7Saliste de una partida en curso...",
+            "pending": "§7Te saliste de una partida que está en curso...",
             "pending_hint": "§7Usa §8/§7bedwars rejoin para volver a la partida",
-            "no_pending": "§c¡No tienes un rejoin pendiente!",
+            "no_pending": "§c¡No tienes ningún rejoin pendiente!",
             "expired": "§c¡El rejoin expiró!",
-            "game_ended": "§c¡Partida terminada o cama destruida!"
+            "game_ended": "§c¡La partida terminó o te destruyeron la cama!"
         },
         "command": {
             "_prefix": "§cBed§fWars §8§l» §r",
-            "usage": "§7Para unirte usa §8/§7bw entrar §8<§7modo§8> §7o §8/§7bw entrar §8<§7código§8>",
+            "usage": "§7Para entrar usa §8/§7bw entrar §8<§7modo§8> §7o §8/§7bw entrar §8<§7código§8>",
             "usage_leave": "§7Para salir usa §8/§7bw sair",
-            "usage_full": "§7Para unirte usa §8/§7bw entrar §8<§7solo§8|§7duo§8|§7trios§8|§7squad§8|§71v1§8|§7ultra§8|§7infection§8> §7o §8/§7bw entrar §8<§7código§8>",
+            "usage_full": "§7Para entrar usa §8/§7bw entrar §8<§7solo§8|§7duo§8|§7trios§8|§7squad§8|§71v1§8|§7ultra§8|§7infection§8> §7o §8/§7bw entrar §8<§7código§8>",
             "invalid_mode": "§cModo inválido... Modos disponibles§8:§7 {modes}",
             "mode_full": "§cEste modo está lleno...",
             "invalid_code": "§cCódigo inválido o sala llena...",
             "not_in_arena": "§cNo estás en una arena..."
         },
         "custom": {
-            "vip_only": "§cBed§fWars §8§l» §r§cSolo jugadores con rango §7§o§lGalaxy§r§a+§c o superior pueden crear salas personalizadas! §oAdquiérelo en https://loja.iakunamc.com",
-            "created": "§cBed§fWars §8§l» §r§7¡Sala personalizada creada exitosamente!",
+            "vip_only": "§cBed§fWars §8§l» §r§c¡Solo los que tienen rango §7§o§lGalaxy§r§a+§c o más pueden crear salas personalizadas! §oCómpralo en https://loja.iakunamc.com",
+            "created": "§cBed§fWars §8§l» §r§7¡Sala personalizada creada bien!",
             "code": "§cBed§fWars §8§l» §r§7Código de la sala: §c{code}",
-            "join_hint": "§cBed§fWars §8§l» §r§7Otros jugadores pueden unirse con §8/§7bw entrar §c{code}",
-            "create_failed": "§cBed§fWars §8§l» §r§cNo fue posible crear la sala personalizada...",
-            "settings_ignored": "§cBed§fWars §8§l» §r§cAlgunas configuraciones fueron ignoradas...",
+            "join_hint": "§cBed§fWars §8§l» §r§7Los demás pueden entrar con §8/§7bw entrar §c{code}",
+            "create_failed": "§cBed§fWars §8§l» §r§cNo se pudo crear la sala personalizada...",
+            "settings_ignored": "§cBed§fWars §8§l» §r§cAlgunas configs fueron ignoradas...",
             "not_in_custom": "§cBed§fWars §8§l» §r§cNo estás en una sala personalizada...",
-            "no_settings_changed": "§cBed§fWars §8§l» §r§cEsta partida no tiene configuraciones personalizadas...",
-            "settings_header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §7Configuraciones de la sala personalizada §8===-=-=-=-",
-            "create_usage": "§cBed§fWars §8§l» §r§cUsa §8/§cbwcustom crear §8<§cmodo§8> §8<§cconfiguraciones§8>",
-            "no_settings": "§cBed§fWars §8§l» §r§cDebes definir al menos una personalización...",
-            "no_valid_settings": "§cBed§fWars §8§l» §r§cSin configuraciones válidas...",
+            "no_settings_changed": "§cBed§fWars §8§l» §r§cEsta partida no tiene configs personalizadas...",
+            "settings_header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §7Configs de la sala personalizada §8===-=-=-=-",
+            "create_usage": "§cBed§fWars §8§l» §r§cUsa §8/§cbwcustom crear §8<§cmodo§8> §8<§cconfigs§8>",
+            "no_settings": "§cBed§fWars §8§l» §r§cTienes que poner al menos una personalización...",
+            "no_valid_settings": "§cBed§fWars §8§l» §r§cSin configs válidas...",
             "invalid_format": "§cBed§fWars §8§l» §r§cFormato inválido§8: §c{part} §8(§cUsa §ckey§8=§cvalue§8)",
-            "unknown_setting": "§cBed§fWars §8§l» §r§cConfiguración desconocida§8: §c{key}",
-            "unknown_item": "§cBed§fWars §8§l» §r§cObjeto desconocido§8: §c{item}",
+            "unknown_setting": "§cBed§fWars §8§l» §r§cConfig desconocida§8: §c{key}",
+            "unknown_item": "§cBed§fWars §8§l» §r§cItem desconocido§8: §c{item}",
             "unknown_upgrade": "§cBed§fWars §8§l» §r§cMejora desconocida§8: §c{upgrade}",
-            "time_zero": "§cBed§fWars §8§l» §r§cEl tiempo debe ser mayor que cero...",
+            "time_zero": "§cBed§fWars §8§l» §r§cEl tiempo tiene que ser mayor que cero...",
             "invalid_time": "§cBed§fWars §8§l» §r§cTiempo inválido...",
             "invalid_speed": "§cBed§fWars §8§l» §r§cVelocidad inválida...",
-            "speed_zero": "§cBed§fWars §8§l» §r§cLa velocidad debe ser mayor que cero...",
+            "speed_zero": "§cBed§fWars §8§l» §r§cLa velocidad tiene que ser mayor que cero...",
             "speed_max": "§cBed§fWars §8§l» §r§cLa velocidad máxima es 10x...",
-            "forge_level_range": "§cBed§fWars §8§l» §r§cEl nivel de la forja debe estar entre 0 y 3...",
-            "generator_level_range": "§cBed§fWars §8§l» §r§cEl nivel del generador debe estar entre 1 y 3...",
-            "invalid_gen_item": "§cBed§fWars §8§l» §r§cObjeto de generador inválido§8: §c{item}={amount} §8(§cMáximo§8: §c64§8)",
-            "help": "§cBed§fWars §8§l» §r§7Para crear una sala personalizada usa §8/§7bwcustom crear §8<§7modo§8> §8<§7configuraciones§8>",
+            "forge_level_range": "§cBed§fWars §8§l» §r§cEl nivel de la forja tiene que estar entre 0 y 3...",
+            "generator_level_range": "§cBed§fWars §8§l» §r§cEl nivel del generador tiene que estar entre 1 y 3...",
+            "invalid_gen_item": "§cBed§fWars §8§l» §r§cItem de generador inválido§8: §c{item}={amount} §8(§cMáximo§8: §c64§8)",
+            "help": "§cBed§fWars §8§l» §r§7Para crear una sala personalizada usa §8/§7bwcustom crear §8<§7modo§8> §8<§7configs§8>",
             "help_config": "§cBed§fWars §8§l» §r§7Para ver las personalizaciones de una sala usa §8/§7bwcustom config",
             "help_list": "§cBed§fWars §8§l» §r§7Para listar las personalizaciones disponibles usa §8/§7bwcustom list §8<§7configs§8|§7items§8|§7upgrades§8>",
             "list_usage": "§cBed§fWars §8§l» §r§cUsa §8/§cbwcustom list §8<§cconfigs§8|§citems§8|§cupgrades§8>",
-            "list_configs_header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §7Configuraciones disponibles §8===-=-=-=-",
-            "list_items": "§cBed§fWars §8§l» §r§7Objetos disponibles §8(§f{count}§8): §7{list}",
+            "list_configs_header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §7Configs disponibles §8===-=-=-=-",
+            "list_items": "§cBed§fWars §8§l» §r§7Items disponibles §8(§f{count}§8): §7{list}",
             "list_upgrades": "§cBed§fWars §8§l» §r§7Mejoras disponibles §8(§f{count}§8): §7{list}",
-            "show_blocked_items": "§cBed§fWars §8§l» §r§7Objetos Bloqueados §8(§f{count}§8): §7{list}",
-            "show_blocked_upgrades": "§cBed§fWars §8§l» §r§7Mejoras Bloqueadas §8(§f{count}§8): §7{list}",
-            "show_upgrade_time": "§cBed§fWars §8§l» §r§7Tiempo de Mejora§8: §c{time}",
-            "show_forge_speed": "§cBed§fWars §8§l» §r§7Velocidad de la Forja§8: §c{speed}x",
-            "show_diamond_time": "§cBed§fWars §8§l» §r§7Tiempo del Generador de §bDiamante§8: §c{time}",
-            "show_emerald_time": "§cBed§fWars §8§l» §r§7Tiempo del Generador de §2Esmeralda§8: §c{time}",
-            "show_forge_level": "§cBed§fWars §8§l» §r§7Nivel de la Forja§8: §c{level}",
-            "show_generator_level": "§cBed§fWars §8§l» §r§7Nivel de los Generadores§8: §c{level}",
-            "show_beds_destroyed": "§cBed§fWars §8§l» §r§7Camas Destruidas§8: {value}",
+            "show_blocked_items": "§cBed§fWars §8§l» §r§7Items bloqueados §8(§f{count}§8): §7{list}",
+            "show_blocked_upgrades": "§cBed§fWars §8§l» §r§7Mejoras bloqueadas §8(§f{count}§8): §7{list}",
+            "show_upgrade_time": "§cBed§fWars §8§l» §r§7Tiempo de mejora§8: §c{time}",
+            "show_forge_speed": "§cBed§fWars §8§l» §r§7Velocidad de la forja§8: §c{speed}x",
+            "show_diamond_time": "§cBed§fWars §8§l» §r§7Tiempo del generador de §bDiamante§8: §c{time}",
+            "show_emerald_time": "§cBed§fWars §8§l» §r§7Tiempo del generador de §2Esmeralda§8: §c{time}",
+            "show_forge_level": "§cBed§fWars §8§l» §r§7Nivel de la forja§8: §c{level}",
+            "show_generator_level": "§cBed§fWars §8§l» §r§7Nivel de los generadores§8: §c{level}",
+            "show_beds_destroyed": "§cBed§fWars §8§l» §r§7Camas destruidas§8: {value}",
             "beds_yes": "§aSí",
             "beds_no": "§cNo"
         },
@@ -136,15 +136,15 @@
             "load_error": "§cError al cargar la arena...",
             "no_space": "§cNo hay suficiente espacio en la arena...",
             "mode_full": "§cEste modo está lleno...",
-            "click_favorite": "§7Haz clic en un mapa para agregar o quitar de favoritos",
+            "click_favorite": "§7Dale clic a un mapa para ponerlo o quitarlo de favoritos",
             "map_favorited": "§7Mapa {map} agregado a favoritos",
-            "map_unfavorited": "§7Mapa {map} eliminado de favoritos",
+            "map_unfavorited": "§7Mapa {map} quitado de favoritos",
             "confirm_button": "§a§lConfirmar",
             "cancel_button": "§c§lCancelar"
         },
         "shop": {
             "_prefix": "§cBed§fWars §8§l» §r",
-            "no_resources": "§c¡No tienes suficientes recursos para comprar este objeto!",
+            "no_resources": "§c¡No tienes suficientes recursos para comprar este item!",
             "armor_better": "§c¡Ya tienes esta armadura o una mejor!",
             "inventory_full": "§c¡Tu inventario está lleno!",
             "already_has_shears": "§c¡Ya tienes tijeras!"
@@ -152,91 +152,91 @@
         "upgrade": {
             "_prefix": "§cBed§fWars §8§l» §r",
             "max_level": "§c{name} §cya está en el nivel máximo!",
-            "need_diamonds": "§cNecesitas {amount} §bDiamantes §cmás!",
+            "need_diamonds": "§c¡Te faltan {amount} §bDiamantes §cmás!",
             "purchased": "§c{player} §7mejoró {name} §7al nivel §c{level}§7!"
         },
         "generator": {
             "_prefix": "§cBed§fWars §8§l» §r",
-            "upgraded": "§7Los generadores de {type} §7han sido actualizados al nivel §f{level}",
-            "beds_destroyed": "§c¡Todas las camas han sido destruidas!"
+            "upgraded": "§7Los generadores de {type} §7subieron al nivel §f{level}",
+            "beds_destroyed": "§c¡Todas las camas fueron destruidas!"
         },
         "cooldown": {
             "_prefix": "§cBed§fWars §8§l» §r",
-            "egg": "§c¡Espera para usar el Huevo del Puente de nuevo!",
-            "irongolem": "§c¡Espera para invocar un Gólem de Hierro de nuevo!",
-            "silverfish": "§c¡Espera para invocar Pececillos de Plata de nuevo!",
-            "slingshot": "§c¡Espera para usar la Honda de nuevo!",
-            "fireball": "§c¡Espera para usar la Bola de Fuego de nuevo!",
-            "sponge": "§c¡Espera para usar la Esponja de nuevo!",
-            "platform": "§c¡Espera para usar la Plataforma de nuevo!",
-            "bridge": "§c¡Espera para usar el Constructor de Puentes de nuevo!",
-            "tower": "§c¡Espera para usar la Torre Compacta de nuevo!"
+            "egg": "§c¡Espera para usar el Huevo Puente otra vez!",
+            "irongolem": "§c¡Espera para invocar un Gólem de Hierro otra vez!",
+            "silverfish": "§c¡Espera para invocar Pececillos de Plata otra vez!",
+            "slingshot": "§c¡Espera para usar la Honda otra vez!",
+            "fireball": "§c¡Espera para usar la Bola de Fuego otra vez!",
+            "sponge": "§c¡Espera para usar la Esponja otra vez!",
+            "platform": "§c¡Espera para usar la Plataforma otra vez!",
+            "bridge": "§c¡Espera para usar el Constructor de Puentes otra vez!",
+            "tower": "§c¡Espera para usar la Torre Compacta otra vez!"
         },
         "platform": {
             "_prefix": "§cBed§fWars §8§l» §r",
-            "blocked": "§cNo es posible crear la plataforma aquí..."
+            "blocked": "§cNo se puede crear la plataforma aquí..."
         }
     },
     "teampvp": {
         "_prefix": "§aTeamPvP §8§l» §r",
-        "usage": "§7Para unirte usa §8/§7{label} entrar §8<§7equipo§8>{n}§aTeamPvP §8§l» §7Para salir usa §8/§7{label} sair",
+        "usage": "§7Para entrar usa §8/§7{label} entrar §8<§7equipo§8>{n}§aTeamPvP §8§l» §7Para salir usa §8/§7{label} sair",
         "join": {
             "_prefix": "",
             "usage": "§aTeamPvP §8§l» §r§cUsa §8/§c{label} entrar §8<§cequipo§8>"
         },
         "teams": "§cEquipos disponibles§8:§7 {teams}",
-        "sameteam": "§c¡No puedes atacar a un jugador de tu propio equipo!"
+        "sameteam": "§c¡No puedes atacar a alguien de tu propio equipo!"
     },
     "parkour": {
         "_prefix": "§5Parkour §8§l» §r",
         "usage": "§7Para entrar usa §8/§7{label} entrar{n}§5Parkour §8§l» §r§7Para salir usa §8/§7{label} salir",
         "finish": {
-            "time": "§7Completaste el parkour en §5{time}",
+            "time": "§7Terminaste el parkour en §5{time}",
             "personalbest": "§5¡Nuevo récord! §7Tu mejor tiempo§8:§5 {time}",
-            "noreward": "§7¡Felicidades, completaste el parkour!",
-            "reward": "§7¡Felicidades, completaste el parkour y recibiste §7§lNightmare §r§7como recompensa!"
+            "noreward": "§7¡Felicidades, terminaste el parkour!",
+            "reward": "§7¡Felicidades, terminaste el parkour y recibiste §7§lNightmare §r§7como recompensa!"
         }
     },
     "thebridge": {
         "_prefix": "§cThe§9Bridge §8§l» §r",
         "game": {
-            "waiting": "§cEsperando otro jugador...",
-            "countdown": "§7Comenzando en §c{time}s",
+            "waiting": "§cEsperando a otro jugador...",
+            "countdown": "§7Empieza en §c{time}s",
             "releasing": "§7Liberando en §c{time}s",
             "returning": "§7Volviendo al lobby en §c{time}s",
-            "player_joined": "§c{player} §7entró a la partida",
-            "player_quit": "§c{player} §7salió de la partida",
-            "point_scored": "{player} §7marcó un punto",
-            "point_scored_final": "{player} §7marcó un punto §8(§cPunto Final§8)",
-            "killed_by": "§c{victim} §7fue matado(a) por §c{killer}",
-            "own_point": "§c¡No puedes marcar un punto en el lado de tu propio equipo!"
+            "player_joined": "§c{player} §7se metió a la partida",
+            "player_quit": "§c{player} §7se salió de la partida",
+            "point_scored": "{player} §7anotó un punto",
+            "point_scored_final": "{player} §7anotó un punto §8(§cPunto Final§8)",
+            "killed_by": "§c{victim} §7fue eliminado(a) por §c{killer}",
+            "own_point": "§c¡No puedes anotar en el lado de tu propio equipo!"
         },
         "command": {
-            "usage": "§7Para unirte usa §8/§7{label} entrar",
-            "no_arenas": "§cNo hay arenas disponibles en este momento..."
+            "usage": "§7Para entrar usa §8/§7{label} entrar",
+            "no_arenas": "§cNo hay arenas disponibles ahora..."
         },
         "teams": {
             "invalid": "§cEquipo inválido...",
             "already_in": "§c¡Ya estás en el equipo {team}§r§c!",
             "full": "§c¡El equipo {team} §r§cestá lleno!",
-            "joined": "§7¡Ingresaste al equipo {team}§r §7exitosamente!"
+            "joined": "§7¡Entraste al equipo {team}§r §7bien!"
         }
     },
     "skywars": {
         "_prefix": "§fSky§bWars §8§l» §r",
         "state": {
-            "waiting": "§cEsperando más jugadores...",
-            "starting": "§7Comenzando en §b{start}s",
+            "waiting": "§cEsperando a más jugadores...",
+            "starting": "§7Empieza en §b{start}s",
             "finish": "§7Volviendo al lobby en §b{time}s"
         },
         "player": {
-            "join": "§b{player} §7entró en la partida §8(§f{count}§8/§f{maxPlayers}§8)",
-            "quit": "§b{player} §7salió de la partida §8(§f{count}§8/§f{maxPlayers}§8)",
-            "killed_by": "§b{player} §7fue asesinado por §b{killer} §8(§f{alive}§8/§f{maxPlayers}§8)",
-            "killed_void": "§b{player} §7cayó al vacío §8(§f{alive}§8/§f{maxPlayers}§8)"
+            "join": "§b{player} §7se metió a la partida §8(§f{count}§8/§f{maxPlayers}§8)",
+            "quit": "§b{player} §7se salió de la partida §8(§f{count}§8/§f{maxPlayers}§8)",
+            "killed_by": "§b{player} §7fue eliminado(a) por §b{killer} §8(§f{alive}§8/§f{maxPlayers}§8)",
+            "killed_void": "§b{player} §7se cayó al vacío §8(§f{alive}§8/§f{maxPlayers}§8)"
         },
         "refill": {
-            "done": "§7¡Todos los cofres han sido rellenados!"
+            "done": "§7¡Todos los cofres fueron rellenados!"
         },
         "scoreboard": {
             "_prefix": "",
@@ -269,9 +269,9 @@
             "wrong_mode": "§cEste mapa es del modo {mode}...",
             "load_error": "§cError al cargar la arena...",
             "no_space": "§cNo hay suficiente espacio en la arena...",
-            "click_favorite": "§7Haz clic en un mapa para añadirlo o quitarlo de favoritos",
-            "map_favorited": "§7Mapa {map} añadido a favoritos",
-            "map_unfavorited": "§7Mapa {map} eliminado de favoritos",
+            "click_favorite": "§7Dale clic a un mapa para ponerlo o quitarlo de favoritos",
+            "map_favorited": "§7Mapa {map} agregado a favoritos",
+            "map_unfavorited": "§7Mapa {map} quitado de favoritos",
             "confirm_button": "§a§lConfirmar",
             "cancel_button": "§c§lCancelar"
         },
@@ -280,16 +280,16 @@
     "mlgblock": {
         "state": {
             "_prefix": "§eMlg§fBlock §8§l» §r",
-            "waiting": "§cEsperando más jugadores...",
-            "starting": "§7Comenzando en §e{start}s",
+            "waiting": "§cEsperando a más jugadores...",
+            "starting": "§7Empieza en §e{start}s",
             "finish": "§7Volviendo al lobby en §e{time}s"
         },
         "player": {
             "_prefix": "§eMlg§fBlock §8§l» §r",
-            "join": "§e{player} §7se unió a la partida §8(§f{count}§8/§f{slots}§8)",
-            "quit": "§e{player} §7salió de la partida §8(§f{count}§8/§f{slots}§8)",
-            "killed_by": "§e{player} §7fue eliminado por §e{killer} §8(§f{alive}§8/§f{slots}§8)",
-            "killed_void": "§e{player} §7cayó al vacío §8(§f{alive}§8/§f{slots}§8)"
+            "join": "§e{player} §7se metió a la partida §8(§f{count}§8/§f{slots}§8)",
+            "quit": "§e{player} §7se salió de la partida §8(§f{count}§8/§f{slots}§8)",
+            "killed_by": "§e{player} §7fue eliminado(a) por §e{killer} §8(§f{alive}§8/§f{slots}§8)",
+            "killed_void": "§e{player} §7se cayó al vacío §8(§f{alive}§8/§f{slots}§8)"
         },
         "command": {
             "_prefix": "§eMlg§fBlock §8§l» §r",
@@ -303,18 +303,18 @@
     "blocksumo": {
         "state": {
             "_prefix": "§bBlock§fSumo §8§l» §r",
-            "waiting": "§cEsperando más jugadores...",
-            "starting": "§7Comenzando en §b{start}s",
+            "waiting": "§cEsperando a más jugadores...",
+            "starting": "§7Empieza en §b{start}s",
             "finish": "§7Volviendo al lobby en §b{time}s"
         },
         "player": {
             "_prefix": "§bBlock§fSumo §8§l» §r",
-            "join": "§b{player} §7se unió a la partida §8(§f{count}§8/§f{slots}§8)",
-            "quit": "§b{player} §7salió de la partida §8(§f{count}§8/§f{slots}§8)",
-            "killed_by": "§b{player} §7fue eliminado por §b{killer} §8(§f{alive}§8/§f{slots}§8)",
+            "join": "§b{player} §7se metió a la partida §8(§f{count}§8/§f{slots}§8)",
+            "quit": "§b{player} §7se salió de la partida §8(§f{count}§8/§f{slots}§8)",
+            "killed_by": "§b{player} §7fue eliminado(a) por §b{killer} §8(§f{alive}§8/§f{slots}§8)",
             "killed_by_final": "§b{player} §7fue §celiminado definitivamente §7por §b{killer} §8(§f{alive}§8/§f{slots}§8)",
-            "killed_void": "§b{player} §7cayó al vacío §8(§f{alive}§8/§f{slots}§8)",
-            "respawning": "§7Renaciendo en §b{time}s"
+            "killed_void": "§b{player} §7se cayó al vacío §8(§f{alive}§8/§f{slots}§8)",
+            "respawning": "§7Reviviendo en §b{time}s"
         },
         "command": {
             "_prefix": "§bBlock§fSumo §8§l» §r",
@@ -328,19 +328,19 @@
     "plot": {
         "popup": {
             "_prefix": "§9Plot §8§l» §r",
-            "owner": "§7Propiedad de §9{owner} §8- §7Nota§8:§9 {rating}",
-            "rate": "§7¿Te gusta esta parcela? ¡Calíficala con §8/§7p rate!",
+            "owner": "§7De §9{owner} §8- §7Nota§8:§9 {rating}",
+            "rate": "§7¿Te gusta esta parcela? ¡Califícala con §8/§7p rate!",
             "available": "§7¡Esta parcela está libre! Reclámala por §c{price} Akunas §7con /p claim"
         },
         "command": {
             "desc": "§7Gestiona tus parcelas",
             "usage": "§9Plot §8§l» §r§cUsa §8/§cplot §8<§cayuda§8|§csub-cmd§8> §8[§copciones§8]",
-            "unknown": "§9Plot §8§l» §r§cSubcomando desconocido, usa §8/§cp ayuda para ver comandos disponibles"
+            "unknown": "§9Plot §8§l» §r§cSubcomando desconocido, usa §8/§cp ayuda para ver los comandos disponibles"
         },
         "subcommand": {
             "usage": "§9Plot §8§l» §r§cUso: {usage}"
         },
-        "error": "§9Plot §8§l» §r§c¡Oops! Algo salió mal...",
+        "error": "§9Plot §8§l» §r§c¡Ups! Algo salió mal...",
         "notinplot": "§9Plot §8§l» §r§cNo estás dentro de una parcela...",
         "notowner": "§9Plot §8§l» §r§cNo eres el dueño de esta parcela...",
         "confirm": "confirm",
@@ -351,22 +351,22 @@
             "entry": "§9Plot §8§l» §r§8/§7p {name} §8-§7 {desc}"
         },
         "addhelper": {
-            "desc": "§7Añade un ayudante a tu parcela",
+            "desc": "§7Agrega un ayudante a tu parcela",
             "usage": "§8/§cp addhelper §8<§cjugador§8>",
             "alreadyone": "§9Plot §8§l» §r§c{player} ya es un ayudante...",
             "success": "§9Plot §8§l» §r§9{player} §7ahora es ayudante de tu parcela",
             "everyone": {
-                "success": "§9Plot §8§l» §r§7¡Todos los jugadores son ahora ayudantes!"
+                "success": "§9Plot §8§l» §r§7¡Todos los jugadores son ayudantes ahora!"
             },
             "offline": "§cSistema §8§l» §r§cJugador desconectado"
         },
         "removehelper": {
-            "desc": "§7Elimina un ayudante de tu parcela",
+            "desc": "§7Quita un ayudante de tu parcela",
             "usage": "§8/§cp removehelper §8<§cjugador§8>",
             "notone": "§9Plot §8§l» §r§c{player} no es un ayudante...",
-            "success": "§9Plot §8§l» §r§9{player} §7fue eliminado de los ayudantes...",
+            "success": "§9Plot §8§l» §r§9{player} §7fue quitado de los ayudantes...",
             "everyone": {
-                "success": "§9Plot §8§l» §r§7¡Todos los jugadores fueron eliminados de los ayudantes!"
+                "success": "§9Plot §8§l» §r§7¡Todos los jugadores fueron quitados de los ayudantes!"
             }
         },
         "claim": {
@@ -374,50 +374,50 @@
             "usage": "§8/§cp claim §8<§cnombre§8>",
             "yourplot": "§9Plot §8§l» §r§cYa reclamaste esta parcela",
             "alreadyclaimed": "§9Plot §8§l» §r§cEsta parcela ya fue reclamada por {owner}",
-            "nomoney": "§9Plot §8§l» §r§cNo tienes suficiente dinero para reclamar esta parcela",
+            "nomoney": "§9Plot §8§l» §r§cNo tienes suficiente plata para reclamar esta parcela",
             "success": "§9Plot §8§l» §r§7¡Parcela reclamada con éxito!"
         },
         "auto": {
-            "desc": "§7Teleporta a la próxima parcela libre",
+            "desc": "§7Te lleva a la próxima parcela libre",
             "usage": "§8/§cp auto",
             "notplotworld": "§9Plot §8§l» §r§cNo estás en el mundo Plot...",
-            "success": "§9Plot §8§l» §r§7¡Teleportado a la parcela libre §9{x}§8;§9{z} §7con éxito!",
+            "success": "§9Plot §8§l» §r§7¡Te llevaron a la parcela libre §9{x}§8;§9{z} §7bien!",
             "noplots": "§9Plot §8§l» §r§7No hay parcelas disponibles..."
         },
         "dispose": {
             "desc": "§7Descarta tu parcela",
             "usage": "§8/§cp dispose",
-            "confirm": "§9Plot §8§l» §r§7¿Seguro que deseas descartar la parcela §9{plot}§7? Usa §8/§7p dispose confirm",
+            "confirm": "§9Plot §8§l» §r§7¿Seguro que quieres descartar la parcela §9{plot}§7? Usa §8/§7p dispose confirm",
             "success": "§9Plot §8§l» §r§7¡Parcela descartada con éxito!"
         },
         "reset": {
-            "desc": "§7Resetea tu parcela",
+            "desc": "§7Reinicia tu parcela",
             "usage": "§8/§cp reset",
-            "confirm": "§9Plot §8§l» §r§7¿Seguro que deseas resetear la parcela §9{plot}§7? Usa §8/§7p reset confirm",
-            "success": "§9Plot §8§l» §r§7¡Parcela reseteada con éxito!",
-            "already_clearing": "§9Plot §8§l» §r§cEsta parcela ya está siendo reseteada..."
+            "confirm": "§9Plot §8§l» §r§7¿Seguro que quieres reiniciar la parcela §9{plot}§7? Usa §8/§7p reset confirm",
+            "success": "§9Plot §8§l» §r§7¡Parcela reiniciada con éxito!",
+            "already_clearing": "§9Plot §8§l» §r§cEsta parcela ya está siendo reiniciada..."
         },
         "clear": {
             "desc": "§7Limpia tu parcela",
             "usage": "§8/§cp clear",
-            "confirm": "§9Plot §8§l» §r§7¿Seguro que deseas limpiar la parcela §9{plot}§7? Usa §8/§7p clear confirm",
+            "confirm": "§9Plot §8§l» §r§7¿Seguro que quieres limpiar la parcela §9{plot}§7? Usa §8/§7p clear confirm",
             "success": "§9Plot §8§l» §r§7¡Parcela limpiada con éxito!",
             "already_clearing": "§9Plot §8§l» §r§cEsta parcela ya está siendo limpiada..."
         },
         "biome": {
             "desc": "§7Cambia el bioma de tu parcela",
             "usage": "§8/§cp biome §8[§cbioma§8]",
-            "success": "§9Plot §8§l» §r§7¡Bioma de la parcela cambiado a §9{biome} §7con éxito!",
-            "invalid": "§9Plot §8§l» §r§cEste bioma no existe...",
+            "success": "§9Plot §8§l» §r§7¡Bioma de la parcela cambiado a §9{biome} §7bien!",
+            "invalid": "§9Plot §8§l» §r§cEse bioma no existe...",
             "possible": "§9Plot §8§l» §r§7Biomas disponibles§8:§7 {biomes}"
         },
         "home": {
-            "desc": "§7Viaja a una de tus parcelas",
+            "desc": "§7Ve a una de tus parcelas",
             "usage": "§8/§cp home §8<§cid§8>",
             "noplots": "§9Plot §8§l» §r§cNo tienes ninguna parcela",
             "notexist": "§9Plot §8§l» §r§cNo tienes una parcela con id {id}",
-            "success": "§9Plot §8§l» §r§7¡Teleportado a la parcela §9{plot} §7con éxito!",
-            "error": "§9Plot §8§l» §r§cNo se pudo viajar a la parcela..."
+            "success": "§9Plot §8§l» §r§7¡Te llevaron a la parcela §9{plot} §7bien!",
+            "error": "§9Plot §8§l» §r§cNo se pudo ir a la parcela..."
         },
         "homes": {
             "desc": "§7Muestra tus parcelas",
@@ -427,10 +427,10 @@
             "invalid_page": "§cSistema §8§l» §r§cPágina inválida, solo hay §c{total} §cpáginas..."
         },
         "info": {
-            "desc": "§7Muestra información sobre una parcela",
+            "desc": "§7Muestra info de una parcela",
             "usage": "§8/§cp info",
-            "about": "§9Plot §8§l» §r§7Información sobre la parcela §9{plot}",
-            "owner": "§9Plot §8§l» §r§7Propietario§8:§9 {owner}",
+            "about": "§9Plot §8§l» §r§7Info de la parcela §9{plot}",
+            "owner": "§9Plot §8§l» §r§7Dueño§8:§9 {owner}",
             "plotname": "§9Plot §8§l» §r§7Nombre§8:§9 {name}",
             "helpers": "§9Plot §8§l» §r§7Ayudantes §8(§f{count}§8):§7 {helpers}",
             "biome": "§9Plot §8§l» §r§7Bioma§8:§9 {biome}",
@@ -442,67 +442,67 @@
             "desc": "§7Genera un nuevo mundo de parcelas",
             "usage": "§8/§cp generate §8<§cnombre§8>",
             "exists": "§9Plot §8§l» §r§cEl mundo {name} ya existe",
-            "success": "§9Plot §8§l» §r§7Mundo de parcelas generado con éxito: {name}",
-            "error": "§9Plot §8§l» §r§cEl mundo no pudo ser generado..."
+            "success": "§9Plot §8§l» §r§7Mundo de parcelas generado bien: {name}",
+            "error": "§9Plot §8§l» §r§cNo se pudo generar el mundo..."
         },
         "give": {
-            "desc": "§7Da tu parcela a otro jugador",
+            "desc": "§7Dale tu parcela a otro jugador",
             "usage": "§8/§cp give §8<§cjugador§8>",
             "notonline": "§9Plot §8§l» §r§cJugador desconectado",
             "toself": "§9Plot §8§l» §r§cNo puedes darte una parcela a ti mismo...",
             "requests_disabled": "§cSistema §8§l» §r§cEste jugador desactivó la recepción de solicitudes...",
             "pending_exists": "§cSistema §8§l» §r§cEste jugador ya tiene una solicitud pendiente...",
             "expired": "§9Plot §8§l» §r§cLa solicitud de transferencia de parcela expiró...",
-            "sent": "§9Plot §8§l» §r§7Solicitud de transferencia enviada a §9{player}§7!",
+            "sent": "§9Plot §8§l» §r§7¡Solicitud de transferencia enviada a §9{player}§7!",
             "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §7Transferencia de §9Parcela§8===-=-=-",
-            "request": "§9Plot §8§l» §r§9{player} §7quiere darte la parcela §9{x}§8;§9{z}",
+            "request": "§9Plot §8§l» §r§9{player} §7te quiere dar la parcela §9{x}§8;§9{z}",
             "instructions": "§9Plot §8§l» §r§7Usa §a/p accepttransfer §7para aceptar o §c/p denytransfer §7para rechazar"
         },
         "warp": {
-            "desc": "§7Teleporta a una parcela",
+            "desc": "§7Te lleva a una parcela",
             "usage": "§8/§cp warp §8<§cid§8>",
-            "wrongid": "§9Plot §8§l» §r§cEl id debe estar en formato X;Z",
+            "wrongid": "§9Plot §8§l» §r§cEl id tiene que estar en formato X;Z",
             "notinplotworld": "§9Plot §8§l» §r§cNo estás en el mundo Plot...",
-            "unclaimed": "§9Plot §8§l» §r§cEsta parcela no pertenece a nadie...",
-            "success": "§9Plot §8§l» §r§7¡Fuiste teleportado a la parcela §9{plot}§7!"
+            "unclaimed": "§9Plot §8§l» §r§cEsta parcela no es de nadie...",
+            "success": "§9Plot §8§l» §r§7¡Te llevaron a la parcela §9{plot}§7!"
         },
         "resetplots": {
-            "desc": "§7Resetea todas las parcelas de un jugador",
+            "desc": "§7Reinicia todas las parcelas de un jugador",
             "usage": "§8/§cp resetplots §8<§cjugador§8>"
         },
         "rate": {
-            "desc": "§7Valora una parcela",
+            "desc": "§7Califica una parcela",
             "usage": "§8/§cp rate §8<§cnota - 1 a 5§8>",
-            "invalid_range": "§9Plot §8§l» §r§cLa nota debe estar entre 1 y 5...",
-            "self": "§9Plot §8§l» §r§cNo puedes valorar tu propia parcela...",
-            "notify_owner": "§9Plot §8§l» §r §9{player} §7valoró tu parcela §9{x}§8;§9{z} §7con §9{rating} §7estrellas!",
-            "success": "§9Plot §8§l» §r§7¡Valoración enviada! Nota promedio de la parcela§8:§9 {score}"
+            "invalid_range": "§9Plot §8§l» §r§cLa nota tiene que estar entre 1 y 5...",
+            "self": "§9Plot §8§l» §r§cNo puedes calificar tu propia parcela...",
+            "notify_owner": "§9Plot §8§l» §r §9{player} §7calificó tu parcela §9{x}§8;§9{z} §7con §9{rating} §7estrellas!",
+            "success": "§9Plot §8§l» §r§7¡Calificación enviada! Nota promedio de la parcela§8:§9 {score}"
         },
         "top": {
-            "desc": "§7Muestra el top 10 de parcelas mejor valoradas",
+            "desc": "§7Muestra el top 10 de parcelas mejor calificadas",
             "usage": "§8/§cp top",
             "header": "§8-=-=-=-=== §bTop 10 §8- §9Plots §8===-=-=-=-",
             "entry": "§9{pos} §8§l» §r§9{x}§8;§9{z} §8-§9 {owner} §8- §9{score} §8(§9{ratings} §7Valoraciones§8)",
-            "noplots": "§9Plot §8§l» §r§cNo se encontraron parcelas valoradas..."
+            "noplots": "§9Plot §8§l» §r§cNo se encontraron parcelas calificadas..."
         },
         "allow": {
-            "desc": "§7Permite a todos o a un jugador entrar en tu parcela",
+            "desc": "§7Permite a todos o a un jugador entrar a tu parcela",
             "usage": "§8/§cp allow §8<§cjugador§8|§c*§8>",
             "everyone": {
-                "success": "§9Plot §8§l» §r§7¡Todos los jugadores pueden entrar en la parcela!"
+                "success": "§9Plot §8§l» §r§7¡Todos pueden entrar a la parcela!"
             },
-            "success": "§9Plot §8§l» §r§9{player} §7ahora puede entrar en la parcela!",
+            "success": "§9Plot §8§l» §r§9{player} §7ahora puede entrar a la parcela!",
             "already": {
                 "allowed": "§9Plot §8§l» §r§c{player} ya está permitido..."
             }
         },
         "deny": {
-            "desc": "§7Bloquea a todos o a un jugador de entrar en tu parcela",
+            "desc": "§7Bloquea a todos o a un jugador de entrar a tu parcela",
             "usage": "§8/§cp deny §8<§cjugador§8|§c*§8>",
             "everyone": {
-                "success": "§9Plot §8§l» §r§7¡Todos los jugadores fueron bloqueados!"
+                "success": "§9Plot §8§l» §r§7¡Todos fueron bloqueados!"
             },
-            "success": "§9Plot §8§l» §r§9{player} §7fue bloqueado con éxito!",
+            "success": "§9Plot §8§l» §r§9{player} §7fue bloqueado bien!",
             "already": {
                 "denied": "§9Plot §8§l» §r§c{player} ya está bloqueado..."
             }
@@ -510,10 +510,10 @@
         "biomecolor": {
             "desc": "§7Cambia el color del bioma de tu parcela",
             "usage": "§8/§cp biomecolor §8<§cr§8,§cg§8,§cb§8>",
-            "success": "§9Plot §8§l» §r§7¡Color del bioma cambiado a §9{r}§8,§9{g}§8,§9{b} §7con éxito!",
+            "success": "§9Plot §8§l» §r§7¡Color del bioma cambiado a §9{r}§8,§9{g}§8,§9{b} §7bien!",
             "invalid_format": "§9Plot §8§l» §r§cUsa §8/§cp biomecolor §8<§cr§8,§cg§8,§cb§8>",
-            "invalid_type": "§9Plot §8§l» §r§cLos colores deben ser números (formato rgb)...",
-            "invalid_range": "§9Plot §8§l» §r§cLos valores de color deben estar entre 0 - 255..."
+            "invalid_type": "§9Plot §8§l» §r§cLos colores tienen que ser números (formato rgb)...",
+            "invalid_range": "§9Plot §8§l» §r§cLos valores de color tienen que estar entre 0 - 255..."
         },
         "accepttransfer": {
             "desc": "§7Acepta una transferencia de parcela",
@@ -521,7 +521,7 @@
             "no_pending": "§cSistema §8§l» §r§cNo tienes ninguna solicitud pendiente...",
             "invalid_data": "§9Plot §8§l» §r§cDatos de la parcela inválidos...",
             "not_exists": "§9Plot §8§l» §r§cLa parcela no existe...",
-            "not_owner": "§9Plot §8§l» §r§cLa parcela ya no pertenece a {owner}...",
+            "not_owner": "§9Plot §8§l» §r§cLa parcela ya no es de {owner}...",
             "success": "§9Plot §8§l» §r§7¡Aceptaste la transferencia de la parcela §9{plot}§7!",
             "notify_sender": "§9Plot §8§l» §r§9{player} §7aceptó la transferencia de la parcela §9{plot}§7!"
         },
@@ -533,23 +533,23 @@
             "notify_sender": "§9Parcela §8§l» §r§9{player} §7rechazó la transferencia de la parcela..."
         },
         "setdesc": {
-            "desc": "§7Establece la descripción de tu parcela",
+            "desc": "§7Pone la descripción de tu parcela",
             "usage": "§8/§cp setdesc §8<§cdescripción§8>",
-            "empty": "§9Parcela §8§l» §r§cUtiliza §8/§cp setdesc §8<§cdescripción§8> para establecer una descripción...",
-            "success": "§9Parcela §8§l» §r§7¡Descripción de la parcela cambiada con éxito!"
+            "empty": "§9Parcela §8§l» §r§cUsa §8/§cp setdesc §8<§cdescripción§8> para poner una descripción...",
+            "success": "§9Parcela §8§l» §r§7¡Descripción de la parcela cambiada bien!"
         }
     },
     "cosmetic": {
         "bedwars": {
             "bed_break": {
                 "explosion": {
-                    "description": "Una explosión devastadora al destruir la cama"
+                    "description": "Una explosión que la rompe toda al destruir la cama"
                 },
                 "ores": {
                     "description": "Minerales preciosos explotan alrededor de la cama destruida"
                 },
                 "rainbow": {
-                    "description": "Una explosión colorida de lana al destruir la cama"
+                    "description": "Una explosión de lana de colores al destruir la cama"
                 }
             },
             "final_kill": {
@@ -557,7 +557,7 @@
                     "description": "Sangre..."
                 },
                 "lightning": {
-                    "description": "Un rayo cae sobre el jugador eliminado"
+                    "description": "Cae un rayo sobre el jugador eliminado"
                 },
                 "ez": {
                     "description": "Muestra un texto que dice EZ"
@@ -566,7 +566,7 @@
                     "description": "Muestra un texto que dice L"
                 },
                 "smoke": {
-                    "description": "Una nube de humo se eleva sobre el enemigo eliminado"
+                    "description": "Una nube de humo sube sobre el enemigo eliminado"
                 },
                 "critical": {
                     "description": "Partículas críticas explotan sobre el enemigo eliminado"
@@ -585,7 +585,7 @@
             },
             "win": {
                 "firework": {
-                    "description": "Fuegos artificiales coloridos explotan alrededor del ganador"
+                    "description": "Fuegos artificiales de colores explotan alrededor del ganador"
                 },
                 "enchant": {
                     "description": "Partículas mágicas rodean al ganador"
@@ -635,7 +635,7 @@
                     "description": "Sangre salpica en la posición de la víctima"
                 },
                 "lightning": {
-                    "description": "Un rayo cae sobre la víctima al morir"
+                    "description": "Cae un rayo sobre la víctima al morir"
                 },
                 "ez": {
                     "description": "EZ flota sobre la víctima"
@@ -660,7 +660,7 @@
                     "description": "Sangre salpica en la posición de la víctima"
                 },
                 "lightning": {
-                    "description": "Un rayo cae sobre la víctima al morir"
+                    "description": "Cae un rayo sobre la víctima al morir"
                 },
                 "ez": {
                     "description": "EZ flota sobre la víctima"
@@ -674,7 +674,7 @@
                     "description": "Sangre..."
                 },
                 "lightning": {
-                    "description": "Un rayo cae sobre el jugador eliminado"
+                    "description": "Cae un rayo sobre el jugador eliminado"
                 },
                 "ez": {
                     "description": "Muestra el texto EZ al eliminar"
@@ -744,7 +744,7 @@
             "_prefix": "§5Cosméticos §8§l» §r",
             "usage": "§cUsa §8/§c{label} on §8<§ccosmético§8> [§cminijuego§8] [§ctipo§8]",
             "not_owned": "§c¡No tienes este cosmético!",
-            "success": "§7Cosmético §5{cosmetic}§7 activado correctamente",
+            "success": "§7Cosmético §5{cosmetic}§7 activado bien",
             "failed": "§c¡Error al activar el cosmético!"
         },
         "unset": {
@@ -761,7 +761,7 @@
         "info": {
             "_prefix": "§5Cosméticos §8§l» §r",
             "usage": "§cUsa §8/§c{label} info §8<§ccosmético§8> [§cminijuego§8] [§ctipo§8]",
-            "title": "§7Información de §5{cosmetic}§8:",
+            "title": "§7Info de §5{cosmetic}§8:",
             "minigame": "§7Minijuego§8: §5{minigame}",
             "type": "§7Tipo§8: §5{type}",
             "description": "§7Descripción§8: §5{description}",
@@ -773,7 +773,7 @@
         "cosmetic": {
             "_prefix": "§5Cosméticos §8§l» §r",
             "not_found": "§cCosmético no encontrado...",
-            "ambiguous": "§cEste nombre existe en más de un tipo, especifica el minijuego y el tipo!"
+            "ambiguous": "§cEste nombre existe en más de un tipo, ¡especifica el minijuego y el tipo!"
         },
         "minigame": {
             "invalid": "§5Cosméticos §8§l» §r§c¡Minijuego inválido!"
@@ -786,7 +786,7 @@
         "title": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §5Cosméticos §8===-=-=-=-",
         "buy": {
             "title": "§7Comprar§8: §7{cosmetic} §8- §c{cost} Akunas",
-            "success": "§5Cosméticos §8§l» §r§7¡Has comprado el cosmético §5{cosmetic} §7con éxito!",
+            "success": "§5Cosméticos §8§l» §r§7¡Compraste el cosmético §5{cosmetic} §7bien!",
             "confirm": "§aConfirmar",
             "cancel": "§cCancelar"
         },
@@ -795,13 +795,13 @@
         "perm_only_label": "§5Exclusivo por permiso",
         "perm_required": "§5Cosméticos §8§l» §r§c¡No tienes permiso para este cosmético!",
         "set": {
-            "success": "§5Cosméticos §8§l» §r§7Cosmético §5{cosmetic} §7activado correctamente!"
+            "success": "§5Cosméticos §8§l» §r§7Cosmético §5{cosmetic} §7activado bien!"
         },
         "disable": {
-            "success": "§5Cosméticos §8§l» §r§7Cosmético §5{cosmetic} §7desactivado correctamente!",
+            "success": "§5Cosméticos §8§l» §r§7Cosmético §5{cosmetic} §7desactivado bien!",
             "type_success": "§5Cosméticos §8§l» §r§7Cosmético predeterminado activado en §5{minigame} §8[§5{type}§8]",
             "minigame_success": "§5Cosméticos §8§l» §r§7Cosméticos predeterminados activados en §5{minigame}",
-            "all_success": "§5Cosméticos §8§l» §r§7Todos los cosméticos han sido desactivados",
+            "all_success": "§5Cosméticos §8§l» §r§7Todos los cosméticos fueron desactivados",
             "button_type": "§cDesactivar cosmético del tipo",
             "button_minigame": "§cDesactivar cosméticos del modo",
             "button_all": "§cDesactivar todos los cosméticos"
@@ -817,9 +817,9 @@
     "pay": {
         "_prefix": "§aEconomía §8§l» §r",
         "insufficient_balance": "§cNo tienes suficientes Akunas para hacer esta transacción...",
-        "invalid_amount": "§cLa cantidad debe ser un número y no puede ser menor o igual a 0...",
+        "invalid_amount": "§cLa cantidad tiene que ser un número y no puede ser menor o igual a 0...",
         "receive": "§7¡Recibiste §c{amount} Akunas§7 de §a{player}§7!",
-        "success": "§7¡Enviaste §c{amount} Akunas§7 a la cuenta de §a{target}§7 con éxito!",
+        "success": "§7¡Le enviaste §c{amount} Akunas§7 a la cuenta de §a{target}§7 bien!",
         "usage": "§cUsa §8/§c{label} §8<§cjugador§8> <§ccantidad§8>"
     },
     "economy": {
@@ -849,7 +849,7 @@
             "description": "¡Ahora puedes usar bolas de nieve como perlas de ender!"
         },
         "cheststealer": {
-            "description": "Al hacer clic en un cofre, recibes automáticamente sus objetos"
+            "description": "Al hacer clic en un cofre, recibes automáticamente sus items"
         },
         "featherboost": {
             "description": "Aumenta el impulso de tu pluma"
@@ -916,16 +916,16 @@
             "usage": "§cUsa §8/§c{label} on §8<§chabilidad§8> [minijuego]",
             "not_owned": "§c¡No tienes esta habilidad!",
             "already_active": "§cEsta habilidad ya está activa...",
-            "limit_reached": "§cHas alcanzado el límite de {limit} habilidades activas...",
-            "success": "§7Habilidad §a{skill}§7 activada con éxito",
+            "limit_reached": "§cLlegaste al límite de {limit} habilidades activas...",
+            "success": "§7Habilidad §a{skill}§7 activada bien",
             "failed": "§c¡Error al activar la habilidad!"
         },
         "deactivate": {
             "usage": "§cUsa §8/§c{label} off §8<§cminijuego§8> <§chabilidad§8>",
             "not_active": "§c¡Esta habilidad no está activa!",
-            "success": "§7Habilidad §a{skill}§7 desactivada con éxito",
-            "all_success": "§7Todas las habilidades han sido desactivadas con éxito",
-            "minigame_all_success": "§7¡Todas las habilidades del modo §a{minigame} §7han sido desactivadas con éxito!"
+            "success": "§7Habilidad §a{skill}§7 desactivada bien",
+            "all_success": "§7Todas las habilidades fueron desactivadas bien",
+            "minigame_all_success": "§7¡Todas las habilidades del modo §a{minigame} §7fueron desactivadas bien!"
         },
         "list": {
             "title": "§7Lista de habilidades§8:",
@@ -934,7 +934,7 @@
         },
         "info": {
             "usage": "§cUsa §8/§c{label} info §8<§chabilidad§8> [minijuego]",
-            "title": "§7Información de la habilidad §a{skill}§8:",
+            "title": "§7Info de la habilidad §a{skill}§8:",
             "description": "§7Descripción§8: §a{description}",
             "cost": "§7Precio§8:§c {cost} Akunas",
             "status": "§7Estado§8: §a{status}",
@@ -955,23 +955,23 @@
         "title": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §aHabilidades §8===-=-=-=-",
         "buy": {
             "title": "§7Comprar§8: §7{skill} §8- §c{cost} Akunas",
-            "success": "§aHabilidades §8§l» §r§7¡Has comprado la habilidad §a{skill} §7con éxito! Desactiva una habilidad para activarla...",
-            "success_active": "§aHabilidades §8§l» §r§7¡Has comprado y activado la habilidad §a{skill} §7con éxito!",
+            "success": "§aHabilidades §8§l» §r§7¡Compraste la habilidad §a{skill} §7bien! Desactiva una habilidad para activarla...",
+            "success_active": "§aHabilidades §8§l» §r§7¡Compraste y activaste la habilidad §a{skill} §7bien!",
             "confirm": "§aConfirmar",
             "cancel": "§cCancelar"
         },
         "invalid_minigame": "§aHabilidades §8§l» §r§c¡Minijuego inválido...",
         "activate": {
             "_prefix": "§aHabilidades §8§l» §r",
-            "success": "§7¡Habilidad §a{skill} §7activada con éxito!",
-            "limit_reached": "§c¡Has alcanzado el límite de {limit} habilidades activas para este minijuego..."
+            "success": "§7¡Habilidad §a{skill} §7activada bien!",
+            "limit_reached": "§c¡Llegaste al límite de {limit} habilidades activas para este minijuego..."
         },
         "disable": {
             "button_all": "§cDesactivar Todas las Habilidades",
             "button_minigame": "§cDesactivar Todas las Habilidades del Modo",
-            "success": "§aHabilidades §8§l» §r§7¡Habilidad §a{skill} §7desactivada con éxito!",
-            "all_minigame_success": "§aHabilidades §8§l» §r§7¡Todas las habilidades del modo §a{minigame} §7han sido desactivadas con éxito!",
-            "all_success": "§aHabilidades §8§l» §r§7¡Todas las habilidades han sido desactivadas con éxito!"
+            "success": "§aHabilidades §8§l» §r§7¡Habilidad §a{skill} §7desactivada bien!",
+            "all_minigame_success": "§aHabilidades §8§l» §r§7¡Todas las habilidades del modo §a{minigame} §7fueron desactivadas bien!",
+            "all_success": "§aHabilidades §8§l» §r§7¡Todas las habilidades fueron desactivadas bien!"
         },
         "nav": {
             "prev_page": "§a« Página Anterior",
@@ -1065,7 +1065,7 @@
             "_prefix": "§9Kits §8§l» §r",
             "usage": "§cUsa §8/§c{label} on §8<§ckit§8>",
             "not_owned": "§c¡No tienes este kit!",
-            "success": "§7Kit §9{kit}§7 activado correctamente",
+            "success": "§7Kit §9{kit}§7 activado bien",
             "failed": "§c¡Error al activar el kit!"
         },
         "unset": {
@@ -1082,7 +1082,7 @@
         "info": {
             "_prefix": "§9Kits §8§l» §r",
             "usage": "§cUsa §8/§c{label} info §8<§ckit§8>",
-            "title": "§7Información del kit §9{kit}§8:",
+            "title": "§7Info del kit §9{kit}§8:",
             "description": "§7Descripción§8: §9{description}",
             "cost": "§7Precio§8:§c {cost}",
             "status": "§7Estado§8: §9{status}",
@@ -1096,17 +1096,17 @@
         "title": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §9Kits §8===-=-=-=-",
         "buy": {
             "title": "§7Comprar§8: §7{kit} §8- §c{cost}",
-            "success": "§9Kits §8§l» §r§7¡Has comprado el kit §9{kit} §7correctamente!",
+            "success": "§9Kits §8§l» §r§7¡Compraste el kit §9{kit} §7bien!",
             "confirm": "§aConfirmar",
             "cancel": "§cCancelar"
         },
         "disable": {
             "button": "§cDesactivar kit",
-            "success": "§9Kits §8§l» §r§7Kit desactivado exitosamente!",
+            "success": "§9Kits §8§l» §r§7¡Kit desactivado bien!",
             "success_kit": "§9Kits §8§l» §r§7Kit §9{kit} §7desactivado"
         },
         "set": {
-            "success": "§9Kits §8§l» §r§7¡Kit §9{kit} §7activado correctamente!"
+            "success": "§9Kits §8§l» §r§7¡Kit §9{kit} §7activado bien!"
         },
         "nav": {
             "prev_page": "§a« Página Anterior",
@@ -1122,8 +1122,8 @@
         },
         "status": {
             "_prefix": "§2Duelos §8§l» §r",
-            "starting": "§7¡El duelo ha comenzado!",
-            "countdown": "§7Comenzando en §2{seconds}s",
+            "starting": "§7¡El duelo empezó!",
+            "countdown": "§7Empieza en §2{seconds}s",
             "ending_countdown": "§7Volviendo al lobby en §2{seconds}s"
         },
         "item": {
@@ -1133,16 +1133,16 @@
         "queue": {
             "_prefix": "§2Duelos §8§l» §r",
             "not_found": "§cEl modo {kit} no existe!",
-            "joined": "§7¡Te uniste exitosamente a la cola del modo §2{mode}§r§7!",
-            "left": "§7¡Saliste de la cola del modo §c{mode}§7!",
-            "timeout": "§cFuiste eliminado(a) de la cola automáticamente, ya que no se encontraron otros jugadores disponibles..."
+            "joined": "§7¡Te metiste a la cola del modo §2{mode}§r§7 bien!",
+            "left": "§7¡Te saliste de la cola del modo §c{mode}§7!",
+            "timeout": "§cTe sacaron de la cola automáticamente porque no se encontraron otros jugadores..."
         }
     },
     "addbalance": {
         "_prefix": "§aEconomía §8§l» §r",
-        "invalid_number": "§cLa cantidad debe ser un número y no puede ser menor o igual a 0...",
+        "invalid_number": "§cLa cantidad tiene que ser un número y no puede ser menor o igual a 0...",
         "receive": "§7¡Recibiste §c{amount} Akunas§7!",
-        "success": "§7¡Se agregaron §c{amount} Akunas §7a la cuenta de §a{target} §7con éxito!",
+        "success": "§7¡Se agregaron §c{amount} Akunas §7a la cuenta de §a{target} §7bien!",
         "usage": "§cUsa §8/§c{label} §8<§cjugador§8> <§ccantidad§8>"
     },
     "auth": {
@@ -1150,11 +1150,11 @@
             "_prefix": "§eAuth §8§l» §r",
             "account": {
                 "_prefix": "",
-                "limit": "§eAuth §8§l» §r§cHas alcanzado el límite de cuentas registradas..."
+                "limit": "§eAuth §8§l» §r§cLlegaste al límite de cuentas registradas..."
             },
             "already": {
                 "haspassword": "§cYa tienes una contraseña. Para cambiarla usa §8/§cchangepassword...",
-                "loggedin": "§cYa has iniciado sesión...",
+                "loggedin": "§cYa iniciaste sesión...",
                 "registered": "§cYa estás registrado..."
             },
             "clientid": {
@@ -1165,7 +1165,7 @@
                 "_prefix": "",
                 "password": "§eAuth §8§l» §r§cContraseña incorrecta..."
             },
-            "invalidpassword": "§cLa contraseña debe tener entre {minLength} y {maxLength} caracteres y usar solo letras, números o símbolos comunes (sin acentos o emojis)",
+            "invalidpassword": "§cLa contraseña tiene que tener entre {minLength} y {maxLength} caracteres y usar solo letras, números o símbolos comunes (sin acentos o emojis)",
             "notregistered": "§cNo estás registrado...",
             "password": {
                 "_prefix": "",
@@ -1173,11 +1173,11 @@
             },
             "use": {
                 "_prefix": "",
-                "commands": "§eAuth §8§l» §r§cNecesitas estar autenticado para usar comandos..."
+                "commands": "§eAuth §8§l» §r§cTienes que estar autenticado para usar comandos..."
             },
             "weakpassword": {
-                "login": "§cPor favor, cambia tu contraseña usando §8/§cchp§c, ya que es muy débil. Pronto bloquearemos el inicio de sesión de cuentas con contraseñas débiles...",
-                "register": "§cContraseña demasiado débil, por favor elige otra..."
+                "login": "§cPorfa cambia tu contraseña con §8/§cchp§c, porque está muy débil. Pronto vamos a bloquear el inicio de sesión de cuentas con contraseñas débiles...",
+                "register": "§cContraseña demasiado débil, porfa elige otra..."
             }
         },
         "join": {
@@ -1190,39 +1190,39 @@
                 "_prefix": "",
                 "online": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §eAuth §8===-=-=-=-{n}§cYa hay un jugador en línea con ese nombre..."
             },
-            "timeout": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §eAuth §8===-=-=-=-{n}§cTu tiempo de inicio de sesión ha expirado...",
+            "timeout": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §eAuth §8===-=-=-=-{n}§cTu tiempo para iniciar sesión expiró...",
             "toomany": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §eAuth §8===-=-=-=-{n}§cDemasiados intentos de autenticación..."
         },
         "need": {
             "_prefix": "§eAuth §8§l» §r",
-            "login": "§7Por favor, inicia sesión usando §8/§7login §8<§7contraseña§8>",
-            "register": "§7Por favor, regístrate usando §8/§7register §8<§7contraseña§8>"
+            "login": "§7Porfa inicia sesión con §8/§7login §8<§7contraseña§8>",
+            "register": "§7Porfa regístrate con §8/§7register §8<§7contraseña§8>"
         },
         "success": {
             "_prefix": "§eAuth §8§l» §r",
             "auto": {
                 "_prefix": "",
-                "register": "§eAuth §8§l» §r§7¡Bienvenido! Tu cuenta fue creada automáticamente. Usa §8/§7register §8<§7contraseña§8> §7para protegerla"
+                "register": "§eAuth §8§l» §r§7¡Bienvenido! Tu cuenta se creó automáticamente. Usa §8/§7register §8<§7contraseña§8> §7para protegerla"
             },
-            "autologin": "§7¡Has iniciado sesión automáticamente!",
-            "chp": "§7¡Tu contraseña ha sido cambiada con éxito!",
-            "login": "§7¡Sesión iniciada con éxito!",
-            "register": "§7¡Te has registrado con éxito! §cAl registrarte, aceptas nuestras §8/§creglas..."
+            "autologin": "§7¡Iniciaste sesión automáticamente!",
+            "chp": "§7¡Tu contraseña fue cambiada bien!",
+            "login": "§7¡Sesión iniciada bien!",
+            "register": "§7¡Te registraste bien! §cAl registrarte, aceptas nuestras §8/§creglas..."
         }
     },
     "automsg": {
         "_prefix": "§cSistema §8§l» §r",
-        "akuna_ai": "§7¡Conoce a §cAkuna§r§7, nuestra IA! Escribe §8\"§cAkuna, tu pregunta§8\" §7en el chat y te responderá!",
+        "akuna_ai": "§7¡Conoce a §cAkuna§r§7, nuestra IA! Escribe §8\"§cAkuna, tu pregunta§8\" §7en el chat y te va a responder.",
         "block": "§7¿Sabías que puedes bloquear jugadores? Usa §8/§7block",
         "daily": "§7¿Sabías que si entras todos los días, recibes una recompensa diaria que puede darte §cAkunas §7hasta un §9Multiplicador de XP§7?",
-        "discord": "§7¡Unete a nuestro discord! §chttps://discord.iakunamc.com",
+        "discord": "§7¡Únete a nuestro discord! §chttps://discord.iakunamc.com",
         "exit_minigames": "§7Para volver al lobby desde cualquier minijuego, usa §8/§clobby",
         "friends": "§7¡Invita a tus amigos a jugar en nuestro servidor! Puedes ver nuestra ip usando §8/§7ip",
         "hackers": "§7¿Viste un hacker? ¡Usa §8/§creport §8<§cnombre§8> <§crazón§8> §7para denunciarlo!",
         "launch": "§7¡§ciAkunaMC §7existe desde febrero de 2022 y sigue creciendo gracias a ti! ¡Gracias por jugar aquí!",
         "marry": "§7¡Puedes casarte con otros jugadores y conseguir el 25% de sus ganancias de XP! Usa §8/§7marry",
         "missions": "§7¡Completa misiones diarias para ganar bonificaciones increíbles! Usa §8/§cmissões §7para ver todas las misiones disponibles",
-        "nopromote": "§7¡No divulgues §cservidores en el chat o en el tell§7, esto hará que seas §csancionado(a)§7!",
+        "nopromote": "§7¡No divulgues §cservidores en el chat o en el tell§7, esto va a hacer que seas §csancionado(a)§7!",
         "nosamepass": "§7¡No uses la misma contraseña en otros servidores! Gente maliciosa podría hackear tu cuenta... ¡Puedes usar §8/§cpin §7para proteger tu cuenta!",
         "rules": "§7¿Ya leíste nuestras §8/§creglas§7? ¡No conocerlas no te libra de §csanciones§7!",
         "staff": "§7¿Sabías que puedes ser parte de nuestro Staff? Ve a §chttps://staff.iakunamc.com",
@@ -1233,16 +1233,16 @@
         "buy": {
             "already_exists": "§cYa tienes una mochila con ese nombre...",
             "error": "§cError al comprar la mochila...",
-            "invalid_length": "§cEl nombre debe tener entre 3 y 20 caracteres...",
-            "limit": "§cHas alcanzado el límite de mochilas...",
-            "success": "§7¡Mochila §c{name} §7comprada exitosamente por §c{cost} Akunas§7!",
+            "invalid_length": "§cEl nombre tiene que tener entre 3 y 20 caracteres...",
+            "limit": "§cLlegaste al límite de mochilas...",
+            "success": "§7¡Mochila §c{name} §7comprada bien por §c{cost} Akunas§7!",
             "usage": "§cUsa §8/§c{label} buy §8<§cnombre§8>"
         },
         "delete": {
-            "confirm": "§7¿Estás seguro de que deseas eliminar la mochila §c{name}§7? Si es así, usa §8/§7{label} delete {name} confirm",
+            "confirm": "§7¿Seguro que quieres eliminar la mochila §c{name}§7? Si sí, usa §8/§7{label} delete {name} confirm",
             "error": "§cError al eliminar la mochila...",
             "not_exists": "§cMochila no encontrada...",
-            "success": "§7¡Mochila eliminada exitosamente!",
+            "success": "§7¡Mochila eliminada bien!",
             "usage": "§cUsa §8/§c{label} delete §8<§cnombre§8>"
         },
         "list": "§7Tus mochilas §8(§f{count}§8):§7 {backpacks}",
@@ -1256,17 +1256,17 @@
     },
     "balance": {
         "_prefix": "§aEconomía §8§l» §r",
-        "inactivity_tax_info": "§7Cada lunes, si pasas §c{days}d §7sin entrar, se te aplicará un impuesto del §c{percent}% §8(§c{amount} Akunas§8)§7. El impuesto aumenta por cada semana que estés offline y también según la cantidad de Akunas que tengas",
+        "inactivity_tax_info": "§7Cada lunes, si pasas §c{days}d §7sin entrar, se te va a aplicar un impuesto del §c{percent}% §8(§c{amount} Akunas§8)§7. El impuesto sube por cada semana que estés offline y también según la cantidad de Akunas que tengas",
         "other": "§a{target} §7tiene §c{amount} Akunas§7!",
         "self": "§7¡Tienes §c{amount} Akunas§7!"
     },
     "ban": {
-        "broadcast": "§cSistema §8§l» §r§c{target} §7fue §cbaneado(a) permanentemente §7debido a §c{reason}",
-        "kick": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§cEstás baneado(a) permanentemente...{n}§cNombre§8:§c {name}{n}§cRazón§8:§c {reason}{n}§cFecha§8:§c {timestamp}{n}{n}§7¿Baneo injusto? contacta nuestro soporte§8:{n}§chttps://discord.iakunamc.com §7vía discord o §csupport@iakunamc.com §7vía email"
+        "broadcast": "§cSistema §8§l» §r§c{target} §7fue §cbaneado(a) permanentemente §7por §c{reason}",
+        "kick": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§cEstás baneado(a) permanentemente...{n}§cNombre§8:§c {name}{n}§cRazón§8:§c {reason}{n}§cFecha§8:§c {timestamp}{n}{n}§7¿Baneo injusto? contacta nuestro soporte§8:{n}§chttps://discord.iakunamc.com §7por discord o §csupport@iakunamc.com §7por email"
     },
     "bet": {
         "_prefix": "§aEconomía §8§l» §r",
-        "cashback": "§7¡Has recibido un cashback de §c{amount} Akunas§7!",
+        "cashback": "§7¡Recibiste un cashback de §c{amount} Akunas§7!",
         "coin": {
             "invalid": "§cElige entre cara o cruz",
             "lose": "§7La moneda cayó en §a{result}§7, ¡perdiste!",
@@ -1315,11 +1315,11 @@
             },
             "self_challenge": "§aEconomía §8§l» §r§c¡No puedes desafiarte a ti mismo!",
             "usage": "§aEconomía §8§l» §r§cUsa §8/§cbet §8<§ctipo§8> <§cjugador§8> <§ccantidad§8> <§cpalabra§8>",
-            "win": "§aEconomía §8§l» §r§7¡Felicitaciones! Ganaste §c{amount} Akunas §7contra §a{opponent}§7!",
+            "win": "§aEconomía §8§l» §r§7¡Felicidades! Ganaste §c{amount} Akunas §7contra §a{opponent}§7!",
             "deny": {
                 "_prefix": "§aEconomía §8§l» §r",
                 "none": "§cNo tienes ningún desafío de apuesta pendiente...",
-                "success": "§7Desafío de apuesta rechazado con éxito...",
+                "success": "§7Desafío de apuesta rechazado bien...",
                 "notify": "§7{target} rechazó tu desafío de apuesta..."
             },
             "draw": "§aEconomía §8§l» §r§7¡Empate! Ningún valor fue debitado",
@@ -1340,24 +1340,24 @@
     },
     "bio": {
         "_prefix": "§3Perfil §8§l» §r",
-        "set": "§7¡Biografía definida como '§3{bio}§7' con éxito!",
+        "set": "§7¡Biografía puesta como '§3{bio}§7' bien!",
         "usage": "§cUsa §8/§c{label} §8<§cbiografía§8>"
     },
     "block": {
         "_prefix": "§cSistema §8§l» §r",
         "add": {
             "already": "§c¡{player} ya está bloqueado(a)!",
-            "limit": "§c¡Límite de bloqueos alcanzado!",
+            "limit": "§c¡Llegaste al límite de bloqueos!",
             "self": "§c¡No puedes bloquearte a ti mismo!",
             "staff": "§c¡No puedes bloquear a un miembro del staff!",
-            "success": "§c{player}§7 fue bloqueado(a) con éxito",
+            "success": "§c{player}§7 fue bloqueado(a) bien",
             "usage": "§cUsa §8/§c{label} agregar §8<§cjugador§8>"
         },
         "list": "§7Jugadores bloqueados §8(§f{count}§8):§7 {blocked}",
         "remove": {
-            "all": "§7¡Todos los jugadores fueron desbloqueados con éxito!",
+            "all": "§7¡Todos los jugadores fueron desbloqueados bien!",
             "notfound": "§c{player} no está bloqueado(a)...",
-            "success": "§c{player} §7fue desbloqueado(a) con éxito",
+            "success": "§c{player} §7fue desbloqueado(a) bien",
             "usage": "§cUsa §8/§c{label} remover §8<§cjugador§8|§c*§8>"
         },
         "usage": "§cUsa §8/§c{label} §8<§cagregar§8|§cremover§8|§clista§8>",
@@ -1370,8 +1370,8 @@
     "chat": {
         "_prefix": "§cSistema §8§l» §r",
         "disabled": "§cEl chat está desactivado...",
-        "nochars": "§cNo está permitido usar esos caracteres...",
-        "nopromote": "§cNo está permitido divulgar y/o mencionar otros servidores en el chat...{n}§cSistema §8§l» §r§cRecuerda leer nuestras §8/§creglas para evitar futuras sanciones",
+        "nochars": "§cNo se pueden usar esos caracteres...",
+        "nopromote": "§cNo se puede divulgar ni mencionar otros servidores en el chat...{n}§cSistema §8§l» §r§cRecuerda leer nuestras §8/§creglas para evitar futuras sanciones",
         "nospam": "§c¡Tranquilo! sin spam...",
         "toolong": "§cTu mensaje es demasiado largo... (máximo {max} caracteres)",
         "noemoji": "§cNo se permiten emojis..."
@@ -1381,12 +1381,12 @@
         "accept": {
             "error": "§cError al unirse al clan...",
             "no_invite": "§cNo tienes invitaciones pendientes...",
-            "success": "§7¡Te uniste a §e{clan} §7con éxito!"
+            "success": "§7¡Te uniste a §e{clan} §7bien!"
         },
         "already_in_clan": "§cYa estás en un clan...",
         "changetag": {
             "error": "§cError al cambiar tag...",
-            "success": "§7¡Tag cambiada a §e{tag} §7con éxito!",
+            "success": "§7¡Tag cambiada a §e{tag} §7bien!",
             "usage": "§cUsa §8/§c{label} tag §8<§ctag§8>"
         },
         "chat": {
@@ -1398,27 +1398,27 @@
         "create": {
             "error": "§cError al crear clan...",
             "exists": "§c¡Ya existe un clan con ese nombre o tag!",
-            "length": "§c¡El nombre debe tener 3-24 caracteres y el tag 2-4 caracteres!",
-            "success": "§7¡Clan creado con éxito!",
+            "length": "§c¡El nombre tiene que tener 3-24 caracteres y el tag 2-4 caracteres!",
+            "success": "§7¡Clan creado bien!",
             "usage": "§cUsa §8/§c{label} crear §8<§cnombre§8> §8<§ctag§8>"
         },
         "delete": {
             "error": "§cError al eliminar clan!",
-            "success": "§7¡Clan eliminado con éxito!"
+            "success": "§7¡Clan eliminado bien!"
         },
         "demote": {
             "broadcast": "§e{player} §7¡fue degradado(a) a miembro!",
             "error": "§cError al degradar jugador...",
-            "success": "§e{player} §7¡fue degradado(a) con éxito!",
+            "success": "§e{player} §7¡fue degradado(a) bien!",
             "usage": "§cUsa §8/§c{label} degradar §8<§cjugador§8>"
         },
         "deny": {
             "no_invite": "§cNo tienes invitaciones pendientes...",
-            "success": "§7Invitación rechazada con éxito"
+            "success": "§7Invitación rechazada bien"
         },
         "desc": {
             "error": "§cError al cambiar descripción...",
-            "success": "§7¡Descripción cambiada con éxito!",
+            "success": "§7¡Descripción cambiada bien!",
             "usage": "§cUsa §8/§c{label} desc §8<§cdescripción§8>"
         },
         "disband": {
@@ -1428,7 +1428,7 @@
         "info": {
             "_prefix": "",
             "description": "§eClanes §8§l» §r§7Descripción§8: §e{description}",
-            "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §7Información del Clan §e{name} §8===-=-=-=-",
+            "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §7Info del Clan §e{name} §8===-=-=-=-",
             "level": "§eClanes §8§l» §r§7Nivel§8: §e{level}",
             "members": "§eClanes §8§l» §r§7Miembros §8(§f{count}§8/§f{max}§8): §7{members}",
             "owner": "§eClanes §8§l» §r§7Dueño§8: §e{owner}",
@@ -1458,14 +1458,14 @@
             "error": "§cError al expulsar jugador...",
             "kicked": "§cFuiste expulsado(a) del clan...",
             "not_in_clan": "§cEl jugador no está en el clan...",
-            "success": "§7¡Jugador expulsado con éxito!",
+            "success": "§7¡Jugador expulsado bien!",
             "usage": "§cUsa §8/§c{label} expulsar §8<§cjugador§8>"
         },
         "leave": {
             "broadcast": "§e{player} §7abandonó el clan...",
             "error": "§cError al abandonar clan...",
             "owner": "§cEl dueño no puede abandonar el clan...",
-            "success": "§7¡Abandonaste el clan con éxito!"
+            "success": "§7¡Abandonaste el clan bien!"
         },
         "level_up": "§7¡El clan subió al nivel §e{newLevel}§7!",
         "not_found": "§cEse clan no existe...",
@@ -1475,7 +1475,7 @@
         "promote": {
             "broadcast": "§e{player} §7¡fue promovido(a) a administrador!",
             "error": "§cError al promover jugador...",
-            "success": "§e{player} §7¡fue promovido(a) con éxito!",
+            "success": "§e{player} §7¡fue promovido(a) bien!",
             "usage": "§cUsa §8/§c{label} promover §8<§cjugador§8>"
         },
         "request": {
@@ -1507,14 +1507,14 @@
         "tagcolor": {
             "error": "§cError al cambiar el color de la tag!",
             "invalid": "§cColor inválido...",
-            "not_unlocked": "§cAún no has desbloqueado este color...",
-            "success": "§7¡Color de la tag cambiado a {color}§7 con éxito!",
+            "not_unlocked": "§cTodavía no desbloqueaste este color...",
+            "success": "§7¡Color de la tag cambiado a {color}§7 bien!",
             "usage": "§cUsa §8/§c{label} colortag §8<§ccolor§8>{n}§eClanes §8§l» §r§7Colores disponibles§8: {colores}"
         },
         "type": {
             "error": "§cError al cambiar tipo...",
             "invalid": "§cTipo inválido... Tipos disponibles§8:§7 público§8,§7 invitación§8,§7 privado§8,§7 cerrado",
-            "success": "§7Tipo de clan cambiado a §e{type}§7 con éxito",
+            "success": "§7Tipo de clan cambiado a §e{type}§7 bien",
             "usage": "§cUsa §8/§c{label} tipo §8<§ctipo§8>"
         },
         "usage": "§cUsa §8/§c{label} §8<§ccrear§8|§cinvitar§8|§cexpulsar§8|§cdesc§8|§cabandonar§8|§cinfo§8|§ctipo§8|§csolicitud§8|§cpromover§8|§cdegradar§8|§ctag§8|§csolicitudes§8|§cchat§8|§celiminar§8|§ccolortag§8>",
@@ -1522,7 +1522,7 @@
     },
     "clear": {
         "_prefix": "§cSistema §8§l» §r",
-        "success": "§7¡Inventario limpiado con éxito!"
+        "success": "§7¡Inventario limpiado bien!"
     },
     "clearchat": {
         "_prefix": "§cSistema §8§l» §r",
@@ -1530,13 +1530,13 @@
     },
     "clearchatme": {
         "_prefix": "§cSistema §8§l» §r",
-        "success": "§7¡Tu chat fue limpiado con éxito!"
+        "success": "§7¡Tu chat fue limpiado bien!"
     },
     "colorarmor": {
         "_prefix": "§dC§ao§el§bo§9r§1A§2r§4m§6o§3r §8§l» §r",
-        "invalid_world": "§cSolo es posible usar armadura colorida en el lobby...",
-        "off": "§7Armadura colorida desactivada con éxito",
-        "on": "§7Armadura colorida activada con éxito"
+        "invalid_world": "§cSolo se puede usar armadura colorida en el lobby...",
+        "off": "§7Armadura colorida desactivada bien",
+        "on": "§7Armadura colorida activada bien"
     },
     "coords": {
         "_prefix": "§cSistema §8§l» §r",
@@ -1544,14 +1544,14 @@
     },
     "crown": {
         "_prefix": "§6C§er§6o§ew§6n §8§l» §r",
-        "invalid_world": "§cNo es posible activar la corona aquí...",
-        "off": "§7Corona desactivada con éxito",
-        "on": "§7Corona activada con éxito"
+        "invalid_world": "§cNo se puede activar la corona aquí...",
+        "off": "§7Corona desactivada bien",
+        "on": "§7Corona activada bien"
     },
     "daily": {
         "reward": {
             "akunas": "§c{amount} Akunas",
-            "milestone": "§5Recompensa diaria §8§l» §r§7¡Felicitaciones! alcanzaste §5{weeks} §7semanas de racha!",
+            "milestone": "§5Recompensa diaria §8§l» §r§7¡Felicidades! llegaste a §5{weeks} §7semanas de racha!",
             "multiplier": "§9{multiplier}x Multiplicador §8(§5{duration}§8)",
             "received": "§5Recompensa diaria §8§l» §r§7Recibiste {rewards}",
             "streak": "§5Recompensa diaria §8§l» §r§7Racha actual§8: §5{streak} §7días",
@@ -1563,13 +1563,13 @@
         "_prefix": "§cSistema §8§l» §r",
         "not_exists": "§cNo tienes una home con ese nombre...",
         "not_in_survival": "§cNo estás en modo supervivencia...",
-        "success": "§7¡Home §c{home} §7eliminada con éxito!",
+        "success": "§7¡Home §c{home} §7eliminada bien!",
         "usage": "§cUso §8/§c{label} §8<§cnombre§8|§c*§8>",
-        "success_all": "§7¡Todas las homes han sido eliminadas con éxito!"
+        "success_all": "§7¡Todas las homes fueron eliminadas bien!"
     },
     "fake": {
         "_prefix": "§1Fake §8§l» §r",
-        "disable": "§7¡Fake desactivado con éxito!",
+        "disable": "§7¡Fake desactivado bien!",
         "enable": {
             "_prefix": "",
             "usage": "§1Fake §8§l» §r§cUsa §8/§c{label} on §8<§cnombre§8>"
@@ -1579,7 +1579,7 @@
             "name": "§1Fake §8§l» §r§cNombre inválido..."
         },
         "registered": "§cEse nombre ya está registrado en el servidor...",
-        "set": "§7¡Fake activado con éxito!",
+        "set": "§7¡Fake activado bien!",
         "usage": "§cUsa §8/§c{label} §8<§con§8|§coff§8|§calearorio§8|§clista§8>"
     },
     "home": {
@@ -1602,7 +1602,7 @@
     },
     "joinmsg": {
         "automsg": {
-            "disabled": "§bEntrada §8§l» §r§cDebes activar la preferencia de Mensajes Automáticos para usar mensajes de entrada..."
+            "disabled": "§bEntrada §8§l» §r§cTienes que activar la preferencia de Mensajes Automáticos para usar mensajes de entrada..."
         },
         "list": {
             "entry": "§b{id} §8§l» §r§7{message}",
@@ -1627,27 +1627,27 @@
             "9": "§7La leyenda ha aparecido§8:§7 ¡§b{player}§7 está entre nosotros!"
         },
         "off": {
-            "success": "§bEntrada §8§l» §r§7Mensaje de entrada desactivado con éxito!"
+            "success": "§bEntrada §8§l» §r§7Mensaje de entrada desactivado bien!"
         },
         "on": {
             "_prefix": "§bEntrada §8§l» §r",
             "invalid": "§cID inválido... Usa §8/§c{label} list para ver los IDs disponibles",
-            "success": "§7Mensaje de entrada establecido a §b{id}§7 con éxito!",
+            "success": "§7¡Mensaje de entrada puesto a §b{id}§7 bien!",
             "usage": "§cUsa §8/§c{label} on §8<§cid§8>"
         },
         "usage": "§bEntrada §8§l» §r§cUsa §8/§c{label} §8<§con§8|§coff§8|§clist§8>"
     },
     "kick": {
-        "broadcast": "§cSistema §8§l» §r§c{target} §7fue §cexpulsado(a) §7debido a §c{reason}",
+        "broadcast": "§cSistema §8§l» §r§c{target} §7fue §cexpulsado(a) §7por §c{reason}",
         "kick": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§cHas sido expulsado(a)...{n}§cRazón§8:§c {reason}"
     },
     "lbc": {
         "profile": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§3Perfil §8§l» §r§7Tu nombre§8:§3 {name}{n}§3Perfil §8§l» §r§7Tu rango§8:§3 {tag}{n}§3Perfil §8§l» §r§7Tu clan§8:§3 {clan}{n}§3Perfil §8§l» §r§7Acerca de§8:§3 {about}{n}§3Perfil §8§l» §r§7Casado(a) con§8:§7 {partner}{n}§3Perfil §8§l» §r§7Akunas§8:§3 {akunas}{n}§8-=-=-=-=== §9Niveles §8===-=-=-=-{n}§3Perfil §8§l» §r§7Tu nivel§8:§3 {level}{n}§3Perfil §8§l» §r§7Tu xp§8:§3 {xp}{n}§3Perfil §8§l» §r§7XP necesario para subir de nivel§8:§3 {xpneeded}{n}§8-=-=-=-=== §fEstadísticas §8===-=-=-=-{n}§3Perfil §8§l» §r§7Tus victorias en §bSky§fWars§8:§3 {winssw}{n}§3Perfil §8§l» §r§7Tus victorias en §cThe§9Bridge§8:§3 {winstb}{n}§3Perfil §8§l» §r§7Tus victorias en §eMlg§fBlock§8:§3 {winsmlg}{n}§3Perfil §8§l» §r§7Tus victorias en §cBed§fWars§8:§3 {winsbw}{n}§3Perfil §8§l» §r§7Tus victorias en §bBlock§fSumo§8:§3 {winsbs}{n}§3Perfil §8§l» §r§7Tus victorias en §2Duelos§8:§3 {winsduels}{n}§3Perfil §8§l» §r§7Tus Kills§8:§3 {kills}{n}§3Perfil §8§l» §r§7Tiempo en línea§8:§3 {onlineTime}{n}§3Perfil §8§l» §r§7Tu poder§8:§3 {power}",
-        "profile_other": "§8-=-=-=-=== §fi§cAkuna§9MC §8- §7Perfil de §3{name} §8===-=-=-=-{n}§3Perfil §8§l» §r§7Rango§8:§3 {tag}{n}§3Perfil §8§l» §r§7Ultimo acceso§8:§3 {lastOnline} §8(§7Hace §3{lastOnlineSince}§8){n}§3Perfil §8§l» §r§7Clan§8:§3 {clan}{n}§3Perfil §8§l» §r§7Acerca de§8:§3 {about}{n}§3Perfil §8§l» §r§7Casado(a) con§8:§7 {partner}{n}§3Perfil §8§l» §r§7Akunas§8:§3 {akunas}{n}§8-=-=-=-=== §9Niveles §8===-=-=-=-{n}§3Perfil §8§l» §r§7Nivel§8:§3 {level}{n}§3Perfil §8§l» §r§7Xp§8:§3 {xp}{n}§3Perfil §8§l» §r§7XP necesario para subir de nivel§8:§3 {xpneeded}{n}§8-=-=-=-=== §fEstadísticas §8===-=-=-=-{n}§3Perfil §8§l» §r§7Victorias en §bSky§fWars§8:§3 {winssw}{n}§3Perfil §8§l» §r§7Victorias en §cThe§9Bridge§8:§3 {winstb}{n}§3Perfil §8§l» §r§7Victorias en §eMlg§fBlock§8:§3 {winsmlg}{n}§3Perfil §8§l» §r§7Victorias en §cBed§fWars§8:§3 {winsbw}{n}§3Perfil §8§l» §r§7Victorias en §bBlock§fSumo§8:§3 {winsbs}{n}§3Perfil §8§l» §r§7Victorias en §2Duelos§8:§3 {winsduels}{n}§3Perfil §8§l» §r§7Kills§8:§3 {kills}{n}§3Perfil §8§l» §r§7Tiempo en línea§8:§3 {onlineTime}{n}§3Perfil §8§l» §r§7Poder§8:§3 {power}"
+        "profile_other": "§8-=-=-=-=== §fi§cAkuna§9MC §8- §7Perfil de §3{name} §8===-=-=-=-{n}§3Perfil §8§l» §r§7Rango§8:§3 {tag}{n}§3Perfil §8§l» §r§7Último acceso§8:§3 {lastOnline} §8(§7Hace §3{lastOnlineSince}§8){n}§3Perfil §8§l» §r§7Clan§8:§3 {clan}{n}§3Perfil §8§l» §r§7Acerca de§8:§3 {about}{n}§3Perfil §8§l» §r§7Casado(a) con§8:§7 {partner}{n}§3Perfil §8§l» §r§7Akunas§8:§3 {akunas}{n}§8-=-=-=-=== §9Niveles §8===-=-=-=-{n}§3Perfil §8§l» §r§7Nivel§8:§3 {level}{n}§3Perfil §8§l» §r§7Xp§8:§3 {xp}{n}§3Perfil §8§l» §r§7XP necesario para subir de nivel§8:§3 {xpneeded}{n}§8-=-=-=-=== §fEstadísticas §8===-=-=-=-{n}§3Perfil §8§l» §r§7Victorias en §bSky§fWars§8:§3 {winssw}{n}§3Perfil §8§l» §r§7Victorias en §cThe§9Bridge§8:§3 {winstb}{n}§3Perfil §8§l» §r§7Victorias en §eMlg§fBlock§8:§3 {winsmlg}{n}§3Perfil §8§l» §r§7Victorias en §cBed§fWars§8:§3 {winsbw}{n}§3Perfil §8§l» §r§7Victorias en §bBlock§fSumo§8:§3 {winsbs}{n}§3Perfil §8§l» §r§7Victorias en §2Duelos§8:§3 {winsduels}{n}§3Perfil §8§l» §r§7Kills§8:§3 {kills}{n}§3Perfil §8§l» §r§7Tiempo en línea§8:§3 {onlineTime}{n}§3Perfil §8§l» §r§7Poder§8:§3 {power}"
     },
     "lobby": {
         "_prefix": "§cSistema §8§l» §r",
-        "cmd": "§7¡Volviste al lobby con éxito!"
+        "cmd": "§7¡Volviste al lobby bien!"
     },
     "locktell": {
         "_prefix": "§1Tell §8§l» §r",
@@ -1658,11 +1658,11 @@
         "offlinetarget": "§cJugador desconectado, desbloqueando tell...",
         "success": {
             "other": "§1{sender} §7bloqueó el tell contigo...",
-            "self": "§7¡Tu tell ha sido bloqueado con §1{player}§7! Escribe §1@e §7en el chat para desbloquearlo..."
+            "self": "§7¡Tu tell fue bloqueado con §1{player}§7! Escribe §1@e §7en el chat para desbloquearlo..."
         },
         "unlocked": {
             "other": "§1{player} §7desbloqueó el tell...",
-            "self": "§7¡Tu tell ha sido desbloqueado con éxito!"
+            "self": "§7¡Tu tell fue desbloqueado bien!"
         },
         "usage": "§cUsa §8/§c{label} §8<§cjugador§8>"
     },
@@ -1670,14 +1670,14 @@
         "_prefix": "§9Canal §8§l» §r",
         "current": "§7{channels}",
         "switched": "§7{channels}",
-        "invalid": "§cEste canal no existe, canales disponibles§8:§7 {channels}",
-        "unavailable": "§cEste canal no está disponible en este momento...",
+        "invalid": "§cEse canal no existe, canales disponibles§8:§7 {channels}",
+        "unavailable": "§cEse canal no está disponible ahora...",
         "usage": "§cUsa §8/§c{label} §8<§ccanal§8>"
     },
     "reply": {
         "_prefix": "§1Tell §8§l» §r",
         "usage": "§cUsa §8/§c{label} §8<§cmensaje§8>",
-        "notell": "§cNo has recibido ningún tell recientemente..."
+        "notell": "§cNo recibiste ningún tell recientemente..."
     },
     "login": {
         "error": {
@@ -1691,7 +1691,7 @@
         "buy_success": "§7¡Compraste §e{quantity} billete(s) §7por §c{cost} Akunas§7!",
         "buy_usage": "§cUsa §8/§c{label} comprar §8<§cbilletes§8>",
         "no_money": "§cNo tienes suficientes Akunas para comprar {amount} billete(s)...",
-        "no_tickets": "§7No se vendió ningún billete en esta ronda. ¡La próxima lotería comenzará pronto!",
+        "no_tickets": "§7No se vendió ningún billete en esta ronda. ¡La próxima lotería empieza pronto!",
         "prize": "§7Premio actual§8:§c {prize} Akunas",
         "status_header": "§7Estado actual§8:",
         "ticket_limit": "§cNo puedes comprar esa cantidad de billetes...",
@@ -1699,7 +1699,7 @@
         "tickets": "§7Billetes vendidos§8:§e {tickets}",
         "time": "§7Tiempo restante§8:§e {time}",
         "usage": "§cUsa §8/§c{label} §8<§cestado§8|§ccomprar§8>",
-        "win": "§7¡Felicitaciones §e{winner}§7, ganaste §c{amount} Akunas §7por ganar la Lotería!"
+        "win": "§7¡Felicidades §e{winner}§7, ganaste §c{amount} Akunas §7por ganar la Lotería!"
     },
     "marriage": {
         "accept": {
@@ -1713,7 +1713,7 @@
             "_prefix": "§cSistema §8§l» §r",
             "none": "§cNo tienes solicitudes pendientes...",
             "notify": "§c{target} §7rechazó tu propuesta de matrimonio...",
-            "success": "§7Solicitud de matrimonio rechazada con éxito..."
+            "success": "§7Solicitud de matrimonio rechazada bien..."
         },
         "divorce": {
             "_prefix": "§cSistema §8§l» §r",
@@ -1732,18 +1732,18 @@
         },
         "marry": {
             "already": "§cSistema §8§l» §r§cTú o el jugador ya están casados...",
-            "expired": "§cSistema §8§l» §r§cLa solicitud de matrimonio de §c{sender} §7expió...",
-            "limit": "§cSistema §8§l» §r§c¡Alcanzaste el límite de matrimonios!",
+            "expired": "§cSistema §8§l» §r§cLa solicitud de matrimonio de §c{sender} §7expiró...",
+            "limit": "§cSistema §8§l» §r§c¡Llegaste al límite de matrimonios!",
             "pending": "§cSistema §8§l» §r§cEste jugador ya tiene una solicitud pendiente...",
-            "request": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §dSolicitud de Matrimonio§8===-=-=-{n}§cSistema §8§l» §r§d{sender} §7te ha propuesto matrimonio...{n}§cSistema §8§l» §r§7Usa §a/marriage aceptar para aceptar §7o §c/marriage rechazar para rechazar",
+            "request": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §dSolicitud de Matrimonio§8===-=-=-{n}§cSistema §8§l» §r§d{sender} §7te propuso matrimonio...{n}§cSistema §8§l» §r§7Usa §a/marriage aceptar para aceptar §7o §c/marriage rechazar para rechazar",
             "self": "§cSistema §8§l» §r§c¡No puedes casarte contigo mismo!",
-            "sent": "§cSistema §8§l» §r§7¡Solicitud de matrimonio enviada con éxito a §c{target}§7!",
-            "target_limit": "§cSistema §8§l» §r§c¡El jugador alcanzó el límite de matrimonios!",
+            "sent": "§cSistema §8§l» §r§7¡Solicitud de matrimonio enviada bien a §c{target}§7!",
+            "target_limit": "§cSistema §8§l» §r§c¡El jugador llegó al límite de matrimonios!",
             "usage": "§cSistema §8§l» §r§cUsa §8/§c{label} casar §8<§cjugador§8>"
         },
         "nick": {
             "_prefix": "§cSistema §8§l» §r",
-            "success": "§7¡Apodo de §c{partner} §7definido como '§c{nickname}§7' con éxito!",
+            "success": "§7¡Apodo de §c{partner} §7puesto como '§c{nickname}§7' bien!",
             "usage": "§cUsa §8/§c{label} apodo §8<§cpareja§8> <§capodo§8>"
         },
         "partner": {
@@ -1757,25 +1757,25 @@
         "_prefix": "§cSistema §8§l» §r",
         "invalid": "§cColor inválido...",
         "reset": "§7Color de los mensajes reiniciado al predeterminado!",
-        "success": "§7Color de los mensajes cambiado a {color}§7 correctamente!",
-        "usage": "§cUtiliza §8/§c{label} §8<§ccolor§8|§creset§8>{n}§cSistema §8§l» §r§7Colores disponibles§8: {colors}"
+        "success": "§7Color de los mensajes cambiado a {color}§7 bien!",
+        "usage": "§cUsa §8/§c{label} §8<§ccolor§8|§creset§8>{n}§cSistema §8§l» §r§7Colores disponibles§8: {colors}"
     },
     "mute": {
         "_prefix": "§cSistema §8§l» §r",
-        "broadcast": "§c{target} §7ha sido §csilenciado(a) permanentemente §7debido a §c{reason}",
-        "muted": "§cHas sido silenciado(a) permanentemente debido a {reason}... §oPuedes comprar un desilenciamiento en §chttps://loja.iakunamc.com"
+        "broadcast": "§c{target} §7ha sido §csilenciado(a) permanentemente §7por §c{reason}",
+        "muted": "§cHas sido silenciado(a) permanentemente por {reason}... §oPuedes comprar un desilenciamiento en §chttps://loja.iakunamc.com"
     },
     "nametag": {
         "add": {
             "_prefix": "§6Nametags §8§l» §r",
             "limit": {
                 "_prefix": "",
-                "reached": "§6Nametags §8§l» §r§c¡Alcanzaste el límite de {limit} nametags!"
+                "reached": "§6Nametags §8§l» §r§c¡Llegaste al límite de {limit} nametags!"
             },
-            "success": "§7¡Nametag '§6{text}§7' agregada con éxito!",
+            "success": "§7¡Nametag '§6{text}§7' agregada bien!",
             "too": {
                 "_prefix": "",
-                "long": "§6Nametags §8§l» §r§cTu nametag supera el límite de {limit} caracteres..."
+                "long": "§6Nametags §8§l» §r§cTu nametag pasa el límite de {limit} caracteres..."
             },
             "usage": "§cUsa §8/§c{label} agregar §8<§ctexto§8>"
         },
@@ -1791,7 +1791,7 @@
                 "_prefix": "",
                 "id": "§6Nametags §8§l» §r§cID inválido... Usa §8/§c{label} lista para ver los IDs disponibles"
             },
-            "success": "§7¡Nametag §6{id} §7removida con éxito!",
+            "success": "§7¡Nametag §6{id} §7removida bien!",
             "usage": "§cUsa §8/§c{label} remover §8<§cid§8>"
         },
         "usage": "§6Nametags §8§l» §r§cUsa §8/§c{label} §8<§cadd§8|§clist§8|§cremove§8|§coff§8>"
@@ -1800,8 +1800,8 @@
         "_prefix": "§cSistema §8§l» §r",
         "invalid": "§cColor inválido...",
         "reset": "§7Color del nombre reiniciado al predeterminado!",
-        "success": "§7Color del nombre cambiado a {color}§7 correctamente!",
-        "usage": "§cUtiliza §8/§c{label} §8<§ccolor§8|§creset§8>{n}§cSistema §8§l» §r§7Colores disponibles§8: {colors}"
+        "success": "§7Color del nombre cambiado a {color}§7 bien!",
+        "usage": "§cUsa §8/§c{label} §8<§ccolor§8|§creset§8>{n}§cSistema §8§l» §r§7Colores disponibles§8: {colors}"
     },
     "particle": {
         "on": {
@@ -1810,10 +1810,10 @@
     },
     "particles": {
         "_prefix": "§5Partículas §8§l» §r",
-        "activated": "§7¡Partícula §5{type} §7activada con éxito!",
-        "deactivated": "§7¡Partículas desactivadas con éxito!",
+        "activated": "§7¡Partícula §5{type} §7activada bien!",
+        "deactivated": "§7¡Partículas desactivadas bien!",
         "invalid_type": "§cPartícula inválida... Puedes ver la lista de partículas disponibles usando §8/§c{label} lista",
-        "invalid_world": "§cNo es posible usar partículas aquí...",
+        "invalid_world": "§cNo se pueden usar partículas aquí...",
         "list": "§7Lista de partículas disponibles §8(§f{count}§8):§7 {particles}",
         "no_active": "§cNo tienes ninguna partícula activa...",
         "usage": "§cUsa §8/§c{label} §8<§con§8|§coff§8|§clista§8>"
@@ -1827,12 +1827,12 @@
         "create": {
             "already_in_party": "§cYa estás en una party...",
             "error": "§cError al crear la party...",
-            "success": "§7¡Party creada con éxito! Puedes ver la información de tu party usando §8/§7party info"
+            "success": "§7¡Party creada bien! Puedes ver la info de tu party usando §8/§7party info"
         },
         "info": {
             "_prefix": "",
             "code": "§dParty §8§l» §r§7Código§8: §d{code}",
-            "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §dInformación de la Party §8===-=-=-=-",
+            "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §dInfo de la Party §8===-=-=-=-",
             "leader": "§dParty §8§l» §r§7Líder§8: §d{leader}",
             "members": "§dParty §8§l» §r§7Miembros§8: §d{current}§8/§d{max}",
             "not_found": "§dParty §8§l» §r§cParty no encontrada...",
@@ -1856,7 +1856,7 @@
             "kicked": "§c¡Fuiste expulsado(a) de la party!",
             "not_in_party": "§cEl jugador no está en la party...",
             "self": "§c¡No puedes expulsarte a ti mismo!",
-            "success": "§7¡Jugador expulsado con éxito!",
+            "success": "§7¡Jugador expulsado bien!",
             "usage": "§cUsa §8/§c{label} kick §8<§cjugador§8>"
         },
         "leader": {
@@ -1874,7 +1874,7 @@
         "quit": {
             "_prefix": "",
             "notify": "§dParty §8§l» §r§d{player} §7abandonó el servidor y abandonó el grupo...",
-            "leader_offline": "§dParty §8§l» §r§d{player} §7abandonó el servidor. Tiene §d3 minutos §7para volver o perderá el liderazgo.",
+            "leader_offline": "§dParty §8§l» §r§d{player} §7abandonó el servidor. Tiene §d3 minutos §7para volver o pierde el liderazgo.",
             "leader_rejoined": "§dParty §8§l» §r§d{player} §7volvió al servidor y recuperó el liderazgo!"
         },
         "transfer": {
@@ -1897,9 +1897,9 @@
             "already_in_party": "§cEse jugador ya está en una party...",
             "already_invited": "§cEse jugador ya fue invitado...",
             "expired": "§dParty §8§l» §r§cLa invitación de §d{sender} §7expiró...",
-            "received": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §dConvite de Party§8===-=-=-{n}§dParty §8§l» §r§d{player} §7te invitó a su party...{n}§dParty §8§l» §r§7Usa §a/party aceitar §7para aceptar §7o §c/party recusar §7para rechazar",
+            "received": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §dInvitación de Party§8===-=-=-{n}§dParty §8§l» §r§d{player} §7te invitó a su party...{n}§dParty §8§l» §r§7Usa §a/party aceptar §7para aceptar §7o §c/party rechazar §7para rechazar",
             "self": "§cNo puedes invitarte a ti mismo...",
-            "sent": "§dParty §8§l» §r§7Invitación enviada a §d{player}§7!",
+            "sent": "§dParty §8§l» §r§7¡Invitación enviada a §d{player}§7!",
             "usage": "§cUsa §8/§c{label} invite §8<§cjugador§8>"
         },
         "accept": {
@@ -1908,54 +1908,54 @@
         "deny": {
             "none": "§cNo tienes ninguna invitación de party pendiente...",
             "notify": "§dParty §8§l» §r§d{player} §7rechazó tu invitación...",
-            "success": "§7Invitación rechazada!"
+            "success": "§7¡Invitación rechazada!"
         },
         "usage": "§cUsa §8/§c{label} §8<§ccreate§8|§cjoin§8|§cleave§8|§ckick§8|§ctransfer§8|§cchat§8|§cinfo§8|§ctype§8|§cinvite§8|§caccept§8|§cdeny§8>"
     },
     "pets": {
         "_prefix": "§3Mascotas §8§l» §r",
-        "activated": "§7¡Mascota creada con éxito!",
-        "deactivated": "§7¡Mascota desactivada con éxito!",
+        "activated": "§7¡Mascota creada bien!",
+        "deactivated": "§7¡Mascota desactivada bien!",
         "invalid_pet": "§cMascota inválida... Puedes ver la lista de mascotas disponibles usando §8/§c{label} lista",
-        "invalid_world": "§cNo es posible spawnear mascotas aquí...",
+        "invalid_world": "§cNo se pueden spawnear mascotas aquí...",
         "list": "§7Lista de mascotas disponibles §8(§f{count}§8):§7 {pets}",
         "no_active": "§cNo tienes ninguna mascota activa...",
         "no_name": "§cUsa §8/§c{label} nombre §8<§cnombre§8>",
-        "no_perm": "§cSolo jugadores con rango vip §f§lMoon §r§co superior pueden invocar mascotas... §oConsigue el tuyo en https://loja.iakunamc.com",
+        "no_perm": "§cSolo los que tienen rango vip §f§lMoon §r§co más pueden invocar mascotas... §oCómpralo en https://loja.iakunamc.com",
         "no_type": "§cUsa §8/§c{label} spawn §8<§cmascota§8> [§cnombre§8]",
-        "renamed": "§7¡Nombre de la mascota cambiado a '§3{name}§7' con éxito!",
-        "to_adult": "§7¡Mascota transformada en adulto con éxito!",
-        "to_baby": "§7¡Mascota transformada en bebé con éxito!",
+        "renamed": "§7¡Nombre de la mascota cambiado a '§3{name}§7' bien!",
+        "to_adult": "§7¡Mascota transformada en adulto bien!",
+        "to_baby": "§7¡Mascota transformada en bebé bien!",
         "usage": "§cUsa §8/§c{label} §8<§con§8|§crandom§8|§coff§8|§cnombre§8|§cbebé§8|§clista§8>"
     },
     "pin": {
         "add": {
             "already": "§3Pin §8§l» §r§cYa tienes un PIN...",
-            "success": "§3Pin §8§l» §r§7PIN añadido con éxito!",
-            "usage": "§3Pin §8§l» §r§cUse §8/§c{label} add §8<§cPIN de 4 dígitos§8>",
+            "success": "§3Pin §8§l» §r§7¡PIN agregado bien!",
+            "usage": "§3Pin §8§l» §r§cUsa §8/§c{label} add §8<§cPIN de 4 dígitos§8>",
             "_prefix": "§3Pin §8§l» §r"
         },
         "change": {
             "incorrect": "§3Pin §8§l» §r§cPIN actual incorrecto...",
-            "success": "§3Pin §8§l» §r§7PIN cambiado con éxito!",
-            "usage": "§3Pin §8§l» §r§cUse §8/§c{label} change §8<§cPIN actual§8> <§cnuevo PIN§8>",
+            "success": "§3Pin §8§l» §r§7¡PIN cambiado bien!",
+            "usage": "§3Pin §8§l» §r§cUsa §8/§c{label} change §8<§cPIN actual§8> <§cnuevo PIN§8>",
             "_prefix": "§3Pin §8§l» §r"
         },
         "discord": {
             "not_linked": "§3Pin §8§l» §r§cTu cuenta de Discord no está vinculada...",
-            "disabled": "§3Pin §8§l» §r§72FA de Discord desactivado con éxito",
-            "enabled": "§3Pin §8§l» §r§72FA de Discord activado con éxito"
+            "disabled": "§3Pin §8§l» §r§72FA de Discord desactivado bien",
+            "enabled": "§3Pin §8§l» §r§72FA de Discord activado bien"
         },
         "email": {
             "no_email": "§3Pin §8§l» §r§cNecesitas vincular un email primero...",
-            "disabled": "§3Pin §8§l» §r§72FA de email desactivado con éxito",
+            "disabled": "§3Pin §8§l» §r§72FA de email desactivado bien",
             "enabled": "§3Pin §8§l» §r§72FA de email activado para §b{email}§7!"
         },
         "error": {
             "incorrect": "§3Pin §8§l» §r§cPIN incorrecto..."
         },
         "login": {
-            "timeout": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §3Pin §8===-=-=-=-{n}§cTu tiempo de inicio de sesión ha expirado...",
+            "timeout": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §3Pin §8===-=-=-=-{n}§cTu tiempo para iniciar sesión expiró...",
             "toomany": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §3Pin §8===-=-=-=-{n}§cDemasiados intentos de autenticación..."
         },
         "need": {
@@ -1964,33 +1964,33 @@
         "remove": {
             "incorrect": "§3Pin §8§l» §r§cPIN incorrecto...",
             "nopin": "§3Pin §8§l» §r§cNo tienes un PIN...",
-            "success": "§3Pin §8§l» §r§7PIN eliminado con éxito!",
-            "usage": "§cUse §8/§c{label} remove §8<§cPIN actual§8>",
+            "success": "§3Pin §8§l» §r§7¡PIN eliminado bien!",
+            "usage": "§cUsa §8/§c{label} remove §8<§cPIN actual§8>",
             "_prefix": "§3Pin §8§l» §r"
         },
         "success": {
-            "login": "§3Pin §8§l» §r§7Autenticado con éxito!"
+            "login": "§3Pin §8§l» §r§7¡Autenticado bien!"
         },
-        "usage": "§3Pin §8§l» §r§cUse §8/§c{label} §8<§cadd§8|§cremove§8|§cchange§8|§cdiscord§8|§cemail§8>"
+        "usage": "§3Pin §8§l» §r§cUsa §8/§c{label} §8<§cadd§8|§cremove§8|§cchange§8|§cdiscord§8|§cemail§8>"
     },
     "pluscolor": {
         "_prefix": "§cSistema §8§l» §r",
         "invalid": "§cColor inválido...",
         "reset": "§7Color del + reiniciado al predeterminado!",
-        "success": "§7Color del + cambiado a {color}§7 correctamente!",
-        "usage": "§cUtiliza §8/§c{label} §8<§ccolor§8|§creset§8>{n}§cSistema §8§l» §r§7Colores disponibles§8: {colors}"
+        "success": "§7Color del + cambiado a {color}§7 bien!",
+        "usage": "§cUsa §8/§c{label} §8<§ccolor§8|§creset§8>{n}§cSistema §8§l» §r§7Colores disponibles§8: {colors}"
     },
     "pref": {
         "_prefix": "§cSistema §8§l» §r",
-        "disable": "§7¡Preferencia desactivada con éxito!",
-        "enable": "§7¡Preferencia activada con éxito!",
-        "onlyvip": "§cSolo jugadores con rango vip §b§l§oAstral §r§co superior pueden cambiar esta preferencia... §oConsigue el tuyo en https://loja.iakunamc.com",
-        "reset": "§7¡Todas las preferencias han sido restablecidas a los valores predeterminados!",
+        "disable": "§7¡Preferencia desactivada bien!",
+        "enable": "§7¡Preferencia activada bien!",
+        "onlyvip": "§cSolo los que tienen rango vip §b§l§oAstral §r§co más pueden cambiar esta preferencia... §oCómpralo en https://loja.iakunamc.com",
+        "reset": "§7¡Todas las preferencias fueron restablecidas a los valores predeterminados!",
         "usage": "§cUsa §8/§c{label} §8<§cpreferencia§8|§creset§8>{n}§cSistema §8§l» §r§cPreferencias disponibles§8:§7 {prefs}"
     },
     "profanity": {
         "_prefix": "§cSistema §8§l» §r",
-        "blocked": "§cPor favor, sea respetuoso"
+        "blocked": "§cPorfa sé respetuoso"
     },
     "profile": {
         "view": {
@@ -2004,38 +2004,38 @@
     },
     "register": {
         "setpassword": {
-            "success": "§eAuth §8§l» §r§7¡Contraseña establecida con éxito! En nuevos dispositivos usa §8/§7login §8<§7contraseña§8> §7para entrar"
+            "success": "§eAuth §8§l» §r§7¡Contraseña establecida bien! En nuevos dispositivos usa §8/§7login §8<§7contraseña§8> §7para entrar"
         },
         "usage": "§eAuth §8§l» §r§cUsa §8/§c{label} §8<§ccontraseña§8>"
     },
     "repair": {
         "_prefix": "§6Reparación §8§l» §r",
-        "no_damage": "§cEste ítem ya está en perfecto estado...",
+        "no_damage": "§cEste item ya está perfecto...",
         "no_item": "§cNo tienes ningún item en la mano...",
-        "no_repairable_items": "§cNo tienes ítems reparables en tu inventario...",
+        "no_repairable_items": "§cNo tienes items reparables en tu inventario...",
         "not_in_survival": "§cNo estás en modo supervivencia...",
-        "not_repairable": "§cEste ítem no se puede reparar...",
+        "not_repairable": "§cEste item no se puede reparar...",
         "success": "§7Reparaste §6{item} §7y recuperaste §6{durability} §7de durabilidad por §c{cost} Akunas§7!",
-        "success_all": "§6Reparación §8§l» §r§7Reparaste §6{items} §7ítems y recuperaste §6{durability} §7de durabilidad total por §c{cost} Akunas§7!"
+        "success_all": "§6Reparación §8§l» §r§7Reparaste §6{items} §7items y recuperaste §6{durability} §7de durabilidad total por §c{cost} Akunas§7!"
     },
     "report": {
         "_prefix": "§cSistema §8§l» §r",
         "already_reported": "§cYa reportaste a este jugador...",
         "noself": "§c¡No puedes reportarte a ti mismo!",
         "nostaff": "§c¡No puedes reportar a un miembro del staff!",
-        "sent": "§7¡Reportaste a §c{target} §7por §c{reason} correctamente!",
+        "sent": "§7¡Reportaste a §c{target} §7por §c{reason} bien!",
         "usage": "§cUsa §8/§c{label} §8<§cjugador§8> <§crazón§8>"
     },
     "requests": {
         "_prefix": "§cSistema §8§l» §r",
-        "disabled": "§cEste jugador ha desactivado la recepción de solicitudes..."
+        "disabled": "§cEste jugador desactivó la recepción de solicitudes..."
     },
     "restart": {
         "kick": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§cReiniciando...",
-        "time": "§cSistema §8§l» §r§7El servidor se reiniciará en §c{time}§7..."
+        "time": "§cSistema §8§l» §r§7El servidor se va a reiniciar en §c{time}§7..."
     },
     "rules": {
-        "cmd": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §cReglas §8===-=-=-=-{n}§cSistema §8§l» §r§7Respeta a todos. Los insultos graves, la discriminación, el acoso y las amenazas están prohibidos{n}§cSistema §8§l» §r§7Está prohibida la publicidad de servidores, sitios web, redes sociales o comunidades externas{n}§cSistema §8§l» §r§7No hagas flood, spam, abuses de las mayúsculas ni ensucies el chat{n}§cSistema §8§l» §r§7No explotes errores, fallos o vulnerabilidades del servidor{n}§cSistema §8§l» §r§7Los hacks, autoclick, macros, clientes modificados y cualquier tipo de trampa están prohibidos{n}§cSistema §8§l» §r§7No ayudes a jugadores que utilicen trampas{n}§cSistema §8§l» §r§7Está prohibido robar cuentas, estafar o hacerse pasar por el equipo{n}§cSistema §8§l» §r§7No hagas team en modos individuales o donde los equipos no estén permitidos{n}§cSistema §8§l» §r§7Los nombres, skins y contenidos ofensivos o inapropiados están prohibidos{n}§cSistema §8§l» §r§7No manipules partidas, clasificaciones, eventos o sistemas para obtener ventajas{n}§cSistema §8§l» §r§7No interfieras con el trabajo del equipo ni evadas sanciones{n}§cSistema §8§l» §r§7Las acciones que perjudiquen a otros jugadores o no estén contempladas podrán ser sancionadas"
+        "cmd": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §cReglas §8===-=-=-=-{n}§cSistema §8§l» §r§7Respeta a todos. Los insultos graves, la discriminación, el acoso y las amenazas están prohibidos{n}§cSistema §8§l» §r§7Está prohibida la publicidad de servidores, sitios web, redes sociales o comunidades externas{n}§cSistema §8§l» §r§7No hagas flood, spam, abuses de las mayúsculas ni ensucies el chat{n}§cSistema §8§l» §r§7No explotes errores, bugs o vulnerabilidades del servidor{n}§cSistema §8§l» §r§7Los hacks, autoclick, macros, clientes modificados y cualquier tipo de trampa están prohibidos{n}§cSistema §8§l» §r§7No ayudes a jugadores que usen trampas{n}§cSistema §8§l» §r§7Está prohibido robar cuentas, estafar o hacerse pasar por el equipo{n}§cSistema §8§l» §r§7No hagas team en modos individuales o donde los equipos no estén permitidos{n}§cSistema §8§l» §r§7Los nombres, skins y contenidos ofensivos o inapropiados están prohibidos{n}§cSistema §8§l» §r§7No manipules partidas, clasificaciones, eventos o sistemas para obtener ventajas{n}§cSistema §8§l» §r§7No interfieras con el trabajo del equipo ni evadas sanciones{n}§cSistema §8§l» §r§7Las acciones que perjudiquen a otros jugadores o no estén contempladas podrán ser sancionadas"
     },
     "scoreboard": {
         "lobby": "{right}     §fi§cAkuna§9MC §8§l» §r§cLobby{n}{right}{bar}{n}{right}§8§l» §r§7Nombre§8:§c {name}{n}{right}§8§l» §r§7En línea§8:§c {online}§8/§c{onlinemax}{n}{right}§8§l» §r§7Ping§8:§c {ping}ms{n}{right}{bar}{n}{n}{right}§c{address}",
@@ -2046,96 +2046,96 @@
         "lobby_blockparty": "{right} §fi§cAkuna§9MC §8§l» §r§dBlock§fParty{n}{right}{bar}{n}{right}§8§l» §r§7Victorias§8:§d {wins}{n}{right}§8§l» §r§7Partidas§8:§d {plays}{n}{right}{bar}{n}{n}{right}§d{address}"
     },
     "server": {
-        "info": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §fInformación §8===-=-=-=-{n}§cSistema §8» §r§7IP§8:§c iakunamc.com{n}§cSistema §8» §r§7Puerto§8:§c 19132{n}{n}§cSistema §8» §r§7Formulario para Staff§8:§c https://staff.iakunamc.com{n}§cSistema §8» §r§7Tienda§8:§c https://loja.iakunamc.com{n}§cSistema §8» §r§7Discord§8:§c https://discord.iakunamc.com{n}{n}§fY§cT §8» §r§7300 suscriptores §a+ §7Video promocional{n}§fMini§cYT §8» §r§750 suscriptores §a+ §7Video promocional{n}§cYT§fmirin §8» §r§70 suscriptores §a+ §7Video promocional{n}§cNotas §8» §r§7Coloca la IP en el título/descripción y promociona el servidor una vez al mes para mantener tu rango",
+        "info": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §fInfo §8===-=-=-=-{n}§cSistema §8» §r§7IP§8:§c iakunamc.com{n}§cSistema §8» §r§7Puerto§8:§c 19132{n}{n}§cSistema §8» §r§7Formulario para Staff§8:§c https://staff.iakunamc.com{n}§cSistema §8» §r§7Tienda§8:§c https://loja.iakunamc.com{n}§cSistema §8» §r§7Discord§8:§c https://discord.iakunamc.com{n}{n}§fY§cT §8» §r§7300 suscriptores §a+ §7Video promocional{n}§fMini§cYT §8» §r§750 suscriptores §a+ §7Video promocional{n}§cYT§fmirin §8» §r§70 suscriptores §a+ §7Video promocional{n}§cNotas §8» §r§7Pon la IP en el título/descripción y promociona el servidor una vez al mes para mantener tu rango",
         "whitelist": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§cServidor en mantenimiento{n}§cDiscord: https://discord.iakunamc.com",
         "forcedshutdown": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§cEl servidor sufrió un cierre forzado...",
-        "attack": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§cSistema §8§l» §r§7El servidor está bajo ataque DDoS...{n}§7Nuestra protección ya está mitigando el ataque. Las protecciones necesarias se han activado, pero aún puede haber lag o desconexiones{n}§cSistema §8§l» §r§7Soporte§8: §chttps://discord.iakunamc.com",
+        "attack": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§cSistema §8§l» §r§7El servidor está bajo ataque DDoS...{n}§7Nuestra protección ya está mitigando el ataque. Las protecciones necesarias se activaron, pero igual puede haber lag o desconexiones{n}§cSistema §8§l» §r§7Soporte§8: §chttps://discord.iakunamc.com",
         "tps_low": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§cSistema §8§l» §r§7Parece que el servidor está sobrecargado, nuestro equipo ya está trabajando para resolverlo..."
     },
     "sethome": {
         "_prefix": "§cSistema §8§l» §r",
         "already_exists": "§cYa tienes una home con ese nombre...",
-        "limit": "§cHas alcanzado el límite de homes...",
+        "limit": "§cLlegaste al límite de homes...",
         "not_in_survival": "§cNo estás en modo supervivencia...",
         "position_exists": "§cYa existe una home en esta ubicación...",
-        "success": "§7¡Home §c{home} §7creada con éxito!",
+        "success": "§7¡Home §c{home} §7creada bien!",
         "usage": "§cUso §8/§c{label} §8<§cnombre§8>"
     },
     "shop": {
         "_prefix": "§eTienda §8§l» §r",
         "break": {
             "not_owner": "§cSolo el dueño puede eliminar la tienda...",
-            "success": "§7Tienda eliminada con éxito",
-            "_prefix": "§eLoja §8§l» §r"
+            "success": "§7Tienda eliminada bien",
+            "_prefix": "§eTienda §8§l» §r"
         },
         "buy": {
             "inventory_full": "§cInventario lleno...",
             "not_enough_stock": "§cStock insuficiente...",
             "success": "§7Compraste §e{quantity}§7x {item} por §c{price} Akunas §7de §e{owner}",
-            "_prefix": "§eLoja §8§l» §r"
+            "_prefix": "§eTienda §8§l» §r"
         },
         "chest_access_denied": "§cSolo el dueño de la tienda puede acceder a este cofre...",
         "chest_not_found": "§cCofre de la tienda no encontrado...",
         "create": {
-            "chest_not_found": "§c¡Coloca un cofre detrás/debajo del cartel...",
+            "chest_not_found": "§c¡Pon un cofre detrás/debajo del cartel...",
             "error": "§cError creando la tienda...",
-            "invalid_item": "§cID de ítem inválido...",
+            "invalid_item": "§cID de item inválido...",
             "invalid_price": "§cPrecio inválido...",
             "invalid_quantity": "§cCantidad inválida...",
-            "success": "§7¡Tienda creada con éxito!",
-            "_prefix": "§eLoja §8§l» §r"
+            "success": "§7¡Tienda creada bien!",
+            "_prefix": "§eTienda §8§l» §r"
         },
         "inventory_full": "§c¡Inventario lleno...",
         "not_in_survival": "§cNo estás en modo supervivencia...",
         "owner": {
             "notify_purchase": "§e{seller} §7vendió §e{quantity}§7x {item} por §c{price} Akunas§7!",
             "notify_sale": "§e{buyer} §7compró §e{quantity}§7x {item} por §c{price} Akunas§7!",
-            "_prefix": "§eLoja §8§l» §r"
+            "_prefix": "§eTienda §8§l» §r"
         },
         "purchase_error": "§cError al procesar la compra...",
         "purchase_summary": "§7¡Compraste §7{items} por un total de §c{total} Akunas§7!",
         "self_interact": "§cNo puedes interactuar con tu propia tienda...",
         "sell": {
             "chest_full": "§c¡El cofre de la tienda está lleno...",
-            "insufficient_items": "§cNo tienes suficientes ítems...",
+            "insufficient_items": "§cNo tienes suficientes items...",
             "success": "§7¡Vendiste §e{quantity}§7x {item} por §c{price} Akunas §7a §e{owner}§7!",
-            "_prefix": "§eLoja §8§l» §r"
+            "_prefix": "§eTienda §8§l» §r"
         }
     },
     "sit": {
         "_prefix": "§cSistema §8§l » §r",
         "accept": {
-            "different_world": "§cNecesitas estar en el mismo mundo que el jugador...",
+            "different_world": "§cTienes que estar en el mismo mundo que el jugador...",
             "none": "§cNo tienes ninguna solicitud de carga pendiente...",
-            "notify": "§c{target} §7ha aceptado tu solicitud para ser cargado!",
-            "offline": "§cEl jugador que envió la solicitud se ha ido del servidor...",
+            "notify": "§c{target} §7aceptó tu solicitud para ser cargado!",
+            "offline": "§cEl jugador que envió la solicitud se fue del servidor...",
             "sender_different_world": "§c{target} §7ya no está en el mismo mundo que tú...",
-            "sender_too_far": "§c{target} §7se ha alejado demasiado...",
-            "success": "§7Has aceptado la solicitud de §c{sender}§7!",
+            "sender_too_far": "§c{target} §7se alejó demasiado...",
+            "success": "§7¡Aceptaste la solicitud de §c{sender}§7!",
             "too_far": "§cDemasiado lejos..."
         },
         "blockedworld": "§cNo puedes sentarte aquí...",
         "deny": {
             "none": "§cNo tienes ninguna solicitud de carga pendiente...",
-            "notify": "§c{target} §7ha rechazado tu solicitud para ser cargado...",
-            "success": "§7Solicitud de carga rechazada con éxito..."
+            "notify": "§c{target} §7rechazó tu solicitud para ser cargado...",
+            "success": "§7Solicitud de carga rechazada bien..."
         },
-        "different_world": "§cNecesitas estar en el mismo mundo que el jugador...",
-        "expired": "§cLa solicitud de carga de §c{sender} §7ha expirado...",
+        "different_world": "§cTienes que estar en el mismo mundo que el jugador...",
+        "expired": "§cLa solicitud de carga de §c{sender} §7expiró...",
         "pending": "§cEse jugador ya tiene una solicitud de carga pendiente...",
         "request": {
             "_prefix": "",
             "received": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §6Solicitud de Carga §8===-=-=-{n}§cSistema §8§l » §r§6{sender} §7quiere cargarte...{n}§cSistema §8§l » §r§7Usa §a/sitaccept para aceptar §7o §c/sitdeny para rechazar",
-            "sent": "§cSistema §8§l » §r§7Solicitud para ser cargado enviada a §c{target}§7!"
+            "sent": "§cSistema §8§l » §r§7¡Solicitud para ser cargado enviada a §c{target}§7!"
         },
         "self": "§cNo puedes enviarte una solicitud a ti mismo...",
-        "success": "§7Te has sentado con éxito!",
+        "success": "§7¡Te sentaste bien!",
         "too_far": "§cDemasiado lejos..."
     },
     "sleep": {
         "_prefix": "§cSistema §8§l» §r",
         "blockedworld": "§cNo puedes dormir aquí...",
-        "success": "§7¡Dormiste con éxito! buenos sueños..."
+        "success": "§7¡Dormiste bien! buenos sueños..."
     },
     "smelt": {
         "_prefix": "§6Horno §8§l» §r",
@@ -2154,16 +2154,16 @@
         "disabled_me": "§1Tell §8§l» §r§cTu tell está desactivado..."
     },
     "tempban": {
-        "broadcast": "§cSistema §8§l» §r§c{target} §7fue §cbaneado(a) temporalmente §7por §c{time} §7debido a §c{reason}",
+        "broadcast": "§cSistema §8§l» §r§c{target} §7fue §cbaneado(a) temporalmente §7por §c{time} §7por §c{reason}",
         "kick": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§cHas sido baneado(a) temporalmente...{n}§cNombre§8:§c {name}{n}§cRazón§8:§c {reason}{n}§cExpira en§8:§c {end}{n}§cFecha§8:§c {timestamp}"
     },
     "tempmute": {
         "_prefix": "§cSistema §8§l» §r",
-        "broadcast": "§c{target} §7ha sido §csilenciado(a) temporalmente §7por §c{time} §7debido a §c{reason}",
-        "muted": "§cHas sido silenciado(a) temporalmente debido a {reason}. El castigo expira el {end}{n}§cSistema §8§l» §r§cRecuerda leer nuestras §8/§creglas para evitar castigos..."
+        "broadcast": "§c{target} §7ha sido §csilenciado(a) temporalmente §7por §c{time} §7por §c{reason}",
+        "muted": "§cHas sido silenciado(a) temporalmente por {reason}. El castigo expira el {end}{n}§cSistema §8§l» §r§cRecuerda leer nuestras §8/§creglas para evitar castigos..."
     },
     "tpa": {
-        "expired": "§5Teletransporte §8§l» §r§cLa solicitud de teletransporte de {sender} ha expirado...",
+        "expired": "§5Teletransporte §8§l» §r§cLa solicitud de teletransporte de {sender} expiró...",
         "noself": "§5Teletransporte §8§l» §r§cNo puedes teletransportarte a ti mismo...",
         "not_in_survival": "§5Teletransporte §8§l» §r§cNo estás en modo supervivencia...",
         "pending": "§5Teletransporte §8§l» §r§cEse jugador ya tiene una solicitud de teletransporte pendiente...",
@@ -2176,38 +2176,38 @@
         "_prefix": "§5Teletransporte §8§l» §r",
         "none": "§cNo tienes solicitudes de teletransporte pendientes...",
         "not_in_survival": "§cEl jugador no está en modo supervivencia...",
-        "success": "§7¡Has aceptado la solicitud de teletransporte de §5{sender}§7!",
+        "success": "§7¡Aceptaste la solicitud de teletransporte de §5{sender}§7!",
         "success_target": "§5{target} §7aceptó tu solicitud de teletransporte!"
     },
     "tpdeny": {
         "_prefix": "§5Teletransporte §8§l» §r",
         "none": "§cNo tienes solicitudes de teletransporte pendientes...",
-        "success": "§7Has rechazado la solicitud de teletransporte de §5{sender}§7!",
+        "success": "§7Rechazaste la solicitud de teletransporte de §5{sender}§7!",
         "success_target": "§5{target} §7rechazó tu solicitud de teletransporte!"
     },
     "warn": {
         "_prefix": "§cSistema §8§l» §r",
-        "active_warning": "§cTienes {count} advertencia(s) activa(s)... Usa §8/§cwarns para visualizar...",
-        "received": "§7Fuiste advertido(a) por §c{time} §7debido a §c{reason}{n}§cSistema §8§l» §r§cRecuerda leer nuestras §8/§creglas para evitar castigos..."
+        "active_warning": "§cTienes {count} advertencia(s) activa(s)... Usa §8/§cwarns para verlas...",
+        "received": "§7Te advirtieron por §c{time} §7por §c{reason}{n}§cSistema §8§l» §r§cRecuerda leer nuestras §8/§creglas para evitar castigos..."
     },
     "wings": {
         "_prefix": "§6A§en§6g§ee§6l §8§l» §r",
-        "invalid_world": "§cNo es posible activar las alas aquí...",
-        "off": "§7Alas desactivadas con éxito",
-        "on": "§7Alas activadas con éxito"
+        "invalid_world": "§cNo se pueden activar las alas aquí...",
+        "off": "§7Alas desactivadas bien",
+        "on": "§7Alas activadas bien"
     },
     "xp": {
-        "_prefix": "§9Levels §8§l» §r",
-        "gain": "§7¡Has ganado §9{xp} xp§7!",
-        "gain_partner": "§7¡Has ganado §9{xp} xp §7de tu compañero/a §c{partner}§7!",
-        "levelup": "§7¡Felicidades! Has alcanzado el §9level {newLevel}",
+        "_prefix": "§9Niveles §8§l» §r",
+        "gain": "§7¡Ganaste §9{xp} xp§7!",
+        "gain_partner": "§7¡Ganaste §9{xp} xp §7de tu compañero/a §c{partner}§7!",
+        "levelup": "§7¡Felicidades! Llegaste al §9nivel {newLevel}",
         "temp_multiplier": "§7Tienes un aumento de xp temporal de §9{boost}x §7activo durante §9{time}"
     },
     "error": {
         "_prefix": "§cSistema §8§l» §r",
-        "unknowncommand": "§cEste comando no existe...",
+        "unknowncommand": "§cEse comando no existe...",
         "offlineplayer": "§cEl jugador está desconectado",
-        "command": "§c¡Oh, no! ¡Ha ocurrido un error!",
+        "command": "§c¡Ay, no! ¡Pasó un error!",
         "noperm": "§cNo tienes permiso para usar este comando...",
         "invalid_page": "§cSistema §8§l» §r§cPágina inválida, solo hay §c{total} §cpáginas..."
     },
@@ -2217,11 +2217,11 @@
         "on": {
             "usage": "§cUsa §8/§c{label} on §8<§ctag§8>",
             "not_owned": "§cNo tienes esta tag...",
-            "success": "§7Tag activada con éxito"
+            "success": "§7Tag activada bien"
         },
         "list": "§7Tus tags§8: §7{tags}",
         "expired": "§cTu tag {tag} expiró...",
-        "received": "§7Recibiste la tag {tag}! Usa §8/§7{label} on {tag} para activarla..."
+        "received": "§7¡Recibiste la tag {tag}! Usa §8/§7{label} on {tag} para activarla..."
     },
     "ping": {
         "_prefix": "§cSistema §8§l» §r",
@@ -2238,7 +2238,7 @@
     },
     "mission": {
         "_prefix": "§6Misiones §8§l» §r",
-        "completed": "§7¡Enhorabuena! Has completado la misión §6{mission}",
+        "completed": "§7¡Enhorabuena! Completaste la misión §6{mission}",
         "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §6Misiones §8===-=-=-=-",
         "header_other": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §6Misiones §7de §6{target} §8===-=-=-=-",
         "resetIn": "§7Las misiones se reinician en §6{time}",
@@ -2253,7 +2253,7 @@
             "pvp": "§7Mata a {target} jugadores en §bPvP Modes",
             "thebridge": "§7Mata a {target} jugadores en §cThe§9Bridge",
             "bedwars": "§7Mata a {target} jugadores en §cBed§fWars",
-            "blocksumo": "§7Mata {target} jugadores en §bBlock§fSumo"
+            "blocksumo": "§7Mata a {target} jugadores en §bBlock§fSumo"
         },
         "win": {
             "_prefix": "",
@@ -2292,10 +2292,10 @@
         },
         "craft": {
             "_prefix": "",
-            "items": "§7Craftea {target} ítems"
+            "items": "§7Craftea {target} items"
         },
         "no": {
-            "missions": "§cNo hay misiones disponibles en este momento..."
+            "missions": "§cNo hay misiones disponibles ahora..."
         },
         "list": {
             "item": {
@@ -2303,7 +2303,7 @@
             }
         },
         "reward": {
-            "xp_multiplier": "§7Has recibido un §9Multiplicador de XP {multiplier}x §7durante §6{duration}"
+            "xp_multiplier": "§7Recibiste un §9Multiplicador de XP {multiplier}x §7durante §6{duration}"
         },
         "first": {
             "kill": {
@@ -2324,7 +2324,7 @@
         "buy": {
             "items": {
                 "_prefix": "",
-                "bedwars": "§7Compra {target} ítems en la tienda de §cBed§fWars"
+                "bedwars": "§7Compra {target} items en la tienda de §cBed§fWars"
             },
             "upgrades": {
                 "_prefix": "",
@@ -2339,7 +2339,7 @@
     "resetmissions": {
         "_prefix": "§6Misiones §8§l» §r",
         "no_missions": "§c¡No tienes misiones para reiniciar!",
-        "success": "§7¡Tus misiones se han reiniciado correctamente!"
+        "success": "§7¡Tus misiones se reiniciaron bien!"
     },
     "achievement": {
         "_prefix": "§6Logros §8§l» §r",
@@ -2606,7 +2606,7 @@
                 }
             },
             "social": {
-                "marry": "Casate con otro jugador",
+                "marry": "Cásate con otro jugador",
                 "party": {
                     "create": "Crea un grupo"
                 },
@@ -2617,10 +2617,10 @@
             },
             "general": {
                 "level": {
-                    "ten": "Alcanza el nivel 10",
-                    "twentyfive": "Alcanza el nivel 25",
-                    "fifty": "Alcanza el nivel 50",
-                    "onehundred": "Alcanza el nivel 100"
+                    "ten": "Llega al nivel 10",
+                    "twentyfive": "Llega al nivel 25",
+                    "fifty": "Llega al nivel 50",
+                    "onehundred": "Llega al nivel 100"
                 },
                 "wins": {
                     "onehundred": "Gana 100 partidas en total",
@@ -2781,7 +2781,7 @@
         "usage": "§cUsa §8/§c{label} §8<§clista§8|§cidioma§8>",
         "list_header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §3Idiomas §8(§f{page}§8/§f{max}§8) §8===-=-=-=-",
         "list_item": "§3{code} §8- §7{name}",
-        "changed": "§7Idioma cambiado a §3{name} §7correctamente!",
+        "changed": "§7¡Idioma cambiado a §3{name} §7bien!",
         "invalid": "§cEl idioma §8\"§c{code}§8\"§c no existe, usa §8/§c{label} lista §cpara ver los idiomas disponibles"
     },
     "skin": {
@@ -2805,12 +2805,12 @@
             "not_found": "§3Skins §8§l» §r§cSkin §8'§f{id}§8'§c no encontrada...",
             "no_data": "§3Skins §8§l» §r§cDatos de la skin §8'§f{id}§8'§c no encontrados en el servidor...",
             "already_equipped": "§3Skins §8§l» §r§cYa estás usando la skin §f{name}§c...",
-            "success": "§3Skins §8§l» §r§7Skin §3{name} §7equipada correctamente!"
+            "success": "§3Skins §8§l» §r§7¡Skin §3{name} §7equipada bien!"
         },
         "off": {
             "_prefix": "",
             "none": "§3Skins §8§l» §r§cNo tienes ninguna skin de catálogo activa...",
-            "success": "§3Skins §8§l» §r§7Skin de catálogo eliminada, tu skin original ha sido restaurada!"
+            "success": "§3Skins §8§l» §r§7¡Skin de catálogo eliminada, tu skin original fue restaurada!"
         }
     },
     "discord": {
@@ -2823,41 +2823,41 @@
             "expires": "§7El código expira en 5 minutos..."
         },
         "unlink": {
-            "success": "§7Tu cuenta ha sido desvinculada exitosamente...",
+            "success": "§7Tu cuenta fue desvinculada bien...",
             "not_linked": "§cTu cuenta no está vinculada..."
         }
     },
     "email": {
-        "usage": "§bEmail §8§l» §r§cUse §8/§c{label} §8<§clink§8|§cverify§8|§cunlink§8|§c2fa§8>",
+        "usage": "§bEmail §8§l» §r§cUsa §8/§c{label} §8<§clink§8|§cverify§8|§cunlink§8|§c2fa§8>",
         "link": {
-            "usage": "§bEmail §8§l» §r§cUse §8/§c{label} link §8<§cemail§8>",
+            "usage": "§bEmail §8§l» §r§cUsa §8/§c{label} link §8<§cemail§8>",
             "invalid": "§bEmail §8§l» §r§cEmail inválido...",
             "already": "§bEmail §8§l» §r§cEste email ya está vinculado...",
-            "sent": "§bEmail §8§l» §r§7Se ha enviado un código de verificación a §b{email}§7!",
-            "cooldown": "§bEmail §8§l» §r§cEspera §b{seconds}s §cantes de solicitar otro código..."
+            "sent": "§bEmail §8§l» §r§7¡Se envió un código de verificación a §b{email}§7!",
+            "cooldown": "§bEmail §8§l» §r§cEspera §b{seconds}s §cantes de pedir otro código..."
         },
         "verify": {
-            "usage": "§bEmail §8§l» §r§cUse §8/§c{label} verify §8<§ccódigo§8>",
-            "expired": "§bEmail §8§l» §r§cEl código de verificación ha expirado...",
+            "usage": "§bEmail §8§l» §r§cUsa §8/§c{label} verify §8<§ccódigo§8>",
+            "expired": "§bEmail §8§l» §r§cEl código de verificación expiró...",
             "invalid": "§bEmail §8§l» §r§cCódigo de verificación inválido...",
-            "success": "§bEmail §8§l» §r§7Email §b{email} §7verificado con éxito!"
+            "success": "§bEmail §8§l» §r§7¡Email §b{email} §7verificado bien!"
         },
         "unlink": {
             "not_linked": "§bEmail §8§l» §r§cNo tienes un email vinculado...",
-            "success": "§bEmail §8§l» §r§7Email desvinculado con éxito!"
+            "success": "§bEmail §8§l» §r§7¡Email desvinculado bien!"
         },
         "2fa": {
             "no_email": "§bEmail §8§l» §r§cNecesitas vincular un email primero...",
-            "disabled": "§bEmail §8§l» §r§72FA de email desactivado con éxito",
+            "disabled": "§bEmail §8§l» §r§72FA de email desactivado bien",
             "enabled": "§bEmail §8§l» §r§72FA de email activado para §b{email}§7!"
         }
     },
     "maze": {
-        "usage": "§7Para unirte usa §8/§7{label} entrar{n}§5Maze §8§l» §r§7Para salir usa §8/§7{label} sair",
+        "usage": "§7Para entrar usa §8/§7{label} entrar{n}§5Maze §8§l» §r§7Para salir usa §8/§7{label} sair",
         "_prefix": "§5Maze §8§l» §r",
         "finish": {
-            "noreward": "§7¡Felicidades, has finalizado el laberinto!",
-            "reward": "§7¡Felicidades, has finalizado el laberinto y recibiste §7§lNightmare §r§7como recompensa!"
+            "noreward": "§7¡Felicidades, terminaste el laberinto!",
+            "reward": "§7¡Felicidades, terminaste el laberinto y recibiste §7§lNightmare §r§7como recompensa!"
         }
     },
     "twofa": {
@@ -2873,26 +2873,26 @@
             "email": {
                 "expired": "§eAuth §8§l» §r§cEl código expiró...",
                 "invalid": "§eAuth §8§l» §r§cCódigo inválido...",
-                "success": "§eAuth §8§l» §r§7¡Autenticado con éxito!"
+                "success": "§eAuth §8§l» §r§7¡Autenticado bien!"
             }
         }
     },
     "tntrun": {
         "_prefix": "§cTNT§fRun §8§l» §r",
         "state": {
-            "waiting": "§cEsperando más jugadores...",
-            "starting": "§7Empezando en §c{start}s"
+            "waiting": "§cEsperando a más jugadores...",
+            "starting": "§7Empieza en §c{start}s"
         },
         "player": {
             "join": "§c{player} §7se unió al partido §8(§f{count}§8/§f{maxPlayers}§8)",
-            "quit": "§c{player} §7salió del partido §8(§f{count}§8/§f{maxPlayers}§8)",
+            "quit": "§c{player} §7se salió del partido §8(§f{count}§8/§f{maxPlayers}§8)",
             "died": "§c{player} §7murió §8(§f{alive}§8/§f{maxPlayers}§8)"
         },
         "game": {
-            "returning": "§7Regresando al lobby en §c{time}s"
+            "returning": "§7Volviendo al lobby en §c{time}s"
         },
         "command": {
-            "usage": "§7Para unirse usa §8/§7tntrun join{n}§cTNT§fRun §8§l» §r§7Para salir usa §8/§7tntrun leave",
+            "usage": "§7Para entrar usa §8/§7tntrun join{n}§cTNT§fRun §8§l» §r§7Para salir usa §8/§7tntrun leave",
             "no_space": "§cNo hay arenas disponibles..."
         },
         "scoreboard": {
@@ -2903,17 +2903,17 @@
     "blockparty": {
         "_prefix": "§dBlock§fParty §8§l» §r",
         "state": {
-            "waiting": "§cEsperando más jugadores...",
-            "starting": "§7Empezando en §d{start}s"
+            "waiting": "§cEsperando a más jugadores...",
+            "starting": "§7Empieza en §d{start}s"
         },
         "player": {
             "join": "§d{player} §7se unió a la partida §8(§f{count}§8/§f{maxPlayers}§8)",
-            "quit": "§d{player} §7salió de la partida §8(§f{count}§8/§f{maxPlayers}§8)",
+            "quit": "§d{player} §7se salió de la partida §8(§f{count}§8/§f{maxPlayers}§8)",
             "died": "§d{player} §7murió §8(§f{alive}§8/§f{maxPlayers}§8)"
         },
         "color": {
-            "selected": "§7Ve al color §d{color}§7!",
-            "removing": "§7El suelo desaparecerá en §d{time}s"
+            "selected": "§7¡Ve al color §d{color}§7!",
+            "removing": "§7El suelo desaparece en §d{time}s"
         },
         "game": {
             "returning": "§7Volviendo al lobby en §d{time}s"
@@ -2933,13 +2933,13 @@
         "on": {
             "_prefix": "§6Títulos §8§l» §r",
             "usage": "§cUsa §8/§c{label} on §8<§cid§8>",
-            "error_not_owned": "§cNo posees este título...",
+            "error_not_owned": "§cNo tienes este título...",
             "error_invalid_id": "§cTítulo no encontrado...",
-            "success": "§7Título §6{titulo} §7activado con éxito!"
+            "success": "§7¡Título §6{titulo} §7activado bien!"
         },
         "off": {
             "_prefix": "§6Títulos §8§l» §r",
-            "success": "§7Título desactivado con éxito!"
+            "success": "§7¡Título desactivado bien!"
         },
         "view": {
             "_prefix": "§6Títulos §8§l» §r",
@@ -2950,10 +2950,10 @@
         "buy": {
             "_prefix": "§6Títulos §8§l» §r",
             "usage": "§cUsa §8/§c{label} buy §8<§cid§8>",
-            "error_owned": "§cYa posees este título...",
+            "error_owned": "§cYa tienes este título...",
             "error_staff_only": "§cEste título no se puede comprar...",
-            "success": "§7Título §6{titulo} §7comprado con éxito!"
+            "success": "§7¡Título §6{titulo} §7comprado bien!"
         },
-        "expired": "§6Títulos §8§l» §r§7Tu título §6{titulo} §7ha expirado..."
+        "expired": "§6Títulos §8§l» §r§7Tu título §6{titulo} §7expiró..."
     }
 }
