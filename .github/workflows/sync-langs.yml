@@ -1,0 +1,56 @@
+name: Sync langs
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: sync-langs
+  cancel-in-progress: true
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Create missing keys and generate report
+        run: python scripts/sync_langs.py --report "$RUNNER_TEMP/report.md"
+
+      - name: Commit created keys
+        run: |
+          if [ -n "$(git status --porcelain languages)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add languages
+            git commit -m "chore(langs): sync missing keys from base langs [skip ci]"
+            git push
+          fi
+
+      - name: Create or update untranslated keys issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TITLE="Untranslated language keys"
+          gh label create "translation" --color 0E8A16 --description "Pending translations" 2>/dev/null || true
+          NUM=$(gh issue list --state open --label translation --search "$TITLE in:title" --json number --jq '.[0].number')
+          if grep -q "^\*\*Total:\*\* 0$" "$RUNNER_TEMP/report.md"; then
+            if [ -n "$NUM" ]; then
+              gh issue close "$NUM" --comment "All keys are translated."
+            fi
+            exit 0
+          fi
+          if [ -n "$NUM" ]; then
+            gh issue edit "$NUM" --body-file "$RUNNER_TEMP/report.md"
+          else
+            gh issue create --title "$TITLE" --label translation --body-file "$RUNNER_TEMP/report.md"
+          fi

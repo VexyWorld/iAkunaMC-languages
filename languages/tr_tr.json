@@ -1208,6 +1208,67 @@
             "chp": "§7Şifren başarıyla değiştirildi!",
             "login": "§7Giriş başarılı!",
             "register": "§7Başarıyla kaydoldun! §cKaydolarak §8/§crules kurallarımızı kabul etmiş olursun..."
+        },
+        "captcha": {
+            "_prefix": "",
+            "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §eCaptcha §8===-=-=-=-{n}§eCaptcha §8§l» §r§7Devam etmek için anti-bot doğrulamasını tamamlayın!",
+            "success": "§eCaptcha §8§l» §r§aDoğrulama başarıyla tamamlandı!",
+            "wrong_retry": "§eCaptcha §8§l» §r§cYanlış cevap! Kalan deneme§8: §e{remaining}",
+            "must_complete": "§eCaptcha §8§l» §r§cKomut kullanmadan önce anti-bot doğrulamasını tamamlayın...",
+            "timeout": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §eCaptcha §8===-=-=-=-{n}§cCaptcha doğrulama süreniz doldu...",
+            "toomany": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §eCaptcha §8===-=-=-=-{n}§cÇok fazla hatalı captcha denemesi...",
+            "math": {
+                "prompt": "§eCaptcha §8§l» §r§7§e{expression} §7kaçtır? Sohbete sadece sonucu yazın",
+                "popup": "§eCaptcha §8| §f{expression} §8= §e? §8(§c{seconds}s§8)"
+            },
+            "word": {
+                "pool": "AKUNA,ELMAS,ZUMRUT,KILIC,EJDERHA,PORTAL,KALE,YILDIZ,ZAFER,KALKAN,KAZMA,REDSTONE,OBSIDYEN,OKCU,SAVAS,HAZINE,TAC,KUPA,ARENA,ANKA,SAFIR,YAKUT",
+                "prompt": "§eCaptcha §8§l» §r§7Devam etmek için sohbete §e{word} §7kelimesini yazın",
+                "popup": "§eCaptcha §8| §7Yazın§8: §e{word} §8(§c{seconds}s§8)"
+            },
+            "window": {
+                "title": "§8Tıkla: {item}",
+                "item_label": "§e§l?",
+                "prompt": "§eCaptcha §8§l» §r§7Açılan menüden {item} §7seçin §8(§7veya §8/§7captcha§8)",
+                "popup": "§eCaptcha §8| §7{item} §7seçin §8(§c{seconds}s§8)",
+                "use_menu": "§eCaptcha §8§l» §r§cPencereden doğru eşyayı seçin! Kapandıysa §8/§ccaptcha §ckullanın"
+            },
+            "map": {
+                "item_name": "§r§eDoğrulama Haritası",
+                "prompt": "§eCaptcha §8§l» §r§7Elinizdeki §eharitaya bakın §7ve görünen kodu sohbete yazın",
+                "popup": "§eCaptcha §8| §7Harita kodunu yazın §8(§c{seconds}s§8)"
+            },
+            "items": {
+                "diamond": "§bElmas",
+                "emerald": "§aZümrüt",
+                "gold_ingot": "§6Altın Külçesi",
+                "iron_ingot": "§fDemir Külçesi",
+                "apple": "§cElma",
+                "golden_apple": "§eAltın Elma",
+                "book": "§6Kitap",
+                "compass": "§7Pusula",
+                "clock": "§eSaat",
+                "diamond_sword": "§bElmas Kılıç",
+                "bow": "§6Yay",
+                "bread": "§eEkmek",
+                "cake": "§fPasta",
+                "bone": "§fKemik",
+                "tnt": "§cTNT",
+                "bookshelf": "§6Kitaplık",
+                "obsidian": "§5Obsidyen",
+                "glowstone": "§eIşıktaşı"
+            },
+            "cmd": {
+                "_prefix": "§eCaptcha §8§l» §r",
+                "no_active": "§cBekleyen bir captcha doğrulamanız yok...",
+                "usage": "§cKullanım §8/§c{label} §8<§cstatus§8|§csurge§8|§ctest§8>",
+                "status": "§7Surge§8: {active} §8(§7mod§8: §e{mode}§8, §7giriş§8: §e{recent}§8/§e{threshold} §e{window}s§8, §7kalan§8: §e{remaining}s§8){n}§eCaptcha §8§l» §r§7Aktif türler§8: §7{types}",
+                "surge_usage": "§cKullanım §8/§c{label} surge §8<§con§8|§coff§8|§cauto§8>",
+                "surge_updated": "§7Anti-bot modu §e{mode} §7olarak ayarlandı!",
+                "test_usage": "§cKullanım §8/§c{label} test §8<§cmath§8|§cword§8|§cwindow§8|§cmap§8> [§coyuncu§8]",
+                "test_started": "§e{player} §7için §e{type} §7doğrulaması başlatıldı!",
+                "player_offline": "§c{player} çevrimiçi değil..."
+            }
         }
     },
     "automsg": {
@@ -2062,45 +2123,45 @@
         "usage": "§cKullanım: §8/§c{label} §8<§cisim§8>"
     },
     "shop": {
+        "_prefix": "§eMağaza §8§l» §r",
         "break": {
-            "_prefix": "§eDükkan §8§l» §r",
             "not_owner": "§cYalnızca sahibi dükkanı kaldırabilir...",
-            "success": "§7Dükkan başarıyla kaldırıldı"
+            "success": "§7Dükkan başarıyla kaldırıldı",
+            "_prefix": "§eDükkan §8§l» §r"
         },
         "buy": {
-            "_prefix": "§eDükkan §8§l» §r",
             "inventory_full": "§cEnvanter dolu...",
             "not_enough_stock": "§cYetersiz stok...",
-            "success": "§7§e{owner}§7 adlı oyuncudan §e{quantity}§7x {item} §c{price} Akuna karşılığında satın aldın"
+            "success": "§7§e{owner}§7 adlı oyuncudan §e{quantity}§7x {item} §c{price} Akuna karşılığında satın aldın",
+            "_prefix": "§eDükkan §8§l» §r"
         },
         "chest_access_denied": "§eDükkan §8§l» §r§cBu sandığa yalnızca dükkan sahibi erişebilir...",
         "chest_not_found": "§eDükkan §8§l» §r§cDükkan sandığı bulunamadı...",
         "create": {
-            "_prefix": "§eDükkan §8§l» §r",
             "chest_not_found": "§cTabelanın arkasına/altına bir sandık koy...",
             "error": "§cDükkan oluşturulurken hata...",
             "invalid_item": "§cGeçersiz eşya ID'si...",
             "invalid_price": "§cGeçersiz fiyat...",
             "invalid_quantity": "§cGeçersiz miktar...",
-            "success": "§7Dükkan başarıyla oluşturuldu!"
+            "success": "§7Dükkan başarıyla oluşturuldu!",
+            "_prefix": "§eDükkan §8§l» §r"
         },
         "inventory_full": "§eDükkan §8§l» §r§cEnvanter dolu...",
         "not_in_survival": "§eDükkan §8§l» §r§cHayatta kalma modunda değilsin...",
         "owner": {
-            "_prefix": "§eDükkan §8§l» §r",
             "notify_purchase": "§e{seller} §7§e{quantity}§7x {item} sattı. Kazanç: §c{price} Akuna§7!",
-            "notify_sale": "§e{buyer} §7§e{quantity}§7x {item} satın aldı. Kazanç: §c{price} Akuna§7!"
+            "notify_sale": "§e{buyer} §7§e{quantity}§7x {item} satın aldı. Kazanç: §c{price} Akuna§7!",
+            "_prefix": "§eDükkan §8§l» §r"
         },
         "purchase_error": "§eDükkan §8§l» §r§cSatın alma işlenirken hata...",
         "purchase_summary": "§eDükkan §8§l» §r§7{items} satın aldın. Toplam tutar: §c{total} Akuna§7!",
         "self_interact": "§eDükkan §8§l» §r§cKendi dükkanınla etkileşime giremezsin...",
         "sell": {
-            "_prefix": "§eDükkan §8§l» §r",
             "chest_full": "§cDükkan sandığı dolu...",
             "insufficient_items": "§cYeterli eşyan yok...",
-            "success": "§7§e{owner}§7 adlı oyuncuya §e{quantity}§7x {item} sattın. Kazanç: §c{price} Akuna §7!"
-        },
-        "_prefix": "§eMağaza §8§l» §r"
+            "success": "§7§e{owner}§7 adlı oyuncuya §e{quantity}§7x {item} sattın. Kazanç: §c{price} Akuna §7!",
+            "_prefix": "§eDükkan §8§l» §r"
+        }
     },
     "sit": {
         "_prefix": "§cSistem §8§l » §r",
@@ -2853,8 +2914,8 @@
         }
     },
     "maze": {
-        "usage": "§7Katılmak için kullan §8/§7{label} entrar{n}§5Maze §8§l» §r§7Ayrılmak için kullan §8/§7{label} sair",
         "_prefix": "§5Maze §8§l» §r",
+        "usage": "§7Katılmak için kullan §8/§7{label} entrar{n}§5Maze §8§l» §r§7Ayrılmak için kullan §8/§7{label} sair",
         "finish": {
             "noreward": "§7Tebrikler, labirenti bitirdin!",
             "reward": "§7Tebrikler, labirenti bitirdin ve §7§lNightmare §r§7ödülünü kazandın!"
@@ -2955,5 +3016,11 @@
             "success": "§7Ünvan §6{titulo} §7başarıyla satın alındı!"
         },
         "expired": "§6Ünvanlar §8§l» §r§7Ünvanın §6{titulo} §7süresi doldu..."
+    },
+    "command": {
+        "_prefix": "§cSistem §8§l» §r",
+        "only": {
+            "ingame": "§cBu komut yalnızca oyun içinde kullanılabilir..."
+        }
     }
 }

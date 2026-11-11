@@ -1208,6 +1208,67 @@
             "chp": "§7Votre mot de passe a été changé avec succès!",
             "login": "§7Connexion réussie!",
             "register": "§7Vous avez été enregistré(e) avec succès! §cEn vous enregistrant, vous acceptez nos §8/§cregras..."
+        },
+        "captcha": {
+            "_prefix": "",
+            "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §eCaptcha §8===-=-=-=-{n}§eCaptcha §8§l» §r§7Complétez la vérification anti-bot pour continuer !",
+            "success": "§eCaptcha §8§l» §r§aVérification réussie !",
+            "wrong_retry": "§eCaptcha §8§l» §r§cRéponse incorrecte ! Essais restants§8: §e{remaining}",
+            "must_complete": "§eCaptcha §8§l» §r§cComplétez le défi anti-bot avant d'utiliser des commandes...",
+            "timeout": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §eCaptcha §8===-=-=-=-{n}§cVotre temps pour compléter le captcha a expiré...",
+            "toomany": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §eCaptcha §8===-=-=-=-{n}§cTrop de tentatives échouées au captcha...",
+            "math": {
+                "prompt": "§eCaptcha §8§l» §r§7Combien font §e{expression}§7 ? Écrivez uniquement le résultat dans le chat",
+                "popup": "§eCaptcha §8| §f{expression} §8= §e? §8(§c{seconds}s§8)"
+            },
+            "word": {
+                "pool": "AKUNA,DIAMANT,EMERAUDE,EPEE,DRAGON,PORTAIL,CHATEAU,ETOILE,VICTOIRE,BOUCLIER,PIOCHE,REDSTONE,OBSIDIENNE,ARCHER,COMBAT,TRESOR,COURONNE,TROPHEE,ARENE,PHENIX,SAPHIR,RUBIS",
+                "prompt": "§eCaptcha §8§l» §r§7Écrivez le mot §e{word} §7dans le chat pour continuer",
+                "popup": "§eCaptcha §8| §7Écrivez§8: §e{word} §8(§c{seconds}s§8)"
+            },
+            "window": {
+                "title": "§8Cliquez: {item}",
+                "item_label": "§e§l?",
+                "prompt": "§eCaptcha §8§l» §r§7Sélectionnez {item} §7dans le menu ouvert §8(§7ou utilisez §8/§7captcha§8)",
+                "popup": "§eCaptcha §8| §7Sélectionnez {item} §8(§c{seconds}s§8)",
+                "use_menu": "§eCaptcha §8§l» §r§cSélectionnez l'objet dans la fenêtre ! Si fermée, utilisez §8/§ccaptcha"
+            },
+            "map": {
+                "item_name": "§r§eCarte de Vérification",
+                "prompt": "§eCaptcha §8§l» §r§7Regardez la §ecarte dans votre main §7et écrivez le code dans le chat",
+                "popup": "§eCaptcha §8| §7Écrivez le code de la carte §8(§c{seconds}s§8)"
+            },
+            "items": {
+                "diamond": "§bDiamant",
+                "emerald": "§aÉmeraude",
+                "gold_ingot": "§6Lingot d'Or",
+                "iron_ingot": "§fLingot de Fer",
+                "apple": "§cPomme",
+                "golden_apple": "§ePomme Dorée",
+                "book": "§6Livre",
+                "compass": "§7Boussole",
+                "clock": "§eMontre",
+                "diamond_sword": "§bÉpée en Diamant",
+                "bow": "§6Arc",
+                "bread": "§ePain",
+                "cake": "§fGâteau",
+                "bone": "§fOs",
+                "tnt": "§cTNT",
+                "bookshelf": "§6Bibliothèque",
+                "obsidian": "§5Obsidienne",
+                "glowstone": "§ePierre Lumineuse"
+            },
+            "cmd": {
+                "_prefix": "§eCaptcha §8§l» §r",
+                "no_active": "§cVous n'avez aucun défi captcha en cours...",
+                "usage": "§cUtilisez §8/§c{label} §8<§cstatus§8|§csurge§8|§ctest§8>",
+                "status": "§7Surge§8: {active} §8(§7mode§8: §e{mode}§8, §7entrées§8: §e{recent}§8/§e{threshold} §7en §e{window}s§8, §7restant§8: §e{remaining}s§8){n}§eCaptcha §8§l» §r§7Types actifs§8: §7{types}",
+                "surge_usage": "§cUtilisez §8/§c{label} surge §8<§con§8|§coff§8|§cauto§8>",
+                "surge_updated": "§7Mode anti-bot défini sur §e{mode}§7 !",
+                "test_usage": "§cUtilisez §8/§c{label} test §8<§cmath§8|§cword§8|§cwindow§8|§cmap§8> [§cjoueur§8]",
+                "test_started": "§7Défi §e{type} §7lancé pour §e{player}§7 !",
+                "player_offline": "§cLe joueur {player} n'est pas en ligne..."
+            }
         }
     },
     "automsg": {
@@ -2853,8 +2914,8 @@
         }
     },
     "maze": {
-        "usage": "§7Pour rejoindre utilisez §8/§7{label} entrar{n}§5Maze §8§l» §r§7Pour quitter utilisez §8/§7{label} sair",
         "_prefix": "§5Maze §8§l» §r",
+        "usage": "§7Pour rejoindre utilisez §8/§7{label} entrar{n}§5Maze §8§l» §r§7Pour quitter utilisez §8/§7{label} sair",
         "finish": {
             "noreward": "§7Félicitations, vous avez terminé le labyrinthe !",
             "reward": "§7Félicitations, vous avez terminé le labyrinthe et reçu §7§lNightmare §r§7comme récompense !"
@@ -2955,5 +3016,11 @@
             "success": "§7Titre §6{titulo} §7acheté avec succès !"
         },
         "expired": "§6Titres §8§l» §r§7Votre titre §6{titulo} §7a expiré..."
+    },
+    "command": {
+        "_prefix": "§cSystème §8§l» §r",
+        "only": {
+            "ingame": "§cCette commande ne peut être utilisée qu'en jeu..."
+        }
     }
 }

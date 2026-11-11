@@ -1208,6 +1208,67 @@
             "chp": "§7Your password has been changed successfully!",
             "login": "§7Login successful!",
             "register": "§7You have been registered successfully! §cBy registering, you agree to our §8/§crules..."
+        },
+        "captcha": {
+            "_prefix": "",
+            "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §eCaptcha §8===-=-=-=-{n}§eCaptcha §8§l» §r§7Complete the anti-bot verification to continue!",
+            "success": "§eCaptcha §8§l» §r§aVerification completed successfully!",
+            "wrong_retry": "§eCaptcha §8§l» §r§cIncorrect answer! Remaining attempts§8: §e{remaining}",
+            "must_complete": "§eCaptcha §8§l» §r§cComplete the anti-bot challenge before using commands...",
+            "timeout": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §eCaptcha §8===-=-=-=-{n}§cYour captcha verification time has expired...",
+            "toomany": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §eCaptcha §8===-=-=-=-{n}§cToo many failed captcha attempts...",
+            "math": {
+                "prompt": "§eCaptcha §8§l» §r§7What is §e{expression}§7? Type only the result in chat",
+                "popup": "§eCaptcha §8| §f{expression} §8= §e? §8(§c{seconds}s§8)"
+            },
+            "word": {
+                "pool": "AKUNA,DIAMOND,EMERALD,SWORD,DRAGON,PORTAL,CASTLE,STAR,VICTORY,SHIELD,PICKAXE,REDSTONE,OBSIDIAN,ARCHER,COMBAT,TREASURE,CROWN,TROPHY,ARENA,PHOENIX,SAPPHIRE,RUBY",
+                "prompt": "§eCaptcha §8§l» §r§7Type the word §e{word} §7in chat to continue",
+                "popup": "§eCaptcha §8| §7Type§8: §e{word} §8(§c{seconds}s§8)"
+            },
+            "window": {
+                "title": "§8Click: {item}",
+                "item_label": "§e§l?",
+                "prompt": "§eCaptcha §8§l» §r§7Select {item} §7in the open menu §8(§7or use §8/§7captcha§8)",
+                "popup": "§eCaptcha §8| §7Select {item} §8(§c{seconds}s§8)",
+                "use_menu": "§eCaptcha §8§l» §r§cSelect the correct item in the window! If closed, use §8/§ccaptcha"
+            },
+            "map": {
+                "item_name": "§r§eVerification Map",
+                "prompt": "§eCaptcha §8§l» §r§7Look at the §emap in your hand §7and type the code shown in chat",
+                "popup": "§eCaptcha §8| §7Type the map code §8(§c{seconds}s§8)"
+            },
+            "items": {
+                "diamond": "§bDiamond",
+                "emerald": "§aEmerald",
+                "gold_ingot": "§6Gold Ingot",
+                "iron_ingot": "§fIron Ingot",
+                "apple": "§cApple",
+                "golden_apple": "§eGolden Apple",
+                "book": "§6Book",
+                "compass": "§7Compass",
+                "clock": "§eClock",
+                "diamond_sword": "§bDiamond Sword",
+                "bow": "§6Bow",
+                "bread": "§eBread",
+                "cake": "§fCake",
+                "bone": "§fBone",
+                "tnt": "§cTNT",
+                "bookshelf": "§6Bookshelf",
+                "obsidian": "§5Obsidian",
+                "glowstone": "§eGlowstone"
+            },
+            "cmd": {
+                "_prefix": "§eCaptcha §8§l» §r",
+                "no_active": "§cYou have no pending captcha challenge...",
+                "usage": "§cUse §8/§c{label} §8<§cstatus§8|§csurge§8|§ctest§8>",
+                "status": "§7Surge§8: {active} §8(§7mode§8: §e{mode}§8, §7joins§8: §e{recent}§8/§e{threshold} §7in §e{window}s§8, §7left§8: §e{remaining}s§8){n}§eCaptcha §8§l» §r§7Enabled types§8: §7{types}",
+                "surge_usage": "§cUse §8/§c{label} surge §8<§con§8|§coff§8|§cauto§8>",
+                "surge_updated": "§7Anti-bot surge mode set to §e{mode}§7!",
+                "test_usage": "§cUse §8/§c{label} test §8<§cmath§8|§cword§8|§cwindow§8|§cmap§8> [§cplayer§8]",
+                "test_started": "§7Started §e{type} §7challenge for §e{player}§7!",
+                "player_offline": "§cPlayer {player} is not online..."
+            }
         }
     },
     "automsg": {
@@ -1930,16 +1991,26 @@
     },
     "pin": {
         "add": {
-            "_prefix": "§3Pin §8§l» §r",
             "already": "§cYou already have a PIN...",
             "success": "§7PIN added successfully!",
-            "usage": "§cUse §8/§c{label} add §8<§c4-digit PIN§8>"
+            "usage": "§cUse §8/§c{label} add §8<§c4-digit PIN§8>",
+            "_prefix": "§3Pin §8§l» §r"
         },
         "change": {
-            "_prefix": "§3Pin §8§l» §r",
             "incorrect": "§cCurrent PIN is incorrect...",
             "success": "§7PIN changed successfully!",
-            "usage": "§cUse §8/§c{label} change §8<§ccurrent PIN§8> <§cnew PIN§8>"
+            "usage": "§cUse §8/§c{label} change §8<§ccurrent PIN§8> <§cnew PIN§8>",
+            "_prefix": "§3Pin §8§l» §r"
+        },
+        "discord": {
+            "not_linked": "§3Pin §8§l» §r§cYour Discord account is not linked...",
+            "disabled": "§3Pin §8§l» §r§7Discord 2FA disabled successfully",
+            "enabled": "§3Pin §8§l» §r§7Discord 2FA enabled successfully"
+        },
+        "email": {
+            "no_email": "§3Pin §8§l» §r§cYou need to link an email first...",
+            "disabled": "§3Pin §8§l» §r§7Email 2FA disabled successfully",
+            "enabled": "§3Pin §8§l» §r§7Email 2FA enabled for §b{email}§7!"
         },
         "error": {
             "incorrect": "§3Pin §8§l» §r§cIncorrect PIN..."
@@ -1952,24 +2023,14 @@
             "login": "§3Pin §8§l» §r§7Enter your PIN in the chat to complete authentication"
         },
         "remove": {
-            "_prefix": "§3Pin §8§l» §r",
             "incorrect": "§cIncorrect PIN...",
             "nopin": "§cYou don't have a PIN...",
             "success": "§7PIN removed successfully!",
-            "usage": "§cUse §8/§c{label} remove §8<§ccurrent PIN§8>"
+            "usage": "§cUse §8/§c{label} remove §8<§ccurrent PIN§8>",
+            "_prefix": "§3Pin §8§l» §r"
         },
         "success": {
             "login": "§3Pin §8§l» §r§7Authenticated successfully!"
-        },
-        "discord": {
-            "not_linked": "§3Pin §8§l» §r§cYour Discord account is not linked...",
-            "disabled": "§3Pin §8§l» §r§7Discord 2FA disabled successfully",
-            "enabled": "§3Pin §8§l» §r§7Discord 2FA enabled successfully"
-        },
-        "email": {
-            "no_email": "§3Pin §8§l» §r§cYou need to link an email first...",
-            "disabled": "§3Pin §8§l» §r§7Email 2FA disabled successfully",
-            "enabled": "§3Pin §8§l» §r§7Email 2FA enabled for §b{email}§7!"
         },
         "usage": "§3Pin §8§l» §r§cUse §8/§c{label} §8<§cadd§8|§cremove§8|§cchange§8|§cdiscord§8|§cemail§8>"
     },
@@ -2062,45 +2123,45 @@
         "usage": "§cUsage §8/§c{label} §8<§cname§8>"
     },
     "shop": {
+        "_prefix": "§eShop §8§l» §r",
         "break": {
-            "_prefix": "§eShop §8§l» §r",
             "not_owner": "§cOnly the owner can remove the shop...",
-            "success": "§7Shop removed successfully"
+            "success": "§7Shop removed successfully",
+            "_prefix": "§eShop §8§l» §r"
         },
         "buy": {
-            "_prefix": "§eShop §8§l» §r",
             "inventory_full": "§cInventory full...",
             "not_enough_stock": "§cInsufficient stock...",
-            "success": "§7You bought §e{quantity}§7x {item} for §c{price} Akunas §7from §e{owner}"
+            "success": "§7You bought §e{quantity}§7x {item} for §c{price} Akunas §7from §e{owner}",
+            "_prefix": "§eShop §8§l» §r"
         },
         "chest_access_denied": "§eShop §8§l» §r§cOnly the shop owner can access this chest...",
         "chest_not_found": "§eShop §8§l» §r§cShop chest not found...",
         "create": {
-            "_prefix": "§eShop §8§l» §r",
             "chest_not_found": "§cPlace a chest behind/below the sign...",
             "error": "§cError creating shop...",
             "invalid_item": "§cInvalid item ID...",
             "invalid_price": "§cInvalid price...",
             "invalid_quantity": "§cInvalid quantity...",
-            "success": "§7Shop created successfully!"
+            "success": "§7Shop created successfully!",
+            "_prefix": "§eShop §8§l» §r"
         },
         "inventory_full": "§eShop §8§l» §r§cInventory full...",
         "not_in_survival": "§eShop §8§l» §r§cYou are not in survival mode...",
         "owner": {
-            "_prefix": "§eShop §8§l» §r",
             "notify_purchase": "§e{seller} §7sold §e{quantity}§7x {item} for §c{price} Akunas§7!",
-            "notify_sale": "§e{buyer} §7bought §e{quantity}§7x {item} for §c{price} Akunas§7!"
+            "notify_sale": "§e{buyer} §7bought §e{quantity}§7x {item} for §c{price} Akunas§7!",
+            "_prefix": "§eShop §8§l» §r"
         },
         "purchase_error": "§eShop §8§l» §r§cError processing purchase...",
         "purchase_summary": "§eLoja §8§l» §r§7You bought §7{items} for a total of §c{total} Akunas§7!",
         "self_interact": "§eShop §8§l» §r§cYou cannot interact with your own shop...",
         "sell": {
-            "_prefix": "§eShop §8§l» §r",
             "chest_full": "§cThe shop chest is full...",
             "insufficient_items": "§cYou don't have enough items...",
-            "success": "§7You sold §e{quantity}§7x {item} for §c{price} Akunas §7to §e{owner}§7!"
-        },
-        "_prefix": "§eShop §8§l» §r"
+            "success": "§7You sold §e{quantity}§7x {item} for §c{price} Akunas §7to §e{owner}§7!",
+            "_prefix": "§eShop §8§l» §r"
+        }
     },
     "sit": {
         "_prefix": "§cSystem §8§l » §r",
@@ -2853,8 +2914,8 @@
         }
     },
     "maze": {
-        "usage": "§7To join use §8/§7{label} entrar{n}§5Maze §8§l» §r§7To leave use §8/§7{label} sair",
         "_prefix": "§5Maze §8§l» §r",
+        "usage": "§7To join use §8/§7{label} entrar{n}§5Maze §8§l» §r§7To leave use §8/§7{label} sair",
         "finish": {
             "noreward": "§7Congratulations, you finished the maze!",
             "reward": "§7Congratulations, you finished the maze and received §7§lNightmare §r§7as a reward!"
@@ -2955,5 +3016,11 @@
             "success": "§7Title §6{titulo} §7purchased successfully!"
         },
         "expired": "§6Titles §8§l» §r§7Your title §6{titulo} §7has expired..."
+    },
+    "command": {
+        "_prefix": "§cSystem §8§l» §r",
+        "only": {
+            "ingame": "§cThis command can only be used in-game..."
+        }
     }
 }
