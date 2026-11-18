@@ -63,7 +63,8 @@
             "team_full": "§c{team} §r§ctakımı dolu!",
             "joined_team": "§7{team}§r §7takımına başarıyla katıldın!",
             "preference_set": "§7Tercih edilen takım {team} §r§7olarak ayarlandı",
-            "invalid_team": "§cGeçersiz takım..."
+            "invalid_team": "§cGeçersiz takım...",
+            "preference_prompt": "§7Tercih edilen olarak ayarlamak için bir takıma tıklayın"
         },
         "rejoin": {
             "_prefix": "§cBed§fWars §8§l» §r",
@@ -209,7 +210,9 @@
             "point_scored": "{player} §7bir sayı kazandı",
             "point_scored_final": "{player} §7bir sayı kazandı §8(§cSon Sayı§8)",
             "killed_by": "§c{victim} §7tarafından öldürüldü §c{killer}",
-            "own_point": "§cKendi takımının tarafında sayı kazanamazsın"
+            "own_point": "§cKendi takımının tarafında sayı kazanamazsın",
+            "player_left_rejoin": "§c{player} §7ayrıldı §8(§cRejoin§8)",
+            "player_returned": "§c{player} §7maça geri döndü"
         },
         "command": {
             "usage": "§7Katılmak için §8/§7{label} entrar kullan",
@@ -219,7 +222,24 @@
             "invalid": "§cGeçersiz takım...",
             "already_in": "§cZaten {team}§r§c takımındasın!",
             "full": "§c{team} §r§ctakımı dolu!",
-            "joined": "§7{team}§r §7takımına başarıyla katıldın!"
+            "joined": "§7{team}§r §7takımına başarıyla katıldın!",
+            "_prefix": "§cThe§9Bridge §8§l» §r",
+            "vip_only": "§cYalnızca §b§l§oAstral§r§c veya üzeri rütbeli oyuncular takım seçebilir! §oHemen al: https://loja.iakunamc.com",
+            "moved_by_partner": "§7Partnerin tarafından {team} §r§7takımına taşındın!",
+            "already_in_team": "§cZaten {team}§r§c takımındasın!",
+            "team_full": "§c{team} §r§ctakımı dolu!",
+            "joined_team": "§7{team}§r §7takımına başarıyla katıldın!",
+            "preference_set": "§7Tercih edilen takım {team} §r§7olarak ayarlandı",
+            "preference_prompt": "§7Tercih edilen olarak ayarlamak için bir takıma tıklayın",
+            "invalid_team": "§cGeçersiz takım..."
+        },
+        "rejoin": {
+            "_prefix": "§cThe§9Bridge §8§l» §r",
+            "pending": "§7Devam eden bir maçtan ayrıldın...",
+            "pending_hint": "§7Maça dönmek için §8/§7tb rejoin kullan",
+            "no_pending": "§cBekleyen bir rejoin yok!",
+            "expired": "§cRejoin süresi doldu!",
+            "game_ended": "§cMaç sona erdi veya takımın ayrıldı!"
         }
     },
     "skywars": {
@@ -233,7 +253,9 @@
             "join": "§b{player} §7maça katıldı §8(§f{count}§8/§f{maxPlayers}§8)",
             "quit": "§b{player} §7maçtan ayrıldı §8(§f{count}§8/§f{maxPlayers}§8)",
             "killed_by": "§b{player} §7tarafından öldürüldü §b{killer} §8(§f{alive}§8/§f{maxPlayers}§8)",
-            "killed_void": "§b{player} §7boşluğa düştü §8(§f{alive}§8/§f{maxPlayers}§8)"
+            "killed_void": "§b{player} §7boşluğa düştü §8(§f{alive}§8/§f{maxPlayers}§8)",
+            "left_rejoin": "§b{player} §7ayrıldı §8(§bRejoin§8)",
+            "returned": "§b{player} §7maça geri döndü"
         },
         "refill": {
             "done": "§7Tüm sandıklar yeniden dolduruldu!"
@@ -275,7 +297,26 @@
             "confirm_button": "§a§lOnayla",
             "cancel_button": "§c§lİptal"
         },
-        "tracker": "§8§l» §r§7Takip ediliyor §b{player} §8§l» §r§7Mesafe: §b{distance} §7blok"
+        "tracker": "§8§l» §r§7Takip ediliyor §b{player} §8§l» §r§7Mesafe: §b{distance} §7blok",
+        "rejoin": {
+            "_prefix": "§fSky§bWars §8§l» §r",
+            "pending": "§7Devam eden bir maçtan ayrıldın...",
+            "pending_hint": "§7Maça dönmek için §8/§7sw rejoin kullan",
+            "no_pending": "§cBekleyen bir rejoin yok!",
+            "expired": "§cRejoin süresi doldu!",
+            "game_ended": "§cMaç sona erdi veya takımın elendi!"
+        },
+        "teams": {
+            "_prefix": "§fSky§bWars §8§l» §r",
+            "vip_only": "§cYalnızca §b§l§oAstral§r§c veya üzeri rütbeli oyuncular takım seçebilir! §oHemen al: https://loja.iakunamc.com",
+            "moved_by_partner": "§7Partnerin tarafından {team} §r§7takımına taşındın!",
+            "already_in_team": "§cZaten {team}§r§c takımındasın!",
+            "team_full": "§c{team} §r§ctakımı dolu!",
+            "joined_team": "§7{team}§r §7takımına başarıyla katıldın!",
+            "preference_set": "§7Tercih edilen takım {team} §r§7olarak ayarlandı",
+            "preference_prompt": "§7Tercih edilen olarak ayarlamak için bir takıma tıklayın",
+            "invalid_team": "§cGeçersiz takım..."
+        }
     },
     "mlgblock": {
         "state": {
@@ -298,6 +339,17 @@
         },
         "scoreboard": {
             "format": "{right}§fi§cAkuna§9MC §8§l» §r§eMlg§fBlock{n}{right}{bar}{n}{right}§8§l» §r§7Harita§8:§e {map}{n}{right}§8§l» §r§7Öldürme§8:§e {kills}{n}{right}§8§l» §r§7Hayatta§8:§e {alive}{n}{right}{bar}{n}{n}{right}§eiakunamc.com 19132"
+        },
+        "teams": {
+            "_prefix": "§eMlg§fBlock §8§l» §r",
+            "vip_only": "§cYalnızca §b§l§oAstral§r§c veya üzeri rütbeli oyuncular takım seçebilir! §oHemen al: https://loja.iakunamc.com",
+            "moved_by_partner": "§7Partnerin tarafından {team} §r§7takımına taşındın!",
+            "already_in_team": "§cZaten {team}§r§c takımındasın!",
+            "team_full": "§c{team} §r§ctakımı dolu!",
+            "joined_team": "§7{team}§r §7takımına başarıyla katıldın!",
+            "preference_set": "§7Tercih edilen takım {team} §r§7olarak ayarlandı",
+            "preference_prompt": "§7Tercih edilen olarak ayarlamak için bir takıma tıklayın",
+            "invalid_team": "§cGeçersiz takım..."
         }
     },
     "blocksumo": {
@@ -323,6 +375,17 @@
         },
         "scoreboard": {
             "format": "{right}§fi§cAkuna§9MC §8§l» §r§bBlock§fSumo{n}{right}{bar}{n}{right}§8§l» §r§7Harita§8:§b {map}{n}{right}§8§l» §r§7Öldürme§8:§b {kills}{n}{right}§8§l» §r§7Can§8:§b {lives}{n}{right}{bar}{n}{n}{right}§biakunamc.com 19132"
+        },
+        "teams": {
+            "_prefix": "§bBlock§fSumo §8§l» §r",
+            "vip_only": "§cYalnızca §b§l§oAstral§r§c veya üzeri rütbeli oyuncular takım seçebilir! §oHemen al: https://loja.iakunamc.com",
+            "moved_by_partner": "§7Partnerin tarafından {team} §r§7takımına taşındın!",
+            "already_in_team": "§cZaten {team}§r§c takımındasın!",
+            "team_full": "§c{team} §r§ctakımı dolu!",
+            "joined_team": "§7{team}§r §7takımına başarıyla katıldın!",
+            "preference_set": "§7Tercih edilen takım {team} §r§7olarak ayarlandı",
+            "preference_prompt": "§7Tercih edilen olarak ayarlamak için bir takıma tıklayın",
+            "invalid_team": "§cGeçersiz takım..."
         }
     },
     "plot": {
@@ -436,7 +499,8 @@
             "biome": "§9Plot §8§l» §r§7Biyom§8:§9 {biome}",
             "rating": "§9Plot §8§l» §r§7Puan§8:§9 {score} §8(§9{count} §7oy§8)",
             "allowed": "§9Plot §8§l» §r§7İzin Verilenler §8(§f{count}§8):§7 {players}",
-            "denied": "§9Plot §8§l» §r§7Engellenenler §8(§f{count}§8):§7 {players}"
+            "denied": "§9Plot §8§l» §r§7Engellenenler §8(§f{count}§8):§7 {players}",
+            "default_name": "§7İsimsiz, bir isim belirlemek için §8/§7p name kullan..."
         },
         "generate": {
             "desc": "§7Yeni bir plot dünyası oluşturur",
@@ -537,6 +601,11 @@
             "usage": "§8/§cp setdesc §8<§caçıklama§8>",
             "empty": "§9Plot §8§l» §r§c§8/§cp setdesc §8<§caçıklama§8> ile açıklama ayarlayın...",
             "success": "§9Plot §8§l» §r§7Plot açıklaması başarıyla değiştirildi!"
+        },
+        "name": {
+            "desc": "§7Plotunun adını belirler",
+            "usage": "§8/§cp name §8<§cisim§8>",
+            "success": "§9Plot §8§l» §r§7Plot adı başarıyla §9{name} §7olarak değiştirildi!"
         }
     },
     "cosmetic": {
@@ -780,6 +849,17 @@
         },
         "type": {
             "invalid": "§5Kozmetikler §8§l» §r§cGeçersiz kozmetik türü!"
+        },
+        "effect": {
+            "_prefix": "§5Cosmetics §8§l» §r",
+            "shapes": "§7Mevcut şekiller§8:§5 {shapes}",
+            "invalid_shape": "§cGeçersiz şekil... Mevcut şekiller§8:§c {shapes}",
+            "shape_set": "§7Şekil başarıyla §5{shape} §7olarak değiştirildi!",
+            "particles": "§7Mevcut parçacıklar§8:§5 {particles}",
+            "invalid_particle": "§cGeçersiz parçacık... Mevcut parçacıklar§8:§c {particles}",
+            "particle_set": "§7Parçacık başarıyla §5{particle} §7olarak değiştirildi!",
+            "list": "§7Mevcut şekiller§8:§5 {shapes}{n}§5Cosmetics §8§l» §r§7Mevcut parçacıklar§8:§5 {particles}",
+            "usage": "§cKullanım: §8/§c{label} §8<§con§8|§coff§8|§cshape§8|§cparticle§8|§clist§8>"
         }
     },
     "cosmeticswindow": {
@@ -1118,7 +1198,25 @@
         "command": {
             "_prefix": "§2Düellolar §8§l» §r",
             "in_duel": "§cDüellodayken bu komutu kullanamazsın!",
-            "player_only": "§cBu komutu yalnızca oyuncular kullanabilir..."
+            "player_only": "§cBu komutu yalnızca oyuncular kullanabilir...",
+            "not_in_game": "§cHerhangi bir sırada veya düelloda değilsin...",
+            "no_arenas": "§cŞu anda uygun arena yok...",
+            "party_size": "§c§2Duels §cyalnızca tam olarak 2 kişilik partileri destekler...",
+            "party_size_team": "§c{format} düelloları için partinde sıra için en fazla {team_size} oyuncu veya özel düello için tam olarak {private_size} oyuncu olmalı...",
+            "usage": "§7Kullanım: §8/§7duels §8<§7mod§8|§7leave§8>",
+            "help": {
+                "_prefix": "",
+                "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §2Duels §8===-=-=-=-",
+                "entry": "§2Duels §8§l» §r§8/§7{cmd} §8- §7{desc}",
+                "modes": "§2Duels §8§l» §r§7Mevcut modlar§8: §2{modes}",
+                "modes_none": "§7yok",
+                "footer": "§8-=-=-=-===============================-=-=-=-",
+                "desc": {
+                    "play": "Sıraya katıl",
+                    "bot": "Bota karşı düello yap",
+                    "leave": "Sıradan veya düellodan çık"
+                }
+            }
         },
         "status": {
             "_prefix": "§2Düellolar §8§l» §r",
@@ -1136,6 +1234,67 @@
             "joined": "§7§2{mode} §r§7modu için sıraya başarıyla katıldın!",
             "left": "§7§c{mode}§7 modu sırasından ayrıldın!",
             "timeout": "§cMevcut başka oyuncu bulunamadığı için sıradan otomatik çıkarıldın..."
+        },
+        "match": {
+            "_prefix": "§2Duels §8§l» §r",
+            "started": "§7§2{arena} §7arenasında §2{opponent} §7karşısında §2{mode} §7düellosu!",
+            "started_team": "§7§2{arena} §7arenasında §2{mode} §8(§2{format}§8) §7düellosu! §a{teammates} §8vs §c{opponents}",
+            "eliminated": "§c{player} §7elendi! §8(§2{team_alive}§8/§7{team_total}§8 kaldı)",
+            "cancelled": "§cDüello iptal edildi...",
+            "timeout": "§cMaç süre sınırına ulaşıldı...",
+            "summary": {
+                "_prefix": "",
+                "normal": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §2Duels §8===-=-=-=-{n}§7Kazanan§8: §a{winner}{n}§7Kaybeden§8: §c{loser}{n}§7Mod§8: §2{mode} §8| §7Süre§8: §2{duration}{n}§8-=-=-=-===============================-=-=-=-",
+                "forfeit": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §2Duels §8===-=-=-=-{n}§7Sonuç§8: §eÇekilme{n}§7Kazanan§8: §a{winner}{n}§7Kaybeden§8: §c{loser}{n}§7Mod§8: §2{mode} §8| §7Süre§8: §2{duration}{n}§8-=-=-=-===============================-=-=-=-"
+            },
+            "summary_team": {
+                "_prefix": "",
+                "normal": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §2Duels {format} §8===-=-=-=-{n}§7Kazananlar§8: §a{winners}{n}§7Kaybedenler§8: §c{losers}{n}§7Mod§8: §2{mode} §8| §7Süre§8: §2{duration}{n}§8-=-=-=-===============================-=-=-=-",
+                "forfeit": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §2Duels {format} §8===-=-=-=-{n}§7Sonuç§8: §eÇekilme{n}§7Kazananlar§8: §a{winners}{n}§7Kaybedenler§8: §c{losers}{n}§7Mod§8: §2{mode} §8| §7Süre§8: §2{duration}{n}§8-=-=-=-===============================-=-=-=-"
+            },
+            "summary_bot": {
+                "_prefix": "",
+                "win": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §2Duels vs Bot §8===-=-=-=-{n}§7Sonuç§8: §aZafer!{n}§7Rakip§8: {bot}{n}§7Mod§8: §2{mode} §8| §7Süre§8: §2{duration}{n}§7Canın§8: §c{hp} HP §8| §7Vuruşlar§8: §a{hits} §8vs §c{bot_hits}{n}§7Ödül§8: §c+{akunas} Akunas §8| §9+{xp} XP{n}§8-=-=-=-===============================-=-=-=-",
+                "loss": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §2Duels vs Bot §8===-=-=-=-{n}§7Sonuç§8: §cYenilgi...{n}§7Rakip§8: {bot}{n}§7Mod§8: §2{mode} §8| §7Süre§8: §2{duration}{n}§7Bot Canı§8: §c{bot_hp} HP §8| §7Vuruşlar§8: §a{hits} §8vs §c{bot_hits}{n}§8-=-=-=-===============================-=-=-=-",
+                "forfeit": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §2Duels vs Bot §8===-=-=-=-{n}§7Sonuç§8: §eÇekilme{n}§7Rakip§8: {bot}{n}§7Mod§8: §2{mode} §8| §7Süre§8: §2{duration}{n}§8-=-=-=-===============================-=-=-=-"
+            }
+        },
+        "scoreboard": {
+            "_prefix": "",
+            "format": "{right}§fi§cAkuna§9MC §8§l» §r§2Duels{n}{right}{bar}{n}{right}§8§l» §r§7Mod§8:§2 {mode}{n}{right}§8§l» §r§7Süre§8:§2 {duration}{n}{right}§8§l» §r§7Rakip§8:§2 {opponent}{n}{right}§8§l» §r§7Ping§8:§2 {ping}ms §8| §c{opp_ping}ms{n}{right}{bar}{n}{n}{right}§2iakunamc.com 19132",
+            "boxing_format": "{right}§fi§cAkuna§9MC §8§l» §r§2Duels{n}{right}{bar}{n}{right}§8§l» §r§7Mod§8:§2 {mode}{n}{right}§8§l» §r§7Süre§8:§2 {duration}{n}{right}§8§l» §r§7Rakip§8:§2 {opponent}{n}{right}§8§l» §r§7Vuruşlar§8:§a {hits} §8/ §c{opp_hits} §8(§7{max_hits}§8){n}{right}§8§l» §r§7Ping§8:§2 {ping}ms §8| §c{opp_ping}ms{n}{right}{bar}{n}{n}{right}§2iakunamc.com 19132",
+            "team_format": "{right}§fi§cAkuna§9MC §8§l» §r§2Duels {format}{n}{right}{bar}{n}{right}§8§l» §r§7Mod§8:§2 {mode}{n}{right}§8§l» §r§7Süre§8:§2 {duration}{n}{right}§8§l» §r§7Takım§8:§a {team_alive}/{team_total} §8| §c{opp_alive}/{team_total}{n}{right}§8§l» §r§7Ping§8:§2 {ping}ms{n}{right}{bar}{n}{n}{right}§2iakunamc.com 19132",
+            "team_boxing_format": "{right}§fi§cAkuna§9MC §8§l» §r§2Duels {format}{n}{right}{bar}{n}{right}§8§l» §r§7Mod§8:§2 {mode}{n}{right}§8§l» §r§7Süre§8:§2 {duration}{n}{right}§8§l» §r§7Takım§8:§a {team_alive}/{team_total} §8| §c{opp_alive}/{team_total}{n}{right}§8§l» §r§7Vuruşlar§8:§a {hits} §8/ §c{opp_hits} §8(§7{max_hits}§8){n}{right}§8§l» §r§7Ping§8:§2 {ping}ms{n}{right}{bar}{n}{n}{right}§2iakunamc.com 19132"
+        },
+        "bot": {
+            "_prefix": "§2Duels §8§l» §r",
+            "usage": "§7Kullanım: §8/§7duels bot §8<§7mod§8> [§aeasy§8|§emedium§8|§chard§8|§5hacker§8]",
+            "invalid_difficulty": "§cGeçersiz zorluk! §aeasy§c, §emedium§c, §chard §cveya §5hacker §ckullan..."
+        },
+        "menu": {
+            "_prefix": "",
+            "back": "§c« Geri",
+            "bot_diff_item": "{label}{n}§7Bu zorlukta botla savaş{n}{n}§eKit seçmek için tıkla",
+            "bot_easy": "§aKolay Bot",
+            "bot_hacker": "§5Hacker Bot",
+            "bot_hard": "§cZor Bot",
+            "bot_item": "§c§2Duels §cvs Bot{n}§7Yapay zekaya karşı antrenman yap{n}{n}§eZorluk seçmek için tıkla",
+            "bot_kit_item": "{label} §8({difficulty}§8){n}{n}§eBaşlamak için tıkla",
+            "bot_kit_title": "§2Bot {difficulty} §8§l» §r§7Kit Seç",
+            "bot_medium": "§eOrta Bot",
+            "bot_title": "§2Duels vs Bot §8§l» §r§7Zorluk",
+            "bridge_item": "§cThe§9Bridge{n}§7Oynayan§8: §f{playing}{n}{n}§eOynamak için tıkla",
+            "challenge_hint": "§2Duels §8§l» §r§7§8/§eduelar §8<§eoyuncu§8> §7veya §8/§edesafiar §8<§eoyuncu§8> <§emod§8> §8[§etur§8] [§ebahis§8] §7kullan",
+            "challenge_item": "§eOyuncuya Meydan Oku{n}§7Turlu ve bahisli düellolar oluştur{n}{n}§f§8/§eduelar §8<§eoyuncu§8> §fkullan",
+            "format_1v1": "§aDuels 1v1",
+            "format_2v2": "§2Duels 2v2",
+            "format_3v3": "§eDuels 3v3",
+            "format_4v4": "§cDuels 4v4",
+            "format_item": "{label}{n}§7Oynayan§8: §f{playing}{n}{n}§eMod seçmek için tıkla",
+            "format_title": "§2Duels {format} §8§l» §r§7Mod Seç",
+            "mode_item": "{label} {format}{n}§7Oynayan§8: §f{playing}{n}{n}§eSıraya katılmak için tıkla",
+            "sw1v1_item": "§bSky§fWars 1v1{n}§7Oynayan§8: §f{playing}{n}{n}§eOynamak için tıkla",
+            "title": "§2Duels §8§l» §r§7Mod Seç"
         }
     },
     "addbalance": {
@@ -1182,7 +1341,18 @@
         },
         "join": {
             "_prefix": "",
-            "msg": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7Merhaba §e{user}§7, §fi§cAkuna§9MC§7'ye hoş geldin!"
+            "msg": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7Merhaba §e{user}§7, §fi§cAkuna§9MC§7'ye hoş geldin!",
+            "greeting": {
+                "_prefix": "",
+                "dawn": "İyi geceler",
+                "morning": "Günaydın",
+                "afternoon": "Tünaydın",
+                "night": "İyi akşamlar"
+            },
+            "dawn": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7İyi geceler §e{user}§7, §fi§cAkuna§9MC§7'de sabahlıyor musun? Hoş geldin!",
+            "morning": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7Günaydın §e{user}§7, §fi§cAkuna§9MC§7'ye hoş geldin! Harika bir oyun sabahı dileriz!",
+            "afternoon": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7Tünaydın §e{user}§7, §fi§cAkuna§9MC§7'ye hoş geldin! Keyifli oyunlar!",
+            "night": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7İyi akşamlar §e{user}§7, §fi§cAkuna§9MC§7'ye hoş geldin! Harika bir maç gecesi dileriz!"
         },
         "login": {
             "_prefix": "",
@@ -1226,7 +1396,16 @@
         "nosamepass": "§7Başka sunucularda aynı şifreyi kullanma! Kötü niyetli kişiler hesabını ele geçirebilir... Hesabını korumak için §8/§cpin kullanabilirsin!",
         "rules": "§7Kurallarımızı §8/§crules okudun mu? Bilmemek §ccezadan kurtarmaz§7!",
         "staff": "§7Staff ekibimize katılabileceğini biliyor musun? §chttps://staff.iakunamc.com adresine git",
-        "yt": "§7YouTube'da sunucumuzu tanıtan bir video kaydet ve özel rütbeler kazan! Gereksinimleri görmek için §8/§cyt kullan"
+        "yt": "§7YouTube'da sunucumuzu tanıtan bir video kaydet ve özel rütbeler kazan! Gereksinimleri görmek için §8/§cyt kullan",
+        "assistir": "§7Canlı maçları izlemek ister misin? §8/§cassistir §8<§coyuncu§8> §7kullan veya seni kimlerin izleyebileceğini §8/§cpref spectate ile ayarla",
+        "clan": "§7Sıralamalarda yarışmak için bir klan kur veya bir klana katıl! §8/§cclan kullan",
+        "desafiar": "§7§cAkunas §7bahisli çok turlu düellolarda bir oyuncuya meydan okumak ister misin? §8/§cdesafiar §8<§coyuncu§8> §8[§cmod§8] [§ctur§8] [§cbahis§8] kullan",
+        "lang": "§7Başka bir dilde oynamayı mı tercih ediyorsun? §8/§clang kullanarak dilini istediğin zaman değiştir",
+        "party": "§7Arkadaşlarınla mı oynuyorsun? §8/§cparty §7ile bir parti kur ve mini oyunlara ve düellolara birlikte katılın!",
+        "pref": "§7Deneyimini özelleştir! Scoreboard, CPS, kombo, izleyiciler ve daha fazlasını ayarlamak için §8/§cpref gui §7kullan!",
+        "profile": "§7İstatistiklerini, seviyeni ve diğer oyuncuların profillerini §8/§cperfil §8[§coyuncu§8] kullanarak gör",
+        "ranking": "§7Mini oyuna veya döneme göre sunucunun en iyi oyuncularını §8/§ctops §7kullanarak kontrol et!",
+        "tell": "§7Diğer oyuncularla §8/§ctell §8<§coyuncu§8> <§cmesaj§8> §7kullanarak özel sohbet et ve §8/§cr ile hızlıca yanıtla"
     },
     "backpack": {
         "_prefix": "§cSistem §8§l» §r",
@@ -1374,7 +1553,11 @@
         "nopromote": "§cSohbette diğer sunucuların tanıtımını yapmak veya bahsetmek yasaktır...{n}§cSistem §8§l» §r§cGelecekteki cezaları önlemek için §8/§crules kurallarımızı okumayı unutma",
         "nospam": "§cYavaş ol! spam yapma...",
         "toolong": "§cMesajın çok uzun... (maks {max} karakter)",
-        "noemoji": "§cEmoji kullanımı yasaktır..."
+        "noemoji": "§cEmoji kullanımı yasaktır...",
+        "_noprefix": [
+            "discord_format"
+        ],
+        "discord_format": "§9Discord §8§l» §r§f{player}§8:§7 {message}"
     },
     "clan": {
         "_prefix": "§eKlanlar §8§l» §r",
@@ -1384,8 +1567,17 @@
             "success": "§7§e{clan} §7klanına başarıyla katıldın"
         },
         "already_in_clan": "§cZaten bir klandasın...",
+        "changename": {
+            "error": "§cİsim değiştirilirken hata oluştu...",
+            "exists": "§cBu isimde bir klan zaten var!",
+            "length": "§cKlan adı 3-24 karakter (harf ve rakam) olmalıdır!",
+            "success": "§7Klan adı başarıyla §e{name} §7olarak değiştirildi!",
+            "usage": "§cKullanım: §8/§c{label} name §8<§cisim§8>"
+        },
         "changetag": {
             "error": "§cEtiket değiştirirken hata...",
+            "exists": "§cBu etikete sahip bir klan zaten var!",
+            "length": "§cKlan etiketi 2-4 karakter (harf ve rakam) olmalıdır!",
             "success": "§7Etiket başarıyla §e{tag} §7olarak değiştirildi!",
             "usage": "§cKullanım: §8/§c{label} tag §8<§cetiket§8>"
         },
@@ -1504,6 +1696,7 @@
             "none": "§cBekleyen istek yok...",
             "usage": "§cKullanım: §8/§c{label} requests §8<§caccept§8|§cdeny§8> §8<§coyuncu§8|§c*§8>"
         },
+        "requests_list": "§7Katılma istekleri §8(§f{count}§8):§7 {requests}",
         "tagcolor": {
             "error": "§cEtiket rengi değiştirilirken hata!",
             "invalid": "§cGeçersiz renk...",
@@ -1517,8 +1710,7 @@
             "success": "§7Klan türü başarıyla §e{type}§7 olarak değiştirildi",
             "usage": "§cKullanım: §8/§c{label} type §8<§ctür§8>"
         },
-        "usage": "§cKullanım: §8/§c{label} §8<§ccreate§8|§cinvite§8|§ckick§8|§cdesc§8|§cleave§8|§cinfo§8|§ctype§8|§crequest§8|§cpromote§8|§cdemote§8|§ctag§8|§crequests§8|§cchat§8|§cdelete§8|§ctagcolor§8>",
-        "requests_list": "§7Katılma istekleri §8(§f{count}§8):§7 {requests}"
+        "usage": "§cKullanım: §8/§c{label} §8<§ccreate§8|§cinvite§8|§ckick§8|§cdesc§8|§cleave§8|§cinfo§8|§ctype§8|§crequest§8|§cpromote§8|§cdemote§8|§cname§8|§ctag§8|§crequests§8|§cchat§8|§cdelete§8|§ctagcolor§8>{n}§eClans §8§l» §r§7Klan oluşturma maliyeti§8: §e{cost} Akunas"
     },
     "clear": {
         "_prefix": "§cSistem §8§l» §r",
@@ -1556,7 +1748,31 @@
             "received": "§5Günlük ödül §8§l» §r§7Şunları aldın: {rewards}",
             "streak": "§5Günlük ödül §8§l» §r§7Mevcut seri§8: §5{streak} §7gün",
             "xp": "§9{amount} XP",
-            "streak_lost": "§5Günlük ödül §8§l» §r§c{oldStreak} günlük serini kaybettin..."
+            "streak_lost": "§5Günlük ödül §8§l» §r§c{oldStreak} günlük serini kaybettin...",
+            "cooldown": "§5Günlük ödül §8§l» §r§cBugün zaten aldın! Sonraki §5{time} §ciçinde...",
+            "milestone_month": "§5Günlük ödül §8§l» §r§7Harika! §5{days} §7günlük seriye ulaştın ve özel bir bonus kazandın!",
+            "bonus_applied": "§5Daily §8§l» §r§7Uygulanan bonus§8: {bonuses}",
+            "bonus_galaxy": "§7§l§oGalaxy§r§a+ §e(+{percent}%)",
+            "bonus_booster": "§dBooster §e(+{percent}%)"
+        },
+        "menu": {
+            "title": "§5Günlük Ödül §8§l» §r§7Seri",
+            "status_available": "§aŞimdi müsait!{n}§eAlmak için tıkla",
+            "status_cooldown": "§7Sonraki§8: §e{time}",
+            "bonus_active": "{n}§7Aktif bonus§8: §a+{percent}%",
+            "summary": "§5§lGünlük Seri{n}§7Mevcut seri§8: §d{streak} gün{n}§7En iyi seri§8: §6{best} gün{n}§7Toplam alınan§8: §b{total}{bonus}{n}{n}{status}",
+            "day_claimed": "§aGün {day} §8(§aAlındı§8){n}§7Çarpan§8: §e+{percent}%",
+            "day_available": "§bGün {day} §8(§aMüsait§8){n}§7Çarpan§8: §e+{percent}%{weekly}{n}{n}§eAlmak için tıkla!",
+            "day_next": "§eGün {day} §8(§7Sıradaki§8){n}§7Açılma§8: §e{time}{n}§7Çarpan§8: §e+{percent}%",
+            "day_locked": "§7Gün {day} §8(§cKilitli§8){n}§7Çarpan§8: §e+{percent}%{weekly}",
+            "weekly_available": "{n}§6+Haftalık Bonus!",
+            "weekly_locked": "{n}§6Haftalık Bonus Dahil!",
+            "milestone_title": "{color}{days} Gün Hedefi{n}§7Bonus§8: §d{bonus}{n}§7Durum§8: {status}",
+            "milestone_unlocked": "§aTamamlandı!",
+            "milestone_remaining": "§7Kalan: §e{days} gün",
+            "milestone_7": "Haftada +500 Akunas ve +50 XP",
+            "milestone_14": "14. Günde +1.000 Akunas ve +100 XP",
+            "milestone_30": "30. Günde +2.500 Akunas ve +250 XP"
         }
     },
     "delhome": {
@@ -1609,14 +1825,7 @@
             "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §bKatılma Mesajları §8(§f{page}§8/§f{total}§8) ===-=-=-=-"
         },
         "messages": {
-            "_prefix": "§bKatılma §8§l» §r",
             "1": "§7Hey! §b{player} §7sunucuya paraşütle indi!",
-            "10": "§7Dramatik duraklama... §b{player} §7sunucuya girdi!",
-            "11": "§b{player} §7geldi!",
-            "12": "§7Dikkat! §b{player} §7az önce doğdu!",
-            "13": "§7Evren gülümsedi... §b{player} §7geldi!",
-            "14": "§b{player}§7 ile yeni maceralar başlıyor!",
-            "15": "§7Hazır mısınız? §b{player} §7hükmetmeye geldi!",
             "2": "§7Takviye mi çağırdınız? §b{player} §7geldi!",
             "3": "§7§b{player} §7sağlam adımlarla geldi! Yaklaş!",
             "4": "§7Pizza ne dersin, §b{player}§7? Hoş geldin!",
@@ -1624,7 +1833,14 @@
             "6": "§7Radar bir hareketlilik tespit etti... §b{player} §7geldi!",
             "7": "§7Işınlanma tamamlandı! §b{player} §7ortaya çıktı!",
             "8": "§7Oynamak için harika bir hava... hele ki §b{player} §7çevrimiçiyken!",
-            "9": "§7Efsane belirdi§8:§7 §b{player}§7 aramızda!"
+            "9": "§7Efsane belirdi§8:§7 §b{player}§7 aramızda!",
+            "10": "§7Dramatik duraklama... §b{player} §7sunucuya girdi!",
+            "11": "§b{player} §7geldi!",
+            "12": "§7Dikkat! §b{player} §7az önce doğdu!",
+            "13": "§7Evren gülümsedi... §b{player} §7geldi!",
+            "14": "§b{player}§7 ile yeni maceralar başlıyor!",
+            "15": "§7Hazır mısınız? §b{player} §7hükmetmeye geldi!",
+            "_prefix": "§bKatılma §8§l» §r"
         },
         "off": {
             "success": "§bKatılma §8§l» §r§7Katılma mesajı başarıyla devre dışı bırakıldı!"
@@ -1986,7 +2202,77 @@
         "enable": "§7Tercih başarıyla etkinleştirildi!",
         "onlyvip": "§cYalnızca §b§l§oAstral §r§cvip rütbeli veya üzeri oyuncular bu tercihi değiştirebilir... §oHemen al: https://loja.iakunamc.com",
         "reset": "§7Tüm tercihler varsayılana sıfırlandı!",
-        "usage": "§cKullanım: §8/§c{label} §8<§ctercih§8|§creset§8>{n}§cSistem §8§l» §r§cMevcut tercihler§8:§7 {prefs}"
+        "usage": "§cKullanım: §8/§c{label} §8<§ctercih§8|§creset§8>{n}§cSistem §8§l» §r§cMevcut tercihler§8:§7 {prefs}",
+        "global_only": "§c§e{pref} §ctercihi yalnızca geneldir ve mini oyuna göre ayarlanamaz!",
+        "invalid_bool": "§c§e{pref} §ciçin geçersiz değer! §aon §cveya §coff §ckullan",
+        "invalid_minigame": "§cGeçersiz mini oyun! Mini oyunlar§8:§7 {minigames}",
+        "invalid_mode": "§c§e{pref} §ciçin geçersiz mod! Modlar§8: §aall§8, §bfriends§8, §dpartner§8, §eparty§8, §6clan§8, §coff",
+        "invalid_scoreboard_side": "§c§e{pref} §ciçin geçersiz konum! §aright§c, §bleft §cveya §einline §ckullan",
+        "minigame_unset": "§7§b{minigame} §7içindeki §e{pref} §7tercihi artık Genel varsayılanı takip ediyor!",
+        "minigame_usage": "§cKullanım: §8/§c{label} mg §8<§cminigame§8> <§cpref§8> [§cmod§8|§creset§8]{n}§cSystem §8§l» §r§cMini oyunlar§8:§7 {minigames}{n}§cSystem §8§l» §r§cTercihler§8:§7 {prefs}",
+        "not_allowed_minigame": "§c§e{pref} §ctercihi §b{minigame} §ciçinde mevcut değil! İzin verilen mini oyunlar§8:§7 {minigames}",
+        "reset_minigame": "§7§b{minigame} §7için tüm özel tercihler Genele sıfırlandı!",
+        "state": {
+            "_prefix": "",
+            "all": "§aHerkes",
+            "clan": "§6Klan",
+            "friends": "§bArkadaşlar",
+            "hide_all": "§cTümünü gizle",
+            "hide_off": "§aTümünü göster",
+            "off": "§cDevre Dışı",
+            "on": "§aEtkin",
+            "partner": "§dPartner",
+            "party": "§eParti",
+            "sb_inline": "§eSatır İçi",
+            "sb_left": "§bSol",
+            "sb_right": "§aSağ"
+        },
+        "updated": "§7§e{pref} §8(§b{scope}§8) §7tercihi {status} §7olarak değiştirildi!",
+        "menu": {
+            "_prefix": "",
+            "back": "§c« Mini Oyunlara Dön",
+            "click_mode_toggle": "§eTıklama Modu§8: §aDeğeri Değiştir",
+            "click_mode_unset": "§eTıklama Modu§8: §cGenele Dön",
+            "hint_toggle": "§eDeğiştirmek için tıkla",
+            "hint_unset": "§cGenele dönmek için tıkla",
+            "minigame_item": "{minigame}{n}§7Tercihler§8: §e{total}{n}§7Özelleştirilmiş§8: §b{custom}{n}{n}§eYapılandırmak için tıkla",
+            "origin_custom": "§bBurada özelleştirildi",
+            "origin_global": "§8Genelden miras alındı",
+            "reset_minigame": "§cBu mini oyunu sıfırla",
+            "scope_header": "§7Mini Oyun§8: {minigame}",
+            "setting_item": "§f{label}{n}§7Durum§8: {status}{n}{origin}{n}{n}{hint}",
+            "title": "§3Tercihler §8§l» §r§7Yapılandır"
+        },
+        "label": {
+            "_prefix": "",
+            "autologin": "Otomatik giriş",
+            "automsg": "Otomatik mesajlar",
+            "autosprint": "Otomatik Koşma",
+            "chat": "Sohbet",
+            "chatfilter": "Sohbet filtresi",
+            "combo": "Komboyu Göster",
+            "cps": "CPS Göster",
+            "day": "Gece/Gündüz Döngüsü",
+            "floatchat": "Yüzen sohbet",
+            "friendnotify": "Arkadaş bildirimleri",
+            "hideplayers": "Oyuncuları gizle",
+            "highlights": "Sohbet vurguları",
+            "nakb": "NA Ping / Knockback (PvP)",
+            "openchest": "Aletle sandık aç",
+            "partnernotify": "Partner bildirimleri",
+            "quickbuy": "Hızlı satın alma (BedWars)",
+            "quickchest": "Hızlı sandık (BedWars)",
+            "reach": "Uzanma Mesafesini Göster",
+            "receiverequests": "İstekleri al",
+            "scoreboard": "Scoreboard",
+            "scoreboard_side": "Scoreboard Konumu",
+            "showlevel": "Sohbette seviyeyi göster",
+            "spectate": "İzleyicilere izin ver",
+            "tell": "Özel mesajlar",
+            "treecapitator": "Tree Capitator (Survival)",
+            "veinminer": "Vein Miner (Survival)",
+            "viewprofile": "Profil görünürlüğü"
+        }
     },
     "profanity": {
         "_prefix": "§cSistem §8§l» §r",
@@ -2043,7 +2329,9 @@
         "lobby_bw": "{right}  §fi§cAkuna§9MC §8§l» §r§cBed§fWars{n}{right}{bar}{n}{right}§8§l» §r§7Galibiyet§8:§c {wins}{n}{right}§8§l» §r§7Öldürme§8:§c {kills}{n}{right}§8§l» §r§7Son Öldürme§8:§c {final_kills}{n}{right}§8§l» §r§7Kırılan Yatak§8:§c {beds}{n}{right}{bar}{n}{n}{right}§c{address}",
         "lobby_sw": "{right}  §fi§cAkuna§9MC §8§l» §r§bSky§fWars{n}{right}{bar}{n}{right}§8§l» §r§7Galibiyet§8:§b {wins}{n}{right}§8§l» §r§7Öldürme§8:§b {kills}{n}{right}§8§l» §r§7Maç§8:§b {plays}{n}{right}{bar}{n}{n}{right}§b{address}",
         "lobby_tntrun": "{right}  §fi§cAkuna§9MC §8§l» §r§cTNT§fRun{n}{right}{bar}{n}{right}§8§l» §r§7Zafer§8:§6 {wins}{n}{right}§8§l» §r§7Oyun§8:§c {plays}{n}{right}{bar}{n}{n}{right}§c{address}",
-        "lobby_blockparty": "{right} §fi§cAkuna§9MC §8§l» §r§dBlock§fParty{n}{right}{bar}{n}{right}§8§l» §r§7Galibiyet§8:§d {wins}{n}{right}§8§l» §r§7Maçlar§8:§d {plays}{n}{right}{bar}{n}{n}{right}§d{address}"
+        "lobby_blockparty": "{right} §fi§cAkuna§9MC §8§l» §r§dBlock§fParty{n}{right}{bar}{n}{right}§8§l» §r§7Galibiyet§8:§d {wins}{n}{right}§8§l» §r§7Maçlar§8:§d {plays}{n}{right}{bar}{n}{n}{right}§d{address}",
+        "lobby_duels": "{right}  §fi§cAkuna§9MC §8§l» §r§2Duels{n}{right}{bar}{n}{right}§8§l» §r§7Galibiyet§8:§2 {wins}{n}{right}§8§l» §r§7Mağlubiyet§8:§2 {defeats}{n}{right}§8§l» §r§7Maçlar§8:§2 {plays}{n}{right}§8§l» §r§7Seri§8:§2 {streak}{n}{right}{bar}{n}{n}{right}§2{address}",
+        "lobby_pvpmodes": "{right} §fi§cAkuna§9MC §8§l» §r§bPvP Modes{n}{right}{bar}{n}{right}§8§l» §r§7Öldürme§8:§b {kills}{n}{right}§8§l» §r§7Ölüm§8:§b {deaths}{n}{right}§8§l» §r§7Seri§8:§b {streak}{n}{right}{bar}{n}{n}{right}§b{address}"
     },
     "server": {
         "info": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §fBilgi §8===-=-=-=-{n}§cSistem §8» §r§7IP§8:§c iakunamc.com{n}§cSistem §8» §r§7Port§8:§c 19132{n}{n}§cSistem §8» §r§7Yetkili Başvurusu§8:§c https://staff.iakunamc.com{n}§cSistem §8» §r§7Market§8:§c https://loja.iakunamc.com{n}§cSistem §8» §r§7Discord§8:§c https://discord.iakunamc.com{n}{n}§fY§cT §8» §r§7300 abone §a+ §7Tanıtım videosu{n}§fMini§cYT §8» §r§750 abone §a+ §7Tanıtım videosu{n}§cYT§fmirin §8» §r§70 abone §a+ §7Tanıtım videosu{n}§cNotlar §8» §r§7IP'yi başlığa/açıklamaya koy ve rütbeni korumak için ayda bir sunucuyu tanıt",
@@ -2330,7 +2618,8 @@
                 "_prefix": "",
                 "bedwars": "§7§cBed§fWars §7içinde {target} yükseltme satın al"
             }
-        }
+        },
+        "reset_midnight": "§7Günlük görevler sıfırlandı! Kontrol etmek için §8/§6missoes §7kullan!"
     },
     "missions": {
         "_prefix": "§6Görevler §8§l» §r",
@@ -2701,7 +2990,9 @@
         "buy": {
             "_prefix": "",
             "title": "§7§c{cage} kafesini §c{cost} Akuna karşılığında satın al§8?",
-            "success": "§cKafesler §8§l» §r§7Kafes §c{cage} §7satın alındı!"
+            "success": "§cKafesler §8§l» §r§7Kafes §c{cage} §7satın alındı!",
+            "confirm": "§aOnayla",
+            "cancel": "§cİptal"
         }
     },
     "cage": {
@@ -2955,5 +3246,634 @@
             "success": "§7Ünvan §6{titulo} §7başarıyla satın alındı!"
         },
         "expired": "§6Ünvanlar §8§l» §r§7Ünvanın §6{titulo} §7süresi doldu..."
+    },
+    "pearl": {
+        "_prefix": "",
+        "blocked": "§cOraya ışınlanmak için güvenli bir alan yok!"
+    },
+    "pvpmodes": {
+        "_prefix": "§bPvP §8§l» §r",
+        "usage": "§7Katılmak için §8/§7{label} join §8<§7mod§8> kullan{n}§bPvP §8§l» §r§7Ayrılmak için §8/§7{label} leave kullan",
+        "join": {
+            "usage": "§cKullanım: §8/§c{label} join §8<§cmod§8>"
+        },
+        "modes_list": "§7Mevcut modlar§8: §f{modes}",
+        "invalid_mode": "§c§f{mode} §cmodu mevcut değil!",
+        "world_unavailable": "§c{mode} §cmodu haritası şu anda kullanılamıyor...",
+        "joined": "§7{mode} §7moduna katıldın!",
+        "joined_team": "§7{mode} §7moduna {team} §7takımında katıldın!",
+        "not_playing": "§cHerhangi bir PvP modunda değilsin...",
+        "left": "§7PvP modundan ayrıldın!",
+        "menu": {
+            "_prefix": "",
+            "back": "§c« Geri",
+            "mode_item": "{label}{n}§7Oynayan§8: §f{playing}{n}{n}§eKatılmak için tıkla",
+            "prefs_item": "§3PvPModes Tercihleri{n}§7Ayarlarını yapılandır{n}{n}§eAçmak için tıkla",
+            "team_amarelo": "§eSarı Takım",
+            "team_azul": "§9Mavi Takım",
+            "team_title": "§6TeamPvP §8§l» §r§7Takım Seç",
+            "team_verde": "§aYeşil Takım",
+            "team_vermelho": "§cKırmızı Takım",
+            "teampvp_item": "§6TeamPvP{n}§7Oynayan§8: §f{playing}{n}{n}§eTakımını seçmek için tıkla",
+            "title": "§bPvPModes §8§l» §r§7Mod Seç",
+            "uhc_item": "§bUHC{n}§7Oynayan§8: §f{playing}{n}{n}§eVaryant seçmek için tıkla",
+            "uhc_title": "§bPvPModes UHC §8§l» §r§7Varyantlar",
+            "uhc_uhc": "§bNormal Uhc",
+            "uhc_uhcfly": "§bFly Uhc",
+            "uhc_uhcheavy": "§bUhc §8(§cAğır KB§8)",
+            "uhc_uhclight": "§bUhc §8(§3Hafif KB§8)"
+        }
+    },
+    "challenge": {
+        "_prefix": "§cDuel §8§l» §r",
+        "_noprefix": [
+            "menu",
+            "received"
+        ],
+        "cancelled_other": "§7Oyuncu §c{player} §7meydan okumayı iptal etti...",
+        "cancelled_self": "§7§c{player} §7adlı oyuncuya gönderilen meydan okumayı iptal ettin...",
+        "denied_other": "§7Oyuncu §c{player} §7meydan okumanı reddetti...",
+        "denied_self": "§7§c{player} §7adlı oyuncunun meydan okumasını reddettin...",
+        "error": {
+            "already_sent": "§cZaten gönderilmiş bekleyen bir meydan okuman var...",
+            "challenger_busy": "§cZaten bir maçta veya aktif bir meydan okumadasın...",
+            "challenger_offline": "§cMeydan okuyan §7{player} §cçevrimdışı oldu...",
+            "invalid_bet": "§cGeçersiz bahis miktarı...",
+            "invalid_mode": "§cGeçersiz mod §7{mode}§c! Modlar§8: §7duels§8, §7thebridge§8, §7bedwars§8, §7skywars...",
+            "invalid_rounds": "§cTur sayısı §7{min} §cile §7{max} §carasında olmalı...",
+            "invalid_submode": "§c{mode} için geçersiz veya uyumsuz alt mod §7{submode}§c...",
+            "max_team_size": "§cİzin verilen maksimum takım boyutu§8: §7{max}v{max}§c...",
+            "member_busy": "§cOyuncu §7{player} §czaten bir maçta veya meydan okumada...",
+            "member_offline": "§cMeydan okuma başlamadan önce bir parti üyesi çevrimdışı oldu...",
+            "no_arena_available": "§cŞu anda bu modu başlatmak için uygun arena yok...",
+            "no_pending": "§cBekleyen bir meydan okuman yok...",
+            "no_pending_from": "§c§7{player} §cadlı oyuncudan bekleyen bir meydan okuman yok...",
+            "no_sent_invite": "§cBekleyen gönderilmiş bir meydan okuman yok...",
+            "not_enough_akunas": "§cBu bahis için §7{bet} Akunas §cgerekiyor...",
+            "not_in_challenge": "§cAktif bir meydan okumada değilsin...",
+            "player_offline": "§cOyuncu §7{player} §cçevrimiçi değil...",
+            "same_party": "§cAynı partideki birine meydan okuyamazsın...",
+            "self": "§cKendine meydan okuyamazsın...",
+            "target_busy": "§cOyuncu §7{player} §czaten bir maçta veya meydan okumada...",
+            "target_has_pending": "§cOyuncu §7{player} §czaten bekleyen bir meydan okumaya sahip...",
+            "target_not_enough_akunas": "§cOyuncu §7{player} §cbahis için §7{bet} Akunas §csahibi değil...",
+            "target_not_party_leader": "§cYalnızca §7{player} §cpartisindeki lider meydan okuma alabilir...",
+            "team_size_mismatch": "§cPartiler aynı oyuncu sayısına sahip olmalı §8(§7{yours} vs {theirs}§8)§c..."
+        },
+        "expired": "§7§c{player} §7ile olan meydan okumanın süresi doldu...",
+        "finished_tie": "§7Meydan okuma berabere bitti! Son skor §8(§f{leader_a} §c{score_a} §7x §9{score_b} §f{leader_b}§8)§7... Bahis §cAkunas §7iade edildi!",
+        "finished_win": "§a§f{winner} §azaferi! Son skor§8: §f{leader_a} §c{score_a} §7x §9{score_b} §f{leader_b} §8- §7Ödül§8: §e{pot} Akunas§7!",
+        "menu": {
+            "_prefix": "",
+            "back": "§c« Geri",
+            "bet_amount": "{amount} Akunas",
+            "bet_item": "{bet}{n}§7Turlar§8: §f{rounds}{n}{n}§aMeydan okuma göndermek için tıkla",
+            "bet_none": "§fBahissiz",
+            "bet_title": "§cMeydan Oku §8§l» §r§7Bahis §8(§7Akunas§8)",
+            "mode_item": "{label}{n}§7§f{player} §7adlı oyuncuya meydan oku{n}{n}§eTur seçmek için tıkla",
+            "mode_title": "§cMeydan Oku §8§l» §r§7Mod",
+            "round_plural": "§e{rounds} Tur{n}{n}§eBahis seçmek için tıkla",
+            "round_single": "§e{rounds} Tur{n}{n}§eBahis seçmek için tıkla",
+            "rounds_title": "§cMeydan Oku §8§l» §r§7Turlar"
+        },
+        "received": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §cDüello §8===-=-=-{n}§cDüello §8§l» §r§c{player} §7sizi {mode} §8(§f{format}§8) §7modunda §e{rounds} raunt §8(§6{bet}§8) §7için davet etti...{n}§cDüello §8§l» §r§7Kabul etmek için §a/desafiar accept {challenger} §7veya reddetmek için §c/desafiar deny {challenger} §7yazın §8(§7{timeout}s§8)",
+        "round_finished": "§7Tur §e{round}§8/§e{total} §7bitti! Skor§8: §f{leader_a} §c{score_a} §7x §9{score_b} §f{leader_b} §8- §7Sonraki tur §8(§e{next}§8/§e{total}§8) §e{delay}s §7içinde!",
+        "round_starting": "§7{mode} §7modunda tur §e{round}§8/§e{total} §7başlıyor §8(§f{leader_a} §c{score_a} §7x §9{score_b} §f{leader_b}§8)!",
+        "sent": "§7§c{player} §7adlı oyuncuya {mode} §8(§f{format}§8) §7modunda §e{rounds} tur §8(§6{bet}§8) §7için meydan okuma gönderildi!",
+        "status": "§7Mevcut tur§8: §e{round}§8/§e{total} §8| §f{leader_a} §c{score_a} §7x §9{score_b} §f{leader_b} §8| §7Bahis§8: §6{bet} Akunas",
+        "usage": "§cKullanım: §8/§c{label} §8<§coyuncu§8> [§cduels§8|§cthebridge§8|§cbedwars§8|§cskywars§8] [§caltmod§8] [§ctur 1-10§8] [§cbahis§8] §7veya §8/§c{label} §8<§caccept§8|§cdeny§8|§ccancel§8|§cstatus§8>",
+        "won_wo": "§cHükmen §8(§cW.O.§8)§c! §7Oyuncu §c{quitter} §7maçtan ayrıldı... §a{winner} §7kazandı ve §e{pot} Akunas §7aldı!",
+        "loading_arena": "§7Arena yükleniyor, lütfen biraz bekleyin..."
+    },
+    "friends": {
+        "accept": {
+            "_prefix": "§cSystem §8§l» §r",
+            "none": "§cBekleyen arkadaşlık isteğin yok...",
+            "notify": "§b{friend} §7arkadaşlık isteğini kabul etti!",
+            "success": "§7Sen ve §b{friend} §7artık arkadaşsınız!"
+        },
+        "add": {
+            "_prefix": "§cSystem §8§l» §r",
+            "already": "§c§b{target} §cile zaten arkadaşsın...",
+            "expired": "§c§b{sender} §cadlı oyuncunun arkadaşlık isteğinin süresi doldu...",
+            "limit": "§cArkadaş sınırına ({max}) ulaştın!",
+            "pending": "§cBu oyuncunun zaten bekleyen bir arkadaşlık isteği var...",
+            "request": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §bArkadaşlık İsteği §8===-=-=-{n}§cSystem §8§l» §r§b{sender} §7sana bir arkadaşlık isteği gönderdi...{n}§cSystem §8§l» §r§7Kabul etmek için §a/friend aceitar §7veya reddetmek için §c/friend recusar §7kullan",
+            "self": "§cKendini arkadaş olarak ekleyemezsin...",
+            "sent": "§7§b{target} §7adlı oyuncuya arkadaşlık isteği gönderildi!",
+            "target_limit": "§cBu oyuncu zaten arkadaş sınırına ulaştı!",
+            "usage": "§cKullanım: §8/§c{label} add §8<§coyuncu§8>"
+        },
+        "deny": {
+            "_prefix": "§cSystem §8§l» §r",
+            "none": "§cBekleyen arkadaşlık isteğin yok...",
+            "notify": "§b{target} §7arkadaşlık isteğini reddetti...",
+            "success": "§7Arkadaşlık isteği başarıyla reddedildi!"
+        },
+        "friend": {
+            "_prefix": "§cSystem §8§l» §r",
+            "joined": "§7Arkadaşın §b{friend} §7sunucuya katıldı!",
+            "left": "§7Arkadaşın §b{friend} §7sunucudan §cayrıldı..."
+        },
+        "list": {
+            "_prefix": "",
+            "entry": "§cSystem §8§l» §r{status} §b{friend} §8| §7Tarih§8:§b {date} §8(§7{dateSince} önce§8){n}§cSystem §8§l» §r§7Senin taktığın§8:§b {nicknameGiven} §8| §7Sana taktığı§8:§b {nicknameReceived}",
+            "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §bArkadaşlar §8(§7{count}§8/§7{max}§8) §8[§7Sayfa {page}/{maxPages}§8] ===-=-=-=-",
+            "no_nickname": "§7Takma ad yok...§r",
+            "none": "§cSystem §8§l» §r§cHenüz hiç arkadaşın yok...",
+            "offline": "§c●",
+            "online": "§a●"
+        },
+        "nick": {
+            "_prefix": "§cSystem §8§l» §r",
+            "success": "§7§b{friend} §7adlı oyuncunun takma adı başarıyla '§b{nickname}§7' olarak ayarlandı!",
+            "usage": "§cKullanım: §8/§c{label} nick §8<§carkadaş§8> <§ctakma_ad§8>"
+        },
+        "remove": {
+            "_prefix": "§cSystem §8§l» §r",
+            "all_success": "§7Tüm arkadaşların kaldırıldı!",
+            "invalid": "§cGeçersiz oyuncu veya arkadaş listende değil...",
+            "none": "§cHiç arkadaşın yok...",
+            "notify": "§b{friend} §7seni arkadaş listesinden çıkardı...",
+            "success": "§7§b{friend} §7adlı oyuncuyu arkadaş listenden çıkardın...",
+            "usage": "§cKullanım: §8/§c{label} remover §8<§coyuncu§8|§c*§8>"
+        },
+        "usage": "§cSystem §8§l» §r§cKullanım: §8/§c{label} §8<§cadd§8|§caceitar§8|§crecusar§8|§cremover§8|§clistar§8|§cnick§8>"
+    },
+    "online_reward": {
+        "_prefix": "§bActivity §8§l» §r",
+        "both": "§7§b{minutes}dk §7oynadığın için §a+{akunas} Akunas §7ve §9+{xp} XP §7kazandın!",
+        "akunas_only": "§7§b{minutes}dk §7oynadığın için §a+{akunas} Akunas §7kazandın!",
+        "xp_only": "§7§b{minutes}dk §7oynadığın için §9+{xp} XP §7kazandın!"
+    },
+    "angel": {
+        "_prefix": "§6A§en§6g§ee§6l §8§l» §r",
+        "invalid_world": "§cBu dünyada kanatları etkinleştiremezsin..."
+    },
+    "hitparticles": {
+        "_prefix": "§6Hit§fParticles §8§l» §r",
+        "usage": "§cKullanım: §8/§c{label} §8<§con§8|§coff§8|§cshape§8|§clist§8>",
+        "on_usage": "§cKullanım: §8/§c{label} on §8<§cparçacık§8> §8[§cşekil§8]",
+        "invalid_shape": "§cGeçersiz şekil... Mevcut şekiller§8:§c {shapes}",
+        "shapes": "§7Mevcut şekiller§8:§6 {shapes}",
+        "shape_set": "§7Şekil başarıyla §6{shape} §8(§5{type}§8) §7olarak değiştirildi!",
+        "activated": "§7Vuruş parçacığı §5{type} §8(§6{shape}§8) §7başarıyla etkinleştirildi!",
+        "deactivated": "§7Vuruş parçacıkları başarıyla devre dışı bırakıldı!",
+        "list": "§7Mevcut parçacık listesi §8(§f{count}§8):§7 {particles}{n}§6Hit§fParticles §8§l» §r§7Vuruş şekilleri§8:§6 {shapes}"
+    },
+    "bridgepractice": {
+        "_prefix": "§eBridge Practice §8§l» §r",
+        "_noprefix": [
+            "fell",
+            "finish_tip",
+            "record_title",
+            "record_subtitle",
+            "hud_popup",
+            "clutch_kb"
+        ],
+        "joined": "§7§eBridge Practice §7moduna katıldın! Köprü, mesafe veya clutch ayarlamak için envanter çubuğundaki saati kullan...",
+        "left": "§7§eBridge Practice §7modundan ayrıldın!",
+        "reset": "§7Ada başarıyla sıfırlandı!",
+        "not_in_game": "§cKöprü antrenmanında değilsin...",
+        "world_error": "§cKöprü antrenmanı dünyan oluşturulamadı...",
+        "fell": "§cDüştün! Sıfırlanıyor...",
+        "finish": "§7Köprü §e{time} §7sürede tamamlandı §8(§e{best} §8| §f{blocks} blok§8)",
+        "finish_record": "§e§lYENİ REKOR! §r§e{time} §7sürede tamamlandı §8(§f{blocks} blok§8)",
+        "finish_infinite_record": "§e§lYENİ SONSUZ REKOR! §r§e{blocks} blok§7!",
+        "finish_tip": "§a§e{time} §asürede bitti!",
+        "record_title": "§6§lYENİ REKOR!§r",
+        "record_subtitle": "§eSüre§8: §f{time}",
+        "hud_popup": "§eSüre§8: §f{time} §8| §7Bloklar§8: §e{blocks}",
+        "clutch_kb": "§cKnockback §8(§f{intensity}§8)",
+        "notify": {
+            "mode_set": "§7Mod başarıyla §e{mode}§7 olarak değiştirildi!",
+            "distance_set": "§7Mesafe §e{distance} blok §7olarak ayarlandı!",
+            "distance_infinite_set": "§7Mesafe §dSonsuz Köprü §7olarak ayarlandı!",
+            "block_set": "§7Seçilen blok§8:§e {block}",
+            "kb_intensity_set": "§7Knockback şiddeti §c{intensity} §7olarak ayarlandı!",
+            "kb_interval_set": "§7Knockback aralığı §6{interval} §7olarak ayarlandı!"
+        },
+        "item": {
+            "_prefix": "",
+            "reset": "§8-> §eAdayı Sıfırla",
+            "menu": "§8-> §bKöprü & Clutch Yapılandır",
+            "leave": "§8-> §cAntrenmandan Çık"
+        },
+        "block": {
+            "_prefix": "",
+            "wool_white": "Beyaz Yün",
+            "wool_red": "Kırmızı Yün",
+            "wool_blue": "Mavi Yün",
+            "clay_yellow": "Sarı Kil",
+            "sandstone": "Kumtaşı",
+            "obsidian": "Obsidyen"
+        },
+        "scoreboard": {
+            "_prefix": "",
+            "header": "§eBridge Practice",
+            "mode": "Mod",
+            "distance": "Mesafe",
+            "time": "Süre",
+            "record": "Rekor",
+            "blocks": "Bloklar",
+            "kb": "KB",
+            "attempts": "Deneme",
+            "infinite": "Sonsuz",
+            "best_blocks": "{blocks} bl"
+        },
+        "mode": {
+            "_prefix": "",
+            "straight": "Düz",
+            "diagonal": "Çapraz",
+            "stair_up": "Yükselen Düz",
+            "diagonal_up": "Yükselen Çapraz",
+            "clutch": "Clutch Düz",
+            "clutch_diagonal": "Clutch Çapraz"
+        },
+        "mode_desc": {
+            "_prefix": "",
+            "straight": "Geleneksel düz yatay köprü",
+            "diagonal": "Çapraz köprü",
+            "stair_up": "Merdiven şeklinde yükselen düz köprü",
+            "diagonal_up": "Merdiven şeklinde yükselen çapraz köprü",
+            "clutch": "Yatay knockback içeren hazır düz köprü",
+            "clutch_diagonal": "Yatay knockback içeren hazır çapraz köprü"
+        },
+        "menu": {
+            "_prefix": "",
+            "title": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §eBridge Practice §8===-=-=-=-",
+            "status_selected": "§a§lSEÇİLDİ§r",
+            "status_active": "§a§l[AKTİF]§r",
+            "click_select": "§eSeçmek için tıkla",
+            "click_set": "§7Ayarlamak için tıkla",
+            "click_choose": "§7Seçmek için tıkla",
+            "distance_blocks": "{distance} blok",
+            "distance_infinite": "Sonsuz Köprü",
+            "kb_intensity_item": "{color}Knockback: {intensity}\n§7Clutch Modu\n{status}",
+            "kb_interval_item": "{color}KB Aralığı: {interval}\n§7Knockbackler arası süre\n{status}",
+            "back": "§e§l« Geri§r\n§7Ana menü",
+            "reset_item": "§eAdayı Sıfırla\n§7Koyulan blokları temizler",
+            "leave_item": "§cAntrenmandan Çık\n§7Lobiye dön",
+            "stats_item": "§aİstatistiklerin\n\n§7Mevcut rekor§8: §e{best}\n§7Toplam tamamlama§8: §b{total}",
+            "shortcut_clutch": "§c§lClutch'a Git§r\n§7Değiştir ve Clutch ayarlarını aç",
+            "shortcut_bridge": "§b§lKöprüye Git§r\n§7Değiştir ve Köprü ayarlarını aç",
+            "hub": {
+                "bridge_title": "§e§lKöprü Ayarları§r",
+                "bridge_desc": "§7Düz, çapraz, yükselen,\n§7mesafe (veya sonsuz) & bloklar\n\n{status}",
+                "clutch_title": "§c§lClutch Ayarları§r",
+                "clutch_desc": "§7Hazır köprü, KB şiddeti,\n§7aralık & yön\n\n{status}",
+                "current_status": "§a§lAKTİF§r §8(§f{mode} §8| §e{distance}§8)\n§eYapılandırmak için tıkla",
+                "current_clutch_status": "§a§lAKTİF§r §8(§f{mode} §8| §c{intensity} §f/ §6{interval}§8)\n§eYapılandırmak için tıkla",
+                "switch_to_bridge": "§eKöprüye geçmek\n§7ve ayarları açmak için tıkla",
+                "switch_to_clutch": "§eClutch'a geçmek\n§7ve ayarları açmak için tıkla"
+            }
+        }
+    },
+    "captcha": {
+        "_prefix": "§9Captcha §8§l» §r",
+        "_noprefix": [
+            "kick",
+            "tip",
+            "map",
+            "menu",
+            "item"
+        ],
+        "kick": {
+            "full": "§cAnti-bot doğrulaması şu anda dolu... Birkaç saniye içinde tekrar dene!",
+            "timeout": "§cCaptcha tamamlama süresi §8(§c30s§8)§c doldu...",
+            "failed": "§cCaptcha'yı çok fazla kez yanlış yaptın..."
+        },
+        "tip": {
+            "timer": "§9Captcha §8§l» §r§7Kalan süre§8:§c {seconds}s"
+        },
+        "map": {
+            "item_name": "§eCaptcha Haritası"
+        },
+        "menu": {
+            "title": "§8Seç§8: {item}",
+            "reopen_item": "§bCaptcha menüsünü aç"
+        },
+        "prompt": {
+            "map": "§7Elindeki haritaya bak ve kodu §c{seconds}s §7içinde sohbete yaz",
+            "menu": "§7Menüdeki {item} §r§7eşyasına §c{seconds}s §7içinde tıkla §8(§7yeniden açmak için §8/§7captcha kullan§8)",
+            "hotbar": "§7Envanter çubuğundaki {item} §r§7eşyasını §c{seconds}s §7içinde seç",
+            "phrase": "§7Sohbete tam olarak bu ifadeyi yaz§8: §9{phrase} §8(§c{seconds}s§8)",
+            "math": "§7Sohbette çöz§8: §9{expression} §8(§c{seconds}s§8)"
+        },
+        "error": {
+            "retry": "§cYanlış cevap... Kalan deneme§8: §c{attempts}",
+            "command": "§cKomutları kullanmadan önce captcha'yı tamamla..."
+        },
+        "success": "§7Captcha başarıyla doğrulandı!",
+        "item": {
+            "diamond": "§bElmas",
+            "emerald": "§aZümrüt",
+            "golden_apple": "§6Altın Elma",
+            "nether_star": "§eNether Yıldızı",
+            "ender_eye": "§dEnder Gözü",
+            "gold_ingot": "§eAltın Külçesi",
+            "ender_pearl": "§3Ender İncisi",
+            "blaze_powder": "§cBlaze Tozu",
+            "compass": "§7Pusula",
+            "diamond_sword": "§bElmas Kılıç",
+            "apple": "§cElma",
+            "feather": "§fTüy",
+            "clock": "§eSaat",
+            "slimeball": "§aBalçık Topu",
+            "coal": "§8Kömür",
+            "bone": "§fKemik",
+            "paper": "§fKağıt",
+            "blaze_rod": "§6Blaze Çubuğu"
+        }
+    },
+    "spectate": {
+        "_prefix": "§9Spectate §8§l» §r",
+        "_noprefix": [
+            "item"
+        ],
+        "command": {
+            "usage": "§cKullanım: §8/§cassistir §8<§coyuncu§8|§csair§8>"
+        },
+        "error": {
+            "self": "§cKendini izleyemezsin...",
+            "must_leave_game": "§cBaşka bir oyuncuyu izlemeden önce mevcut maçından çık...",
+            "disallowed_mode": "§cPlot veya Survival modunda izleyici moduna izin verilmez...",
+            "target_not_playing": "§cBu oyuncu şu anda herhangi bir mini oyunda değil...",
+            "target_offline": "§cOyuncu §f{player} §cbulunamadı veya çevrimdışı...",
+            "privacy": "§c{player} §cmevcut tercihleriyle izleyicilere izin vermiyor...",
+            "not_spectating": "§cŞu anda kimseyi izlemiyorsun..."
+        },
+        "item": {
+            "leave": "§cİzleyici Modundan Çık",
+            "teleporter": "§8-> §aOyuncular",
+            "play_again": "§8-> §aTekrar oyna"
+        },
+        "started": "§7Şu anda §9{player} §7adlı oyuncuyu izliyorsun! Çıkmak için §8/§7assistir sair veya yatak eşyasını kullan",
+        "stopped": {
+            "manual": "§7İzleyici modundan çıktın!",
+            "match_ended": "§7İzlenen maç sona erdi...",
+            "target_offline": "§cİzlenen oyuncu çevrimdışı oldu...",
+            "disallowed_mode": "§cPlot veya Survival'a girildiğinde izleyici modu durduruldu..."
+        },
+        "menu": {
+            "title": "§8Oyuncuya Işınlan",
+            "no_players": "{prefix}§cIşınlanacak hayatta oyuncu yok...",
+            "team_icon": "{team} §7({count})",
+            "team_player_head": "{team} §8- §f{player}{n}§7Can: §c{hp}❤{n}§eIşınlanmak için tıkla",
+            "player_head": "§a{player}{n}§7Can: §c{hp}❤{n}§eIşınlanmak için tıkla",
+            "player_unavailable": "{prefix}§cBu oyuncu artık müsait değil..."
+        },
+        "teleported": "{prefix}§e{player} §aoyuncusuna ışınlandın!"
+    },
+    "cooldown": {
+        "_noprefix": [
+            "indicator",
+            "item"
+        ],
+        "indicator": {
+            "entry": "§7{item}§8:§c {seconds}s §8[{bar}§8]",
+            "ready": "§7{item} §ahazır!"
+        },
+        "item": {
+            "fireball": "Ateş Topu",
+            "egg": "Yumurta",
+            "irongolem": "Demir Golem",
+            "silverfish": "Gümüşçün",
+            "slingshot": "Sapan",
+            "sponge": "Sünger",
+            "bridge": "Köprü Yumurtası",
+            "tower": "Kule",
+            "platform": "Platform",
+            "enderpearl": "Ender İncisi",
+            "tntegg": "TNT Yumurtası",
+            "hook": "Kanca",
+            "archer": "Okçu",
+            "cheststealer": "Sandık Hırsızı"
+        }
+    },
+    "staffchat": {
+        "discord_format": "§9Staff§fChat §8(§bDiscord§8) §8§l» §r§f{player}§8:§7 {message}"
+    },
+    "booster": {
+        "_prefix": "§dBooster §8§l» §r",
+        "activated": "§aDiscord'u desteklediğin için teşekkürler! §dBooster §7unvanı, §e+{xp}% XP §7ve §e/daily +25% §7kazandın!",
+        "monthly_claimed": "§aAylık ödül alındı: §e+{amount} Akunas§a! §8(§7Sonraki: {time}§8)",
+        "expired": "§7Discord boost'un sona erdi, Booster unvanı ve bonusları kaldırıldı."
+    },
+    "enchant": {
+        "_prefix": "§6Survival §8§l» §r",
+        "hold_tool": "§cBüyülemek için elinde kazma, balta veya kürek tut!",
+        "keep_tool": "§cBüyüyü tamamlamak için aleti elinde tut.",
+        "already_applied": "§cBu alette zaten bu büyü var!",
+        "incompatible": "§cBüyü bu aletle uyumlu değil!",
+        "success": "§aAletine {enchant} §abüyüsünü §e{cost} Akunas §akarşılığında ekledin!",
+        "menu": {
+            "_prefix": "",
+            "title": "§6Survival §8§l» §r§dBüyü",
+            "applied": "§a✔ Bu alette zaten var",
+            "incompatible": "§c✖ Bu alet türüyle uyumsuz",
+            "cost": "§7Maliyet§8: §e{cost} Akunas",
+            "cost_with_tax": "{n}§7Vergi dahil§8: §e{total} Akunas",
+            "click_to_apply": "{n}{n}§eEklemek için tıkla!",
+            "entry": "{color}§l{name} {level}{n}§7{desc}{n}{n}{status}"
+        },
+        "items": {
+            "_prefix": "",
+            "auto_smelt": {
+                "name": "Auto-Smelt",
+                "desc": "Kazarken cevherleri ve kumu otomatik eritir"
+            },
+            "telekinesis": {
+                "name": "Telekinesis",
+                "desc": "Düşen eşyaları doğrudan envantere gönderir"
+            },
+            "excavation": {
+                "name": "3x3 Kazı",
+                "desc": "Kırılan bloğun etrafındaki 3x3 alanı kırar"
+            }
+        }
+    },
+    "discord_bot": {
+        "common": {
+            "server_unavailable": "❌ | Server unavailable...",
+            "server_unavailable_detail": "❌ | Minecraft server is currently unavailable ({error}).",
+            "generic_error": "❌ | An error occurred...",
+            "error_detail": "❌ | Error: {error}",
+            "guild_not_allowed": "❌ | This bot is not configured for this server...",
+            "official_only": "❌ | This command can only be used in the official server...",
+            "command_error": "❌ | Error executing command...",
+            "permanent": "Permanent",
+            "unknown": "Unknown",
+            "disabled": "❌ Disabled",
+            "not_linked_short": "❌ Not linked"
+        },
+        "booster": {
+            "sync_error": "❌ | Could not sync your boost ({error}).",
+            "not_linked_boosting": "💜 | Boost detected! Use `/discord` on the server and then `/vincular` here to unlock the **Booster** title, **+25% XP**, **+25% on /daily** and **10,000 Akunas/month**!",
+            "not_linked": "ℹ️ | Your account is not linked yet. Use `/discord` on the server and `/vincular` here.",
+            "not_boosting": "ℹ️ | Linked account: `{name}`. You are not boosting the server right now.",
+            "title": "💜 Server Booster Rewards",
+            "linked_account": "👤 **Linked account:** `{name}`",
+            "exclusive_title": "🏷️ **Exclusive title:** `Booster`",
+            "xp_bonus": "✨ **XP bonus:** `+25%` passive",
+            "daily_bonus": "🎁 **`/daily` bonus:** `+25%` stackable with Galaxy+",
+            "monthly_claimed": "💰 **Monthly reward claimed:** `+{amount} Akunas`",
+            "next_claim": "⏳ **Next monthly reward:** <t:{timestamp}:R>"
+        },
+        "account": {
+            "not_linked": "❌ | No account is linked...",
+            "field_2fa": "🔑 | 2FA",
+            "field_email": "📫 | Email",
+            "field_last_login": "🟢 | Last login",
+            "field_created_at": "📅 | Account Created",
+            "mode_discord": "🔷 Discord",
+            "mode_email": "📧 Email"
+        },
+        "link": {
+            "invalid_code": "❌ | Invalid code, use `/discord` on the server to generate a new one...",
+            "expired_code": "❌ | Expired code, use `/discord` on the server to generate a new one...",
+            "already_linked": "❌ | This account is already linked to `{player}`",
+            "title": "✅ Account linked!",
+            "description": "Your account was linked successfully...",
+            "footer": "Use /discord desvincular to unlink your account"
+        },
+        "unlink": {
+            "not_linked": "❌ | No linked account...",
+            "title": "🔗 | Account unlinked",
+            "description": "Account unlinked successfully..."
+        },
+        "confirmlogin": {
+            "invalid_code": "❌ | Invalid code...",
+            "expired_code": "❌ | Expired code...",
+            "not_linked": "❌ | You do not have a linked account...",
+            "player_offline": "❌ | Player offline...",
+            "title": "✅ | Authentication complete!",
+            "description": "Login authorized successfully..."
+        },
+        "resetpassword": {
+            "not_linked": "❌ | No account is linked...",
+            "title": "🔑 | Password reset!",
+            "description": "Your credentials were reset successfully..."
+        },
+        "moderation": {
+            "staff_not_linked": "❌ | Discord account not linked to any staff member...",
+            "no_permission_ban": "❌ | Your account does not have permission to ban...",
+            "no_permission_kick": "❌ | Your account does not have permission to kick...",
+            "no_permission_mute": "❌ | Your account does not have permission to mute...",
+            "no_permission_unmute": "❌ | Your account does not have permission to unmute...",
+            "no_permission_warn": "❌ | Your account does not have permission to warn...",
+            "player_not_found": "❌ | Player `{player}` not found...",
+            "player_offline": "❌ | Player offline...",
+            "target_is_staff_ban": "❌ | You cannot ban a staff member...",
+            "target_is_staff_kick": "❌ | You cannot kick a staff member...",
+            "target_is_staff_mute": "❌ | You cannot mute a staff member...",
+            "target_is_staff_warn": "❌ | You cannot warn a staff member...",
+            "already_banned": "❌ | `{player}` is already banned...",
+            "already_muted": "❌ | `{player}` is already muted...",
+            "not_banned": "❌ | `{player}` is not banned...",
+            "not_muted": "❌ | `{player}` is not muted...",
+            "no_history": "✅ | This player has no punishments...",
+            "ban_title": "🔨 | Player banned",
+            "kick_title": "👢 | Player kicked",
+            "mute_title": "🔇 | Player muted",
+            "unmute_title": "🔊 | Player unmuted",
+            "warn_title": "⚠️ | Player warned",
+            "baninfo_title": "🔨 | Ban info — {player}",
+            "muteinfo_title": "🔇 | Mute info — {player}",
+            "history_title": "📋 | Punishment History — {player}",
+            "field_player": "👤 | Player",
+            "field_staff": "🛡️ | Staff",
+            "field_duration": "⌛ | Duration",
+            "field_reason": "📝 | Reason",
+            "field_warns": "⚠️ | Active warnings",
+            "field_banned_at": "📅 | Banned at",
+            "field_muted_at": "📅 | Muted at",
+            "expires_in": "Expires <t:{timestamp}:R>",
+            "history_entry": "> {time} - **{action}** by **{staff}**{duration}{n}- {reason}"
+        },
+        "clan": {
+            "not_found": "❌ | Clan not found...",
+            "type_public": "🔓 Public",
+            "type_invite": "📩 Invite",
+            "type_private": "🔒 Private",
+            "type_closed": "⛔ Closed",
+            "field_leader": "👑 | Leader",
+            "field_level": "📊 | Level",
+            "field_xp": "✨ | XP",
+            "field_members": "👥 | Members",
+            "field_type": "📋 | Type",
+            "field_created": "📅 | Created",
+            "field_description": "📝 | Description",
+            "field_members_count": "👥 | Members ({count})"
+        },
+        "addskin": {
+            "invalid_id": "❌ | Invalid ID (use only a-z, 0-9, _ and -)...",
+            "file_too_large": "❌ | File too large (max 5MB)...",
+            "download_failed": "❌ | Could not download the file...",
+            "invalid_png": "❌ | File is not a valid PNG or exceeds max dimensions...",
+            "skin_too_small": "❌ | Skin too small...",
+            "skin_transparent": "❌ | Invalid skin: at least 70% of pixels must be visible (non-transparent)...",
+            "invalid_type": "❌ | Invalid type...",
+            "invalid_skin_data": "❌ | Invalid skin data...",
+            "success": "✅ | Skin {id} ({name}) added successfully!"
+        },
+        "staffcode": {
+            "invalid_code": "❌ | Invalid code...",
+            "code_used": "❌ | Code already used or expired...",
+            "code_expired": "❌ | Code expired...",
+            "not_linked": "❌ | You must link your Discord account first...",
+            "name_mismatch": "❌ | Linked account name does not match the name entered on the site...",
+            "title": "✅ Authentication confirmed!",
+            "description": "Your identity was confirmed as **{name}**. Return to the website to continue your application."
+        },
+        "staff_review": {
+            "not_found": "⚠️ | Application not found...",
+            "tag_applied": "{n}🎮 | Trial tag applied to **{name}** on the server",
+            "tag_failed": "{n}⚠️ | Failed to apply tag on the server ({error}).",
+            "server_offline": "{n}⚠️ | Server unavailable...",
+            "approved_by": "✅ **Approved** by <@{userId}>.{note}",
+            "refuse_modal_title": "Reject application",
+            "refuse_reason_label": "Rejection reason",
+            "refused_dm": "🚧 | Your application was **rejected**...{n}You can view the reason on our website: https://staff.iakunamc.com",
+            "refused_by": "❌ | **Rejected** by <@{userId}>"
+        },
+        "perfil": {
+            "provide_player": "❌ | Please specify a player...",
+            "profile_hidden": "❌ | This player's profile is hidden...",
+            "not_found": "❌ | Player not found...",
+            "no_records_period": "No records in this period...",
+            "stats_header": "📊 | Stats — {period}",
+            "field_level": "⭐ | Level",
+            "level_value": "**{level}** ({xp} XP — {needed} XP needed for next level)",
+            "field_akunas": "💰 | Akunas",
+            "field_online_time": "🕐 | Playtime",
+            "field_last_online": "📅 | Last online",
+            "field_clan": "🛡️ | Clan",
+            "field_married": "💍 | Married to",
+            "field_about": "📝 | About",
+            "period_total": "Total",
+            "period_daily": "Daily",
+            "period_weekly": "Weekly",
+            "period_monthly": "Monthly",
+            "game_duels": "Duels",
+            "game_overall_kills": "Overall Kills",
+            "stat_wins": "Wins",
+            "stat_kills": "Kills",
+            "stat_plays": "Matches played",
+            "stat_defeats": "Defeats",
+            "stat_final_kills": "Final Kills",
+            "stat_broken_beds": "Beds Broken",
+            "stat_points": "Goals scored",
+            "stat_deaths": "Deaths"
+        },
+        "top": {
+            "title": "Top {game} — {period}",
+            "empty": "No records found...",
+            "score_kills": "⚔️ {amount} kills",
+            "score_akunas": "💰 {amount} Akunas",
+            "score_levels": "⭐ Level {amount}",
+            "score_xp": "✨ {amount} XP",
+            "score_wins": "🏆 {amount} wins"
+        }
     }
 }

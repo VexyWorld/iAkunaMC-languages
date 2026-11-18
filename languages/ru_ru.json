@@ -63,7 +63,8 @@
             "team_full": "§cКоманда {team} §r§cполна!",
             "joined_team": "§7Вы успешно вступили в команду {team}§r§7!",
             "preference_set": "§7Команда {team} §r§7установлена как предпочтительная",
-            "invalid_team": "§cНеверная команда..."
+            "invalid_team": "§cНеверная команда...",
+            "preference_prompt": "§7Нажмите на команду, чтобы сделать её предпочтительной"
         },
         "rejoin": {
             "_prefix": "§cBed§fWars §8§l» §r",
@@ -209,7 +210,9 @@
             "point_scored": "{player} §7забил гол",
             "point_scored_final": "{player} §7забил гол §8(§cФинальный гол§8)",
             "killed_by": "§c{victim} §7был(а) убит(а) игроком §c{killer}",
-            "own_point": "§cНельзя забивать гол в ворота своей команды"
+            "own_point": "§cНельзя забивать гол в ворота своей команды",
+            "player_left_rejoin": "§c{player} §7вышел §8(§cRejoin§8)",
+            "player_returned": "§c{player} §7вернулся в матч"
         },
         "command": {
             "usage": "§7Для входа используйте §8/§7{label} join",
@@ -219,7 +222,24 @@
             "invalid": "§cНеверная команда...",
             "already_in": "§cВы уже в команде {team}§r§c!",
             "full": "§cКоманда {team} §r§cполна!",
-            "joined": "§7Вы успешно вступили в команду {team}§r§7!"
+            "joined": "§7Вы успешно вступили в команду {team}§r§7!",
+            "_prefix": "§cThe§9Bridge §8§l» §r",
+            "vip_only": "§cТолько игроки с VIP §b§l§oAstral§r§c или выше могут выбирать команды! §oКупите на https://loja.iakunamc.com",
+            "moved_by_partner": "§7Вас переместили в команду {team} §r§7партнёр!",
+            "already_in_team": "§cВы уже в команде {team}§r§c!",
+            "team_full": "§cКоманда {team} §r§cполна!",
+            "joined_team": "§7Вы успешно вступили в команду {team}§r§7!",
+            "preference_set": "§7Команда {team} §r§7установлена как предпочтительная",
+            "preference_prompt": "§7Нажмите на команду, чтобы сделать её предпочтительной",
+            "invalid_team": "§cНеверная команда..."
+        },
+        "rejoin": {
+            "_prefix": "§cThe§9Bridge §8§l» §r",
+            "pending": "§7Вы вышли из текущего матча...",
+            "pending_hint": "§7Используйте §8/§7tb rejoin, чтобы вернуться в матч",
+            "no_pending": "§cУ вас нет активного rejoin!",
+            "expired": "§cВремя rejoin истекло!",
+            "game_ended": "§cМатч завершён или ваша команда вышла!"
         }
     },
     "skywars": {
@@ -233,7 +253,9 @@
             "join": "§b{player} §7присоединился к матчу §8(§f{count}§8/§f{maxPlayers}§8)",
             "quit": "§b{player} §7покинул матч §8(§f{count}§8/§f{maxPlayers}§8)",
             "killed_by": "§b{player} §7был(а) убит(а) игроком §b{killer} §8(§f{alive}§8/§f{maxPlayers}§8)",
-            "killed_void": "§b{player} §7упал(а) в пустоту §8(§f{alive}§8/§f{maxPlayers}§8)"
+            "killed_void": "§b{player} §7упал(а) в пустоту §8(§f{alive}§8/§f{maxPlayers}§8)",
+            "left_rejoin": "§b{player} §7вышел §8(§bRejoin§8)",
+            "returned": "§b{player} §7вернулся в матч"
         },
         "refill": {
             "done": "§7Все сундуки снова заполнены!"
@@ -275,7 +297,26 @@
             "confirm_button": "§a§lПодтвердить",
             "cancel_button": "§c§lОтмена"
         },
-        "tracker": "§8§l» §r§7Отслеживание §b{player} §8§l» §r§7Расстояние: §b{distance} §7блоков"
+        "tracker": "§8§l» §r§7Отслеживание §b{player} §8§l» §r§7Расстояние: §b{distance} §7блоков",
+        "rejoin": {
+            "_prefix": "§fSky§bWars §8§l» §r",
+            "pending": "§7Вы вышли из текущего матча...",
+            "pending_hint": "§7Используйте §8/§7sw rejoin, чтобы вернуться в матч",
+            "no_pending": "§cУ вас нет активного rejoin!",
+            "expired": "§cВремя rejoin истекло!",
+            "game_ended": "§cМатч завершён или ваша команда была устранена!"
+        },
+        "teams": {
+            "_prefix": "§fSky§bWars §8§l» §r",
+            "vip_only": "§cТолько игроки с VIP §b§l§oAstral§r§c или выше могут выбирать команды! §oКупите на https://loja.iakunamc.com",
+            "moved_by_partner": "§7Вас переместили в команду {team} §r§7партнёр!",
+            "already_in_team": "§cВы уже в команде {team}§r§c!",
+            "team_full": "§cКоманда {team} §r§cполна!",
+            "joined_team": "§7Вы успешно вступили в команду {team}§r§7!",
+            "preference_set": "§7Команда {team} §r§7установлена как предпочтительная",
+            "preference_prompt": "§7Нажмите на команду, чтобы сделать её предпочтительной",
+            "invalid_team": "§cНеверная команда..."
+        }
     },
     "mlgblock": {
         "state": {
@@ -298,6 +339,17 @@
         },
         "scoreboard": {
             "format": "{right}§fi§cAkuna§9MC §8§l» §r§eMlg§fBlock{n}{right}{bar}{n}{right}§8§l» §r§7Карта§8:§e {map}{n}{right}§8§l» §r§7Убийства§8:§e {kills}{n}{right}§8§l» §r§7В живых§8:§e {alive}{n}{right}{bar}{n}{n}{right}§eiakunamc.com 19132"
+        },
+        "teams": {
+            "_prefix": "§eMlg§fBlock §8§l» §r",
+            "vip_only": "§cТолько игроки с VIP §b§l§oAstral§r§c или выше могут выбирать команды! §oКупите на https://loja.iakunamc.com",
+            "moved_by_partner": "§7Вас переместили в команду {team} §r§7партнёр!",
+            "already_in_team": "§cВы уже в команде {team}§r§c!",
+            "team_full": "§cКоманда {team} §r§cполна!",
+            "joined_team": "§7Вы успешно вступили в команду {team}§r§7!",
+            "preference_set": "§7Команда {team} §r§7установлена как предпочтительная",
+            "preference_prompt": "§7Нажмите на команду, чтобы сделать её предпочтительной",
+            "invalid_team": "§cНеверная команда..."
         }
     },
     "blocksumo": {
@@ -323,6 +375,17 @@
         },
         "scoreboard": {
             "format": "{right}§fi§cAkuna§9MC §8§l» §r§bBlock§fSumo{n}{right}{bar}{n}{right}§8§l» §r§7Карта§8:§b {map}{n}{right}§8§l» §r§7Убийства§8:§b {kills}{n}{right}§8§l» §r§7Жизни§8:§b {lives}{n}{right}{bar}{n}{n}{right}§biakunamc.com 19132"
+        },
+        "teams": {
+            "_prefix": "§bBlock§fSumo §8§l» §r",
+            "vip_only": "§cТолько игроки с VIP §b§l§oAstral§r§c или выше могут выбирать команды! §oКупите на https://loja.iakunamc.com",
+            "moved_by_partner": "§7Вас переместили в команду {team} §r§7партнёр!",
+            "already_in_team": "§cВы уже в команде {team}§r§c!",
+            "team_full": "§cКоманда {team} §r§cполна!",
+            "joined_team": "§7Вы успешно вступили в команду {team}§r§7!",
+            "preference_set": "§7Команда {team} §r§7установлена как предпочтительная",
+            "preference_prompt": "§7Нажмите на команду, чтобы сделать её предпочтительной",
+            "invalid_team": "§cНеверная команда..."
         }
     },
     "plot": {
@@ -436,7 +499,8 @@
             "biome": "§9Участок §8§l» §r§7Биом§8:§9 {biome}",
             "rating": "§9Участок §8§l» §r§7Оценка§8:§9 {score} §8(§9{count} §7оценок§8)",
             "allowed": "§9Участок §8§l» §r§7Разрешены §8(§f{count}§8):§7 {players}",
-            "denied": "§9Участок §8§l» §r§7Заблокированы §8(§f{count}§8):§7 {players}"
+            "denied": "§9Участок §8§l» §r§7Заблокированы §8(§f{count}§8):§7 {players}",
+            "default_name": "§7Без названия, используйте §8/§7p name, чтобы задать его..."
         },
         "generate": {
             "desc": "§7Генерирует новый мир участков",
@@ -537,6 +601,11 @@
             "usage": "§8/§cp setdesc §8<§cописание§8>",
             "empty": "§9Участок §8§l» §r§cИспользуйте §8/§cp setdesc §8<§cописание§8> для установки описания...",
             "success": "§9Участок §8§l» §r§7Описание участка успешно изменено!"
+        },
+        "name": {
+            "desc": "§7Задаёт название вашего участка",
+            "usage": "§8/§cp name §8<§cназвание§8>",
+            "success": "§9Plot §8§l» §r§7Название участка успешно изменено на §9{name}§7!"
         }
     },
     "cosmetic": {
@@ -780,6 +849,17 @@
         },
         "type": {
             "invalid": "§5Cosmetics §8§l» §r§cНеверный тип косметики!"
+        },
+        "effect": {
+            "_prefix": "§5Cosmetics §8§l» §r",
+            "shapes": "§7Доступные формы§8:§5 {shapes}",
+            "invalid_shape": "§cНеверная форма... Доступные формы§8:§c {shapes}",
+            "shape_set": "§7Форма успешно изменена на §5{shape}§7!",
+            "particles": "§7Доступные частицы§8:§5 {particles}",
+            "invalid_particle": "§cНеверная частица... Доступные частицы§8:§c {particles}",
+            "particle_set": "§7Частица успешно изменена на §5{particle}§7!",
+            "list": "§7Доступные формы§8:§5 {shapes}{n}§5Cosmetics §8§l» §r§7Доступные частицы§8:§5 {particles}",
+            "usage": "§cИспользуйте §8/§c{label} §8<§con§8|§coff§8|§cshape§8|§cparticle§8|§clist§8>"
         }
     },
     "cosmeticswindow": {
@@ -1118,7 +1198,25 @@
         "command": {
             "_prefix": "§2Дуэли §8§l» §r",
             "in_duel": "§cВы не можете использовать эту команду во время дуэли!",
-            "player_only": "§cТолько игроки могут использовать эту команду..."
+            "player_only": "§cТолько игроки могут использовать эту команду...",
+            "not_in_game": "§cВы не находитесь в очереди или дуэли...",
+            "no_arenas": "§cСейчас нет доступных арен...",
+            "party_size": "§c§2Duels §cподдерживает только группы ровно из 2 игроков...",
+            "party_size_team": "§cДля дуэлей {format} в вашей группе должно быть до {team_size} игр. для очереди или ровно {private_size} для приватной дуэли...",
+            "usage": "§7Используйте §8/§7duels §8<§7режим§8|§7leave§8>",
+            "help": {
+                "_prefix": "",
+                "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §2Duels §8===-=-=-=-",
+                "entry": "§2Duels §8§l» §r§8/§7{cmd} §8- §7{desc}",
+                "modes": "§2Duels §8§l» §r§7Доступные режимы§8: §2{modes}",
+                "modes_none": "§7нет",
+                "footer": "§8-=-=-=-===============================-=-=-=-",
+                "desc": {
+                    "play": "Встать в очередь",
+                    "bot": "Дуэль против Бота",
+                    "leave": "Покинуть очередь или дуэль"
+                }
+            }
         },
         "status": {
             "_prefix": "§2Дуэли §8§l» §r",
@@ -1136,6 +1234,67 @@
             "joined": "§7Вы успешно встали в очередь для режима §2{mode}§r§7!",
             "left": "§7Вы покинули очередь режима §c{mode}§7!",
             "timeout": "§cВы были автоматически удалены из очереди, так как не удалось найти других доступных игроков..."
+        },
+        "match": {
+            "_prefix": "§2Duels §8§l» §r",
+            "started": "§7Дуэль §2{mode} §7против §2{opponent} §7на арене §2{arena}§7!",
+            "started_team": "§7Дуэль §2{mode} §8(§2{format}§8) §7на арене §2{arena}§7! §a{teammates} §8vs §c{opponents}",
+            "eliminated": "§c{player} §7выбыл(а)! §8(§2{team_alive}§8/§7{team_total}§8 осталось)",
+            "cancelled": "§cДуэль была отменена...",
+            "timeout": "§cЛимит времени матча исчерпан...",
+            "summary": {
+                "_prefix": "",
+                "normal": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §2Duels §8===-=-=-=-{n}§7Победитель§8: §a{winner}{n}§7Проигравший§8: §c{loser}{n}§7Режим§8: §2{mode} §8| §7Длительность§8: §2{duration}{n}§8-=-=-=-===============================-=-=-=-",
+                "forfeit": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §2Duels §8===-=-=-=-{n}§7Результат§8: §eСдача{n}§7Победитель§8: §a{winner}{n}§7Проигравший§8: §c{loser}{n}§7Режим§8: §2{mode} §8| §7Длительность§8: §2{duration}{n}§8-=-=-=-===============================-=-=-=-"
+            },
+            "summary_team": {
+                "_prefix": "",
+                "normal": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §2Duels {format} §8===-=-=-=-{n}§7Победители§8: §a{winners}{n}§7Проигравшие§8: §c{losers}{n}§7Режим§8: §2{mode} §8| §7Длительность§8: §2{duration}{n}§8-=-=-=-===============================-=-=-=-",
+                "forfeit": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §2Duels {format} §8===-=-=-=-{n}§7Результат§8: §eСдача{n}§7Победители§8: §a{winners}{n}§7Проигравшие§8: §c{losers}{n}§7Режим§8: §2{mode} §8| §7Длительность§8: §2{duration}{n}§8-=-=-=-===============================-=-=-=-"
+            },
+            "summary_bot": {
+                "_prefix": "",
+                "win": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §2Duels vs Bot §8===-=-=-=-{n}§7Результат§8: §aПобеда!{n}§7Соперник§8: {bot}{n}§7Режим§8: §2{mode} §8| §7Длительность§8: §2{duration}{n}§7Ваше Здоровье§8: §c{hp} HP §8| §7Удары§8: §a{hits} §8vs §c{bot_hits}{n}§7Награда§8: §c+{akunas} Akunas §8| §9+{xp} XP{n}§8-=-=-=-===============================-=-=-=-",
+                "loss": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §2Duels vs Bot §8===-=-=-=-{n}§7Результат§8: §cПоражение...{n}§7Соперник§8: {bot}{n}§7Режим§8: §2{mode} §8| §7Длительность§8: §2{duration}{n}§7Здоровье Бота§8: §c{bot_hp} HP §8| §7Удары§8: §a{hits} §8vs §c{bot_hits}{n}§8-=-=-=-===============================-=-=-=-",
+                "forfeit": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §2Duels vs Bot §8===-=-=-=-{n}§7Результат§8: §eСдача{n}§7Соперник§8: {bot}{n}§7Режим§8: §2{mode} §8| §7Длительность§8: §2{duration}{n}§8-=-=-=-===============================-=-=-=-"
+            }
+        },
+        "scoreboard": {
+            "_prefix": "",
+            "format": "{right}§fi§cAkuna§9MC §8§l» §r§2Duels{n}{right}{bar}{n}{right}§8§l» §r§7Режим§8:§2 {mode}{n}{right}§8§l» §r§7Время§8:§2 {duration}{n}{right}§8§l» §r§7Соперник§8:§2 {opponent}{n}{right}§8§l» §r§7Пинг§8:§2 {ping}мс §8| §c{opp_ping}мс{n}{right}{bar}{n}{n}{right}§2iakunamc.com 19132",
+            "boxing_format": "{right}§fi§cAkuna§9MC §8§l» §r§2Duels{n}{right}{bar}{n}{right}§8§l» §r§7Режим§8:§2 {mode}{n}{right}§8§l» §r§7Время§8:§2 {duration}{n}{right}§8§l» §r§7Соперник§8:§2 {opponent}{n}{right}§8§l» §r§7Удары§8:§a {hits} §8/ §c{opp_hits} §8(§7{max_hits}§8){n}{right}§8§l» §r§7Пинг§8:§2 {ping}мс §8| §c{opp_ping}мс{n}{right}{bar}{n}{n}{right}§2iakunamc.com 19132",
+            "team_format": "{right}§fi§cAkuna§9MC §8§l» §r§2Duels {format}{n}{right}{bar}{n}{right}§8§l» §r§7Режим§8:§2 {mode}{n}{right}§8§l» §r§7Время§8:§2 {duration}{n}{right}§8§l» §r§7Команда§8:§a {team_alive}/{team_total} §8| §c{opp_alive}/{team_total}{n}{right}§8§l» §r§7Пинг§8:§2 {ping}мс{n}{right}{bar}{n}{n}{right}§2iakunamc.com 19132",
+            "team_boxing_format": "{right}§fi§cAkuna§9MC §8§l» §r§2Duels {format}{n}{right}{bar}{n}{right}§8§l» §r§7Режим§8:§2 {mode}{n}{right}§8§l» §r§7Время§8:§2 {duration}{n}{right}§8§l» §r§7Команда§8:§a {team_alive}/{team_total} §8| §c{opp_alive}/{team_total}{n}{right}§8§l» §r§7Удары§8:§a {hits} §8/ §c{opp_hits} §8(§7{max_hits}§8){n}{right}§8§l» §r§7Пинг§8:§2 {ping}мс{n}{right}{bar}{n}{n}{right}§2iakunamc.com 19132"
+        },
+        "bot": {
+            "_prefix": "§2Duels §8§l» §r",
+            "usage": "§7Используйте §8/§7duels bot §8<§7режим§8> [§aeasy§8|§emedium§8|§chard§8|§5hacker§8]",
+            "invalid_difficulty": "§cНеверная сложность! Используйте §aeasy§c, §emedium§c, §chard §cили §5hacker§c..."
+        },
+        "menu": {
+            "_prefix": "",
+            "back": "§c« Назад",
+            "bot_diff_item": "{label}{n}§7Сразитесь с ботом на этой сложности{n}{n}§eНажмите для выбора кита",
+            "bot_easy": "§aЛёгкий Бот",
+            "bot_hacker": "§5Хакер Бот",
+            "bot_hard": "§cСложный Бот",
+            "bot_item": "§c§2Duels §cvs Bot{n}§7Тренировка против ИИ{n}{n}§eНажмите для выбора сложности",
+            "bot_kit_item": "{label} §8({difficulty}§8){n}{n}§eНажмите для старта",
+            "bot_kit_title": "§2Бот {difficulty} §8§l» §r§7Выбор Кита",
+            "bot_medium": "§eСредний Бот",
+            "bot_title": "§2Duels vs Bot §8§l» §r§7Сложность",
+            "bridge_item": "§cThe§9Bridge{n}§7Играют§8: §f{playing}{n}{n}§eНажмите, чтобы играть",
+            "challenge_hint": "§2Duels §8§l» §r§7Используйте §8/§eduelar §8<§eигрок§8> §7или §8/§edesafiar §8<§eигрок§8> <§eрежим§8> §8[§eраунды§8] [§eставка§8]",
+            "challenge_item": "§eВызвать Игрока{n}§7Создавайте дуэли с раундами и ставками{n}{n}§fИспользуйте §8/§eduelar §8<§eигрок§8>",
+            "format_1v1": "§aDuels 1v1",
+            "format_2v2": "§2Duels 2v2",
+            "format_3v3": "§eDuels 3v3",
+            "format_4v4": "§cDuels 4v4",
+            "format_item": "{label}{n}§7Играют§8: §f{playing}{n}{n}§eНажмите для выбора режима",
+            "format_title": "§2Duels {format} §8§l» §r§7Выбор Режима",
+            "mode_item": "{label} {format}{n}§7Играют§8: §f{playing}{n}{n}§eНажмите, чтобы встать в очередь",
+            "sw1v1_item": "§bSky§fWars 1v1{n}§7Играют§8: §f{playing}{n}{n}§eНажмите, чтобы играть",
+            "title": "§2Duels §8§l» §r§7Выберите Режим"
         }
     },
     "addbalance": {
@@ -1182,7 +1341,18 @@
         },
         "join": {
             "_prefix": "",
-            "msg": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eАутентификация §8§l» §r§7Привет §e{user}§7, добро пожаловать на §fi§cAkuna§9MC§7!"
+            "msg": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eАутентификация §8§l» §r§7Привет §e{user}§7, добро пожаловать на §fi§cAkuna§9MC§7!",
+            "greeting": {
+                "_prefix": "",
+                "dawn": "Доброй ночи",
+                "morning": "Доброе утро",
+                "afternoon": "Добрый день",
+                "night": "Добрый вечер"
+            },
+            "dawn": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7Доброй ночи §e{user}§7, играете всю ночь на §fi§cAkuna§9MC§7? Добро пожаловать!",
+            "morning": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7Доброе утро §e{user}§7, добро пожаловать на §fi§cAkuna§9MC§7! Отличного утра и хороших игр!",
+            "afternoon": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7Добрый день §e{user}§7, добро пожаловать на §fi§cAkuna§9MC§7! Приятной дневной игры!",
+            "night": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7Добрый вечер §e{user}§7, добро пожаловать на §fi§cAkuna§9MC§7! Отличного вечера и ярких матчей!"
         },
         "login": {
             "_prefix": "",
@@ -1226,7 +1396,16 @@
         "nosamepass": "§7Не используйте один пароль на других серверах! Используйте §8/§cpin §7для защиты аккаунта!",
         "rules": "§7Читали ли вы наши §8/§cправила§7? Незнание не освобождает от §cнаказаний§7!",
         "staff": "§7Хотите стать частью нашего Staff? Посетите §chttps://staff.iakunamc.com",
-        "yt": "§7Снимите видео с нашим сервером на YouTube и получите специальные теги! Требования: §8/§cyt"
+        "yt": "§7Снимите видео с нашим сервером на YouTube и получите специальные теги! Требования: §8/§cyt",
+        "assistir": "§7Хотите смотреть матчи вживую? Используйте §8/§cassistir §8<§cигрок§8> §7или настройте, кто может смотреть за вами в §8/§cpref spectate",
+        "clan": "§7Создайте клан или вступите в него, чтобы бороться за топ рейтинга! Используйте §8/§cclan",
+        "desafiar": "§7Хотите вызвать игрока на дуэль из нескольких раундов со ставкой §cAkunas§7? Используйте §8/§cdesafiar §8<§cигрок§8> §8[§cрежим§8] [§cраунды§8] [§cставка§8]",
+        "lang": "§7Предпочитаете играть на другом языке? Смените язык в любое время с помощью §8/§clang",
+        "party": "§7Играете с друзьями? Создайте группу через §8/§cparty §7и заходите в мини-игры и дуэли вместе!",
+        "pref": "§7Настройте игру под себя! Используйте §8/§cpref gui §7для настройки скорборда, CPS, комбо, наблюдателей и многого другого!",
+        "profile": "§7Проверяйте свою статистику, уровень и профили других игроков с помощью §8/§cperfil §8[§cигрок§8]",
+        "ranking": "§7Смотрите лучших игроков сервера через §8/§ctops §7по мини-играм или за период!",
+        "tell": "§7Общайтесь лично с другими игроками через §8/§ctell §8<§cигрок§8> <§cсообщение§8> §7и быстро отвечайте через §8/§cr"
     },
     "backpack": {
         "_prefix": "§cСистема §8§l» §r",
@@ -1374,7 +1553,11 @@
         "nopromote": "§cЗапрещено рекламировать и/или упоминать другие серверы в чате...{n}§cСистема §8§l» §r§cНе забудьте прочитать наши §8/§cправила во избежание наказаний",
         "nospam": "§cПомедленнее! Без спама...",
         "toolong": "§cВаше сообщение слишком длинное... (максимум {max} символов)",
-        "noemoji": "§cИспользование эмодзи не разрешено..."
+        "noemoji": "§cИспользование эмодзи не разрешено...",
+        "_noprefix": [
+            "discord_format"
+        ],
+        "discord_format": "§9Discord §8§l» §r§f{player}§8:§7 {message}"
     },
     "clan": {
         "_prefix": "§eКланы §8§l» §r",
@@ -1384,8 +1567,17 @@
             "success": "§7Вы успешно вступили в §e{clan}"
         },
         "already_in_clan": "§cВы уже состоите в клане...",
+        "changename": {
+            "error": "§cОшибка при изменении названия...",
+            "exists": "§cКлан с таким названием уже существует!",
+            "length": "§cНазвание клана должно содержать от 3 до 24 символов (буквы и цифры)!",
+            "success": "§7Название клана успешно изменено на §e{name}§7!",
+            "usage": "§cИспользуйте §8/§c{label} name §8<§cназвание§8>"
+        },
         "changetag": {
             "error": "§cОшибка при изменении тега...",
+            "exists": "§cКлан с таким тегом уже существует!",
+            "length": "§cТег клана должен содержать от 2 до 4 символов (буквы и цифры)!",
             "success": "§7Тег изменён на §e{tag} §7успешно!",
             "usage": "§cИспользуйте §8/§c{label} tag §8<§cтег§8>"
         },
@@ -1504,6 +1696,7 @@
             "none": "§cНет ожидающих заявок...",
             "usage": "§cИспользуйте §8/§c{label} requests §8<§caccept§8|§cdeny§8> §8<§cигрок§8|§c*§8>"
         },
+        "requests_list": "§7Заявки на вступление §8(§f{count}§8):§7 {requests}",
         "tagcolor": {
             "error": "§cОшибка при изменении цвета тега!",
             "invalid": "§cНеверный цвет...",
@@ -1517,8 +1710,7 @@
             "success": "§7Тип клана успешно изменён на §e{type}",
             "usage": "§cИспользуйте §8/§c{label} type §8<§cтип§8>"
         },
-        "usage": "§cИспользуйте §8/§c{label} §8<§ccreate§8|§cinvite§8|§ckick§8|§cdesc§8|§cleave§8|§cinfo§8|§ctype§8|§crequest§8|§cpromote§8|§cdemote§8|§ctag§8|§crequests§8|§cchat§8|§cdelete§8|§ctagcolor§8>",
-        "requests_list": "§7Заявки на вступление §8(§f{count}§8):§7 {requests}"
+        "usage": "§cИспользуйте §8/§c{label} §8<§ccreate§8|§cinvite§8|§ckick§8|§cdesc§8|§cleave§8|§cinfo§8|§ctype§8|§crequest§8|§cpromote§8|§cdemote§8|§cname§8|§ctag§8|§crequests§8|§cchat§8|§cdelete§8|§ctagcolor§8>{n}§eClans §8§l» §r§7Стоимость создания клана§8: §e{cost} Akunas"
     },
     "clear": {
         "_prefix": "§cСистема §8§l» §r",
@@ -1556,7 +1748,31 @@
             "received": "§5Ежедневная награда §8§l» §r§7Вы получили {rewards}",
             "streak": "§5Ежедневная награда §8§l» §r§7Текущая серия§8: §5{streak} §7дней",
             "xp": "§9{amount} XP",
-            "streak_lost": "§5Ежедневная награда §8§l» §r§cВы потеряли серию {oldStreak} дней..."
+            "streak_lost": "§5Ежедневная награда §8§l» §r§cВы потеряли серию {oldStreak} дней...",
+            "cooldown": "§5Ежедневная награда §8§l» §r§cВы уже забрали награду сегодня! Следующая через §5{time}§c...",
+            "milestone_month": "§5Ежедневная награда §8§l» §r§7Невероятно! Вы достигли серии в §5{days} §7дней и получили особый бонус!",
+            "bonus_applied": "§5Daily §8§l» §r§7Применён бонус§8: {bonuses}",
+            "bonus_galaxy": "§7§l§oGalaxy§r§a+ §e(+{percent}%)",
+            "bonus_booster": "§dBooster §e(+{percent}%)"
+        },
+        "menu": {
+            "title": "§5Ежедневная награда §8§l» §r§7Серия",
+            "status_available": "§aДоступно сейчас!{n}§eНажмите, чтобы забрать",
+            "status_cooldown": "§7Следующая через§8: §e{time}",
+            "bonus_active": "{n}§7Активный бонус§8: §a+{percent}%",
+            "summary": "§5§lЕжедневная серия{n}§7Текущая серия§8: §d{streak} дн.{n}§7Лучшая серия§8: §6{best} дн.{n}§7Всего получено§8: §b{total}{bonus}{n}{n}{status}",
+            "day_claimed": "§aДень {day} §8(§aПолучено§8){n}§7Множитель§8: §e+{percent}%",
+            "day_available": "§bДень {day} §8(§aДоступно§8){n}§7Множитель§8: §e+{percent}%{weekly}{n}{n}§eНажмите, чтобы забрать!",
+            "day_next": "§eДень {day} §8(§7Следующий§8){n}§7Откроется через§8: §e{time}{n}§7Множитель§8: §e+{percent}%",
+            "day_locked": "§7День {day} §8(§cЗакрыто§8){n}§7Множитель§8: §e+{percent}%{weekly}",
+            "weekly_available": "{n}§6+Недельный бонус!",
+            "weekly_locked": "{n}§6Включает недельный бонус!",
+            "milestone_title": "{color}Рубеж {days} дн.{n}§7Бонус§8: §d{bonus}{n}§7Статус§8: {status}",
+            "milestone_unlocked": "§aДостигнуто!",
+            "milestone_remaining": "§7Осталось §e{days} дн.",
+            "milestone_7": "+500 Akunas и +50 XP в неделю",
+            "milestone_14": "+1.000 Akunas и +100 XP на 14-й день",
+            "milestone_30": "+2.500 Akunas и +250 XP на 30-й день"
         }
     },
     "delhome": {
@@ -1609,14 +1825,7 @@
             "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §bПриветственные сообщения §8(§f{page}§8/§f{total}§8) ===-=-=-=-"
         },
         "messages": {
-            "_prefix": "§bВход §8§l» §r",
             "1": "§7Оп! §b{player} §7приземлился на сервер!",
-            "10": "§7Драматическая пауза... §b{player} §7вошёл на сервер!",
-            "11": "§b{player} §7вошёл!",
-            "12": "§7Держитесь! §b{player} §7только что появился!",
-            "13": "§7Вселенная улыбнулась... §b{player} §7вошёл!",
-            "14": "§7Новые приключения начинаются с §b{player}§7 онлайн!",
-            "15": "§7Готовы? §b{player} §7пришёл доминировать!",
             "2": "§7Кто-то вызвал подкрепление? §b{player} §7прибыл!",
             "3": "§7§b{player} §7вошёл уверенно! Добро пожаловать!",
             "4": "§7Как насчёт пиццы, §b{player}§7? Добро пожаловать!",
@@ -1624,7 +1833,14 @@
             "6": "§7Радар обнаружил активность... §b{player} §7вошёл!",
             "7": "§7Телепортация завершена! §b{player} §7появился здесь!",
             "8": "§7Отличная погода для игры... тем более с §b{player} §7онлайн!",
-            "9": "§7Легенда появилась§8:§7 §b{player}§7 среди нас!"
+            "9": "§7Легенда появилась§8:§7 §b{player}§7 среди нас!",
+            "10": "§7Драматическая пауза... §b{player} §7вошёл на сервер!",
+            "11": "§b{player} §7вошёл!",
+            "12": "§7Держитесь! §b{player} §7только что появился!",
+            "13": "§7Вселенная улыбнулась... §b{player} §7вошёл!",
+            "14": "§7Новые приключения начинаются с §b{player}§7 онлайн!",
+            "15": "§7Готовы? §b{player} §7пришёл доминировать!",
+            "_prefix": "§bВход §8§l» §r"
         },
         "off": {
             "success": "§bВход §8§l» §r§7Приветственное сообщение успешно отключено!"
@@ -1986,7 +2202,77 @@
         "enable": "§7Предпочтение успешно включено!",
         "onlyvip": "§cТолько игроки с VIP §b§l§oAstral §r§cили выше могут изменить это предпочтение... §oКупите на https://loja.iakunamc.com",
         "reset": "§7Все предпочтения сброшены до стандартных!",
-        "usage": "§cИспользуйте §8/§c{label} §8<§cпредпочтение§8|§creset§8>{n}§cСистема §8§l» §r§cДоступные предпочтения§8:§7 {prefs}"
+        "usage": "§cИспользуйте §8/§c{label} §8<§cпредпочтение§8|§creset§8>{n}§cСистема §8§l» §r§cДоступные предпочтения§8:§7 {prefs}",
+        "global_only": "§cНастройка §e{pref} §cявляется только глобальной и не может быть изменена для отдельной мини-игры!",
+        "invalid_bool": "§cНеверное значение для §e{pref}§c! Используйте §aon §cили §coff",
+        "invalid_minigame": "§cНеверная мини-игра! Мини-игры§8:§7 {minigames}",
+        "invalid_mode": "§cНеверный режим для §e{pref}§c! Режимы§8: §aall§8, §bfriends§8, §dpartner§8, §eparty§8, §6clan§8, §coff",
+        "invalid_scoreboard_side": "§cНеверная позиция для §e{pref}§c! Используйте §aright§c, §bleft §cили §einline",
+        "minigame_unset": "§7Настройка §e{pref} §7в §b{minigame} §7теперь следует Глобальному значению!",
+        "minigame_usage": "§cИспользуйте §8/§c{label} mg §8<§cminigame§8> <§cpref§8> [§cрежим§8|§creset§8]{n}§cSystem §8§l» §r§cМини-игры§8:§7 {minigames}{n}§cSystem §8§l» §r§cНастройки§8:§7 {prefs}",
+        "not_allowed_minigame": "§cНастройка §e{pref} §cнедоступна в §b{minigame}§c! Доступные мини-игры§8:§7 {minigames}",
+        "reset_minigame": "§7Все пользовательские настройки для §b{minigame} §7были сброшены до Глобальных!",
+        "state": {
+            "_prefix": "",
+            "all": "§aВсе",
+            "clan": "§6Клан",
+            "friends": "§bДрузья",
+            "hide_all": "§cСкрывать всех",
+            "hide_off": "§aПоказывать всех",
+            "off": "§cОтключено",
+            "on": "§aВключено",
+            "partner": "§dПартнёр",
+            "party": "§eГруппа",
+            "sb_inline": "§eВ строку",
+            "sb_left": "§bСлева",
+            "sb_right": "§aСправа"
+        },
+        "updated": "§7Настройка §e{pref} §8(§b{scope}§8) §7изменена на {status}§7!",
+        "menu": {
+            "_prefix": "",
+            "back": "§c« Назад к Мини-играм",
+            "click_mode_toggle": "§eРежим Клика§8: §aПереключить Значение",
+            "click_mode_unset": "§eРежим Клика§8: §cСбросить к Глобальному",
+            "hint_toggle": "§eНажмите для переключения",
+            "hint_unset": "§cНажмите для возврата к Глобальному",
+            "minigame_item": "{minigame}{n}§7Настроек§8: §e{total}{n}§7Изменено§8: §b{custom}{n}{n}§eНажмите для настройки",
+            "origin_custom": "§bНастроено здесь",
+            "origin_global": "§8Унаследовано от Глобального",
+            "reset_minigame": "§cСбросить эту мини-игру",
+            "scope_header": "§7Мини-игра§8: {minigame}",
+            "setting_item": "§f{label}{n}§7Статус§8: {status}{n}{origin}{n}{n}{hint}",
+            "title": "§3Настройки §8§l» §r§7Конфигурация"
+        },
+        "label": {
+            "_prefix": "",
+            "autologin": "Автовход",
+            "automsg": "Автосообщения",
+            "autosprint": "Авто-спринт",
+            "chat": "Чат",
+            "chatfilter": "Фильтр чата",
+            "combo": "Показывать Комбо",
+            "cps": "Показывать CPS",
+            "day": "Цикл День/Ночь",
+            "floatchat": "Плавающий чат",
+            "friendnotify": "Уведомления о друзьях",
+            "hideplayers": "Скрывать игроков",
+            "highlights": "Упоминания в чате",
+            "nakb": "NA Ping / Knockback (PvP)",
+            "openchest": "Открывать сундук инструментом",
+            "partnernotify": "Уведомления о партнёре",
+            "quickbuy": "Быстрая покупка (BedWars)",
+            "quickchest": "Быстрый сундук (BedWars)",
+            "reach": "Показывать Дистанцию Удара",
+            "receiverequests": "Принимать запросы",
+            "scoreboard": "Скорборд",
+            "scoreboard_side": "Позиция Скорборда",
+            "showlevel": "Показывать уровень в чате",
+            "spectate": "Разрешить наблюдателей",
+            "tell": "Личные сообщения",
+            "treecapitator": "Tree Capitator (Survival)",
+            "veinminer": "Vein Miner (Survival)",
+            "viewprofile": "Видимость профиля"
+        }
     },
     "profanity": {
         "_prefix": "§cСистема §8§l» §r",
@@ -2043,7 +2329,9 @@
         "lobby_bw": "{right}  §fi§cAkuna§9MC §8§l» §r§cBed§fWars{n}{right}{bar}{n}{right}§8§l» §r§7Победы§8:§c {wins}{n}{right}§8§l» §r§7Убийства§8:§c {kills}{n}{right}§8§l» §r§7Финальные убийства§8:§c {final_kills}{n}{right}§8§l» §r§7Сломано кроватей§8:§c {beds}{n}{right}{bar}{n}{n}{right}§c{address}",
         "lobby_sw": "{right}  §fi§cAkuna§9MC §8§l» §r§bSky§fWars{n}{right}{bar}{n}{right}§8§l» §r§7Победы§8:§b {wins}{n}{right}§8§l» §r§7Убийства§8:§b {kills}{n}{right}§8§l» §r§7Матчи§8:§b {plays}{n}{right}{bar}{n}{n}{right}§b{address}",
         "lobby_tntrun": "{right}  §fi§cAkuna§9MC §8§l» §r§cTNT§fRun{n}{right}{bar}{n}{right}§8§l» §r§7Победы§8:§c {wins}{n}{right}§8§l» §r§7Игры§8:§c {plays}{n}{right}{bar}{n}{n}{right}§c{address}",
-        "lobby_blockparty": "{right} §fi§cAkuna§9MC §8§l» §r§dBlock§fParty{n}{right}{bar}{n}{right}§8§l» §r§7Победы§8:§d {wins}{n}{right}§8§l» §r§7Матчи§8:§d {plays}{n}{right}{bar}{n}{n}{right}§d{address}"
+        "lobby_blockparty": "{right} §fi§cAkuna§9MC §8§l» §r§dBlock§fParty{n}{right}{bar}{n}{right}§8§l» §r§7Победы§8:§d {wins}{n}{right}§8§l» §r§7Матчи§8:§d {plays}{n}{right}{bar}{n}{n}{right}§d{address}",
+        "lobby_duels": "{right}  §fi§cAkuna§9MC §8§l» §r§2Duels{n}{right}{bar}{n}{right}§8§l» §r§7Победы§8:§2 {wins}{n}{right}§8§l» §r§7Поражения§8:§2 {defeats}{n}{right}§8§l» §r§7Матчи§8:§2 {plays}{n}{right}§8§l» §r§7Серия§8:§2 {streak}{n}{right}{bar}{n}{n}{right}§2{address}",
+        "lobby_pvpmodes": "{right} §fi§cAkuna§9MC §8§l» §r§bPvP Modes{n}{right}{bar}{n}{right}§8§l» §r§7Убийства§8:§b {kills}{n}{right}§8§l» §r§7Смерти§8:§b {deaths}{n}{right}§8§l» §r§7Серия§8:§b {streak}{n}{right}{bar}{n}{n}{right}§b{address}"
     },
     "server": {
         "info": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §fИнформация §8===-=-=-=-{n}§cСистема §8» §r§7IP§8:§c iakunamc.com{n}§cСистема §8» §r§7Порт§8:§c 19132{n}{n}§cСистема §8» §r§7Заявка в Staff§8:§c https://staff.iakunamc.com{n}§cСистема §8» §r§7Магазин§8:§c https://loja.iakunamc.com{n}§cСистема §8» §r§7Discord§8:§c https://discord.iakunamc.com{n}{n}§fY§cT §8» §r§7300 подписчиков §a+ §7Рекламное видео{n}§fMini§cYT §8» §r§750 подписчиков §a+ §7Рекламное видео{n}§cYT§fmirin §8» §r§70 подписчиков §a+ §7Рекламное видео{n}§cПримечания §8» §r§7Укажите IP в названии/описании и продвигайте сервер раз в месяц, чтобы сохранить свой ранг",
@@ -2330,7 +2618,8 @@
                 "_prefix": "",
                 "bedwars": "§7Купите {target} улучшений в §cBed§fWars"
             }
-        }
+        },
+        "reset_midnight": "§7Ежедневные миссии обновлены! Используйте §8/§6missoes §7для просмотра!"
     },
     "missions": {
         "_prefix": "§6Миссии §8§l» §r",
@@ -2701,7 +2990,9 @@
         "buy": {
             "_prefix": "",
             "title": "§7Купить клетку §c{cage} §7за §c{cost} Акун§8?",
-            "success": "§cКлетки §8§l» §r§7Клетка §c{cage} §7успешно куплена!"
+            "success": "§cКлетки §8§l» §r§7Клетка §c{cage} §7успешно куплена!",
+            "confirm": "§aПодтвердить",
+            "cancel": "§cОтмена"
         }
     },
     "cage": {
@@ -2955,5 +3246,634 @@
             "success": "§7Титул §6{titulo} §7успешно куплен!"
         },
         "expired": "§6Титулы §8§l» §r§7Ваш титул §6{titulo} §7истёк..."
+    },
+    "pearl": {
+        "_prefix": "",
+        "blocked": "§cТам нет безопасного места для телепортации!"
+    },
+    "pvpmodes": {
+        "_prefix": "§bPvP §8§l» §r",
+        "usage": "§7Для входа используйте §8/§7{label} join §8<§7режим§8>{n}§bPvP §8§l» §r§7Для выхода используйте §8/§7{label} leave",
+        "join": {
+            "usage": "§cИспользуйте §8/§c{label} join §8<§cрежим§8>"
+        },
+        "modes_list": "§7Доступные режимы§8: §f{modes}",
+        "invalid_mode": "§cРежим §f{mode} §cне существует!",
+        "world_unavailable": "§cКарта режима {mode} §cсейчас недоступна...",
+        "joined": "§7Вы вошли в режим {mode}§7!",
+        "joined_team": "§7Вы вошли в режим {mode} §7за команду {team}§7!",
+        "not_playing": "§cВы не находитесь ни в одном PvP-режиме...",
+        "left": "§7Вы вышли из PvP-режима!",
+        "menu": {
+            "_prefix": "",
+            "back": "§c« Назад",
+            "mode_item": "{label}{n}§7Играют§8: §f{playing}{n}{n}§eНажмите для входа",
+            "prefs_item": "§3Настройки PvPModes{n}§7Настройте свои параметры{n}{n}§eНажмите, чтобы открыть",
+            "team_amarelo": "§eЖёлтая Команда",
+            "team_azul": "§9Синяя Команда",
+            "team_title": "§6TeamPvP §8§l» §r§7Выбор Команды",
+            "team_verde": "§aЗелёная Команда",
+            "team_vermelho": "§cКрасная Команда",
+            "teampvp_item": "§6TeamPvP{n}§7Играют§8: §f{playing}{n}{n}§eНажмите для выбора команды",
+            "title": "§bPvPModes §8§l» §r§7Выберите Режим",
+            "uhc_item": "§bUHC{n}§7Играют§8: §f{playing}{n}{n}§eНажмите для выбора варианта",
+            "uhc_title": "§bPvPModes UHC §8§l» §r§7Варианты",
+            "uhc_uhc": "§bОбычный Uhc",
+            "uhc_uhcfly": "§bFly Uhc",
+            "uhc_uhcheavy": "§bUhc §8(§cТяжёлый KB§8)",
+            "uhc_uhclight": "§bUhc §8(§3Лёгкий KB§8)"
+        }
+    },
+    "challenge": {
+        "_prefix": "§cDuel §8§l» §r",
+        "_noprefix": [
+            "menu",
+            "received"
+        ],
+        "cancelled_other": "§7Игрок §c{player} §7отменил вызов...",
+        "cancelled_self": "§7Вы отменили вызов, отправленный игроку §c{player}§7...",
+        "denied_other": "§7Игрок §c{player} §7отклонил ваш вызов...",
+        "denied_self": "§7Вы отклонили вызов от §c{player}§7...",
+        "error": {
+            "already_sent": "§cУ вас уже есть ожидающий отправленный вызов...",
+            "challenger_busy": "§cВы уже находитесь в матче или активном вызове...",
+            "challenger_offline": "§cВызывающий игрок §7{player} §cвышел из сети...",
+            "invalid_bet": "§cНеверная сумма ставки...",
+            "invalid_mode": "§cНеверный режим §7{mode}§c! Режимы§8: §7duels§8, §7thebridge§8, §7bedwars§8, §7skywars...",
+            "invalid_rounds": "§cКоличество раундов должно быть от §7{min} §cдо §7{max}§c...",
+            "invalid_submode": "§cНеверный или несовместимый подрежим §7{submode} §cдля {mode}...",
+            "max_team_size": "§cМаксимально допустимый размер команды§8: §7{max}v{max}§c...",
+            "member_busy": "§cИгрок §7{player} §cуже находится в матче или вызове...",
+            "member_offline": "§cУчастник группы вышел из сети до начала вызова...",
+            "no_arena_available": "§cСейчас нет свободной арены для запуска этого режима...",
+            "no_pending": "§cУ вас нет ожидающих вызовов...",
+            "no_pending_from": "§cУ вас нет ожидающего вызова от §7{player}§c...",
+            "no_sent_invite": "§cУ вас нет отправленных ожидающих вызовов...",
+            "not_enough_akunas": "§cВам нужно §7{bet} Akunas §cдля этой ставки...",
+            "not_in_challenge": "§cВы не участвуете в активном вызове...",
+            "player_offline": "§cИгрок §7{player} §cне в сети...",
+            "same_party": "§cНельзя вызвать игрока из своей же группы...",
+            "self": "§cВы не можете вызвать самого себя...",
+            "target_busy": "§cИгрок §7{player} §cуже находится в матче или вызове...",
+            "target_has_pending": "§cУ игрока §7{player} §cуже есть ожидающий вызов...",
+            "target_not_enough_akunas": "§cУ игрока §7{player} §cнет §7{bet} Akunas §cдля ставки...",
+            "target_not_party_leader": "§cТолько лидер группы игрока §7{player} §cможет принимать вызовы...",
+            "team_size_mismatch": "§cВ группах должно быть одинаковое количество игроков §8(§7{yours} vs {theirs}§8)§c..."
+        },
+        "expired": "§7Время вызова с §c{player} §7истекло...",
+        "finished_tie": "§7Ничья в вызове! Итоговый счёт §8(§f{leader_a} §c{score_a} §7x §9{score_b} §f{leader_b}§8)§7... Поставленные §cAkunas §7возвращены!",
+        "finished_win": "§aПобеда §f{winner}§a! Итоговый счёт§8: §f{leader_a} §c{score_a} §7x §9{score_b} §f{leader_b} §8- §7Приз§8: §e{pot} Akunas§7!",
+        "menu": {
+            "_prefix": "",
+            "back": "§c« Назад",
+            "bet_amount": "{amount} Akunas",
+            "bet_item": "{bet}{n}§7Раунды§8: §f{rounds}{n}{n}§aНажмите, чтобы отправить вызов",
+            "bet_none": "§fБез ставки",
+            "bet_title": "§cВызов §8§l» §r§7Ставка §8(§7Akunas§8)",
+            "mode_item": "{label}{n}§7Вызвать §f{player}{n}{n}§eНажмите для выбора раундов",
+            "mode_title": "§cВызов §8§l» §r§7Режим",
+            "round_plural": "§e{rounds} Раундов{n}{n}§eНажмите для выбора ставки",
+            "round_single": "§e{rounds} Раунд{n}{n}§eНажмите для выбора ставки",
+            "rounds_title": "§cВызов §8§l» §r§7Раунды"
+        },
+        "received": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §cДуэль §8===-=-=-{n}§cДуэль §8§l» §r§c{player} §7вызвал вас в {mode} §8(§f{format}§8) §7на §e{rounds} раунд(ов) §8(§6{bet}§8)...{n}§cДуэль §8§l» §r§7Используйте §a/desafiar accept {challenger} для принятия §7или §c/desafiar deny {challenger} для отказа §8(§7{timeout}s§8)",
+        "round_finished": "§7Раунд §e{round}§8/§e{total} §7завершён! Счёт§8: §f{leader_a} §c{score_a} §7x §9{score_b} §f{leader_b} §8- §7Следующий раунд §8(§e{next}§8/§e{total}§8) §7через §e{delay}с§7!",
+        "round_starting": "§7Начинается раунд §e{round}§8/§e{total} §7в {mode} §8(§f{leader_a} §c{score_a} §7x §9{score_b} §f{leader_b}§8)!",
+        "sent": "§7Вызов отправлен игроку §c{player} §7в {mode} §8(§f{format}§8) §7на §e{rounds} раунд(ов) §8(§6{bet}§8)!",
+        "status": "§7Текущий раунд§8: §e{round}§8/§e{total} §8| §f{leader_a} §c{score_a} §7x §9{score_b} §f{leader_b} §8| §7Ставка§8: §6{bet} Akunas",
+        "usage": "§cИспользуйте §8/§c{label} §8<§cигрок§8> [§cduels§8|§cthebridge§8|§cbedwars§8|§cskywars§8] [§cподрежим§8] [§cраунды 1-10§8] [§cставка§8] §7или §8/§c{label} §8<§caccept§8|§cdeny§8|§ccancel§8|§cstatus§8>",
+        "won_wo": "§cТех. победа §8(§cW.O.§8)§c! §7Игрок §c{quitter} §7покинул матч... §a{winner} §7победил и получил §e{pot} Akunas§7!",
+        "loading_arena": "§7Загрузка арены, подождите немного..."
+    },
+    "friends": {
+        "accept": {
+            "_prefix": "§cSystem §8§l» §r",
+            "none": "§cУ вас нет ожидающих запросов в друзья...",
+            "notify": "§b{friend} §7принял(а) ваш запрос в друзья!",
+            "success": "§7Вы и §b{friend} §7теперь друзья!"
+        },
+        "add": {
+            "_prefix": "§cSystem §8§l» §r",
+            "already": "§cВы уже дружите с §b{target}§c...",
+            "expired": "§cСрок запроса в друзья от §b{sender} §cистёк...",
+            "limit": "§cВы достигли лимита друзей ({max})!",
+            "pending": "§cУ этого игрока уже есть ожидающий запрос в друзья...",
+            "request": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §bЗапрос в Друзья §8===-=-=-{n}§cSystem §8§l» §r§b{sender} §7отправил(а) вам запрос в друзья...{n}§cSystem §8§l» §r§7Используйте §a/friend aceitar §7для принятия или §c/friend recusar §7для отклонения",
+            "self": "§cВы не можете добавить самого себя в друзья...",
+            "sent": "§7Запрос в друзья отправлен игроку §b{target}§7!",
+            "target_limit": "§cЭтот игрок уже достиг лимита друзей!",
+            "usage": "§cИспользуйте §8/§c{label} add §8<§cигрок§8>"
+        },
+        "deny": {
+            "_prefix": "§cSystem §8§l» §r",
+            "none": "§cУ вас нет ожидающих запросов в друзья...",
+            "notify": "§b{target} §7отклонил(а) ваш запрос в друзья...",
+            "success": "§7Запрос в друзья успешно отклонён!"
+        },
+        "friend": {
+            "_prefix": "§cSystem §8§l» §r",
+            "joined": "§7Ваш друг §b{friend} §7зашёл на сервер!",
+            "left": "§7Ваш друг §b{friend} §cвышел §7с сервера..."
+        },
+        "list": {
+            "_prefix": "",
+            "entry": "§cSystem §8§l» §r{status} §b{friend} §8| §7С§8:§b {date} §8(§7{dateSince} назад§8){n}§cSystem §8§l» §r§7Вы зовёте§8:§b {nicknameGiven} §8| §7Зовёт вас§8:§b {nicknameReceived}",
+            "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §bДрузья §8(§7{count}§8/§7{max}§8) §8[§7Стр. {page}/{maxPages}§8] ===-=-=-=-",
+            "no_nickname": "§7Нет прозвища...§r",
+            "none": "§cSystem §8§l» §r§cУ вас пока нет друзей...",
+            "offline": "§c●",
+            "online": "§a●"
+        },
+        "nick": {
+            "_prefix": "§cSystem §8§l» §r",
+            "success": "§7Прозвище для §b{friend} §7успешно изменено на '§b{nickname}§7'!",
+            "usage": "§cИспользуйте §8/§c{label} nick §8<§cдруг§8> <§cпрозвище§8>"
+        },
+        "remove": {
+            "_prefix": "§cSystem §8§l» §r",
+            "all_success": "§7Все ваши друзья были удалены!",
+            "invalid": "§cНеверный игрок или его нет в вашем списке друзей...",
+            "none": "§cУ вас нет друзей...",
+            "notify": "§b{friend} §7удалил(а) вас из списка друзей...",
+            "success": "§7Вы удалили §b{friend} §7из своего списка друзей...",
+            "usage": "§cИспользуйте §8/§c{label} remover §8<§cигрок§8|§c*§8>"
+        },
+        "usage": "§cSystem §8§l» §r§cИспользуйте §8/§c{label} §8<§cadd§8|§caceitar§8|§crecusar§8|§cremover§8|§clistar§8|§cnick§8>"
+    },
+    "online_reward": {
+        "_prefix": "§bActivity §8§l» §r",
+        "both": "§7За игру в течение §b{minutes}м§7 вы получили §a+{akunas} Akunas §7и §9+{xp} XP§7!",
+        "akunas_only": "§7За игру в течение §b{minutes}м§7 вы получили §a+{akunas} Akunas§7!",
+        "xp_only": "§7За игру в течение §b{minutes}м§7 вы получили §9+{xp} XP§7!"
+    },
+    "angel": {
+        "_prefix": "§6A§en§6g§ee§6l §8§l» §r",
+        "invalid_world": "§cВ этом мире нельзя активировать крылья..."
+    },
+    "hitparticles": {
+        "_prefix": "§6Hit§fParticles §8§l» §r",
+        "usage": "§cИспользуйте §8/§c{label} §8<§con§8|§coff§8|§cshape§8|§clist§8>",
+        "on_usage": "§cИспользуйте §8/§c{label} on §8<§cчастица§8> §8[§cформа§8]",
+        "invalid_shape": "§cНеверная форма... Доступные формы§8:§c {shapes}",
+        "shapes": "§7Доступные формы§8:§6 {shapes}",
+        "shape_set": "§7Форма успешно изменена на §6{shape} §8(§5{type}§8)§7!",
+        "activated": "§7Частица удара §5{type} §8(§6{shape}§8) §7успешно активирована!",
+        "deactivated": "§7Частицы удара успешно отключены!",
+        "list": "§7Список доступных частиц §8(§f{count}§8):§7 {particles}{n}§6Hit§fParticles §8§l» §r§7Формы удара§8:§6 {shapes}"
+    },
+    "bridgepractice": {
+        "_prefix": "§eBridge Practice §8§l» §r",
+        "_noprefix": [
+            "fell",
+            "finish_tip",
+            "record_title",
+            "record_subtitle",
+            "hud_popup",
+            "clutch_kb"
+        ],
+        "joined": "§7Вы вошли в §eBridge Practice§7! Используйте часы в хотбаре для настройки моста, дистанции или клатча...",
+        "left": "§7Вы вышли из §eBridge Practice§7!",
+        "reset": "§7Остров успешно сброшен!",
+        "not_in_game": "§cВы не находитесь на тренировке моста...",
+        "world_error": "§cНе удалось создать мир для тренировки моста...",
+        "fell": "§cВы упали! Сброс...",
+        "finish": "§7Мост пройден за §e{time} §8(§e{best} §8| §f{blocks} блоков§8)",
+        "finish_record": "§e§lНОВЫЙ РЕКОРД! §r§7Пройдено за §e{time} §8(§f{blocks} блоков§8)",
+        "finish_infinite_record": "§e§lНОВЫЙ БЕСКОНЕЧНЫЙ РЕКОРД! §r§e{blocks} блоков§7!",
+        "finish_tip": "§aЗавершено за §e{time}!",
+        "record_title": "§6§lНОВЫЙ РЕКОРД!§r",
+        "record_subtitle": "§eВремя§8: §f{time}",
+        "hud_popup": "§eВремя§8: §f{time} §8| §7Блоки§8: §e{blocks}",
+        "clutch_kb": "§cKnockback §8(§f{intensity}§8)",
+        "notify": {
+            "mode_set": "§7Режим успешно изменён на §e{mode}§7!",
+            "distance_set": "§7Дистанция установлена на §e{distance} блоков§7!",
+            "distance_infinite_set": "§7Дистанция установлена на §dБесконечный Мост§7!",
+            "block_set": "§7Выбранный блок§8:§e {block}",
+            "kb_intensity_set": "§7Сила откидывания установлена на §c{intensity}§7!",
+            "kb_interval_set": "§7Интервал откидывания установлен на §6{interval}§7!"
+        },
+        "item": {
+            "_prefix": "",
+            "reset": "§8-> §eСбросить Остров",
+            "menu": "§8-> §bНастроить Мост и Клатч",
+            "leave": "§8-> §cВыйти из Тренировки"
+        },
+        "block": {
+            "_prefix": "",
+            "wool_white": "Белая Шерсть",
+            "wool_red": "Красная Шерсть",
+            "wool_blue": "Синяя Шерсть",
+            "clay_yellow": "Жёлтая Глина",
+            "sandstone": "Песчаник",
+            "obsidian": "Обсидиан"
+        },
+        "scoreboard": {
+            "_prefix": "",
+            "header": "§eBridge Practice",
+            "mode": "Режим",
+            "distance": "Дистанция",
+            "time": "Время",
+            "record": "Рекорд",
+            "blocks": "Блоки",
+            "kb": "KB",
+            "attempts": "Попытки",
+            "infinite": "Бесконечный",
+            "best_blocks": "{blocks} бл"
+        },
+        "mode": {
+            "_prefix": "",
+            "straight": "Прямой",
+            "diagonal": "Диагональный",
+            "stair_up": "Прямой Подъём",
+            "diagonal_up": "Диагональный Подъём",
+            "clutch": "Прямой Клатч",
+            "clutch_diagonal": "Диагональный Клатч"
+        },
+        "mode_desc": {
+            "_prefix": "",
+            "straight": "Традиционный плоский прямой мост",
+            "diagonal": "Мост по диагонали",
+            "stair_up": "Прямой мост с подъёмом лесенкой",
+            "diagonal_up": "Диагональный мост с подъёмом лесенкой",
+            "clutch": "Готовый прямой мост с боковым откидыванием",
+            "clutch_diagonal": "Готовый диагональный мост с боковым откидыванием"
+        },
+        "menu": {
+            "_prefix": "",
+            "title": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §eBridge Practice §8===-=-=-=-",
+            "status_selected": "§a§lВЫБРАНО§r",
+            "status_active": "§a§l[АКТИВНО]§r",
+            "click_select": "§eНажмите, чтобы выбрать",
+            "click_set": "§7Нажмите, чтобы задать",
+            "click_choose": "§7Нажмите, чтобы выбрать",
+            "distance_blocks": "{distance} блоков",
+            "distance_infinite": "Бесконечный Мост",
+            "kb_intensity_item": "{color}Откидывание: {intensity}\n§7Режим Клатча\n{status}",
+            "kb_interval_item": "{color}Интервал KB: {interval}\n§7Время между ударами\n{status}",
+            "back": "§e§l« Назад§r\n§7Главное меню",
+            "reset_item": "§eСбросить Остров\n§7Очищает поставленные блоки",
+            "leave_item": "§cВыйти из Тренировки\n§7Вернуться в лобби",
+            "stats_item": "§aВаша Статистика\n\n§7Текущий рекорд§8: §e{best}\n§7Всего пройдено§8: §b{total}",
+            "shortcut_clutch": "§c§lПерейти к Клатчу§r\n§7Переключить и открыть настройки Клатча",
+            "shortcut_bridge": "§b§lПерейти к Мосту§r\n§7Переключить и открыть настройки Моста",
+            "hub": {
+                "bridge_title": "§e§lНастройки Моста§r",
+                "bridge_desc": "§7Прямой, диагональ, подъём,\n§7дистанция (или бесконечный) и блоки\n\n{status}",
+                "clutch_title": "§c§lНастройки Клатча§r",
+                "clutch_desc": "§7Готовый мост, сила KB,\n§7интервал и направление\n\n{status}",
+                "current_status": "§a§lАКТИВНО§r §8(§f{mode} §8| §e{distance}§8)\n§eНажмите для настройки",
+                "current_clutch_status": "§a§lАКТИВНО§r §8(§f{mode} §8| §c{intensity} §f/ §6{interval}§8)\n§eНажмите для настройки",
+                "switch_to_bridge": "§eНажмите для перехода к Мосту\n§7и открытия настроек",
+                "switch_to_clutch": "§eНажмите для перехода к Клатчу\n§7и открытия настроек"
+            }
+        }
+    },
+    "captcha": {
+        "_prefix": "§9Captcha §8§l» §r",
+        "_noprefix": [
+            "kick",
+            "tip",
+            "map",
+            "menu",
+            "item"
+        ],
+        "kick": {
+            "full": "§cАнти-бот проверка сейчас переполнена... Попробуйте снова через несколько секунд!",
+            "timeout": "§cВремя §8(§c30с§8)§c на прохождение капчи истекло...",
+            "failed": "§cВы слишком много раз ошиблись при вводе капчи..."
+        },
+        "tip": {
+            "timer": "§9Captcha §8§l» §r§7Осталось времени§8:§c {seconds}с"
+        },
+        "map": {
+            "item_name": "§eКарта Капчи"
+        },
+        "menu": {
+            "title": "§8Выберите§8: {item}",
+            "reopen_item": "§bОткрыть меню Капчи"
+        },
+        "prompt": {
+            "map": "§7Посмотрите на карту в руке и введите код в чат за §c{seconds}с",
+            "menu": "§7Нажмите на предмет {item} §r§7в меню за §c{seconds}с §8(§7используйте §8/§7captcha, чтобы открыть снова§8)",
+            "hotbar": "§7Выберите предмет {item} §r§7в хотбаре за §c{seconds}с",
+            "phrase": "§7Введите эту точную фразу в чат§8: §9{phrase} §8(§c{seconds}с§8)",
+            "math": "§7Решите в чате§8: §9{expression} §8(§c{seconds}с§8)"
+        },
+        "error": {
+            "retry": "§cНеверный ответ... Осталось попыток§8: §c{attempts}",
+            "command": "§cПройдите капчу перед использованием команд..."
+        },
+        "success": "§7Капча успешно пройдена!",
+        "item": {
+            "diamond": "§bАлмаз",
+            "emerald": "§aИзумруд",
+            "golden_apple": "§6Золотое Яблоко",
+            "nether_star": "§eЗвезда Незера",
+            "ender_eye": "§dОко Эндера",
+            "gold_ingot": "§eЗолотой Слиток",
+            "ender_pearl": "§3Жемчуг Эндера",
+            "blaze_powder": "§cОгненный Порошок",
+            "compass": "§7Компас",
+            "diamond_sword": "§bАлмазный Меч",
+            "apple": "§cЯблоко",
+            "feather": "§fПеро",
+            "clock": "§eЧасы",
+            "slimeball": "§aСгусток Слизи",
+            "coal": "§8Уголь",
+            "bone": "§fКость",
+            "paper": "§fБумага",
+            "blaze_rod": "§6Огненный Стержень"
+        }
+    },
+    "spectate": {
+        "_prefix": "§9Spectate §8§l» §r",
+        "_noprefix": [
+            "item"
+        ],
+        "command": {
+            "usage": "§cИспользуйте §8/§cassistir §8<§cигрок§8|§csair§8>"
+        },
+        "error": {
+            "self": "§cВы не можете наблюдать за самим собой...",
+            "must_leave_game": "§cПокиньте текущий матч перед наблюдением за другим игроком...",
+            "disallowed_mode": "§cРежим наблюдателя недоступен в Plot или Survival...",
+            "target_not_playing": "§cЭтот игрок сейчас не находится ни в одной мини-игре...",
+            "target_offline": "§cИгрок §f{player} §cне найден или не в сети...",
+            "privacy": "§c{player} §cне разрешает наблюдателей своими текущими настройками...",
+            "not_spectating": "§cСейчас вы ни за кем не наблюдаете..."
+        },
+        "item": {
+            "leave": "§cВыйти из Режима Наблюдателя",
+            "teleporter": "§8-> §aИгроки",
+            "play_again": "§8-> §aИграть снова"
+        },
+        "started": "§7Теперь вы наблюдаете за §9{player}§7! Используйте §8/§7assistir sair или кровать для выхода",
+        "stopped": {
+            "manual": "§7Вы вышли из режима наблюдателя!",
+            "match_ended": "§7Матч, за которым вы наблюдали, завершился...",
+            "target_offline": "§cИгрок, за которым вы наблюдали, вышел из сети...",
+            "disallowed_mode": "§cРежим наблюдателя остановлен при входе в Plot или Survival..."
+        },
+        "menu": {
+            "title": "§8Телепортация к игроку",
+            "no_players": "{prefix}§cНет живых игроков для телепортации...",
+            "team_icon": "{team} §7({count})",
+            "team_player_head": "{team} §8- §f{player}{n}§7Здоровье: §c{hp}❤{n}§eНажмите для телепортации",
+            "player_head": "§a{player}{n}§7Здоровье: §c{hp}❤{n}§eНажмите для телепортации",
+            "player_unavailable": "{prefix}§cЭтот игрок больше недоступен..."
+        },
+        "teleported": "{prefix}§aВы телепортировались к §e{player}§a!"
+    },
+    "cooldown": {
+        "_noprefix": [
+            "indicator",
+            "item"
+        ],
+        "indicator": {
+            "entry": "§7{item}§8:§c {seconds}с §8[{bar}§8]",
+            "ready": "§7{item} §aдоступно!"
+        },
+        "item": {
+            "fireball": "Огненный Шар",
+            "egg": "Яйцо",
+            "irongolem": "Железный Голем",
+            "silverfish": "Чешуйница",
+            "slingshot": "Рогатка",
+            "sponge": "Губка",
+            "bridge": "Яйцо-Мост",
+            "tower": "Башня",
+            "platform": "Платформа",
+            "enderpearl": "Жемчуг Эндера",
+            "tntegg": "ТНТ-Яйцо",
+            "hook": "Крюк",
+            "archer": "Лучник",
+            "cheststealer": "Вор Сундуков"
+        }
+    },
+    "staffchat": {
+        "discord_format": "§9Staff§fChat §8(§bDiscord§8) §8§l» §r§f{player}§8:§7 {message}"
+    },
+    "booster": {
+        "_prefix": "§dBooster §8§l» §r",
+        "activated": "§aСпасибо за буст в Discord! §7Вы получили титул §dBooster§7, §e+{xp}% XP §7и §e+25% в /daily§7!",
+        "monthly_claimed": "§aЕжемесячная награда получена: §e+{amount} Akunas§a! §8(§7Следующая через {time}§8)",
+        "expired": "§7Ваш буст в Discord истёк, титул и бонусы Booster удалены."
+    },
+    "enchant": {
+        "_prefix": "§6Survival §8§l» §r",
+        "hold_tool": "§cВозьмите кирку, топор или лопату в руку для зачарования!",
+        "keep_tool": "§cДержите инструмент в руке для завершения зачарования.",
+        "already_applied": "§cЭтот инструмент уже имеет это зачарование!",
+        "incompatible": "§cЗачарование несовместимо с этим инструментом!",
+        "success": "§aВы наложили {enchant} §aна инструмент за §e{cost} Akunas§a!",
+        "menu": {
+            "_prefix": "",
+            "title": "§6Survival §8§l» §r§dЗачарование",
+            "applied": "§a✔ Уже наложено на инструмент",
+            "incompatible": "§c✖ Несовместимо с этим инструментом",
+            "cost": "§7Цена§8: §e{cost} Akunas",
+            "cost_with_tax": "{n}§7С налогом§8: §e{total} Akunas",
+            "click_to_apply": "{n}{n}§eНажмите, чтобы применить!",
+            "entry": "{color}§l{name} {level}{n}§7{desc}{n}{n}{status}"
+        },
+        "items": {
+            "_prefix": "",
+            "auto_smelt": {
+                "name": "Auto-Smelt",
+                "desc": "Автоматически переплавляет руды и песок"
+            },
+            "telekinesis": {
+                "name": "Telekinesis",
+                "desc": "Отправляет дроп сразу в инвентарь"
+            },
+            "excavation": {
+                "name": "Раскопка 3x3",
+                "desc": "Ломает область 3x3 вокруг блока"
+            }
+        }
+    },
+    "discord_bot": {
+        "common": {
+            "server_unavailable": "❌ | Server unavailable...",
+            "server_unavailable_detail": "❌ | Minecraft server is currently unavailable ({error}).",
+            "generic_error": "❌ | An error occurred...",
+            "error_detail": "❌ | Error: {error}",
+            "guild_not_allowed": "❌ | This bot is not configured for this server...",
+            "official_only": "❌ | This command can only be used in the official server...",
+            "command_error": "❌ | Error executing command...",
+            "permanent": "Permanent",
+            "unknown": "Unknown",
+            "disabled": "❌ Disabled",
+            "not_linked_short": "❌ Not linked"
+        },
+        "booster": {
+            "sync_error": "❌ | Could not sync your boost ({error}).",
+            "not_linked_boosting": "💜 | Boost detected! Use `/discord` on the server and then `/vincular` here to unlock the **Booster** title, **+25% XP**, **+25% on /daily** and **10,000 Akunas/month**!",
+            "not_linked": "ℹ️ | Your account is not linked yet. Use `/discord` on the server and `/vincular` here.",
+            "not_boosting": "ℹ️ | Linked account: `{name}`. You are not boosting the server right now.",
+            "title": "💜 Server Booster Rewards",
+            "linked_account": "👤 **Linked account:** `{name}`",
+            "exclusive_title": "🏷️ **Exclusive title:** `Booster`",
+            "xp_bonus": "✨ **XP bonus:** `+25%` passive",
+            "daily_bonus": "🎁 **`/daily` bonus:** `+25%` stackable with Galaxy+",
+            "monthly_claimed": "💰 **Monthly reward claimed:** `+{amount} Akunas`",
+            "next_claim": "⏳ **Next monthly reward:** <t:{timestamp}:R>"
+        },
+        "account": {
+            "not_linked": "❌ | No account is linked...",
+            "field_2fa": "🔑 | 2FA",
+            "field_email": "📫 | Email",
+            "field_last_login": "🟢 | Last login",
+            "field_created_at": "📅 | Account Created",
+            "mode_discord": "🔷 Discord",
+            "mode_email": "📧 Email"
+        },
+        "link": {
+            "invalid_code": "❌ | Invalid code, use `/discord` on the server to generate a new one...",
+            "expired_code": "❌ | Expired code, use `/discord` on the server to generate a new one...",
+            "already_linked": "❌ | This account is already linked to `{player}`",
+            "title": "✅ Account linked!",
+            "description": "Your account was linked successfully...",
+            "footer": "Use /discord desvincular to unlink your account"
+        },
+        "unlink": {
+            "not_linked": "❌ | No linked account...",
+            "title": "🔗 | Account unlinked",
+            "description": "Account unlinked successfully..."
+        },
+        "confirmlogin": {
+            "invalid_code": "❌ | Invalid code...",
+            "expired_code": "❌ | Expired code...",
+            "not_linked": "❌ | You do not have a linked account...",
+            "player_offline": "❌ | Player offline...",
+            "title": "✅ | Authentication complete!",
+            "description": "Login authorized successfully..."
+        },
+        "resetpassword": {
+            "not_linked": "❌ | No account is linked...",
+            "title": "🔑 | Password reset!",
+            "description": "Your credentials were reset successfully..."
+        },
+        "moderation": {
+            "staff_not_linked": "❌ | Discord account not linked to any staff member...",
+            "no_permission_ban": "❌ | Your account does not have permission to ban...",
+            "no_permission_kick": "❌ | Your account does not have permission to kick...",
+            "no_permission_mute": "❌ | Your account does not have permission to mute...",
+            "no_permission_unmute": "❌ | Your account does not have permission to unmute...",
+            "no_permission_warn": "❌ | Your account does not have permission to warn...",
+            "player_not_found": "❌ | Player `{player}` not found...",
+            "player_offline": "❌ | Player offline...",
+            "target_is_staff_ban": "❌ | You cannot ban a staff member...",
+            "target_is_staff_kick": "❌ | You cannot kick a staff member...",
+            "target_is_staff_mute": "❌ | You cannot mute a staff member...",
+            "target_is_staff_warn": "❌ | You cannot warn a staff member...",
+            "already_banned": "❌ | `{player}` is already banned...",
+            "already_muted": "❌ | `{player}` is already muted...",
+            "not_banned": "❌ | `{player}` is not banned...",
+            "not_muted": "❌ | `{player}` is not muted...",
+            "no_history": "✅ | This player has no punishments...",
+            "ban_title": "🔨 | Player banned",
+            "kick_title": "👢 | Player kicked",
+            "mute_title": "🔇 | Player muted",
+            "unmute_title": "🔊 | Player unmuted",
+            "warn_title": "⚠️ | Player warned",
+            "baninfo_title": "🔨 | Ban info — {player}",
+            "muteinfo_title": "🔇 | Mute info — {player}",
+            "history_title": "📋 | Punishment History — {player}",
+            "field_player": "👤 | Player",
+            "field_staff": "🛡️ | Staff",
+            "field_duration": "⌛ | Duration",
+            "field_reason": "📝 | Reason",
+            "field_warns": "⚠️ | Active warnings",
+            "field_banned_at": "📅 | Banned at",
+            "field_muted_at": "📅 | Muted at",
+            "expires_in": "Expires <t:{timestamp}:R>",
+            "history_entry": "> {time} - **{action}** by **{staff}**{duration}{n}- {reason}"
+        },
+        "clan": {
+            "not_found": "❌ | Clan not found...",
+            "type_public": "🔓 Public",
+            "type_invite": "📩 Invite",
+            "type_private": "🔒 Private",
+            "type_closed": "⛔ Closed",
+            "field_leader": "👑 | Leader",
+            "field_level": "📊 | Level",
+            "field_xp": "✨ | XP",
+            "field_members": "👥 | Members",
+            "field_type": "📋 | Type",
+            "field_created": "📅 | Created",
+            "field_description": "📝 | Description",
+            "field_members_count": "👥 | Members ({count})"
+        },
+        "addskin": {
+            "invalid_id": "❌ | Invalid ID (use only a-z, 0-9, _ and -)...",
+            "file_too_large": "❌ | File too large (max 5MB)...",
+            "download_failed": "❌ | Could not download the file...",
+            "invalid_png": "❌ | File is not a valid PNG or exceeds max dimensions...",
+            "skin_too_small": "❌ | Skin too small...",
+            "skin_transparent": "❌ | Invalid skin: at least 70% of pixels must be visible (non-transparent)...",
+            "invalid_type": "❌ | Invalid type...",
+            "invalid_skin_data": "❌ | Invalid skin data...",
+            "success": "✅ | Skin {id} ({name}) added successfully!"
+        },
+        "staffcode": {
+            "invalid_code": "❌ | Invalid code...",
+            "code_used": "❌ | Code already used or expired...",
+            "code_expired": "❌ | Code expired...",
+            "not_linked": "❌ | You must link your Discord account first...",
+            "name_mismatch": "❌ | Linked account name does not match the name entered on the site...",
+            "title": "✅ Authentication confirmed!",
+            "description": "Your identity was confirmed as **{name}**. Return to the website to continue your application."
+        },
+        "staff_review": {
+            "not_found": "⚠️ | Application not found...",
+            "tag_applied": "{n}🎮 | Trial tag applied to **{name}** on the server",
+            "tag_failed": "{n}⚠️ | Failed to apply tag on the server ({error}).",
+            "server_offline": "{n}⚠️ | Server unavailable...",
+            "approved_by": "✅ **Approved** by <@{userId}>.{note}",
+            "refuse_modal_title": "Reject application",
+            "refuse_reason_label": "Rejection reason",
+            "refused_dm": "🚧 | Your application was **rejected**...{n}You can view the reason on our website: https://staff.iakunamc.com",
+            "refused_by": "❌ | **Rejected** by <@{userId}>"
+        },
+        "perfil": {
+            "provide_player": "❌ | Please specify a player...",
+            "profile_hidden": "❌ | This player's profile is hidden...",
+            "not_found": "❌ | Player not found...",
+            "no_records_period": "No records in this period...",
+            "stats_header": "📊 | Stats — {period}",
+            "field_level": "⭐ | Level",
+            "level_value": "**{level}** ({xp} XP — {needed} XP needed for next level)",
+            "field_akunas": "💰 | Akunas",
+            "field_online_time": "🕐 | Playtime",
+            "field_last_online": "📅 | Last online",
+            "field_clan": "🛡️ | Clan",
+            "field_married": "💍 | Married to",
+            "field_about": "📝 | About",
+            "period_total": "Total",
+            "period_daily": "Daily",
+            "period_weekly": "Weekly",
+            "period_monthly": "Monthly",
+            "game_duels": "Duels",
+            "game_overall_kills": "Overall Kills",
+            "stat_wins": "Wins",
+            "stat_kills": "Kills",
+            "stat_plays": "Matches played",
+            "stat_defeats": "Defeats",
+            "stat_final_kills": "Final Kills",
+            "stat_broken_beds": "Beds Broken",
+            "stat_points": "Goals scored",
+            "stat_deaths": "Deaths"
+        },
+        "top": {
+            "title": "Top {game} — {period}",
+            "empty": "No records found...",
+            "score_kills": "⚔️ {amount} kills",
+            "score_akunas": "💰 {amount} Akunas",
+            "score_levels": "⭐ Level {amount}",
+            "score_xp": "✨ {amount} XP",
+            "score_wins": "🏆 {amount} wins"
+        }
     }
 }

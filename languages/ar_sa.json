@@ -63,7 +63,8 @@
             "team_full": "§cفريق {team} §r§cممتلئ!",
             "joined_team": "§7انضممت إلى فريق {team}§r §7بنجاح!",
             "preference_set": "§7تم تعيين فريق {team} §r§7مفضلاً",
-            "invalid_team": "§cفريق غير صالح..."
+            "invalid_team": "§cفريق غير صالح...",
+            "preference_prompt": "§7انقر على فريق لتعيينه كمفضل"
         },
         "rejoin": {
             "_prefix": "§cBed§fWars §8§l» §r",
@@ -209,7 +210,9 @@
             "point_scored": "§7سجل {player} نقطة",
             "point_scored_final": "§7سجل {player} نقطة §8(§cالنقطة النهائية§8)",
             "killed_by": "§c{victim} §7قُتل على يد §c{killer}",
-            "own_point": "§cلا يمكنك تسجيل نقطة في جهة فريقك"
+            "own_point": "§cلا يمكنك تسجيل نقطة في جهة فريقك",
+            "player_left_rejoin": "§c{player} §7غادر §8(§cإعادة انضمام§8)",
+            "player_returned": "§c{player} §7عاد إلى المباراة"
         },
         "command": {
             "usage": "§7للدخول استخدم §8/§7{label} entrar",
@@ -219,7 +222,24 @@
             "invalid": "§cفريق غير صالح...",
             "already_in": "§cأنت بالفعل في فريق {team}§r§c!",
             "full": "§cفريق {team} §r§cممتلئ!",
-            "joined": "§7انضممت إلى فريق {team}§r §7بنجاح!"
+            "joined": "§7انضممت إلى فريق {team}§r §7بنجاح!",
+            "_prefix": "§cThe§9Bridge §8§l» §r",
+            "vip_only": "§cفقط اللاعبون برتبة §b§l§oAstral§r§c فأعلى يمكنهم اختيار الفريق! §oاحصل عليها من https://loja.iakunamc.com",
+            "moved_by_partner": "§7تم نقلك إلى فريق {team} §r§7بواسطة شريكك!",
+            "already_in_team": "§cأنت بالفعل في فريق {team}§r§c!",
+            "team_full": "§cفريق {team} §r§cممتلئ!",
+            "joined_team": "§7انضممت إلى فريق {team}§r §7بنجاح!",
+            "preference_set": "§7تم تعيين فريق {team} §r§7مفضلاً",
+            "preference_prompt": "§7انقر على فريق لتعيينه كمفضل",
+            "invalid_team": "§cفريق غير صالح..."
+        },
+        "rejoin": {
+            "_prefix": "§cThe§9Bridge §8§l» §r",
+            "pending": "§7لقد غادرت مباراة جارية...",
+            "pending_hint": "§7استخدم §8/§7tb rejoin للعودة إلى المباراة",
+            "no_pending": "§cليس لديك إعادة انضمام معلقة!",
+            "expired": "§cانتهت صلاحية إعادة الانضمام!",
+            "game_ended": "§cانتهت المباراة أو غادر فريقك!"
         }
     },
     "skywars": {
@@ -233,7 +253,9 @@
             "join": "§b{player} §7انضم إلى المباراة §8(§f{count}§8/§f{maxPlayers}§8)",
             "quit": "§b{player} §7غادر المباراة §8(§f{count}§8/§f{maxPlayers}§8)",
             "killed_by": "§b{player} §7قُتل على يد §b{killer} §8(§f{alive}§8/§f{maxPlayers}§8)",
-            "killed_void": "§b{player} §7سقط في الفراغ §8(§f{alive}§8/§f{maxPlayers}§8)"
+            "killed_void": "§b{player} §7سقط في الفراغ §8(§f{alive}§8/§f{maxPlayers}§8)",
+            "left_rejoin": "§b{player} §7غادر §8(§bإعادة انضمام§8)",
+            "returned": "§b{player} §7عاد إلى المباراة"
         },
         "refill": {
             "done": "§7تمت إعادة تعبئة جميع الصناديق!"
@@ -275,7 +297,26 @@
             "confirm_button": "§a§lتأكيد",
             "cancel_button": "§c§lإلغاء"
         },
-        "tracker": "§8§l» §r§7جارٍ تعقب §b{player} §8§l» §r§7المسافة: §b{distance} §7مكعب"
+        "tracker": "§8§l» §r§7جارٍ تعقب §b{player} §8§l» §r§7المسافة: §b{distance} §7مكعب",
+        "rejoin": {
+            "_prefix": "§fSky§bWars §8§l» §r",
+            "pending": "§7لقد غادرت مباراة جارية...",
+            "pending_hint": "§7استخدم §8/§7sw rejoin للعودة إلى المباراة",
+            "no_pending": "§cليس لديك إعادة انضمام معلقة!",
+            "expired": "§cانتهت صلاحية إعادة الانضمام!",
+            "game_ended": "§cانتهت المباراة أو تم إقصاء فريقك!"
+        },
+        "teams": {
+            "_prefix": "§fSky§bWars §8§l» §r",
+            "vip_only": "§cفقط اللاعبون برتبة §b§l§oAstral§r§c فأعلى يمكنهم اختيار الفريق! §oاحصل عليها من https://loja.iakunamc.com",
+            "moved_by_partner": "§7تم نقلك إلى فريق {team} §r§7بواسطة شريكك!",
+            "already_in_team": "§cأنت بالفعل في فريق {team}§r§c!",
+            "team_full": "§cفريق {team} §r§cممتلئ!",
+            "joined_team": "§7انضممت إلى فريق {team}§r §7بنجاح!",
+            "preference_set": "§7تم تعيين فريق {team} §r§7مفضلاً",
+            "preference_prompt": "§7انقر على فريق لتعيينه كمفضل",
+            "invalid_team": "§cفريق غير صالح..."
+        }
     },
     "mlgblock": {
         "state": {
@@ -298,6 +339,17 @@
         },
         "scoreboard": {
             "format": "{right}§fi§cAkuna§9MC §8§l» §r§eMlg§fBlock{n}{right}{bar}{n}{right}§8§l» §r§7الخريطة§8:§e {map}{n}{right}§8§l» §r§7القتلات§8:§e {kills}{n}{right}§8§l» §r§7الأحياء§8:§e {alive}{n}{right}{bar}{n}{n}{right}§eiakunamc.com 19132"
+        },
+        "teams": {
+            "_prefix": "§eMlg§fBlock §8§l» §r",
+            "vip_only": "§cفقط اللاعبون برتبة §b§l§oAstral§r§c فأعلى يمكنهم اختيار الفريق! §oاحصل عليها من https://loja.iakunamc.com",
+            "moved_by_partner": "§7تم نقلك إلى فريق {team} §r§7بواسطة شريكك!",
+            "already_in_team": "§cأنت بالفعل في فريق {team}§r§c!",
+            "team_full": "§cفريق {team} §r§cممتلئ!",
+            "joined_team": "§7انضممت إلى فريق {team}§r §7بنجاح!",
+            "preference_set": "§7تم تعيين فريق {team} §r§7مفضلاً",
+            "preference_prompt": "§7انقر على فريق لتعيينه كمفضل",
+            "invalid_team": "§cفريق غير صالح..."
         }
     },
     "blocksumo": {
@@ -323,6 +375,17 @@
         },
         "scoreboard": {
             "format": "{right}§fi§cAkuna§9MC §8§l» §r§bBlock§fSumo{n}{right}{bar}{n}{right}§8§l» §r§7الخريطة§8:§b {map}{n}{right}§8§l» §r§7القتلات§8:§b {kills}{n}{right}§8§l» §r§7الأرواح§8:§b {lives}{n}{right}{bar}{n}{n}{right}§biakunamc.com 19132"
+        },
+        "teams": {
+            "_prefix": "§bBlock§fSumo §8§l» §r",
+            "vip_only": "§cفقط اللاعبون برتبة §b§l§oAstral§r§c فأعلى يمكنهم اختيار الفريق! §oاحصل عليها من https://loja.iakunamc.com",
+            "moved_by_partner": "§7تم نقلك إلى فريق {team} §r§7بواسطة شريكك!",
+            "already_in_team": "§cأنت بالفعل في فريق {team}§r§c!",
+            "team_full": "§cفريق {team} §r§cممتلئ!",
+            "joined_team": "§7انضممت إلى فريق {team}§r §7بنجاح!",
+            "preference_set": "§7تم تعيين فريق {team} §r§7مفضلاً",
+            "preference_prompt": "§7انقر على فريق لتعيينه كمفضل",
+            "invalid_team": "§cفريق غير صالح..."
         }
     },
     "plot": {
@@ -436,7 +499,8 @@
             "biome": "§9Plot §8§l» §r§7المناخ الحيوي§8:§9 {biome}",
             "rating": "§9Plot §8§l» §r§7التقييم§8:§9 {score} §8(§9{count} §7تقييمات§8)",
             "allowed": "§9Plot §8§l» §r§7مسموح لهم §8(§f{count}§8):§7 {players}",
-            "denied": "§9Plot §8§l» §r§7محظورون §8(§f{count}§8):§7 {players}"
+            "denied": "§9Plot §8§l» §r§7محظورون §8(§f{count}§8):§7 {players}",
+            "default_name": "§7بدون اسم، استخدم §8/§7p name لتعيين اسم..."
         },
         "generate": {
             "desc": "§7ينشئ عالم قطع جديدًا",
@@ -537,6 +601,11 @@
             "usage": "§8/§cp setdesc §8<§cوصف§8>",
             "empty": "§9القطعة §8§l» §r§cاستخدم §8/§cp setdesc §8<§cوصف§8> لتحديد وصف...",
             "success": "§9القطعة §8§l» §r§7تم تغيير وصف القطعة بنجاح!"
+        },
+        "name": {
+            "desc": "§7يعيّن اسم القطعة الخاصة بك",
+            "usage": "§8/§cp name §8<§cالاسم§8>",
+            "success": "§9Plot §8§l» §r§7تم تغيير اسم القطعة إلى §9{name} §7بنجاح!"
         }
     },
     "cosmetic": {
@@ -780,6 +849,17 @@
         },
         "type": {
             "invalid": "§5تجميلات §8§l» §r§cنوع تجميلة غير صالح!"
+        },
+        "effect": {
+            "_prefix": "§5Cosmetics §8§l» §r",
+            "shapes": "§7الأشكال المتاحة§8:§5 {shapes}",
+            "invalid_shape": "§cشكل غير صالح... الأشكال المتاحة§8:§c {shapes}",
+            "shape_set": "§7تم تغيير الشكل إلى §5{shape} §7بنجاح!",
+            "particles": "§7الجسيمات المتاحة§8:§5 {particles}",
+            "invalid_particle": "§cجسيم غير صالح... الجسيمات المتاحة§8:§c {particles}",
+            "particle_set": "§7تم تغيير الجسيم إلى §5{particle} §7بنجاح!",
+            "list": "§7الأشكال المتاحة§8:§5 {shapes}{n}§5Cosmetics §8§l» §r§7الجسيمات المتاحة§8:§5 {particles}",
+            "usage": "§cاستخدم §8/§c{label} §8<§con§8|§coff§8|§cshape§8|§cparticle§8|§clist§8>"
         }
     },
     "cosmeticswindow": {
@@ -1118,7 +1198,25 @@
         "command": {
             "_prefix": "§2المبارزات §8§l» §r",
             "in_duel": "§cلا يمكنك استخدام هذا الأمر أثناء مبارزة!",
-            "player_only": "§cيمكن للاعبين فقط استخدام هذا الأمر..."
+            "player_only": "§cيمكن للاعبين فقط استخدام هذا الأمر...",
+            "not_in_game": "§cأنت لست في أي طابور أو مبارزة...",
+            "no_arenas": "§cلا توجد ساحات متاحة حالياً...",
+            "party_size": "§cيدعم §2Duels §cفقط مجموعات مكونة من لاعبين اثنين بالضبط...",
+            "party_size_team": "§cلمبارزات {format}، تحتاج مجموعتك حتى {team_size} لاعب(ين) للطابور أو {private_size} بالضبط لمبارزة خاصة...",
+            "usage": "§7استخدم §8/§7duels §8<§7الوضع§8|§7leave§8>",
+            "help": {
+                "_prefix": "",
+                "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §2Duels §8===-=-=-=-",
+                "entry": "§2Duels §8§l» §r§8/§7{cmd} §8- §7{desc}",
+                "modes": "§2Duels §8§l» §r§7الأوضاع المتاحة§8: §2{modes}",
+                "modes_none": "§7لا يوجد",
+                "footer": "§8-=-=-=-===============================-=-=-=-",
+                "desc": {
+                    "play": "الانضمام إلى الطابور",
+                    "bot": "مبارزة ضد البوت",
+                    "leave": "مغادرة الطابور أو المبارزة"
+                }
+            }
         },
         "status": {
             "_prefix": "§2المبارزات §8§l» §r",
@@ -1136,6 +1234,67 @@
             "joined": "§7انضممت إلى الطابور لنمط §2{mode} §r§7بنجاح!",
             "left": "§7غادرت طابور نمط §c{mode}§7!",
             "timeout": "§cتمت إزالتك تلقائيًا من الطابور لعدم توفر لاعبين آخرين..."
+        },
+        "match": {
+            "_prefix": "§2Duels §8§l» §r",
+            "started": "§7مبارزة §2{mode} §7ضد §2{opponent} §7في ساحة §2{arena}§7!",
+            "started_team": "§7مبارزة §2{mode} §8(§2{format}§8) §7في ساحة §2{arena}§7! §a{teammates} §8ضد §c{opponents}",
+            "eliminated": "§c{player} §7تم إقصاؤه! §8(§2{team_alive}§8/§7{team_total}§8 متبقٍ)",
+            "cancelled": "§cتم إلغاء المبارزة...",
+            "timeout": "§cانتهى الوقت المحدد للمباراة...",
+            "summary": {
+                "_prefix": "",
+                "normal": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §2Duels §8===-=-=-=-{n}§7الفائز§8: §a{winner}{n}§7الخاسر§8: §c{loser}{n}§7الوضع§8: §2{mode} §8| §7المدة§8: §2{duration}{n}§8-=-=-=-===============================-=-=-=-",
+                "forfeit": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §2Duels §8===-=-=-=-{n}§7النتيجة§8: §eانسحاب{n}§7الفائز§8: §a{winner}{n}§7الخاسر§8: §c{loser}{n}§7الوضع§8: §2{mode} §8| §7المدة§8: §2{duration}{n}§8-=-=-=-===============================-=-=-=-"
+            },
+            "summary_team": {
+                "_prefix": "",
+                "normal": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §2Duels {format} §8===-=-=-=-{n}§7الفائزون§8: §a{winners}{n}§7الخاسرون§8: §c{losers}{n}§7الوضع§8: §2{mode} §8| §7المدة§8: §2{duration}{n}§8-=-=-=-===============================-=-=-=-",
+                "forfeit": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §2Duels {format} §8===-=-=-=-{n}§7النتيجة§8: §eانسحاب{n}§7الفائزون§8: §a{winners}{n}§7الخاسرون§8: §c{losers}{n}§7الوضع§8: §2{mode} §8| §7المدة§8: §2{duration}{n}§8-=-=-=-===============================-=-=-=-"
+            },
+            "summary_bot": {
+                "_prefix": "",
+                "win": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §2Duels vs Bot §8===-=-=-=-{n}§7النتيجة§8: §aفوز!{n}§7الخصم§8: {bot}{n}§7الوضع§8: §2{mode} §8| §7المدة§8: §2{duration}{n}§7صحتك§8: §c{hp} HP §8| §7الضربات§8: §a{hits} §8ضد §c{bot_hits}{n}§7المكافأة§8: §c+{akunas} Akunas §8| §9+{xp} XP{n}§8-=-=-=-===============================-=-=-=-",
+                "loss": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §2Duels vs Bot §8===-=-=-=-{n}§7النتيجة§8: §cهزيمة...{n}§7الخصم§8: {bot}{n}§7الوضع§8: §2{mode} §8| §7المدة§8: §2{duration}{n}§7صحة البوت§8: §c{bot_hp} HP §8| §7الضربات§8: §a{hits} §8ضد §c{bot_hits}{n}§8-=-=-=-===============================-=-=-=-",
+                "forfeit": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §2Duels vs Bot §8===-=-=-=-{n}§7النتيجة§8: §eانسحاب{n}§7الخصم§8: {bot}{n}§7الوضع§8: §2{mode} §8| §7المدة§8: §2{duration}{n}§8-=-=-=-===============================-=-=-=-"
+            }
+        },
+        "scoreboard": {
+            "_prefix": "",
+            "format": "{right}§fi§cAkuna§9MC §8§l» §r§2Duels{n}{right}{bar}{n}{right}§8§l» §r§7الوضع§8:§2 {mode}{n}{right}§8§l» §r§7المدة§8:§2 {duration}{n}{right}§8§l» §r§7الخصم§8:§2 {opponent}{n}{right}§8§l» §r§7Ping§8:§2 {ping}ms §8| §c{opp_ping}ms{n}{right}{bar}{n}{n}{right}§2iakunamc.com 19132",
+            "boxing_format": "{right}§fi§cAkuna§9MC §8§l» §r§2Duels{n}{right}{bar}{n}{right}§8§l» §r§7الوضع§8:§2 {mode}{n}{right}§8§l» §r§7المدة§8:§2 {duration}{n}{right}§8§l» §r§7الخصم§8:§2 {opponent}{n}{right}§8§l» §r§7الضربات§8:§a {hits} §8/ §c{opp_hits} §8(§7{max_hits}§8){n}{right}§8§l» §r§7Ping§8:§2 {ping}ms §8| §c{opp_ping}ms{n}{right}{bar}{n}{n}{right}§2iakunamc.com 19132",
+            "team_format": "{right}§fi§cAkuna§9MC §8§l» §r§2Duels {format}{n}{right}{bar}{n}{right}§8§l» §r§7الوضع§8:§2 {mode}{n}{right}§8§l» §r§7المدة§8:§2 {duration}{n}{right}§8§l» §r§7الفريق§8:§a {team_alive}/{team_total} §8| §c{opp_alive}/{team_total}{n}{right}§8§l» §r§7Ping§8:§2 {ping}ms{n}{right}{bar}{n}{n}{right}§2iakunamc.com 19132",
+            "team_boxing_format": "{right}§fi§cAkuna§9MC §8§l» §r§2Duels {format}{n}{right}{bar}{n}{right}§8§l» §r§7الوضع§8:§2 {mode}{n}{right}§8§l» §r§7المدة§8:§2 {duration}{n}{right}§8§l» §r§7الفريق§8:§a {team_alive}/{team_total} §8| §c{opp_alive}/{team_total}{n}{right}§8§l» §r§7الضربات§8:§a {hits} §8/ §c{opp_hits} §8(§7{max_hits}§8){n}{right}§8§l» §r§7Ping§8:§2 {ping}ms{n}{right}{bar}{n}{n}{right}§2iakunamc.com 19132"
+        },
+        "bot": {
+            "_prefix": "§2Duels §8§l» §r",
+            "usage": "§7استخدم §8/§7duels bot §8<§7الوضع§8> [§aeasy§8|§emedium§8|§chard§8|§5hacker§8]",
+            "invalid_difficulty": "§cصعوبة غير صالحة! استخدم §aeasy§c أو §emedium§c أو §chard §cأو §5hacker§c..."
+        },
+        "menu": {
+            "_prefix": "",
+            "back": "§c« رجوع",
+            "bot_diff_item": "{label}{n}§7قاتل البوت بهذه الصعوبة{n}{n}§eانقر لاختيار العتاد",
+            "bot_easy": "§aبوت سهل",
+            "bot_hacker": "§5بوت هاكر",
+            "bot_hard": "§cبوت صعب",
+            "bot_item": "§cمبارزات ضد البوت{n}§7تدرب ضد الذكاء الاصطناعي{n}{n}§eانقر لاختيار الصعوبة",
+            "bot_kit_item": "{label} §8({difficulty}§8){n}{n}§eانقر للبدء",
+            "bot_kit_title": "§2بوت {difficulty} §8§l» §r§7اختر العتاد",
+            "bot_medium": "§eبوت متوسط",
+            "bot_title": "§2مبارزات ضد البوت §8§l» §r§7الصعوبة",
+            "bridge_item": "§cThe§9Bridge{n}§7يلعبون§8: §f{playing}{n}{n}§eانقر للعب",
+            "challenge_hint": "§2Duels §8§l» §r§7استخدم §8/§eduelar §8<§eلاعب§8> §7أو §8/§edesafiar §8<§eلاعب§8> <§eالوضع§8> §8[§eالجولات§8] [§eالرهان§8]",
+            "challenge_item": "§eتحدي لاعب{n}§7أنشئ مبارزات بجولات ورهانات{n}{n}§fاستخدم §8/§eduelar §8<§eلاعب§8>",
+            "format_1v1": "§aDuels 1v1",
+            "format_2v2": "§2Duels 2v2",
+            "format_3v3": "§eDuels 3v3",
+            "format_4v4": "§cDuels 4v4",
+            "format_item": "{label}{n}§7يلعبون§8: §f{playing}{n}{n}§eانقر لاختيار الوضع",
+            "format_title": "§2Duels {format} §8§l» §r§7اختر الوضع",
+            "mode_item": "{label} {format}{n}§7يلعبون§8: §f{playing}{n}{n}§eانقر للانضمام للطابور",
+            "sw1v1_item": "§bSkyWars 1v1{n}§7يلعبون§8: §f{playing}{n}{n}§eانقر للعب",
+            "title": "§2Duels §8§l» §r§7اختر الوضع"
         }
     },
     "addbalance": {
@@ -1182,7 +1341,18 @@
         },
         "join": {
             "_prefix": "",
-            "msg": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7مرحبًا §e{user}§7، أهلاً وسهلاً بك في §fi§cAkuna§9MC§7!"
+            "msg": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7مرحبًا §e{user}§7، أهلاً وسهلاً بك في §fi§cAkuna§9MC§7!",
+            "greeting": {
+                "_prefix": "",
+                "dawn": "فجراً سعيداً",
+                "morning": "صباح الخير",
+                "afternoon": "مساء الخير",
+                "night": "مساء الخير"
+            },
+            "dawn": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7فجراً سعيداً §e{user}§7، تسهر طوال الليل في §fi§cAkuna§9MC§7؟ أهلاً بك!",
+            "morning": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7صباح الخير §e{user}§7، أهلاً بك في §fi§cAkuna§9MC§7! نتمنى لك صباحاً رائعاً من المباريات!",
+            "afternoon": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7مساء الخير §e{user}§7، أهلاً بك في §fi§cAkuna§9MC§7! استمتع بوقتك في اللعب!",
+            "night": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7مساء الخير §e{user}§7، أهلاً بك في §fi§cAkuna§9MC§7! نتمنى لك ليلة رائعة من المباريات!"
         },
         "login": {
             "_prefix": "",
@@ -1226,7 +1396,16 @@
         "nosamepass": "§7لا تستخدم نفس كلمة المرور في خوادم أخرى! قد يخترق المخادعون حسابك... يمكنك استخدام §8/§cpin §7لحماية حسابك!",
         "rules": "§7هل قرأت §8/§crules قوانيننا§7؟ عدم معرفتها لا يعفيك من §cالعقوبات§7!",
         "staff": "§7هل تعلم أنه يمكنك الانضمام لطاقمنا؟ تفضل بزيارة §chttps://staff.iakunamc.com",
-        "yt": "§7سجل فيديو يروج لخادمنا على يوتيوب واربح رتبًا خاصة! لرؤية المتطلبات استخدم §8/§cyt"
+        "yt": "§7سجل فيديو يروج لخادمنا على يوتيوب واربح رتبًا خاصة! لرؤية المتطلبات استخدم §8/§cyt",
+        "assistir": "§7هل تريد مشاهدة المباريات مباشرة؟ استخدم §8/§cspectate §8<§cلاعب§8> §7أو حدد من يمكنه مشاهدتك عبر §8/§cpref spectate",
+        "clan": "§7أنشئ أو انضم إلى عشيرة للمنافسة في المتصدرين! استخدم §8/§cclan",
+        "desafiar": "§7هل تريد تحدي لاعب في مبارزات متعددة الجولات برهان §cAkunas§7؟ استخدم §8/§cduel §8<§cلاعب§8> §8[§cالوضع§8] [§cالجولات§8] [§cالرهان§8]",
+        "lang": "§7هل تفضل اللعب بلغة أخرى؟ غيّر لغتك في أي وقت باستخدام §8/§clang",
+        "party": "§7تلعب مع الأصدقاء؟ أنشئ مجموعة باستخدام §8/§cparty §7وانضموا إلى الألعاب المصغرة والمبارزات معاً!",
+        "pref": "§7خصّص تجربتك! استخدم §8/§cpref gui §7لضبط لوحة النتائج، CPS، الكومبو، المشاهدين والمزيد!",
+        "profile": "§7تحقق من إحصائياتك ومستواك وملفات اللاعبين الآخرين باستخدام §8/§cprofile §8[§cلاعب§8]",
+        "ranking": "§7تفقّد أفضل لاعبي الخادم باستخدام §8/§ctops §7حسب اللعبة المصغرة أو الفترة الزمنية!",
+        "tell": "§7تحدث بشكل خاص مع اللاعبين الآخرين باستخدام §8/§ctell §8<§cلاعب§8> <§cرسالة§8> §7وردّ بسرعة باستخدام §8/§cr"
     },
     "backpack": {
         "_prefix": "§cالنظام §8§l» §r",
@@ -1374,7 +1553,11 @@
         "nopromote": "§cلا يسمح بالترويج و/أو ذكر خوادم أخرى في الدردشة...{n}§cالنظام §8§l» §r§cتذكر قراءة §8/§crules قوانيننا لتجنب العقوبات المستقبلية",
         "nospam": "§cتمهل! لا ترسل سبام...",
         "toolong": "§cرسالتك طويلة جدًا... (الحد الأقصى {max} حرف)",
-        "noemoji": "§cغير مسموح باستخدام الإيموجي..."
+        "noemoji": "§cغير مسموح باستخدام الإيموجي...",
+        "_noprefix": [
+            "discord_format"
+        ],
+        "discord_format": "§9Discord §8§l» §r§f{player}§8:§7 {message}"
     },
     "clan": {
         "_prefix": "§eالكلانات §8§l» §r",
@@ -1384,8 +1567,17 @@
             "success": "§7انضممت إلى §e{clan} §7بنجاح"
         },
         "already_in_clan": "§cأنت بالفعل في كلان...",
+        "changename": {
+            "error": "§cخطأ أثناء تغيير الاسم...",
+            "exists": "§cيوجد كلان بهذا الاسم بالفعل!",
+            "length": "§cيجب أن يتكون اسم الكلان من 3 إلى 24 حرفًا (أحرف وأرقام)!",
+            "success": "§7تم تغيير اسم الكلان إلى §e{name} §7بنجاح!",
+            "usage": "§cاستخدم §8/§c{label} name §8<§cالاسم§8>"
+        },
         "changetag": {
             "error": "§cخطأ في تغيير الوسم...",
+            "exists": "§cيوجد كلان بهذا الوسم بالفعل!",
+            "length": "§cيجب أن يتكون وسم الكلان من 2 إلى 4 أحرف (أحرف وأرقام)!",
             "success": "§7تم تغيير الوسم إلى §e{tag} §7بنجاح!",
             "usage": "§cاستخدم §8/§c{label} tag §8<§cوسم§8>"
         },
@@ -1504,6 +1696,7 @@
             "none": "§cلا توجد طلبات معلقة...",
             "usage": "§cاستخدم §8/§c{label} requests §8<§caccept§8|§cdeny§8> §8<§cلاعب§8|§c*§8>"
         },
+        "requests_list": "§7طلبات الانضمام §8(§f{count}§8):§7 {requests}",
         "tagcolor": {
             "error": "§cخطأ في تغيير لون الوسم!",
             "invalid": "§cلون غير صالح...",
@@ -1517,8 +1710,7 @@
             "success": "§7تم تغيير نوع الكلان إلى §e{type}§7 بنجاح",
             "usage": "§cاستخدم §8/§c{label} type §8<§cنوع§8>"
         },
-        "usage": "§cاستخدم §8/§c{label} §8<§ccreate§8|§cinvite§8|§ckick§8|§cdesc§8|§cleave§8|§cinfo§8|§ctype§8|§crequest§8|§cpromote§8|§cdemote§8|§ctag§8|§crequests§8|§cchat§8|§cdelete§8|§ctagcolor§8>",
-        "requests_list": "§7طلبات الانضمام §8(§f{count}§8):§7 {requests}"
+        "usage": "§cاستخدم §8/§c{label} §8<§ccreate§8|§cinvite§8|§ckick§8|§cdesc§8|§cleave§8|§cinfo§8|§ctype§8|§crequest§8|§cpromote§8|§cdemote§8|§cname§8|§ctag§8|§crequests§8|§cchat§8|§cdelete§8|§ctagcolor§8>{n}§eClans §8§l» §r§7تكلفة إنشاء كلان§8: §e{cost} Akunas"
     },
     "clear": {
         "_prefix": "§cالنظام §8§l» §r",
@@ -1556,7 +1748,31 @@
             "received": "§5المكافأة اليومية §8§l» §r§7لقد تلقيت {rewards}",
             "streak": "§5المكافأة اليومية §8§l» §r§7السلسلة الحالية§8: §5{streak} §7أيام",
             "xp": "§9{amount} خبرة",
-            "streak_lost": "§5المكافأة اليومية §8§l» §r§cفقدت سلسلتك التي دامت {oldStreak} يومًا..."
+            "streak_lost": "§5المكافأة اليومية §8§l» §r§cفقدت سلسلتك التي دامت {oldStreak} يومًا...",
+            "cooldown": "§5المكافأة اليومية §8§l» §r§cلقد استلمت مكافأتك اليوم بالفعل! المكافأة التالية خلال §5{time}§c...",
+            "milestone_month": "§5المكافأة اليومية §8§l» §r§7مذهل! لقد وصلت إلى سلسلة §5{days} §7يوماً وحصلت على مكافأة خاصة!",
+            "bonus_applied": "§5Daily §8§l» §r§7تم تطبيق المكافأة الإضافية§8: {bonuses}",
+            "bonus_galaxy": "§7§l§oGalaxy§r§a+ §e(+{percent}%)",
+            "bonus_booster": "§dBooster §e(+{percent}%)"
+        },
+        "menu": {
+            "title": "§5المكافأة اليومية §8§l» §r§7السلسلة",
+            "status_available": "§aمتاحة الآن!{n}§eاضغط للاستلام",
+            "status_cooldown": "§7القادمة بعد§8: §e{time}",
+            "bonus_active": "{n}§7مكافأة نشطة§8: §a+{percent}%",
+            "summary": "§5§lDaily Streak{n}§7السلسلة الحالية§8: §d{streak} يوم{n}§7أفضل سلسلة§8: §6{best} يوم{n}§7الإجمالي§8: §b{total}{bonus}{n}{n}{status}",
+            "day_claimed": "§aاليوم {day} §8(§aتم الاستلام§8){n}§7المضاعف§8: §e+{percent}%",
+            "day_available": "§bاليوم {day} §8(§aمتاح§8){n}§7المضاعف§8: §e+{percent}%{weekly}{n}{n}§eاضغط للاستلام!",
+            "day_next": "§eاليوم {day} §8(§7التالي§8){n}§7يفتح بعد§8: §e{time}{n}§7المضاعف§8: §e+{percent}%",
+            "day_locked": "§7اليوم {day} §8(§cمقفل§8){n}§7المضاعف§8: §e+{percent}%{weekly}",
+            "weekly_available": "{n}§6+مكافأة أسبوعية!",
+            "weekly_locked": "{n}§6يشمل مكافأة أسبوعية!",
+            "milestone_title": "{color}إنجاز {days} يوم{n}§7المكافأة§8: §d{bonus}{n}§7الحالة§8: {status}",
+            "milestone_unlocked": "§aمكتمل!",
+            "milestone_remaining": "§7متبقي §e{days} يوم",
+            "milestone_7": "+500 Akunas و +50 XP أسبوعياً",
+            "milestone_14": "+1,000 Akunas و +100 XP في اليوم 14",
+            "milestone_30": "+2,500 Akunas و +250 XP في اليوم 30"
         }
     },
     "delhome": {
@@ -1609,14 +1825,7 @@
             "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §bرسائل الدخول §8(§f{page}§8/§f{total}§8) ===-=-=-=-"
         },
         "messages": {
-            "_prefix": "§bالدخول §8§l» §r",
             "1": "§7أوبا! §b{player} §7هبط بالمظلة في الخادم!",
-            "10": "§7وقفة درامية... §b{player} §7دخل الخادم!",
-            "11": "§b{player} §7دخل!",
-            "12": "§7انتبهوا! §b{player} §7ظهر لتوه!",
-            "13": "§7ابتسم الكون... §b{player} §7دخل!",
-            "14": "§7مغامرات جديدة تبدأ مع §b{player}§7 متصل!",
-            "15": "§7مستعدون؟ §b{player} §7وصل ليسيطر!",
             "2": "§7هل طلب أحد تعزيزات؟ §b{player} §7وصل!",
             "3": "§7§b{player} §7دخل بقوة! اقترب!",
             "4": "§7ما رأيك في بيتزا، §b{player}§7؟ أهلاً وسهلاً!",
@@ -1624,7 +1833,14 @@
             "6": "§7الرادار رصد نشاطًا... §b{player} §7دخل!",
             "7": "§7اكتمل الانتقال الآني! §b{player} §7ظهر هنا!",
             "8": "§7جو رائع للعب... خاصة مع §b{player} §7متصل!",
-            "9": "§7ظهرت الأسطورة§8:§7 §b{player}§7 بيننا!"
+            "9": "§7ظهرت الأسطورة§8:§7 §b{player}§7 بيننا!",
+            "10": "§7وقفة درامية... §b{player} §7دخل الخادم!",
+            "11": "§b{player} §7دخل!",
+            "12": "§7انتبهوا! §b{player} §7ظهر لتوه!",
+            "13": "§7ابتسم الكون... §b{player} §7دخل!",
+            "14": "§7مغامرات جديدة تبدأ مع §b{player}§7 متصل!",
+            "15": "§7مستعدون؟ §b{player} §7وصل ليسيطر!",
+            "_prefix": "§bالدخول §8§l» §r"
         },
         "off": {
             "success": "§bالدخول §8§l» §r§7تم تعطيل رسالة الدخول بنجاح!"
@@ -1986,7 +2202,77 @@
         "enable": "§7تم تفعيل التفضيل بنجاح!",
         "onlyvip": "§cفقط اللاعبون برتبة §b§l§oAstral §r§cفي أي فئة أو أعلى يمكنهم تغيير هذا التفضيل... §oاحصل عليها من https://loja.iakunamc.com",
         "reset": "§7تمت إعادة جميع التفضيلات إلى الافتراضي!",
-        "usage": "§cاستخدم §8/§c{label} §8<§cالتفضيل§8|§cإعادة§8>{n}§cالنظام §8§l» §r§cالتفضيلات المتاحة§8:§7 {prefs}"
+        "usage": "§cاستخدم §8/§c{label} §8<§cالتفضيل§8|§cإعادة§8>{n}§cالنظام §8§l» §r§cالتفضيلات المتاحة§8:§7 {prefs}",
+        "global_only": "§cالتفضيل §e{pref} §cعام فقط ولا يمكن تخصيصه لكل لعبة مصغرة!",
+        "invalid_bool": "§cقيمة غير صالحة لـ §e{pref}§c! استخدم §aon §cأو §coff",
+        "invalid_minigame": "§cلعبة مصغرة غير صالحة! الألعاب المصغرة§8:§7 {minigames}",
+        "invalid_mode": "§cوضع غير صالح لـ §e{pref}§c! الأوضاع§8: §aall§8, §bfriends§8, §dpartner§8, §eparty§8, §6clan§8, §coff",
+        "invalid_scoreboard_side": "§cموضع غير صالح لـ §e{pref}§c! استخدم §aright§c أو §bleft §cأو §einline",
+        "minigame_unset": "§7التفضيل §e{pref} §7في §b{minigame} §7يتبع الآن الإعداد العام الافتراضي!",
+        "minigame_usage": "§cاستخدم §8/§c{label} mg §8<§cاللعبة_المصغرة§8> <§cالتفضيل§8> [§cالوضع§8|§creset§8]{n}§cالنظام §8§l» §r§cالألعاب المصغرة§8:§7 {minigames}{n}§cالنظام §8§l» §r§cالتفضيلات§8:§7 {prefs}",
+        "not_allowed_minigame": "§cالتفضيل §e{pref} §cغير متاح في §b{minigame}§c! الألعاب المصغرة المسموح بها§8:§7 {minigames}",
+        "reset_minigame": "§7تمت إعادة تعيين جميع التفضيلات المخصصة لـ §b{minigame} §7إلى الإعداد العام!",
+        "state": {
+            "_prefix": "",
+            "all": "§aالجميع",
+            "clan": "§6العشيرة",
+            "friends": "§bالأصدقاء",
+            "hide_all": "§cإخفاء الكل",
+            "hide_off": "§aإظهار الكل",
+            "off": "§cمعطّل",
+            "on": "§aمفعّل",
+            "partner": "§dالشريك",
+            "party": "§eالمجموعة",
+            "sb_inline": "§eمدمج",
+            "sb_left": "§bيسار",
+            "sb_right": "§aيمين"
+        },
+        "updated": "§7تم تغيير التفضيل §e{pref} §8(§b{scope}§8) §7إلى {status}§7!",
+        "menu": {
+            "_prefix": "",
+            "back": "§c« العودة إلى الألعاب المصغرة",
+            "click_mode_toggle": "§eوضع النقر§8: §aتبديل القيمة",
+            "click_mode_unset": "§eوضع النقر§8: §cالعودة إلى العام",
+            "hint_toggle": "§eانقر للتبديل",
+            "hint_unset": "§cانقر للعودة إلى العام",
+            "minigame_item": "{minigame}{n}§7التفضيلات§8: §e{total}{n}§7المخصصة§8: §b{custom}{n}{n}§eانقر للضبط",
+            "origin_custom": "§bمخصص هنا",
+            "origin_global": "§8موروث من العام",
+            "reset_minigame": "§cإعادة تعيين هذه اللعبة المصغرة",
+            "scope_header": "§7اللعبة المصغرة§8: {minigame}",
+            "setting_item": "§f{label}{n}§7الحالة§8: {status}{n}{origin}{n}{n}{hint}",
+            "title": "§3التفضيلات §8§l» §r§7ضبط"
+        },
+        "label": {
+            "_prefix": "",
+            "autologin": "تسجيل الدخول التلقائي",
+            "automsg": "الرسائل التلقائية",
+            "autosprint": "الركض التلقائي",
+            "chat": "الدردشة",
+            "chatfilter": "فلتر الدردشة",
+            "combo": "إظهار الكومبو",
+            "cps": "إظهار CPS",
+            "day": "دورة الليل والنهار",
+            "floatchat": "الدردشة العائمة",
+            "friendnotify": "إشعارات الأصدقاء",
+            "hideplayers": "إخفاء اللاعبين",
+            "highlights": "تمييز الدردشة",
+            "nakb": "NA Ping / Knockback (PvP)",
+            "openchest": "فتح الصندوق بالأداة",
+            "partnernotify": "إشعارات الشريك",
+            "quickbuy": "الشراء السريع (BedWars)",
+            "quickchest": "الصندوق السريع (BedWars)",
+            "reach": "إظهار المدى (Reach)",
+            "receiverequests": "تلقي الطلبات",
+            "scoreboard": "لوحة النتائج",
+            "scoreboard_side": "موضع لوحة النتائج",
+            "showlevel": "إظهار المستوى في الدردشة",
+            "spectate": "السماح بالمشاهدين",
+            "tell": "الرسائل الخاصة",
+            "treecapitator": "Tree Capitator (Survival)",
+            "veinminer": "Vein Miner (Survival)",
+            "viewprofile": "رؤية الملف الشخصي"
+        }
     },
     "profanity": {
         "_prefix": "§cالنظام §8§l» §r",
@@ -2043,7 +2329,9 @@
         "lobby_bw": "{right}  §fi§cAkuna§9MC §8§l» §r§cBed§fWars{n}{right}{bar}{n}{right}§8§l» §r§7الانتصارات§8:§c {wins}{n}{right}§8§l» §r§7القتلات§8:§c {kills}{n}{right}§8§l» §r§7القتلات النهائية§8:§c {final_kills}{n}{right}§8§l» §r§7الأسرة المكسورة§8:§c {beds}{n}{right}{bar}{n}{n}{right}§c{address}",
         "lobby_sw": "{right}  §fi§cAkuna§9MC §8§l» §r§bSky§fWars{n}{right}{bar}{n}{right}§8§l» §r§7الانتصارات§8:§b {wins}{n}{right}§8§l» §r§7القتلات§8:§b {kills}{n}{right}§8§l» §r§7المباريات§8:§b {plays}{n}{right}{bar}{n}{n}{right}§b{address}",
         "lobby_tntrun": "{right}  §fi§cAkuna§9MC §8§l» §r§cTNT§fRun{n}{right}{bar}{n}{right}§8§l» §r§7انتصارات§8:§c {wins}{n}{right}§8§l» §r§7مباريات§8:§c {plays}{n}{right}{bar}{n}{n}{right}§c{address}",
-        "lobby_blockparty": "{right} §fi§cAkuna§9MC §8§l» §r§dBlock§fParty{n}{right}{bar}{n}{right}§8§l» §r§7انتصارات§8:§d {wins}{n}{right}§8§l» §r§7مباريات§8:§d {plays}{n}{right}{bar}{n}{n}{right}§d{address}"
+        "lobby_blockparty": "{right} §fi§cAkuna§9MC §8§l» §r§dBlock§fParty{n}{right}{bar}{n}{right}§8§l» §r§7انتصارات§8:§d {wins}{n}{right}§8§l» §r§7مباريات§8:§d {plays}{n}{right}{bar}{n}{n}{right}§d{address}",
+        "lobby_duels": "{right}  §fi§cAkuna§9MC §8§l» §r§2Duels{n}{right}{bar}{n}{right}§8§l» §r§7الفوز§8:§2 {wins}{n}{right}§8§l» §r§7الخسائر§8:§2 {defeats}{n}{right}§8§l» §r§7المباريات§8:§2 {plays}{n}{right}§8§l» §r§7السلسلة§8:§2 {streak}{n}{right}{bar}{n}{n}{right}§2{address}",
+        "lobby_pvpmodes": "{right} §fi§cAkuna§9MC §8§l» §r§bPvP Modes{n}{right}{bar}{n}{right}§8§l» §r§7القتلى§8:§b {kills}{n}{right}§8§l» §r§7الوفيات§8:§b {deaths}{n}{right}§8§l» §r§7السلسلة§8:§b {streak}{n}{right}{bar}{n}{n}{right}§b{address}"
     },
     "server": {
         "info": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §fمعلومات §8===-=-=-=-{n}§cالنظام §8» §r§7IP§8:§c iakunamc.com{n}§cالنظام §8» §r§7المنفذ§8:§c 19132{n}{n}§cالنظام §8» §r§7طلب انضمام للطاقم§8:§c https://staff.iakunamc.com{n}§cالنظام §8» §r§7المتجر§8:§c https://loja.iakunamc.com{n}§cالنظام §8» §r§7الديسكورد§8:§c https://discord.iakunamc.com{n}{n}§fY§cT §8» §r§7300 مشترك §a+ §7فيديو ترويجي{n}§fMini§cYT §8» §r§750 مشترك §a+ §7فيديو ترويجي{n}§cYT§fmirin §8» §r§70 مشترك §a+ §7فيديو ترويجي{n}§cملاحظات §8» §r§7ضع IP في العنوان/الوصف وروج للخادم مرة شهريًا للحفاظ على رتبتك",
@@ -2330,7 +2618,8 @@
                 "_prefix": "",
                 "bedwars": "§7اشترِ {target} ترقيات في §cBed§fWars"
             }
-        }
+        },
+        "reset_midnight": "§7تم تجديد المهام اليومية! استخدم §8/§6missions §7لتفقدها!"
     },
     "missions": {
         "_prefix": "§6المهام §8§l» §r",
@@ -2701,7 +2990,9 @@
         "buy": {
             "_prefix": "",
             "title": "§7شراء القفص §c{cage} §7مقابل §c{cost} أكونا§8?",
-            "success": "§cالأقفاص §8§l» §r§7تم شراء القفص §c{cage}§7!"
+            "success": "§cالأقفاص §8§l» §r§7تم شراء القفص §c{cage}§7!",
+            "confirm": "§aتأكيد",
+            "cancel": "§cإلغاء"
         }
     },
     "cage": {
@@ -2955,5 +3246,634 @@
             "success": "§7اللقب §6{titulo} §7تم شراؤه بنجاح!"
         },
         "expired": "§6الألقاب §8§l» §r§7لقبك §6{titulo} §7انتهت صلاحيته..."
+    },
+    "pearl": {
+        "_prefix": "",
+        "blocked": "§cلا توجد مساحة آمنة للانتقال إلى هناك!"
+    },
+    "pvpmodes": {
+        "_prefix": "§bPvP §8§l» §r",
+        "usage": "§7للدخول استخدم §8/§7{label} join §8<§7الوضع§8>{n}§bPvP §8§l» §r§7للمغادرة استخدم §8/§7{label} leave",
+        "join": {
+            "usage": "§cاستخدم §8/§c{label} join §8<§cالوضع§8>"
+        },
+        "modes_list": "§7الأوضاع المتاحة§8: §f{modes}",
+        "invalid_mode": "§cالوضع §f{mode} §cغير موجود!",
+        "world_unavailable": "§cخريطة الوضع {mode} §cغير متاحة حالياً...",
+        "joined": "§7انضممت إلى وضع {mode}§7!",
+        "joined_team": "§7انضممت إلى وضع {mode} §7في فريق {team}§7!",
+        "not_playing": "§cأنت لست في أي وضع PvP...",
+        "left": "§7لقد غادرت وضع PvP!",
+        "menu": {
+            "_prefix": "",
+            "back": "§c« رجوع",
+            "mode_item": "{label}{n}§7يلعبون§8: §f{playing}{n}{n}§eانقر للانضمام",
+            "prefs_item": "§3تفضيلات PvPModes{n}§7قم بضبط إعداداتك{n}{n}§eانقر للفتح",
+            "team_amarelo": "§eالفريق الأصفر",
+            "team_azul": "§9الفريق الأزرق",
+            "team_title": "§6TeamPvP §8§l» §r§7اختر الفريق",
+            "team_verde": "§aالفريق الأخضر",
+            "team_vermelho": "§cالفريق الأحمر",
+            "teampvp_item": "§6TeamPvP{n}§7يلعبون§8: §f{playing}{n}{n}§eانقر لاختيار فريقك",
+            "title": "§bPvPModes §8§l» §r§7اختر الوضع",
+            "uhc_item": "§bUHC{n}§7يلعبون§8: §f{playing}{n}{n}§eانقر لاختيار النوع",
+            "uhc_title": "§bPvPModes UHC §8§l» §r§7الأنواع",
+            "uhc_uhc": "§bUHC عادي",
+            "uhc_uhcfly": "§bUHC طيران",
+            "uhc_uhcheavy": "§bUHC §8(§cارتداد ثقيل§8)",
+            "uhc_uhclight": "§bUHC §8(§3ارتداد خفيف§8)"
+        }
+    },
+    "challenge": {
+        "_prefix": "§cمبارزة §8§l» §r",
+        "_noprefix": [
+            "menu",
+            "received"
+        ],
+        "cancelled_other": "§7ألغى اللاعب §c{player} §7التحدي...",
+        "cancelled_self": "§7لقد ألغيت التحدي المرسل إلى §c{player}§7...",
+        "denied_other": "§7رفض اللاعب §c{player} §7تحديك...",
+        "denied_self": "§7لقد رفضت التحدي من §c{player}§7...",
+        "error": {
+            "already_sent": "§cلديك بالفعل تحدٍ معلق قمت بإرساله...",
+            "challenger_busy": "§cأنت بالفعل في مباراة أو تحدٍ نشط...",
+            "challenger_offline": "§cالمتحدي §7{player} §cخرج من الخادم...",
+            "invalid_bet": "§cقيمة الرهان غير صالحة...",
+            "invalid_mode": "§cالوضع §7{mode} §cغير صالح! الأوضاع§8: §7duels§8, §7thebridge§8, §7bedwars§8, §7skywars...",
+            "invalid_rounds": "§cيجب أن يكون عدد الجولات بين §7{min} §cو §7{max}§c...",
+            "invalid_submode": "§cالوضع الفرعي §7{submode} §cغير صالح أو غير متوافق مع {mode}...",
+            "max_team_size": "§cالحد الأقصى المسموح به لحجم الفريق§8: §7{max}v{max}§c...",
+            "member_busy": "§cاللاعب §7{player} §cموجود بالفعل في مباراة أو تحدٍ...",
+            "member_offline": "§cخرج أحد أعضاء المجموعة قبل بدء التحدي...",
+            "no_arena_available": "§cلا توجد ساحة متاحة لبدء هذا الوضع الآن...",
+            "no_pending": "§cليس لديك أي تحديات معلقة...",
+            "no_pending_from": "§cليس لديك تحدٍ معلق من §7{player}§c...",
+            "no_sent_invite": "§cلم ترسل أي تحدٍ معلق...",
+            "not_enough_akunas": "§cتحتاج إلى §7{bet} Akunas §cلهذا الرهان...",
+            "not_in_challenge": "§cأنت لست في تحدٍ نشط...",
+            "player_offline": "§cاللاعب §7{player} §cغير متصل...",
+            "same_party": "§cلا يمكنك تحدي شخص في نفس المجموعة...",
+            "self": "§cلا يمكنك تحدي نفسك...",
+            "target_busy": "§cاللاعب §7{player} §cموجود بالفعل في مباراة أو تحدٍ...",
+            "target_has_pending": "§cاللاعب §7{player} §cلديه بالفعل تحدٍ معلق...",
+            "target_not_enough_akunas": "§cاللاعب §7{player} §cلا يملك §7{bet} Akunas §cللرهان...",
+            "target_not_party_leader": "§cفقط قائد مجموعة §7{player} §cيمكنه تلقي التحديات...",
+            "team_size_mismatch": "§cيجب أن تحتوي المجموعات على نفس عدد اللاعبين §8(§7{yours} ضد {theirs}§8)§c..."
+        },
+        "expired": "§7انتهت صلاحية التحدي مع §c{player}§7...",
+        "finished_tie": "§7انتهى التحدي بالتعادل! النتيجة النهائية §8(§f{leader_a} §c{score_a} §7x §9{score_b} §f{leader_b}§8)§7... تمت إعادة §cAkunas §7المرصودة للرهان!",
+        "finished_win": "§aالفوز لـ §f{winner}§a! النتيجة النهائية§8: §f{leader_a} §c{score_a} §7x §9{score_b} §f{leader_b} §8- §7الجائزة§8: §e{pot} Akunas§7!",
+        "menu": {
+            "_prefix": "",
+            "back": "§c« رجوع",
+            "bet_amount": "{amount} Akunas",
+            "bet_item": "{bet}{n}§7الجولات§8: §f{rounds}{n}{n}§aانقر لإرسال التحدي",
+            "bet_none": "§fبدون رهان",
+            "bet_title": "§cتحدي §8§l» §r§7الرهان §8(§7Akunas§8)",
+            "mode_item": "{label}{n}§7تحدي §f{player}{n}{n}§eانقر لاختيار الجولات",
+            "mode_title": "§cتحدي §8§l» §r§7الوضع",
+            "round_plural": "§e{rounds} جولات{n}{n}§eانقر لاختيار الرهان",
+            "round_single": "§e{rounds} جولة{n}{n}§eانقر لاختيار الرهان",
+            "rounds_title": "§cتحدي §8§l» §r§7الجولات"
+        },
+        "received": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §cمبارزة §8===-=-=-{n}§cمبارزة §8§l» §r§c{player} §7تحداك في {mode} §8(§f{format}§8) §7لمدة §e{rounds} جولة §8(§6{bet}§8)...{n}§cمبارزة §8§l» §r§7استخدم §a/desafiar accept {challenger} للقبول §7أو §c/desafiar deny {challenger} للرفض §8(§7{timeout}s§8)",
+        "round_finished": "§7انتهت الجولة §e{round}§8/§e{total}§7! النتيجة§8: §f{leader_a} §c{score_a} §7x §9{score_b} §f{leader_b} §8- §7الجولة التالية §8(§e{next}§8/§e{total}§8) §7خلال §e{delay}s§7!",
+        "round_starting": "§7بدء الجولة §e{round}§8/§e{total} §7في {mode} §8(§f{leader_a} §c{score_a} §7x §9{score_b} §f{leader_b}§8)!",
+        "sent": "§7تم إرسال التحدي إلى §c{player} §7في {mode} §8(§f{format}§8) §7لمدة §e{rounds} جولة §8(§6{bet}§8)!",
+        "status": "§7الجولة الحالية§8: §e{round}§8/§e{total} §8| §f{leader_a} §c{score_a} §7x §9{score_b} §f{leader_b} §8| §7الرهان§8: §6{bet} Akunas",
+        "usage": "§cاستخدم §8/§c{label} §8<§cلاعب§8> [§cduels§8|§cthebridge§8|§cbedwars§8|§cskywars§8] [§cالوضع الفرعي§8] [§cالجولات 1-10§8] [§cالرهان§8] §7أو §8/§c{label} §8<§caccept§8|§cdeny§8|§ccancel§8|§cstatus§8>",
+        "won_wo": "§cانسحاب §8(§cW.O.§8)§c! §7غادر اللاعب §c{quitter} §7المباراة... فاز §a{winner} §7وحصل على §e{pot} Akunas§7!",
+        "loading_arena": "§7جاري تحميل الساحة، يرجى الانتظار لحظة..."
+    },
+    "friends": {
+        "accept": {
+            "_prefix": "§cالنظام §8§l» §r",
+            "none": "§cليس لديك أي طلبات صداقة معلقة...",
+            "notify": "§b{friend} §7قبل طلب صداقتك!",
+            "success": "§7أنت و §b{friend} §7أصبحتما صديقين الآن!"
+        },
+        "add": {
+            "_prefix": "§cالنظام §8§l» §r",
+            "already": "§cأنت بالفعل صديق لـ §b{target}§c...",
+            "expired": "§cانتهت صلاحية طلب الصداقة من §b{sender}§c...",
+            "limit": "§cلقد وصلت إلى الحد الأقصى للأصدقاء ({max})!",
+            "pending": "§cهذا اللاعب لديه بالفعل طلب صداقة معلق...",
+            "request": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §bطلب صداقة §8===-=-=-{n}§cالنظام §8§l» §r§b{sender} §7أرسل لك طلب صداقة...{n}§cالنظام §8§l» §r§7استخدم §a/friend aceitar §7للقبول أو §c/friend recusar §7للرفض",
+            "self": "§cلا يمكنك إضافة نفسك كصديق...",
+            "sent": "§7تم إرسال طلب الصداقة إلى §b{target}§7!",
+            "target_limit": "§cوصل هذا اللاعب بالفعل إلى الحد الأقصى للأصدقاء!",
+            "usage": "§cاستخدم §8/§c{label} add §8<§cلاعب§8>"
+        },
+        "deny": {
+            "_prefix": "§cالنظام §8§l» §r",
+            "none": "§cليس لديك أي طلبات صداقة معلقة...",
+            "notify": "§b{target} §7رفض طلب صداقتك...",
+            "success": "§7تم رفض طلب الصداقة بنجاح!"
+        },
+        "friend": {
+            "_prefix": "§cالنظام §8§l» §r",
+            "joined": "§7انضم صديقك §b{friend} §7إلى الخادم!",
+            "left": "§7غادر صديقك §b{friend} §cالخادم§7..."
+        },
+        "list": {
+            "_prefix": "",
+            "entry": "§cالنظام §8§l» §r{status} §b{friend} §8| §7منذ§8:§b {date} §8(§7منذ {dateSince}§8){n}§cالنظام §8§l» §r§7تلقبه§8:§b {nicknameGiven} §8| §7يلقبك§8:§b {nicknameReceived}",
+            "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §bالأصدقاء §8(§7{count}§8/§7{max}§8) §8[§7صفحة {page}/{maxPages}§8] ===-=-=-=-",
+            "no_nickname": "§7لا يوجد لقب...§r",
+            "none": "§cالنظام §8§l» §r§cليس لديك أي أصدقاء بعد...",
+            "offline": "§c●",
+            "online": "§a●"
+        },
+        "nick": {
+            "_prefix": "§cالنظام §8§l» §r",
+            "success": "§7تم تعيين لقب §b{friend} §7إلى '§b{nickname}§7' بنجاح!",
+            "usage": "§cاستخدم §8/§c{label} nick §8<§cصديق§8> <§cلقب§8>"
+        },
+        "remove": {
+            "_prefix": "§cالنظام §8§l» §r",
+            "all_success": "§7تمت إزالة جميع أصدقائك!",
+            "invalid": "§cلاعب غير صالح أو ليس في قائمة أصدقائك...",
+            "none": "§cليس لديك أي أصدقاء...",
+            "notify": "§b{friend} §7أزالك من قائمة أصدقائه...",
+            "success": "§7لقد أزلت §b{friend} §7من قائمة أصدقائك...",
+            "usage": "§cاستخدم §8/§c{label} remover §8<§cلاعب§8|§c*§8>"
+        },
+        "usage": "§cالنظام §8§l» §r§cاستخدم §8/§c{label} §8<§cadd§8|§caceitar§8|§crecusar§8|§cremover§8|§clistar§8|§cnick§8>"
+    },
+    "online_reward": {
+        "_prefix": "§bالنشاط §8§l» §r",
+        "both": "§7للعبك لمدة §b{minutes}m§7، حصلت على §a+{akunas} Akunas §7و §9+{xp} XP§7!",
+        "akunas_only": "§7للعبك لمدة §b{minutes}m§7، حصلت على §a+{akunas} Akunas§7!",
+        "xp_only": "§7للعبك لمدة §b{minutes}m§7، حصلت على §9+{xp} XP§7!"
+    },
+    "angel": {
+        "_prefix": "§6A§en§6g§ee§6l §8§l» §r",
+        "invalid_world": "§cلا يمكنك تفعيل الأجنحة في هذا العالم..."
+    },
+    "hitparticles": {
+        "_prefix": "§6Hit§fParticles §8§l» §r",
+        "usage": "§cاستخدم §8/§c{label} §8<§con§8|§coff§8|§cshape§8|§clist§8>",
+        "on_usage": "§cاستخدم §8/§c{label} on §8<§cجسيم§8> §8[§cشكل§8]",
+        "invalid_shape": "§cشكل غير صالح... الأشكال المتاحة§8:§c {shapes}",
+        "shapes": "§7الأشكال المتاحة§8:§6 {shapes}",
+        "shape_set": "§7تم تغيير الشكل إلى §6{shape} §8(§5{type}§8) §7بنجاح!",
+        "activated": "§7تم تفعيل جسيم الضرب §5{type} §8(§6{shape}§8) §7بنجاح!",
+        "deactivated": "§7تم تعطيل جسيمات الضرب بنجاح!",
+        "list": "§7قائمة الجسيمات المتاحة §8(§f{count}§8):§7 {particles}{n}§6Hit§fParticles §8§l» §r§7أشكال الضرب§8:§6 {shapes}"
+    },
+    "bridgepractice": {
+        "_prefix": "§eتدريب الجسور §8§l» §r",
+        "_noprefix": [
+            "fell",
+            "finish_tip",
+            "record_title",
+            "record_subtitle",
+            "hud_popup",
+            "clutch_kb"
+        ],
+        "joined": "§7انضممت إلى §eتدريب الجسور§7! استخدم الساعة في شريط الأدوات لضبط الجسر أو المسافة أو الكلتش...",
+        "left": "§7لقد غادرت §eتدريب الجسور§7!",
+        "reset": "§7تمت إعادة تعيين الجزيرة بنجاح!",
+        "not_in_game": "§cأنت لست في تدريب الجسور...",
+        "world_error": "§cتعذر إنشاء عالم تدريب الجسور الخاص بك...",
+        "fell": "§cلقد سقطت! جارٍ إعادة التعيين...",
+        "finish": "§7اكتمل الجسر في §e{time} §8(§e{best} §8| §f{blocks} مكعب§8)",
+        "finish_record": "§e§lرقم قياسي جديد! §r§7اكتمل في §e{time} §8(§f{blocks} مكعب§8)",
+        "finish_infinite_record": "§e§lرقم قياسي لا نهائي جديد! §r§e{blocks} مكعب§7!",
+        "finish_tip": "§aانتهى في §e{time}!",
+        "record_title": "§6§lرقم قياسي جديد!§r",
+        "record_subtitle": "§eالوقت§8: §f{time}",
+        "hud_popup": "§eالوقت§8: §f{time} §8| §7المكعبات§8: §e{blocks}",
+        "clutch_kb": "§cالارتداد §8(§f{intensity}§8)",
+        "notify": {
+            "mode_set": "§7تم تغيير الوضع إلى §e{mode}§7 بنجاح!",
+            "distance_set": "§7تم تعيين المسافة إلى §e{distance} مكعب§7!",
+            "distance_infinite_set": "§7تم تعيين المسافة إلى §dجسر لا نهائي§7!",
+            "block_set": "§7المكعب المحدد§8:§e {block}",
+            "kb_intensity_set": "§7تم تعيين شدة الارتداد إلى §c{intensity}§7!",
+            "kb_interval_set": "§7تم تعيين الفاصل الزمني للارتداد إلى §6{interval}§7!"
+        },
+        "item": {
+            "_prefix": "",
+            "reset": "§8-> §eإعادة تعيين الجزيرة",
+            "menu": "§8-> §bضبط الجسر والكلتش",
+            "leave": "§8-> §cمغادرة التدريب"
+        },
+        "block": {
+            "_prefix": "",
+            "wool_white": "صوف أبيض",
+            "wool_red": "صوف أحمر",
+            "wool_blue": "صوف أزرق",
+            "clay_yellow": "طين أصفر",
+            "sandstone": "حجر رملي",
+            "obsidian": "سبج"
+        },
+        "scoreboard": {
+            "_prefix": "",
+            "header": "§eتدريب الجسور",
+            "mode": "الوضع",
+            "distance": "المسافة",
+            "time": "الوقت",
+            "record": "الأفضل",
+            "blocks": "المكعبات",
+            "kb": "KB",
+            "attempts": "المحاولات",
+            "infinite": "لا نهائي",
+            "best_blocks": "{blocks} bl"
+        },
+        "mode": {
+            "_prefix": "",
+            "straight": "مستقيم",
+            "diagonal": "قطري",
+            "stair_up": "تصاعدي مستقيم",
+            "diagonal_up": "تصاعدي قطري",
+            "clutch": "كلتش مستقيم",
+            "clutch_diagonal": "كلتش قطري"
+        },
+        "mode_desc": {
+            "_prefix": "",
+            "straight": "جسر مستقيم مسطح تقليدي",
+            "diagonal": "جسر قطري",
+            "stair_up": "جسر مستقيم تصاعدي كالدرج",
+            "diagonal_up": "جسر قطري تصاعدي",
+            "clutch": "جسر مستقيم جاهز مع ارتداد أفقي",
+            "clutch_diagonal": "جسر قطري جاهز مع ارتداد أفقي"
+        },
+        "menu": {
+            "_prefix": "",
+            "title": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §eتدريب الجسور §8===-=-=-=-",
+            "status_selected": "§a§lمحدد§r",
+            "status_active": "§a§l[نشط]§r",
+            "click_select": "§eانقر للتحديد",
+            "click_set": "§7انقر للتعيين",
+            "click_choose": "§7انقر للاختيار",
+            "distance_blocks": "{distance} مكعب",
+            "distance_infinite": "جسر لا نهائي",
+            "kb_intensity_item": "{color}الارتداد: {intensity}\n§7وضع الكلتش\n{status}",
+            "kb_interval_item": "{color}فاصل الارتداد: {interval}\n§7الوقت بين الارتدادات\n{status}",
+            "back": "§e§l« رجوع§r\n§7القائمة الرئيسية",
+            "reset_item": "§eإعادة تعيين الجزيرة\n§7يمسح المكعبات الموضوعة",
+            "leave_item": "§cمغادرة التدريب\n§7العودة إلى اللوبي",
+            "stats_item": "§aإحصائياتك\n\n§7أفضل رقم حالي§8: §e{best}\n§7إجمالي الإكمالات§8: §b{total}",
+            "shortcut_clutch": "§c§lالانتقال إلى الكلتش§r\n§7تبديل وفتح إعدادات الكلتش",
+            "shortcut_bridge": "§b§lالانتقال إلى الجسر§r\n§7تبديل وفتح إعدادات الجسر",
+            "hub": {
+                "bridge_title": "§e§lإعدادات الجسر§r",
+                "bridge_desc": "§7مستقيم، قطري، تصاعدي،\n§7المسافة (أو لا نهائي) والمكعبات\n\n{status}",
+                "clutch_title": "§c§lإعدادات الكلتش§r",
+                "clutch_desc": "§7جسر جاهز، شدة الارتداد،\n§7الفاصل الزمني والاتجاه\n\n{status}",
+                "current_status": "§a§lنشط§r §8(§f{mode} §8| §e{distance}§8)\n§eانقر للضبط",
+                "current_clutch_status": "§a§lنشط§r §8(§f{mode} §8| §c{intensity} §f/ §6{interval}§8)\n§eانقر للضبط",
+                "switch_to_bridge": "§eانقر للتبديل إلى الجسر\n§7وفتح الإعدادات",
+                "switch_to_clutch": "§eانقر للتبديل إلى الكلتش\n§7وفتح الإعدادات"
+            }
+        }
+    },
+    "captcha": {
+        "_prefix": "§9Captcha §8§l» §r",
+        "_noprefix": [
+            "kick",
+            "tip",
+            "map",
+            "menu",
+            "item"
+        ],
+        "kick": {
+            "full": "§cالتحقق ضد البوتات ممتلئ حالياً... حاول مرة أخرى بعد بضع ثوانٍ!",
+            "timeout": "§cانتهى الوقت §8(§c30s§8)§c لإكمال الكابتشا...",
+            "failed": "§cلقد فشلت في الكابتشا مرات عديدة..."
+        },
+        "tip": {
+            "timer": "§9Captcha §8§l» §r§7الوقت المتبقي§8:§c {seconds}s"
+        },
+        "map": {
+            "item_name": "§eخريطة الكابتشا"
+        },
+        "menu": {
+            "title": "§8اختر§8: {item}",
+            "reopen_item": "§bفتح قائمة الكابتشا"
+        },
+        "prompt": {
+            "map": "§7انظر إلى الخريطة في يدك واكتب الرمز في الدردشة خلال §c{seconds}s",
+            "menu": "§7انقر على العنصر {item} §r§7في القائمة خلال §c{seconds}s §8(§7استخدم §8/§7captcha لإعادة الفتح§8)",
+            "hotbar": "§7حدد العنصر {item} §r§7في شريط الأدوات خلال §c{seconds}s",
+            "phrase": "§7اكتب هذه العبارة بالضبط في الدردشة§8: §9{phrase} §8(§c{seconds}s§8)",
+            "math": "§7حل في الدردشة§8: §9{expression} §8(§c{seconds}s§8)"
+        },
+        "error": {
+            "retry": "§cإجابة غير صحيحة... المحاولات المتبقية§8: §c{attempts}",
+            "command": "§cأكمل الكابتشا قبل استخدام الأوامر..."
+        },
+        "success": "§7تم التحقق من الكابتشا بنجاح!",
+        "item": {
+            "diamond": "§bألماس",
+            "emerald": "§aزمرد",
+            "golden_apple": "§6تفاحة ذهبية",
+            "nether_star": "§eنجمة النذر",
+            "ender_eye": "§dعين إندر",
+            "gold_ingot": "§eسبيكة ذهب",
+            "ender_pearl": "§3لؤلؤة إندر",
+            "blaze_powder": "§cمسحوق بليز",
+            "compass": "§7بوصلة",
+            "diamond_sword": "§bسيف ألماسي",
+            "apple": "§cتفاحة",
+            "feather": "§fريشة",
+            "clock": "§eساعة",
+            "slimeball": "§aكرة سلايم",
+            "coal": "§8فحم",
+            "bone": "§fعظم",
+            "paper": "§fورقة",
+            "blaze_rod": "§6عصا بليز"
+        }
+    },
+    "spectate": {
+        "_prefix": "§9مشاهدة §8§l» §r",
+        "_noprefix": [
+            "item"
+        ],
+        "command": {
+            "usage": "§cاستخدم §8/§cassistir §8<§cلاعب§8|§cleave§8>"
+        },
+        "error": {
+            "self": "§cلا يمكنك مشاهدة نفسك...",
+            "must_leave_game": "§cغادر مباراتك الحالية قبل مشاهدة لاعب آخر...",
+            "disallowed_mode": "§cوضع المشاهدة غير مسموح به في Plot أو Survival...",
+            "target_not_playing": "§cهذا اللاعب ليس في أي لعبة مصغرة الآن...",
+            "target_offline": "§cاللاعب §f{player} §cغير موجود أو غير متصل...",
+            "privacy": "§c{player} §cلا يسمح بالمشاهدين حسب تفضيلاته الحالية...",
+            "not_spectating": "§cأنت لا تشاهد أي شخص الآن..."
+        },
+        "item": {
+            "leave": "§cمغادرة وضع المشاهدة",
+            "teleporter": "§8-> §aاللاعبون",
+            "play_again": "§8-> §aالعب مرة أخرى"
+        },
+        "started": "§7أنت تشاهد الآن §9{player}§7! استخدم §8/§7assistir sair أو السرير للمغادرة",
+        "stopped": {
+            "manual": "§7لقد غادرت وضع المشاهدة!",
+            "match_ended": "§7انتهت المباراة التي كنت تشاهدها...",
+            "target_offline": "§cخرج اللاعب الذي كنت تشاهده من الخادم...",
+            "disallowed_mode": "§cتوقف وضع المشاهدة عند الدخول إلى Plot أو Survival..."
+        },
+        "menu": {
+            "title": "§8الانتقال إلى لاعب",
+            "no_players": "{prefix}§cلا يوجد لاعبون أحياء للانتقال إليهم...",
+            "team_icon": "{team} §7({count})",
+            "team_player_head": "{team} §8- §f{player}{n}§7الصحة: §c{hp}❤{n}§eانقر للانتقال",
+            "player_head": "§a{player}{n}§7الصحة: §c{hp}❤{n}§eانقر للانتقال",
+            "player_unavailable": "{prefix}§cهذا اللاعب لم يعد متاحاً..."
+        },
+        "teleported": "{prefix}§aتم الانتقال إلى §e{player}§a!"
+    },
+    "cooldown": {
+        "_noprefix": [
+            "indicator",
+            "item"
+        ],
+        "indicator": {
+            "entry": "§7{item}§8:§c {seconds}s §8[{bar}§8]",
+            "ready": "§7{item} §aمتاح!"
+        },
+        "item": {
+            "fireball": "كرة نارية",
+            "egg": "بيضة",
+            "irongolem": "غولم حديدي",
+            "silverfish": "سمكة فضية",
+            "slingshot": "مقلاع",
+            "sponge": "إسفنجة",
+            "bridge": "بيضة الجسر",
+            "tower": "برج",
+            "platform": "منصة",
+            "enderpearl": "لؤلؤة إندر",
+            "tntegg": "بيضة TNT",
+            "hook": "خطاف",
+            "archer": "رامي السهام",
+            "cheststealer": "سارق الصندوق"
+        }
+    },
+    "staffchat": {
+        "discord_format": "§9Staff§fChat §8(§bDiscord§8) §8§l» §r§f{player}§8:§7 {message}"
+    },
+    "booster": {
+        "_prefix": "§dBooster §8§l» §r",
+        "activated": "§aشكراً لدعمك في Discord! §7لقد حصلت على لقب §dBooster§7، و§e+{xp}% XP §7و§e+25% في /daily§7!",
+        "monthly_claimed": "§aتم استلام المكافأة الشهرية: §e+{amount} Akunas§a! §8(§7القادمة بعد {time}§8)",
+        "expired": "§7انتهى دعم Discord الخاص بك، تم إزالة لقب ومزايا Booster."
+    },
+    "enchant": {
+        "_prefix": "§6Survival §8§l» §r",
+        "hold_tool": "§cأمسك فأساً أو معولاً أو مجرفة في يدك للتطوير!",
+        "keep_tool": "§cأبقِ الأداة في يدك لإتمام التطوير.",
+        "already_applied": "§cهذه الأداة تحتوي بالفعل على هذا التطوير!",
+        "incompatible": "§cهذا التطوير غير متوافق مع هذه الأداة!",
+        "success": "§aتم تطبيق {enchant} §aعلى أداتك مقابل §e{cost} Akunas§a!",
+        "menu": {
+            "_prefix": "",
+            "title": "§6Survival §8§l» §r§dالتطوير",
+            "applied": "§a✔ مطبق بالفعل",
+            "incompatible": "§c✖ غير متوافق مع هذه الأداة",
+            "cost": "§7التكلفة§8: §e{cost} Akunas",
+            "cost_with_tax": "{n}§7مع الضريبة§8: §e{total} Akunas",
+            "click_to_apply": "{n}{n}§eاضغط للتطبيق!",
+            "entry": "{color}§l{name} {level}{n}§7{desc}{n}{n}{status}"
+        },
+        "items": {
+            "_prefix": "",
+            "auto_smelt": {
+                "name": "Auto-Smelt",
+                "desc": "صهر المعادن والرمل تلقائياً عند التعدين"
+            },
+            "telekinesis": {
+                "name": "Telekinesis",
+                "desc": "إرسال الموارد مباشرة إلى حقيبتك"
+            },
+            "excavation": {
+                "name": "حفر 3x3",
+                "desc": "تكسير مساحة 3x3 حول الكتلة المحفورة"
+            }
+        }
+    },
+    "discord_bot": {
+        "common": {
+            "server_unavailable": "❌ | Server unavailable...",
+            "server_unavailable_detail": "❌ | Minecraft server is currently unavailable ({error}).",
+            "generic_error": "❌ | An error occurred...",
+            "error_detail": "❌ | Error: {error}",
+            "guild_not_allowed": "❌ | This bot is not configured for this server...",
+            "official_only": "❌ | This command can only be used in the official server...",
+            "command_error": "❌ | Error executing command...",
+            "permanent": "Permanent",
+            "unknown": "Unknown",
+            "disabled": "❌ Disabled",
+            "not_linked_short": "❌ Not linked"
+        },
+        "booster": {
+            "sync_error": "❌ | Could not sync your boost ({error}).",
+            "not_linked_boosting": "💜 | Boost detected! Use `/discord` on the server and then `/vincular` here to unlock the **Booster** title, **+25% XP**, **+25% on /daily** and **10,000 Akunas/month**!",
+            "not_linked": "ℹ️ | Your account is not linked yet. Use `/discord` on the server and `/vincular` here.",
+            "not_boosting": "ℹ️ | Linked account: `{name}`. You are not boosting the server right now.",
+            "title": "💜 Server Booster Rewards",
+            "linked_account": "👤 **Linked account:** `{name}`",
+            "exclusive_title": "🏷️ **Exclusive title:** `Booster`",
+            "xp_bonus": "✨ **XP bonus:** `+25%` passive",
+            "daily_bonus": "🎁 **`/daily` bonus:** `+25%` stackable with Galaxy+",
+            "monthly_claimed": "💰 **Monthly reward claimed:** `+{amount} Akunas`",
+            "next_claim": "⏳ **Next monthly reward:** <t:{timestamp}:R>"
+        },
+        "account": {
+            "not_linked": "❌ | No account is linked...",
+            "field_2fa": "🔑 | 2FA",
+            "field_email": "📫 | Email",
+            "field_last_login": "🟢 | Last login",
+            "field_created_at": "📅 | Account Created",
+            "mode_discord": "🔷 Discord",
+            "mode_email": "📧 Email"
+        },
+        "link": {
+            "invalid_code": "❌ | Invalid code, use `/discord` on the server to generate a new one...",
+            "expired_code": "❌ | Expired code, use `/discord` on the server to generate a new one...",
+            "already_linked": "❌ | This account is already linked to `{player}`",
+            "title": "✅ Account linked!",
+            "description": "Your account was linked successfully...",
+            "footer": "Use /discord desvincular to unlink your account"
+        },
+        "unlink": {
+            "not_linked": "❌ | No linked account...",
+            "title": "🔗 | Account unlinked",
+            "description": "Account unlinked successfully..."
+        },
+        "confirmlogin": {
+            "invalid_code": "❌ | Invalid code...",
+            "expired_code": "❌ | Expired code...",
+            "not_linked": "❌ | You do not have a linked account...",
+            "player_offline": "❌ | Player offline...",
+            "title": "✅ | Authentication complete!",
+            "description": "Login authorized successfully..."
+        },
+        "resetpassword": {
+            "not_linked": "❌ | No account is linked...",
+            "title": "🔑 | Password reset!",
+            "description": "Your credentials were reset successfully..."
+        },
+        "moderation": {
+            "staff_not_linked": "❌ | Discord account not linked to any staff member...",
+            "no_permission_ban": "❌ | Your account does not have permission to ban...",
+            "no_permission_kick": "❌ | Your account does not have permission to kick...",
+            "no_permission_mute": "❌ | Your account does not have permission to mute...",
+            "no_permission_unmute": "❌ | Your account does not have permission to unmute...",
+            "no_permission_warn": "❌ | Your account does not have permission to warn...",
+            "player_not_found": "❌ | Player `{player}` not found...",
+            "player_offline": "❌ | Player offline...",
+            "target_is_staff_ban": "❌ | You cannot ban a staff member...",
+            "target_is_staff_kick": "❌ | You cannot kick a staff member...",
+            "target_is_staff_mute": "❌ | You cannot mute a staff member...",
+            "target_is_staff_warn": "❌ | You cannot warn a staff member...",
+            "already_banned": "❌ | `{player}` is already banned...",
+            "already_muted": "❌ | `{player}` is already muted...",
+            "not_banned": "❌ | `{player}` is not banned...",
+            "not_muted": "❌ | `{player}` is not muted...",
+            "no_history": "✅ | This player has no punishments...",
+            "ban_title": "🔨 | Player banned",
+            "kick_title": "👢 | Player kicked",
+            "mute_title": "🔇 | Player muted",
+            "unmute_title": "🔊 | Player unmuted",
+            "warn_title": "⚠️ | Player warned",
+            "baninfo_title": "🔨 | Ban info — {player}",
+            "muteinfo_title": "🔇 | Mute info — {player}",
+            "history_title": "📋 | Punishment History — {player}",
+            "field_player": "👤 | Player",
+            "field_staff": "🛡️ | Staff",
+            "field_duration": "⌛ | Duration",
+            "field_reason": "📝 | Reason",
+            "field_warns": "⚠️ | Active warnings",
+            "field_banned_at": "📅 | Banned at",
+            "field_muted_at": "📅 | Muted at",
+            "expires_in": "Expires <t:{timestamp}:R>",
+            "history_entry": "> {time} - **{action}** by **{staff}**{duration}{n}- {reason}"
+        },
+        "clan": {
+            "not_found": "❌ | Clan not found...",
+            "type_public": "🔓 Public",
+            "type_invite": "📩 Invite",
+            "type_private": "🔒 Private",
+            "type_closed": "⛔ Closed",
+            "field_leader": "👑 | Leader",
+            "field_level": "📊 | Level",
+            "field_xp": "✨ | XP",
+            "field_members": "👥 | Members",
+            "field_type": "📋 | Type",
+            "field_created": "📅 | Created",
+            "field_description": "📝 | Description",
+            "field_members_count": "👥 | Members ({count})"
+        },
+        "addskin": {
+            "invalid_id": "❌ | Invalid ID (use only a-z, 0-9, _ and -)...",
+            "file_too_large": "❌ | File too large (max 5MB)...",
+            "download_failed": "❌ | Could not download the file...",
+            "invalid_png": "❌ | File is not a valid PNG or exceeds max dimensions...",
+            "skin_too_small": "❌ | Skin too small...",
+            "skin_transparent": "❌ | Invalid skin: at least 70% of pixels must be visible (non-transparent)...",
+            "invalid_type": "❌ | Invalid type...",
+            "invalid_skin_data": "❌ | Invalid skin data...",
+            "success": "✅ | Skin {id} ({name}) added successfully!"
+        },
+        "staffcode": {
+            "invalid_code": "❌ | Invalid code...",
+            "code_used": "❌ | Code already used or expired...",
+            "code_expired": "❌ | Code expired...",
+            "not_linked": "❌ | You must link your Discord account first...",
+            "name_mismatch": "❌ | Linked account name does not match the name entered on the site...",
+            "title": "✅ Authentication confirmed!",
+            "description": "Your identity was confirmed as **{name}**. Return to the website to continue your application."
+        },
+        "staff_review": {
+            "not_found": "⚠️ | Application not found...",
+            "tag_applied": "{n}🎮 | Trial tag applied to **{name}** on the server",
+            "tag_failed": "{n}⚠️ | Failed to apply tag on the server ({error}).",
+            "server_offline": "{n}⚠️ | Server unavailable...",
+            "approved_by": "✅ **Approved** by <@{userId}>.{note}",
+            "refuse_modal_title": "Reject application",
+            "refuse_reason_label": "Rejection reason",
+            "refused_dm": "🚧 | Your application was **rejected**...{n}You can view the reason on our website: https://staff.iakunamc.com",
+            "refused_by": "❌ | **Rejected** by <@{userId}>"
+        },
+        "perfil": {
+            "provide_player": "❌ | Please specify a player...",
+            "profile_hidden": "❌ | This player's profile is hidden...",
+            "not_found": "❌ | Player not found...",
+            "no_records_period": "No records in this period...",
+            "stats_header": "📊 | Stats — {period}",
+            "field_level": "⭐ | Level",
+            "level_value": "**{level}** ({xp} XP — {needed} XP needed for next level)",
+            "field_akunas": "💰 | Akunas",
+            "field_online_time": "🕐 | Playtime",
+            "field_last_online": "📅 | Last online",
+            "field_clan": "🛡️ | Clan",
+            "field_married": "💍 | Married to",
+            "field_about": "📝 | About",
+            "period_total": "Total",
+            "period_daily": "Daily",
+            "period_weekly": "Weekly",
+            "period_monthly": "Monthly",
+            "game_duels": "Duels",
+            "game_overall_kills": "Overall Kills",
+            "stat_wins": "Wins",
+            "stat_kills": "Kills",
+            "stat_plays": "Matches played",
+            "stat_defeats": "Defeats",
+            "stat_final_kills": "Final Kills",
+            "stat_broken_beds": "Beds Broken",
+            "stat_points": "Goals scored",
+            "stat_deaths": "Deaths"
+        },
+        "top": {
+            "title": "Top {game} — {period}",
+            "empty": "No records found...",
+            "score_kills": "⚔️ {amount} kills",
+            "score_akunas": "💰 {amount} Akunas",
+            "score_levels": "⭐ Level {amount}",
+            "score_xp": "✨ {amount} XP",
+            "score_wins": "🏆 {amount} wins"
+        }
     }
 }
