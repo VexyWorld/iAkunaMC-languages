@@ -1198,7 +1198,6 @@
         "command": {
             "_prefix": "§2Duels §8§l» §r",
             "in_duel": "§cVous ne pouvez pas utiliser cette commande pendant un duel!",
-            "player_only": "§cSeuls les joueurs peuvent utiliser cette commande...",
             "not_in_game": "§cVous n'êtes dans aucune file ou duel...",
             "no_arenas": "§cAucune arène n'est disponible pour le moment...",
             "party_size": "§c§2Duels §cne prend en charge que les groupes de 2 joueurs exactement...",
@@ -1208,9 +1207,6 @@
                 "_prefix": "",
                 "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §2Duels §8===-=-=-=-",
                 "entry": "§2Duels §8§l» §r§8/§7{cmd} §8- §7{desc}",
-                "modes": "§2Duels §8§l» §r§7Modes disponibles§8: §2{modes}",
-                "modes_none": "§7aucun",
-                "footer": "§8-=-=-=-===============================-=-=-=-",
                 "desc": {
                     "play": "Rejoindre la file",
                     "bot": "Affronter un Bot",
@@ -2281,6 +2277,11 @@
     "profile": {
         "view": {
             "disabled": "§3Profil §8§l» §r§cLe joueur a désactivé la visualisation du profil..."
+        },
+        "stats": {
+            "period_item": "§bPériode§8: §e{period}\n\n{list}\n\n§eCliquez pour changer",
+            "chat_summary_item": "§6» Résumé dans le Chat\n§7Envoie vos stats de {game} §8(§7{period}§8)\n§eCliquez pour envoyer",
+            "summary_header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §bProfil {period} §8- §3{player} §8- {game} §8===-=-=-=-"
         }
     },
     "randomtp": {
@@ -3429,7 +3430,12 @@
             "record_title",
             "record_subtitle",
             "hud_popup",
-            "clutch_kb"
+            "clutch_kb",
+            "launch_finish_tip",
+            "launch_record_title",
+            "launch_record_subtitle",
+            "launch_hud_popup",
+            "launch_missed"
         ],
         "joined": "§7Vous avez rejoint le §eBridge Practice§7! Utilisez l'horloge dans votre barre d'action pour configurer le pont, la distance ou le clutch...",
         "left": "§7Vous avez quitté le §eBridge Practice§7!",
@@ -3457,7 +3463,10 @@
             "_prefix": "",
             "reset": "§8-> §eRéinitialiser l'Île",
             "menu": "§8-> §bConfigurer Pont & Clutch",
-            "leave": "§8-> §cQuitter l'Entraînement"
+            "leave": "§8-> §cQuitter l'Entraînement",
+            "fireball": "§r§cBoule de Feu",
+            "slingshot": "§r§aLance-Pierre",
+            "tnt": "§r§cTNT"
         },
         "block": {
             "_prefix": "",
@@ -3479,7 +3488,8 @@
             "kb": "KB",
             "attempts": "Essais",
             "infinite": "Infini",
-            "best_blocks": "{blocks} bl"
+            "best_blocks": "{blocks} bl",
+            "last_distance": "Dernière"
         },
         "mode": {
             "_prefix": "",
@@ -3488,7 +3498,11 @@
             "stair_up": "Montée Droite",
             "diagonal_up": "Montée Diagonale",
             "clutch": "Clutch Droit",
-            "clutch_diagonal": "Clutch Diagonal"
+            "clutch_diagonal": "Clutch Diagonal",
+            "launch_fireball": "Fireball Jump",
+            "launch_slingshot": "Lance-Pierre",
+            "launch_tnt": "TNT Jump",
+            "launch_combo": "Combo (3 en 1)"
         },
         "mode_desc": {
             "_prefix": "",
@@ -3497,7 +3511,11 @@
             "stair_up": "Pont droit montant en escalier",
             "diagonal_up": "Pont diagonal montant en escalier",
             "clutch": "Pont droit préconstruit avec knockback horizontal",
-            "clutch_diagonal": "Pont diagonal préconstruit avec knockback horizontal"
+            "clutch_diagonal": "Pont diagonal préconstruit avec knockback horizontal",
+            "launch_fireball": "Utilisez des boules de feu pour aller plus loin sur le pont d'or",
+            "launch_slingshot": "Utilisez le lance-pierre pour atteindre la plus grande distance",
+            "launch_tnt": "Utilisez les explosions de TNT pour vous propulser sur le pont d'or",
+            "launch_combo": "Fireball + Lance-Pierre + TNT ensemble pour des combos extrêmes"
         },
         "menu": {
             "_prefix": "",
@@ -3525,9 +3543,20 @@
                 "current_status": "§a§lACTIF§r §8(§f{mode} §8| §e{distance}§8)\n§eCliquez pour configurer",
                 "current_clutch_status": "§a§lACTIF§r §8(§f{mode} §8| §c{intensity} §f/ §6{interval}§8)\n§eCliquez pour configurer",
                 "switch_to_bridge": "§eCliquez pour passer au Pont\n§7et ouvrir les paramètres",
-                "switch_to_clutch": "§eCliquez pour passer au Clutch\n§7et ouvrir les paramètres"
+                "switch_to_clutch": "§eCliquez pour passer au Clutch\n§7et ouvrir les paramètres",
+                "launch_title": "§6§lEntraînement Propulsion§r",
+                "launch_desc": "§7Fireball, Lance-Pierre, TNT ou les 3 ensemble\n§7Atterrissez sur le pont d'or pour mesurer !\n\n{status}",
+                "current_launch_status": "§a§lACTIF§r §8(§f{mode} §8| §6{best}§8)\n§eCliquez pour configurer",
+                "switch_to_launch": "§eCliquez pour passer à Propulsion\n§7et ouvrir les modes de distance"
             }
-        }
+        },
+        "launch_missed": "§cVous êtes tombé hors du pont d'or ! Réinitialisation...",
+        "launch_finish": "§7Vous avez atteint §e{distance} §7sur le pont d'or ! §8(§7Record§8: §6{best}§8)",
+        "launch_finish_record": "§e§lNOUVEAU RECORD DE DISTANCE ! §r§7Vous avez atteint §e{distance}§7!",
+        "launch_finish_tip": "§aDistance§8: §e{distance}!",
+        "launch_record_title": "§6§lNOUVEAU RECORD !§r",
+        "launch_record_subtitle": "§eDistance§8: §f{distance}",
+        "launch_hud_popup": "§eDistance§8: §f{distance}"
     },
     "captcha": {
         "_prefix": "§9Captcha §8§l» §r",
@@ -3864,7 +3893,11 @@
             "stat_final_kills": "Final Kills",
             "stat_broken_beds": "Beds Broken",
             "stat_points": "Goals scored",
-            "stat_deaths": "Deaths"
+            "stat_deaths": "Deaths",
+            "period_yearly": "Annuel",
+            "stat_completions": "Complétions",
+            "stat_blocks": "Blocs posés",
+            "stat_attempts": "Essais"
         },
         "top": {
             "title": "Top {game} — {period}",

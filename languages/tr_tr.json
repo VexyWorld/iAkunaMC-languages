@@ -1198,7 +1198,6 @@
         "command": {
             "_prefix": "§2Düellolar §8§l» §r",
             "in_duel": "§cDüellodayken bu komutu kullanamazsın!",
-            "player_only": "§cBu komutu yalnızca oyuncular kullanabilir...",
             "not_in_game": "§cHerhangi bir sırada veya düelloda değilsin...",
             "no_arenas": "§cŞu anda uygun arena yok...",
             "party_size": "§c§2Duels §cyalnızca tam olarak 2 kişilik partileri destekler...",
@@ -1208,9 +1207,6 @@
                 "_prefix": "",
                 "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §2Duels §8===-=-=-=-",
                 "entry": "§2Duels §8§l» §r§8/§7{cmd} §8- §7{desc}",
-                "modes": "§2Duels §8§l» §r§7Mevcut modlar§8: §2{modes}",
-                "modes_none": "§7yok",
-                "footer": "§8-=-=-=-===============================-=-=-=-",
                 "desc": {
                     "play": "Sıraya katıl",
                     "bot": "Bota karşı düello yap",
@@ -2281,6 +2277,11 @@
     "profile": {
         "view": {
             "disabled": "§3Profil §8§l» §r§cOyuncu profil görüntülemeyi devre dışı bıraktı..."
+        },
+        "stats": {
+            "period_item": "§bDönem§8: §e{period}\n\n{list}\n\n§eDeğiştirmek için tıkla",
+            "chat_summary_item": "§6» Sohbet Özeti\n§7{game} istatistiklerini gönderir §8(§7{period}§8)\n§eGöndermek için tıkla",
+            "summary_header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §bProfil {period} §8- §3{player} §8- {game} §8===-=-=-=-"
         }
     },
     "randomtp": {
@@ -3429,7 +3430,12 @@
             "record_title",
             "record_subtitle",
             "hud_popup",
-            "clutch_kb"
+            "clutch_kb",
+            "launch_finish_tip",
+            "launch_record_title",
+            "launch_record_subtitle",
+            "launch_hud_popup",
+            "launch_missed"
         ],
         "joined": "§7§eBridge Practice §7moduna katıldın! Köprü, mesafe veya clutch ayarlamak için envanter çubuğundaki saati kullan...",
         "left": "§7§eBridge Practice §7modundan ayrıldın!",
@@ -3457,7 +3463,10 @@
             "_prefix": "",
             "reset": "§8-> §eAdayı Sıfırla",
             "menu": "§8-> §bKöprü & Clutch Yapılandır",
-            "leave": "§8-> §cAntrenmandan Çık"
+            "leave": "§8-> §cAntrenmandan Çık",
+            "fireball": "§r§cAteş Topu",
+            "slingshot": "§r§aSapan",
+            "tnt": "§r§cTNT"
         },
         "block": {
             "_prefix": "",
@@ -3479,7 +3488,8 @@
             "kb": "KB",
             "attempts": "Deneme",
             "infinite": "Sonsuz",
-            "best_blocks": "{blocks} bl"
+            "best_blocks": "{blocks} bl",
+            "last_distance": "Son"
         },
         "mode": {
             "_prefix": "",
@@ -3488,7 +3498,11 @@
             "stair_up": "Yükselen Düz",
             "diagonal_up": "Yükselen Çapraz",
             "clutch": "Clutch Düz",
-            "clutch_diagonal": "Clutch Çapraz"
+            "clutch_diagonal": "Clutch Çapraz",
+            "launch_fireball": "Fireball Jump",
+            "launch_slingshot": "Sapan",
+            "launch_tnt": "TNT Jump",
+            "launch_combo": "Kombo (3'ü 1 arada)"
         },
         "mode_desc": {
             "_prefix": "",
@@ -3497,7 +3511,11 @@
             "stair_up": "Merdiven şeklinde yükselen düz köprü",
             "diagonal_up": "Merdiven şeklinde yükselen çapraz köprü",
             "clutch": "Yatay knockback içeren hazır düz köprü",
-            "clutch_diagonal": "Yatay knockback içeren hazır çapraz köprü"
+            "clutch_diagonal": "Yatay knockback içeren hazır çapraz köprü",
+            "launch_fireball": "Altın köprüde daha uzağa uçmak için ateş topu kullan",
+            "launch_slingshot": "En uzak mesafeye ulaşmak için sapanı kullan",
+            "launch_tnt": "Altın köprüye fırlamak için TNT patlamalarını kullan",
+            "launch_combo": "Ekstrem kombolar için Ateş Topu + Sapan + TNT birlikte"
         },
         "menu": {
             "_prefix": "",
@@ -3525,9 +3543,20 @@
                 "current_status": "§a§lAKTİF§r §8(§f{mode} §8| §e{distance}§8)\n§eYapılandırmak için tıkla",
                 "current_clutch_status": "§a§lAKTİF§r §8(§f{mode} §8| §c{intensity} §f/ §6{interval}§8)\n§eYapılandırmak için tıkla",
                 "switch_to_bridge": "§eKöprüye geçmek\n§7ve ayarları açmak için tıkla",
-                "switch_to_clutch": "§eClutch'a geçmek\n§7ve ayarları açmak için tıkla"
+                "switch_to_clutch": "§eClutch'a geçmek\n§7ve ayarları açmak için tıkla",
+                "launch_title": "§6§lFırlatma Antrenmanı§r",
+                "launch_desc": "§7Ateş Topu, Sapan, TNT veya 3'ü birlikte\n§7Ölçüm için düz altın köprüye in!\n\n{status}",
+                "current_launch_status": "§a§lAKTİF§r §8(§f{mode} §8| §6{best}§8)\n§eAyarlamak için tıkla",
+                "switch_to_launch": "§eFırlatma moduna geçmek\n§7ve mesafe modlarını açmak için tıkla"
             }
-        }
+        },
+        "launch_missed": "§cAltın köprünün dışına düştün! Sıfırlanıyor...",
+        "launch_finish": "§7Altın köprüde §e{distance} §7mesafeye ulaştın! §8(§7Rekor§8: §6{best}§8)",
+        "launch_finish_record": "§e§lYENİ MESAFE REKORU! §r§7§e{distance} §7mesafeye ulaştın!",
+        "launch_finish_tip": "§aMesafe§8: §e{distance}!",
+        "launch_record_title": "§6§lYENİ REKOR!§r",
+        "launch_record_subtitle": "§eMesafe§8: §f{distance}",
+        "launch_hud_popup": "§eMesafe§8: §f{distance}"
     },
     "captcha": {
         "_prefix": "§9Captcha §8§l» §r",
@@ -3864,7 +3893,11 @@
             "stat_final_kills": "Final Kills",
             "stat_broken_beds": "Beds Broken",
             "stat_points": "Goals scored",
-            "stat_deaths": "Deaths"
+            "stat_deaths": "Deaths",
+            "period_yearly": "Yıllık",
+            "stat_completions": "Tamamlamalar",
+            "stat_blocks": "Konulan bloklar",
+            "stat_attempts": "Denemeler"
         },
         "top": {
             "title": "Top {game} — {period}",

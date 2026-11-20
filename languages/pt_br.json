@@ -1198,7 +1198,6 @@
         "command": {
             "_prefix": "§2Duelos §8§l» §r",
             "in_duel": "§cVocê não pode usar este comando enquanto está em um duelo!",
-            "player_only": "§cApenas jogadores podem usar este comando...",
             "not_in_game": "§cVocê não está em nenhuma fila ou duelo...",
             "no_arenas": "§cNão há arenas disponíveis no momento...",
             "party_size": "§cO Duels suporta apenas parties de exatamente 2 jogadores...",
@@ -1208,9 +1207,6 @@
                 "_prefix": "",
                 "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §2Duelos §8===-=-=-=-",
                 "entry": "§2Duelos §8§l» §r§8/§7{cmd} §8- §7{desc}",
-                "modes": "§2Duelos §8§l» §r§7Modos disponíveis§8: §2{modes}",
-                "modes_none": "§7nenhum",
-                "footer": "§8-=-=-=-===============================-=-=-=-",
                 "desc": {
                     "play": "Entrar na fila",
                     "bot": "Duelar contra um Bot",
@@ -2434,6 +2430,11 @@
     "profile": {
         "view": {
             "disabled": "§3Perfil §8§l» §r§cO jogador desativou a visualização de perfil..."
+        },
+        "stats": {
+            "period_item": "§bPeríodo§8: §e{period}\n\n{list}\n\n§eClique para alternar",
+            "chat_summary_item": "§6» Ver Sumário no Chat\n§7Envia suas estatísticas de {game} §8(§7{period}§8)\n§eClique para enviar",
+            "summary_header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §bPerfil {period} §8- §3{player} §8- {game} §8===-=-=-=-"
         }
     },
     "randomtp": {
@@ -3429,7 +3430,12 @@
             "record_title",
             "record_subtitle",
             "hud_popup",
-            "clutch_kb"
+            "clutch_kb",
+            "launch_finish_tip",
+            "launch_record_title",
+            "launch_record_subtitle",
+            "launch_hud_popup",
+            "launch_missed"
         ],
         "joined": "§7Você entrou no §eTreino de Ponte§7! Utilize o relógio na hotbar para configurar ponte, distância ou clutch...",
         "left": "§7Você saiu do §eTreino de Ponte§7!",
@@ -3457,7 +3463,10 @@
             "_prefix": "",
             "reset": "§8-> §eReiniciar Ilha",
             "menu": "§8-> §bConfigurar Ponte & Clutch",
-            "leave": "§8-> §cSair do Treino"
+            "leave": "§8-> §cSair do Treino",
+            "fireball": "§r§cBola de Fogo",
+            "slingshot": "§r§aEstilingue",
+            "tnt": "§r§cTNT"
         },
         "block": {
             "_prefix": "",
@@ -3479,7 +3488,8 @@
             "kb": "KB",
             "attempts": "Tentativas",
             "infinite": "Infinita",
-            "best_blocks": "{blocks} bl"
+            "best_blocks": "{blocks} bl",
+            "last_distance": "Ultima"
         },
         "mode": {
             "_prefix": "",
@@ -3488,7 +3498,11 @@
             "stair_up": "Subindo Reto",
             "diagonal_up": "Subindo Diagonal",
             "clutch": "Clutch Reta",
-            "clutch_diagonal": "Clutch Diagonal"
+            "clutch_diagonal": "Clutch Diagonal",
+            "launch_fireball": "Fireball Jump",
+            "launch_slingshot": "Estilingue",
+            "launch_tnt": "TNT Jump",
+            "launch_combo": "Combo (3 em 1)"
         },
         "mode_desc": {
             "_prefix": "",
@@ -3497,7 +3511,11 @@
             "stair_up": "Ponte reta subindo em escada",
             "diagonal_up": "Ponte diagonal subindo em escada",
             "clutch": "Ponte pronta com knockback horizontal (reto)",
-            "clutch_diagonal": "Ponte diagonal pronta com knockback horizontal"
+            "clutch_diagonal": "Ponte diagonal pronta com knockback horizontal",
+            "launch_fireball": "Use bolas de fogo para ir mais longe na ponte de ouro",
+            "launch_slingshot": "Use o estilingue para alcançar a maior distância",
+            "launch_tnt": "Use explosões de TNT para se lançar na ponte de ouro",
+            "launch_combo": "Fireball + Estilingue + TNT juntos para combos extremos"
         },
         "menu": {
             "_prefix": "",
@@ -3525,9 +3543,20 @@
                 "current_status": "§a§lATIVO§r §8(§f{mode} §8| §e{distance}§8)\n§eClique para configurar",
                 "current_clutch_status": "§a§lATIVO§r §8(§f{mode} §8| §c{intensity} §f/ §6{interval}§8)\n§eClique para configurar",
                 "switch_to_bridge": "§eClique para trocar para Ponte\n§7e abrir as configurações",
-                "switch_to_clutch": "§eClique para trocar para Clutch\n§7e abrir as configurações"
+                "switch_to_clutch": "§eClique para trocar para Clutch\n§7e abrir as configurações",
+                "launch_title": "§6§lTreino de Impulso§r",
+                "launch_desc": "§7Fireball, Estilingue, TNT ou os 3 juntos\n§7Caia na ponte reta de ouro para medir!\n\n{status}",
+                "current_launch_status": "§a§lATIVO§r §8(§f{mode} §8| §6{best}§8)\n§eClique para configurar",
+                "switch_to_launch": "§eClique para trocar para Impulso\n§7e abrir os modos de distância"
             }
-        }
+        },
+        "launch_missed": "§cVocê caiu fora da ponte de ouro! Reiniciando...",
+        "launch_finish": "§7Você alcançou §e{distance} §7na ponte de ouro! §8(§7Recorde§8: §6{best}§8)",
+        "launch_finish_record": "§e§lNOVO RECORDE DE DISTÂNCIA! §r§7Você alcançou §e{distance}§7!",
+        "launch_finish_tip": "§aDistância§8: §e{distance}!",
+        "launch_record_title": "§6§lNOVO RECORDE!§r",
+        "launch_record_subtitle": "§eDistância§8: §f{distance}",
+        "launch_hud_popup": "§eDistância§8: §f{distance}"
     },
     "captcha": {
         "_prefix": "§9Captcha §8§l» §r",
@@ -3864,7 +3893,11 @@
             "stat_final_kills": "Kills Finais",
             "stat_broken_beds": "Camas Quebradas",
             "stat_points": "Pontos marcados",
-            "stat_deaths": "Mortes"
+            "stat_deaths": "Mortes",
+            "period_yearly": "Anual",
+            "stat_completions": "Conclusões",
+            "stat_blocks": "Blocos colocados",
+            "stat_attempts": "Tentativas"
         },
         "top": {
             "title": "Top {game} — {period}",

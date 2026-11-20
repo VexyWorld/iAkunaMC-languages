@@ -1198,7 +1198,6 @@
         "command": {
             "_prefix": "§2决斗 §8§l» §r",
             "in_duel": "§c决斗中不能使用此命令！",
-            "player_only": "§c只有玩家可以使用此命令...",
             "not_in_game": "§c您不在任何队列或决斗中...",
             "no_arenas": "§c当前没有可用的竞技场...",
             "party_size": "§c§2Duels §c仅支持恰好2名玩家的组队...",
@@ -1208,9 +1207,6 @@
                 "_prefix": "",
                 "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §2Duels §8===-=-=-=-",
                 "entry": "§2Duels §8§l» §r§8/§7{cmd} §8- §7{desc}",
-                "modes": "§2Duels §8§l» §r§7可用模式§8: §2{modes}",
-                "modes_none": "§7无",
-                "footer": "§8-=-=-=-===============================-=-=-=-",
                 "desc": {
                     "play": "加入队列",
                     "bot": "与机器人决斗",
@@ -2281,6 +2277,11 @@
     "profile": {
         "view": {
             "disabled": "§3个人资料 §8§l» §r§c该玩家已关闭个人资料查看..."
+        },
+        "stats": {
+            "period_item": "§b周期§8: §e{period}\n\n{list}\n\n§e点击切换",
+            "chat_summary_item": "§6» 发送聊天汇总\n§7发送 {game} 数据 §8(§7{period}§8)\n§e点击发送",
+            "summary_header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §b档案 {period} §8- §3{player} §8- {game} §8===-=-=-=-"
         }
     },
     "randomtp": {
@@ -3429,7 +3430,12 @@
             "record_title",
             "record_subtitle",
             "hud_popup",
-            "clutch_kb"
+            "clutch_kb",
+            "launch_finish_tip",
+            "launch_record_title",
+            "launch_record_subtitle",
+            "launch_hud_popup",
+            "launch_missed"
         ],
         "joined": "§7您已加入 §e搭路练习§7！使用快捷栏中的时钟来配置搭桥、距离或防击退救场...",
         "left": "§7您已离开 §e搭路练习§7！",
@@ -3457,7 +3463,10 @@
             "_prefix": "",
             "reset": "§8-> §e重置岛屿",
             "menu": "§8-> §b配置搭桥与救场",
-            "leave": "§8-> §c离开练习"
+            "leave": "§8-> §c离开练习",
+            "fireball": "§r§c火球",
+            "slingshot": "§r§a弹弓",
+            "tnt": "§r§cTNT"
         },
         "block": {
             "_prefix": "",
@@ -3479,7 +3488,8 @@
             "kb": "KB",
             "attempts": "尝试次数",
             "infinite": "无限",
-            "best_blocks": "{blocks} 格"
+            "best_blocks": "{blocks} 格",
+            "last_distance": "上次"
         },
         "mode": {
             "_prefix": "",
@@ -3488,7 +3498,11 @@
             "stair_up": "直线上升",
             "diagonal_up": "斜向上升",
             "clutch": "直线救场",
-            "clutch_diagonal": "斜向救场"
+            "clutch_diagonal": "斜向救场",
+            "launch_fireball": "火球跳",
+            "launch_slingshot": "弹弓跳",
+            "launch_tnt": "TNT跳",
+            "launch_combo": "三合一连招"
         },
         "mode_desc": {
             "_prefix": "",
@@ -3497,7 +3511,11 @@
             "stair_up": "阶梯式直线上升搭桥",
             "diagonal_up": "阶梯式斜向上升搭桥",
             "clutch": "带水平击退的预设直线桥",
-            "clutch_diagonal": "带水平击退的预设斜向桥"
+            "clutch_diagonal": "带水平击退的预设斜向桥",
+            "launch_fireball": "使用火球在金桥上飞得更远",
+            "launch_slingshot": "使用弹弓飞出最远距离",
+            "launch_tnt": "利用TNT爆炸将自己推向金桥",
+            "launch_combo": "火球 + 弹弓 + TNT 三合一大连招"
         },
         "menu": {
             "_prefix": "",
@@ -3525,9 +3543,20 @@
                 "current_status": "§a§l已启用§r §8(§f{mode} §8| §e{distance}§8)\n§e点击配置",
                 "current_clutch_status": "§a§l已启用§r §8(§f{mode} §8| §c{intensity} §f/ §6{interval}§8)\n§e点击配置",
                 "switch_to_bridge": "§e点击切换到搭桥模式\n§7并打开设置",
-                "switch_to_clutch": "§e点击切换到救场模式\n§7并打开设置"
+                "switch_to_clutch": "§e点击切换到救场模式\n§7并打开设置",
+                "launch_title": "§6§l推进练习§r",
+                "launch_desc": "§7火球、弹弓、TNT 或三合一\n§7落在笔直的金桥上即可计算距离！\n\n{status}",
+                "current_launch_status": "§a§l已激活§r §8(§f{mode} §8| §6{best}§8)\n§e点击配置",
+                "switch_to_launch": "§e点击切换到推进训练\n§7并打开距离模式"
             }
-        }
+        },
+        "launch_missed": "§c你掉出金桥了！正在重置...",
+        "launch_finish": "§7你在金桥上飞出了 §e{distance}§7！§8(§7最佳§8: §6{best}§8)",
+        "launch_finish_record": "§e§l新距离纪录！§r§7你达到了 §e{distance}§7！",
+        "launch_finish_tip": "§a距离§8: §e{distance}!",
+        "launch_record_title": "§6§l新纪录！§r",
+        "launch_record_subtitle": "§e距离§8: §f{distance}",
+        "launch_hud_popup": "§e距离§8: §f{distance}"
     },
     "captcha": {
         "_prefix": "§9Captcha §8§l» §r",
@@ -3864,7 +3893,11 @@
             "stat_final_kills": "Final Kills",
             "stat_broken_beds": "Beds Broken",
             "stat_points": "Goals scored",
-            "stat_deaths": "Deaths"
+            "stat_deaths": "Deaths",
+            "period_yearly": "年度",
+            "stat_completions": "完成次数",
+            "stat_blocks": "放置方块",
+            "stat_attempts": "尝试次数"
         },
         "top": {
             "title": "Top {game} — {period}",

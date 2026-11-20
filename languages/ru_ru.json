@@ -1198,7 +1198,6 @@
         "command": {
             "_prefix": "§2Дуэли §8§l» §r",
             "in_duel": "§cВы не можете использовать эту команду во время дуэли!",
-            "player_only": "§cТолько игроки могут использовать эту команду...",
             "not_in_game": "§cВы не находитесь в очереди или дуэли...",
             "no_arenas": "§cСейчас нет доступных арен...",
             "party_size": "§c§2Duels §cподдерживает только группы ровно из 2 игроков...",
@@ -1208,9 +1207,6 @@
                 "_prefix": "",
                 "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §2Duels §8===-=-=-=-",
                 "entry": "§2Duels §8§l» §r§8/§7{cmd} §8- §7{desc}",
-                "modes": "§2Duels §8§l» §r§7Доступные режимы§8: §2{modes}",
-                "modes_none": "§7нет",
-                "footer": "§8-=-=-=-===============================-=-=-=-",
                 "desc": {
                     "play": "Встать в очередь",
                     "bot": "Дуэль против Бота",
@@ -2281,6 +2277,11 @@
     "profile": {
         "view": {
             "disabled": "§3Профиль §8§l» §r§cИгрок отключил просмотр профиля..."
+        },
+        "stats": {
+            "period_item": "§bПериод§8: §e{period}\n\n{list}\n\n§eНажмите, чтобы сменить",
+            "chat_summary_item": "§6» Сводка в чат\n§7Отправить статистику {game} §8(§7{period}§8)\n§eНажмите для отправки",
+            "summary_header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §bПрофиль {period} §8- §3{player} §8- {game} §8===-=-=-=-"
         }
     },
     "randomtp": {
@@ -3429,7 +3430,12 @@
             "record_title",
             "record_subtitle",
             "hud_popup",
-            "clutch_kb"
+            "clutch_kb",
+            "launch_finish_tip",
+            "launch_record_title",
+            "launch_record_subtitle",
+            "launch_hud_popup",
+            "launch_missed"
         ],
         "joined": "§7Вы вошли в §eBridge Practice§7! Используйте часы в хотбаре для настройки моста, дистанции или клатча...",
         "left": "§7Вы вышли из §eBridge Practice§7!",
@@ -3457,7 +3463,10 @@
             "_prefix": "",
             "reset": "§8-> §eСбросить Остров",
             "menu": "§8-> §bНастроить Мост и Клатч",
-            "leave": "§8-> §cВыйти из Тренировки"
+            "leave": "§8-> §cВыйти из Тренировки",
+            "fireball": "§r§cОгненный шар",
+            "slingshot": "§r§aРогатка",
+            "tnt": "§r§cДинамит"
         },
         "block": {
             "_prefix": "",
@@ -3479,7 +3488,8 @@
             "kb": "KB",
             "attempts": "Попытки",
             "infinite": "Бесконечный",
-            "best_blocks": "{blocks} бл"
+            "best_blocks": "{blocks} бл",
+            "last_distance": "Прошлая"
         },
         "mode": {
             "_prefix": "",
@@ -3488,7 +3498,11 @@
             "stair_up": "Прямой Подъём",
             "diagonal_up": "Диагональный Подъём",
             "clutch": "Прямой Клатч",
-            "clutch_diagonal": "Диагональный Клатч"
+            "clutch_diagonal": "Диагональный Клатч",
+            "launch_fireball": "Фаербол-прыжок",
+            "launch_slingshot": "Рогатка",
+            "launch_tnt": "TNT-прыжок",
+            "launch_combo": "Комбо (3 в 1)"
         },
         "mode_desc": {
             "_prefix": "",
@@ -3497,7 +3511,11 @@
             "stair_up": "Прямой мост с подъёмом лесенкой",
             "diagonal_up": "Диагональный мост с подъёмом лесенкой",
             "clutch": "Готовый прямой мост с боковым откидыванием",
-            "clutch_diagonal": "Готовый диагональный мост с боковым откидыванием"
+            "clutch_diagonal": "Готовый диагональный мост с боковым откидыванием",
+            "launch_fireball": "Используйте фаерболы, чтобы пролететь дальше по золотому мосту",
+            "launch_slingshot": "Используйте рогатку для максимальной дистанции",
+            "launch_tnt": "Используйте взрыв TNT для прыжка на золотой мост",
+            "launch_combo": "Фаербол + Рогатка + TNT вместе для мощных комбо"
         },
         "menu": {
             "_prefix": "",
@@ -3525,9 +3543,20 @@
                 "current_status": "§a§lАКТИВНО§r §8(§f{mode} §8| §e{distance}§8)\n§eНажмите для настройки",
                 "current_clutch_status": "§a§lАКТИВНО§r §8(§f{mode} §8| §c{intensity} §f/ §6{interval}§8)\n§eНажмите для настройки",
                 "switch_to_bridge": "§eНажмите для перехода к Мосту\n§7и открытия настроек",
-                "switch_to_clutch": "§eНажмите для перехода к Клатчу\n§7и открытия настроек"
+                "switch_to_clutch": "§eНажмите для перехода к Клатчу\n§7и открытия настроек",
+                "launch_title": "§6§lТренировка буста§r",
+                "launch_desc": "§7Фаербол, Рогатка, TNT или все 3 вместе\n§7Приземлитесь на прямой золотой мост для замера!\n\n{status}",
+                "current_launch_status": "§a§lАКТИВНО§r §8(§f{mode} §8| §6{best}§8)\n§eНажмите для настройки",
+                "switch_to_launch": "§eНажмите для перехода к бусту\n§7и открытия режимов дистанции"
             }
-        }
+        },
+        "launch_missed": "§cВы упали мимо золотого моста! Перезапуск...",
+        "launch_finish": "§7Вы пролетели §e{distance} §7по золотому мосту! §8(§7Рекорд§8: §6{best}§8)",
+        "launch_finish_record": "§e§lНОВЫЙ РЕКОРД ДИСТАНЦИИ! §r§7Вы достигли §e{distance}§7!",
+        "launch_finish_tip": "§aДистанция§8: §e{distance}!",
+        "launch_record_title": "§6§lНОВЫЙ РЕКОРД!§r",
+        "launch_record_subtitle": "§eДистанция§8: §f{distance}",
+        "launch_hud_popup": "§eДистанция§8: §f{distance}"
     },
     "captcha": {
         "_prefix": "§9Captcha §8§l» §r",
@@ -3864,7 +3893,11 @@
             "stat_final_kills": "Final Kills",
             "stat_broken_beds": "Beds Broken",
             "stat_points": "Goals scored",
-            "stat_deaths": "Deaths"
+            "stat_deaths": "Deaths",
+            "period_yearly": "Годовой",
+            "stat_completions": "Завершений",
+            "stat_blocks": "Блоков поставлено",
+            "stat_attempts": "Попыток"
         },
         "top": {
             "title": "Top {game} — {period}",

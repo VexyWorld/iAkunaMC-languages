@@ -1198,7 +1198,6 @@
         "command": {
             "_prefix": "§2Duels §8§l» §r",
             "in_duel": "§cYou cannot use this command while in a duel!",
-            "player_only": "§cOnly players can use this command...",
             "not_in_game": "§cYou are not in any queue or duel...",
             "no_arenas": "§cThere are no arenas available right now...",
             "party_size": "§cDuels only supports parties of exactly 2 players...",
@@ -1207,9 +1206,6 @@
                 "_prefix": "",
                 "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §2Duels §8===-=-=-=-",
                 "entry": "§2Duels §8§l» §r§8/§7{cmd} §8- §7{desc}",
-                "modes": "§2Duels §8§l» §r§7Available modes§8: §2{modes}",
-                "modes_none": "§7none",
-                "footer": "§8-=-=-=-===============================-=-=-=-",
                 "desc": {
                     "play": "Join queue",
                     "leave": "Leave queue or duel",
@@ -2375,6 +2371,11 @@
     "profile": {
         "view": {
             "disabled": "§3Profile §8§l» §r§cThe player has disabled profile viewing..."
+        },
+        "stats": {
+            "period_item": "§bPeriod§8: §e{period}\n\n{list}\n\n§eClick to switch",
+            "chat_summary_item": "§6» Chat Summary\n§7Sends {game} stats §8(§7{period}§8) §7in chat\n§eClick to send",
+            "summary_header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §b{period} Profile §8- §3{player} §8- {game} §8===-=-=-=-"
         }
     },
     "randomtp": {
@@ -3370,7 +3371,12 @@
             "record_title",
             "record_subtitle",
             "hud_popup",
-            "clutch_kb"
+            "clutch_kb",
+            "launch_finish_tip",
+            "launch_record_title",
+            "launch_record_subtitle",
+            "launch_hud_popup",
+            "launch_missed"
         ],
         "joined": "§7You joined §eBridge Practice§7! Use the clock in your hotbar to configure bridge, distance or clutch...",
         "left": "§7You left §eBridge Practice§7!",
@@ -3398,7 +3404,10 @@
             "_prefix": "",
             "reset": "§8-> §eReset Island",
             "menu": "§8-> §bConfigure Bridge & Clutch",
-            "leave": "§8-> §cLeave Practice"
+            "leave": "§8-> §cLeave Practice",
+            "fireball": "§r§cFireball",
+            "slingshot": "§r§aSlingshot",
+            "tnt": "§r§cTNT"
         },
         "block": {
             "_prefix": "",
@@ -3420,7 +3429,8 @@
             "kb": "KB",
             "attempts": "Attempts",
             "infinite": "Infinite",
-            "best_blocks": "{blocks} bl"
+            "best_blocks": "{blocks} bl",
+            "last_distance": "Last"
         },
         "mode": {
             "_prefix": "",
@@ -3429,7 +3439,11 @@
             "stair_up": "Ascending Straight",
             "diagonal_up": "Ascending Diagonal",
             "clutch": "Clutch Straight",
-            "clutch_diagonal": "Clutch Diagonal"
+            "clutch_diagonal": "Clutch Diagonal",
+            "launch_fireball": "Fireball Jump",
+            "launch_slingshot": "Slingshot",
+            "launch_tnt": "TNT Jump",
+            "launch_combo": "Combo (All 3)"
         },
         "mode_desc": {
             "_prefix": "",
@@ -3438,7 +3452,11 @@
             "stair_up": "Ascending straight staircase bridge",
             "diagonal_up": "Ascending diagonal bridge",
             "clutch": "Pre-built straight bridge with horizontal knockback",
-            "clutch_diagonal": "Pre-built diagonal bridge with horizontal knockback"
+            "clutch_diagonal": "Pre-built diagonal bridge with horizontal knockback",
+            "launch_fireball": "Use fireballs to launch far across the gold bridge",
+            "launch_slingshot": "Use the slingshot to reach the farthest distance",
+            "launch_tnt": "Use TNT blasts to boost yourself onto the gold bridge",
+            "launch_combo": "Fireball + Slingshot + TNT together for extreme combos"
         },
         "menu": {
             "_prefix": "",
@@ -3466,9 +3484,20 @@
                 "current_status": "§a§lACTIVE§r §8(§f{mode} §8| §e{distance}§8)\n§eClick to configure",
                 "current_clutch_status": "§a§lACTIVE§r §8(§f{mode} §8| §c{intensity} §f/ §6{interval}§8)\n§eClick to configure",
                 "switch_to_bridge": "§eClick to switch to Bridge\n§7and open settings",
-                "switch_to_clutch": "§eClick to switch to Clutch\n§7and open settings"
+                "switch_to_clutch": "§eClick to switch to Clutch\n§7and open settings",
+                "launch_title": "§6§lBoost Training§r",
+                "launch_desc": "§7Fireball, Slingshot, TNT or all 3 combined\n§7Land on the straight gold bridge to measure!\n\n{status}",
+                "current_launch_status": "§a§lACTIVE§r §8(§f{mode} §8| §6{best}§8)\n§eClick to configure",
+                "switch_to_launch": "§eClick to switch to Boost\n§7and open distance modes"
             }
-        }
+        },
+        "launch_missed": "§cYou missed the gold bridge! Resetting...",
+        "launch_finish": "§7You reached §e{distance} §7on the gold bridge! §8(§7Best§8: §6{best}§8)",
+        "launch_finish_record": "§e§lNEW DISTANCE RECORD! §r§7You reached §e{distance}§7!",
+        "launch_finish_tip": "§aDistance§8: §e{distance}!",
+        "launch_record_title": "§6§lNEW RECORD!§r",
+        "launch_record_subtitle": "§eDistance§8: §f{distance}",
+        "launch_hud_popup": "§eDistance§8: §f{distance}"
     },
     "captcha": {
         "_prefix": "§9Captcha §8§l» §r",
@@ -3864,7 +3893,11 @@
             "stat_final_kills": "Final Kills",
             "stat_broken_beds": "Beds Broken",
             "stat_points": "Goals scored",
-            "stat_deaths": "Deaths"
+            "stat_deaths": "Deaths",
+            "period_yearly": "Yearly",
+            "stat_completions": "Completions",
+            "stat_blocks": "Blocks placed",
+            "stat_attempts": "Attempts"
         },
         "top": {
             "title": "Top {game} — {period}",

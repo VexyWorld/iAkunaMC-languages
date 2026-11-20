@@ -1199,7 +1199,6 @@
         "command": {
             "_prefix": "§2Duelos §8§l» §r",
             "in_duel": "§c¡No puedes usar este comando mientras estás en un duelo!",
-            "player_only": "§cSolo los jugadores pueden usar este comando...",
             "not_in_game": "§cNo estás en ninguna cola o duelo...",
             "no_arenas": "§cNo hay arenas disponibles en este momento...",
             "party_size": "§c§2Duels §csolamente soporta parties de exactamente 2 jugadores...",
@@ -1209,9 +1208,6 @@
                 "_prefix": "",
                 "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §2Duels §8===-=-=-=-",
                 "entry": "§2Duels §8§l» §r§8/§7{cmd} §8- §7{desc}",
-                "modes": "§2Duels §8§l» §r§7Modos disponibles§8: §2{modes}",
-                "modes_none": "§7ninguno",
-                "footer": "§8-=-=-=-===============================-=-=-=-",
                 "desc": {
                     "play": "Entrar a la cola",
                     "bot": "Duelar contra un Bot",
@@ -2282,6 +2278,11 @@
     "profile": {
         "view": {
             "disabled": "§3Perfil §8§l» §r§cEl jugador desactivó la visualización de perfil..."
+        },
+        "stats": {
+            "period_item": "§bPeríodo§8: §e{period}\n\n{list}\n\n§eHaz clic para cambiar",
+            "chat_summary_item": "§6» Ver Resumen en Chat\n§7Envía estadísticas de {game} §8(§7{period}§8)\n§eHaz clic para enviar",
+            "summary_header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §bPerfil {period} §8- §3{player} §8- {game} §8===-=-=-=-"
         }
     },
     "randomtp": {
@@ -3430,7 +3431,12 @@
             "record_title",
             "record_subtitle",
             "hud_popup",
-            "clutch_kb"
+            "clutch_kb",
+            "launch_finish_tip",
+            "launch_record_title",
+            "launch_record_subtitle",
+            "launch_hud_popup",
+            "launch_missed"
         ],
         "joined": "§7¡Entraste a §eBridge Practice§7! Usa el reloj en tu hotbar para configurar puente, distancia o clutch...",
         "left": "§7¡Saliste de §eBridge Practice§7!",
@@ -3458,7 +3464,10 @@
             "_prefix": "",
             "reset": "§8-> §eReiniciar Isla",
             "menu": "§8-> §bConfigurar Puente y Clutch",
-            "leave": "§8-> §cSalir de la Práctica"
+            "leave": "§8-> §cSalir de la Práctica",
+            "fireball": "§r§cBola de Fuego",
+            "slingshot": "§r§aResortera",
+            "tnt": "§r§cTNT"
         },
         "block": {
             "_prefix": "",
@@ -3480,7 +3489,8 @@
             "kb": "KB",
             "attempts": "Intentos",
             "infinite": "Infinito",
-            "best_blocks": "{blocks} bl"
+            "best_blocks": "{blocks} bl",
+            "last_distance": "Última"
         },
         "mode": {
             "_prefix": "",
@@ -3489,7 +3499,11 @@
             "stair_up": "Subiendo Recto",
             "diagonal_up": "Subiendo Diagonal",
             "clutch": "Clutch Recto",
-            "clutch_diagonal": "Clutch Diagonal"
+            "clutch_diagonal": "Clutch Diagonal",
+            "launch_fireball": "Fireball Jump",
+            "launch_slingshot": "Resortera",
+            "launch_tnt": "TNT Jump",
+            "launch_combo": "Combo (3 en 1)"
         },
         "mode_desc": {
             "_prefix": "",
@@ -3498,7 +3512,11 @@
             "stair_up": "Puente recto subiendo en escalera",
             "diagonal_up": "Puente diagonal subiendo en escalera",
             "clutch": "Puente recto preconstruido con knockback horizontal",
-            "clutch_diagonal": "Puente diagonal preconstruido con knockback horizontal"
+            "clutch_diagonal": "Puente diagonal preconstruido con knockback horizontal",
+            "launch_fireball": "Usa bolas de fuego para llegar más lejos en el puente de oro",
+            "launch_slingshot": "Usa la resortera para alcanzar la mayor distancia",
+            "launch_tnt": "Usa explosiones de TNT para impulsarte al puente de oro",
+            "launch_combo": "Fireball + Resortera + TNT juntos para combos extremos"
         },
         "menu": {
             "_prefix": "",
@@ -3526,9 +3544,20 @@
                 "current_status": "§a§lACTIVO§r §8(§f{mode} §8| §e{distance}§8)\n§eClic para configurar",
                 "current_clutch_status": "§a§lACTIVO§r §8(§f{mode} §8| §c{intensity} §f/ §6{interval}§8)\n§eClic para configurar",
                 "switch_to_bridge": "§eClic para cambiar a Puente\n§7y abrir la configuración",
-                "switch_to_clutch": "§eClic para cambiar a Clutch\n§7y abrir la configuración"
+                "switch_to_clutch": "§eClic para cambiar a Clutch\n§7y abrir la configuración",
+                "launch_title": "§6§lEntreno de Impulso§r",
+                "launch_desc": "§7Fireball, Resortera, TNT o los 3 juntos\n§7¡Cae en el puente recto de oro para medir!\n\n{status}",
+                "current_launch_status": "§a§lACTIVO§r §8(§f{mode} §8| §6{best}§8)\n§eHaz clic para configurar",
+                "switch_to_launch": "§eHaz clic para cambiar a Impulso\n§7y abrir los modos de distancia"
             }
-        }
+        },
+        "launch_missed": "§c¡Caíste fuera del puente de oro! Reiniciando...",
+        "launch_finish": "§7¡Alcanzaste §e{distance} §7en el puente de oro! §8(§7Récord§8: §6{best}§8)",
+        "launch_finish_record": "§e§l¡NUEVO RÉCORD DE DISTANCIA! §r§7¡Alcanzaste §e{distance}§7!",
+        "launch_finish_tip": "§aDistancia§8: §e{distance}!",
+        "launch_record_title": "§6§l¡NUEVO RÉCORD!§r",
+        "launch_record_subtitle": "§eDistancia§8: §f{distance}",
+        "launch_hud_popup": "§eDistancia§8: §f{distance}"
     },
     "captcha": {
         "_prefix": "§9Captcha §8§l» §r",
@@ -3865,7 +3894,11 @@
             "stat_final_kills": "Kills Finales",
             "stat_broken_beds": "Camas Rotas",
             "stat_points": "Puntos anotados",
-            "stat_deaths": "Muertes"
+            "stat_deaths": "Muertes",
+            "period_yearly": "Anual",
+            "stat_completions": "Completados",
+            "stat_blocks": "Bloques colocados",
+            "stat_attempts": "Intentos"
         },
         "top": {
             "title": "Top {game} — {period}",

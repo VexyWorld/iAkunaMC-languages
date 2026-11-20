@@ -1198,7 +1198,6 @@
         "command": {
             "_prefix": "§2المبارزات §8§l» §r",
             "in_duel": "§cلا يمكنك استخدام هذا الأمر أثناء مبارزة!",
-            "player_only": "§cيمكن للاعبين فقط استخدام هذا الأمر...",
             "not_in_game": "§cأنت لست في أي طابور أو مبارزة...",
             "no_arenas": "§cلا توجد ساحات متاحة حالياً...",
             "party_size": "§cيدعم §2Duels §cفقط مجموعات مكونة من لاعبين اثنين بالضبط...",
@@ -1208,9 +1207,6 @@
                 "_prefix": "",
                 "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §2Duels §8===-=-=-=-",
                 "entry": "§2Duels §8§l» §r§8/§7{cmd} §8- §7{desc}",
-                "modes": "§2Duels §8§l» §r§7الأوضاع المتاحة§8: §2{modes}",
-                "modes_none": "§7لا يوجد",
-                "footer": "§8-=-=-=-===============================-=-=-=-",
                 "desc": {
                     "play": "الانضمام إلى الطابور",
                     "bot": "مبارزة ضد البوت",
@@ -2281,6 +2277,11 @@
     "profile": {
         "view": {
             "disabled": "§3الملف الشخصي §8§l» §r§cاللاعب عطل عرض الملف الشخصي..."
+        },
+        "stats": {
+            "period_item": "§bالفترة§8: §e{period}\n\n{list}\n\n§eانقر للتبديل",
+            "chat_summary_item": "§6» ملخص الدردشة\n§7إرسال إحصائيات {game} §8(§7{period}§8)\n§eانقر للإرسال",
+            "summary_header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §bملف {period} §8- §3{player} §8- {game} §8===-=-=-=-"
         }
     },
     "randomtp": {
@@ -3429,7 +3430,12 @@
             "record_title",
             "record_subtitle",
             "hud_popup",
-            "clutch_kb"
+            "clutch_kb",
+            "launch_finish_tip",
+            "launch_record_title",
+            "launch_record_subtitle",
+            "launch_hud_popup",
+            "launch_missed"
         ],
         "joined": "§7انضممت إلى §eتدريب الجسور§7! استخدم الساعة في شريط الأدوات لضبط الجسر أو المسافة أو الكلتش...",
         "left": "§7لقد غادرت §eتدريب الجسور§7!",
@@ -3457,7 +3463,10 @@
             "_prefix": "",
             "reset": "§8-> §eإعادة تعيين الجزيرة",
             "menu": "§8-> §bضبط الجسر والكلتش",
-            "leave": "§8-> §cمغادرة التدريب"
+            "leave": "§8-> §cمغادرة التدريب",
+            "fireball": "§r§cكرة نارية",
+            "slingshot": "§r§aمقلاع",
+            "tnt": "§r§cتي إن تي"
         },
         "block": {
             "_prefix": "",
@@ -3479,7 +3488,8 @@
             "kb": "KB",
             "attempts": "المحاولات",
             "infinite": "لا نهائي",
-            "best_blocks": "{blocks} bl"
+            "best_blocks": "{blocks} bl",
+            "last_distance": "الأخيرة"
         },
         "mode": {
             "_prefix": "",
@@ -3488,7 +3498,11 @@
             "stair_up": "تصاعدي مستقيم",
             "diagonal_up": "تصاعدي قطري",
             "clutch": "كلتش مستقيم",
-            "clutch_diagonal": "كلتش قطري"
+            "clutch_diagonal": "كلتش قطري",
+            "launch_fireball": "قفزة الكرة النارية",
+            "launch_slingshot": "المقلاع",
+            "launch_tnt": "قفزة TNT",
+            "launch_combo": "كومبو (3 في 1)"
         },
         "mode_desc": {
             "_prefix": "",
@@ -3497,7 +3511,11 @@
             "stair_up": "جسر مستقيم تصاعدي كالدرج",
             "diagonal_up": "جسر قطري تصاعدي",
             "clutch": "جسر مستقيم جاهز مع ارتداد أفقي",
-            "clutch_diagonal": "جسر قطري جاهز مع ارتداد أفقي"
+            "clutch_diagonal": "جسر قطري جاهز مع ارتداد أفقي",
+            "launch_fireball": "استخدم الكرات النارية للانطلاق أبعد على الجسر الذهبي",
+            "launch_slingshot": "استخدم المقلاع للوصول إلى أبعد مسافة",
+            "launch_tnt": "استخدم انفجارات TNT لدفعك على الجسر الذهبي",
+            "launch_combo": "كرة نارية + مقلاع + TNT معاً لكومبو خارق"
         },
         "menu": {
             "_prefix": "",
@@ -3525,9 +3543,20 @@
                 "current_status": "§a§lنشط§r §8(§f{mode} §8| §e{distance}§8)\n§eانقر للضبط",
                 "current_clutch_status": "§a§lنشط§r §8(§f{mode} §8| §c{intensity} §f/ §6{interval}§8)\n§eانقر للضبط",
                 "switch_to_bridge": "§eانقر للتبديل إلى الجسر\n§7وفتح الإعدادات",
-                "switch_to_clutch": "§eانقر للتبديل إلى الكلتش\n§7وفتح الإعدادات"
+                "switch_to_clutch": "§eانقر للتبديل إلى الكلتش\n§7وفتح الإعدادات",
+                "launch_title": "§6§lتدريب الدفع§r",
+                "launch_desc": "§7كرة نارية، مقلاع، TNT أو الثلاثة معاً\n§7اهبط على الجسر الذهبي المستقيم للقياس!\n\n{status}",
+                "current_launch_status": "§a§lنشط§r §8(§f{mode} §8| §6{best}§8)\n§eانقر للإعداد",
+                "switch_to_launch": "§eانقر للتبديل إلى الدفع\n§7وفتح أوضاع المسافة"
             }
-        }
+        },
+        "launch_missed": "§cلقد سقطت خارج الجسر الذهبي! جاري إعادة التعيين...",
+        "launch_finish": "§7لقد وصلت إلى §e{distance} §7على الجسر الذهبي! §8(§7الرقم القياسي§8: §6{best}§8)",
+        "launch_finish_record": "§e§lرقم قياسي جديد للمسافة! §r§7لقد وصلت إلى §e{distance}§7!",
+        "launch_finish_tip": "§aالمسافة§8: §e{distance}!",
+        "launch_record_title": "§6§lرقم قياسي جديد!§r",
+        "launch_record_subtitle": "§eالمسافة§8: §f{distance}",
+        "launch_hud_popup": "§eالمسافة§8: §f{distance}"
     },
     "captcha": {
         "_prefix": "§9Captcha §8§l» §r",
@@ -3864,7 +3893,11 @@
             "stat_final_kills": "Final Kills",
             "stat_broken_beds": "Beds Broken",
             "stat_points": "Goals scored",
-            "stat_deaths": "Deaths"
+            "stat_deaths": "Deaths",
+            "period_yearly": "سنوي",
+            "stat_completions": "الإكمالات",
+            "stat_blocks": "الكتل الموضوعة",
+            "stat_attempts": "المحاولات"
         },
         "top": {
             "title": "Top {game} — {period}",
