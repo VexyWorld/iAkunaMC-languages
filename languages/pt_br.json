@@ -1484,7 +1484,14 @@
         "rules": "§7Já leu nossas §8/§cregras§7? Desconhecê-las não evita §cpunições§7!",
         "staff": "§7Sabia que você pode fazer parte da nossa Staff? Acesse §chttps://staff.iakunamc.com",
         "tell": "§7Converse em privado com outros jogadores usando §8/§ctell §8<§cjogador§8> <§cmensagem§8> §7e responda rápido com §8/§cr",
-        "yt": "§7Grave um vídeo divulgando nosso servidor no YouTube e ganhe tags especiais! Para ver os requisitos utilize §8/§cyt"
+        "yt": "§7Grave um vídeo divulgando nosso servidor no YouTube e ganhe tags especiais! Para ver os requisitos utilize §8/§cyt",
+        "feedback": "§7Quer avaliar o servidor ou enviar uma sugestão? Utilize §8/§cfeedback §7e compartilhe sua opinião conosco!",
+        "help": "§7Está com dúvidas sobre os comandos do servidor? Utilize §8/§chelp §7para ver todos os comandos disponíveis!",
+        "mail": "§7Recebeu mensagens offline ou recompensas pendentes? Confira sua caixa de entrada com §8/§ccorreio§7!",
+        "bedwars_rush": "§7Já testou o novo modo §cBed§fWars §eRush§7? Geradores mais rápidos, cama já protegida e cooldown reduzido no estilingue e fireball!",
+        "cosmetics": "§7Personalize seu visual nos lobbies com partículas, pets, §8/§cmorph §7e o novo §8/§corbital§7!",
+        "report_reward": "§7Ao denunciar um infrator com §8/§creport §7e a punição for confirmada, você recebe §c15.000 Akunas §7+ §930 XP §7no §8/§ccorreio§7!",
+        "skills": "§7Desbloqueie habilidades especiais e conquistas enquanto joga! Confira em §8/§cskills §7e §8/§cconquistas§7!"
     },
     "backpack": {
         "_prefix": "§cSistema §8§l» §r",
@@ -2731,7 +2738,7 @@
     },
     "error": {
         "_prefix": "§cSistema §8§l» §r",
-        "unknowncommand": "§cEsse comando não existe...",
+        "unknowncommand": "§cEsse comando não existe... Utilize §8/§chelp §cpara ver os comandos disponíveis",
         "offlineplayer": "§cJogador offline",
         "command": "§cAh não, ocorreu um erro!",
         "noperm": "§cVocê não tem permissão para usar esse comando...",
@@ -4515,7 +4522,22 @@
             "bridgepractice": {
                 "desc": "Comandos do Treino de Ponte",
                 "usage": "bridgepractice"
+            },
+            "orbital": {
+                "desc": "Ative itens flutuando ao seu redor",
+                "usage": "orbital <item|list|random|off>"
             }
         }
+    },
+    "orbital": {
+        "_prefix": "§dOrbital §8§l» §r",
+        "activated": "§7Orbital de §d{item} §7ativado com sucesso!",
+        "deactivated": "§7Orbital desativado com sucesso!",
+        "invalid_item": "§cItem inválido... Utilize §8/§c{label} list §cpara ver os itens disponíveis",
+        "invalid_world": "§cVocê não pode usar orbital nesse mundo...",
+        "list": "§7Itens disponíveis §8(§f{count}§8): §7{items}",
+        "no_perm": "§cApenas jogadores com vip §7§l§oGalaxy§r§a+ §r§cou superior conseguem usar orbital... §oAdquira o seu em https://loja.iakunamc.com",
+        "not_active": "§cVocê não está com o orbital ativado...",
+        "usage": "§cUtilize §8/§c{label} §8<§citem§8|§clist§8|§crandom§8|§coff§8>"
     }
 }

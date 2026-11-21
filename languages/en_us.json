@@ -1480,7 +1480,14 @@
         "rules": "§7Have you read our §8/§crules§7? Not knowing them won't save you from §cpunishments§7!",
         "staff": "§7Did you know you can be part of our Staff? Go to §chttps://staff.iakunamc.com",
         "tell": "§7Chat privately with other players using §8/§ctell §8<§cplayer§8> <§cmessage§8> §7and reply fast with §8/§cr",
-        "yt": "§7Record a video promoting our server on YouTube and get special ranks! To see the requirements use §8/§cyt"
+        "yt": "§7Record a video promoting our server on YouTube and get special ranks! To see the requirements use §8/§cyt",
+        "feedback": "§7Want to rate the server or send a suggestion? Use §8/§cfeedback §7and share your thoughts with us!",
+        "help": "§7Not sure what commands are available? Use §8/§chelp §7to see all server commands!",
+        "mail": "§7Got offline messages or pending rewards? Check your inbox with §8/§cmail§7!",
+        "bedwars_rush": "§7Have you tried the new §cBed§fWars §eRush §7mode? Faster generators, pre-protected beds, and half cooldown on slingshot & fireball!",
+        "cosmetics": "§7Customize your look in lobbies with particles, pets, §8/§cmorph §7and the new §8/§corbital§7!",
+        "report_reward": "§7When you report a rule-breaker with §8/§creport §7and they get punished, you earn §c15,000 Akunas §7+ §930 XP §7in §8/§cmail§7!",
+        "skills": "§7Unlock special skills and achievements as you play! Check §8/§cskills §7and §8/§cachievements§7!"
     },
     "backpack": {
         "_prefix": "§cSystem §8§l» §r",
@@ -2669,7 +2676,7 @@
     },
     "error": {
         "_prefix": "§cSistema §8§l» §r",
-        "unknowncommand": "§cThat command doesn't exist...",
+        "unknowncommand": "§cThat command does not exist... Use §8/§chelp §cto see available commands",
         "offlineplayer": "§cPlayer is offline",
         "command": "§cOh no, an error occurred!",
         "noperm": "§cYou don't have permission to use this command...",
@@ -4512,7 +4519,22 @@
             "bridgepractice": {
                 "desc": "Bridge Practice commands",
                 "usage": "bridgepractice"
+            },
+            "orbital": {
+                "desc": "Activate floating items orbiting around you",
+                "usage": "orbital <item|list|random|off>"
             }
         }
+    },
+    "orbital": {
+        "_prefix": "§dOrbital §8§l» §r",
+        "activated": "§7§d{item} §7orbital activated successfully!",
+        "deactivated": "§7Orbital deactivated successfully!",
+        "invalid_item": "§cInvalid item... Use §8/§c{label} list §cto see available items",
+        "invalid_world": "§cYou cannot use orbital in this world...",
+        "list": "§7Available items §8(§f{count}§8): §7{items}",
+        "no_perm": "§cOnly players with §7§l§oGalaxy§r§a+ §r§cvip or higher can use orbital... §oGet yours at https://loja.iakunamc.com",
+        "not_active": "§cYou do not have orbital enabled...",
+        "usage": "§cUse §8/§c{label} §8<§citem§8|§clist§8|§crandom§8|§coff§8>"
     }
 }

@@ -1447,7 +1447,14 @@
         "pref": "§7Deneyimini özelleştir! Scoreboard, CPS, kombo, izleyiciler ve daha fazlasını ayarlamak için §8/§cpref gui §7kullan!",
         "profile": "§7İstatistiklerini, seviyeni ve diğer oyuncuların profillerini §8/§cperfil §8[§coyuncu§8] kullanarak gör",
         "ranking": "§7Mini oyuna veya döneme göre sunucunun en iyi oyuncularını §8/§ctops §7kullanarak kontrol et!",
-        "tell": "§7Diğer oyuncularla §8/§ctell §8<§coyuncu§8> <§cmesaj§8> §7kullanarak özel sohbet et ve §8/§cr ile hızlıca yanıtla"
+        "tell": "§7Diğer oyuncularla §8/§ctell §8<§coyuncu§8> <§cmesaj§8> §7kullanarak özel sohbet et ve §8/§cr ile hızlıca yanıtla",
+        "feedback": "§7Want to rate the server or send a suggestion? Use §8/§cfeedback §7and share your thoughts with us!",
+        "help": "§7Not sure what commands are available? Use §8/§chelp §7to see all server commands!",
+        "mail": "§7Got offline messages or pending rewards? Check your inbox with §8/§cmail§7!",
+        "bedwars_rush": "§7Have you tried the new §cBed§fWars §eRush §7mode? Faster generators, pre-protected beds, and half cooldown on slingshot & fireball!",
+        "cosmetics": "§7Customize your look in lobbies with particles, pets, §8/§cmorph §7and the new §8/§corbital§7!",
+        "report_reward": "§7When you report a rule-breaker with §8/§creport §7and they get punished, you earn §c15,000 Akunas §7+ §930 XP §7in §8/§cmail§7!",
+        "skills": "§7Unlock special skills and achievements as you play! Check §8/§cskills §7and §8/§cachievements§7!"
     },
     "backpack": {
         "_prefix": "§cSistem §8§l» §r",
@@ -2575,7 +2582,7 @@
     },
     "error": {
         "_prefix": "§cSistem §8§l» §r",
-        "unknowncommand": "§cBu komut mevcut değil...",
+        "unknowncommand": "§cBu komut mevcut değil... Mevcut komutları görmek için §8/§chelp §ckullanın",
         "offlineplayer": "§cOyuncu çevrimdışı",
         "command": "§cAh hayır, bir hata oluştu!",
         "noperm": "§cBu komutu kullanma yetkin yok...",
@@ -4512,7 +4519,22 @@
             "bridgepractice": {
                 "desc": "Bridge Practice commands",
                 "usage": "bridgepractice"
+            },
+            "orbital": {
+                "desc": "Activate floating items orbiting around you",
+                "usage": "orbital <item|list|random|off>"
             }
         }
+    },
+    "orbital": {
+        "_prefix": "§dOrbital §8§l» §r",
+        "activated": "§7§d{item} §7orbital activated successfully!",
+        "deactivated": "§7Orbital deactivated successfully!",
+        "invalid_item": "§cInvalid item... Use §8/§c{label} list §cto see available items",
+        "invalid_world": "§cYou cannot use orbital in this world...",
+        "list": "§7Available items §8(§f{count}§8): §7{items}",
+        "no_perm": "§cOnly players with §7§l§oGalaxy§r§a+ §r§cvip or higher can use orbital... §oGet yours at https://loja.iakunamc.com",
+        "not_active": "§cYou do not have orbital enabled...",
+        "usage": "§cUse §8/§c{label} §8<§citem§8|§clist§8|§crandom§8|§coff§8>"
     }
 }
