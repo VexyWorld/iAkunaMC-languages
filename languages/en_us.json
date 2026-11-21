@@ -63,7 +63,8 @@
             "team_full": "§cThe {team} §r§cteam is full!",
             "joined_team": "§7You joined the {team}§r §7team successfully!",
             "preference_set": "§7Team {team} §r§7set as preferred",
-            "invalid_team": "§cInvalid team..."
+            "invalid_team": "§cInvalid team...",
+            "preference_prompt": "§7Click on a team to set as preferred"
         },
         "rejoin": {
             "_prefix": "§cBed§fWars §8§l» §r",
@@ -77,7 +78,7 @@
             "_prefix": "§cBed§fWars §8§l» §r",
             "usage": "§7To join use §8/§7bw join §8<§7mode§8> §7or §8/§7bw join §8<§7code§8>",
             "usage_leave": "§7To leave use §8/§7bw leave",
-            "usage_full": "§7To join use §8/§7bw join §8<§7solo§8|§7duo§8|§7trios§8|§7squad§8|§71v1§8|§7ultra§8|§7infection§8> §7or §8/§7bw join §8<§7code§8>",
+            "usage_full": "§7To join use §8/§7bw join §8<§7solo§8|§7duo§8|§7trios§8|§7squad§8|§71v1§8|§7ultra§8|§7infection§8|§7rush§8> §7or §8/§7bw join §8<§7code§8>",
             "invalid_mode": "§cInvalid mode... Available modes§8:§7 {modes}",
             "mode_full": "§cThis mode is full...",
             "invalid_code": "§cInvalid code or full room...",
@@ -153,7 +154,8 @@
             "_prefix": "§cBed§fWars §8§l» §r",
             "max_level": "§c{name} §cis already at max level!",
             "need_diamonds": "§cYou need {amount} more §bDiamonds§c!",
-            "purchased": "§c{player} §7upgraded {name} §7to level §c{level}§7!"
+            "purchased": "§c{player} §7upgraded {name} §7to level §c{level}§7!",
+            "bed_destroyed": "§cYour bed has already been destroyed!"
         },
         "generator": {
             "_prefix": "§cBed§fWars §8§l» §r",
@@ -209,7 +211,9 @@
             "point_scored": "{player} §7scored a point",
             "point_scored_final": "{player} §7scored a point §8(§cFinal Point§8)",
             "killed_by": "§c{victim} §7was killed by §c{killer}",
-            "own_point": "§cYou cannot score a point on your own team's side"
+            "own_point": "§cYou cannot score a point on your own team's side",
+            "player_left_rejoin": "§c{player} §7left §8(§cRejoin§8)",
+            "player_returned": "§c{player} §7returned to the match"
         },
         "command": {
             "usage": "§7To join use §8/§7{label} entrar",
@@ -219,7 +223,24 @@
             "invalid": "§cInvalid team...",
             "already_in": "§cYou are already on the {team}§r§c team!",
             "full": "§cThe {team} §r§cteam is full!",
-            "joined": "§7You joined the {team}§r §7team successfully!"
+            "joined": "§7You joined the {team}§r §7team successfully!",
+            "_prefix": "§cThe§9Bridge §8§l» §r",
+            "vip_only": "§cOnly players with §b§l§oAstral§r§c rank or higher can choose teams! §oGet yours at https://loja.iakunamc.com",
+            "moved_by_partner": "§7You were moved to the {team} §r§7team by your partner!",
+            "already_in_team": "§cYou are already on the {team}§r§c team!",
+            "team_full": "§cThe {team} §r§cteam is full!",
+            "joined_team": "§7You joined the {team}§r §7team successfully!",
+            "preference_set": "§7Team {team} §r§7set as preferred",
+            "preference_prompt": "§7Click on a team to set as preferred",
+            "invalid_team": "§cInvalid team..."
+        },
+        "rejoin": {
+            "_prefix": "§cThe§9Bridge §8§l» §r",
+            "pending": "§7You left an ongoing match...",
+            "pending_hint": "§7Use §8/§7tb rejoin to return to the match",
+            "no_pending": "§cYou have no pending rejoin!",
+            "expired": "§cThe rejoin has expired!",
+            "game_ended": "§cMatch ended or your team left!"
         }
     },
     "skywars": {
@@ -233,7 +254,9 @@
             "join": "§b{player} §7joined the match §8(§f{count}§8/§f{maxPlayers}§8)",
             "quit": "§b{player} §7left the match §8(§f{count}§8/§f{maxPlayers}§8)",
             "killed_by": "§b{player} §7was killed by §b{killer} §8(§f{alive}§8/§f{maxPlayers}§8)",
-            "killed_void": "§b{player} §7fell into the void §8(§f{alive}§8/§f{maxPlayers}§8)"
+            "killed_void": "§b{player} §7fell into the void §8(§f{alive}§8/§f{maxPlayers}§8)",
+            "left_rejoin": "§b{player} §7left §8(§bRejoin§8)",
+            "returned": "§b{player} §7returned to the match"
         },
         "refill": {
             "done": "§7All chests have been refilled!"
@@ -275,7 +298,26 @@
             "confirm_button": "§a§lConfirm",
             "cancel_button": "§c§lCancel"
         },
-        "tracker": "§8§l» §r§7Tracking §b{player} §8§l» §r§7Distance: §b{distance} §7blocks"
+        "tracker": "§8§l» §r§7Tracking §b{player} §8§l» §r§7Distance: §b{distance} §7blocks",
+        "rejoin": {
+            "_prefix": "§fSky§bWars §8§l» §r",
+            "pending": "§7You left an ongoing match...",
+            "pending_hint": "§7Use §8/§7sw rejoin to return to the match",
+            "no_pending": "§cYou have no pending rejoin!",
+            "expired": "§cThe rejoin has expired!",
+            "game_ended": "§cMatch ended or your team was eliminated!"
+        },
+        "teams": {
+            "_prefix": "§fSky§bWars §8§l» §r",
+            "vip_only": "§cOnly players with §b§l§oAstral§r§c rank or higher can choose teams! §oGet yours at https://loja.iakunamc.com",
+            "moved_by_partner": "§7You were moved to the {team} §r§7team by your partner!",
+            "already_in_team": "§cYou are already on the {team}§r§c team!",
+            "team_full": "§cThe {team} §r§cteam is full!",
+            "joined_team": "§7You joined the {team}§r §7team successfully!",
+            "preference_set": "§7Team {team} §r§7set as preferred",
+            "preference_prompt": "§7Click on a team to set as preferred",
+            "invalid_team": "§cInvalid team..."
+        }
     },
     "mlgblock": {
         "state": {
@@ -298,6 +340,17 @@
         },
         "scoreboard": {
             "format": "{right}§fi§cAkuna§9MC §8§l» §r§eMlg§fBlock{n}{right}{bar}{n}{right}§8§l» §r§7Map§8:§e {map}{n}{right}§8§l» §r§7Kills§8:§e {kills}{n}{right}§8§l» §r§7Alive§8:§e {alive}{n}{right}{bar}{n}{n}{right}§eiakunamc.com 19132"
+        },
+        "teams": {
+            "_prefix": "§eMlg§fBlock §8§l» §r",
+            "vip_only": "§cOnly players with §b§l§oAstral§r§c rank or higher can choose teams! §oGet yours at https://loja.iakunamc.com",
+            "moved_by_partner": "§7You were moved to the {team} §r§7team by your partner!",
+            "already_in_team": "§cYou are already on the {team}§r§c team!",
+            "team_full": "§cThe {team} §r§cteam is full!",
+            "joined_team": "§7You joined the {team}§r §7team successfully!",
+            "preference_set": "§7Team {team} §r§7set as preferred",
+            "preference_prompt": "§7Click on a team to set as preferred",
+            "invalid_team": "§cInvalid team..."
         }
     },
     "blocksumo": {
@@ -323,6 +376,17 @@
         },
         "scoreboard": {
             "format": "{right}§fi§cAkuna§9MC §8§l» §r§bBlock§fSumo{n}{right}{bar}{n}{right}§8§l» §r§7Map§8:§b {map}{n}{right}§8§l» §r§7Kills§8:§b {kills}{n}{right}§8§l» §r§7Lives§8:§b {lives}{n}{right}{bar}{n}{n}{right}§biakunamc.com 19132"
+        },
+        "teams": {
+            "_prefix": "§bBlock§fSumo §8§l» §r",
+            "vip_only": "§cOnly players with §b§l§oAstral§r§c rank or higher can choose teams! §oGet yours at https://loja.iakunamc.com",
+            "moved_by_partner": "§7You were moved to the {team} §r§7team by your partner!",
+            "already_in_team": "§cYou are already on the {team}§r§c team!",
+            "team_full": "§cThe {team} §r§cteam is full!",
+            "joined_team": "§7You joined the {team}§r §7team successfully!",
+            "preference_set": "§7Team {team} §r§7set as preferred",
+            "preference_prompt": "§7Click on a team to set as preferred",
+            "invalid_team": "§cInvalid team..."
         }
     },
     "plot": {
@@ -436,7 +500,8 @@
             "biome": "§9Plot §8§l» §r§7Biome§8:§9 {biome}",
             "rating": "§9Plot §8§l» §r§7Rating§8:§9 {score} §8(§9{count} §7ratings§8)",
             "allowed": "§9Plot §8§l» §r§7Allowed §8(§f{count}§8):§7 {players}",
-            "denied": "§9Plot §8§l» §r§7Denied §8(§f{count}§8):§7 {players}"
+            "denied": "§9Plot §8§l» §r§7Denied §8(§f{count}§8):§7 {players}",
+            "default_name": "§7Unnamed, use §8/§7p name to set one..."
         },
         "generate": {
             "desc": "§7Generates a new plot world",
@@ -537,6 +602,11 @@
             "usage": "§8/§cp setdesc §8<§cdescription§8>",
             "empty": "§9Plot §8§l» §r§cUse §8/§cp setdesc §8<§cdescription§8> to set a description...",
             "success": "§9Plot §8§l» §r§7Plot description changed successfully!"
+        },
+        "name": {
+            "desc": "§7Sets the name of your plot",
+            "usage": "§8/§cp name §8<§cname§8>",
+            "success": "§9Plot §8§l» §r§7Plot name changed to §9{name} §7successfully!"
         }
     },
     "cosmetic": {
@@ -780,6 +850,17 @@
         },
         "type": {
             "invalid": "§5Cosmetics §8§l» §r§cInvalid cosmetic type!"
+        },
+        "effect": {
+            "_prefix": "§5Cosmetics §8§l» §r",
+            "shapes": "§7Available shapes§8:§5 {shapes}",
+            "invalid_shape": "§cInvalid shape... Available shapes§8:§c {shapes}",
+            "shape_set": "§7Shape changed to §5{shape} §7successfully!",
+            "particles": "§7Available particles§8:§5 {particles}",
+            "invalid_particle": "§cInvalid particle... Available particles§8:§c {particles}",
+            "particle_set": "§7Particle changed to §5{particle} §7successfully!",
+            "list": "§7Available shapes§8:§5 {shapes}{n}§5Cosmetics §8§l» §r§7Available particles§8:§5 {particles}",
+            "usage": "§cUse §8/§c{label} §8<§con§8|§coff§8|§cshape§8|§cparticle§8|§clist§8>"
         }
     },
     "cosmeticswindow": {
@@ -824,7 +905,52 @@
     },
     "economy": {
         "_prefix": "§aEconomy §8§l» §r",
-        "tax_applied": "§cA tax of {tax} Akunas was applied... Total debited: {total} Akunas"
+        "tax_applied": "§cA tax of {tax} Akunas was applied... Total debited: {total} Akunas",
+        "history": {
+            "empty": "§6Economy §8§l» §r§cNo transactions found in the last 60 days...",
+            "header": "§6Economy §8§l» §r§7Balance History of §6{player} §8(§f{page}§8/§f{max}§8)",
+            "entry_gain": "§8- §a+{amount} Akunas §8| §f{reason} §8(§7Balance: {balance} §8| §7{date}§8)",
+            "entry_loss": "§8- §c-{amount} Akunas §8| §f{reason} §8(§7Balance: {balance} §8| §7{date}§8)",
+            "reason": {
+                "default_credit": "Akunas credit",
+                "default_debit": "Akunas debit",
+                "pay_sent": "Paid to {player}",
+                "pay_received": "Received from {player}",
+                "lottery_ticket": "Bought {amount} Lottery ticket(s)",
+                "lottery_win": "Lottery prize",
+                "bet_win": "Bet won",
+                "bet_loss": "Bet placed",
+                "bet_cashback": "Bet cashback",
+                "bet_duel": "Duel bet",
+                "bet_duel_win": "Won duel bet",
+                "bet_duel_refund": "Duel bet refund",
+                "admin_add": "Added by {staff}",
+                "buy_skill": "Bought skill {name}",
+                "buy_cosmetic": "Bought cosmetic {name}",
+                "buy_cage": "Bought cage {name}",
+                "buy_kit": "Bought kit {name}",
+                "buy_title": "Bought title {name}",
+                "clan_create": "Created clan {name}",
+                "daily": "Daily reward",
+                "mission": "Mission completed",
+                "mission_reset": "Mission reset",
+                "achievement": "Achievement unlocked",
+                "level_up": "Reached level {level}",
+                "discord_booster": "Monthly Server Booster reward",
+                "online_time": "Online time reward",
+                "duel_bet": "Duel challenge bet",
+                "duel_win": "Duel challenge victory",
+                "duel_refund": "Duel challenge refund",
+                "duels_bot": "Duels bot victory",
+                "inactivity_tax": "Inactivity tax",
+                "plot_claim": "Plot claim",
+                "survival_enchant": "Survival enchant {name}",
+                "survival_smelt": "Survival item smelt",
+                "survival_shop": "Survival shop purchase",
+                "survival_repair": "Survival item repair",
+                "survival_backpack": "Survival backpack purchase/upgrade"
+            }
+        }
     },
     "skill": {
         "explosivebow": {
@@ -1118,13 +1244,58 @@
         "command": {
             "_prefix": "§2Duels §8§l» §r",
             "in_duel": "§cYou cannot use this command while in a duel!",
-            "player_only": "§cOnly players can use this command..."
+            "not_in_game": "§cYou are not in any queue or duel...",
+            "no_arenas": "§cThere are no arenas available right now...",
+            "party_size": "§cDuels only supports parties of exactly 2 players...",
+            "usage": "§7Use §8/§7duels §8<§7mode§8|§7leave§8>",
+            "help": {
+                "_prefix": "",
+                "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §2Duels §8===-=-=-=-",
+                "entry": "§2Duels §8§l» §r§8/§7{cmd} §8- §7{desc}",
+                "desc": {
+                    "play": "Join queue",
+                    "leave": "Leave queue or duel",
+                    "bot": "Duel against a Bot"
+                }
+            },
+            "party_size_team": "§cFor {format} duels, your party needs up to {team_size} player(s) for the queue or exactly {private_size} for a private duel..."
         },
         "status": {
             "_prefix": "§2Duels §8§l» §r",
             "starting": "§7The duel has started!",
             "countdown": "§7Starting in §2{seconds}s",
             "ending_countdown": "§7Returning to lobby in §2{seconds}s"
+        },
+        "match": {
+            "_prefix": "§2Duels §8§l» §r",
+            "started": "§7Duel §2{mode} §7against §2{opponent} §7in arena §2{arena}§7!",
+            "cancelled": "§cThe duel was cancelled...",
+            "timeout": "§cMatch time limit reached...",
+            "summary": {
+                "_prefix": "",
+                "normal": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §2Duels §8===-=-=-=-{n}§7Winner§8: §a{winner}{n}§7Loser§8: §c{loser}{n}§7Mode§8: §2{mode} §8| §7Duration§8: §2{duration}{n}§8-=-=-=-===============================-=-=-=-",
+                "forfeit": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §2Duels §8===-=-=-=-{n}§7Result§8: §eForfeit{n}§7Winner§8: §a{winner}{n}§7Loser§8: §c{loser}{n}§7Mode§8: §2{mode} §8| §7Duration§8: §2{duration}{n}§8-=-=-=-===============================-=-=-=-"
+            },
+            "started_team": "§7Duel §2{mode} §8(§2{format}§8) §7in arena §2{arena}§7! §a{teammates} §8vs §c{opponents}",
+            "eliminated": "§c{player} §7was eliminated! §8(§2{team_alive}§8/§7{team_total}§8 remaining)",
+            "summary_team": {
+                "_prefix": "",
+                "normal": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §2Duels {format} §8===-=-=-=-{n}§7Winners§8: §a{winners}{n}§7Losers§8: §c{losers}{n}§7Mode§8: §2{mode} §8| §7Duration§8: §2{duration}{n}§8-=-=-=-===============================-=-=-=-",
+                "forfeit": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §2Duels {format} §8===-=-=-=-{n}§7Result§8: §eForfeit{n}§7Winners§8: §a{winners}{n}§7Losers§8: §c{losers}{n}§7Mode§8: §2{mode} §8| §7Duration§8: §2{duration}{n}§8-=-=-=-===============================-=-=-=-"
+            },
+            "summary_bot": {
+                "_prefix": "",
+                "win": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §2Duels vs Bot §8===-=-=-=-{n}§7Result§8: §aVictory!{n}§7Opponent§8: {bot}{n}§7Mode§8: §2{mode} §8| §7Duration§8: §2{duration}{n}§7Your Health§8: §c{hp} HP §8| §7Hits§8: §a{hits} §8vs §c{bot_hits}{n}§7Reward§8: §c+{akunas} Akunas §8| §9+{xp} XP{n}§8-=-=-=-===============================-=-=-=-",
+                "loss": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §2Duels vs Bot §8===-=-=-=-{n}§7Result§8: §cDefeat...{n}§7Opponent§8: {bot}{n}§7Mode§8: §2{mode} §8| §7Duration§8: §2{duration}{n}§7Bot Health§8: §c{bot_hp} HP §8| §7Hits§8: §a{hits} §8vs §c{bot_hits}{n}§8-=-=-=-===============================-=-=-=-",
+                "forfeit": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §2Duels vs Bot §8===-=-=-=-{n}§7Result§8: §eForfeit{n}§7Opponent§8: {bot}{n}§7Mode§8: §2{mode} §8| §7Duration§8: §2{duration}{n}§8-=-=-=-===============================-=-=-=-"
+            }
+        },
+        "scoreboard": {
+            "_prefix": "",
+            "format": "{right}§fi§cAkuna§9MC §8§l» §r§2Duels{n}{right}{bar}{n}{right}§8§l» §r§7Mode§8:§2 {mode}{n}{right}§8§l» §r§7Duration§8:§2 {duration}{n}{right}§8§l» §r§7Opponent§8:§2 {opponent}{n}{right}§8§l» §r§7Ping§8:§2 {ping}ms §8| §c{opp_ping}ms{n}{right}{bar}{n}{n}{right}§2iakunamc.com 19132",
+            "boxing_format": "{right}§fi§cAkuna§9MC §8§l» §r§2Duels{n}{right}{bar}{n}{right}§8§l» §r§7Mode§8:§2 {mode}{n}{right}§8§l» §r§7Duration§8:§2 {duration}{n}{right}§8§l» §r§7Opponent§8:§2 {opponent}{n}{right}§8§l» §r§7Hits§8:§a {hits} §8/ §c{opp_hits} §8(§7{max_hits}§8){n}{right}§8§l» §r§7Ping§8:§2 {ping}ms §8| §c{opp_ping}ms{n}{right}{bar}{n}{n}{right}§2iakunamc.com 19132",
+            "team_format": "{right}§fi§cAkuna§9MC §8§l» §r§2Duels {format}{n}{right}{bar}{n}{right}§8§l» §r§7Mode§8:§2 {mode}{n}{right}§8§l» §r§7Duration§8:§2 {duration}{n}{right}§8§l» §r§7Team§8:§a {team_alive}/{team_total} §8| §c{opp_alive}/{team_total}{n}{right}§8§l» §r§7Ping§8:§2 {ping}ms{n}{right}{bar}{n}{n}{right}§2iakunamc.com 19132",
+            "team_boxing_format": "{right}§fi§cAkuna§9MC §8§l» §r§2Duels {format}{n}{right}{bar}{n}{right}§8§l» §r§7Mode§8:§2 {mode}{n}{right}§8§l» §r§7Duration§8:§2 {duration}{n}{right}§8§l» §r§7Team§8:§a {team_alive}/{team_total} §8| §c{opp_alive}/{team_total}{n}{right}§8§l» §r§7Hits§8:§a {hits} §8/ §c{opp_hits} §8(§7{max_hits}§8){n}{right}§8§l» §r§7Ping§8:§2 {ping}ms{n}{right}{bar}{n}{n}{right}§2iakunamc.com 19132"
         },
         "item": {
             "play_again": "§8-> §aPlay again",
@@ -1136,6 +1307,69 @@
             "joined": "§7You successfully joined the queue for §2{mode} §r§7mode!",
             "left": "§7You left the queue for the §c{mode}§7 mode!",
             "timeout": "§cYou were automatically removed from the queue because no other available players were found..."
+        },
+        "menu": {
+            "_prefix": "",
+            "back": "§c« Back",
+            "bot_diff_item": "{label}{n}§7Fight the bot on this difficulty{n}{n}§eClick to choose kit",
+            "bot_easy": "§aEasy Bot",
+            "bot_hacker": "§5Hacker Bot",
+            "bot_hard": "§cHard Bot",
+            "bot_item": "§cDuels vs Bot{n}§7Practice against AI{n}{n}§eClick to choose difficulty",
+            "bot_kit_item": "{label} §8({difficulty}§8){n}{n}§eClick to start",
+            "bot_kit_title": "§2Bot {difficulty} §8§l» §r§7Choose Kit",
+            "bot_medium": "§eMedium Bot",
+            "bot_title": "§2Duels vs Bot §8§l» §r§7Difficulty",
+            "bridge_item": "§cThe§9Bridge{n}§7Playing§8: §f{playing}{n}{n}§eClick to play",
+            "challenge_hint": "§2Duels §8§l» §r§7Use §8/§eduelar §8<§eplayer§8> §7or §8/§edesafiar §8<§eplayer§8> <§emode§8> §8[§erounds§8] [§ebet§8]",
+            "challenge_item": "§eChallenge Player{n}§7Create duels with rounds and bets{n}{n}§fUse §8/§eduelar §8<§eplayer§8>",
+            "format_1v1": "§aDuels 1v1",
+            "format_2v2": "§2Duels 2v2",
+            "format_3v3": "§eDuels 3v3",
+            "format_4v4": "§cDuels 4v4",
+            "format_item": "{label}{n}§7Playing§8: §f{playing}{n}{n}§eClick to choose mode",
+            "format_title": "§2Duels {format} §8§l» §r§7Choose Mode",
+            "mode_item": "{label} {format}{n}§7Playing§8: §f{playing}{n}{n}§eClick to join queue",
+            "sw1v1_item": "§bSkyWars 1v1{n}§7Playing§8: §f{playing}{n}{n}§eClick to play",
+            "title": "§2Duels §8§l» §r§7Select Mode"
+        },
+        "bot": {
+            "invalid_difficulty": "§cInvalid difficulty! Use §aeasy§c, §emedium§c, §chard §cor §5hacker§c...",
+            "_prefix": "§2Duels §8§l» §r",
+            "usage": "§7Use §8/§7duels bot §8<§7mode§8> [§aeasy§8|§emedium§8|§chard§8|§5hacker§8]"
+        }
+    },
+    "pvpmodes": {
+        "_prefix": "§bPvP §8§l» §r",
+        "usage": "§7To join use §8/§7{label} join §8<§7mode§8>{n}§bPvP §8§l» §r§7To leave use §8/§7{label} leave",
+        "join": {
+            "usage": "§cUse §8/§c{label} join §8<§cmode§8>"
+        },
+        "modes_list": "§7Available modes§8: §f{modes}",
+        "invalid_mode": "§cThe mode §f{mode} §cdoes not exist!",
+        "world_unavailable": "§cThe map for mode {mode} §cis currently unavailable...",
+        "joined": "§7You joined {mode} §7mode!",
+        "joined_team": "§7You joined {mode} §7mode on team {team}§7!",
+        "not_playing": "§cYou are not in any PvP mode...",
+        "left": "§7You left the PvP mode!",
+        "menu": {
+            "_prefix": "",
+            "back": "§c« Back",
+            "mode_item": "{label}{n}§7Playing§8: §f{playing}{n}{n}§eClick to join",
+            "prefs_item": "§3PvPModes Preferences{n}§7Configure your settings{n}{n}§eClick to open",
+            "team_amarelo": "§eYellow Team",
+            "team_azul": "§9Blue Team",
+            "team_title": "§6TeamPvP §8§l» §r§7Choose Team",
+            "team_verde": "§aGreen Team",
+            "team_vermelho": "§cRed Team",
+            "teampvp_item": "§6TeamPvP{n}§7Playing§8: §f{playing}{n}{n}§eClick to choose your team",
+            "title": "§bPvPModes §8§l» §r§7Select Mode",
+            "uhc_item": "§bUHC{n}§7Playing§8: §f{playing}{n}{n}§eClick to choose variant",
+            "uhc_title": "§bPvPModes UHC §8§l» §r§7Variants",
+            "uhc_uhc": "§bNormal Uhc",
+            "uhc_uhcfly": "§bFly Uhc",
+            "uhc_uhcheavy": "§bUhc §8(§cHeavy KB§8)",
+            "uhc_uhclight": "§bUhc §8(§3Light KB§8)"
         }
     },
     "addbalance": {
@@ -1153,7 +1387,7 @@
                 "limit": "§eAuth §8§l» §r§cYou have reached the limit of registered accounts..."
             },
             "already": {
-                "haspassword": "§cYou already have a password. To change it, use §8/§cchangepassword...",
+                "haspassword": "§cYou already have a password... To change it, use §8/§cchangepassword...",
                 "loggedin": "§cYou are already logged in...",
                 "registered": "§cYou are already registered..."
             },
@@ -1176,13 +1410,24 @@
                 "commands": "§eAuth §8§l» §r§cYou need to be authenticated to use commands..."
             },
             "weakpassword": {
-                "login": "§cPlease change your password using §8/§cchp§c, as it is too weak. We will soon block logins from accounts with weak passwords...",
+                "login": "§cPlease change your password using §8/§cchp§c, as it is too weak... We will soon block logins from accounts with weak passwords...",
                 "register": "§cPassword is too weak, please choose another one..."
             }
         },
         "join": {
             "_prefix": "",
-            "msg": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7Hello §e{user}§7, welcome to §fi§cAkuna§9MC§7!"
+            "greeting": {
+                "_prefix": "",
+                "dawn": "Good early morning",
+                "morning": "Good morning",
+                "afternoon": "Good afternoon",
+                "night": "Good evening"
+            },
+            "dawn": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7Good early morning §e{user}§7, pulling an all-nighter on §fi§cAkuna§9MC§7? Welcome!",
+            "morning": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7Good morning §e{user}§7, welcome to §fi§cAkuna§9MC§7! Have a great morning of matches!",
+            "afternoon": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7Good afternoon §e{user}§7, welcome to §fi§cAkuna§9MC§7! Enjoy your afternoon playing!",
+            "night": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7Good evening §e{user}§7, welcome to §fi§cAkuna§9MC§7! Have a great night of matches!",
+            "msg": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7{greeting} §e{user}§7, welcome to §fi§cAkuna§9MC§7!"
         },
         "login": {
             "_prefix": "",
@@ -1202,7 +1447,7 @@
             "_prefix": "§eAuth §8§l» §r",
             "auto": {
                 "_prefix": "",
-                "register": "§eAuth §8§l» §r§7Welcome! Your account was created automatically. Use §8/§7register §8<§7password§8> §7to protect it"
+                "register": "§eAuth §8§l» §r§7Welcome! Your account was created automatically... Use §8/§7register §8<§7password§8> §7to protect it"
             },
             "autologin": "§7You have been logged in automatically!",
             "chp": "§7Your password has been changed successfully!",
@@ -1213,20 +1458,36 @@
     "automsg": {
         "_prefix": "§cSystem §8§l» §r",
         "akuna_ai": "§7Meet §cAkuna§r§7, our AI! Type §8\"§cAkuna, your question§8\" §7in chat and she will answer you!",
+        "assistir": "§7Want to watch live matches? Use §8/§cspectate §8<§cplayer§8> §7or set who can watch you in §8/§cpref spectate",
         "block": "§7Did you know you can block players? Use §8/§7block",
+        "clan": "§7Create or join a clan to compete on the leaderboards! Use §8/§cclan",
         "daily": "§7Did you know that if you log in every day, you get a daily reward that can give §cAkunas §7up to an §9XP Multiplier§7?",
+        "desafiar": "§7Want to challenge a player in multi-round wager duels for §cAkunas§7? Use §8/§cduel §8<§cplayer§8> §8[§cmode§8] [§crounds§8] [§cbet§8]",
         "discord": "§7Join our discord! §chttps://discord.iakunamc.com",
         "exit_minigames": "§7To return to the lobby from any minigame, use §8/§clobby",
         "friends": "§7Invite your friends to play on our server! You can see our ip using §8/§7ip",
         "hackers": "§7Saw a hacker? Use §8/§creport §8<§cname§8> <§creason§8> §7to report them!",
+        "lang": "§7Prefer playing in another language? Change your language anytime using §8/§clang",
         "launch": "§7§ciAkunaMC §7has been around since February 2022 and keeps growing thanks to you! Thank you for playing here!",
         "marry": "§7You can marry other players and get 25% of their XP earnings! Use §8/§7marry",
         "missions": "§7Complete daily missions to earn amazing bonuses! Use §8/§cmissões §7to see all available missions",
         "nopromote": "§7Do not promote §cservers in chat or in tell§7, this will get you §cbanned§7!",
         "nosamepass": "§7Do not use the same password on other servers! Malicious people could hack your account... You can use §8/§cpin §7to protect your account!",
+        "party": "§7Playing with friends? Create a party with §8/§cparty §7and join minigames and duels together!",
+        "pref": "§7Customize your experience! Use §8/§cpref gui §7to configure scoreboard, CPS, combo, spectators and more!",
+        "profile": "§7Check your stats, level and other players' profiles using §8/§cprofile §8[§cplayer§8]",
+        "ranking": "§7Check the server's top players using §8/§ctops §7by minigame or timeframe!",
         "rules": "§7Have you read our §8/§crules§7? Not knowing them won't save you from §cpunishments§7!",
         "staff": "§7Did you know you can be part of our Staff? Go to §chttps://staff.iakunamc.com",
-        "yt": "§7Record a video promoting our server on YouTube and get special ranks! To see the requirements use §8/§cyt"
+        "tell": "§7Chat privately with other players using §8/§ctell §8<§cplayer§8> <§cmessage§8> §7and reply fast with §8/§cr",
+        "yt": "§7Record a video promoting our server on YouTube and get special ranks! To see the requirements use §8/§cyt",
+        "feedback": "§7Want to rate the server or send a suggestion? Use §8/§cfeedback §7and share your thoughts with us!",
+        "help": "§7Not sure what commands are available? Use §8/§chelp §7to see all server commands!",
+        "mail": "§7Got offline messages or pending rewards? Check your inbox with §8/§cmail§7!",
+        "bedwars_rush": "§7Have you tried the new §cBed§fWars §eRush §7mode? Faster generators, pre-protected beds, and half cooldown on slingshot & fireball!",
+        "cosmetics": "§7Customize your look in lobbies with particles, pets, §8/§cmorph §7and the new §8/§corbital§7!",
+        "report_reward": "§7When you report a rule-breaker with §8/§creport §7and they get punished, you earn §c15,000 Akunas §7+ §930 XP §7in §8/§cmail§7!",
+        "skills": "§7Unlock special skills and achievements as you play! Check §8/§cskills §7and §8/§cachievements§7!"
     },
     "backpack": {
         "_prefix": "§cSystem §8§l» §r",
@@ -1256,7 +1517,7 @@
     },
     "balance": {
         "_prefix": "§aEconomy §8§l» §r",
-        "inactivity_tax_info": "§7Every Monday, if you stay §c{days}d §7without logging in, you will be taxed §c{percent}% §8(§c{amount} Akunas§8)§7. The tax increases each week you remain offline and also based on the amount of Akunas you have",
+        "inactivity_tax_info": "§7Every Monday, if you stay §c{days}d §7without logging in, you will be taxed §c{percent}% §8(§c{amount} Akunas§8)§7... The tax increases each week you remain offline and also based on the amount of Akunas you have",
         "other": "§a{target} §7has §c{amount} Akunas§7!",
         "self": "§7You have §c{amount} Akunas§7!"
     },
@@ -1374,7 +1635,73 @@
         "nopromote": "§cIt is not allowed to promote and/or mention other servers in chat...{n}§cSystem §8§l» §r§cRemember to read our §8/§crules to avoid future punishments",
         "nospam": "§cSlow down! No spam...",
         "toolong": "§cYour message is too long... (max {max} characters)",
-        "noemoji": "§cEmojis are not allowed..."
+        "noemoji": "§cEmojis are not allowed...",
+        "_noprefix": [
+            "discord_format"
+        ],
+        "discord_format": "§9Discord §8§l» §r§f{player}§8:§7 {message}",
+        "report_guard": "§cDo not accuse players in chat! Use §8/§creport §8<§cplayer§8> <§creason§8> §cto report them to staff §8(§7you earn Akunas & XP if punished§8)§c"
+    },
+    "challenge": {
+        "_prefix": "§cDuel §8§l» §r",
+        "_noprefix": [
+            "menu",
+            "received"
+        ],
+        "cancelled_other": "§7Player §c{player} §7cancelled the challenge...",
+        "cancelled_self": "§7You cancelled the challenge sent to §c{player}§7...",
+        "denied_other": "§7Player §c{player} §7declined your challenge...",
+        "denied_self": "§7You declined the challenge from §c{player}§7...",
+        "error": {
+            "already_sent": "§cYou already have a pending challenge sent...",
+            "challenger_busy": "§cYou are already in a match or active challenge...",
+            "challenger_offline": "§cChallenger §7{player} §cwent offline...",
+            "invalid_bet": "§cInvalid bet amount...",
+            "invalid_mode": "§cInvalid mode §7{mode}§c! Modes§8: §7duels§8, §7thebridge§8, §7bedwars§8, §7skywars...",
+            "invalid_rounds": "§cThe number of rounds must be between §7{min} §cand §7{max}§c...",
+            "invalid_submode": "§cInvalid or incompatible submode §7{submode} §cfor {mode}...",
+            "max_team_size": "§cMaximum team size allowed§8: §7{max}v{max}§c...",
+            "member_busy": "§cPlayer §7{player} §cis already in a match or challenge...",
+            "member_offline": "§cA party member went offline before the challenge started...",
+            "no_arena_available": "§cNo arena available to start this mode right now...",
+            "no_pending": "§cYou have no pending challenges...",
+            "no_pending_from": "§cYou have no pending challenge from §7{player}§c...",
+            "no_sent_invite": "§cYou have no sent challenge pending...",
+            "not_enough_akunas": "§cYou need §7{bet} Akunas §cfor this bet...",
+            "not_in_challenge": "§cYou are not in an active challenge...",
+            "player_offline": "§cPlayer §7{player} §cis not online...",
+            "same_party": "§cYou cannot challenge someone in the same party...",
+            "self": "§cYou cannot challenge yourself...",
+            "target_busy": "§cPlayer §7{player} §cis already in a match or challenge...",
+            "target_has_pending": "§cPlayer §7{player} §calready has a pending challenge...",
+            "target_not_enough_akunas": "§cPlayer §7{player} §cdoes not have §7{bet} Akunas §cto bet...",
+            "target_not_party_leader": "§cOnly the party leader of §7{player} §ccan receive challenges...",
+            "team_size_mismatch": "§cParties must have the same number of players §8(§7{yours} vs {theirs}§8)§c..."
+        },
+        "expired": "§7The challenge with §c{player} §7expired...",
+        "finished_tie": "§7Challenge tied! Final score §8(§f{leader_a} §c{score_a} §7x §9{score_b} §f{leader_b}§8)§7... Bet §cAkunas §7were refunded!",
+        "finished_win": "§aVictory for §f{winner}§a! Final score§8: §f{leader_a} §c{score_a} §7x §9{score_b} §f{leader_b} §8- §7Prize§8: §e{pot} Akunas§7!",
+        "menu": {
+            "_prefix": "",
+            "back": "§c« Back",
+            "bet_amount": "{amount} Akunas",
+            "bet_item": "{bet}{n}§7Rounds§8: §f{rounds}{n}{n}§aClick to send challenge",
+            "bet_none": "§fNo bet",
+            "bet_title": "§cChallenge §8§l» §r§7Bet §8(§7Akunas§8)",
+            "mode_item": "{label}{n}§7Challenge §f{player}{n}{n}§eClick to choose rounds",
+            "mode_title": "§cChallenge §8§l» §r§7Mode",
+            "round_plural": "§e{rounds} Rounds{n}{n}§eClick to choose bet",
+            "round_single": "§e{rounds} Round{n}{n}§eClick to choose bet",
+            "rounds_title": "§cChallenge §8§l» §r§7Rounds"
+        },
+        "received": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §cDuel §8===-=-=-{n}§cDuel §8§l» §r§c{player} §7challenged you in {mode} §8(§f{format}§8) §7for §e{rounds} round(s) §8(§6{bet}§8)...{n}§cDuel §8§l» §r§7Use §a/desafiar accept {challenger} to accept §7or §c/desafiar deny {challenger} to deny §8(§7{timeout}s§8)",
+        "round_finished": "§7Round §e{round}§8/§e{total} §7finished! Score§8: §f{leader_a} §c{score_a} §7x §9{score_b} §f{leader_b} §8- §7Next round §8(§e{next}§8/§e{total}§8) §7in §e{delay}s§7!",
+        "round_starting": "§7Starting round §e{round}§8/§e{total} §7in {mode} §8(§f{leader_a} §c{score_a} §7x §9{score_b} §f{leader_b}§8)!",
+        "sent": "§7Challenge sent to §c{player} §7in {mode} §8(§f{format}§8) §7for §e{rounds} round(s) §8(§6{bet}§8)!",
+        "status": "§7Current round§8: §e{round}§8/§e{total} §8| §f{leader_a} §c{score_a} §7x §9{score_b} §f{leader_b} §8| §7Bet§8: §6{bet} Akunas",
+        "usage": "§cUse §8/§c{label} §8<§cplayer§8> [§cduels§8|§cthebridge§8|§cbedwars§8|§cskywars§8] [§csubmode§8] [§crounds 1-10§8] [§cbet§8] §7or §8/§c{label} §8<§caccept§8|§cdeny§8|§ccancel§8|§cstatus§8>",
+        "won_wo": "§cWalkover §8(§cW.O.§8)§c! §7Player §c{quitter} §7left the match... §a{winner} §7won and received §e{pot} Akunas§7!",
+        "loading_arena": "§7Loading arena, please wait a moment..."
     },
     "clan": {
         "_prefix": "§eClans §8§l» §r",
@@ -1384,8 +1711,17 @@
             "success": "§7You joined §e{clan} §7successfully"
         },
         "already_in_clan": "§cYou are already in a clan...",
+        "changename": {
+            "error": "§cError changing name...",
+            "exists": "§cA clan with that name already exists!",
+            "length": "§cClan name must be 3-24 characters (letters and numbers)!",
+            "success": "§7Clan name changed to §e{name} §7successfully!",
+            "usage": "§cUse §8/§c{label} name §8<§cname§8>"
+        },
         "changetag": {
             "error": "§cError changing tag...",
+            "exists": "§cA clan with that tag already exists!",
+            "length": "§cClan tag must be 2-4 characters (letters and numbers)!",
             "success": "§7Tag changed to §e{tag} §7successfully!",
             "usage": "§cUse §8/§c{label} tag §8<§ctag§8>"
         },
@@ -1504,6 +1840,7 @@
             "none": "§cThere are no pending requests...",
             "usage": "§cUse §8/§c{label} requests §8<§caccept§8|§cdeny§8> §8<§cplayer§8|§c*§8>"
         },
+        "requests_list": "§7Join requests §8(§f{count}§8):§7 {requests}",
         "tagcolor": {
             "error": "§cError changing tag color!",
             "invalid": "§cInvalid color...",
@@ -1517,8 +1854,7 @@
             "success": "§7Clan type changed to §e{type}§7 successfully",
             "usage": "§cUse §8/§c{label} type §8<§ctype§8>"
         },
-        "usage": "§cUse §8/§c{label} §8<§ccreate§8|§cinvite§8|§ckick§8|§cdesc§8|§cleave§8|§cinfo§8|§ctype§8|§crequest§8|§cpromote§8|§cdemote§8|§ctag§8|§crequests§8|§cchat§8|§cdelete§8|§ctagcolor§8>",
-        "requests_list": "§7Join requests §8(§f{count}§8):§7 {requests}"
+        "usage": "§cUse §8/§c{label} §8<§ccreate§8|§cinvite§8|§ckick§8|§cdesc§8|§cleave§8|§cinfo§8|§ctype§8|§crequest§8|§cpromote§8|§cdemote§8|§cname§8|§ctag§8|§crequests§8|§cchat§8|§cdelete§8|§ctagcolor§8>{n}§eClans §8§l» §r§7Cost to create a clan§8: §e{cost} Akunas"
     },
     "clear": {
         "_prefix": "§cSystem §8§l» §r",
@@ -1556,7 +1892,31 @@
             "received": "§5Daily reward §8§l» §r§7You received {rewards}",
             "streak": "§5Daily reward §8§l» §r§7Current streak§8: §5{streak} §7days",
             "xp": "§9{amount} XP",
-            "streak_lost": "§5Daily reward §8§l» §r§cYou lost your {oldStreak} days streak..."
+            "streak_lost": "§5Daily reward §8§l» §r§cYou lost your {oldStreak} days streak...",
+            "cooldown": "§5Daily reward §8§l» §r§cYou already claimed today! Next in §5{time}§c...",
+            "milestone_month": "§5Daily reward §8§l» §r§7Amazing! You reached a §5{days} §7day streak and earned a special bonus!",
+            "bonus_applied": "§5Daily §8§l» §r§7Applied bonus§8: {bonuses}",
+            "bonus_galaxy": "§7§l§oGalaxy§r§a+ §e(+{percent}%)",
+            "bonus_booster": "§dBooster §e(+{percent}%)"
+        },
+        "menu": {
+            "title": "§5Daily Reward §8§l» §r§7Streak",
+            "status_available": "§aAvailable now!{n}§eClick to claim",
+            "status_cooldown": "§7Next in§8: §e{time}",
+            "bonus_active": "{n}§7Active bonus§8: §a+{percent}%",
+            "summary": "§5§lDaily Streak{n}§7Current streak§8: §d{streak} day(s){n}§7Best streak§8: §6{best} day(s){n}§7Total claimed§8: §b{total}{bonus}{n}{n}{status}",
+            "day_claimed": "§aDay {day} §8(§aClaimed§8){n}§7Multiplier§8: §e+{percent}%",
+            "day_available": "§bDay {day} §8(§aAvailable§8){n}§7Multiplier§8: §e+{percent}%{weekly}{n}{n}§eClick to claim!",
+            "day_next": "§eDay {day} §8(§7Next§8){n}§7Unlocks in§8: §e{time}{n}§7Multiplier§8: §e+{percent}%",
+            "day_locked": "§7Day {day} §8(§cLocked§8){n}§7Multiplier§8: §e+{percent}%{weekly}",
+            "weekly_available": "{n}§6+Weekly Bonus!",
+            "weekly_locked": "{n}§6Includes Weekly Bonus!",
+            "milestone_title": "{color}{days}-Day Milestone{n}§7Bonus§8: §d{bonus}{n}§7Status§8: {status}",
+            "milestone_unlocked": "§aReached!",
+            "milestone_remaining": "§7{days} day(s) left",
+            "milestone_7": "+500 Akunas and +50 XP per week",
+            "milestone_14": "+1,000 Akunas and +100 XP on Day 14",
+            "milestone_30": "+2,500 Akunas and +250 XP on Day 30"
         }
     },
     "delhome": {
@@ -1609,14 +1969,7 @@
             "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §bJoin Messages §8(§f{page}§8/§f{total}§8) ===-=-=-=-"
         },
         "messages": {
-            "_prefix": "§bJoin §8§l» §r",
             "1": "§7Hey! §b{player} §7parachuted into the server!",
-            "10": "§7Dramatic pause... §b{player} §7joined the server!",
-            "11": "§b{player} §7joined!",
-            "12": "§7Watch out! §b{player} §7just spawned!",
-            "13": "§7The universe smiled... §b{player} §7joined!",
-            "14": "§7New adventures begin with §b{player}§7 online!",
-            "15": "§7Ready? §b{player} §7arrived to dominate!",
             "2": "§7Did someone call for reinforcements? §b{player} §7has arrived!",
             "3": "§7§b{player} §7joined stepping strong! Come closer!",
             "4": "§7How about some pizza, §b{player}§7? Welcome!",
@@ -1624,7 +1977,14 @@
             "6": "§7Radar detected activity... §b{player} §7joined!",
             "7": "§7Teleport complete! §b{player} §7appeared here!",
             "8": "§7Great weather to play... especially with §b{player} §7online!",
-            "9": "§7The legend has appeared§8:§7 §b{player}§7 is among us!"
+            "9": "§7The legend has appeared§8:§7 §b{player}§7 is among us!",
+            "10": "§7Dramatic pause... §b{player} §7joined the server!",
+            "11": "§b{player} §7joined!",
+            "12": "§7Watch out! §b{player} §7just spawned!",
+            "13": "§7The universe smiled... §b{player} §7joined!",
+            "14": "§7New adventures begin with §b{player}§7 online!",
+            "15": "§7Ready? §b{player} §7arrived to dominate!",
+            "_prefix": "§bJoin §8§l» §r"
         },
         "off": {
             "success": "§bJoin §8§l» §r§7Join message disabled successfully!"
@@ -1681,7 +2041,7 @@
     },
     "login": {
         "error": {
-            "nopassword": "§eAuth §8§l» §r§cYour account does not have a password. You are automatically authenticated by your device"
+            "nopassword": "§eAuth §8§l» §r§cYour account does not have a password... You are automatically authenticated by your device"
         },
         "usage": "§eAuth §8§l» §r§cUse §8/§c{label} §8<§cpassword§8>"
     },
@@ -1691,7 +2051,7 @@
         "buy_success": "§7You bought §e{quantity} ticket(s) §7for §c{cost} Akunas§7!",
         "buy_usage": "§cUse §8/§c{label} buy §8<§ctickets§8>",
         "no_money": "§cYou don't have enough Akunas to buy {amount} ticket(s)...",
-        "no_tickets": "§7No tickets were sold this round. The next lottery will start soon!",
+        "no_tickets": "§7No tickets were sold this round... The next lottery will start soon!",
         "prize": "§7Current prize§8:§c {prize} Akunas",
         "status_header": "§7Current status§8:",
         "ticket_limit": "§cYou cannot buy that many tickets...",
@@ -1752,6 +2112,17 @@
             "left": "§cYour partner {partner} left the server..."
         },
         "usage": "§cSystem §8§l» §r§cUse §8/§c{label} §8<§cmarry§8|§cdivorce§8|§cinfo§8|§cnick§8>"
+    },
+    "morph": {
+        "_prefix": "§5Morph §8§l» §r",
+        "activated": "§7You morphed into §5{mob}§7 successfully!",
+        "deactivated": "§7Morph deactivated successfully!",
+        "invalid_mob": "§cInvalid mob... See available mobs using §8/§c{label} list",
+        "invalid_world": "§cCannot use morph here...",
+        "list": "§7Available mobs §8(§f{count}§8):§7 {mobs}",
+        "no_perm": "§cOnly players with §7§l§oGalaxy§r§a+ §r§cvip or higher can use morph... §oGet yours at https://loja.iakunamc.com",
+        "not_active": "§cYou are not morphed into any mob...",
+        "usage": "§cUse §8/§c{label} §8<§cmob§8|§crandom§8|§coff§8|§clist§8>"
     },
     "msgcolor": {
         "_prefix": "§cSystem §8§l» §r",
@@ -1862,7 +2233,7 @@
         "leader": {
             "_prefix": "",
             "changed": "§dParty §8§l» §r§d{old_leader} §7left the server, the new leader is §d{new_leader}§7!",
-            "expired": "§dParty §8§l» §r§d{old_leader} §7did not return in time. The new leader is §d{new_leader}§7!"
+            "expired": "§dParty §8§l» §r§d{old_leader} §7did not return in time... The new leader is §d{new_leader}§7!"
         },
         "leave": {
             "broadcast": "§d{player} §7left the party...",
@@ -1874,7 +2245,7 @@
         "quit": {
             "_prefix": "",
             "notify": "§dParty §8§l» §r§d{player} §7left the server and left the party...",
-            "leader_offline": "§dParty §8§l» §r§d{player} §7left the server. They have §d3 minutes §7to return or will lose leadership.",
+            "leader_offline": "§dParty §8§l» §r§d{player} §7left the server... They have §d3 minutes §7to return or will lose leadership...",
             "leader_rejoined": "§dParty §8§l» §r§d{player} §7returned to the server and recovered leadership!"
         },
         "transfer": {
@@ -1986,7 +2357,77 @@
         "enable": "§7Preference enabled successfully!",
         "onlyvip": "§cOnly players with §b§l§oAstral §r§cvip rank or higher can change this preference... §oGet yours at https://loja.iakunamc.com",
         "reset": "§7All preferences have been reset to default!",
-        "usage": "§cUse §8/§c{label} §8<§cpreference§8|§creset§8>{n}§cSystem §8§l» §r§cAvailable preferences§8:§7 {prefs}"
+        "usage": "§cUse §8/§c{label} §8<§cpreference§8|§creset§8>{n}§cSystem §8§l» §r§cAvailable preferences§8:§7 {prefs}",
+        "menu": {
+            "_prefix": "",
+            "back": "§c« Back to Minigames",
+            "click_mode_toggle": "§eClick Mode§8: §aToggle Value",
+            "click_mode_unset": "§eClick Mode§8: §cRevert to Global",
+            "hint_toggle": "§eClick to toggle",
+            "hint_unset": "§cClick to revert to Global",
+            "minigame_item": "{minigame}{n}§7Preferences§8: §e{total}{n}§7Customized§8: §b{custom}{n}{n}§eClick to configure",
+            "origin_custom": "§bCustomized here",
+            "origin_global": "§8Inherited from Global",
+            "reset_minigame": "§cReset this minigame",
+            "scope_header": "§7Minigame§8: {minigame}",
+            "setting_item": "§f{label}{n}§7Status§8: {status}{n}{origin}{n}{n}{hint}",
+            "title": "§3Preferences §8§l» §r§7Configure"
+        },
+        "label": {
+            "_prefix": "",
+            "autologin": "Auto login",
+            "automsg": "Auto messages",
+            "autosprint": "Auto Sprint",
+            "chat": "Chat",
+            "chatfilter": "Chat filter",
+            "combo": "Show Combo",
+            "cps": "Show CPS",
+            "day": "Day/Night Cycle",
+            "floatchat": "Floating chat",
+            "friendnotify": "Notify friends",
+            "hideplayers": "Hide players",
+            "highlights": "Chat highlights",
+            "nakb": "NA Ping / Knockback (PvP)",
+            "openchest": "Open chest with tool",
+            "partnernotify": "Notify partner",
+            "quickbuy": "Quick buy (BedWars)",
+            "quickchest": "Quick chest (BedWars)",
+            "reach": "Show Reach",
+            "receiverequests": "Receive requests",
+            "scoreboard": "Scoreboard",
+            "scoreboard_side": "Scoreboard Position",
+            "showlevel": "Show level in chat",
+            "spectate": "Allow spectators",
+            "tell": "Private messages",
+            "treecapitator": "Tree Capitator (Survival)",
+            "veinminer": "Vein Miner (Survival)",
+            "viewprofile": "Profile visibility"
+        },
+        "global_only": "§cPreference §e{pref} §cis global-only and cannot be configured per minigame!",
+        "invalid_bool": "§cInvalid value for §e{pref}§c! Use §aon §cor §coff",
+        "invalid_minigame": "§cInvalid minigame! Minigames§8:§7 {minigames}",
+        "invalid_mode": "§cInvalid mode for §e{pref}§c! Modes§8: §aall§8, §bfriends§8, §dpartner§8, §eparty§8, §6clan§8, §coff",
+        "invalid_scoreboard_side": "§cInvalid position for §e{pref}§c! Use §aright§c, §bleft §cor §einline",
+        "minigame_unset": "§7Preference §e{pref} §7in §b{minigame} §7now follows the Global default!",
+        "minigame_usage": "§cUse §8/§c{label} mg §8<§cminigame§8> <§cpref§8> [§cmode§8|§creset§8]{n}§cSystem §8§l» §r§cMinigames§8:§7 {minigames}{n}§cSystem §8§l» §r§cPrefs§8:§7 {prefs}",
+        "not_allowed_minigame": "§cPreference §e{pref} §cis not available in §b{minigame}§c! Allowed minigames§8:§7 {minigames}",
+        "reset_minigame": "§7All custom preferences for §b{minigame} §7have been reset to Global!",
+        "state": {
+            "_prefix": "",
+            "all": "§aEveryone",
+            "clan": "§6Clan",
+            "friends": "§bFriends",
+            "hide_all": "§cHiding all",
+            "hide_off": "§aShowing all",
+            "off": "§cDisabled",
+            "on": "§aEnabled",
+            "partner": "§dPartner",
+            "party": "§eParty",
+            "sb_inline": "§eInline",
+            "sb_left": "§bLeft",
+            "sb_right": "§aRight"
+        },
+        "updated": "§7Preference §e{pref} §8(§b{scope}§8) §7changed to {status}§7!"
     },
     "profanity": {
         "_prefix": "§cSystem §8§l» §r",
@@ -1995,6 +2436,11 @@
     "profile": {
         "view": {
             "disabled": "§3Profile §8§l» §r§cThe player has disabled profile viewing..."
+        },
+        "stats": {
+            "period_item": "§bPeriod§8: §e{period}\n\n{list}\n\n§eClick to switch",
+            "chat_summary_item": "§6» Chat Summary\n§7Sends {game} stats §8(§7{period}§8) §7in chat\n§eClick to send",
+            "summary_header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §b{period} Profile §8- §3{player} §8- {game} §8===-=-=-=-"
         }
     },
     "randomtp": {
@@ -2024,7 +2470,11 @@
         "noself": "§cYou cannot report yourself!",
         "nostaff": "§cYou cannot report a staff member!",
         "sent": "§7You successfully reported §c{target} §7for §c{reason}!",
-        "usage": "§cUse §8/§c{label} §8<§cplayer§8> <§creason§8>"
+        "usage": "§cUse §8/§c{label} §8<§cplayer§8> <§creason§8>",
+        "reward": {
+            "online": "§7Thank you! Player §c{player} §7you reported has been punished. You received §e+{amount} Akunas §7and §b+{xp} XP§7!",
+            "mail": "§7Your report against §c{player} §7resulted in a punishment! You received §e+{amount} Akunas §7and §b+{xp} XP§7"
+        }
     },
     "requests": {
         "_prefix": "§cSystem §8§l» §r",
@@ -2035,7 +2485,7 @@
         "time": "§cSystem §8§l» §r§7The server will restart in §c{time}§7..."
     },
     "rules": {
-        "cmd": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §cRules §8===-=-=-=-{n}§cSystem §8§l» §r§7Respect everyone. Severe insults, prejudice, harassment, threats and discrimination are prohibited{n}§cSystem §8§l» §r§7Advertising servers, websites, social media or external communities is prohibited{n}§cSystem §8§l» §r§7Do not flood, spam, abuse CAPS or pollute the chat{n}§cSystem §8§l» §r§7Do not exploit bugs, bypasses or server vulnerabilities{n}§cSystem §8§l» §r§7Hacks, autoclickers, macros, modified clients and any form of cheating are prohibited{n}§cSystem §8§l» §r§7Do not assist players using cheats{n}§cSystem §8§l» §r§7Account theft, scams and impersonating the staff are prohibited{n}§cSystem §8§l» §r§7Do not team in solo modes or where teams are not allowed{n}§cSystem §8§l» §r§7Offensive or inappropriate names, skins and content are prohibited{n}§cSystem §8§l» §r§7Do not manipulate matches, rankings, events or systems for unfair advantages{n}§cSystem §8§l» §r§7Do not interfere with the staff or evade punishments{n}§cSystem §8§l» §r§7Actions that harm other players or are not covered by these rules may result in punishment"
+        "cmd": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §cRules §8===-=-=-=-{n}§cSystem §8§l» §r§7Respect everyone... Severe insults, prejudice, harassment, threats and discrimination are prohibited{n}§cSystem §8§l» §r§7Advertising servers, websites, social media or external communities is prohibited{n}§cSystem §8§l» §r§7Do not flood, spam, abuse CAPS or pollute the chat{n}§cSystem §8§l» §r§7Do not exploit bugs, bypasses or server vulnerabilities{n}§cSystem §8§l» §r§7Hacks, autoclickers, macros, modified clients and any form of cheating are prohibited{n}§cSystem §8§l» §r§7Do not assist players using cheats{n}§cSystem §8§l» §r§7Account theft, scams and impersonating the staff are prohibited{n}§cSystem §8§l» §r§7Do not team in solo modes or where teams are not allowed{n}§cSystem §8§l» §r§7Offensive or inappropriate names, skins and content are prohibited{n}§cSystem §8§l» §r§7Do not manipulate matches, rankings, events or systems for unfair advantages{n}§cSystem §8§l» §r§7Do not interfere with the staff or evade punishments{n}§cSystem §8§l» §r§7Excessive provocation, harassment, blackmail and threats of any kind are prohibited{n}§cSystem §8§l» §r§7Leaking personal data, private information (doxxing) or exposing players without consent is prohibited{n}§cSystem §8§l» §r§7Actions that harm other players or are not covered by these rules may result in punishment"
     },
     "scoreboard": {
         "lobby": "{right}     §fi§cAkuna§9MC §8§l» §r§cLobby{n}{right}{bar}{n}{right}§8§l» §r§7Name§8:§c {name}{n}{right}§8§l» §r§7Online§8:§c {online}§8/§c{onlinemax}{n}{right}§8§l» §r§7Ping§8:§c {ping}ms{n}{right}{bar}{n}{n}{right}§c{address}",
@@ -2043,13 +2493,15 @@
         "lobby_bw": "{right}  §fi§cAkuna§9MC §8§l» §r§cBed§fWars{n}{right}{bar}{n}{right}§8§l» §r§7Wins§8:§c {wins}{n}{right}§8§l» §r§7Kills§8:§c {kills}{n}{right}§8§l» §r§7Final Kills§8:§c {final_kills}{n}{right}§8§l» §r§7Beds Broken§8:§c {beds}{n}{right}{bar}{n}{n}{right}§c{address}",
         "lobby_sw": "{right}  §fi§cAkuna§9MC §8§l» §r§bSky§fWars{n}{right}{bar}{n}{right}§8§l» §r§7Wins§8:§b {wins}{n}{right}§8§l» §r§7Kills§8:§b {kills}{n}{right}§8§l» §r§7Games§8:§b {plays}{n}{right}{bar}{n}{n}{right}§b{address}",
         "lobby_tntrun": "{right}  §fi§cAkuna§9MC §8§l» §r§cTNT§fRun{n}{right}{bar}{n}{right}§8§l» §r§7Wins§8:§c {wins}{n}{right}§8§l» §r§7Games§8:§c {plays}{n}{right}{bar}{n}{n}{right}§c{address}",
-        "lobby_blockparty": "{right} §fi§cAkuna§9MC §8§l» §r§dBlock§fParty{n}{right}{bar}{n}{right}§8§l» §r§7Wins§8:§d {wins}{n}{right}§8§l» §r§7Matches§8:§d {plays}{n}{right}{bar}{n}{n}{right}§d{address}"
+        "lobby_blockparty": "{right} §fi§cAkuna§9MC §8§l» §r§dBlock§fParty{n}{right}{bar}{n}{right}§8§l» §r§7Wins§8:§d {wins}{n}{right}§8§l» §r§7Matches§8:§d {plays}{n}{right}{bar}{n}{n}{right}§d{address}",
+        "lobby_duels": "{right}  §fi§cAkuna§9MC §8§l» §r§2Duels{n}{right}{bar}{n}{right}§8§l» §r§7Wins§8:§2 {wins}{n}{right}§8§l» §r§7Losses§8:§2 {defeats}{n}{right}§8§l» §r§7Matches§8:§2 {plays}{n}{right}§8§l» §r§7Streak§8:§2 {streak}{n}{right}{bar}{n}{n}{right}§2{address}",
+        "lobby_pvpmodes": "{right} §fi§cAkuna§9MC §8§l» §r§bPvP Modes{n}{right}{bar}{n}{right}§8§l» §r§7Kills§8:§b {kills}{n}{right}§8§l» §r§7Deaths§8:§b {deaths}{n}{right}§8§l» §r§7Streak§8:§b {streak}{n}{right}{bar}{n}{n}{right}§b{address}"
     },
     "server": {
         "info": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §fInformation §8===-=-=-=-{n}§cSystem §8» §r§7IP§8:§c iakunamc.com{n}§cSystem §8» §r§7Port§8:§c 19132{n}{n}§cSystem §8» §r§7Staff Application§8:§c https://staff.iakunamc.com{n}§cSystem §8» §r§7Store§8:§c https://loja.iakunamc.com{n}§cSystem §8» §r§7Discord§8:§c https://discord.iakunamc.com{n}{n}§fY§cT §8» §r§7300 subscribers §a+ §7Promotional video{n}§fMini§cYT §8» §r§750 subscribers §a+ §7Promotional video{n}§cYT§fmirin §8» §r§70 subscribers §a+ §7Promotional video{n}§cNotes §8» §r§7Put the IP in the title/description and promote the server once a month to maintain your rank",
         "whitelist": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§cServer under maintenance{n}§cDiscord: https://discord.iakunamc.com",
         "forcedshutdown": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§cThe server has suffered a forced shutdown...",
-        "attack": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§cSystem §8§l» §r§7The server is under DDoS attack...{n}§7Our protection is already mitigating the attack. Necessary protections have been activated, but there may still be lag or disconnections{n}§cSystem §8§l» §r§7Support§8: §chttps://discord.iakunamc.com",
+        "attack": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§cSystem §8§l» §r§7The server is under DDoS attack...{n}§7Our protection is already mitigating the attack... Necessary protections have been activated, but there may still be lag or disconnections{n}§cSystem §8§l» §r§7Support§8: §chttps://discord.iakunamc.com",
         "tps_low": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§cSystem §8§l» §r§7It seems the server is overloaded, our team is already working on resolving this..."
     },
     "sethome": {
@@ -2160,7 +2612,7 @@
     "tempmute": {
         "_prefix": "§cSystem §8§l» §r",
         "broadcast": "§c{target} §7has been §ctemporarily muted §7for §c{time} §7due to §c{reason}",
-        "muted": "§cYou have been temporarily muted due to {reason}. The punishment expires on {end}{n}§cSystem §8§l» §r§cRemember to read our §8/§crules to avoid punishments..."
+        "muted": "§cYou have been temporarily muted due to {reason}... The punishment expires on {end}{n}§cSystem §8§l» §r§cRemember to read our §8/§crules to avoid punishments..."
     },
     "tpa": {
         "expired": "§5Teleport §8§l» §r§cThe teleport request from {sender} has expired...",
@@ -2201,11 +2653,30 @@
         "gain": "§7You have won §9{xp} xp§7!",
         "gain_partner": "§7You have won §9{xp} xp §7from your partner §c{partner}§7!",
         "levelup": "§7Congratulations! You have reached §9level {newLevel}",
-        "temp_multiplier": "§7You have a temporary boost of §9{boost}x §7active for §9{time}"
+        "temp_multiplier": "§7You have a temporary boost of §9{boost}x §7active for §9{time}",
+        "history": {
+            "empty": "§cXP §8§l» §r§cNo XP records found in the last 60 days...",
+            "header": "§cXP §8§l» §r§7XP History of §c{player} §8(§f{page}§8/§f{max}§8)",
+            "entry": "§8- §a+{amount} XP §8| §f{reason} §8(§7{date}§8)",
+            "reason": {
+                "bedwars": "BedWars match / kill",
+                "skywars": "SkyWars match / kill",
+                "bridge": "TheBridge match / kill",
+                "duels": "Duels victory",
+                "duels_bot": "Duels bot victory",
+                "mlg": "MLGBlock match / kill",
+                "blocksumo": "BlockSumo match / kill",
+                "tntrun": "TNTRun victory",
+                "blockparty": "BlockParty victory",
+                "survival": "Survival activity",
+                "admin": "Added by staff",
+                "default": "Reward / Progress"
+            }
+        }
     },
     "error": {
         "_prefix": "§cSistema §8§l» §r",
-        "unknowncommand": "§cThat command doesn't exist...",
+        "unknowncommand": "§cThat command does not exist... Use §8/§chelp §cto see available commands",
         "offlineplayer": "§cPlayer is offline",
         "command": "§cOh no, an error occurred!",
         "noperm": "§cYou don't have permission to use this command...",
@@ -2242,6 +2713,7 @@
         "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §6Missions §8===-=-=-=-",
         "header_other": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §6Missions §7of §6{target} §8===-=-=-=-",
         "resetIn": "§7Missions reset in §6{time}",
+        "reset_midnight": "§7Daily missions have been reset! Use §8/§6missions §7to check them!",
         "break": {
             "_prefix": "",
             "blocks": "§7Break {target} blocks",
@@ -2701,7 +3173,9 @@
         "buy": {
             "_prefix": "",
             "title": "§7Buy cage §c{cage} §7for §c{cost} Akunas§8?",
-            "success": "§cCages §8§l» §r§7Cage §c{cage} §7purchased!"
+            "success": "§cCages §8§l» §r§7Cage §c{cage} §7purchased!",
+            "confirm": "§aConfirm",
+            "cancel": "§cCancel"
         }
     },
     "cage": {
@@ -2816,7 +3290,7 @@
     "discord": {
         "_prefix": "§9Discord §8§l» §r",
         "error": {
-            "not_registered": "§cYou need to be registered to link your account."
+            "not_registered": "§cYou need to be registered to link your account..."
         },
         "link": {
             "bot_command": "§7Join our Discord server §8(§9https://discord.iakunamc.com§8)§7, go to the commands chat and use §8/§7link {code}",
@@ -2955,5 +3429,1112 @@
             "success": "§7Title §6{titulo} §7purchased successfully!"
         },
         "expired": "§6Titles §8§l» §r§7Your title §6{titulo} §7has expired..."
+    },
+    "online_reward": {
+        "_prefix": "§bActivity §8§l» §r",
+        "both": "§7For playing for §b{minutes}m§7, you received §a+{akunas} Akunas §7and §9+{xp} XP§7!",
+        "akunas_only": "§7For playing for §b{minutes}m§7, you received §a+{akunas} Akunas§7!",
+        "xp_only": "§7For playing for §b{minutes}m§7, you received §9+{xp} XP§7!"
+    },
+    "angel": {
+        "_prefix": "§6A§en§6g§ee§6l §8§l» §r",
+        "invalid_world": "§cYou cannot enable wings in this world..."
+    },
+    "hitparticles": {
+        "_prefix": "§6Hit§fParticles §8§l» §r",
+        "usage": "§cUse §8/§c{label} §8<§con§8|§coff§8|§cshape§8|§clist§8>",
+        "on_usage": "§cUse §8/§c{label} on §8<§cparticle§8> §8[§cshape§8]",
+        "invalid_shape": "§cInvalid shape... Available shapes§8:§c {shapes}",
+        "shapes": "§7Available shapes§8:§6 {shapes}",
+        "shape_set": "§7Shape changed to §6{shape} §8(§5{type}§8) §7successfully!",
+        "activated": "§7Hit particle §5{type} §8(§6{shape}§8) §7activated successfully!",
+        "deactivated": "§7Hit particles disabled successfully!",
+        "list": "§7Available particles list §8(§f{count}§8):§7 {particles}{n}§6Hit§fParticles §8§l» §r§7Hit shapes§8:§6 {shapes}"
+    },
+    "bridgepractice": {
+        "_prefix": "§eBridge Practice §8§l» §r",
+        "_noprefix": [
+            "fell",
+            "finish_tip",
+            "record_title",
+            "record_subtitle",
+            "hud_popup",
+            "clutch_kb",
+            "launch_finish_tip",
+            "launch_record_title",
+            "launch_record_subtitle",
+            "launch_hud_popup",
+            "launch_missed"
+        ],
+        "joined": "§7You joined §eBridge Practice§7! Use the clock in your hotbar to configure bridge, distance or clutch...",
+        "left": "§7You left §eBridge Practice§7!",
+        "reset": "§7Island reset successfully!",
+        "not_in_game": "§cYou are not in bridge practice...",
+        "world_error": "§cCould not create your bridge practice world...",
+        "fell": "§cYou fell! Resetting...",
+        "finish": "§7Bridge completed in §e{time} §8(§e{best} §8| §f{blocks} blocks§8)",
+        "finish_record": "§e§lNEW RECORD! §r§7Completed in §e{time} §8(§f{blocks} blocks§8)",
+        "finish_infinite_record": "§e§lNEW INFINITE RECORD! §r§e{blocks} blocks§7!",
+        "finish_tip": "§aFinished in §e{time}!",
+        "record_title": "§6§lNEW RECORD!§r",
+        "record_subtitle": "§eTime§8: §f{time}",
+        "hud_popup": "§eTime§8: §f{time} §8| §7Blocks§8: §e{blocks}",
+        "clutch_kb": "§cKnockback §8(§f{intensity}§8)",
+        "notify": {
+            "mode_set": "§7Mode changed to §e{mode}§7 successfully!",
+            "distance_set": "§7Distance set to §e{distance} blocks§7!",
+            "distance_infinite_set": "§7Distance set to §dInfinite Bridge§7!",
+            "block_set": "§7Selected block§8:§e {block}",
+            "kb_intensity_set": "§7Knockback intensity set to §c{intensity}§7!",
+            "kb_interval_set": "§7Knockback interval set to §6{interval}§7!"
+        },
+        "item": {
+            "_prefix": "",
+            "reset": "§8-> §eReset Island",
+            "menu": "§8-> §bConfigure Bridge & Clutch",
+            "leave": "§8-> §cLeave Practice",
+            "fireball": "§r§cFireball",
+            "slingshot": "§r§aSlingshot",
+            "tnt": "§r§cTNT"
+        },
+        "block": {
+            "_prefix": "",
+            "wool_white": "White Wool",
+            "wool_red": "Red Wool",
+            "wool_blue": "Blue Wool",
+            "clay_yellow": "Yellow Clay",
+            "sandstone": "Sandstone",
+            "obsidian": "Obsidian"
+        },
+        "scoreboard": {
+            "_prefix": "",
+            "header": "§eBridge Practice",
+            "mode": "Mode",
+            "distance": "Distance",
+            "time": "Time",
+            "record": "Best",
+            "blocks": "Blocks",
+            "kb": "KB",
+            "attempts": "Attempts",
+            "infinite": "Infinite",
+            "best_blocks": "{blocks} bl",
+            "last_distance": "Last"
+        },
+        "mode": {
+            "_prefix": "",
+            "straight": "Straight",
+            "diagonal": "Diagonal",
+            "stair_up": "Ascending Straight",
+            "diagonal_up": "Ascending Diagonal",
+            "clutch": "Clutch Straight",
+            "clutch_diagonal": "Clutch Diagonal",
+            "launch_fireball": "Fireball Jump",
+            "launch_slingshot": "Slingshot",
+            "launch_tnt": "TNT Jump",
+            "launch_combo": "Combo (All 3)"
+        },
+        "mode_desc": {
+            "_prefix": "",
+            "straight": "Traditional flat straight bridge",
+            "diagonal": "Diagonal bridge",
+            "stair_up": "Ascending straight staircase bridge",
+            "diagonal_up": "Ascending diagonal bridge",
+            "clutch": "Pre-built straight bridge with horizontal knockback",
+            "clutch_diagonal": "Pre-built diagonal bridge with horizontal knockback",
+            "launch_fireball": "Use fireballs to launch far across the gold bridge",
+            "launch_slingshot": "Use the slingshot to reach the farthest distance",
+            "launch_tnt": "Use TNT blasts to boost yourself onto the gold bridge",
+            "launch_combo": "Fireball + Slingshot + TNT together for extreme combos"
+        },
+        "menu": {
+            "_prefix": "",
+            "title": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §eBridge Practice §8===-=-=-=-",
+            "status_selected": "§a§lSELECTED§r",
+            "status_active": "§a§l[ACTIVE]§r",
+            "click_select": "§eClick to select",
+            "click_set": "§7Click to set",
+            "click_choose": "§7Click to choose",
+            "distance_blocks": "{distance} blocks",
+            "distance_infinite": "Infinite Bridge",
+            "kb_intensity_item": "{color}Knockback: {intensity}\n§7Clutch Mode\n{status}",
+            "kb_interval_item": "{color}KB Interval: {interval}\n§7Time between knockbacks\n{status}",
+            "back": "§e§l« Back§r\n§7Main menu",
+            "reset_item": "§eReset Island\n§7Clears placed blocks",
+            "leave_item": "§cLeave Practice\n§7Return to lobby",
+            "stats_item": "§aYour Statistics\n\n§7Current best§8: §e{best}\n§7Total completions§8: §b{total}",
+            "shortcut_clutch": "§c§lGo to Clutch§r\n§7Switch and open Clutch settings",
+            "shortcut_bridge": "§b§lGo to Bridge§r\n§7Switch and open Bridge settings",
+            "hub": {
+                "bridge_title": "§e§lBridge Settings§r",
+                "bridge_desc": "§7Straight, diagonal, ascending,\n§7distance (or infinite) & blocks\n\n{status}",
+                "clutch_title": "§c§lClutch Settings§r",
+                "clutch_desc": "§7Pre-built bridge, KB intensity,\n§7interval & direction\n\n{status}",
+                "current_status": "§a§lACTIVE§r §8(§f{mode} §8| §e{distance}§8)\n§eClick to configure",
+                "current_clutch_status": "§a§lACTIVE§r §8(§f{mode} §8| §c{intensity} §f/ §6{interval}§8)\n§eClick to configure",
+                "switch_to_bridge": "§eClick to switch to Bridge\n§7and open settings",
+                "switch_to_clutch": "§eClick to switch to Clutch\n§7and open settings",
+                "launch_title": "§6§lBoost Training§r",
+                "launch_desc": "§7Fireball, Slingshot, TNT or all 3 combined\n§7Land on the straight gold bridge to measure!\n\n{status}",
+                "current_launch_status": "§a§lACTIVE§r §8(§f{mode} §8| §6{best}§8)\n§eClick to configure",
+                "switch_to_launch": "§eClick to switch to Boost\n§7and open distance modes"
+            }
+        },
+        "launch_missed": "§cYou missed the gold bridge! Resetting...",
+        "launch_finish": "§7You reached §e{distance} §7on the gold bridge! §8(§7Best§8: §6{best}§8)",
+        "launch_finish_record": "§e§lNEW DISTANCE RECORD! §r§7You reached §e{distance}§7!",
+        "launch_finish_tip": "§aDistance§8: §e{distance}!",
+        "launch_record_title": "§6§lNEW RECORD!§r",
+        "launch_record_subtitle": "§eDistance§8: §f{distance}",
+        "launch_hud_popup": "§eDistance§8: §f{distance}"
+    },
+    "captcha": {
+        "_prefix": "§9Captcha §8§l» §r",
+        "_noprefix": [
+            "kick",
+            "tip",
+            "map",
+            "menu",
+            "item"
+        ],
+        "kick": {
+            "full": "§cAnti-bot verification is currently full... Try again in a few seconds!",
+            "timeout": "§cTime expired §8(§c30s§8)§c to complete the captcha...",
+            "failed": "§cYou failed the captcha too many times..."
+        },
+        "tip": {
+            "timer": "§9Captcha §8§l» §r§7Time left§8:§c {seconds}s"
+        },
+        "map": {
+            "item_name": "§eCaptcha Map"
+        },
+        "menu": {
+            "title": "§8Select§8: {item}",
+            "reopen_item": "§bOpen Captcha menu"
+        },
+        "prompt": {
+            "map": "§7Look at the map in your hand and type the code in chat within §c{seconds}s",
+            "menu": "§7Click the item {item} §r§7in the menu within §c{seconds}s §8(§7use §8/§7captcha to reopen§8)",
+            "hotbar": "§7Select the item {item} §r§7in your hotbar within §c{seconds}s",
+            "phrase": "§7Type this exact phrase in chat§8: §9{phrase} §8(§c{seconds}s§8)",
+            "math": "§7Solve in chat§8: §9{expression} §8(§c{seconds}s§8)"
+        },
+        "error": {
+            "retry": "§cIncorrect answer... Attempts remaining§8: §c{attempts}",
+            "command": "§cComplete the captcha before using commands..."
+        },
+        "success": "§7Captcha verified successfully!",
+        "item": {
+            "diamond": "§bDiamond",
+            "emerald": "§aEmerald",
+            "golden_apple": "§6Golden Apple",
+            "nether_star": "§eNether Star",
+            "ender_eye": "§dEnder Eye",
+            "gold_ingot": "§eGold Ingot",
+            "ender_pearl": "§3Ender Pearl",
+            "blaze_powder": "§cBlaze Powder",
+            "compass": "§7Compass",
+            "diamond_sword": "§bDiamond Sword",
+            "apple": "§cApple",
+            "feather": "§fFeather",
+            "clock": "§eClock",
+            "slimeball": "§aSlimeball",
+            "coal": "§8Coal",
+            "bone": "§fBone",
+            "paper": "§fPaper",
+            "blaze_rod": "§6Blaze Rod"
+        },
+        "forced_spam": "§cSuspicious spam activity detected! Complete the captcha and log in again..."
+    },
+    "spectate": {
+        "_prefix": "§9Spectate §8§l» §r",
+        "_noprefix": [
+            "item"
+        ],
+        "command": {
+            "usage": "§cUse §8/§cassistir §8<§cplayer§8|§cleave§8>"
+        },
+        "error": {
+            "self": "§cYou cannot spectate yourself...",
+            "must_leave_game": "§cLeave your current match before spectating another player...",
+            "disallowed_mode": "§cSpectate mode is not allowed in Plot or Survival...",
+            "target_not_playing": "§cThis player is not in any minigame right now...",
+            "target_offline": "§cPlayer §f{player} §cwas not found or is offline...",
+            "privacy": "§c{player} §cdoes not allow spectators with their current preferences...",
+            "not_spectating": "§cYou are not spectating anyone right now..."
+        },
+        "item": {
+            "leave": "§cLeave Spectate Mode",
+            "teleporter": "§8-> §aPlayers",
+            "play_again": "§8-> §aPlay again"
+        },
+        "started": "§7You are now spectating §9{player}§7! Use §8/§7assistir sair or the bed item to leave",
+        "stopped": {
+            "manual": "§7You left spectate mode!",
+            "match_ended": "§7The spectated match has ended...",
+            "target_offline": "§cThe spectated player went offline...",
+            "disallowed_mode": "§cSpectate mode stopped upon entering Plot or Survival..."
+        },
+        "menu": {
+            "title": "§8Teleport to Player",
+            "no_players": "{prefix}§cThere are no alive players to teleport to...",
+            "team_icon": "{team} §7({count})",
+            "team_player_head": "{team} §8- §f{player}{n}§7Health: §c{hp}❤{n}§eClick to teleport",
+            "player_head": "§a{player}{n}§7Health: §c{hp}❤{n}§eClick to teleport",
+            "player_unavailable": "{prefix}§cThat player is no longer available..."
+        },
+        "teleported": "{prefix}§aTeleported to §e{player}§a!"
+    },
+    "cooldown": {
+        "_noprefix": [
+            "indicator",
+            "item"
+        ],
+        "indicator": {
+            "entry": "§7{item}§8:§c {seconds}s §8[{bar}§8]",
+            "ready": "§7{item} §aavailable!"
+        },
+        "item": {
+            "fireball": "Fireball",
+            "egg": "Egg",
+            "irongolem": "Iron Golem",
+            "silverfish": "Silverfish",
+            "slingshot": "Slingshot",
+            "sponge": "Sponge",
+            "bridge": "Bridge Egg",
+            "tower": "Tower",
+            "platform": "Platform",
+            "enderpearl": "Ender Pearl",
+            "tntegg": "TNT Egg",
+            "hook": "Hook",
+            "archer": "Archer",
+            "cheststealer": "Chest Stealer"
+        }
+    },
+    "pearl": {
+        "_prefix": "",
+        "blocked": "§cThere is no safe space to teleport there!"
+    },
+    "friends": {
+        "accept": {
+            "_prefix": "§cSystem §8§l» §r",
+            "none": "§cYou have no pending friend requests...",
+            "notify": "§b{friend} §7accepted your friend request!",
+            "success": "§7You and §b{friend} §7are now friends!"
+        },
+        "add": {
+            "_prefix": "§cSystem §8§l» §r",
+            "already": "§cYou are already friends with §b{target}§c...",
+            "expired": "§cThe friend request from §b{sender} §cexpired...",
+            "limit": "§cYou have reached your friend limit ({max})!",
+            "pending": "§cThis player already has a pending friend request...",
+            "request": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §bFriend Request §8===-=-=-{n}§cSystem §8§l» §r§b{sender} §7sent you a friend request...{n}§cSystem §8§l» §r§7Use §a/friend aceitar §7to accept or §c/friend recusar §7to decline",
+            "self": "§cYou cannot add yourself as a friend...",
+            "sent": "§7Friend request sent to §b{target}§7!",
+            "target_limit": "§cThis player has already reached their friend limit!",
+            "usage": "§cUse §8/§c{label} add §8<§cplayer§8>"
+        },
+        "deny": {
+            "_prefix": "§cSystem §8§l» §r",
+            "none": "§cYou have no pending friend requests...",
+            "notify": "§b{target} §7declined your friend request...",
+            "success": "§7Friend request declined successfully!"
+        },
+        "friend": {
+            "_prefix": "§cSystem §8§l» §r",
+            "joined": "§7Your friend §b{friend} §7joined the server!",
+            "left": "§7Your friend §b{friend} §cleft §7the server..."
+        },
+        "list": {
+            "_prefix": "",
+            "entry": "§cSystem §8§l» §r{status} §b{friend} §8| §7Since§8:§b {date} §8(§7{dateSince} ago§8){n}§cSystem §8§l» §r§7You call§8:§b {nicknameGiven} §8| §7Calls you§8:§b {nicknameReceived}",
+            "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §bFriends §8(§7{count}§8/§7{max}§8) §8[§7Page {page}/{maxPages}§8] ===-=-=-=-",
+            "no_nickname": "§7No nickname...§r",
+            "none": "§cSystem §8§l» §r§cYou do not have any friends yet...",
+            "offline": "§c●",
+            "online": "§a●"
+        },
+        "nick": {
+            "_prefix": "§cSystem §8§l» §r",
+            "success": "§7Nickname of §b{friend} §7set to '§b{nickname}§7' successfully!",
+            "usage": "§cUse §8/§c{label} nick §8<§cfriend§8> <§cnickname§8>"
+        },
+        "remove": {
+            "_prefix": "§cSystem §8§l» §r",
+            "all_success": "§7All of your friends have been removed!",
+            "invalid": "§cInvalid player or not on your friends list...",
+            "none": "§cYou do not have any friends...",
+            "notify": "§b{friend} §7removed you from their friends list...",
+            "success": "§7You removed §b{friend} §7from your friends list...",
+            "usage": "§cUse §8/§c{label} remover §8<§cplayer§8|§c*§8>"
+        },
+        "usage": "§cSystem §8§l» §r§cUse §8/§c{label} §8<§cadd§8|§caceitar§8|§crecusar§8|§cremover§8|§clistar§8|§cnick§8>"
+    },
+    "staffchat": {
+        "discord_format": "§9Staff§fChat §8(§bDiscord§8) §8§l» §r§f{player}§8:§7 {message}"
+    },
+    "booster": {
+        "_prefix": "§dBooster §8§l» §r",
+        "activated": "§aThank you for boosting our Discord! §7You unlocked the §dBooster §7title, §e+{xp}% XP §7and §e+25% on /daily§7!",
+        "monthly_claimed": "§aMonthly reward claimed: §e+{amount} Akunas§a! §8(§7Next in {time}§8)",
+        "expired": "§7Your Discord boost expired, the Booster title and perks were removed."
+    },
+    "enchant": {
+        "_prefix": "§6Survival §8§l» §r",
+        "hold_tool": "§cHold a pickaxe, axe or shovel in your hand to enchant!",
+        "keep_tool": "§cKeep the tool in your hand to complete the enchantment.",
+        "already_applied": "§cThis tool already has this enchantment!",
+        "incompatible": "§cEnchantment incompatible with this tool!",
+        "success": "§aYou applied {enchant} §ato your tool for §e{cost} Akunas§a!",
+        "menu": {
+            "_prefix": "",
+            "title": "§6Survival §8§l» §r§dEnchant",
+            "applied": "§a✔ Already applied to this tool",
+            "incompatible": "§c✖ Incompatible with this tool type",
+            "cost": "§7Cost§8: §e{cost} Akunas",
+            "cost_with_tax": "{n}§7With tax§8: §e{total} Akunas",
+            "click_to_apply": "{n}{n}§eClick to apply!",
+            "entry": "{color}§l{name} {level}{n}§7{desc}{n}{n}{status}"
+        },
+        "items": {
+            "_prefix": "",
+            "auto_smelt": {
+                "name": "Auto-Smelt",
+                "desc": "Automatically smelts ores and sand while mining"
+            },
+            "telekinesis": {
+                "name": "Telekinesis",
+                "desc": "Sends block drops directly to your inventory"
+            },
+            "excavation": {
+                "name": "3x3 Excavation",
+                "desc": "Breaks a 3x3 area around the mined block"
+            }
+        }
+    },
+    "discord_bot": {
+        "common": {
+            "server_unavailable": "❌ | Server unavailable...",
+            "server_unavailable_detail": "❌ | Minecraft server is currently unavailable ({error}).",
+            "generic_error": "❌ | An error occurred...",
+            "error_detail": "❌ | Error: {error}",
+            "guild_not_allowed": "❌ | This bot is not configured for this server...",
+            "official_only": "❌ | This command can only be used in the official server...",
+            "command_error": "❌ | Error executing command...",
+            "permanent": "Permanent",
+            "unknown": "Unknown",
+            "disabled": "❌ Disabled",
+            "not_linked_short": "❌ Not linked"
+        },
+        "booster": {
+            "sync_error": "❌ | Could not sync your boost ({error}).",
+            "not_linked_boosting": "💜 | Boost detected! Use `/discord` on the server and then `/vincular` here to unlock the **Booster** title, **+25% XP**, **+25% on /daily** and **10,000 Akunas/month**!",
+            "not_linked": "ℹ️ | Your account is not linked yet. Use `/discord` on the server and `/vincular` here.",
+            "not_boosting": "ℹ️ | Linked account: `{name}`. You are not boosting the server right now.",
+            "title": "💜 Server Booster Rewards",
+            "linked_account": "👤 **Linked account:** `{name}`",
+            "exclusive_title": "🏷️ **Exclusive title:** `Booster`",
+            "xp_bonus": "✨ **XP bonus:** `+25%` passive",
+            "daily_bonus": "🎁 **`/daily` bonus:** `+25%` stackable with Galaxy+",
+            "monthly_claimed": "💰 **Monthly reward claimed:** `+{amount} Akunas`",
+            "next_claim": "⏳ **Next monthly reward:** <t:{timestamp}:R>"
+        },
+        "account": {
+            "not_linked": "❌ | No account is linked...",
+            "field_2fa": "🔑 | 2FA",
+            "field_email": "📫 | Email",
+            "field_last_login": "🟢 | Last login",
+            "field_created_at": "📅 | Account Created",
+            "mode_discord": "🔷 Discord",
+            "mode_email": "📧 Email"
+        },
+        "link": {
+            "invalid_code": "❌ | Invalid code, use `/discord` on the server to generate a new one...",
+            "expired_code": "❌ | Expired code, use `/discord` on the server to generate a new one...",
+            "already_linked": "❌ | This account is already linked to `{player}`",
+            "title": "✅ Account linked!",
+            "description": "Your account was linked successfully...",
+            "footer": "Use /discord desvincular to unlink your account"
+        },
+        "unlink": {
+            "not_linked": "❌ | No linked account...",
+            "title": "🔗 | Account unlinked",
+            "description": "Account unlinked successfully..."
+        },
+        "confirmlogin": {
+            "invalid_code": "❌ | Invalid code...",
+            "expired_code": "❌ | Expired code...",
+            "not_linked": "❌ | You do not have a linked account...",
+            "player_offline": "❌ | Player offline...",
+            "title": "✅ | Authentication complete!",
+            "description": "Login authorized successfully..."
+        },
+        "resetpassword": {
+            "not_linked": "❌ | No account is linked...",
+            "title": "🔑 | Password reset!",
+            "description": "Your credentials were reset successfully..."
+        },
+        "moderation": {
+            "staff_not_linked": "❌ | Discord account not linked to any staff member...",
+            "no_permission_ban": "❌ | Your account does not have permission to ban...",
+            "no_permission_kick": "❌ | Your account does not have permission to kick...",
+            "no_permission_mute": "❌ | Your account does not have permission to mute...",
+            "no_permission_unmute": "❌ | Your account does not have permission to unmute...",
+            "no_permission_warn": "❌ | Your account does not have permission to warn...",
+            "player_not_found": "❌ | Player `{player}` not found...",
+            "player_offline": "❌ | Player offline...",
+            "target_is_staff_ban": "❌ | You cannot ban a staff member...",
+            "target_is_staff_kick": "❌ | You cannot kick a staff member...",
+            "target_is_staff_mute": "❌ | You cannot mute a staff member...",
+            "target_is_staff_warn": "❌ | You cannot warn a staff member...",
+            "already_banned": "❌ | `{player}` is already banned...",
+            "already_muted": "❌ | `{player}` is already muted...",
+            "not_banned": "❌ | `{player}` is not banned...",
+            "not_muted": "❌ | `{player}` is not muted...",
+            "no_history": "✅ | This player has no punishments...",
+            "ban_title": "🔨 | Player banned",
+            "kick_title": "👢 | Player kicked",
+            "mute_title": "🔇 | Player muted",
+            "unmute_title": "🔊 | Player unmuted",
+            "warn_title": "⚠️ | Player warned",
+            "baninfo_title": "🔨 | Ban info — {player}",
+            "muteinfo_title": "🔇 | Mute info — {player}",
+            "history_title": "📋 | Punishment History — {player}",
+            "field_player": "👤 | Player",
+            "field_staff": "🛡️ | Staff",
+            "field_duration": "⌛ | Duration",
+            "field_reason": "📝 | Reason",
+            "field_warns": "⚠️ | Active warnings",
+            "field_banned_at": "📅 | Banned at",
+            "field_muted_at": "📅 | Muted at",
+            "expires_in": "Expires <t:{timestamp}:R>",
+            "history_entry": "> {time} - **{action}** by **{staff}**{duration}{n}- {reason}",
+            "no_permission_unban": "❌ | Your account does not have permission to unban...",
+            "unban_title": "✅ | Player unbanned",
+            "invalid_duration": "❌ | Invalid duration (e.g. 10m, 1h, 2d)...",
+            "duration_permanent": "Permanent"
+        },
+        "clan": {
+            "not_found": "❌ | Clan not found...",
+            "type_public": "🔓 Public",
+            "type_invite": "📩 Invite",
+            "type_private": "🔒 Private",
+            "type_closed": "⛔ Closed",
+            "field_leader": "👑 | Leader",
+            "field_level": "📊 | Level",
+            "field_xp": "✨ | XP",
+            "field_members": "👥 | Members",
+            "field_type": "📋 | Type",
+            "field_created": "📅 | Created",
+            "field_description": "📝 | Description",
+            "field_members_count": "👥 | Members ({count})"
+        },
+        "addskin": {
+            "invalid_id": "❌ | Invalid ID (use only a-z, 0-9, _ and -)...",
+            "file_too_large": "❌ | File too large (max 5MB)...",
+            "download_failed": "❌ | Could not download the file...",
+            "invalid_png": "❌ | File is not a valid PNG or exceeds max dimensions...",
+            "skin_too_small": "❌ | Skin too small...",
+            "skin_transparent": "❌ | Invalid skin: at least 70% of pixels must be visible (non-transparent)...",
+            "invalid_type": "❌ | Invalid type...",
+            "invalid_skin_data": "❌ | Invalid skin data...",
+            "success": "✅ | Skin {id} ({name}) added successfully!"
+        },
+        "staffcode": {
+            "invalid_code": "❌ | Invalid code...",
+            "code_used": "❌ | Code already used or expired...",
+            "code_expired": "❌ | Code expired...",
+            "not_linked": "❌ | You must link your Discord account first...",
+            "name_mismatch": "❌ | Linked account name does not match the name entered on the site...",
+            "title": "✅ Authentication confirmed!",
+            "description": "Your identity was confirmed as **{name}**. Return to the website to continue your application."
+        },
+        "staff_review": {
+            "not_found": "⚠️ | Application not found...",
+            "tag_applied": "{n}🎮 | Trial tag applied to **{name}** on the server",
+            "tag_failed": "{n}⚠️ | Failed to apply tag on the server ({error}).",
+            "server_offline": "{n}⚠️ | Server unavailable...",
+            "approved_by": "✅ **Approved** by <@{userId}>.{note}",
+            "refuse_modal_title": "Reject application",
+            "refuse_reason_label": "Rejection reason",
+            "refused_dm": "🚧 | Your application was **rejected**...{n}You can view the reason on our website: https://staff.iakunamc.com",
+            "refused_by": "❌ | **Rejected** by <@{userId}>"
+        },
+        "perfil": {
+            "provide_player": "❌ | Please specify a player...",
+            "profile_hidden": "❌ | This player's profile is hidden...",
+            "not_found": "❌ | Player not found...",
+            "no_records_period": "No records in this period...",
+            "stats_header": "📊 | Stats — {period}",
+            "field_level": "⭐ | Level",
+            "level_value": "**{level}** ({xp} XP — {needed} XP needed for next level)",
+            "field_akunas": "💰 | Akunas",
+            "field_online_time": "🕐 | Playtime",
+            "field_last_online": "📅 | Last online",
+            "field_clan": "🛡️ | Clan",
+            "field_married": "💍 | Married to",
+            "field_about": "📝 | About",
+            "period_total": "Total",
+            "period_daily": "Daily",
+            "period_weekly": "Weekly",
+            "period_monthly": "Monthly",
+            "game_duels": "Duels",
+            "game_overall_kills": "Overall Kills",
+            "stat_wins": "Wins",
+            "stat_kills": "Kills",
+            "stat_plays": "Matches played",
+            "stat_defeats": "Defeats",
+            "stat_final_kills": "Final Kills",
+            "stat_broken_beds": "Beds Broken",
+            "stat_points": "Goals scored",
+            "stat_deaths": "Deaths",
+            "period_yearly": "Yearly",
+            "stat_completions": "Completions",
+            "stat_blocks": "Blocks placed",
+            "stat_attempts": "Attempts",
+            "game_bridgetraining": "Bridge Training",
+            "stat_elo": "ELO",
+            "field_parkour": "🏃 | Parkour Best Time"
+        },
+        "top": {
+            "title": "Top {game} — {period}",
+            "empty": "No records found...",
+            "score_kills": "⚔️ {amount} kills",
+            "score_akunas": "💰 {amount} Akunas",
+            "score_levels": "⭐ Level {amount}",
+            "score_xp": "✨ {amount} XP",
+            "score_wins": "🏆 {amount} wins",
+            "game_bridgetraining": "Bridge Training",
+            "game_bridgetraining_blocks": "Bridge Training (Blocks)",
+            "game_duels_elo": "Duels ELO",
+            "game_pvp_elo": "PvP ELO",
+            "score_completions": "🏆 {amount} completions",
+            "score_blocks": "🧱 {amount} blocks",
+            "score_elo": "🏅 {amount} ELO"
+        }
+    },
+    "feedback": {
+        "_prefix": "§3Feedback §8§l» §r",
+        "usage": "§cUse §8/§c{label} §8<§c1-5§8> [§ccomment§8] §7or §8/§c{label} list",
+        "invalid_rating": "§cPlease choose a rating between 1 and 5...",
+        "cooldown": "§cPlease wait {time} before submitting another review...",
+        "negative_requires_comment": "§cNegative ratings (1* to 3*) require a comment of at least {min} characters...",
+        "submitted": "§7Review §3#{id} §7submitted ({stars} §8| §3{rating}/5§7)! Staff will review it shortly",
+        "notify": {
+            "valid": "§7Your review §3#{id} §7was marked as §avalid §7by §3{staff} §7and is now public!",
+            "invalid": "§7Your review §3#{id} §7was marked as §cinvalid §7by §c{staff}§7",
+            "reply": "§7Staff reply (§3{staff}§7) on review §3#{id}§8: §f{reply}"
+        },
+        "prompt": {
+            "negative": "§7You selected {stars} §8({rating}/5)§7.{n}§3Feedback §8§l» §r§cSince this is a negative rating, type your comment in chat §8(§cor §fcancel§8)§c:",
+            "positive": "§7You selected {stars} §8({rating}/5)§7.{n}§3Feedback §8§l» §r§7Type a comment in chat, §fskip §7to submit without a comment, or §fcancel§7:",
+            "cancelled": "§cReview submission cancelled"
+        },
+        "menu": {
+            "title": "§3Feedback §8§l» §r§7Rate the Server",
+            "public_title": "§3Feedback §8§l» §r§7Public Reviews",
+            "my_title": "§3Feedback §8§l» §r§7My Reviews",
+            "summary": "§3Server Reviews\n§7Average§8: §e{average} *\n§7Public total§8: §3{total}",
+            "star_item": "{color}{rating} Star(s)\n{stars}\n{note}",
+            "comment_required": "§cComment required",
+            "comment_optional": "§aComment optional",
+            "public_btn": "§3Public Reviews\n§7Click to view §8(§3{total}§8)",
+            "my_btn": "§3My Reviews\n§7View status and replies",
+            "empty": "§cNo reviews found...",
+            "_prefix": ""
+        },
+        "status": {
+            "valid": "§7Status§8: §aValid §8(§7Public§8)",
+            "invalid": "§7Status§8: §cInvalid",
+            "pending": "§7Status§8: §ePending review",
+            "_prefix": ""
+        }
+    },
+    "mail": {
+        "_prefix": "§3Mail §8§l» §r",
+        "usage": "§cUse §8/§c{label} open §7| §8/§c{label} send §8<§cplayer§8> <§cmessage§8> §7| §8/§c{label} claim §8<§cid§8>",
+        "join_header": "§7You received §3{count} §7new notification(s) while offline §8(§3/mail§8)§7:",
+        "unread_reminder": "§7You have §3{count} §7unread message(s). Use §3/mail §7to view",
+        "player_message": "§7Message from §3{sender}§8: §f{message}",
+        "reward_received": "§7You received a reward§8: §3{summary}§7! Use §3/mail claim {id} §7or click in §3/mail§7",
+        "send": {
+            "usage": "§cUse §8/§c{label} send §8<§cplayer§8> <§cmessage§8>",
+            "self": "§cYou cannot send a message to yourself...",
+            "not_found": "§cPlayer {player} does not have a registered account...",
+            "blocked": "§cYou cannot send messages to {player}...",
+            "success": "§7Message sent to §3{player}§7's mailbox!"
+        },
+        "claim": {
+            "usage": "§cUse §8/§c{label} claim §8<§cid§8>",
+            "not_found": "§cMail #{id} not found...",
+            "no_reward": "§cMail #{id} has no rewards to claim...",
+            "already_claimed": "§cThe reward from mail #{id} has already been claimed...",
+            "success": "§7Claimed reward from mail §3#{id}§8: {rewards}§7!"
+        },
+        "menu": {
+            "title": "§3Mail §8§l» §r§7Inbox",
+            "empty": "§cYour inbox is empty...",
+            "badge_unread": "§e[NEW]",
+            "badge_read": "§7[Read]",
+            "badge_reward": "§6[REWARD]",
+            "click_to_claim": "§eClick to claim §8(§3/mail claim {id}§8)",
+            "read_all": "§aMark all as read",
+            "clear_read": "§cClear read messages",
+            "_prefix": ""
+        }
+    },
+    "help": {
+        "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §7Available commands §8(§f{page}§8/§f{total}§8) §8===-=-=-=-",
+        "entry": "§eHelp §8§l» §r§8/§7{cmd} §8- §7{desc}",
+        "footer_hint": "§eHelp §8§l» §r§7Use §8/§7help §8<§7page§8> §7or §8/§7help §8<§7command§8>",
+        "invalid_page": "§eHelp §8§l» §r§cInvalid page... Use from §e1 §cto §e{total}§c.",
+        "not_found": "§eHelp §8§l» §r§cCommand not found...",
+        "no_description": "No description available",
+        "detail": {
+            "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §7/{cmd} §8===-=-=-=-",
+            "desc": "§eHelp §8§l» §r§7Description§8: §e{desc}",
+            "usage": "§eHelp §8§l» §r§7Usage§8: §8/§7{usage}",
+            "aliases": "§eHelp §8§l» §r§7Aliases§8: §7{aliases}"
+        },
+        "commands": {
+            "help": {
+                "desc": "View the list of available server commands",
+                "usage": "help [page|command]"
+            },
+            "info": {
+                "desc": "View server information",
+                "usage": "info"
+            },
+            "ip": {
+                "desc": "View the server IP",
+                "usage": "ip"
+            },
+            "regras": {
+                "desc": "View the server rules",
+                "usage": "regras"
+            },
+            "lobby": {
+                "desc": "Return to the lobby",
+                "usage": "lobby"
+            },
+            "lang": {
+                "desc": "Change your server language",
+                "usage": "lang [language]"
+            },
+            "pref": {
+                "desc": "Manage your preferences",
+                "usage": "pref"
+            },
+            "tops": {
+                "desc": "View server leaderboards",
+                "usage": "tops"
+            },
+            "clear": {
+                "desc": "Clear your inventory",
+                "usage": "clear"
+            },
+            "itemid": {
+                "desc": "View the ID of the item in your hand",
+                "usage": "itemid"
+            },
+            "sit": {
+                "desc": "Sit on a block or player",
+                "usage": "sit [player]"
+            },
+            "sitaccept": {
+                "desc": "Accept a sit request",
+                "usage": "sitaccept"
+            },
+            "sitdeny": {
+                "desc": "Deny a sit request",
+                "usage": "sitdeny"
+            },
+            "sleep": {
+                "desc": "Lie down on the ground",
+                "usage": "sleep"
+            },
+            "tell": {
+                "desc": "Send a private message to a player",
+                "usage": "tell <player> <message>"
+            },
+            "reply": {
+                "desc": "Reply to the last private message",
+                "usage": "reply <message>"
+            },
+            "locktell": {
+                "desc": "Toggle private messages",
+                "usage": "locktell"
+            },
+            "canal": {
+                "desc": "Switch your chat channel",
+                "usage": "canal <global|local|clan|party>"
+            },
+            "ccme": {
+                "desc": "Clear your own chat",
+                "usage": "ccme"
+            },
+            "report": {
+                "desc": "Report a player",
+                "usage": "report <player> <reason>"
+            },
+            "fake": {
+                "desc": "Temporarily change your nickname",
+                "usage": "fake <nick|reset>"
+            },
+            "tag": {
+                "desc": "Manage and select your tags",
+                "usage": "tag"
+            },
+            "clan": {
+                "desc": "Manage your clan",
+                "usage": "clan <subcommand>"
+            },
+            "friend": {
+                "desc": "Manage your friends list",
+                "usage": "friend <subcommand>"
+            },
+            "party": {
+                "desc": "Manage your party",
+                "usage": "party <subcommand>"
+            },
+            "marriage": {
+                "desc": "Marriage system",
+                "usage": "marriage <subcommand>"
+            },
+            "block": {
+                "desc": "Manage your block list",
+                "usage": "block <player>"
+            },
+            "bio": {
+                "desc": "Change your biography",
+                "usage": "bio <text>"
+            },
+            "discord": {
+                "desc": "Link your account to Discord",
+                "usage": "discord"
+            },
+            "profile": {
+                "desc": "View a player profile and stats",
+                "usage": "profile [player]"
+            },
+            "balance": {
+                "desc": "View your Akunas balance",
+                "usage": "balance [player]"
+            },
+            "pay": {
+                "desc": "Send Akunas to another player",
+                "usage": "pay <player> <amount>"
+            },
+            "bet": {
+                "desc": "Bet Akunas",
+                "usage": "bet <amount>"
+            },
+            "lottery": {
+                "desc": "Join the server lottery",
+                "usage": "lottery [tickets]"
+            },
+            "ecohistory": {
+                "desc": "View your transaction history",
+                "usage": "ecohistory"
+            },
+            "conquistas": {
+                "desc": "View your achievements",
+                "usage": "conquistas"
+            },
+            "missions": {
+                "desc": "View your mission progress",
+                "usage": "missions"
+            },
+            "resetmissions": {
+                "desc": "Reset your missions using Akunas",
+                "usage": "resetmissions"
+            },
+            "skills": {
+                "desc": "Manage or buy skills",
+                "usage": "skills"
+            },
+            "skillswindow": {
+                "desc": "Open the skills menu",
+                "usage": "skillswindow"
+            },
+            "xphistory": {
+                "desc": "View your XP history",
+                "usage": "xphistory"
+            },
+            "cosmetic": {
+                "desc": "Manage your cosmetics",
+                "usage": "cosmetic"
+            },
+            "cosmeticwindow": {
+                "desc": "Open the cosmetics menu",
+                "usage": "cosmeticwindow"
+            },
+            "cage": {
+                "desc": "Manage your cage",
+                "usage": "cage"
+            },
+            "cagewindow": {
+                "desc": "Open the cages menu",
+                "usage": "cagewindow"
+            },
+            "kit": {
+                "desc": "Claim or manage kits",
+                "usage": "kit [name]"
+            },
+            "kitwindow": {
+                "desc": "Open the kits menu",
+                "usage": "kitwindow"
+            },
+            "register": {
+                "desc": "Register your account",
+                "usage": "register <password> <confirm>"
+            },
+            "login": {
+                "desc": "Log in to your account",
+                "usage": "login <password>"
+            },
+            "changepassword": {
+                "desc": "Change your password",
+                "usage": "changepassword <current> <new>"
+            },
+            "email": {
+                "desc": "Manage your account email",
+                "usage": "email <email>"
+            },
+            "pin": {
+                "desc": "Manage your security PIN",
+                "usage": "pin"
+            },
+            "ping": {
+                "desc": "Shows your latency (ping) to the server",
+                "usage": "ping"
+            },
+            "list": {
+                "desc": "Shows the number of online players",
+                "usage": "list"
+            },
+            "version": {
+                "desc": "Shows the server version",
+                "usage": "version"
+            },
+            "bedwarsmenu": {
+                "desc": "Opens the BedWars selection menu",
+                "usage": "bedwarsmenu"
+            },
+            "bwcustom": {
+                "desc": "Create and manage custom BedWars rooms",
+                "usage": "bwcustom <create|config|list>"
+            },
+            "skywarsmenu": {
+                "desc": "Opens the SkyWars selection menu",
+                "usage": "skywarsmenu"
+            },
+            "duels": {
+                "desc": "Join or leave the Duels queue",
+                "usage": "duels <mode|leave>"
+            },
+            "duelsmenu": {
+                "desc": "Opens the Duels selection menu",
+                "usage": "duelsmenu"
+            },
+            "bridge": {
+                "desc": "TheBridge commands",
+                "usage": "bridge <join|leave>"
+            },
+            "blockparty": {
+                "desc": "BlockParty commands",
+                "usage": "blockparty <join|leave>"
+            },
+            "angel": {
+                "desc": "Toggle or customize your angel wings",
+                "usage": "angel"
+            },
+            "crown": {
+                "desc": "Toggle or customize your crown",
+                "usage": "crown"
+            },
+            "colorarmor": {
+                "desc": "Toggle colored armor",
+                "usage": "colorarmor"
+            },
+            "morph": {
+                "desc": "Morph into a mob",
+                "usage": "morph [mob]"
+            },
+            "particle": {
+                "desc": "Choose your trail particle",
+                "usage": "particle"
+            },
+            "hitparticle": {
+                "desc": "Choose your hit particle",
+                "usage": "hitparticle"
+            },
+            "pet": {
+                "desc": "Manage your pets",
+                "usage": "pet"
+            },
+            "joinmsg": {
+                "desc": "Customize your join message",
+                "usage": "joinmsg"
+            },
+            "msgcolor": {
+                "desc": "Change your chat message color",
+                "usage": "msgcolor"
+            },
+            "nametag": {
+                "desc": "Customize your nametag",
+                "usage": "nametag"
+            },
+            "nickcolor": {
+                "desc": "Change your nickname color",
+                "usage": "nickcolor"
+            },
+            "pluscolor": {
+                "desc": "Change the + color of your tag",
+                "usage": "pluscolor"
+            },
+            "title": {
+                "desc": "Manage and equip your titles",
+                "usage": "title"
+            },
+            "code": {
+                "desc": "Redeem a promotional code",
+                "usage": "code <code>"
+            },
+            "daily": {
+                "desc": "Claim your daily reward",
+                "usage": "daily"
+            },
+            "duel": {
+                "desc": "Challenge another player to a duel",
+                "usage": "duel <player>"
+            },
+            "feedback": {
+                "desc": "Send feedback or suggestions to the server",
+                "usage": "feedback <message>"
+            },
+            "mail": {
+                "desc": "Send or read player mail",
+                "usage": "mail <subcommand>"
+            },
+            "spectate": {
+                "desc": "Spectate a player match",
+                "usage": "spectate <player>"
+            },
+            "plot": {
+                "desc": "Manage your plots in Plot mode",
+                "usage": "plot <subcommand>"
+            },
+            "mochila": {
+                "desc": "Manage your backpacks in Survival",
+                "usage": "mochila"
+            },
+            "bin": {
+                "desc": "Open the trash bin to discard items",
+                "usage": "bin"
+            },
+            "coords": {
+                "desc": "View your current coordinates",
+                "usage": "coords"
+            },
+            "deletehome": {
+                "desc": "Delete a saved home",
+                "usage": "deletehome <name>"
+            },
+            "enchant": {
+                "desc": "Open the enchanting menu",
+                "usage": "enchant"
+            },
+            "home": {
+                "desc": "Teleport to a home",
+                "usage": "home <name>"
+            },
+            "homes": {
+                "desc": "List your saved homes",
+                "usage": "homes"
+            },
+            "randomtp": {
+                "desc": "Teleport to a safe random location",
+                "usage": "randomtp"
+            },
+            "repair": {
+                "desc": "Repair the damaged item in your hand",
+                "usage": "repair"
+            },
+            "sethome": {
+                "desc": "Set a new home at your location",
+                "usage": "sethome <name>"
+            },
+            "loja": {
+                "desc": "Open the Survival item shop",
+                "usage": "loja"
+            },
+            "smelt": {
+                "desc": "Smelt ores in your inventory",
+                "usage": "smelt"
+            },
+            "tpa": {
+                "desc": "Request to teleport to another player",
+                "usage": "tpa <player>"
+            },
+            "tpaccept": {
+                "desc": "Accept a teleport request",
+                "usage": "tpaccept"
+            },
+            "tpdeny": {
+                "desc": "Deny a teleport request",
+                "usage": "tpdeny"
+            },
+            "pvpmodes": {
+                "desc": "Join a PvP mode",
+                "usage": "pvpmodes <mode>"
+            },
+            "pvpmenu": {
+                "desc": "Open the PvP modes menu",
+                "usage": "pvpmenu"
+            },
+            "teampvp": {
+                "desc": "TeamPvP commands",
+                "usage": "teampvp"
+            },
+            "parkour": {
+                "desc": "Parkour mode commands",
+                "usage": "parkour"
+            },
+            "maze": {
+                "desc": "Join or leave the Maze",
+                "usage": "maze"
+            },
+            "tntrun": {
+                "desc": "TNTRun commands",
+                "usage": "tntrun"
+            },
+            "mlg": {
+                "desc": "MLGBlock commands",
+                "usage": "mlg"
+            },
+            "blocksumo": {
+                "desc": "BlockSumo commands",
+                "usage": "blocksumo"
+            },
+            "bridgepractice": {
+                "desc": "Bridge Practice commands",
+                "usage": "bridgepractice"
+            },
+            "orbital": {
+                "desc": "Activate floating items orbiting around you",
+                "usage": "orbital <item|list|random|off>"
+            }
+        }
+    },
+    "orbital": {
+        "_prefix": "§dOrbital §8§l» §r",
+        "activated": "§7§d{item} §7orbital activated successfully!",
+        "deactivated": "§7Orbital deactivated successfully!",
+        "invalid_item": "§cInvalid item... Use §8/§c{label} list §cto see available items",
+        "invalid_world": "§cYou cannot use orbital in this world...",
+        "list": "§7Available items §8(§f{count}§8): §7{items}",
+        "no_perm": "§cOnly players with §7§l§oGalaxy§r§a+ §r§cvip or higher can use orbital... §oGet yours at https://loja.iakunamc.com",
+        "not_active": "§cYou do not have orbital enabled...",
+        "usage": "§cUse §8/§c{label} §8<§citem§8|§clist§8|§crandom§8|§coff§8>"
     }
 }
