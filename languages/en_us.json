@@ -1247,6 +1247,7 @@
             "not_in_game": "§cYou are not in any queue or duel...",
             "no_arenas": "§cThere are no arenas available right now...",
             "party_size": "§cDuels only supports parties of exactly 2 players...",
+            "party_size_team": "§cFor {format} duels, your party needs up to {team_size} player(s) for the queue or exactly {private_size} for a private duel...",
             "usage": "§7Use §8/§7duels §8<§7mode§8|§7leave§8>",
             "help": {
                 "_prefix": "",
@@ -1254,11 +1255,10 @@
                 "entry": "§2Duels §8§l» §r§8/§7{cmd} §8- §7{desc}",
                 "desc": {
                     "play": "Join queue",
-                    "leave": "Leave queue or duel",
-                    "bot": "Duel against a Bot"
+                    "bot": "Duel against a Bot",
+                    "leave": "Leave queue or duel"
                 }
-            },
-            "party_size_team": "§cFor {format} duels, your party needs up to {team_size} player(s) for the queue or exactly {private_size} for a private duel..."
+            }
         },
         "status": {
             "_prefix": "§2Duels §8§l» §r",
@@ -1269,6 +1269,8 @@
         "match": {
             "_prefix": "§2Duels §8§l» §r",
             "started": "§7Duel §2{mode} §7against §2{opponent} §7in arena §2{arena}§7!",
+            "started_team": "§7Duel §2{mode} §8(§2{format}§8) §7in arena §2{arena}§7! §a{teammates} §8vs §c{opponents}",
+            "eliminated": "§c{player} §7was eliminated! §8(§2{team_alive}§8/§7{team_total}§8 remaining)",
             "cancelled": "§cThe duel was cancelled...",
             "timeout": "§cMatch time limit reached...",
             "summary": {
@@ -1276,8 +1278,6 @@
                 "normal": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §2Duels §8===-=-=-=-{n}§7Winner§8: §a{winner}{n}§7Loser§8: §c{loser}{n}§7Mode§8: §2{mode} §8| §7Duration§8: §2{duration}{n}§8-=-=-=-===============================-=-=-=-",
                 "forfeit": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §2Duels §8===-=-=-=-{n}§7Result§8: §eForfeit{n}§7Winner§8: §a{winner}{n}§7Loser§8: §c{loser}{n}§7Mode§8: §2{mode} §8| §7Duration§8: §2{duration}{n}§8-=-=-=-===============================-=-=-=-"
             },
-            "started_team": "§7Duel §2{mode} §8(§2{format}§8) §7in arena §2{arena}§7! §a{teammates} §8vs §c{opponents}",
-            "eliminated": "§c{player} §7was eliminated! §8(§2{team_alive}§8/§7{team_total}§8 remaining)",
             "summary_team": {
                 "_prefix": "",
                 "normal": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §2Duels {format} §8===-=-=-=-{n}§7Winners§8: §a{winners}{n}§7Losers§8: §c{losers}{n}§7Mode§8: §2{mode} §8| §7Duration§8: §2{duration}{n}§8-=-=-=-===============================-=-=-=-",
@@ -1308,6 +1308,11 @@
             "left": "§7You left the queue for the §c{mode}§7 mode!",
             "timeout": "§cYou were automatically removed from the queue because no other available players were found..."
         },
+        "bot": {
+            "_prefix": "§2Duels §8§l» §r",
+            "usage": "§7Use §8/§7duels bot §8<§7mode§8> [§aeasy§8|§emedium§8|§chard§8|§5hacker§8]",
+            "invalid_difficulty": "§cInvalid difficulty! Use §aeasy§c, §emedium§c, §chard §cor §5hacker§c..."
+        },
         "menu": {
             "_prefix": "",
             "back": "§c« Back",
@@ -1332,12 +1337,11 @@
             "mode_item": "{label} {format}{n}§7Playing§8: §f{playing}{n}{n}§eClick to join queue",
             "sw1v1_item": "§bSkyWars 1v1{n}§7Playing§8: §f{playing}{n}{n}§eClick to play",
             "title": "§2Duels §8§l» §r§7Select Mode"
-        },
-        "bot": {
-            "invalid_difficulty": "§cInvalid difficulty! Use §aeasy§c, §emedium§c, §chard §cor §5hacker§c...",
-            "_prefix": "§2Duels §8§l» §r",
-            "usage": "§7Use §8/§7duels bot §8<§7mode§8> [§aeasy§8|§emedium§8|§chard§8|§5hacker§8]"
         }
+    },
+    "pearl": {
+        "_prefix": "",
+        "blocked": "§cThere is no safe space to teleport there!"
     },
     "pvpmodes": {
         "_prefix": "§bPvP §8§l» §r",
@@ -1887,14 +1891,14 @@
     "daily": {
         "reward": {
             "akunas": "§c{amount} Akunas",
+            "cooldown": "§5Daily reward §8§l» §r§cYou already claimed today! Next in §5{time}§c...",
             "milestone": "§5Daily reward §8§l» §r§7Congratulations! you reached §5{weeks} §7weeks streak!",
+            "milestone_month": "§5Daily reward §8§l» §r§7Amazing! You reached a §5{days} §7day streak and earned a special bonus!",
             "multiplier": "§9{multiplier}x Multiplier §8(§5{duration}§8)",
             "received": "§5Daily reward §8§l» §r§7You received {rewards}",
             "streak": "§5Daily reward §8§l» §r§7Current streak§8: §5{streak} §7days",
             "xp": "§9{amount} XP",
             "streak_lost": "§5Daily reward §8§l» §r§cYou lost your {oldStreak} days streak...",
-            "cooldown": "§5Daily reward §8§l» §r§cYou already claimed today! Next in §5{time}§c...",
-            "milestone_month": "§5Daily reward §8§l» §r§7Amazing! You reached a §5{days} §7day streak and earned a special bonus!",
             "bonus_applied": "§5Daily §8§l» §r§7Applied bonus§8: {bonuses}",
             "bonus_galaxy": "§7§l§oGalaxy§r§a+ §e(+{percent}%)",
             "bonus_booster": "§dBooster §e(+{percent}%)"
@@ -1942,8 +1946,64 @@
         "set": "§7Fake enabled successfully!",
         "usage": "§cUse §8/§c{label} §8<§con§8|§coff§8|§crandom§8|§clist§8>"
     },
+    "friends": {
+        "accept": {
+            "_prefix": "§cSystem §8§l» §r",
+            "none": "§cYou have no pending friend requests...",
+            "notify": "§b{friend} §7accepted your friend request!",
+            "success": "§7You and §b{friend} §7are now friends!"
+        },
+        "add": {
+            "_prefix": "§cSystem §8§l» §r",
+            "already": "§cYou are already friends with §b{target}§c...",
+            "expired": "§cThe friend request from §b{sender} §cexpired...",
+            "limit": "§cYou have reached your friend limit ({max})!",
+            "pending": "§cThis player already has a pending friend request...",
+            "request": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §bFriend Request §8===-=-=-{n}§cSystem §8§l» §r§b{sender} §7sent you a friend request...{n}§cSystem §8§l» §r§7Use §a/friend aceitar §7to accept or §c/friend recusar §7to decline",
+            "self": "§cYou cannot add yourself as a friend...",
+            "sent": "§7Friend request sent to §b{target}§7!",
+            "target_limit": "§cThis player has already reached their friend limit!",
+            "usage": "§cUse §8/§c{label} add §8<§cplayer§8>"
+        },
+        "deny": {
+            "_prefix": "§cSystem §8§l» §r",
+            "none": "§cYou have no pending friend requests...",
+            "notify": "§b{target} §7declined your friend request...",
+            "success": "§7Friend request declined successfully!"
+        },
+        "friend": {
+            "_prefix": "§cSystem §8§l» §r",
+            "joined": "§7Your friend §b{friend} §7joined the server!",
+            "left": "§7Your friend §b{friend} §cleft §7the server..."
+        },
+        "list": {
+            "_prefix": "",
+            "entry": "§cSystem §8§l» §r{status} §b{friend} §8| §7Since§8:§b {date} §8(§7{dateSince} ago§8){n}§cSystem §8§l» §r§7You call§8:§b {nicknameGiven} §8| §7Calls you§8:§b {nicknameReceived}",
+            "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §bFriends §8(§7{count}§8/§7{max}§8) §8[§7Page {page}/{maxPages}§8] ===-=-=-=-",
+            "no_nickname": "§7No nickname...§r",
+            "none": "§cSystem §8§l» §r§cYou do not have any friends yet...",
+            "offline": "§c●",
+            "online": "§a●"
+        },
+        "nick": {
+            "_prefix": "§cSystem §8§l» §r",
+            "success": "§7Nickname of §b{friend} §7set to '§b{nickname}§7' successfully!",
+            "usage": "§cUse §8/§c{label} nick §8<§cfriend§8> <§cnickname§8>"
+        },
+        "remove": {
+            "_prefix": "§cSystem §8§l» §r",
+            "all_success": "§7All of your friends have been removed!",
+            "invalid": "§cInvalid player or not on your friends list...",
+            "none": "§cYou do not have any friends...",
+            "notify": "§b{friend} §7removed you from their friends list...",
+            "success": "§7You removed §b{friend} §7from your friends list...",
+            "usage": "§cUse §8/§c{label} remover §8<§cplayer§8|§c*§8>"
+        },
+        "usage": "§cSystem §8§l» §r§cUse §8/§c{label} §8<§cadd§8|§caceitar§8|§crecusar§8|§cremover§8|§clistar§8|§cnick§8>"
+    },
     "home": {
         "_prefix": "§cSystem §8§l» §r",
+        "in_combat": "§cVocê não pode usar esse comando em combate...",
         "none": "§cYou don't have any homes...",
         "not_exists": "§cYou don't have a home with that name...",
         "not_in_survival": "§cYou are not in survival mode...",
@@ -2355,8 +2415,33 @@
         "_prefix": "§cSystem §8§l» §r",
         "disable": "§7Preference disabled successfully!",
         "enable": "§7Preference enabled successfully!",
+        "global_only": "§cPreference §e{pref} §cis global-only and cannot be configured per minigame!",
+        "invalid_bool": "§cInvalid value for §e{pref}§c! Use §aon §cor §coff",
+        "invalid_minigame": "§cInvalid minigame! Minigames§8:§7 {minigames}",
+        "invalid_mode": "§cInvalid mode for §e{pref}§c! Modes§8: §aall§8, §bfriends§8, §dpartner§8, §eparty§8, §6clan§8, §coff",
+        "invalid_scoreboard_side": "§cInvalid position for §e{pref}§c! Use §aright§c, §bleft §cor §einline",
+        "minigame_unset": "§7Preference §e{pref} §7in §b{minigame} §7now follows the Global default!",
+        "minigame_usage": "§cUse §8/§c{label} mg §8<§cminigame§8> <§cpref§8> [§cmode§8|§creset§8]{n}§cSystem §8§l» §r§cMinigames§8:§7 {minigames}{n}§cSystem §8§l» §r§cPrefs§8:§7 {prefs}",
+        "not_allowed_minigame": "§cPreference §e{pref} §cis not available in §b{minigame}§c! Allowed minigames§8:§7 {minigames}",
         "onlyvip": "§cOnly players with §b§l§oAstral §r§cvip rank or higher can change this preference... §oGet yours at https://loja.iakunamc.com",
         "reset": "§7All preferences have been reset to default!",
+        "reset_minigame": "§7All custom preferences for §b{minigame} §7have been reset to Global!",
+        "state": {
+            "_prefix": "",
+            "all": "§aEveryone",
+            "clan": "§6Clan",
+            "friends": "§bFriends",
+            "hide_all": "§cHiding all",
+            "hide_off": "§aShowing all",
+            "off": "§cDisabled",
+            "on": "§aEnabled",
+            "partner": "§dPartner",
+            "party": "§eParty",
+            "sb_inline": "§eInline",
+            "sb_left": "§bLeft",
+            "sb_right": "§aRight"
+        },
+        "updated": "§7Preference §e{pref} §8(§b{scope}§8) §7changed to {status}§7!",
         "usage": "§cUse §8/§c{label} §8<§cpreference§8|§creset§8>{n}§cSystem §8§l» §r§cAvailable preferences§8:§7 {prefs}",
         "menu": {
             "_prefix": "",
@@ -2387,6 +2472,7 @@
             "friendnotify": "Notify friends",
             "hideplayers": "Hide players",
             "highlights": "Chat highlights",
+            "lowykb": "Knockback Y Reduzido (PvP)",
             "nakb": "NA Ping / Knockback (PvP)",
             "openchest": "Open chest with tool",
             "partnernotify": "Notify partner",
@@ -2402,32 +2488,7 @@
             "treecapitator": "Tree Capitator (Survival)",
             "veinminer": "Vein Miner (Survival)",
             "viewprofile": "Profile visibility"
-        },
-        "global_only": "§cPreference §e{pref} §cis global-only and cannot be configured per minigame!",
-        "invalid_bool": "§cInvalid value for §e{pref}§c! Use §aon §cor §coff",
-        "invalid_minigame": "§cInvalid minigame! Minigames§8:§7 {minigames}",
-        "invalid_mode": "§cInvalid mode for §e{pref}§c! Modes§8: §aall§8, §bfriends§8, §dpartner§8, §eparty§8, §6clan§8, §coff",
-        "invalid_scoreboard_side": "§cInvalid position for §e{pref}§c! Use §aright§c, §bleft §cor §einline",
-        "minigame_unset": "§7Preference §e{pref} §7in §b{minigame} §7now follows the Global default!",
-        "minigame_usage": "§cUse §8/§c{label} mg §8<§cminigame§8> <§cpref§8> [§cmode§8|§creset§8]{n}§cSystem §8§l» §r§cMinigames§8:§7 {minigames}{n}§cSystem §8§l» §r§cPrefs§8:§7 {prefs}",
-        "not_allowed_minigame": "§cPreference §e{pref} §cis not available in §b{minigame}§c! Allowed minigames§8:§7 {minigames}",
-        "reset_minigame": "§7All custom preferences for §b{minigame} §7have been reset to Global!",
-        "state": {
-            "_prefix": "",
-            "all": "§aEveryone",
-            "clan": "§6Clan",
-            "friends": "§bFriends",
-            "hide_all": "§cHiding all",
-            "hide_off": "§aShowing all",
-            "off": "§cDisabled",
-            "on": "§aEnabled",
-            "partner": "§dPartner",
-            "party": "§eParty",
-            "sb_inline": "§eInline",
-            "sb_left": "§bLeft",
-            "sb_right": "§aRight"
-        },
-        "updated": "§7Preference §e{pref} §8(§b{scope}§8) §7changed to {status}§7!"
+        }
     },
     "profanity": {
         "_prefix": "§cSystem §8§l» §r",
@@ -2616,6 +2677,7 @@
     },
     "tpa": {
         "expired": "§5Teleport §8§l» §r§cThe teleport request from {sender} has expired...",
+        "in_combat": "§5Teleporte §8§l» §r§cVocê não pode usar esse comando em combate...",
         "noself": "§5Teleport §8§l» §r§cYou cannot teleport to yourself...",
         "not_in_survival": "§5Teleport §8§l» §r§cYou are not in survival mode...",
         "pending": "§5Teleport §8§l» §r§cThat player already has a pending teleport request...",
@@ -3709,65 +3771,6 @@
             "archer": "Archer",
             "cheststealer": "Chest Stealer"
         }
-    },
-    "pearl": {
-        "_prefix": "",
-        "blocked": "§cThere is no safe space to teleport there!"
-    },
-    "friends": {
-        "accept": {
-            "_prefix": "§cSystem §8§l» §r",
-            "none": "§cYou have no pending friend requests...",
-            "notify": "§b{friend} §7accepted your friend request!",
-            "success": "§7You and §b{friend} §7are now friends!"
-        },
-        "add": {
-            "_prefix": "§cSystem §8§l» §r",
-            "already": "§cYou are already friends with §b{target}§c...",
-            "expired": "§cThe friend request from §b{sender} §cexpired...",
-            "limit": "§cYou have reached your friend limit ({max})!",
-            "pending": "§cThis player already has a pending friend request...",
-            "request": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §bFriend Request §8===-=-=-{n}§cSystem §8§l» §r§b{sender} §7sent you a friend request...{n}§cSystem §8§l» §r§7Use §a/friend aceitar §7to accept or §c/friend recusar §7to decline",
-            "self": "§cYou cannot add yourself as a friend...",
-            "sent": "§7Friend request sent to §b{target}§7!",
-            "target_limit": "§cThis player has already reached their friend limit!",
-            "usage": "§cUse §8/§c{label} add §8<§cplayer§8>"
-        },
-        "deny": {
-            "_prefix": "§cSystem §8§l» §r",
-            "none": "§cYou have no pending friend requests...",
-            "notify": "§b{target} §7declined your friend request...",
-            "success": "§7Friend request declined successfully!"
-        },
-        "friend": {
-            "_prefix": "§cSystem §8§l» §r",
-            "joined": "§7Your friend §b{friend} §7joined the server!",
-            "left": "§7Your friend §b{friend} §cleft §7the server..."
-        },
-        "list": {
-            "_prefix": "",
-            "entry": "§cSystem §8§l» §r{status} §b{friend} §8| §7Since§8:§b {date} §8(§7{dateSince} ago§8){n}§cSystem §8§l» §r§7You call§8:§b {nicknameGiven} §8| §7Calls you§8:§b {nicknameReceived}",
-            "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §bFriends §8(§7{count}§8/§7{max}§8) §8[§7Page {page}/{maxPages}§8] ===-=-=-=-",
-            "no_nickname": "§7No nickname...§r",
-            "none": "§cSystem §8§l» §r§cYou do not have any friends yet...",
-            "offline": "§c●",
-            "online": "§a●"
-        },
-        "nick": {
-            "_prefix": "§cSystem §8§l» §r",
-            "success": "§7Nickname of §b{friend} §7set to '§b{nickname}§7' successfully!",
-            "usage": "§cUse §8/§c{label} nick §8<§cfriend§8> <§cnickname§8>"
-        },
-        "remove": {
-            "_prefix": "§cSystem §8§l» §r",
-            "all_success": "§7All of your friends have been removed!",
-            "invalid": "§cInvalid player or not on your friends list...",
-            "none": "§cYou do not have any friends...",
-            "notify": "§b{friend} §7removed you from their friends list...",
-            "success": "§7You removed §b{friend} §7from your friends list...",
-            "usage": "§cUse §8/§c{label} remover §8<§cplayer§8|§c*§8>"
-        },
-        "usage": "§cSystem §8§l» §r§cUse §8/§c{label} §8<§cadd§8|§caceitar§8|§crecusar§8|§cremover§8|§clistar§8|§cnick§8>"
     },
     "staffchat": {
         "discord_format": "§9Staff§fChat §8(§bDiscord§8) §8§l» §r§f{player}§8:§7 {message}"
