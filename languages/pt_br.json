@@ -78,7 +78,7 @@
             "_prefix": "§cBed§fWars §8§l» §r",
             "usage": "§7Para entrar utilize §8/§7bw entrar §8<§7modo§8> §7ou §8/§7bw entrar §8<§7código§8>",
             "usage_leave": "§7Para sair utilize §8/§7bw sair",
-            "usage_full": "§7Para entrar utilize §8/§7bw entrar §8<§7solo§8|§7duo§8|§7trios§8|§7squad§8|§71v1§8|§7ultra§8|§7infection§8> §7ou §8/§7bw entrar §8<§7código§8>",
+            "usage_full": "§7Para entrar utilize §8/§7bw entrar §8<§7solo§8|§7duo§8|§7trios§8|§7squad§8|§71v1§8|§7ultra§8|§7infection§8|§7rush§8> §7ou §8/§7bw entrar §8<§7código§8>",
             "invalid_mode": "§cModo inválido... Modos disponíveis§8:§7 {modes}",
             "mode_full": "§cEsse modo está cheio...",
             "invalid_code": "§cCódigo inválido ou sala cheia...",
@@ -154,7 +154,8 @@
             "_prefix": "§cBed§fWars §8§l» §r",
             "max_level": "§c{name} §cjá está no nível máximo!",
             "need_diamonds": "§cFaltam {amount} §bDiamantes§c!",
-            "purchased": "§c{player} §7melhorou {name} §7para o nível §c{level}§7!"
+            "purchased": "§c{player} §7melhorou {name} §7para o nível §c{level}§7!",
+            "bed_destroyed": "§cSua cama já foi destruída!"
         },
         "generator": {
             "_prefix": "§cBed§fWars §8§l» §r",
@@ -4075,6 +4076,446 @@
             "read_all": "§aMarcar todas como lidas",
             "clear_read": "§cLimpar mensagens lidas",
             "_prefix": ""
+        }
+    },
+    "help": {
+        "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §7Comandos disponíveis §8(§f{page}§8/§f{total}§8) §8===-=-=-=-",
+        "entry": "§eAjuda §8§l» §r§8/§7{cmd} §8- §7{desc}",
+        "footer_hint": "§eAjuda §8§l» §r§7Utilize §8/§7help §8<§7página§8> §7ou §8/§7help §8<§7comando§8>",
+        "invalid_page": "§eAjuda §8§l» §r§cPágina inválida... Utilize de §e1 §ca §e{total}§c.",
+        "not_found": "§eAjuda §8§l» §r§cComando não encontrado...",
+        "no_description": "Sem descrição disponível",
+        "detail": {
+            "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §7/{cmd} §8===-=-=-=-",
+            "desc": "§eAjuda §8§l» §r§7Descrição§8: §e{desc}",
+            "usage": "§eAjuda §8§l» §r§7Uso§8: §8/§7{usage}",
+            "aliases": "§eAjuda §8§l» §r§7Sinônimos§8: §7{aliases}"
+        },
+        "commands": {
+            "help": {
+                "desc": "Veja a lista de comandos disponíveis no servidor",
+                "usage": "help [página|comando]"
+            },
+            "info": {
+                "desc": "Veja as informações do servidor",
+                "usage": "info"
+            },
+            "ip": {
+                "desc": "Veja o IP do servidor",
+                "usage": "ip"
+            },
+            "regras": {
+                "desc": "Veja as regras do servidor",
+                "usage": "regras"
+            },
+            "lobby": {
+                "desc": "Volte para o lobby",
+                "usage": "lobby"
+            },
+            "lang": {
+                "desc": "Altere seu idioma no servidor",
+                "usage": "lang [idioma]"
+            },
+            "pref": {
+                "desc": "Gerencie suas preferências",
+                "usage": "pref"
+            },
+            "tops": {
+                "desc": "Veja os rankings do servidor",
+                "usage": "tops"
+            },
+            "clear": {
+                "desc": "Limpe seu inventário",
+                "usage": "clear"
+            },
+            "itemid": {
+                "desc": "Veja o ID do item na sua mão",
+                "usage": "itemid"
+            },
+            "sit": {
+                "desc": "Sente-se em um bloco ou jogador",
+                "usage": "sit [jogador]"
+            },
+            "sitaccept": {
+                "desc": "Aceite um pedido para sentar",
+                "usage": "sitaccept"
+            },
+            "sitdeny": {
+                "desc": "Recuse um pedido para sentar",
+                "usage": "sitdeny"
+            },
+            "sleep": {
+                "desc": "Deite-se no chão",
+                "usage": "sleep"
+            },
+            "tell": {
+                "desc": "Envie uma mensagem privada para um jogador",
+                "usage": "tell <jogador> <mensagem>"
+            },
+            "reply": {
+                "desc": "Responda à última mensagem privada",
+                "usage": "reply <mensagem>"
+            },
+            "locktell": {
+                "desc": "Bloqueie ou desbloqueie mensagens privadas",
+                "usage": "locktell"
+            },
+            "canal": {
+                "desc": "Alterne seu canal de chat",
+                "usage": "canal <global|local|clan|party>"
+            },
+            "ccme": {
+                "desc": "Limpe o seu próprio chat",
+                "usage": "ccme"
+            },
+            "report": {
+                "desc": "Denuncie um jogador",
+                "usage": "report <jogador> <motivo>"
+            },
+            "fake": {
+                "desc": "Altere seu nick temporariamente",
+                "usage": "fake <nick|reset>"
+            },
+            "tag": {
+                "desc": "Gerencie e selecione suas tags",
+                "usage": "tag"
+            },
+            "clan": {
+                "desc": "Gerencie seu clan",
+                "usage": "clan <subcomando>"
+            },
+            "friend": {
+                "desc": "Gerencie sua lista de amigos",
+                "usage": "friend <subcomando>"
+            },
+            "party": {
+                "desc": "Gerencie sua party",
+                "usage": "party <subcomando>"
+            },
+            "marriage": {
+                "desc": "Sistema de casamento",
+                "usage": "marriage <subcomando>"
+            },
+            "block": {
+                "desc": "Gerencie sua lista de bloqueio",
+                "usage": "block <jogador>"
+            },
+            "bio": {
+                "desc": "Altere sua biografia",
+                "usage": "bio <texto>"
+            },
+            "discord": {
+                "desc": "Vincule sua conta ao Discord",
+                "usage": "discord"
+            },
+            "profile": {
+                "desc": "Veja o perfil e estatísticas de um jogador",
+                "usage": "profile [jogador]"
+            },
+            "balance": {
+                "desc": "Veja seu saldo de Akunas",
+                "usage": "balance [jogador]"
+            },
+            "pay": {
+                "desc": "Envie Akunas para outro jogador",
+                "usage": "pay <jogador> <quantia>"
+            },
+            "bet": {
+                "desc": "Aposte Akunas",
+                "usage": "bet <quantia>"
+            },
+            "lottery": {
+                "desc": "Participe da loteria do servidor",
+                "usage": "lottery [tickets]"
+            },
+            "ecohistory": {
+                "desc": "Veja seu histórico de transações",
+                "usage": "ecohistory"
+            },
+            "conquistas": {
+                "desc": "Veja suas conquistas",
+                "usage": "conquistas"
+            },
+            "missions": {
+                "desc": "Veja o progresso das suas missões",
+                "usage": "missions"
+            },
+            "resetmissions": {
+                "desc": "Resete suas missões pagando Akunas",
+                "usage": "resetmissions"
+            },
+            "skills": {
+                "desc": "Gerencie ou compre habilidades",
+                "usage": "skills"
+            },
+            "skillswindow": {
+                "desc": "Abra o menu de habilidades",
+                "usage": "skillswindow"
+            },
+            "xphistory": {
+                "desc": "Veja seu histórico de XP ganho",
+                "usage": "xphistory"
+            },
+            "cosmetic": {
+                "desc": "Gerencie seus cosméticos",
+                "usage": "cosmetic"
+            },
+            "cosmeticwindow": {
+                "desc": "Abra o menu de cosméticos",
+                "usage": "cosmeticwindow"
+            },
+            "cage": {
+                "desc": "Gerencie sua jaula",
+                "usage": "cage"
+            },
+            "cagewindow": {
+                "desc": "Abra o menu de jaulas",
+                "usage": "cagewindow"
+            },
+            "kit": {
+                "desc": "Pegue ou gerencie kits",
+                "usage": "kit [nome]"
+            },
+            "kitwindow": {
+                "desc": "Abra o menu de kits",
+                "usage": "kitwindow"
+            },
+            "register": {
+                "desc": "Registre sua conta",
+                "usage": "register <senha> <confirmar>"
+            },
+            "login": {
+                "desc": "Faça login na sua conta",
+                "usage": "login <senha>"
+            },
+            "changepassword": {
+                "desc": "Altere sua senha",
+                "usage": "changepassword <atual> <nova>"
+            },
+            "email": {
+                "desc": "Gerencie o e-mail da sua conta",
+                "usage": "email <e-mail>"
+            },
+            "pin": {
+                "desc": "Gerencie o PIN de segurança",
+                "usage": "pin"
+            },
+            "ping": {
+                "desc": "Mostra sua latência (ping) com o servidor",
+                "usage": "ping"
+            },
+            "list": {
+                "desc": "Mostra a quantidade de jogadores online",
+                "usage": "list"
+            },
+            "version": {
+                "desc": "Mostra a versão do servidor",
+                "usage": "version"
+            },
+            "bedwarsmenu": {
+                "desc": "Abre o menu de seleção do BedWars",
+                "usage": "bedwarsmenu"
+            },
+            "bwcustom": {
+                "desc": "Cria e gerencia salas personalizadas de BedWars",
+                "usage": "bwcustom <criar|config|list>"
+            },
+            "skywarsmenu": {
+                "desc": "Abre o menu de seleção do SkyWars",
+                "usage": "skywarsmenu"
+            },
+            "duels": {
+                "desc": "Entre na fila ou saia dos Duelos",
+                "usage": "duels <modo|sair>"
+            },
+            "duelsmenu": {
+                "desc": "Abre o menu de seleção de Duelos",
+                "usage": "duelsmenu"
+            },
+            "bridge": {
+                "desc": "Comandos do TheBridge",
+                "usage": "bridge <entrar|sair>"
+            },
+            "blockparty": {
+                "desc": "Comandos do BlockParty",
+                "usage": "blockparty <entrar|sair>"
+            },
+            "angel": {
+                "desc": "Ative ou configure suas asas de anjo",
+                "usage": "angel"
+            },
+            "crown": {
+                "desc": "Ative ou configure sua coroa",
+                "usage": "crown"
+            },
+            "colorarmor": {
+                "desc": "Ative ou desative a armadura colorida",
+                "usage": "colorarmor"
+            },
+            "morph": {
+                "desc": "Transforme-se em um mob",
+                "usage": "morph [mob]"
+            },
+            "particle": {
+                "desc": "Escolha sua partícula de trilha",
+                "usage": "particle"
+            },
+            "hitparticle": {
+                "desc": "Escolha sua partícula de ataque",
+                "usage": "hitparticle"
+            },
+            "pet": {
+                "desc": "Gerencie seus pets",
+                "usage": "pet"
+            },
+            "joinmsg": {
+                "desc": "Personalize sua mensagem de entrada",
+                "usage": "joinmsg"
+            },
+            "msgcolor": {
+                "desc": "Altere a cor das suas mensagens no chat",
+                "usage": "msgcolor"
+            },
+            "nametag": {
+                "desc": "Personalize sua nametag",
+                "usage": "nametag"
+            },
+            "nickcolor": {
+                "desc": "Altere a cor do seu nick",
+                "usage": "nickcolor"
+            },
+            "pluscolor": {
+                "desc": "Altere a cor do símbolo + da sua tag",
+                "usage": "pluscolor"
+            },
+            "title": {
+                "desc": "Gerencie e equipe seus títulos",
+                "usage": "title"
+            },
+            "code": {
+                "desc": "Resgate um código promocional",
+                "usage": "code <código>"
+            },
+            "daily": {
+                "desc": "Resgate sua recompensa diária",
+                "usage": "daily"
+            },
+            "duel": {
+                "desc": "Desafie outro jogador para um duelo",
+                "usage": "duel <jogador>"
+            },
+            "feedback": {
+                "desc": "Envie um feedback ou sugestão para o servidor",
+                "usage": "feedback <mensagem>"
+            },
+            "mail": {
+                "desc": "Envie ou leia correios de jogadores",
+                "usage": "mail <subcomando>"
+            },
+            "spectate": {
+                "desc": "Assista a partida de um jogador",
+                "usage": "spectate <jogador>"
+            },
+            "plot": {
+                "desc": "Gerencie suas plots no modo Plot",
+                "usage": "plot <subcomando>"
+            },
+            "mochila": {
+                "desc": "Gerencie suas mochilas no Survival",
+                "usage": "mochila"
+            },
+            "bin": {
+                "desc": "Abra a lixeira para descartar itens",
+                "usage": "bin"
+            },
+            "coords": {
+                "desc": "Veja suas coordenadas atuais",
+                "usage": "coords"
+            },
+            "deletehome": {
+                "desc": "Remova uma home salva",
+                "usage": "deletehome <nome>"
+            },
+            "enchant": {
+                "desc": "Abra o menu de encantamentos",
+                "usage": "enchant"
+            },
+            "home": {
+                "desc": "Teleporte-se para uma home",
+                "usage": "home <nome>"
+            },
+            "homes": {
+                "desc": "Liste suas homes salvas",
+                "usage": "homes"
+            },
+            "randomtp": {
+                "desc": "Teleporte-se para um local aleatório seguro",
+                "usage": "randomtp"
+            },
+            "repair": {
+                "desc": "Repare o item danificado na sua mão",
+                "usage": "repair"
+            },
+            "sethome": {
+                "desc": "Defina uma nova home na sua posição",
+                "usage": "sethome <nome>"
+            },
+            "loja": {
+                "desc": "Abra a loja de itens do Survival",
+                "usage": "loja"
+            },
+            "smelt": {
+                "desc": "Derreta minérios no seu inventário",
+                "usage": "smelt"
+            },
+            "tpa": {
+                "desc": "Solicite teleporte até outro jogador",
+                "usage": "tpa <jogador>"
+            },
+            "tpaccept": {
+                "desc": "Aceite um pedido de teleporte",
+                "usage": "tpaccept"
+            },
+            "tpdeny": {
+                "desc": "Recuse um pedido de teleporte",
+                "usage": "tpdeny"
+            },
+            "pvpmodes": {
+                "desc": "Entre em um modo de PvP",
+                "usage": "pvpmodes <modo>"
+            },
+            "pvpmenu": {
+                "desc": "Abra o menu de modos PvP",
+                "usage": "pvpmenu"
+            },
+            "teampvp": {
+                "desc": "Comandos do TeamPvP",
+                "usage": "teampvp"
+            },
+            "parkour": {
+                "desc": "Comandos do modo Parkour",
+                "usage": "parkour"
+            },
+            "maze": {
+                "desc": "Entre ou saia do Labirinto",
+                "usage": "maze"
+            },
+            "tntrun": {
+                "desc": "Comandos do TNTRun",
+                "usage": "tntrun"
+            },
+            "mlg": {
+                "desc": "Comandos do MLGBlock",
+                "usage": "mlg"
+            },
+            "blocksumo": {
+                "desc": "Comandos do BlockSumo",
+                "usage": "blocksumo"
+            },
+            "bridgepractice": {
+                "desc": "Comandos do Treino de Ponte",
+                "usage": "bridgepractice"
+            }
         }
     }
 }
