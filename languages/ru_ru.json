@@ -2011,6 +2011,17 @@
         },
         "usage": "§cСистема §8§l» §r§cИспользуйте §8/§c{label} §8<§cжениться§8|§cразвод§8|§cinfo§8|§cnick§8>"
     },
+    "morph": {
+        "_prefix": "§5Morph §8§l» §r",
+        "activated": "§7You morphed into §5{mob}§7 successfully!",
+        "deactivated": "§7Morph deactivated successfully!",
+        "invalid_mob": "§cInvalid mob... See available mobs using §8/§c{label} list",
+        "invalid_world": "§cCannot use morph here...",
+        "list": "§7Available mobs §8(§f{count}§8):§7 {mobs}",
+        "no_perm": "§cOnly players with §7§l§oGalaxy§r§a+ §r§cvip or higher can use morph... §oGet yours at https://loja.iakunamc.com",
+        "not_active": "§cYou are not morphed into any mob...",
+        "usage": "§cUse §8/§c{label} §8<§cmob§8|§crandom§8|§coff§8|§clist§8>"
+    },
     "msgcolor": {
         "_prefix": "§cСистема §8§l» §r",
         "invalid": "§cНеверный цвет...",
@@ -3682,7 +3693,8 @@
             "bone": "§fКость",
             "paper": "§fБумага",
             "blaze_rod": "§6Огненный Стержень"
-        }
+        },
+        "forced_spam": "§cSuspicious spam activity detected! Complete the captcha and log in again..."
     },
     "spectate": {
         "_prefix": "§9Spectate §8§l» §r",
@@ -4031,7 +4043,7 @@
     },
     "mail": {
         "_prefix": "§3Mail §8§l» §r",
-        "usage": "§cUse §8/§c{label} §7| §8/§c{label} send §8<§cplayer§8> <§cmessage§8> §7| §8/§c{label} claim §8<§cid§8>",
+        "usage": "§cUse §8/§c{label} open §7| §8/§c{label} send §8<§cplayer§8> <§cmessage§8> §7| §8/§c{label} claim §8<§cid§8>",
         "join_header": "§7You received §3{count} §7new notification(s) while offline §8(§3/mail§8)§7:",
         "unread_reminder": "§7You have §3{count} §7unread message(s). Use §3/mail §7to view",
         "player_message": "§7Message from §3{sender}§8: §f{message}",

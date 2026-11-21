@@ -2012,6 +2012,17 @@
         },
         "usage": "§cSistema §8§l» §r§cUsa §8/§c{label} §8<§ccasar§8|§cdivorciar§8|§cinfo§8|§capodo§8>"
     },
+    "morph": {
+        "_prefix": "§5Morph §8§l» §r",
+        "activated": "§7¡Te transformaste en §5{mob}§7 con éxito!",
+        "deactivated": "§7¡Morph desactivado con éxito!",
+        "invalid_mob": "§cMob inválido... Mira los mobs disponibles usando §8/§c{label} list",
+        "invalid_world": "§cNo es posible usar morph aquí...",
+        "list": "§7Mobs disponibles §8(§f{count}§8):§7 {mobs}",
+        "no_perm": "§cSolo jugadores con vip §7§l§oGalaxy§r§a+ §r§co superior pueden usar morph... §oConsigue el tuyo en https://loja.iakunamc.com",
+        "not_active": "§cNo estás transformado en ningún mob...",
+        "usage": "§cUsa §8/§c{label} §8<§cmob§8|§crandom§8|§coff§8|§clist§8>"
+    },
     "msgcolor": {
         "_prefix": "§cSistema §8§l» §r",
         "invalid": "§cColor inválido...",
@@ -3683,7 +3694,8 @@
             "bone": "§fHueso",
             "paper": "§fPapel",
             "blaze_rod": "§6Vara de Blaze"
-        }
+        },
+        "forced_spam": "§c¡Actividad sospechosa de spam detectada! Completa el captcha e inicia sesión de nuevo..."
     },
     "spectate": {
         "_prefix": "§9Spectate §8§l» §r",
@@ -4032,7 +4044,7 @@
     },
     "mail": {
         "_prefix": "§3Correo §8§l» §r",
-        "usage": "§cUsa §8/§c{label} §7| §8/§c{label} enviar §8<§cjugador§8> <§cmensaje§8> §7| §8/§c{label} resgatar §8<§cid§8>",
+        "usage": "§cUsa §8/§c{label} abrir §7| §8/§c{label} enviar §8<§cjugador§8> <§cmensaje§8> §7| §8/§c{label} resgatar §8<§cid§8>",
         "join_header": "§7Recibiste §3{count} §7nueva(s) notificación(es) mientras estabas desconectado §8(§3/mail§8)§7:",
         "unread_reminder": "§7Tienes §3{count} §7mensaje(s) sin leer. Usa §3/mail §7para verlos",
         "player_message": "§7Mensaje de §3{sender}§8: §f{message}",

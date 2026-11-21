@@ -1995,6 +1995,7 @@
     },
     "home": {
         "_prefix": "§cSistema §8§l» §r",
+        "in_combat": "§cVocê não pode usar esse comando em combate...",
         "none": "§cVocê não possui nenhuma home...",
         "not_exists": "§cVocê não possui uma home com esse nome...",
         "not_in_survival": "§cVocê não está no survival...",
@@ -2164,6 +2165,17 @@
         },
         "usage": "§cSistema §8§l» §r§cUtilize §8/§c{label} §8<§ccasar§8|§cdivorciar§8|§cinfo§8|§cnick§8>"
     },
+    "morph": {
+        "_prefix": "§5Morph §8§l» §r",
+        "activated": "§7Você se transformou em §5{mob}§7 com sucesso!",
+        "deactivated": "§7Morph desativado com sucesso!",
+        "invalid_mob": "§cMob inválido... Veja os mobs disponíveis usando §8/§c{label} list",
+        "invalid_world": "§cNão é possível usar morph aqui...",
+        "list": "§7Mobs disponíveis §8(§f{count}§8):§7 {mobs}",
+        "no_perm": "§cApenas jogadores com vip §7§l§oGalaxy§r§a+ §r§cou superior conseguem usar morph... §oAdquira o seu em https://loja.iakunamc.com",
+        "not_active": "§cVocê não está transformado em nenhum mob...",
+        "usage": "§cUtilize §8/§c{label} §8<§cmob§8|§crandom§8|§coff§8|§clist§8>"
+    },
     "msgcolor": {
         "_prefix": "§cSistema §8§l» §r",
         "invalid": "§cCor inválida...",
@@ -2307,7 +2319,7 @@
         "invite": {
             "already_in_party": "§cEsse jogador já está em uma party...",
             "already_invited": "§cEsse jogador já foi convidado...",
-            "expired": "§dParty §8§l» §r§cO convite de §d{sender} §7expirou...",
+            "expired": "§dParty §8§l» §r§cO convite de {sender} expirou...",
             "received": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §dConvite de Party§8===-=-=-{n}§dParty §8§l» §r§d{player} §7te convidou para a party...{n}§dParty §8§l» §r§7Utilize §a/party aceitar §7para aceitar §7ou §c/party recusar §7para recusar",
             "self": "§cVocê não pode se convidar...",
             "sent": "§dParty §8§l» §r§7Convite enviado para §d{player}§7!",
@@ -2452,6 +2464,7 @@
             "friendnotify": "Notificar amigos",
             "hideplayers": "Esconder jogadores",
             "highlights": "Destaques no chat",
+            "lowykb": "Knockback Y Reduzido (PvP)",
             "nakb": "NA Ping / Knockback (PvP)",
             "openchest": "Abrir baú com ferramenta",
             "partnernotify": "Notificar parceiro(a)",
@@ -2656,6 +2669,7 @@
     },
     "tpa": {
         "expired": "§5Teleporte §8§l» §r§cO pedido de teleporte de {sender} expirou...",
+        "in_combat": "§5Teleporte §8§l» §r§cVocê não pode usar esse comando em combate...",
         "noself": "§5Teleporte §8§l» §r§cVocê não pode se teleportar para você mesmo...",
         "not_in_survival": "§5Teleporte §8§l» §r§cVocê não está no survival...",
         "pending": "§5Teleporte §8§l» §r§cEsse jogador já possui um pedido de teleporte pendente...",
@@ -3682,7 +3696,8 @@
             "bone": "§fOsso",
             "paper": "§fPapel",
             "blaze_rod": "§6Vara de Blaze"
-        }
+        },
+        "forced_spam": "§cAtividade suspeita de spam detectada! Complete o captcha e faça login novamente..."
     },
     "spectate": {
         "_prefix": "§9Assistir §8§l» §r",
@@ -4031,7 +4046,7 @@
     },
     "mail": {
         "_prefix": "§3Correio §8§l» §r",
-        "usage": "§cUtilize §8/§c{label} §7| §8/§c{label} enviar §8<§cjogador§8> <§cmensagem§8> §7| §8/§c{label} resgatar §8<§cid§8>",
+        "usage": "§cUtilize §8/§c{label} abrir §7| §8/§c{label} enviar §8<§cjogador§8> <§cmensagem§8> §7| §8/§c{label} resgatar §8<§cid§8>",
         "join_header": "§7Você recebeu §3{count} §7nova(s) notificação(ões) enquanto estava offline §8(§3/correio§8)§7:",
         "unread_reminder": "§7Você possui §3{count} §7mensagem(ns) não lida(s). Utilize §3/correio §7para ver",
         "player_message": "§7Mensagem de §3{sender}§8: §f{message}",
