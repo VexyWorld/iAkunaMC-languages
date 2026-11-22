@@ -2349,7 +2349,10 @@
             "_prefix": "",
             "notify": "§dParty §8§l» §r§d{player} §7abandonó el servidor y abandonó el grupo...",
             "leader_offline": "§dParty §8§l» §r§d{player} §7abandonó el servidor. Tiene §d3 minutos §7para volver o pierde el liderazgo.",
-            "leader_rejoined": "§dParty §8§l» §r§d{player} §7volvió al servidor y recuperó el liderazgo!"
+            "leader_rejoined": "§dParty §8§l» §r§d{player} §7volvió al servidor y recuperó el liderazgo!",
+            "member_offline": "§dParty §8§l» §r§d{player} §7salió del servidor... Tiene §d3 minutos §7para volver o será eliminado de la party...",
+            "member_rejoined": "§dParty §8§l» §r§d{player} §7volvió al servidor y regresó a la party!",
+            "member_expired": "§dParty §8§l» §r§d{player} §7no volvió a tiempo y fue eliminado(a) de la party..."
         },
         "transfer": {
             "broadcast": "§d{new_leader} §7¡es el/la nuevo/a líder!",
@@ -2530,7 +2533,8 @@
             "tell": "Mensajes privados",
             "treecapitator": "Tree Capitator (Survival)",
             "veinminer": "Vein Miner (Survival)",
-            "viewprofile": "Visibilidad del perfil"
+            "viewprofile": "Visibilidad del perfil",
+            "particles": "Partículas del servidor"
         }
     },
     "profanity": {

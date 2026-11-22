@@ -2348,7 +2348,10 @@
             "_prefix": "",
             "notify": "§dالمجموعة §8§l» §r§d{player} §7غادر الخادم وخرج من المجموعة...",
             "leader_offline": "§dالمجموعة §8§l» §r§d{player} §7غادر الخادم. لديه §d3 دقائق §7للعودة وإلا سيفقد القيادة.",
-            "leader_rejoined": "§dالمجموعة §8§l» §r§d{player} §7عاد إلى الخادم واستعاد القيادة!"
+            "leader_rejoined": "§dالمجموعة §8§l» §r§d{player} §7عاد إلى الخادم واستعاد القيادة!",
+            "member_offline": "§dParty §8§l» §r§d{player} §7غادر السيرفر... لديه §d3 دقائق §7للعودة وإلا سيتم إزالته من البارتي...",
+            "member_rejoined": "§dParty §8§l» §r§d{player} §7عاد إلى السيرفر وانضم مجدداً إلى البارتي!",
+            "member_expired": "§dParty §8§l» §r§d{player} §7لم يعد في الوقت المحدد وتمت إزالته من البارتي..."
         },
         "transfer": {
             "broadcast": "§d{new_leader} §7هو القائد الجديد!",
@@ -2529,7 +2532,8 @@
             "tell": "الرسائل الخاصة",
             "treecapitator": "قطع الأشجار السريع (Survival)",
             "veinminer": "تعدين العروق السريع (Survival)",
-            "viewprofile": "رؤية الملف الشخصي"
+            "viewprofile": "رؤية الملف الشخصي",
+            "particles": "جسيمات السيرفر"
         }
     },
     "profanity": {

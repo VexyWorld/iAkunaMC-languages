@@ -2348,7 +2348,10 @@
             "_prefix": "",
             "notify": "§dパーティ §8§l» §r§d{player} §7がサーバーを離れてパーティを退出しました...",
             "leader_offline": "§dパーティ §8§l» §r§d{player} §7がサーバーを離れました。§d3分 §7以内に戻らないとリーダーを失います。",
-            "leader_rejoined": "§dパーティ §8§l» §r§d{player} §7がサーバーに戻り、リーダーを取り戻しました！"
+            "leader_rejoined": "§dパーティ §8§l» §r§d{player} §7がサーバーに戻り、リーダーを取り戻しました！",
+            "member_offline": "§dParty §8§l» §r§d{player} §7がサーバーから退出しました... §d3分以内§7に戻らないとパーティーから除外されます...",
+            "member_rejoined": "§dParty §8§l» §r§d{player} §7がサーバーに戻り、パーティーに復帰しました！",
+            "member_expired": "§dParty §8§l» §r§d{player} §7は時間内に戻らなかったためパーティーから除外されました..."
         },
         "transfer": {
             "broadcast": "§d{new_leader} §7が新しいリーダーです！",
@@ -2529,7 +2532,8 @@
             "tell": "個人メッセージ",
             "treecapitator": "一括伐採 (Survival)",
             "veinminer": "一括採掘 (Survival)",
-            "viewprofile": "プロフィールの公開範囲"
+            "viewprofile": "プロフィールの公開範囲",
+            "particles": "サーバーパーティクル"
         }
     },
     "profanity": {

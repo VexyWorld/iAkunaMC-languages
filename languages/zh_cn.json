@@ -2348,7 +2348,10 @@
             "_prefix": "",
             "notify": "§d队伍 §8§l» §r§d{player} §7离开了服务器并退出了队伍...",
             "leader_offline": "§d队伍 §8§l» §r§d{player} §7离开了服务器。他有 §d3分钟 §7返回，否则将失去队长身份。",
-            "leader_rejoined": "§d队伍 §8§l» §r§d{player} §7返回了服务器并恢复了队长身份！"
+            "leader_rejoined": "§d队伍 §8§l» §r§d{player} §7返回了服务器并恢复了队长身份！",
+            "member_offline": "§dParty §8§l» §r§d{player} §7离开了服务器... 他有 §d3分钟 §7时间返回，否则将被移出队伍...",
+            "member_rejoined": "§dParty §8§l» §r§d{player} §7返回了服务器并重新加入队伍！",
+            "member_expired": "§dParty §8§l» §r§d{player} §7未能及时返回，已被移出队伍..."
         },
         "transfer": {
             "broadcast": "§d{new_leader} §7是新队长！",
@@ -2529,7 +2532,8 @@
             "tell": "私聊消息",
             "treecapitator": "一键砍树 (Survival)",
             "veinminer": "连锁挖矿 (Survival)",
-            "viewprofile": "个人资料可见性"
+            "viewprofile": "个人资料可见性",
+            "particles": "服务器粒子效果"
         }
     },
     "profanity": {

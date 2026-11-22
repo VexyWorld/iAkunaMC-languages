@@ -2348,7 +2348,10 @@
             "_prefix": "",
             "notify": "§dParty §8§l» §r§d{player} §7sunucudan ayrıldı ve partiden çıktı...",
             "leader_offline": "§dParty §8§l» §r§d{player} §7sunucudan ayrıldı. Liderliği kaybetmemesi için §d3 dakika §7içinde dönmeli.",
-            "leader_rejoined": "§dParty §8§l» §r§d{player} §7sunucuya döndü ve liderliği geri aldı!"
+            "leader_rejoined": "§dParty §8§l» §r§d{player} §7sunucuya döndü ve liderliği geri aldı!",
+            "member_offline": "§dParty §8§l» §r§d{player} §7sunucudan ayrıldı... Geri dönmek için §d3 dakikası §7var, yoksa partiden çıkarılacak...",
+            "member_rejoined": "§dParty §8§l» §r§d{player} §7sunucuya geri döndü ve partiye tekrar katıldı!",
+            "member_expired": "§dParty §8§l» §r§d{player} §7zamanında geri dönmedi ve partiden çıkarıldı..."
         },
         "transfer": {
             "broadcast": "§d{new_leader} §7yeni lider!",
@@ -2529,7 +2532,8 @@
             "tell": "Özel mesajlar",
             "treecapitator": "Tree Capitator (Survival)",
             "veinminer": "Vein Miner (Survival)",
-            "viewprofile": "Profil görünürlüğü"
+            "viewprofile": "Profil görünürlüğü",
+            "particles": "Sunucu parçacıkları"
         }
     },
     "profanity": {
