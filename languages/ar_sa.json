@@ -4667,5 +4667,10 @@
         "no_perm": "§cفقط اللاعبون برتبة VIP §7§l§oGalaxy§r§a+ §r§cأو أعلى يمكنهم استخدام المدار... §oاحصل عليها من https://loja.iakunamc.com",
         "not_active": "§cالمدار غير مفعل لديك...",
         "usage": "§cاستخدم §8/§c{label} §8<§citem§8|§clist§8|§crandom§8|§coff§8>"
+    },
+    "survival": {
+        "position": {
+            "unsafe": "§6Survival §8§l» §r§7كان موقعك الأخير مسدوداً أو غير آمن، تم نقلك إلى السباون"
+        }
     }
 }

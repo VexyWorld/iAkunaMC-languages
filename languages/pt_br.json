@@ -4667,5 +4667,10 @@
         "no_perm": "§cApenas jogadores com vip §7§l§oGalaxy§r§a+ §r§cou superior conseguem usar orbital... §oAdquira o seu em https://loja.iakunamc.com",
         "not_active": "§cVocê não está com o orbital ativado...",
         "usage": "§cUtilize §8/§c{label} §8<§citem§8|§clist§8|§crandom§8|§coff§8>"
+    },
+    "survival": {
+        "position": {
+            "unsafe": "§6Survival §8§l» §r§7Sua última posição estava obstruída ou insegura, você foi enviado ao spawn"
+        }
     }
 }
