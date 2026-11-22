@@ -2224,7 +2224,12 @@
         "list": "§7利用可能なモブ §8(§f{count}§8):§7 {mobs}",
         "no_perm": "§c§7§l§oGalaxy§r§a+ §r§c以上の VIP プレイヤーのみ morph を使用できます... §ohttps://loja.iakunamc.com で入手できます",
         "not_active": "§c現在どのモブにも変身していません...",
-        "usage": "§c使い方: §8/§c{label} §8<§cmob§8|§crandom§8|§coff§8|§clist§8>"
+        "usage": "§c使い方: §8/§c{label} §8<§cmob§8|§crandom§8|§coff§8|§clist§8>",
+        "state": {
+            "list": "§d{mob} §7の状態§8: {options}{n}§7使用法§8: /§d{label} state §8<§dプロパティ§8> <§d値§8>",
+            "invalid": "§c無効なプロパティまたは値です！選択肢§8: {options}",
+            "updated": "§7モーフの状態を更新しました§8: §d{prop} §8-> §a{value}"
+        }
     },
     "msgcolor": {
         "_prefix": "§cシステム §8§l» §r",
@@ -2402,7 +2407,12 @@
         "renamed": "§7ペットの名前を '§3{name}§7' に正常に変更しました！",
         "to_adult": "§7ペットを成体に正常に変更しました！",
         "to_baby": "§7ペットを赤ちゃんに正常に変更しました！",
-        "usage": "§c§8/§c{label} §8<§con§8|§crandom§8|§coff§8|§cname§8|§cbaby§8|§clist§8> を使用してください"
+        "usage": "§c§8/§c{label} §8<§con§8|§crandom§8|§coff§8|§cname§8|§cbaby§8|§clist§8> を使用してください",
+        "state": {
+            "list": "§e{mob} §7の状態§8: {options}{n}§7使用法§8: /§e{label} state §8<§eプロパティ§8> <§e値§8>",
+            "invalid": "§c無効なプロパティまたは値です！選択肢§8: {options}",
+            "updated": "§7ペットの状態を更新しました§8: §e{prop} §8-> §a{value}"
+        }
     },
     "pin": {
         "add": {

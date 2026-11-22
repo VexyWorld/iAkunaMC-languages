@@ -2224,7 +2224,12 @@
         "list": "§7Доступные мобы §8(§f{count}§8):§7 {mobs}",
         "no_perm": "§cТолько игроки с VIP §7§l§oGalaxy§r§a+ §r§cили выше могут использовать превращение... §oПриобретите на https://loja.iakunamc.com",
         "not_active": "§cВы не превращены ни в какого моба...",
-        "usage": "§cИспользуйте §8/§c{label} §8<§cmob§8|§crandom§8|§coff§8|§clist§8>"
+        "usage": "§cИспользуйте §8/§c{label} §8<§cmob§8|§crandom§8|§coff§8|§clist§8>",
+        "state": {
+            "list": "§7Состояния §d{mob}§8: {options}{n}§7Используйте §8/§d{label} state §8<§dсвойство§8> <§dзначение§8>",
+            "invalid": "§cНеверное свойство или значение! Варианты§8: {options}",
+            "updated": "§7Состояние морфа обновлено§8: §d{prop} §8-> §a{value}"
+        }
     },
     "msgcolor": {
         "_prefix": "§cСистема §8§l» §r",
@@ -2402,7 +2407,12 @@
         "renamed": "§7Имя питомца изменено на '§3{name}§7' успешно!",
         "to_adult": "§7Питомец превращён во взрослого успешно!",
         "to_baby": "§7Питомец превращён в детёныша успешно!",
-        "usage": "§cИспользуйте §8/§c{label} §8<§con§8|§crandom§8|§coff§8|§cname§8|§cbaby§8|§clist§8>"
+        "usage": "§cИспользуйте §8/§c{label} §8<§con§8|§crandom§8|§coff§8|§cname§8|§cbaby§8|§clist§8>",
+        "state": {
+            "list": "§7Состояния §e{mob}§8: {options}{n}§7Используйте §8/§e{label} state §8<§eсвойство§8> <§eзначение§8>",
+            "invalid": "§cНеверное свойство или значение! Варианты§8: {options}",
+            "updated": "§7Состояние питомца обновлено§8: §e{prop} §8-> §a{value}"
+        }
     },
     "pin": {
         "add": {

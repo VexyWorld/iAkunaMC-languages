@@ -2224,7 +2224,12 @@
         "list": "§7可用生物 §8(§f{count}§8):§7 {mobs}",
         "no_perm": "§c仅限拥有 §7§l§oGalaxy§r§a+ §r§c或更高等级 VIP 的玩家可使用变身... §o前往 https://loja.iakunamc.com 获取",
         "not_active": "§c你当前没有变身为任何生物...",
-        "usage": "§c用法: §8/§c{label} §8<§cmob§8|§crandom§8|§coff§8|§clist§8>"
+        "usage": "§c用法: §8/§c{label} §8<§cmob§8|§crandom§8|§coff§8|§clist§8>",
+        "state": {
+            "list": "§d{mob} §7可用状态§8: {options}{n}§7用法§8: /§d{label} state §8<§d属性§8> <§d值§8>",
+            "invalid": "§c无效的属性或值！可选项§8: {options}",
+            "updated": "§7变形状态已更新§8: §d{prop} §8-> §a{value}"
+        }
     },
     "msgcolor": {
         "_prefix": "§c系统 §8§l» §r",
@@ -2402,7 +2407,12 @@
         "renamed": "§7宠物名称已成功修改为 '§3{name}§7'！",
         "to_adult": "§7宠物已成功变为成年！",
         "to_baby": "§7宠物已成功变为幼崽！",
-        "usage": "§c使用 §8/§c{label} §8<§con§8|§crandom§8|§coff§8|§cname§8|§cbaby§8|§clist§8>"
+        "usage": "§c使用 §8/§c{label} §8<§con§8|§crandom§8|§coff§8|§cname§8|§cbaby§8|§clist§8>",
+        "state": {
+            "list": "§e{mob} §7可用状态§8: {options}{n}§7用法§8: /§e{label} state §8<§e属性§8> <§e值§8>",
+            "invalid": "§c无效的属性或值！可选项§8: {options}",
+            "updated": "§7宠物状态已更新§8: §e{prop} §8-> §a{value}"
+        }
     },
     "pin": {
         "add": {

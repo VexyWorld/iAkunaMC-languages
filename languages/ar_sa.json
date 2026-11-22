@@ -2224,7 +2224,12 @@
         "list": "§7الكائنات المتاحة §8(§f{count}§8):§7 {mobs}",
         "no_perm": "§cفقط اللاعبون برتبة VIP §7§l§oGalaxy§r§a+ §r§cأو أعلى يمكنهم استخدام التحول... §oاحصل عليها من https://loja.iakunamc.com",
         "not_active": "§cأنت لست متحولاً إلى أي كائن...",
-        "usage": "§cاستخدم §8/§c{label} §8<§cmob§8|§crandom§8|§coff§8|§clist§8>"
+        "usage": "§cاستخدم §8/§c{label} §8<§cmob§8|§crandom§8|§coff§8|§clist§8>",
+        "state": {
+            "list": "§7حالات §d{mob}§8: {options}{n}§7استخدم §8/§d{label} state §8<§dالخاصية§8> <§dالقيمة§8>",
+            "invalid": "§cخاصية أو قيمة غير صالحة! الخيارات§8: {options}",
+            "updated": "§7تم تحديث حالة المورف§8: §d{prop} §8-> §a{value}"
+        }
     },
     "msgcolor": {
         "_prefix": "§cالنظام §8§l» §r",
@@ -2402,7 +2407,12 @@
         "renamed": "§7تم تغيير اسم الرفيق إلى '§3{name}§7' بنجاح!",
         "to_adult": "§7تم تحويل الرفيق إلى بالغ بنجاح!",
         "to_baby": "§7تم تحويل الرفيق إلى صغير بنجاح!",
-        "usage": "§cاستخدم §8/§c{label} §8<§con§8|§crandom§8|§coff§8|§cname§8|§cbaby§8|§clist§8>"
+        "usage": "§cاستخدم §8/§c{label} §8<§con§8|§crandom§8|§coff§8|§cname§8|§cbaby§8|§clist§8>",
+        "state": {
+            "list": "§7حالات §e{mob}§8: {options}{n}§7استخدم §8/§e{label} state §8<§eالخاصية§8> <§eالقيمة§8>",
+            "invalid": "§cخاصية أو قيمة غير صالحة! الخيارات§8: {options}",
+            "updated": "§7تم تحديث حالة الأليف§8: §e{prop} §8-> §a{value}"
+        }
     },
     "pin": {
         "add": {

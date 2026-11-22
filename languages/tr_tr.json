@@ -2224,7 +2224,12 @@
         "list": "§7Mevcut moblar §8(§f{count}§8):§7 {mobs}",
         "no_perm": "§cYalnızca §7§l§oGalaxy§r§a+ §r§cveya üstü VIP oyuncular morph kullanabilir... §ohttps://loja.iakunamc.com adresinden edinebilirsin",
         "not_active": "§cŞu anda hiçbir moba dönüşmüş değilsin...",
-        "usage": "§cKullanım: §8/§c{label} §8<§cmob§8|§crandom§8|§coff§8|§clist§8>"
+        "usage": "§cKullanım: §8/§c{label} §8<§cmob§8|§crandom§8|§coff§8|§clist§8>",
+        "state": {
+            "list": "§d{mob} §7durumları§8: {options}{n}§7Kullanım§8: /§d{label} state §8<§dözellik§8> <§ddeğer§8>",
+            "invalid": "§cGeçersiz özellik veya değer! Seçenekler§8: {options}",
+            "updated": "§7Morph durumu güncellendi§8: §d{prop} §8-> §a{value}"
+        }
     },
     "msgcolor": {
         "_prefix": "§cSistem §8§l» §r",
@@ -2402,7 +2407,12 @@
         "renamed": "§7Evcil hayvanın adı başarıyla '§3{name}§7' olarak değiştirildi!",
         "to_adult": "§7Evcil hayvan başarıyla yetişkine dönüştürüldü!",
         "to_baby": "§7Evcil hayvan başarıyla bebeğe dönüştürüldü!",
-        "usage": "§cKullanım: §8/§c{label} §8<§con§8|§crandom§8|§coff§8|§cname§8|§cbaby§8|§clist§8>"
+        "usage": "§cKullanım: §8/§c{label} §8<§con§8|§crandom§8|§coff§8|§cname§8|§cbaby§8|§clist§8>",
+        "state": {
+            "list": "§e{mob} §7durumları§8: {options}{n}§7Kullanım§8: /§e{label} state §8<§eözellik§8> <§edeğer§8>",
+            "invalid": "§cGeçersiz özellik veya değer! Seçenekler§8: {options}",
+            "updated": "§7Pet durumu güncellendi§8: §e{prop} §8-> §a{value}"
+        }
     },
     "pin": {
         "add": {

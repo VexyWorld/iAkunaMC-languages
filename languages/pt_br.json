@@ -2224,7 +2224,12 @@
         "list": "§7Mobs disponíveis §8(§f{count}§8):§7 {mobs}",
         "no_perm": "§cApenas jogadores com vip §7§l§oGalaxy§r§a+ §r§cou superior conseguem usar morph... §oAdquira o seu em https://loja.iakunamc.com",
         "not_active": "§cVocê não está transformado em nenhum mob...",
-        "usage": "§cUtilize §8/§c{label} §8<§cmob§8|§crandom§8|§coff§8|§clist§8>"
+        "usage": "§cUtilize §8/§c{label} §8<§cmob§8|§crandom§8|§coff§8|§clist§8>",
+        "state": {
+            "list": "§7Estados de §d{mob}§8: {options}{n}§7Utilize §8/§d{label} estado §8<§dpropriedade§8> <§dvalor§8>",
+            "invalid": "§cPropriedade ou valor inválido! Opções§8: {options}",
+            "updated": "§7Estado do morph atualizado§8: §d{prop} §8-> §a{value}"
+        }
     },
     "msgcolor": {
         "_prefix": "§cSistema §8§l» §r",
@@ -2402,7 +2407,12 @@
         "renamed": "§7Nome do pet alterado para '§3{name}§7' com sucesso!",
         "to_adult": "§7Pet transformado em adulto com sucesso!",
         "to_baby": "§7Pet transformado em bebê com sucesso!",
-        "usage": "§cUtilize §8/§c{label} §8<§con§8|§crandom§8|§coff§8|§cname§8|§cbaby§8|§clist§8>"
+        "usage": "§cUtilize §8/§c{label} §8<§con§8|§crandom§8|§coff§8|§cname§8|§cbaby§8|§clist§8>",
+        "state": {
+            "list": "§7Estados de §e{mob}§8: {options}{n}§7Utilize §8/§e{label} estado §8<§epropriedade§8> <§evalor§8>",
+            "invalid": "§cPropriedade ou valor inválido! Opções§8: {options}",
+            "updated": "§7Estado do pet atualizado§8: §e{prop} §8-> §a{value}"
+        }
     },
     "pin": {
         "add": {
