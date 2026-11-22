@@ -1267,17 +1267,6 @@
             "countdown": "§7يبدأ خلال §2{seconds} §7ثوانٍ",
             "ending_countdown": "§7العودة إلى اللوبي خلال §2{seconds} §7ثوانٍ"
         },
-        "item": {
-            "play_again": "§8-> §aالعب مجددًا",
-            "quit": "§8-> §cخروج"
-        },
-        "queue": {
-            "_prefix": "§2المبارزات §8§l» §r",
-            "not_found": "§cالنمط {kit} غير موجود!",
-            "joined": "§7انضممت إلى الطابور لنمط §2{mode} §r§7بنجاح!",
-            "left": "§7غادرت طابور نمط §c{mode}§7!",
-            "timeout": "§cتمت إزالتك تلقائيًا من الطابور لعدم توفر لاعبين آخرين..."
-        },
         "match": {
             "_prefix": "§2Duels §8§l» §r",
             "started": "§7مبارزة §2{mode} §7ضد §2{opponent} §7في ساحة §2{arena}§7!",
@@ -1309,6 +1298,17 @@
             "team_format": "{right}§fi§cAkuna§9MC §8§l» §r§2Duels {format}{n}{right}{bar}{n}{right}§8§l» §r§7الوضع§8:§2 {mode}{n}{right}§8§l» §r§7المدة§8:§2 {duration}{n}{right}§8§l» §r§7الفريق§8:§a {team_alive}/{team_total} §8| §c{opp_alive}/{team_total}{n}{right}§8§l» §r§7Ping§8:§2 {ping}ms{n}{right}{bar}{n}{n}{right}§2iakunamc.com 19132",
             "team_boxing_format": "{right}§fi§cAkuna§9MC §8§l» §r§2Duels {format}{n}{right}{bar}{n}{right}§8§l» §r§7الوضع§8:§2 {mode}{n}{right}§8§l» §r§7المدة§8:§2 {duration}{n}{right}§8§l» §r§7الفريق§8:§a {team_alive}/{team_total} §8| §c{opp_alive}/{team_total}{n}{right}§8§l» §r§7الضربات§8:§a {hits} §8/ §c{opp_hits} §8(§7{max_hits}§8){n}{right}§8§l» §r§7Ping§8:§2 {ping}ms{n}{right}{bar}{n}{n}{right}§2iakunamc.com 19132"
         },
+        "item": {
+            "play_again": "§8-> §aالعب مجددًا",
+            "quit": "§8-> §cخروج"
+        },
+        "queue": {
+            "_prefix": "§2المبارزات §8§l» §r",
+            "not_found": "§cالنمط {kit} غير موجود!",
+            "joined": "§7انضممت إلى الطابور لنمط §2{mode} §r§7بنجاح!",
+            "left": "§7غادرت طابور نمط §c{mode}§7!",
+            "timeout": "§cتمت إزالتك تلقائيًا من الطابور لعدم توفر لاعبين آخرين..."
+        },
         "bot": {
             "_prefix": "§2Duels §8§l» §r",
             "usage": "§7استخدم §8/§7duels bot §8<§7الوضع§8> [§aeasy§8|§emedium§8|§chard§8|§5hacker§8]",
@@ -1338,6 +1338,43 @@
             "mode_item": "{label} {format}{n}§7يلعبون§8: §f{playing}{n}{n}§eانقر للانضمام للطابور",
             "sw1v1_item": "§bSkyWars 1v1{n}§7يلعبون§8: §f{playing}{n}{n}§eانقر للعب",
             "title": "§2Duels §8§l» §r§7اختر الوضع"
+        }
+    },
+    "pearl": {
+        "_prefix": "",
+        "blocked": "§cلا توجد مساحة آمنة للانتقال إلى هناك!"
+    },
+    "pvpmodes": {
+        "_prefix": "§bPvP §8§l» §r",
+        "usage": "§7للدخول استخدم §8/§7{label} join §8<§7الوضع§8>{n}§bPvP §8§l» §r§7للمغادرة استخدم §8/§7{label} leave",
+        "join": {
+            "usage": "§cاستخدم §8/§c{label} join §8<§cالوضع§8>"
+        },
+        "modes_list": "§7الأوضاع المتاحة§8: §f{modes}",
+        "invalid_mode": "§cالوضع §f{mode} §cغير موجود!",
+        "world_unavailable": "§cخريطة الوضع {mode} §cغير متاحة حالياً...",
+        "joined": "§7انضممت إلى وضع {mode}§7!",
+        "joined_team": "§7انضممت إلى وضع {mode} §7في فريق {team}§7!",
+        "not_playing": "§cأنت لست في أي وضع PvP...",
+        "left": "§7لقد غادرت وضع PvP!",
+        "menu": {
+            "_prefix": "",
+            "back": "§c« رجوع",
+            "mode_item": "{label}{n}§7يلعبون§8: §f{playing}{n}{n}§eانقر للانضمام",
+            "prefs_item": "§3تفضيلات PvPModes{n}§7قم بضبط إعداداتك{n}{n}§eانقر للفتح",
+            "team_amarelo": "§eالفريق الأصفر",
+            "team_azul": "§9الفريق الأزرق",
+            "team_title": "§6TeamPvP §8§l» §r§7اختر الفريق",
+            "team_verde": "§aالفريق الأخضر",
+            "team_vermelho": "§cالفريق الأحمر",
+            "teampvp_item": "§6TeamPvP{n}§7يلعبون§8: §f{playing}{n}{n}§eانقر لاختيار فريقك",
+            "title": "§bPvPModes §8§l» §r§7اختر الوضع",
+            "uhc_item": "§bUHC{n}§7يلعبون§8: §f{playing}{n}{n}§eانقر لاختيار النوع",
+            "uhc_title": "§bPvPModes UHC §8§l» §r§7الأنواع",
+            "uhc_uhc": "§bUHC عادي",
+            "uhc_uhcfly": "§bUHC طيران",
+            "uhc_uhcheavy": "§bUHC §8(§cارتداد ثقيل§8)",
+            "uhc_uhclight": "§bUHC §8(§3ارتداد خفيف§8)"
         }
     },
     "addbalance": {
@@ -1384,7 +1421,6 @@
         },
         "join": {
             "_prefix": "",
-            "msg": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7مرحبًا §e{user}§7، أهلاً وسهلاً بك في §fi§cAkuna§9MC§7!",
             "greeting": {
                 "_prefix": "",
                 "dawn": "فجراً سعيداً",
@@ -1395,7 +1431,8 @@
             "dawn": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7فجراً سعيداً §e{user}§7، تسهر طوال الليل في §fi§cAkuna§9MC§7؟ أهلاً بك!",
             "morning": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7صباح الخير §e{user}§7، أهلاً بك في §fi§cAkuna§9MC§7! نتمنى لك صباحاً رائعاً من المباريات!",
             "afternoon": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7مساء الخير §e{user}§7، أهلاً بك في §fi§cAkuna§9MC§7! استمتع بوقتك في اللعب!",
-            "night": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7مساء الخير §e{user}§7، أهلاً بك في §fi§cAkuna§9MC§7! نتمنى لك ليلة رائعة من المباريات!"
+            "night": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7مساء الخير §e{user}§7، أهلاً بك في §fi§cAkuna§9MC§7! نتمنى لك ليلة رائعة من المباريات!",
+            "msg": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7مرحبًا §e{user}§7، أهلاً وسهلاً بك في §fi§cAkuna§9MC§7!"
         },
         "login": {
             "_prefix": "",
@@ -1426,29 +1463,29 @@
     "automsg": {
         "_prefix": "§cالنظام §8§l» §r",
         "akuna_ai": "§7تعرف على §cAkuna§r§7، ذكاؤنا الاصطناعي! اكتب §8\"§cAkuna, سؤالك§8\" §7في الدردشة وهي ستجيبك!",
+        "assistir": "§7هل تريد مشاهدة المباريات مباشرة؟ استخدم §8/§cspectate §8<§cلاعب§8> §7أو حدد من يمكنه مشاهدتك عبر §8/§cpref spectate",
         "block": "§7هل تعلم أنه يمكنك حظر اللاعبين؟ استخدم §8/§7block",
+        "clan": "§7أنشئ أو انضم إلى عشيرة للمنافسة في المتصدرين! استخدم §8/§cclan",
         "daily": "§7هل تعلم أنه إذا سجلت دخولك يوميًا، تحصل على مكافأة يومية يمكن أن تعطي §cأكونا §7وحتى §9مضاعف خبرة§7؟",
+        "desafiar": "§7هل تريد تحدي لاعب في مبارزات متعددة الجولات برهان §cAkunas§7؟ استخدم §8/§cduel §8<§cلاعب§8> §8[§cالوضع§8] [§cالجولات§8] [§cالرهان§8]",
         "discord": "§7انضم إلى ديسكوردنا! §chttps://discord.iakunamc.com",
         "exit_minigames": "§7للعودة إلى اللوبي من أي لعبة، استخدم §8/§clobby",
         "friends": "§7ادعُ أصدقاءك للعب على خادمنا! يمكنك رؤية عنوان IP الخاص بنا بـ §8/§7ip",
         "hackers": "§7رأيت هاكر؟ استخدم §8/§creport §8<§cالاسم§8> <§cالسبب§8> §7للإبلاغ عنه!",
+        "lang": "§7هل تفضل اللعب بلغة أخرى؟ غيّر لغتك في أي وقت باستخدام §8/§clang",
         "launch": "§7§ciAkunaMC §7موجودة منذ فبراير 2022 وتستمر في النمو بفضلك! شكرًا للعبك هنا!",
         "marry": "§7يمكنك الزواج من لاعبين آخرين والحصول على 25% من خبرتهم! استخدم §8/§7marry",
         "missions": "§7أكمل المهام اليومية لتربح مكافآت رائعة! استخدم §8/§cmissões §7لرؤية كل المهام المتاحة",
         "nopromote": "§7لا تروج §cلخوادم في الدردشة أو التيل§7، فهذا سيعرضك لـ§cالحظر§7!",
         "nosamepass": "§7لا تستخدم نفس كلمة المرور في خوادم أخرى! قد يخترق المخادعون حسابك... يمكنك استخدام §8/§cpin §7لحماية حسابك!",
-        "rules": "§7هل قرأت §8/§crules قوانيننا§7؟ عدم معرفتها لا يعفيك من §cالعقوبات§7!",
-        "staff": "§7هل تعلم أنه يمكنك الانضمام لطاقمنا؟ تفضل بزيارة §chttps://staff.iakunamc.com",
-        "yt": "§7سجل فيديو يروج لخادمنا على يوتيوب واربح رتبًا خاصة! لرؤية المتطلبات استخدم §8/§cyt",
-        "assistir": "§7هل تريد مشاهدة المباريات مباشرة؟ استخدم §8/§cspectate §8<§cلاعب§8> §7أو حدد من يمكنه مشاهدتك عبر §8/§cpref spectate",
-        "clan": "§7أنشئ أو انضم إلى عشيرة للمنافسة في المتصدرين! استخدم §8/§cclan",
-        "desafiar": "§7هل تريد تحدي لاعب في مبارزات متعددة الجولات برهان §cAkunas§7؟ استخدم §8/§cduel §8<§cلاعب§8> §8[§cالوضع§8] [§cالجولات§8] [§cالرهان§8]",
-        "lang": "§7هل تفضل اللعب بلغة أخرى؟ غيّر لغتك في أي وقت باستخدام §8/§clang",
         "party": "§7تلعب مع الأصدقاء؟ أنشئ مجموعة باستخدام §8/§cparty §7وانضموا إلى الألعاب المصغرة والمبارزات معاً!",
         "pref": "§7خصّص تجربتك! استخدم §8/§cpref gui §7لضبط لوحة النتائج، CPS، الكومبو، المشاهدين والمزيد!",
         "profile": "§7تحقق من إحصائياتك ومستواك وملفات اللاعبين الآخرين باستخدام §8/§cprofile §8[§cلاعب§8]",
         "ranking": "§7تفقّد أفضل لاعبي الخادم باستخدام §8/§ctops §7حسب اللعبة المصغرة أو الفترة الزمنية!",
+        "rules": "§7هل قرأت §8/§crules قوانيننا§7؟ عدم معرفتها لا يعفيك من §cالعقوبات§7!",
+        "staff": "§7هل تعلم أنه يمكنك الانضمام لطاقمنا؟ تفضل بزيارة §chttps://staff.iakunamc.com",
         "tell": "§7تحدث بشكل خاص مع اللاعبين الآخرين باستخدام §8/§ctell §8<§cلاعب§8> <§cرسالة§8> §7وردّ بسرعة باستخدام §8/§cr",
+        "yt": "§7سجل فيديو يروج لخادمنا على يوتيوب واربح رتبًا خاصة! لرؤية المتطلبات استخدم §8/§cyt",
         "feedback": "§7Want to rate the server or send a suggestion? Use §8/§cfeedback §7and share your thoughts with us!",
         "help": "§7Not sure what commands are available? Use §8/§chelp §7to see all server commands!",
         "mail": "§7Got offline messages or pending rewards? Check your inbox with §8/§cmail§7!",
@@ -1609,6 +1646,67 @@
         ],
         "discord_format": "§9Discord §8§l» §r§f{player}§8:§7 {message}",
         "report_guard": "§cDo not accuse players in chat! Use §8/§creport §8<§cplayer§8> <§creason§8> §cto report them to staff §8(§7you earn Akunas & XP if punished§8)§c"
+    },
+    "challenge": {
+        "_prefix": "§cمبارزة §8§l» §r",
+        "_noprefix": [
+            "menu",
+            "received"
+        ],
+        "cancelled_other": "§7ألغى اللاعب §c{player} §7التحدي...",
+        "cancelled_self": "§7لقد ألغيت التحدي المرسل إلى §c{player}§7...",
+        "denied_other": "§7رفض اللاعب §c{player} §7تحديك...",
+        "denied_self": "§7لقد رفضت التحدي من §c{player}§7...",
+        "error": {
+            "already_sent": "§cلديك بالفعل تحدٍ معلق قمت بإرساله...",
+            "challenger_busy": "§cأنت بالفعل في مباراة أو تحدٍ نشط...",
+            "challenger_offline": "§cالمتحدي §7{player} §cخرج من الخادم...",
+            "invalid_bet": "§cقيمة الرهان غير صالحة...",
+            "invalid_mode": "§cالوضع §7{mode} §cغير صالح! الأوضاع§8: §7duels§8, §7thebridge§8, §7bedwars§8, §7skywars...",
+            "invalid_rounds": "§cيجب أن يكون عدد الجولات بين §7{min} §cو §7{max}§c...",
+            "invalid_submode": "§cالوضع الفرعي §7{submode} §cغير صالح أو غير متوافق مع {mode}...",
+            "max_team_size": "§cالحد الأقصى المسموح به لحجم الفريق§8: §7{max}v{max}§c...",
+            "member_busy": "§cاللاعب §7{player} §cموجود بالفعل في مباراة أو تحدٍ...",
+            "member_offline": "§cخرج أحد أعضاء المجموعة قبل بدء التحدي...",
+            "no_arena_available": "§cلا توجد ساحة متاحة لبدء هذا الوضع الآن...",
+            "no_pending": "§cليس لديك أي تحديات معلقة...",
+            "no_pending_from": "§cليس لديك تحدٍ معلق من §7{player}§c...",
+            "no_sent_invite": "§cلم ترسل أي تحدٍ معلق...",
+            "not_enough_akunas": "§cتحتاج إلى §7{bet} Akunas §cلهذا الرهان...",
+            "not_in_challenge": "§cأنت لست في تحدٍ نشط...",
+            "player_offline": "§cاللاعب §7{player} §cغير متصل...",
+            "same_party": "§cلا يمكنك تحدي شخص في نفس المجموعة...",
+            "self": "§cلا يمكنك تحدي نفسك...",
+            "target_busy": "§cاللاعب §7{player} §cموجود بالفعل في مباراة أو تحدٍ...",
+            "target_has_pending": "§cاللاعب §7{player} §cلديه بالفعل تحدٍ معلق...",
+            "target_not_enough_akunas": "§cاللاعب §7{player} §cلا يملك §7{bet} Akunas §cللرهان...",
+            "target_not_party_leader": "§cفقط قائد مجموعة §7{player} §cيمكنه تلقي التحديات...",
+            "team_size_mismatch": "§cيجب أن تحتوي المجموعات على نفس عدد اللاعبين §8(§7{yours} ضد {theirs}§8)§c..."
+        },
+        "expired": "§7انتهت صلاحية التحدي مع §c{player}§7...",
+        "finished_tie": "§7انتهى التحدي بالتعادل! النتيجة النهائية §8(§f{leader_a} §c{score_a} §7x §9{score_b} §f{leader_b}§8)§7... تمت إعادة §cAkunas §7المرصودة للرهان!",
+        "finished_win": "§aالفوز لـ §f{winner}§a! النتيجة النهائية§8: §f{leader_a} §c{score_a} §7x §9{score_b} §f{leader_b} §8- §7الجائزة§8: §e{pot} Akunas§7!",
+        "menu": {
+            "_prefix": "",
+            "back": "§c« رجوع",
+            "bet_amount": "{amount} Akunas",
+            "bet_item": "{bet}{n}§7الجولات§8: §f{rounds}{n}{n}§aانقر لإرسال التحدي",
+            "bet_none": "§fبدون رهان",
+            "bet_title": "§cتحدي §8§l» §r§7الرهان §8(§7Akunas§8)",
+            "mode_item": "{label}{n}§7تحدي §f{player}{n}{n}§eانقر لاختيار الجولات",
+            "mode_title": "§cتحدي §8§l» §r§7الوضع",
+            "round_plural": "§e{rounds} جولات{n}{n}§eانقر لاختيار الرهان",
+            "round_single": "§e{rounds} جولة{n}{n}§eانقر لاختيار الرهان",
+            "rounds_title": "§cتحدي §8§l» §r§7الجولات"
+        },
+        "received": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §cمبارزة §8===-=-=-{n}§cمبارزة §8§l» §r§c{player} §7تحداك في {mode} §8(§f{format}§8) §7لمدة §e{rounds} جولة §8(§6{bet}§8)...{n}§cمبارزة §8§l» §r§7استخدم §a/desafiar accept {challenger} للقبول §7أو §c/desafiar deny {challenger} للرفض §8(§7{timeout}s§8)",
+        "round_finished": "§7انتهت الجولة §e{round}§8/§e{total}§7! النتيجة§8: §f{leader_a} §c{score_a} §7x §9{score_b} §f{leader_b} §8- §7الجولة التالية §8(§e{next}§8/§e{total}§8) §7خلال §e{delay}s§7!",
+        "round_starting": "§7بدء الجولة §e{round}§8/§e{total} §7في {mode} §8(§f{leader_a} §c{score_a} §7x §9{score_b} §f{leader_b}§8)!",
+        "sent": "§7تم إرسال التحدي إلى §c{player} §7في {mode} §8(§f{format}§8) §7لمدة §e{rounds} جولة §8(§6{bet}§8)!",
+        "status": "§7الجولة الحالية§8: §e{round}§8/§e{total} §8| §f{leader_a} §c{score_a} §7x §9{score_b} §f{leader_b} §8| §7الرهان§8: §6{bet} Akunas",
+        "usage": "§cاستخدم §8/§c{label} §8<§cلاعب§8> [§cduels§8|§cthebridge§8|§cbedwars§8|§cskywars§8] [§cالوضع الفرعي§8] [§cالجولات 1-10§8] [§cالرهان§8] §7أو §8/§c{label} §8<§caccept§8|§cdeny§8|§ccancel§8|§cstatus§8>",
+        "won_wo": "§cانسحاب §8(§cW.O.§8)§c! §7غادر اللاعب §c{quitter} §7المباراة... فاز §a{winner} §7وحصل على §e{pot} Akunas§7!",
+        "loading_arena": "§7جاري تحميل الساحة، يرجى الانتظار لحظة..."
     },
     "clan": {
         "_prefix": "§eالكلانات §8§l» §r",
@@ -1796,14 +1894,14 @@
     "daily": {
         "reward": {
             "akunas": "§c{amount} أكونا",
+            "cooldown": "§5المكافأة اليومية §8§l» §r§cلقد استلمت مكافأتك اليوم بالفعل! المكافأة التالية خلال §5{time}§c...",
             "milestone": "§5المكافأة اليومية §8§l» §r§7تهانينا! وصلت إلى §5{weeks} §7أسابيع متتالية!",
+            "milestone_month": "§5المكافأة اليومية §8§l» §r§7مذهل! لقد وصلت إلى سلسلة §5{days} §7يوماً وحصلت على مكافأة خاصة!",
             "multiplier": "§9مضاعف {multiplier}x §8(§5{duration}§8)",
             "received": "§5المكافأة اليومية §8§l» §r§7لقد تلقيت {rewards}",
             "streak": "§5المكافأة اليومية §8§l» §r§7السلسلة الحالية§8: §5{streak} §7أيام",
             "xp": "§9{amount} خبرة",
             "streak_lost": "§5المكافأة اليومية §8§l» §r§cفقدت سلسلتك التي دامت {oldStreak} يومًا...",
-            "cooldown": "§5المكافأة اليومية §8§l» §r§cلقد استلمت مكافأتك اليوم بالفعل! المكافأة التالية خلال §5{time}§c...",
-            "milestone_month": "§5المكافأة اليومية §8§l» §r§7مذهل! لقد وصلت إلى سلسلة §5{days} §7يوماً وحصلت على مكافأة خاصة!",
             "bonus_applied": "§5Daily §8§l» §r§7تم تطبيق المكافأة الإضافية§8: {bonuses}",
             "bonus_galaxy": "§7§l§oGalaxy§r§a+ §e(+{percent}%)",
             "bonus_booster": "§dBooster §e(+{percent}%)"
@@ -1851,8 +1949,66 @@
         "set": "§7تم تفعيل الاسم المستعار بنجاح!",
         "usage": "§cاستخدم §8/§c{label} §8<§con§8|§coff§8|§crandom§8|§clist§8>"
     },
+    "friends": {
+        "accept": {
+            "_prefix": "§cالنظام §8§l» §r",
+            "none": "§cليس لديك أي طلبات صداقة معلقة...",
+            "notify": "§b{friend} §7قبل طلب صداقتك!",
+            "success": "§7أنت و §b{friend} §7أصبحتما صديقين الآن!"
+        },
+        "add": {
+            "_prefix": "§cالنظام §8§l» §r",
+            "already": "§cأنت بالفعل صديق لـ §b{target}§c...",
+            "expired": "§cانتهت صلاحية طلب الصداقة من §b{sender}§c...",
+            "limit": "§cلقد وصلت إلى الحد الأقصى للأصدقاء ({max})!",
+            "pending": "§cهذا اللاعب لديه بالفعل طلب صداقة معلق...",
+            "request": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §bطلب صداقة §8===-=-=-{n}§cالنظام §8§l» §r§b{sender} §7أرسل لك طلب صداقة...{n}§cالنظام §8§l» §r§7استخدم §a/friend aceitar §7للقبول أو §c/friend recusar §7للرفض",
+            "self": "§cلا يمكنك إضافة نفسك كصديق...",
+            "sent": "§7تم إرسال طلب الصداقة إلى §b{target}§7!",
+            "target_limit": "§cوصل هذا اللاعب بالفعل إلى الحد الأقصى للأصدقاء!",
+            "usage": "§cاستخدم §8/§c{label} add §8<§cلاعب§8>"
+        },
+        "deny": {
+            "_prefix": "§cالنظام §8§l» §r",
+            "none": "§cليس لديك أي طلبات صداقة معلقة...",
+            "notify": "§b{target} §7رفض طلب صداقتك...",
+            "success": "§7تم رفض طلب الصداقة بنجاح!"
+        },
+        "friend": {
+            "_prefix": "§cالنظام §8§l» §r",
+            "joined": "§7انضم صديقك §b{friend} §7إلى الخادم!",
+            "left": "§7غادر صديقك §b{friend} §cالخادم§7..."
+        },
+        "list": {
+            "_prefix": "",
+            "entry": "§cالنظام §8§l» §r{status} §b{friend} §8| §7منذ§8:§b {date} §8(§7منذ {dateSince}§8){n}§cالنظام §8§l» §r§7تلقبه§8:§b {nicknameGiven} §8| §7يلقبك§8:§b {nicknameReceived}",
+            "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §bالأصدقاء §8(§7{count}§8/§7{max}§8) §8[§7صفحة {page}/{maxPages}§8] ===-=-=-=-",
+            "no_nickname": "§7لا يوجد لقب...§r",
+            "none": "§cالنظام §8§l» §r§cليس لديك أي أصدقاء بعد...",
+            "offline": "§c*",
+            "online": "§a*"
+        },
+        "nick": {
+            "_prefix": "§cالنظام §8§l» §r",
+            "success": "§7تم تعيين لقب §b{friend} §7إلى '§b{nickname}§7' بنجاح!",
+            "usage": "§cاستخدم §8/§c{label} nick §8<§cصديق§8> <§cلقب§8>"
+        },
+        "remove": {
+            "_prefix": "§cالنظام §8§l» §r",
+            "all_success": "§7تمت إزالة جميع أصدقائك!",
+            "invalid": "§cلاعب غير صالح أو ليس في قائمة أصدقائك...",
+            "none": "§cليس لديك أي أصدقاء...",
+            "notify": "§b{friend} §7أزالك من قائمة أصدقائه...",
+            "success": "§7لقد أزلت §b{friend} §7من قائمة أصدقائك...",
+            "usage": "§cاستخدم §8/§c{label} remover §8<§cلاعب§8|§c*§8>",
+            "confirm": "§cهل أنت متأكد من إزالة §b{friend} §cمن قائمة الأصدقاء؟ اكتب §8/§c{command} confirm §cللتأكيد",
+            "confirm_all": "§cهل أنت متأكد من إزالة جميع أصدقائك؟ اكتب §8/§c{command} confirm §cللتأكيد"
+        },
+        "usage": "§cالنظام §8§l» §r§cاستخدم §8/§c{label} §8<§cadd§8|§caceitar§8|§crecusar§8|§cremover§8|§clistar§8|§cnick§8>"
+    },
     "home": {
         "_prefix": "§cالنظام §8§l» §r",
+        "in_combat": "§cVocê não pode usar esse comando em combate...",
         "none": "§cليس لديك أي منزل...",
         "not_exists": "§cليس لديك منزل بهذا الاسم...",
         "not_in_survival": "§cأنت لست في طور البقاء...",
@@ -2266,9 +2422,6 @@
         "_prefix": "§cالنظام §8§l» §r",
         "disable": "§7تم تعطيل التفضيل بنجاح!",
         "enable": "§7تم تفعيل التفضيل بنجاح!",
-        "onlyvip": "§cفقط اللاعبون برتبة §b§l§oAstral §r§cفي أي فئة أو أعلى يمكنهم تغيير هذا التفضيل... §oاحصل عليها من https://loja.iakunamc.com",
-        "reset": "§7تمت إعادة جميع التفضيلات إلى الافتراضي!",
-        "usage": "§cاستخدم §8/§c{label} §8<§cالتفضيل§8|§cإعادة§8>{n}§cالنظام §8§l» §r§cالتفضيلات المتاحة§8:§7 {prefs}",
         "global_only": "§cالتفضيل §e{pref} §cعام فقط ولا يمكن تخصيصه لكل لعبة مصغرة!",
         "invalid_bool": "§cقيمة غير صالحة لـ §e{pref}§c! استخدم §aon §cأو §coff",
         "invalid_minigame": "§cلعبة مصغرة غير صالحة! الألعاب المصغرة§8:§7 {minigames}",
@@ -2277,6 +2430,8 @@
         "minigame_unset": "§7التفضيل §e{pref} §7في §b{minigame} §7يتبع الآن الإعداد العام الافتراضي!",
         "minigame_usage": "§cاستخدم §8/§c{label} mg §8<§cاللعبة_المصغرة§8> <§cالتفضيل§8> [§cالوضع§8|§creset§8]{n}§cالنظام §8§l» §r§cالألعاب المصغرة§8:§7 {minigames}{n}§cالنظام §8§l» §r§cالتفضيلات§8:§7 {prefs}",
         "not_allowed_minigame": "§cالتفضيل §e{pref} §cغير متاح في §b{minigame}§c! الألعاب المصغرة المسموح بها§8:§7 {minigames}",
+        "onlyvip": "§cفقط اللاعبون برتبة §b§l§oAstral §r§cفي أي فئة أو أعلى يمكنهم تغيير هذا التفضيل... §oاحصل عليها من https://loja.iakunamc.com",
+        "reset": "§7تمت إعادة جميع التفضيلات إلى الافتراضي!",
         "reset_minigame": "§7تمت إعادة تعيين جميع التفضيلات المخصصة لـ §b{minigame} §7إلى الإعداد العام!",
         "state": {
             "_prefix": "",
@@ -2294,6 +2449,7 @@
             "sb_right": "§aيمين"
         },
         "updated": "§7تم تغيير التفضيل §e{pref} §8(§b{scope}§8) §7إلى {status}§7!",
+        "usage": "§cاستخدم §8/§c{label} §8<§cالتفضيل§8|§cإعادة§8>{n}§cالنظام §8§l» §r§cالتفضيلات المتاحة§8:§7 {prefs}",
         "menu": {
             "_prefix": "",
             "back": "§c« العودة إلى الألعاب المصغرة",
@@ -2323,6 +2479,7 @@
             "friendnotify": "إشعارات الأصدقاء",
             "hideplayers": "إخفاء اللاعبين",
             "highlights": "تمييز الدردشة",
+            "lowykb": "Knockback Y Reduzido (PvP)",
             "nakb": "NA Ping / Knockback (PvP)",
             "openchest": "فتح الصندوق بالأداة",
             "partnernotify": "إشعارات الشريك",
@@ -2527,6 +2684,7 @@
     },
     "tpa": {
         "expired": "§5النقل الآني §8§l» §r§cانتهت صلاحية طلب النقل الآني من {sender}...",
+        "in_combat": "§5Teleporte §8§l» §r§cVocê não pode usar esse comando em combate...",
         "noself": "§5النقل الآني §8§l» §r§cلا يمكنك الانتقال إلى نفسك...",
         "not_in_survival": "§5النقل الآني §8§l» §r§cأنت لست في طور البقاء...",
         "pending": "§5النقل الآني §8§l» §r§cهذا اللاعب لديه طلب نقل آني معلق بالفعل...",
@@ -2624,6 +2782,7 @@
         "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §6المهام §8===-=-=-=-",
         "header_other": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §6مهام §7اللاعب §6{target} §8===-=-=-=-",
         "resetIn": "§7تتجدد المهام خلال §6{time}",
+        "reset_midnight": "§7تم تجديد المهام اليومية! استخدم §8/§6missions §7لتفقدها!",
         "break": {
             "_prefix": "",
             "blocks": "§7اكسر {target} كتلة",
@@ -2712,8 +2871,7 @@
                 "_prefix": "",
                 "bedwars": "§7اشترِ {target} ترقيات في §cBed§fWars"
             }
-        },
-        "reset_midnight": "§7تم تجديد المهام اليومية! استخدم §8/§6missions §7لتفقدها!"
+        }
     },
     "missions": {
         "_prefix": "§6المهام §8§l» §r",
@@ -3342,161 +3500,6 @@
             "success": "§7اللقب §6{titulo} §7تم شراؤه بنجاح!"
         },
         "expired": "§6الألقاب §8§l» §r§7لقبك §6{titulo} §7انتهت صلاحيته..."
-    },
-    "pearl": {
-        "_prefix": "",
-        "blocked": "§cلا توجد مساحة آمنة للانتقال إلى هناك!"
-    },
-    "pvpmodes": {
-        "_prefix": "§bPvP §8§l» §r",
-        "usage": "§7للدخول استخدم §8/§7{label} join §8<§7الوضع§8>{n}§bPvP §8§l» §r§7للمغادرة استخدم §8/§7{label} leave",
-        "join": {
-            "usage": "§cاستخدم §8/§c{label} join §8<§cالوضع§8>"
-        },
-        "modes_list": "§7الأوضاع المتاحة§8: §f{modes}",
-        "invalid_mode": "§cالوضع §f{mode} §cغير موجود!",
-        "world_unavailable": "§cخريطة الوضع {mode} §cغير متاحة حالياً...",
-        "joined": "§7انضممت إلى وضع {mode}§7!",
-        "joined_team": "§7انضممت إلى وضع {mode} §7في فريق {team}§7!",
-        "not_playing": "§cأنت لست في أي وضع PvP...",
-        "left": "§7لقد غادرت وضع PvP!",
-        "menu": {
-            "_prefix": "",
-            "back": "§c« رجوع",
-            "mode_item": "{label}{n}§7يلعبون§8: §f{playing}{n}{n}§eانقر للانضمام",
-            "prefs_item": "§3تفضيلات PvPModes{n}§7قم بضبط إعداداتك{n}{n}§eانقر للفتح",
-            "team_amarelo": "§eالفريق الأصفر",
-            "team_azul": "§9الفريق الأزرق",
-            "team_title": "§6TeamPvP §8§l» §r§7اختر الفريق",
-            "team_verde": "§aالفريق الأخضر",
-            "team_vermelho": "§cالفريق الأحمر",
-            "teampvp_item": "§6TeamPvP{n}§7يلعبون§8: §f{playing}{n}{n}§eانقر لاختيار فريقك",
-            "title": "§bPvPModes §8§l» §r§7اختر الوضع",
-            "uhc_item": "§bUHC{n}§7يلعبون§8: §f{playing}{n}{n}§eانقر لاختيار النوع",
-            "uhc_title": "§bPvPModes UHC §8§l» §r§7الأنواع",
-            "uhc_uhc": "§bUHC عادي",
-            "uhc_uhcfly": "§bUHC طيران",
-            "uhc_uhcheavy": "§bUHC §8(§cارتداد ثقيل§8)",
-            "uhc_uhclight": "§bUHC §8(§3ارتداد خفيف§8)"
-        }
-    },
-    "challenge": {
-        "_prefix": "§cمبارزة §8§l» §r",
-        "_noprefix": [
-            "menu",
-            "received"
-        ],
-        "cancelled_other": "§7ألغى اللاعب §c{player} §7التحدي...",
-        "cancelled_self": "§7لقد ألغيت التحدي المرسل إلى §c{player}§7...",
-        "denied_other": "§7رفض اللاعب §c{player} §7تحديك...",
-        "denied_self": "§7لقد رفضت التحدي من §c{player}§7...",
-        "error": {
-            "already_sent": "§cلديك بالفعل تحدٍ معلق قمت بإرساله...",
-            "challenger_busy": "§cأنت بالفعل في مباراة أو تحدٍ نشط...",
-            "challenger_offline": "§cالمتحدي §7{player} §cخرج من الخادم...",
-            "invalid_bet": "§cقيمة الرهان غير صالحة...",
-            "invalid_mode": "§cالوضع §7{mode} §cغير صالح! الأوضاع§8: §7duels§8, §7thebridge§8, §7bedwars§8, §7skywars...",
-            "invalid_rounds": "§cيجب أن يكون عدد الجولات بين §7{min} §cو §7{max}§c...",
-            "invalid_submode": "§cالوضع الفرعي §7{submode} §cغير صالح أو غير متوافق مع {mode}...",
-            "max_team_size": "§cالحد الأقصى المسموح به لحجم الفريق§8: §7{max}v{max}§c...",
-            "member_busy": "§cاللاعب §7{player} §cموجود بالفعل في مباراة أو تحدٍ...",
-            "member_offline": "§cخرج أحد أعضاء المجموعة قبل بدء التحدي...",
-            "no_arena_available": "§cلا توجد ساحة متاحة لبدء هذا الوضع الآن...",
-            "no_pending": "§cليس لديك أي تحديات معلقة...",
-            "no_pending_from": "§cليس لديك تحدٍ معلق من §7{player}§c...",
-            "no_sent_invite": "§cلم ترسل أي تحدٍ معلق...",
-            "not_enough_akunas": "§cتحتاج إلى §7{bet} Akunas §cلهذا الرهان...",
-            "not_in_challenge": "§cأنت لست في تحدٍ نشط...",
-            "player_offline": "§cاللاعب §7{player} §cغير متصل...",
-            "same_party": "§cلا يمكنك تحدي شخص في نفس المجموعة...",
-            "self": "§cلا يمكنك تحدي نفسك...",
-            "target_busy": "§cاللاعب §7{player} §cموجود بالفعل في مباراة أو تحدٍ...",
-            "target_has_pending": "§cاللاعب §7{player} §cلديه بالفعل تحدٍ معلق...",
-            "target_not_enough_akunas": "§cاللاعب §7{player} §cلا يملك §7{bet} Akunas §cللرهان...",
-            "target_not_party_leader": "§cفقط قائد مجموعة §7{player} §cيمكنه تلقي التحديات...",
-            "team_size_mismatch": "§cيجب أن تحتوي المجموعات على نفس عدد اللاعبين §8(§7{yours} ضد {theirs}§8)§c..."
-        },
-        "expired": "§7انتهت صلاحية التحدي مع §c{player}§7...",
-        "finished_tie": "§7انتهى التحدي بالتعادل! النتيجة النهائية §8(§f{leader_a} §c{score_a} §7x §9{score_b} §f{leader_b}§8)§7... تمت إعادة §cAkunas §7المرصودة للرهان!",
-        "finished_win": "§aالفوز لـ §f{winner}§a! النتيجة النهائية§8: §f{leader_a} §c{score_a} §7x §9{score_b} §f{leader_b} §8- §7الجائزة§8: §e{pot} Akunas§7!",
-        "menu": {
-            "_prefix": "",
-            "back": "§c« رجوع",
-            "bet_amount": "{amount} Akunas",
-            "bet_item": "{bet}{n}§7الجولات§8: §f{rounds}{n}{n}§aانقر لإرسال التحدي",
-            "bet_none": "§fبدون رهان",
-            "bet_title": "§cتحدي §8§l» §r§7الرهان §8(§7Akunas§8)",
-            "mode_item": "{label}{n}§7تحدي §f{player}{n}{n}§eانقر لاختيار الجولات",
-            "mode_title": "§cتحدي §8§l» §r§7الوضع",
-            "round_plural": "§e{rounds} جولات{n}{n}§eانقر لاختيار الرهان",
-            "round_single": "§e{rounds} جولة{n}{n}§eانقر لاختيار الرهان",
-            "rounds_title": "§cتحدي §8§l» §r§7الجولات"
-        },
-        "received": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §cمبارزة §8===-=-=-{n}§cمبارزة §8§l» §r§c{player} §7تحداك في {mode} §8(§f{format}§8) §7لمدة §e{rounds} جولة §8(§6{bet}§8)...{n}§cمبارزة §8§l» §r§7استخدم §a/desafiar accept {challenger} للقبول §7أو §c/desafiar deny {challenger} للرفض §8(§7{timeout}s§8)",
-        "round_finished": "§7انتهت الجولة §e{round}§8/§e{total}§7! النتيجة§8: §f{leader_a} §c{score_a} §7x §9{score_b} §f{leader_b} §8- §7الجولة التالية §8(§e{next}§8/§e{total}§8) §7خلال §e{delay}s§7!",
-        "round_starting": "§7بدء الجولة §e{round}§8/§e{total} §7في {mode} §8(§f{leader_a} §c{score_a} §7x §9{score_b} §f{leader_b}§8)!",
-        "sent": "§7تم إرسال التحدي إلى §c{player} §7في {mode} §8(§f{format}§8) §7لمدة §e{rounds} جولة §8(§6{bet}§8)!",
-        "status": "§7الجولة الحالية§8: §e{round}§8/§e{total} §8| §f{leader_a} §c{score_a} §7x §9{score_b} §f{leader_b} §8| §7الرهان§8: §6{bet} Akunas",
-        "usage": "§cاستخدم §8/§c{label} §8<§cلاعب§8> [§cduels§8|§cthebridge§8|§cbedwars§8|§cskywars§8] [§cالوضع الفرعي§8] [§cالجولات 1-10§8] [§cالرهان§8] §7أو §8/§c{label} §8<§caccept§8|§cdeny§8|§ccancel§8|§cstatus§8>",
-        "won_wo": "§cانسحاب §8(§cW.O.§8)§c! §7غادر اللاعب §c{quitter} §7المباراة... فاز §a{winner} §7وحصل على §e{pot} Akunas§7!",
-        "loading_arena": "§7جاري تحميل الساحة، يرجى الانتظار لحظة..."
-    },
-    "friends": {
-        "accept": {
-            "_prefix": "§cالنظام §8§l» §r",
-            "none": "§cليس لديك أي طلبات صداقة معلقة...",
-            "notify": "§b{friend} §7قبل طلب صداقتك!",
-            "success": "§7أنت و §b{friend} §7أصبحتما صديقين الآن!"
-        },
-        "add": {
-            "_prefix": "§cالنظام §8§l» §r",
-            "already": "§cأنت بالفعل صديق لـ §b{target}§c...",
-            "expired": "§cانتهت صلاحية طلب الصداقة من §b{sender}§c...",
-            "limit": "§cلقد وصلت إلى الحد الأقصى للأصدقاء ({max})!",
-            "pending": "§cهذا اللاعب لديه بالفعل طلب صداقة معلق...",
-            "request": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §bطلب صداقة §8===-=-=-{n}§cالنظام §8§l» §r§b{sender} §7أرسل لك طلب صداقة...{n}§cالنظام §8§l» §r§7استخدم §a/friend aceitar §7للقبول أو §c/friend recusar §7للرفض",
-            "self": "§cلا يمكنك إضافة نفسك كصديق...",
-            "sent": "§7تم إرسال طلب الصداقة إلى §b{target}§7!",
-            "target_limit": "§cوصل هذا اللاعب بالفعل إلى الحد الأقصى للأصدقاء!",
-            "usage": "§cاستخدم §8/§c{label} add §8<§cلاعب§8>"
-        },
-        "deny": {
-            "_prefix": "§cالنظام §8§l» §r",
-            "none": "§cليس لديك أي طلبات صداقة معلقة...",
-            "notify": "§b{target} §7رفض طلب صداقتك...",
-            "success": "§7تم رفض طلب الصداقة بنجاح!"
-        },
-        "friend": {
-            "_prefix": "§cالنظام §8§l» §r",
-            "joined": "§7انضم صديقك §b{friend} §7إلى الخادم!",
-            "left": "§7غادر صديقك §b{friend} §cالخادم§7..."
-        },
-        "list": {
-            "_prefix": "",
-            "entry": "§cالنظام §8§l» §r{status} §b{friend} §8| §7منذ§8:§b {date} §8(§7منذ {dateSince}§8){n}§cالنظام §8§l» §r§7تلقبه§8:§b {nicknameGiven} §8| §7يلقبك§8:§b {nicknameReceived}",
-            "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §bالأصدقاء §8(§7{count}§8/§7{max}§8) §8[§7صفحة {page}/{maxPages}§8] ===-=-=-=-",
-            "no_nickname": "§7لا يوجد لقب...§r",
-            "none": "§cالنظام §8§l» §r§cليس لديك أي أصدقاء بعد...",
-            "offline": "§c*",
-            "online": "§a*"
-        },
-        "nick": {
-            "_prefix": "§cالنظام §8§l» §r",
-            "success": "§7تم تعيين لقب §b{friend} §7إلى '§b{nickname}§7' بنجاح!",
-            "usage": "§cاستخدم §8/§c{label} nick §8<§cصديق§8> <§cلقب§8>"
-        },
-        "remove": {
-            "_prefix": "§cالنظام §8§l» §r",
-            "all_success": "§7تمت إزالة جميع أصدقائك!",
-            "invalid": "§cلاعب غير صالح أو ليس في قائمة أصدقائك...",
-            "none": "§cليس لديك أي أصدقاء...",
-            "notify": "§b{friend} §7أزالك من قائمة أصدقائه...",
-            "success": "§7لقد أزلت §b{friend} §7من قائمة أصدقائك...",
-            "usage": "§cاستخدم §8/§c{label} remover §8<§cلاعب§8|§c*§8>",
-            "confirm": "§cهل أنت متأكد من إزالة §b{friend} §cمن قائمة الأصدقاء؟ اكتب §8/§c{command} confirm §cللتأكيد",
-            "confirm_all": "§cهل أنت متأكد من إزالة جميع أصدقائك؟ اكتب §8/§c{command} confirm §cللتأكيد"
-        },
-        "usage": "§cالنظام §8§l» §r§cاستخدم §8/§c{label} §8<§cadd§8|§caceitar§8|§crecusar§8|§cremover§8|§clistar§8|§cnick§8>"
     },
     "online_reward": {
         "_prefix": "§bالنشاط §8§l» §r",

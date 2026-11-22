@@ -1267,17 +1267,6 @@
             "countdown": "§7Начало через §2{seconds}с",
             "ending_countdown": "§7Возврат в лобби через §2{seconds}с"
         },
-        "item": {
-            "play_again": "§8-> §aСыграть снова",
-            "quit": "§8-> §cВыйти"
-        },
-        "queue": {
-            "_prefix": "§2Дуэли §8§l» §r",
-            "not_found": "§cРежим {kit} не существует!",
-            "joined": "§7Вы успешно встали в очередь для режима §2{mode}§r§7!",
-            "left": "§7Вы покинули очередь режима §c{mode}§7!",
-            "timeout": "§cВы были автоматически удалены из очереди, так как не удалось найти других доступных игроков..."
-        },
         "match": {
             "_prefix": "§2Duels §8§l» §r",
             "started": "§7Дуэль §2{mode} §7против §2{opponent} §7на арене §2{arena}§7!",
@@ -1309,6 +1298,17 @@
             "team_format": "{right}§fi§cAkuna§9MC §8§l» §r§2Duels {format}{n}{right}{bar}{n}{right}§8§l» §r§7Режим§8:§2 {mode}{n}{right}§8§l» §r§7Время§8:§2 {duration}{n}{right}§8§l» §r§7Команда§8:§a {team_alive}/{team_total} §8| §c{opp_alive}/{team_total}{n}{right}§8§l» §r§7Пинг§8:§2 {ping}мс{n}{right}{bar}{n}{n}{right}§2iakunamc.com 19132",
             "team_boxing_format": "{right}§fi§cAkuna§9MC §8§l» §r§2Duels {format}{n}{right}{bar}{n}{right}§8§l» §r§7Режим§8:§2 {mode}{n}{right}§8§l» §r§7Время§8:§2 {duration}{n}{right}§8§l» §r§7Команда§8:§a {team_alive}/{team_total} §8| §c{opp_alive}/{team_total}{n}{right}§8§l» §r§7Удары§8:§a {hits} §8/ §c{opp_hits} §8(§7{max_hits}§8){n}{right}§8§l» §r§7Пинг§8:§2 {ping}мс{n}{right}{bar}{n}{n}{right}§2iakunamc.com 19132"
         },
+        "item": {
+            "play_again": "§8-> §aСыграть снова",
+            "quit": "§8-> §cВыйти"
+        },
+        "queue": {
+            "_prefix": "§2Дуэли §8§l» §r",
+            "not_found": "§cРежим {kit} не существует!",
+            "joined": "§7Вы успешно встали в очередь для режима §2{mode}§r§7!",
+            "left": "§7Вы покинули очередь режима §c{mode}§7!",
+            "timeout": "§cВы были автоматически удалены из очереди, так как не удалось найти других доступных игроков..."
+        },
         "bot": {
             "_prefix": "§2Duels §8§l» §r",
             "usage": "§7Используйте §8/§7duels bot §8<§7режим§8> [§aeasy§8|§emedium§8|§chard§8|§5hacker§8]",
@@ -1338,6 +1338,43 @@
             "mode_item": "{label} {format}{n}§7Играют§8: §f{playing}{n}{n}§eНажмите, чтобы встать в очередь",
             "sw1v1_item": "§bSky§fWars 1v1{n}§7Играют§8: §f{playing}{n}{n}§eНажмите, чтобы играть",
             "title": "§2Duels §8§l» §r§7Выберите Режим"
+        }
+    },
+    "pearl": {
+        "_prefix": "",
+        "blocked": "§cТам нет безопасного места для телепортации!"
+    },
+    "pvpmodes": {
+        "_prefix": "§bPvP §8§l» §r",
+        "usage": "§7Для входа используйте §8/§7{label} join §8<§7режим§8>{n}§bPvP §8§l» §r§7Для выхода используйте §8/§7{label} leave",
+        "join": {
+            "usage": "§cИспользуйте §8/§c{label} join §8<§cрежим§8>"
+        },
+        "modes_list": "§7Доступные режимы§8: §f{modes}",
+        "invalid_mode": "§cРежим §f{mode} §cне существует!",
+        "world_unavailable": "§cКарта режима {mode} §cсейчас недоступна...",
+        "joined": "§7Вы вошли в режим {mode}§7!",
+        "joined_team": "§7Вы вошли в режим {mode} §7за команду {team}§7!",
+        "not_playing": "§cВы не находитесь ни в одном PvP-режиме...",
+        "left": "§7Вы вышли из PvP-режима!",
+        "menu": {
+            "_prefix": "",
+            "back": "§c« Назад",
+            "mode_item": "{label}{n}§7Играют§8: §f{playing}{n}{n}§eНажмите для входа",
+            "prefs_item": "§3Настройки PvPModes{n}§7Настройте свои параметры{n}{n}§eНажмите, чтобы открыть",
+            "team_amarelo": "§eЖёлтая Команда",
+            "team_azul": "§9Синяя Команда",
+            "team_title": "§6TeamPvP §8§l» §r§7Выбор Команды",
+            "team_verde": "§aЗелёная Команда",
+            "team_vermelho": "§cКрасная Команда",
+            "teampvp_item": "§6TeamPvP{n}§7Играют§8: §f{playing}{n}{n}§eНажмите для выбора команды",
+            "title": "§bPvPModes §8§l» §r§7Выберите Режим",
+            "uhc_item": "§bUHC{n}§7Играют§8: §f{playing}{n}{n}§eНажмите для выбора варианта",
+            "uhc_title": "§bPvPModes UHC §8§l» §r§7Варианты",
+            "uhc_uhc": "§bОбычный Uhc",
+            "uhc_uhcfly": "§bFly Uhc",
+            "uhc_uhcheavy": "§bUhc §8(§cТяжёлый KB§8)",
+            "uhc_uhclight": "§bUhc §8(§3Лёгкий KB§8)"
         }
     },
     "addbalance": {
@@ -1384,7 +1421,6 @@
         },
         "join": {
             "_prefix": "",
-            "msg": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eАутентификация §8§l» §r§7Привет §e{user}§7, добро пожаловать на §fi§cAkuna§9MC§7!",
             "greeting": {
                 "_prefix": "",
                 "dawn": "Доброй ночи",
@@ -1395,7 +1431,8 @@
             "dawn": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7Доброй ночи §e{user}§7, играете всю ночь на §fi§cAkuna§9MC§7? Добро пожаловать!",
             "morning": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7Доброе утро §e{user}§7, добро пожаловать на §fi§cAkuna§9MC§7! Отличного утра и хороших игр!",
             "afternoon": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7Добрый день §e{user}§7, добро пожаловать на §fi§cAkuna§9MC§7! Приятной дневной игры!",
-            "night": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7Добрый вечер §e{user}§7, добро пожаловать на §fi§cAkuna§9MC§7! Отличного вечера и ярких матчей!"
+            "night": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7Добрый вечер §e{user}§7, добро пожаловать на §fi§cAkuna§9MC§7! Отличного вечера и ярких матчей!",
+            "msg": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eАутентификация §8§l» §r§7Привет §e{user}§7, добро пожаловать на §fi§cAkuna§9MC§7!"
         },
         "login": {
             "_prefix": "",
@@ -1426,29 +1463,29 @@
     "automsg": {
         "_prefix": "§cСистема §8§l» §r",
         "akuna_ai": "§7Познакомьтесь с §cAkuna§r§7, нашим ИИ! Напишите §8\"§cAkuna, ваш вопрос§8\" §7в чате и она ответит!",
+        "assistir": "§7Хотите смотреть матчи вживую? Используйте §8/§cassistir §8<§cигрок§8> §7или настройте, кто может смотреть за вами в §8/§cpref spectate",
         "block": "§7Знаете ли вы, что можете блокировать игроков? Используйте §8/§7block",
+        "clan": "§7Создайте клан или вступите в него, чтобы бороться за топ рейтинга! Используйте §8/§cclan",
         "daily": "§7Знаете ли вы, что ежедневный вход приносит вам ежедневную награду, которая может дать §cАкун §7или §9Множитель XP§7?",
+        "desafiar": "§7Хотите вызвать игрока на дуэль из нескольких раундов со ставкой §cAkunas§7? Используйте §8/§cdesafiar §8<§cигрок§8> §8[§cрежим§8] [§cраунды§8] [§cставка§8]",
         "discord": "§7Присоединяйтесь к нашему дискорду! §chttps://discord.iakunamc.com",
         "exit_minigames": "§7Чтобы вернуться в лобби из любого миниигры, используйте §8/§clobby",
         "friends": "§7Приглашайте друзей играть на нашем сервере! IP можно увидеть командой §8/§7ip",
         "hackers": "§7Видите хакера? Используйте §8/§creport §8<§cимя§8> <§cпричина§8> §7для жалобы!",
+        "lang": "§7Предпочитаете играть на другом языке? Смените язык в любое время с помощью §8/§clang",
         "launch": "§7Сервер §ciAkunaMC §7существует с февраля 2022 года и продолжает расти благодаря вам! Спасибо, что играете здесь!",
         "marry": "§7Вы можете жениться на других игроках и получать 25% их XP! Используйте §8/§7marry",
         "missions": "§7Выполняйте ежедневные миссии для получения невероятных бонусов! Используйте §8/§cмиссии §7для просмотра",
         "nopromote": "§7Не рекламируйте §cдругие серверы в чате или tell§7, это приведёт к §cбану§7!",
         "nosamepass": "§7Не используйте один пароль на других серверах! Используйте §8/§cpin §7для защиты аккаунта!",
-        "rules": "§7Читали ли вы наши §8/§cправила§7? Незнание не освобождает от §cнаказаний§7!",
-        "staff": "§7Хотите стать частью нашего Staff? Посетите §chttps://staff.iakunamc.com",
-        "yt": "§7Снимите видео с нашим сервером на YouTube и получите специальные теги! Требования: §8/§cyt",
-        "assistir": "§7Хотите смотреть матчи вживую? Используйте §8/§cassistir §8<§cигрок§8> §7или настройте, кто может смотреть за вами в §8/§cpref spectate",
-        "clan": "§7Создайте клан или вступите в него, чтобы бороться за топ рейтинга! Используйте §8/§cclan",
-        "desafiar": "§7Хотите вызвать игрока на дуэль из нескольких раундов со ставкой §cAkunas§7? Используйте §8/§cdesafiar §8<§cигрок§8> §8[§cрежим§8] [§cраунды§8] [§cставка§8]",
-        "lang": "§7Предпочитаете играть на другом языке? Смените язык в любое время с помощью §8/§clang",
         "party": "§7Играете с друзьями? Создайте группу через §8/§cparty §7и заходите в мини-игры и дуэли вместе!",
         "pref": "§7Настройте игру под себя! Используйте §8/§cpref gui §7для настройки скорборда, CPS, комбо, наблюдателей и многого другого!",
         "profile": "§7Проверяйте свою статистику, уровень и профили других игроков с помощью §8/§cperfil §8[§cигрок§8]",
         "ranking": "§7Смотрите лучших игроков сервера через §8/§ctops §7по мини-играм или за период!",
+        "rules": "§7Читали ли вы наши §8/§cправила§7? Незнание не освобождает от §cнаказаний§7!",
+        "staff": "§7Хотите стать частью нашего Staff? Посетите §chttps://staff.iakunamc.com",
         "tell": "§7Общайтесь лично с другими игроками через §8/§ctell §8<§cигрок§8> <§cсообщение§8> §7и быстро отвечайте через §8/§cr",
+        "yt": "§7Снимите видео с нашим сервером на YouTube и получите специальные теги! Требования: §8/§cyt",
         "feedback": "§7Want to rate the server or send a suggestion? Use §8/§cfeedback §7and share your thoughts with us!",
         "help": "§7Not sure what commands are available? Use §8/§chelp §7to see all server commands!",
         "mail": "§7Got offline messages or pending rewards? Check your inbox with §8/§cmail§7!",
@@ -1609,6 +1646,67 @@
         ],
         "discord_format": "§9Discord §8§l» §r§f{player}§8:§7 {message}",
         "report_guard": "§cDo not accuse players in chat! Use §8/§creport §8<§cplayer§8> <§creason§8> §cto report them to staff §8(§7you earn Akunas & XP if punished§8)§c"
+    },
+    "challenge": {
+        "_prefix": "§cDuel §8§l» §r",
+        "_noprefix": [
+            "menu",
+            "received"
+        ],
+        "cancelled_other": "§7Игрок §c{player} §7отменил вызов...",
+        "cancelled_self": "§7Вы отменили вызов, отправленный игроку §c{player}§7...",
+        "denied_other": "§7Игрок §c{player} §7отклонил ваш вызов...",
+        "denied_self": "§7Вы отклонили вызов от §c{player}§7...",
+        "error": {
+            "already_sent": "§cУ вас уже есть ожидающий отправленный вызов...",
+            "challenger_busy": "§cВы уже находитесь в матче или активном вызове...",
+            "challenger_offline": "§cВызывающий игрок §7{player} §cвышел из сети...",
+            "invalid_bet": "§cНеверная сумма ставки...",
+            "invalid_mode": "§cНеверный режим §7{mode}§c! Режимы§8: §7duels§8, §7thebridge§8, §7bedwars§8, §7skywars...",
+            "invalid_rounds": "§cКоличество раундов должно быть от §7{min} §cдо §7{max}§c...",
+            "invalid_submode": "§cНеверный или несовместимый подрежим §7{submode} §cдля {mode}...",
+            "max_team_size": "§cМаксимально допустимый размер команды§8: §7{max}v{max}§c...",
+            "member_busy": "§cИгрок §7{player} §cуже находится в матче или вызове...",
+            "member_offline": "§cУчастник группы вышел из сети до начала вызова...",
+            "no_arena_available": "§cСейчас нет свободной арены для запуска этого режима...",
+            "no_pending": "§cУ вас нет ожидающих вызовов...",
+            "no_pending_from": "§cУ вас нет ожидающего вызова от §7{player}§c...",
+            "no_sent_invite": "§cУ вас нет отправленных ожидающих вызовов...",
+            "not_enough_akunas": "§cВам нужно §7{bet} Akunas §cдля этой ставки...",
+            "not_in_challenge": "§cВы не участвуете в активном вызове...",
+            "player_offline": "§cИгрок §7{player} §cне в сети...",
+            "same_party": "§cНельзя вызвать игрока из своей же группы...",
+            "self": "§cВы не можете вызвать самого себя...",
+            "target_busy": "§cИгрок §7{player} §cуже находится в матче или вызове...",
+            "target_has_pending": "§cУ игрока §7{player} §cуже есть ожидающий вызов...",
+            "target_not_enough_akunas": "§cУ игрока §7{player} §cнет §7{bet} Akunas §cдля ставки...",
+            "target_not_party_leader": "§cТолько лидер группы игрока §7{player} §cможет принимать вызовы...",
+            "team_size_mismatch": "§cВ группах должно быть одинаковое количество игроков §8(§7{yours} vs {theirs}§8)§c..."
+        },
+        "expired": "§7Время вызова с §c{player} §7истекло...",
+        "finished_tie": "§7Ничья в вызове! Итоговый счёт §8(§f{leader_a} §c{score_a} §7x §9{score_b} §f{leader_b}§8)§7... Поставленные §cAkunas §7возвращены!",
+        "finished_win": "§aПобеда §f{winner}§a! Итоговый счёт§8: §f{leader_a} §c{score_a} §7x §9{score_b} §f{leader_b} §8- §7Приз§8: §e{pot} Akunas§7!",
+        "menu": {
+            "_prefix": "",
+            "back": "§c« Назад",
+            "bet_amount": "{amount} Akunas",
+            "bet_item": "{bet}{n}§7Раунды§8: §f{rounds}{n}{n}§aНажмите, чтобы отправить вызов",
+            "bet_none": "§fБез ставки",
+            "bet_title": "§cВызов §8§l» §r§7Ставка §8(§7Akunas§8)",
+            "mode_item": "{label}{n}§7Вызвать §f{player}{n}{n}§eНажмите для выбора раундов",
+            "mode_title": "§cВызов §8§l» §r§7Режим",
+            "round_plural": "§e{rounds} Раундов{n}{n}§eНажмите для выбора ставки",
+            "round_single": "§e{rounds} Раунд{n}{n}§eНажмите для выбора ставки",
+            "rounds_title": "§cВызов §8§l» §r§7Раунды"
+        },
+        "received": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §cДуэль §8===-=-=-{n}§cДуэль §8§l» §r§c{player} §7вызвал вас в {mode} §8(§f{format}§8) §7на §e{rounds} раунд(ов) §8(§6{bet}§8)...{n}§cДуэль §8§l» §r§7Используйте §a/desafiar accept {challenger} для принятия §7или §c/desafiar deny {challenger} для отказа §8(§7{timeout}s§8)",
+        "round_finished": "§7Раунд §e{round}§8/§e{total} §7завершён! Счёт§8: §f{leader_a} §c{score_a} §7x §9{score_b} §f{leader_b} §8- §7Следующий раунд §8(§e{next}§8/§e{total}§8) §7через §e{delay}с§7!",
+        "round_starting": "§7Начинается раунд §e{round}§8/§e{total} §7в {mode} §8(§f{leader_a} §c{score_a} §7x §9{score_b} §f{leader_b}§8)!",
+        "sent": "§7Вызов отправлен игроку §c{player} §7в {mode} §8(§f{format}§8) §7на §e{rounds} раунд(ов) §8(§6{bet}§8)!",
+        "status": "§7Текущий раунд§8: §e{round}§8/§e{total} §8| §f{leader_a} §c{score_a} §7x §9{score_b} §f{leader_b} §8| §7Ставка§8: §6{bet} Akunas",
+        "usage": "§cИспользуйте §8/§c{label} §8<§cигрок§8> [§cduels§8|§cthebridge§8|§cbedwars§8|§cskywars§8] [§cподрежим§8] [§cраунды 1-10§8] [§cставка§8] §7или §8/§c{label} §8<§caccept§8|§cdeny§8|§ccancel§8|§cstatus§8>",
+        "won_wo": "§cТех. победа §8(§cW.O.§8)§c! §7Игрок §c{quitter} §7покинул матч... §a{winner} §7победил и получил §e{pot} Akunas§7!",
+        "loading_arena": "§7Загрузка арены, подождите немного..."
     },
     "clan": {
         "_prefix": "§eКланы §8§l» §r",
@@ -1796,14 +1894,14 @@
     "daily": {
         "reward": {
             "akunas": "§c{amount} Акун",
+            "cooldown": "§5Ежедневная награда §8§l» §r§cВы уже забрали награду сегодня! Следующая через §5{time}§c...",
             "milestone": "§5Ежедневная награда §8§l» §r§7Поздравляем! Вы достигли §5{weeks} §7недель подряд!",
+            "milestone_month": "§5Ежедневная награда §8§l» §r§7Невероятно! Вы достигли серии в §5{days} §7дней и получили особый бонус!",
             "multiplier": "§9{multiplier}x Множитель §8(§5{duration}§8)",
             "received": "§5Ежедневная награда §8§l» §r§7Вы получили {rewards}",
             "streak": "§5Ежедневная награда §8§l» §r§7Текущая серия§8: §5{streak} §7дней",
             "xp": "§9{amount} XP",
             "streak_lost": "§5Ежедневная награда §8§l» §r§cВы потеряли серию {oldStreak} дней...",
-            "cooldown": "§5Ежедневная награда §8§l» §r§cВы уже забрали награду сегодня! Следующая через §5{time}§c...",
-            "milestone_month": "§5Ежедневная награда §8§l» §r§7Невероятно! Вы достигли серии в §5{days} §7дней и получили особый бонус!",
             "bonus_applied": "§5Daily §8§l» §r§7Применён бонус§8: {bonuses}",
             "bonus_galaxy": "§7§l§oGalaxy§r§a+ §e(+{percent}%)",
             "bonus_booster": "§dBooster §e(+{percent}%)"
@@ -1851,8 +1949,66 @@
         "set": "§7Фейк успешно включён!",
         "usage": "§cИспользуйте §8/§c{label} §8<§con§8|§coff§8|§crandom§8|§clist§8>"
     },
+    "friends": {
+        "accept": {
+            "_prefix": "§cSystem §8§l» §r",
+            "none": "§cУ вас нет ожидающих запросов в друзья...",
+            "notify": "§b{friend} §7принял(а) ваш запрос в друзья!",
+            "success": "§7Вы и §b{friend} §7теперь друзья!"
+        },
+        "add": {
+            "_prefix": "§cSystem §8§l» §r",
+            "already": "§cВы уже дружите с §b{target}§c...",
+            "expired": "§cСрок запроса в друзья от §b{sender} §cистёк...",
+            "limit": "§cВы достигли лимита друзей ({max})!",
+            "pending": "§cУ этого игрока уже есть ожидающий запрос в друзья...",
+            "request": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §bЗапрос в Друзья §8===-=-=-{n}§cSystem §8§l» §r§b{sender} §7отправил(а) вам запрос в друзья...{n}§cSystem §8§l» §r§7Используйте §a/friend aceitar §7для принятия или §c/friend recusar §7для отклонения",
+            "self": "§cВы не можете добавить самого себя в друзья...",
+            "sent": "§7Запрос в друзья отправлен игроку §b{target}§7!",
+            "target_limit": "§cЭтот игрок уже достиг лимита друзей!",
+            "usage": "§cИспользуйте §8/§c{label} add §8<§cигрок§8>"
+        },
+        "deny": {
+            "_prefix": "§cSystem §8§l» §r",
+            "none": "§cУ вас нет ожидающих запросов в друзья...",
+            "notify": "§b{target} §7отклонил(а) ваш запрос в друзья...",
+            "success": "§7Запрос в друзья успешно отклонён!"
+        },
+        "friend": {
+            "_prefix": "§cSystem §8§l» §r",
+            "joined": "§7Ваш друг §b{friend} §7зашёл на сервер!",
+            "left": "§7Ваш друг §b{friend} §cвышел §7с сервера..."
+        },
+        "list": {
+            "_prefix": "",
+            "entry": "§cSystem §8§l» §r{status} §b{friend} §8| §7С§8:§b {date} §8(§7{dateSince} назад§8){n}§cSystem §8§l» §r§7Вы зовёте§8:§b {nicknameGiven} §8| §7Зовёт вас§8:§b {nicknameReceived}",
+            "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §bДрузья §8(§7{count}§8/§7{max}§8) §8[§7Стр. {page}/{maxPages}§8] ===-=-=-=-",
+            "no_nickname": "§7Нет прозвища...§r",
+            "none": "§cSystem §8§l» §r§cУ вас пока нет друзей...",
+            "offline": "§c*",
+            "online": "§a*"
+        },
+        "nick": {
+            "_prefix": "§cSystem §8§l» §r",
+            "success": "§7Прозвище для §b{friend} §7успешно изменено на '§b{nickname}§7'!",
+            "usage": "§cИспользуйте §8/§c{label} nick §8<§cдруг§8> <§cпрозвище§8>"
+        },
+        "remove": {
+            "_prefix": "§cSystem §8§l» §r",
+            "all_success": "§7Все ваши друзья были удалены!",
+            "invalid": "§cНеверный игрок или его нет в вашем списке друзей...",
+            "none": "§cУ вас нет друзей...",
+            "notify": "§b{friend} §7удалил(а) вас из списка друзей...",
+            "success": "§7Вы удалили §b{friend} §7из своего списка друзей...",
+            "usage": "§cИспользуйте §8/§c{label} remover §8<§cигрок§8|§c*§8>",
+            "confirm": "§cВы уверены, что хотите удалить §b{friend} §cиз друзей? Введите §8/§c{command} confirm §cдля подтверждения",
+            "confirm_all": "§cВы уверены, что хотите удалить ВСЕХ друзей? Введите §8/§c{command} confirm §cдля подтверждения"
+        },
+        "usage": "§cSystem §8§l» §r§cИспользуйте §8/§c{label} §8<§cadd§8|§caceitar§8|§crecusar§8|§cremover§8|§clistar§8|§cnick§8>"
+    },
     "home": {
         "_prefix": "§cСистема §8§l» §r",
+        "in_combat": "§cVocê não pode usar esse comando em combate...",
         "none": "§cУ вас нет ни одного дома...",
         "not_exists": "§cУ вас нет дома с таким именем...",
         "not_in_survival": "§cВы не в режиме выживания...",
@@ -2266,9 +2422,6 @@
         "_prefix": "§cСистема §8§l» §r",
         "disable": "§7Предпочтение успешно отключено!",
         "enable": "§7Предпочтение успешно включено!",
-        "onlyvip": "§cТолько игроки с VIP §b§l§oAstral §r§cили выше могут изменить это предпочтение... §oКупите на https://loja.iakunamc.com",
-        "reset": "§7Все предпочтения сброшены до стандартных!",
-        "usage": "§cИспользуйте §8/§c{label} §8<§cпредпочтение§8|§creset§8>{n}§cСистема §8§l» §r§cДоступные предпочтения§8:§7 {prefs}",
         "global_only": "§cНастройка §e{pref} §cявляется только глобальной и не может быть изменена для отдельной мини-игры!",
         "invalid_bool": "§cНеверное значение для §e{pref}§c! Используйте §aon §cили §coff",
         "invalid_minigame": "§cНеверная мини-игра! Мини-игры§8:§7 {minigames}",
@@ -2277,6 +2430,8 @@
         "minigame_unset": "§7Настройка §e{pref} §7в §b{minigame} §7теперь следует Глобальному значению!",
         "minigame_usage": "§cИспользуйте §8/§c{label} mg §8<§cminigame§8> <§cpref§8> [§cрежим§8|§creset§8]{n}§cSystem §8§l» §r§cМини-игры§8:§7 {minigames}{n}§cSystem §8§l» §r§cНастройки§8:§7 {prefs}",
         "not_allowed_minigame": "§cНастройка §e{pref} §cнедоступна в §b{minigame}§c! Доступные мини-игры§8:§7 {minigames}",
+        "onlyvip": "§cТолько игроки с VIP §b§l§oAstral §r§cили выше могут изменить это предпочтение... §oКупите на https://loja.iakunamc.com",
+        "reset": "§7Все предпочтения сброшены до стандартных!",
         "reset_minigame": "§7Все пользовательские настройки для §b{minigame} §7были сброшены до Глобальных!",
         "state": {
             "_prefix": "",
@@ -2294,6 +2449,7 @@
             "sb_right": "§aСправа"
         },
         "updated": "§7Настройка §e{pref} §8(§b{scope}§8) §7изменена на {status}§7!",
+        "usage": "§cИспользуйте §8/§c{label} §8<§cпредпочтение§8|§creset§8>{n}§cСистема §8§l» §r§cДоступные предпочтения§8:§7 {prefs}",
         "menu": {
             "_prefix": "",
             "back": "§c« Назад к Мини-играм",
@@ -2323,6 +2479,7 @@
             "friendnotify": "Уведомления о друзьях",
             "hideplayers": "Скрывать игроков",
             "highlights": "Упоминания в чате",
+            "lowykb": "Knockback Y Reduzido (PvP)",
             "nakb": "NA Ping / Knockback (PvP)",
             "openchest": "Открывать сундук инструментом",
             "partnernotify": "Уведомления о партнёре",
@@ -2527,6 +2684,7 @@
     },
     "tpa": {
         "expired": "§5Телепорт §8§l» §r§cЗапрос на телепорт от {sender} истёк...",
+        "in_combat": "§5Teleporte §8§l» §r§cVocê não pode usar esse comando em combate...",
         "noself": "§5Телепорт §8§l» §r§cВы не можете телепортироваться к себе...",
         "not_in_survival": "§5Телепорт §8§l» §r§cВы не в режиме выживания...",
         "pending": "§5Телепорт §8§l» §r§cЭтот игрок уже имеет ожидающий запрос на телепорт...",
@@ -2624,6 +2782,7 @@
         "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §6Миссии §8===-=-=-=-",
         "header_other": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §6Миссии §7игрока §6{target} §8===-=-=-=-",
         "resetIn": "§7Миссии сбрасываются через §6{time}",
+        "reset_midnight": "§7Ежедневные миссии обновлены! Используйте §8/§6missoes §7для просмотра!",
         "break": {
             "_prefix": "",
             "blocks": "§7Сломайте {target} блоков",
@@ -2712,8 +2871,7 @@
                 "_prefix": "",
                 "bedwars": "§7Купите {target} улучшений в §cBed§fWars"
             }
-        },
-        "reset_midnight": "§7Ежедневные миссии обновлены! Используйте §8/§6missoes §7для просмотра!"
+        }
     },
     "missions": {
         "_prefix": "§6Миссии §8§l» §r",
@@ -3342,161 +3500,6 @@
             "success": "§7Титул §6{titulo} §7успешно куплен!"
         },
         "expired": "§6Титулы §8§l» §r§7Ваш титул §6{titulo} §7истёк..."
-    },
-    "pearl": {
-        "_prefix": "",
-        "blocked": "§cТам нет безопасного места для телепортации!"
-    },
-    "pvpmodes": {
-        "_prefix": "§bPvP §8§l» §r",
-        "usage": "§7Для входа используйте §8/§7{label} join §8<§7режим§8>{n}§bPvP §8§l» §r§7Для выхода используйте §8/§7{label} leave",
-        "join": {
-            "usage": "§cИспользуйте §8/§c{label} join §8<§cрежим§8>"
-        },
-        "modes_list": "§7Доступные режимы§8: §f{modes}",
-        "invalid_mode": "§cРежим §f{mode} §cне существует!",
-        "world_unavailable": "§cКарта режима {mode} §cсейчас недоступна...",
-        "joined": "§7Вы вошли в режим {mode}§7!",
-        "joined_team": "§7Вы вошли в режим {mode} §7за команду {team}§7!",
-        "not_playing": "§cВы не находитесь ни в одном PvP-режиме...",
-        "left": "§7Вы вышли из PvP-режима!",
-        "menu": {
-            "_prefix": "",
-            "back": "§c« Назад",
-            "mode_item": "{label}{n}§7Играют§8: §f{playing}{n}{n}§eНажмите для входа",
-            "prefs_item": "§3Настройки PvPModes{n}§7Настройте свои параметры{n}{n}§eНажмите, чтобы открыть",
-            "team_amarelo": "§eЖёлтая Команда",
-            "team_azul": "§9Синяя Команда",
-            "team_title": "§6TeamPvP §8§l» §r§7Выбор Команды",
-            "team_verde": "§aЗелёная Команда",
-            "team_vermelho": "§cКрасная Команда",
-            "teampvp_item": "§6TeamPvP{n}§7Играют§8: §f{playing}{n}{n}§eНажмите для выбора команды",
-            "title": "§bPvPModes §8§l» §r§7Выберите Режим",
-            "uhc_item": "§bUHC{n}§7Играют§8: §f{playing}{n}{n}§eНажмите для выбора варианта",
-            "uhc_title": "§bPvPModes UHC §8§l» §r§7Варианты",
-            "uhc_uhc": "§bОбычный Uhc",
-            "uhc_uhcfly": "§bFly Uhc",
-            "uhc_uhcheavy": "§bUhc §8(§cТяжёлый KB§8)",
-            "uhc_uhclight": "§bUhc §8(§3Лёгкий KB§8)"
-        }
-    },
-    "challenge": {
-        "_prefix": "§cDuel §8§l» §r",
-        "_noprefix": [
-            "menu",
-            "received"
-        ],
-        "cancelled_other": "§7Игрок §c{player} §7отменил вызов...",
-        "cancelled_self": "§7Вы отменили вызов, отправленный игроку §c{player}§7...",
-        "denied_other": "§7Игрок §c{player} §7отклонил ваш вызов...",
-        "denied_self": "§7Вы отклонили вызов от §c{player}§7...",
-        "error": {
-            "already_sent": "§cУ вас уже есть ожидающий отправленный вызов...",
-            "challenger_busy": "§cВы уже находитесь в матче или активном вызове...",
-            "challenger_offline": "§cВызывающий игрок §7{player} §cвышел из сети...",
-            "invalid_bet": "§cНеверная сумма ставки...",
-            "invalid_mode": "§cНеверный режим §7{mode}§c! Режимы§8: §7duels§8, §7thebridge§8, §7bedwars§8, §7skywars...",
-            "invalid_rounds": "§cКоличество раундов должно быть от §7{min} §cдо §7{max}§c...",
-            "invalid_submode": "§cНеверный или несовместимый подрежим §7{submode} §cдля {mode}...",
-            "max_team_size": "§cМаксимально допустимый размер команды§8: §7{max}v{max}§c...",
-            "member_busy": "§cИгрок §7{player} §cуже находится в матче или вызове...",
-            "member_offline": "§cУчастник группы вышел из сети до начала вызова...",
-            "no_arena_available": "§cСейчас нет свободной арены для запуска этого режима...",
-            "no_pending": "§cУ вас нет ожидающих вызовов...",
-            "no_pending_from": "§cУ вас нет ожидающего вызова от §7{player}§c...",
-            "no_sent_invite": "§cУ вас нет отправленных ожидающих вызовов...",
-            "not_enough_akunas": "§cВам нужно §7{bet} Akunas §cдля этой ставки...",
-            "not_in_challenge": "§cВы не участвуете в активном вызове...",
-            "player_offline": "§cИгрок §7{player} §cне в сети...",
-            "same_party": "§cНельзя вызвать игрока из своей же группы...",
-            "self": "§cВы не можете вызвать самого себя...",
-            "target_busy": "§cИгрок §7{player} §cуже находится в матче или вызове...",
-            "target_has_pending": "§cУ игрока §7{player} §cуже есть ожидающий вызов...",
-            "target_not_enough_akunas": "§cУ игрока §7{player} §cнет §7{bet} Akunas §cдля ставки...",
-            "target_not_party_leader": "§cТолько лидер группы игрока §7{player} §cможет принимать вызовы...",
-            "team_size_mismatch": "§cВ группах должно быть одинаковое количество игроков §8(§7{yours} vs {theirs}§8)§c..."
-        },
-        "expired": "§7Время вызова с §c{player} §7истекло...",
-        "finished_tie": "§7Ничья в вызове! Итоговый счёт §8(§f{leader_a} §c{score_a} §7x §9{score_b} §f{leader_b}§8)§7... Поставленные §cAkunas §7возвращены!",
-        "finished_win": "§aПобеда §f{winner}§a! Итоговый счёт§8: §f{leader_a} §c{score_a} §7x §9{score_b} §f{leader_b} §8- §7Приз§8: §e{pot} Akunas§7!",
-        "menu": {
-            "_prefix": "",
-            "back": "§c« Назад",
-            "bet_amount": "{amount} Akunas",
-            "bet_item": "{bet}{n}§7Раунды§8: §f{rounds}{n}{n}§aНажмите, чтобы отправить вызов",
-            "bet_none": "§fБез ставки",
-            "bet_title": "§cВызов §8§l» §r§7Ставка §8(§7Akunas§8)",
-            "mode_item": "{label}{n}§7Вызвать §f{player}{n}{n}§eНажмите для выбора раундов",
-            "mode_title": "§cВызов §8§l» §r§7Режим",
-            "round_plural": "§e{rounds} Раундов{n}{n}§eНажмите для выбора ставки",
-            "round_single": "§e{rounds} Раунд{n}{n}§eНажмите для выбора ставки",
-            "rounds_title": "§cВызов §8§l» §r§7Раунды"
-        },
-        "received": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §cДуэль §8===-=-=-{n}§cДуэль §8§l» §r§c{player} §7вызвал вас в {mode} §8(§f{format}§8) §7на §e{rounds} раунд(ов) §8(§6{bet}§8)...{n}§cДуэль §8§l» §r§7Используйте §a/desafiar accept {challenger} для принятия §7или §c/desafiar deny {challenger} для отказа §8(§7{timeout}s§8)",
-        "round_finished": "§7Раунд §e{round}§8/§e{total} §7завершён! Счёт§8: §f{leader_a} §c{score_a} §7x §9{score_b} §f{leader_b} §8- §7Следующий раунд §8(§e{next}§8/§e{total}§8) §7через §e{delay}с§7!",
-        "round_starting": "§7Начинается раунд §e{round}§8/§e{total} §7в {mode} §8(§f{leader_a} §c{score_a} §7x §9{score_b} §f{leader_b}§8)!",
-        "sent": "§7Вызов отправлен игроку §c{player} §7в {mode} §8(§f{format}§8) §7на §e{rounds} раунд(ов) §8(§6{bet}§8)!",
-        "status": "§7Текущий раунд§8: §e{round}§8/§e{total} §8| §f{leader_a} §c{score_a} §7x §9{score_b} §f{leader_b} §8| §7Ставка§8: §6{bet} Akunas",
-        "usage": "§cИспользуйте §8/§c{label} §8<§cигрок§8> [§cduels§8|§cthebridge§8|§cbedwars§8|§cskywars§8] [§cподрежим§8] [§cраунды 1-10§8] [§cставка§8] §7или §8/§c{label} §8<§caccept§8|§cdeny§8|§ccancel§8|§cstatus§8>",
-        "won_wo": "§cТех. победа §8(§cW.O.§8)§c! §7Игрок §c{quitter} §7покинул матч... §a{winner} §7победил и получил §e{pot} Akunas§7!",
-        "loading_arena": "§7Загрузка арены, подождите немного..."
-    },
-    "friends": {
-        "accept": {
-            "_prefix": "§cSystem §8§l» §r",
-            "none": "§cУ вас нет ожидающих запросов в друзья...",
-            "notify": "§b{friend} §7принял(а) ваш запрос в друзья!",
-            "success": "§7Вы и §b{friend} §7теперь друзья!"
-        },
-        "add": {
-            "_prefix": "§cSystem §8§l» §r",
-            "already": "§cВы уже дружите с §b{target}§c...",
-            "expired": "§cСрок запроса в друзья от §b{sender} §cистёк...",
-            "limit": "§cВы достигли лимита друзей ({max})!",
-            "pending": "§cУ этого игрока уже есть ожидающий запрос в друзья...",
-            "request": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §bЗапрос в Друзья §8===-=-=-{n}§cSystem §8§l» §r§b{sender} §7отправил(а) вам запрос в друзья...{n}§cSystem §8§l» §r§7Используйте §a/friend aceitar §7для принятия или §c/friend recusar §7для отклонения",
-            "self": "§cВы не можете добавить самого себя в друзья...",
-            "sent": "§7Запрос в друзья отправлен игроку §b{target}§7!",
-            "target_limit": "§cЭтот игрок уже достиг лимита друзей!",
-            "usage": "§cИспользуйте §8/§c{label} add §8<§cигрок§8>"
-        },
-        "deny": {
-            "_prefix": "§cSystem §8§l» §r",
-            "none": "§cУ вас нет ожидающих запросов в друзья...",
-            "notify": "§b{target} §7отклонил(а) ваш запрос в друзья...",
-            "success": "§7Запрос в друзья успешно отклонён!"
-        },
-        "friend": {
-            "_prefix": "§cSystem §8§l» §r",
-            "joined": "§7Ваш друг §b{friend} §7зашёл на сервер!",
-            "left": "§7Ваш друг §b{friend} §cвышел §7с сервера..."
-        },
-        "list": {
-            "_prefix": "",
-            "entry": "§cSystem §8§l» §r{status} §b{friend} §8| §7С§8:§b {date} §8(§7{dateSince} назад§8){n}§cSystem §8§l» §r§7Вы зовёте§8:§b {nicknameGiven} §8| §7Зовёт вас§8:§b {nicknameReceived}",
-            "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §bДрузья §8(§7{count}§8/§7{max}§8) §8[§7Стр. {page}/{maxPages}§8] ===-=-=-=-",
-            "no_nickname": "§7Нет прозвища...§r",
-            "none": "§cSystem §8§l» §r§cУ вас пока нет друзей...",
-            "offline": "§c*",
-            "online": "§a*"
-        },
-        "nick": {
-            "_prefix": "§cSystem §8§l» §r",
-            "success": "§7Прозвище для §b{friend} §7успешно изменено на '§b{nickname}§7'!",
-            "usage": "§cИспользуйте §8/§c{label} nick §8<§cдруг§8> <§cпрозвище§8>"
-        },
-        "remove": {
-            "_prefix": "§cSystem §8§l» §r",
-            "all_success": "§7Все ваши друзья были удалены!",
-            "invalid": "§cНеверный игрок или его нет в вашем списке друзей...",
-            "none": "§cУ вас нет друзей...",
-            "notify": "§b{friend} §7удалил(а) вас из списка друзей...",
-            "success": "§7Вы удалили §b{friend} §7из своего списка друзей...",
-            "usage": "§cИспользуйте §8/§c{label} remover §8<§cигрок§8|§c*§8>",
-            "confirm": "§cВы уверены, что хотите удалить §b{friend} §cиз друзей? Введите §8/§c{command} confirm §cдля подтверждения",
-            "confirm_all": "§cВы уверены, что хотите удалить ВСЕХ друзей? Введите §8/§c{command} confirm §cдля подтверждения"
-        },
-        "usage": "§cSystem §8§l» §r§cИспользуйте §8/§c{label} §8<§cadd§8|§caceitar§8|§crecusar§8|§cremover§8|§clistar§8|§cnick§8>"
     },
     "online_reward": {
         "_prefix": "§bActivity §8§l» §r",
