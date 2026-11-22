@@ -1463,11 +1463,11 @@
                 "afternoon": "Добрый день",
                 "night": "Добрый вечер"
             },
-            "dawn": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7Доброй ночи §e{user}§7, играете всю ночь на §fi§cAkuna§9MC§7? Добро пожаловать!",
-            "morning": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7Доброе утро §e{user}§7, добро пожаловать на §fi§cAkuna§9MC§7! Отличного утра и хороших игр!",
-            "afternoon": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7Добрый день §e{user}§7, добро пожаловать на §fi§cAkuna§9MC§7! Приятной дневной игры!",
-            "night": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7Добрый вечер §e{user}§7, добро пожаловать на §fi§cAkuna§9MC§7! Отличного вечера и ярких матчей!",
-            "msg": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eАутентификация §8§l» §r§7Привет §e{user}§7, добро пожаловать на §fi§cAkuna§9MC§7!"
+            "dawn": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7Доброй ночи §e{user}§7, играете всю ночь на §fi§cAkuna§9MC§7? Добро пожаловать!{n}§bНовости §8§l» §r§7Смотрите список изменений §f4.0§7 и §f4.0 Patch 1§8:{n}§8- §bhttps://www.iakunamc.com/changelogs?v=v4.0{n}§8- §bhttps://www.iakunamc.com/changelogs?v=v4.0-patch-1",
+            "morning": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7Доброе утро §e{user}§7, добро пожаловать на §fi§cAkuna§9MC§7! Отличного утра и хороших игр!{n}§bНовости §8§l» §r§7Смотрите список изменений §f4.0§7 и §f4.0 Patch 1§8:{n}§8- §bhttps://www.iakunamc.com/changelogs?v=v4.0{n}§8- §bhttps://www.iakunamc.com/changelogs?v=v4.0-patch-1",
+            "afternoon": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7Добрый день §e{user}§7, добро пожаловать на §fi§cAkuna§9MC§7! Приятной дневной игры!{n}§bНовости §8§l» §r§7Смотрите список изменений §f4.0§7 и §f4.0 Patch 1§8:{n}§8- §bhttps://www.iakunamc.com/changelogs?v=v4.0{n}§8- §bhttps://www.iakunamc.com/changelogs?v=v4.0-patch-1",
+            "night": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7Добрый вечер §e{user}§7, добро пожаловать на §fi§cAkuna§9MC§7! Отличного вечера и ярких матчей!{n}§bНовости §8§l» §r§7Смотрите список изменений §f4.0§7 и §f4.0 Patch 1§8:{n}§8- §bhttps://www.iakunamc.com/changelogs?v=v4.0{n}§8- §bhttps://www.iakunamc.com/changelogs?v=v4.0-patch-1",
+            "msg": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eАутентификация §8§l» §r§7Привет §e{user}§7, добро пожаловать на §fi§cAkuna§9MC§7!{n}§bНовости §8§l» §r§7Смотрите список изменений §f4.0§7 и §f4.0 Patch 1§8:{n}§8- §bhttps://www.iakunamc.com/changelogs?v=v4.0{n}§8- §bhttps://www.iakunamc.com/changelogs?v=v4.0-patch-1"
         },
         "login": {
             "_prefix": "",

@@ -1464,11 +1464,11 @@
                 "afternoon": "Buenas tardes",
                 "night": "Buenas noches"
             },
-            "dawn": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7Buenas madrugadas §e{user}§7, ¿trasnochando en §fi§cAkuna§9MC§7? ¡Bienvenido(a)!",
-            "morning": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7Buenos días §e{user}§7, ¡bienvenido(a) a §fi§cAkuna§9MC§7! ¡Que tengas una gran mañana de partidas!",
-            "afternoon": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7Buenas tardes §e{user}§7, ¡bienvenido(a) a §fi§cAkuna§9MC§7! ¡Disfruta tu tarde jugando!",
-            "night": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7Buenas noches §e{user}§7, ¡bienvenido(a) a §fi§cAkuna§9MC§7! ¡Que tengas una excelente noche de partidas!",
-            "msg": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7Hola §e{user}§7, ¡bienvenido a §fi§cAkuna§9MC§7!"
+            "dawn": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7Buenas madrugadas §e{user}§7, ¿trasnochando en §fi§cAkuna§9MC§7? ¡Bienvenido(a)!{n}§bNovedades §8§l» §r§7Consulta las changelogs de §f4.0§7 y §f4.0 Patch 1§8:{n}§8- §bhttps://www.iakunamc.com/changelogs?v=v4.0{n}§8- §bhttps://www.iakunamc.com/changelogs?v=v4.0-patch-1",
+            "morning": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7Buenos días §e{user}§7, ¡bienvenido(a) a §fi§cAkuna§9MC§7! ¡Que tengas una gran mañana de partidas!{n}§bNovedades §8§l» §r§7Consulta las changelogs de §f4.0§7 y §f4.0 Patch 1§8:{n}§8- §bhttps://www.iakunamc.com/changelogs?v=v4.0{n}§8- §bhttps://www.iakunamc.com/changelogs?v=v4.0-patch-1",
+            "afternoon": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7Buenas tardes §e{user}§7, ¡bienvenido(a) a §fi§cAkuna§9MC§7! ¡Disfruta tu tarde jugando!{n}§bNovedades §8§l» §r§7Consulta las changelogs de §f4.0§7 y §f4.0 Patch 1§8:{n}§8- §bhttps://www.iakunamc.com/changelogs?v=v4.0{n}§8- §bhttps://www.iakunamc.com/changelogs?v=v4.0-patch-1",
+            "night": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7Buenas noches §e{user}§7, ¡bienvenido(a) a §fi§cAkuna§9MC§7! ¡Que tengas una excelente noche de partidas!{n}§bNovedades §8§l» §r§7Consulta las changelogs de §f4.0§7 y §f4.0 Patch 1§8:{n}§8- §bhttps://www.iakunamc.com/changelogs?v=v4.0{n}§8- §bhttps://www.iakunamc.com/changelogs?v=v4.0-patch-1",
+            "msg": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7Hola §e{user}§7, ¡bienvenido a §fi§cAkuna§9MC§7!{n}§bNovedades §8§l» §r§7Consulta las changelogs de §f4.0§7 y §f4.0 Patch 1§8:{n}§8- §bhttps://www.iakunamc.com/changelogs?v=v4.0{n}§8- §bhttps://www.iakunamc.com/changelogs?v=v4.0-patch-1"
         },
         "login": {
             "_prefix": "",
