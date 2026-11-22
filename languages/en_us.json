@@ -1305,7 +1305,7 @@
         "match": {
             "_prefix": "§2Duels §8§l» §r",
             "started": "§7Duel §2{mode} §7against §2{opponent} §7in arena §2{arena}§7!",
-            "started_team": "§7Duel §2{mode} §8(§2{format}§8) §7in arena §2{arena}§7! §a{teammates} §8vs §c{opponents}",
+            "started_team": "§7Duel §2{mode} §8(§2{format}§8) §7in arena §2{arena}§7! §a{teammates} §7vs §c{opponents}",
             "eliminated": "§c{player} §7was eliminated! §8(§2{team_alive}§8/§7{team_total}§8 remaining)",
             "cancelled": "§cThe duel was cancelled...",
             "timeout": "§cMatch time limit reached...",
@@ -1321,8 +1321,8 @@
             },
             "summary_bot": {
                 "_prefix": "",
-                "win": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §2Duels vs Bot §8===-=-=-=-{n}§7Result§8: §aVictory!{n}§7Opponent§8: {bot}{n}§7Mode§8: §2{mode} §8| §7Duration§8: §2{duration}{n}§7Your Health§8: §c{hp} HP §8| §7Hits§8: §a{hits} §8vs §c{bot_hits}{n}§7Reward§8: §c+{akunas} Akunas §8| §9+{xp} XP{n}§8-=-=-=-===============================-=-=-=-",
-                "loss": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §2Duels vs Bot §8===-=-=-=-{n}§7Result§8: §cDefeat...{n}§7Opponent§8: {bot}{n}§7Mode§8: §2{mode} §8| §7Duration§8: §2{duration}{n}§7Bot Health§8: §c{bot_hp} HP §8| §7Hits§8: §a{hits} §8vs §c{bot_hits}{n}§8-=-=-=-===============================-=-=-=-",
+                "win": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §2Duels vs Bot §8===-=-=-=-{n}§7Result§8: §aVictory!{n}§7Opponent§8: {bot}{n}§7Mode§8: §2{mode} §8| §7Duration§8: §2{duration}{n}§7Your Health§8: §c{hp} HP §8| §7Hits§8: §a{hits} §7vs §c{bot_hits}{n}§7Reward§8: §c+{akunas} Akunas §8| §9+{xp} XP{n}§8-=-=-=-===============================-=-=-=-",
+                "loss": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §2Duels vs Bot §8===-=-=-=-{n}§7Result§8: §cDefeat...{n}§7Opponent§8: {bot}{n}§7Mode§8: §2{mode} §8| §7Duration§8: §2{duration}{n}§7Bot Health§8: §c{bot_hp} HP §8| §7Hits§8: §a{hits} §7vs §c{bot_hits}{n}§8-=-=-=-===============================-=-=-=-",
                 "forfeit": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §2Duels vs Bot §8===-=-=-=-{n}§7Result§8: §eForfeit{n}§7Opponent§8: {bot}{n}§7Mode§8: §2{mode} §8| §7Duration§8: §2{duration}{n}§8-=-=-=-===============================-=-=-=-"
             }
         },
@@ -2573,11 +2573,12 @@
         "noself": "§cYou cannot report yourself!",
         "nostaff": "§cYou cannot report a staff member!",
         "sent": "§7You successfully reported §c{target} §7for §c{reason}!",
-        "usage": "§cUse §8/§c{label} §8<§cplayer§8> <§creason§8>",
+        "usage": "§cUsage: §8/§c{label} §8<§cplayer§8> <§creason§8|§c#1-#14§8> §7(ex: hack, insult, team, flood or #5)",
         "reward": {
             "online": "§7Thank you! Player §c{player} §7you reported has been punished. You received §e+{amount} Akunas §7and §b+{xp} XP§7!",
             "mail": "§7Your report against §c{player} §7resulted in a punishment! You received §e+{amount} Akunas §7and §b+{xp} XP§7"
-        }
+        },
+        "invalid_reason": "§cInvalid reason! Your report must match a server rule (§8#1 §cto §8#14 §cor a keyword like §8hack§c, §8insult§c, §8flood§c, §8team§c) - Use §8/§crules §cto check"
     },
     "requests": {
         "_prefix": "§cSystem §8§l» §r",

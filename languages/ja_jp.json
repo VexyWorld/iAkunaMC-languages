@@ -1305,7 +1305,7 @@
         "match": {
             "_prefix": "§2Duels §8§l» §r",
             "started": "§7アリーナ §2{arena} §7で §2{opponent} §7との §2{mode} §7デュエルが開始！",
-            "started_team": "§7アリーナ §2{arena} §7で §2{mode} §8(§2{format}§8) §7デュエルが開始！ §a{teammates} §8vs §c{opponents}",
+            "started_team": "§7アリーナ §2{arena} §7で §2{mode} §8(§2{format}§8) §7デュエルが開始！ §a{teammates} §7vs §c{opponents}",
             "eliminated": "§c{player} §7が倒されました！ §8(§7残り §2{team_alive}§8/§7{team_total}§8)",
             "cancelled": "§cデュエルがキャンセルされました...",
             "timeout": "§c試合の制限時間に達しました...",
@@ -1321,8 +1321,8 @@
             },
             "summary_bot": {
                 "_prefix": "",
-                "win": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §2Duels vs Bot §8===-=-=-=-{n}§7結果§8: §a勝利！{n}§7対戦相手§8: {bot}{n}§7モード§8: §2{mode} §8| §7時間§8: §2{duration}{n}§7残りHP§8: §c{hp} HP §8| §7ヒット数§8: §a{hits} §8vs §c{bot_hits}{n}§7報酬§8: §c+{akunas} Akunas §8| §9+{xp} XP{n}§8-=-=-=-===============================-=-=-=-",
-                "loss": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §2Duels vs Bot §8===-=-=-=-{n}§7結果§8: §c敗北...{n}§7対戦相手§8: {bot}{n}§7モード§8: §2{mode} §8| §7時間§8: §2{duration}{n}§7BotのHP§8: §c{bot_hp} HP §8| §7ヒット数§8: §a{hits} §8vs §c{bot_hits}{n}§8-=-=-=-===============================-=-=-=-",
+                "win": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §2Duels vs Bot §8===-=-=-=-{n}§7結果§8: §a勝利！{n}§7対戦相手§8: {bot}{n}§7モード§8: §2{mode} §8| §7時間§8: §2{duration}{n}§7残りHP§8: §c{hp} HP §8| §7ヒット数§8: §a{hits} §7vs §c{bot_hits}{n}§7報酬§8: §c+{akunas} Akunas §8| §9+{xp} XP{n}§8-=-=-=-===============================-=-=-=-",
+                "loss": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §2Duels vs Bot §8===-=-=-=-{n}§7結果§8: §c敗北...{n}§7対戦相手§8: {bot}{n}§7モード§8: §2{mode} §8| §7時間§8: §2{duration}{n}§7BotのHP§8: §c{bot_hp} HP §8| §7ヒット数§8: §a{hits} §7vs §c{bot_hits}{n}§8-=-=-=-===============================-=-=-=-",
                 "forfeit": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §2Duels vs Bot §8===-=-=-=-{n}§7結果§8: §e棄権{n}§7対戦相手§8: {bot}{n}§7モード§8: §2{mode} §8| §7時間§8: §2{duration}{n}§8-=-=-=-===============================-=-=-=-"
             }
         },
@@ -2573,11 +2573,12 @@
         "noself": "§c自分を報告することはできません！",
         "nostaff": "§cスタッフメンバーを報告することはできません！",
         "sent": "§7§c{reason} §7の理由で §c{target} §7を正常に報告しました！",
-        "usage": "§c§8/§c{label} §8<§cプレイヤー§8> <§c理由§8> を使用してください",
+        "usage": "§c使用法: §8/§c{label} §8<§cプレイヤー§8> <§c理由§8|§c#1-#14§8> §7(例: hack, flood, team または #5)",
         "reward": {
             "online": "§7ありがとうございます！ 報告したプレイヤー §c{player} §7が処罰されました。 §e+{amount} Akunas §7と §b+{xp} XP §7を受け取りました！",
             "mail": "§7§c{player} §7に対する報告により処罰が確定しました！ §e+{amount} Akunas §7と §b+{xp} XP §7を受け取りました"
-        }
+        },
+        "invalid_reason": "§c無効な理由です！通報はサーバールール (§8#1§c-§8#14 §cまたは §8hack§c, §8flood§c, §8team §cなどのキーワード) に一致する必要があります - §8/§crules §cで確認してください"
     },
     "requests": {
         "_prefix": "§cシステム §8§l» §r",
