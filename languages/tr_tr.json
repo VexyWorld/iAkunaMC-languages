@@ -140,8 +140,8 @@
             "click_favorite": "§7Favoriye eklemek veya çıkarmak için bir haritaya tıkla",
             "map_favorited": "§7{map} haritası favorilere eklendi",
             "map_unfavorited": "§7{map} haritası favorilerden çıkarıldı",
-            "confirm_button": "§a§lOnayla§r",
-            "cancel_button": "§c§lİptal§r"
+            "confirm_button": "§aOnayla",
+            "cancel_button": "§cİptal"
         },
         "shop": {
             "_prefix": "§cBed§fWars §8§l» §r",
@@ -295,8 +295,8 @@
             "click_favorite": "§7Favoriye eklemek veya çıkarmak için bir haritaya tıkla",
             "map_favorited": "§7{map} haritası favorilere eklendi",
             "map_unfavorited": "§7{map} haritası favorilerden çıkarıldı",
-            "confirm_button": "§a§lOnayla§r",
-            "cancel_button": "§c§lİptal§r"
+            "confirm_button": "§aOnayla",
+            "cancel_button": "§cİptal"
         },
         "tracker": "§8§l» §r§7Takip ediliyor §b{player} §8§l» §r§7Mesafe: §b{distance} §7blok",
         "rejoin": {
@@ -1373,8 +1373,8 @@
             "mode_item": "{label} {format}{n}§7Oynayan§8: §f{playing}{n}{n}§eSıraya katılmak için tıkla",
             "sw1v1_item": "§bSky§fWars 1v1{n}§7Oynayan§8: §f{playing}{n}{n}§eOynamak için tıkla",
             "title": "§2Duels §8§l» §r§7Mod Seç",
-            "confirm_button": "§a§lOnayla§r",
-            "cancel_button": "§c§lİptal§r"
+            "confirm_button": "§aOnayla",
+            "cancel_button": "§cİptal"
         }
     },
     "pearl": {
@@ -1412,8 +1412,8 @@
             "uhc_uhcfly": "§bFly UHC",
             "uhc_uhcheavy": "§bUhc §8(§cAğır KB§8)",
             "uhc_uhclight": "§bUhc §8(§3Hafif KB§8)",
-            "confirm_button": "§a§lOnayla§r",
-            "cancel_button": "§c§lİptal§r"
+            "confirm_button": "§aOnayla",
+            "cancel_button": "§cİptal"
         }
     },
     "addbalance": {

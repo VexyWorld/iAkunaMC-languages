@@ -140,8 +140,8 @@
             "click_favorite": "§7マップをクリックしてお気に入りに追加または削除",
             "map_favorited": "§7マップ {map} をお気に入りに追加しました",
             "map_unfavorited": "§7マップ {map} をお気に入りから削除しました",
-            "confirm_button": "§a§l確認§r",
-            "cancel_button": "§c§lキャンセル§r"
+            "confirm_button": "§a確認",
+            "cancel_button": "§cキャンセル"
         },
         "shop": {
             "_prefix": "§cBed§fWars §8§l» §r",
@@ -295,8 +295,8 @@
             "click_favorite": "§7マップをクリックしてお気に入りに追加または削除",
             "map_favorited": "§7マップ {map} をお気に入りに追加しました",
             "map_unfavorited": "§7マップ {map} をお気に入りから削除しました",
-            "confirm_button": "§a§l確認§r",
-            "cancel_button": "§c§lキャンセル§r"
+            "confirm_button": "§a確認",
+            "cancel_button": "§cキャンセル"
         },
         "tracker": "§8§l» §r§7追跡中: §b{player} §8§l» §r§7距離: §b{distance} §7ブロック",
         "rejoin": {
@@ -1373,8 +1373,8 @@
             "mode_item": "{label} {format}{n}§7プレイ中§8: §f{playing}{n}{n}§eクリックして待機列に参加",
             "sw1v1_item": "§bSkyWars 1v1{n}§7プレイ中§8: §f{playing}{n}{n}§eクリックしてプレイ",
             "title": "§2Duels §8§l» §r§7モード選択",
-            "confirm_button": "§a§l確認§r",
-            "cancel_button": "§c§lキャンセル§r"
+            "confirm_button": "§a確認",
+            "cancel_button": "§cキャンセル"
         }
     },
     "pearl": {
@@ -1412,8 +1412,8 @@
             "uhc_uhcfly": "§bFly UHC",
             "uhc_uhcheavy": "§bUHC §8(§c重KB§8)",
             "uhc_uhclight": "§bUHC §8(§3軽KB§8)",
-            "confirm_button": "§a§l確認§r",
-            "cancel_button": "§c§lキャンセル§r"
+            "confirm_button": "§a確認",
+            "cancel_button": "§cキャンセル"
         }
     },
     "addbalance": {

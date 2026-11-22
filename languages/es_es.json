@@ -141,8 +141,8 @@
             "click_favorite": "§7Dale clic a un mapa para ponerlo o quitarlo de favoritos",
             "map_favorited": "§7Mapa {map} agregado a favoritos",
             "map_unfavorited": "§7Mapa {map} quitado de favoritos",
-            "confirm_button": "§a§lConfirmar§r",
-            "cancel_button": "§c§lCancelar§r"
+            "confirm_button": "§aConfirmar",
+            "cancel_button": "§cCancelar"
         },
         "shop": {
             "_prefix": "§cBed§fWars §8§l» §r",
@@ -296,8 +296,8 @@
             "click_favorite": "§7Dale clic a un mapa para ponerlo o quitarlo de favoritos",
             "map_favorited": "§7Mapa {map} agregado a favoritos",
             "map_unfavorited": "§7Mapa {map} quitado de favoritos",
-            "confirm_button": "§a§lConfirmar§r",
-            "cancel_button": "§c§lCancelar§r"
+            "confirm_button": "§aConfirmar",
+            "cancel_button": "§cCancelar"
         },
         "tracker": "§8§l» §r§7Rastreando a §b{player} §8§l» §r§7Distancia: §b{distance} §7bloques",
         "rejoin": {
@@ -1374,8 +1374,8 @@
             "mode_item": "{label} {format}{n}§7Jugando§8: §f{playing}{n}{n}§eClic para entrar a la cola",
             "sw1v1_item": "§bSky§fWars 1v1{n}§7Jugando§8: §f{playing}{n}{n}§eClic para jugar",
             "title": "§2Duels §8§l» §r§7Seleccionar Modo",
-            "confirm_button": "§a§lConfirmar§r",
-            "cancel_button": "§c§lCancelar§r"
+            "confirm_button": "§aConfirmar",
+            "cancel_button": "§cCancelar"
         }
     },
     "pearl": {
@@ -1413,8 +1413,8 @@
             "uhc_uhcfly": "§bUhc Fly",
             "uhc_uhcheavy": "§bUhc §8(§cKB Pesado§8)",
             "uhc_uhclight": "§bUhc §8(§3KB Ligero§8)",
-            "confirm_button": "§a§lConfirmar§r",
-            "cancel_button": "§c§lCancelar§r"
+            "confirm_button": "§aConfirmar",
+            "cancel_button": "§cCancelar"
         }
     },
     "addbalance": {

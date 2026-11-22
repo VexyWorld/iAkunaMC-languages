@@ -140,8 +140,8 @@
             "click_favorite": "§7Нажмите на карту, чтобы добавить/убрать из избранного",
             "map_favorited": "§7Карта {map} добавлена в избранное",
             "map_unfavorited": "§7Карта {map} убрана из избранного",
-            "confirm_button": "§a§lПодтвердить§r",
-            "cancel_button": "§c§lОтмена§r"
+            "confirm_button": "§aПодтвердить",
+            "cancel_button": "§cОтмена"
         },
         "shop": {
             "_prefix": "§cBed§fWars §8§l» §r",
@@ -295,8 +295,8 @@
             "click_favorite": "§7Нажмите на карту, чтобы добавить/убрать из избранного",
             "map_favorited": "§7Карта {map} добавлена в избранное",
             "map_unfavorited": "§7Карта {map} убрана из избранного",
-            "confirm_button": "§a§lПодтвердить§r",
-            "cancel_button": "§c§lОтмена§r"
+            "confirm_button": "§aПодтвердить",
+            "cancel_button": "§cОтмена"
         },
         "tracker": "§8§l» §r§7Отслеживание §b{player} §8§l» §r§7Расстояние: §b{distance} §7блоков",
         "rejoin": {
@@ -1373,8 +1373,8 @@
             "mode_item": "{label} {format}{n}§7Играют§8: §f{playing}{n}{n}§eНажмите, чтобы встать в очередь",
             "sw1v1_item": "§bSky§fWars 1v1{n}§7Играют§8: §f{playing}{n}{n}§eНажмите, чтобы играть",
             "title": "§2Duels §8§l» §r§7Выберите Режим",
-            "confirm_button": "§a§lПодтвердить§r",
-            "cancel_button": "§c§lОтмена§r"
+            "confirm_button": "§aПодтвердить",
+            "cancel_button": "§cОтмена"
         }
     },
     "pearl": {
@@ -1412,8 +1412,8 @@
             "uhc_uhcfly": "§bFly Uhc",
             "uhc_uhcheavy": "§bUhc §8(§cТяжёлый KB§8)",
             "uhc_uhclight": "§bUhc §8(§3Лёгкий KB§8)",
-            "confirm_button": "§a§lПодтвердить§r",
-            "cancel_button": "§c§lОтмена§r"
+            "confirm_button": "§aПодтвердить",
+            "cancel_button": "§cОтмена"
         }
     },
     "addbalance": {
