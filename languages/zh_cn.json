@@ -1267,17 +1267,6 @@
             "countdown": "§7将在 §2{seconds}秒 §7后开始",
             "ending_countdown": "§7将在 §2{seconds}秒 §7后返回大厅"
         },
-        "item": {
-            "play_again": "§8-> §a再玩一次",
-            "quit": "§8-> §c退出"
-        },
-        "queue": {
-            "_prefix": "§2决斗 §8§l» §r",
-            "not_found": "§c模式 {kit} 不存在！",
-            "joined": "§7您已成功加入 §2{mode}§r§7 模式的队列！",
-            "left": "§7您已离开 §c{mode}§7 模式的队列！",
-            "timeout": "§c由于找不到其他玩家，您已被自动移出队列..."
-        },
         "match": {
             "_prefix": "§2Duels §8§l» §r",
             "started": "§7在竞技场 §2{arena} §7与 §2{opponent} §7进行 §2{mode} §7决斗！",
@@ -1309,6 +1298,17 @@
             "team_format": "{right}§fi§cAkuna§9MC §8§l» §r§2Duels {format}{n}{right}{bar}{n}{right}§8§l» §r§7模式§8:§2 {mode}{n}{right}§8§l» §r§7时长§8:§2 {duration}{n}{right}§8§l» §r§7队伍§8:§a {team_alive}/{team_total} §8| §c{opp_alive}/{team_total}{n}{right}§8§l» §r§7Ping§8:§2 {ping}ms{n}{right}{bar}{n}{n}{right}§2iakunamc.com 19132",
             "team_boxing_format": "{right}§fi§cAkuna§9MC §8§l» §r§2Duels {format}{n}{right}{bar}{n}{right}§8§l» §r§7模式§8:§2 {mode}{n}{right}§8§l» §r§7时长§8:§2 {duration}{n}{right}§8§l» §r§7队伍§8:§a {team_alive}/{team_total} §8| §c{opp_alive}/{team_total}{n}{right}§8§l» §r§7攻击数§8:§a {hits} §8/ §c{opp_hits} §8(§7{max_hits}§8){n}{right}§8§l» §r§7Ping§8:§2 {ping}ms{n}{right}{bar}{n}{n}{right}§2iakunamc.com 19132"
         },
+        "item": {
+            "play_again": "§8-> §a再玩一次",
+            "quit": "§8-> §c退出"
+        },
+        "queue": {
+            "_prefix": "§2决斗 §8§l» §r",
+            "not_found": "§c模式 {kit} 不存在！",
+            "joined": "§7您已成功加入 §2{mode}§r§7 模式的队列！",
+            "left": "§7您已离开 §c{mode}§7 模式的队列！",
+            "timeout": "§c由于找不到其他玩家，您已被自动移出队列..."
+        },
         "bot": {
             "_prefix": "§2Duels §8§l» §r",
             "usage": "§7使用 §8/§7duels bot §8<§7模式§8> [§aeasy§8|§emedium§8|§chard§8|§5hacker§8]",
@@ -1338,6 +1338,43 @@
             "mode_item": "{label} {format}{n}§7游玩中§8: §f{playing}{n}{n}§e点击加入队列",
             "sw1v1_item": "§bSkyWars 1v1{n}§7游玩中§8: §f{playing}{n}{n}§e点击游玩",
             "title": "§2Duels §8§l» §r§7选择模式"
+        }
+    },
+    "pearl": {
+        "_prefix": "",
+        "blocked": "§c那里没有安全的空间可供传送！"
+    },
+    "pvpmodes": {
+        "_prefix": "§bPvP §8§l» §r",
+        "usage": "§7加入请使用 §8/§7{label} join §8<§7模式§8>{n}§bPvP §8§l» §r§7离开请使用 §8/§7{label} leave",
+        "join": {
+            "usage": "§c使用 §8/§c{label} join §8<§c模式§8>"
+        },
+        "modes_list": "§7可用模式§8: §f{modes}",
+        "invalid_mode": "§c模式 §f{mode} §c不存在！",
+        "world_unavailable": "§c模式 {mode} §c的地图当前不可用...",
+        "joined": "§7您已加入 {mode} §7模式！",
+        "joined_team": "§7您已加入 {mode} §7模式的 {team} §7队伍！",
+        "not_playing": "§c您不在任何PvP模式中...",
+        "left": "§7您已离开PvP模式！",
+        "menu": {
+            "_prefix": "",
+            "back": "§c« 返回",
+            "mode_item": "{label}{n}§7游玩中§8: §f{playing}{n}{n}§e点击加入",
+            "prefs_item": "§3PvPModes 偏好设置{n}§7配置您的个人设置{n}{n}§e点击打开",
+            "team_amarelo": "§e黄队",
+            "team_azul": "§9蓝队",
+            "team_title": "§6TeamPvP §8§l» §r§7选择队伍",
+            "team_verde": "§a绿队",
+            "team_vermelho": "§c红队",
+            "teampvp_item": "§6TeamPvP{n}§7游玩中§8: §f{playing}{n}{n}§e点击选择您的队伍",
+            "title": "§bPvPModes §8§l» §r§7选择模式",
+            "uhc_item": "§bUHC{n}§7游玩中§8: §f{playing}{n}{n}§e点击选择变体",
+            "uhc_title": "§bPvPModes UHC §8§l» §r§7变体",
+            "uhc_uhc": "§b普通 UHC",
+            "uhc_uhcfly": "§b飞行 UHC",
+            "uhc_uhcheavy": "§bUHC §8(§c重击退§8)",
+            "uhc_uhclight": "§bUHC §8(§3轻击退§8)"
         }
     },
     "addbalance": {
@@ -1384,7 +1421,6 @@
         },
         "join": {
             "_prefix": "",
-            "msg": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§e认证 §8§l» §r§7你好 §e{user}§7，欢迎来到 §fi§cAkuna§9MC§7！",
             "greeting": {
                 "_prefix": "",
                 "dawn": "凌晨好",
@@ -1395,7 +1431,8 @@
             "dawn": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7凌晨好 §e{user}§7，在 §fi§cAkuna§9MC §7通宵吗？欢迎光临！",
             "morning": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7早上好 §e{user}§7，欢迎来到 §fi§cAkuna§9MC§7！祝您早安，游戏愉快！",
             "afternoon": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7下午好 §e{user}§7，欢迎来到 §fi§cAkuna§9MC§7！祝您下午玩得开心！",
-            "night": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7晚上好 §e{user}§7，欢迎来到 §fi§cAkuna§9MC§7！祝您今晚比赛愉快！"
+            "night": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7晚上好 §e{user}§7，欢迎来到 §fi§cAkuna§9MC§7！祝您今晚比赛愉快！",
+            "msg": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§e认证 §8§l» §r§7你好 §e{user}§7，欢迎来到 §fi§cAkuna§9MC§7！"
         },
         "login": {
             "_prefix": "",
@@ -1426,29 +1463,29 @@
     "automsg": {
         "_prefix": "§c系统 §8§l» §r",
         "akuna_ai": "§7了解 §cAkuna§r§7，我们的AI！在聊天中输入 §8\"§cAkuna, 您的问题§8\" §7她会回答您！",
+        "assistir": "§7想观看实时比赛吗？使用 §8/§cspectate §8<§c玩家§8> §7或在 §8/§cpref spectate 中设置谁可以观战您",
         "block": "§7您知道可以屏蔽玩家吗？使用 §8/§7block",
+        "clan": "§7创建或加入战队，争夺排行榜榜首！使用 §8/§cclan",
         "daily": "§7您知道每天登录都能获得每日奖励吗？奖励可能包括§c金币 §7或 §9XP倍增器§7！",
+        "desafiar": "§7想用 §cAkunas §7作为赌注向玩家发起多回合决斗吗？使用 §8/§cduel §8<§c玩家§8> §8[§c模式§8] [§c回合数§8] [§c赌注§8]",
         "discord": "§7加入我们的Discord！§chttps://discord.iakunamc.com",
         "exit_minigames": "§7要从任何小游戏返回大厅，请使用 §8/§clobby",
         "friends": "§7邀请朋友来我们的服务器游玩！使用 §8/§7ip 查看IP",
         "hackers": "§7发现作弊者？使用 §8/§creport §8<§c名字§8> <§c原因§8> §7进行举报！",
+        "lang": "§7想用其他语言游玩吗？随时使用 §8/§clang 切换您的语言",
         "launch": "§7§ciAkunaMC §7自2022年2月以来一直在成长，感谢您在此游玩！",
         "marry": "§7您可以与其他玩家结婚并获得他们25%的XP！使用 §8/§7marry",
         "missions": "§7完成每日任务获得丰厚奖励！使用 §8/§c任务 §7查看所有可用任务",
         "nopromote": "§7不要在聊天或私信中宣传§c其他服务器§7，否则将被§c封禁§7！",
         "nosamepass": "§7不要在其他服务器使用相同密码！使用 §8/§cpin §7保护您的账户！",
-        "rules": "§7阅读过我们的 §8/§c规则§7了吗？不了解规则不能免除§c处罚§7！",
-        "staff": "§7想成为我们工作人员的一员？访问 §chttps://staff.iakunamc.com",
-        "yt": "§7在YouTube上为我们的服务器录制视频并获得特殊标签！使用 §8/§cyt 查看要求",
-        "assistir": "§7想观看实时比赛吗？使用 §8/§cspectate §8<§c玩家§8> §7或在 §8/§cpref spectate 中设置谁可以观战您",
-        "clan": "§7创建或加入战队，争夺排行榜榜首！使用 §8/§cclan",
-        "desafiar": "§7想用 §cAkunas §7作为赌注向玩家发起多回合决斗吗？使用 §8/§cduel §8<§c玩家§8> §8[§c模式§8] [§c回合数§8] [§c赌注§8]",
-        "lang": "§7想用其他语言游玩吗？随时使用 §8/§clang 切换您的语言",
         "party": "§7和朋友一起玩？使用 §8/§cparty §7创建队伍，一起加入小游戏和决斗！",
         "pref": "§7自定义您的游戏体验！使用 §8/§cpref gui §7配置计分板、CPS、连击、观战者等更多设置！",
         "profile": "§7使用 §8/§cprofile §8[§c玩家§8] §7查看您的统计数据、等级以及其他玩家的个人资料",
         "ranking": "§7使用 §8/§ctops §7按小游戏或时间段查看服务器排行榜！",
+        "rules": "§7阅读过我们的 §8/§c规则§7了吗？不了解规则不能免除§c处罚§7！",
+        "staff": "§7想成为我们工作人员的一员？访问 §chttps://staff.iakunamc.com",
         "tell": "§7使用 §8/§ctell §8<§c玩家§8> <§c消息§8> §7与其他玩家私聊，并使用 §8/§cr 快速回复",
+        "yt": "§7在YouTube上为我们的服务器录制视频并获得特殊标签！使用 §8/§cyt 查看要求",
         "feedback": "§7想评价服务器或提出建议吗？ 使用 §8/§cfeedback §7与我们分享你的想法！",
         "help": "§7不确定有哪些可用命令？ 使用 §8/§chelp §7查看所有服务器命令！",
         "mail": "§7有离线消息或待领取的奖励吗？ 使用 §8/§cmail §7查看你的收件箱！",
@@ -1609,6 +1646,67 @@
         ],
         "discord_format": "§9Discord §8§l» §r§f{player}§8:§7 {message}",
         "report_guard": "§c请勿在聊天中指责其他玩家！ 请使用 §8/§creport §8<§c玩家§8> <§c原因§8> §c向管理团队举报 §8(§7若核实处罚，你将获得 Akunas 和 XP§8)§c"
+    },
+    "challenge": {
+        "_prefix": "§c决斗 §8§l» §r",
+        "_noprefix": [
+            "menu",
+            "received"
+        ],
+        "cancelled_other": "§7玩家 §c{player} §7取消了挑战...",
+        "cancelled_self": "§7您取消了发送给 §c{player} §7的挑战...",
+        "denied_other": "§7玩家 §c{player} §7拒绝了您的挑战...",
+        "denied_self": "§7您拒绝了来自 §c{player} §7的挑战...",
+        "error": {
+            "already_sent": "§c您已有一个已发送的待处理挑战...",
+            "challenger_busy": "§c您已经在比赛或进行中的挑战里了...",
+            "challenger_offline": "§c挑战者 §7{player} §c已离线...",
+            "invalid_bet": "§c无效的赌注金额...",
+            "invalid_mode": "§c无效的模式 §7{mode}§c！模式§8: §7duels§8, §7thebridge§8, §7bedwars§8, §7skywars...",
+            "invalid_rounds": "§c回合数必须在 §7{min} §c到 §7{max} §c之间...",
+            "invalid_submode": "§c子模式 §7{submode} §c无效或与 {mode} 不兼容...",
+            "max_team_size": "§c允许的最大队伍规模§8: §7{max}v{max}§c...",
+            "member_busy": "§c玩家 §7{player} §c已经在比赛或挑战中...",
+            "member_offline": "§c一名队伍成员在挑战开始前离线了...",
+            "no_arena_available": "§c当前没有可用的竞技场来开始此模式...",
+            "no_pending": "§c您没有待处理的挑战...",
+            "no_pending_from": "§c您没有来自 §7{player} §c的待处理挑战...",
+            "no_sent_invite": "§c您没有已发送的待处理挑战...",
+            "not_enough_akunas": "§c您需要 §7{bet} Akunas §c才能参与此赌注...",
+            "not_in_challenge": "§c您不在进行中的挑战里...",
+            "player_offline": "§c玩家 §7{player} §c不在线...",
+            "same_party": "§c您不能挑战同一队伍中的成员...",
+            "self": "§c您不能挑战自己...",
+            "target_busy": "§c玩家 §7{player} §c已经在比赛或挑战中...",
+            "target_has_pending": "§c玩家 §7{player} §c已有一个待处理的挑战...",
+            "target_not_enough_akunas": "§c玩家 §7{player} §c没有足够的 §7{bet} Akunas §c来下注...",
+            "target_not_party_leader": "§c只有 §7{player} §c的队长才能接收挑战...",
+            "team_size_mismatch": "§c双方队伍人数必须相同 §8(§7{yours} vs {theirs}§8)§c..."
+        },
+        "expired": "§7与 §c{player} §7的挑战已过期...",
+        "finished_tie": "§7挑战平局！最终比分 §8(§f{leader_a} §c{score_a} §7x §9{score_b} §f{leader_b}§8)§7... 下注的 §cAkunas §7已退还！",
+        "finished_win": "§f{winner} §a获胜！最终比分§8: §f{leader_a} §c{score_a} §7x §9{score_b} §f{leader_b} §8- §7奖金§8: §e{pot} Akunas§7!",
+        "menu": {
+            "_prefix": "",
+            "back": "§c« 返回",
+            "bet_amount": "{amount} Akunas",
+            "bet_item": "{bet}{n}§7回合数§8: §f{rounds}{n}{n}§a点击发送挑战",
+            "bet_none": "§f无赌注",
+            "bet_title": "§c挑战 §8§l» §r§7赌注 §8(§7Akunas§8)",
+            "mode_item": "{label}{n}§7挑战 §f{player}{n}{n}§e点击选择回合数",
+            "mode_title": "§c挑战 §8§l» §r§7模式",
+            "round_plural": "§e{rounds} 回合{n}{n}§e点击选择赌注",
+            "round_single": "§e{rounds} 回合{n}{n}§e点击选择赌注",
+            "rounds_title": "§c挑战 §8§l» §r§7回合数"
+        },
+        "received": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §c决斗 §8===-=-=-{n}§c决斗 §8§l» §r§c{player} §7向你发起了 {mode} §8(§f{format}§8) §e{rounds}回合 §8(§6{bet}§8) §7的决斗挑战...{n}§c决斗 §8§l» §r§7使用 §a/desafiar accept {challenger} §7接受，或 §c/desafiar deny {challenger} §7拒绝 §8(§7{timeout}s§8)",
+        "round_finished": "§7第 §e{round}§8/§e{total} §7回合结束！比分§8: §f{leader_a} §c{score_a} §7x §9{score_b} §f{leader_b} §8- §7下一回合 §8(§e{next}§8/§e{total}§8) §7将在 §e{delay}s §7后开始！",
+        "round_starting": "§7正在开始 {mode} 的第 §e{round}§8/§e{total} §7回合 §8(§f{leader_a} §c{score_a} §7x §9{score_b} §f{leader_b}§8)!",
+        "sent": "§7已向 §c{player} §7发送 {mode} §8(§f{format}§8) §7的 §e{rounds} 回合 §8(§6{bet}§8) §7挑战！",
+        "status": "§7当前回合§8: §e{round}§8/§e{total} §8| §f{leader_a} §c{score_a} §7x §9{score_b} §f{leader_b} §8| §7赌注§8: §6{bet} Akunas",
+        "usage": "§c使用 §8/§c{label} §8<§c玩家§8> [§cduels§8|§cthebridge§8|§cbedwars§8|§cskywars§8] [§c子模式§8] [§c回合 1-10§8] [§c赌注§8] §7或 §8/§c{label} §8<§caccept§8|§cdeny§8|§ccancel§8|§cstatus§8>",
+        "won_wo": "§c弃权胜 §8(§cW.O.§8)§c！§7玩家 §c{quitter} §7退出了比赛... §a{winner} §7获胜并赢得了 §e{pot} Akunas§7!",
+        "loading_arena": "§7正在加载竞技场，请稍候..."
     },
     "clan": {
         "_prefix": "§e战队 §8§l» §r",
@@ -1796,14 +1894,14 @@
     "daily": {
         "reward": {
             "akunas": "§c{amount} 金币",
+            "cooldown": "§5每日奖励 §8§l» §r§c您今天已经领取过了！下次领取还需 §5{time}§c...",
             "milestone": "§5每日奖励 §8§l» §r§7恭喜！您已达到连续 §5{weeks} §7周！",
+            "milestone_month": "§5每日奖励 §8§l» §r§7太棒了！您已连续签到 §5{days} §7天，获得了特别奖励！",
             "multiplier": "§9{multiplier}倍 倍增器 §8(§5{duration}§8)",
             "received": "§5每日奖励 §8§l» §r§7您收到了 {rewards}",
             "streak": "§5每日奖励 §8§l» §r§7当前连续§8: §5{streak} §7天",
             "xp": "§9{amount} XP",
             "streak_lost": "§5每日奖励 §8§l» §r§c您失去了 {oldStreak} 天的连续记录...",
-            "cooldown": "§5每日奖励 §8§l» §r§c您今天已经领取过了！下次领取还需 §5{time}§c...",
-            "milestone_month": "§5每日奖励 §8§l» §r§7太棒了！您已连续签到 §5{days} §7天，获得了特别奖励！",
             "bonus_applied": "§5Daily §8§l» §r§7已应用加成§8: {bonuses}",
             "bonus_galaxy": "§7§l§oGalaxy§r§a+ §e(+{percent}%)",
             "bonus_booster": "§dBooster §e(+{percent}%)"
@@ -1851,14 +1949,71 @@
         "set": "§7伪装已成功开启！",
         "usage": "§c使用 §8/§c{label} §8<§con§8|§coff§8|§crandom§8|§clist§8>"
     },
+    "friends": {
+        "accept": {
+            "_prefix": "§c系统 §8§l» §r",
+            "none": "§c您没有待处理的好友请求...",
+            "notify": "§b{friend} §7接受了您的好友请求！",
+            "success": "§7您和 §b{friend} §7现在是好友了！"
+        },
+        "add": {
+            "_prefix": "§c系统 §8§l» §r",
+            "already": "§c您已经是 §b{target} §c的好友了...",
+            "expired": "§c来自 §b{sender} §c的好友请求已过期...",
+            "limit": "§c您的好友数量已达上限 ({max})！",
+            "pending": "§c该玩家已有待处理的好友请求...",
+            "request": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §b好友请求 §8===-=-=-{n}§c系统 §8§l» §r§b{sender} §7向您发送了好友请求...{n}§c系统 §8§l» §r§7使用 §a/friend aceitar §7接受或使用 §c/friend recusar §7拒绝",
+            "self": "§c您不能添加自己为好友...",
+            "sent": "§7已向 §b{target} §7发送好友请求！",
+            "target_limit": "§c该玩家的好友数量已达上限！",
+            "usage": "§c使用 §8/§c{label} add §8<§c玩家§8>"
+        },
+        "deny": {
+            "_prefix": "§c系统 §8§l» §r",
+            "none": "§c您没有待处理的好友请求...",
+            "notify": "§b{target} §7拒绝了您的好友请求...",
+            "success": "§7已成功拒绝好友请求！"
+        },
+        "friend": {
+            "_prefix": "§c系统 §8§l» §r",
+            "joined": "§7您的好友 §b{friend} §7加入了服务器！",
+            "left": "§7您的好友 §b{friend} §c离开§7了服务器..."
+        },
+        "list": {
+            "_prefix": "",
+            "entry": "§c系统 §8§l» §r{status} §b{friend} §8| §7添加于§8:§b {date} §8(§7{dateSince}前§8){n}§c系统 §8§l» §r§7您的备注§8:§b {nicknameGiven} §8| §7对方对您的备注§8:§b {nicknameReceived}",
+            "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §b好友列表 §8(§7{count}§8/§7{max}§8) §8[§7第 {page}/{maxPages} 页§8] ===-=-=-=-",
+            "no_nickname": "§7无昵称...§r",
+            "none": "§c系统 §8§l» §r§c您还没有任何好友...",
+            "offline": "§c*",
+            "online": "§a*"
+        },
+        "nick": {
+            "_prefix": "§c系统 §8§l» §r",
+            "success": "§7已成功将 §b{friend} §7的昵称设置为 '§b{nickname}§7'！",
+            "usage": "§c使用 §8/§c{label} nick §8<§c好友§8> <§c昵称§8>"
+        },
+        "remove": {
+            "_prefix": "§c系统 §8§l» §r",
+            "all_success": "§7您的所有好友已被移除！",
+            "invalid": "§c无效的玩家或不在您的好友列表中...",
+            "none": "§c您没有任何好友...",
+            "notify": "§b{friend} §7将您从好友列表中移除了...",
+            "success": "§7您已将 §b{friend} §7从好友列表中移除...",
+            "usage": "§c使用 §8/§c{label} remover §8<§c玩家§8|§c*§8>",
+            "confirm": "§c确定要将 §b{friend} §c移出好友列表吗？请输入 §8/§c{command} confirm §c确认",
+            "confirm_all": "§c确定要删除所有好友吗？请输入 §8/§c{command} confirm §c确认"
+        },
+        "usage": "§c系统 §8§l» §r§c使用 §8/§c{label} §8<§cadd§8|§caceitar§8|§crecusar§8|§cremover§8|§clistar§8|§cnick§8>"
+    },
     "home": {
         "_prefix": "§c系统 §8§l» §r",
+        "in_combat": "§c战斗中无法使用此命令...",
         "none": "§c您没有任何家...",
         "not_exists": "§c您没有该名称的家...",
         "not_in_survival": "§c您不在生存模式中...",
         "success": "§7正在传送到 §c{home}§7...",
-        "usage": "§c使用 §8/§c{label} §8<§c名称§8>",
-        "in_combat": "§c战斗中无法使用此命令..."
+        "usage": "§c使用 §8/§c{label} §8<§c名称§8>"
     },
     "homes": {
         "_prefix": "§c系统 §8§l» §r",
@@ -2267,9 +2422,6 @@
         "_prefix": "§c系统 §8§l» §r",
         "disable": "§7偏好已成功关闭！",
         "enable": "§7偏好已成功开启！",
-        "onlyvip": "§c只有拥有VIP §b§l§oAstral §r§c或以上的玩家才能修改此偏好... §o请在 https://loja.iakunamc.com 购买",
-        "reset": "§7所有偏好已重置为默认！",
-        "usage": "§c使用 §8/§c{label} §8<§c偏好§8|§creset§8>{n}§c系统 §8§l» §r§c可用偏好§8:§7 {prefs}",
         "global_only": "§c偏好设置 §e{pref} §c仅限全局，无法按小游戏单独配置！",
         "invalid_bool": "§e{pref} §c的值无效！请使用 §aon §c或 §coff",
         "invalid_minigame": "§c无效的小游戏！可用小游戏§8:§7 {minigames}",
@@ -2278,6 +2430,8 @@
         "minigame_unset": "§b{minigame} §7中的偏好设置 §e{pref} §7现在恢复跟随全局默认设置！",
         "minigame_usage": "§c使用 §8/§c{label} mg §8<§c小游戏§8> <§c偏好§8> [§c模式§8|§creset§8]{n}§c系统 §8§l» §r§c小游戏§8:§7 {minigames}{n}§c系统 §8§l» §r§c偏好设置§8:§7 {prefs}",
         "not_allowed_minigame": "§c偏好设置 §e{pref} §c在 §b{minigame} §c中不可用！允许的小游戏§8:§7 {minigames}",
+        "onlyvip": "§c只有拥有VIP §b§l§oAstral §r§c或以上的玩家才能修改此偏好... §o请在 https://loja.iakunamc.com 购买",
+        "reset": "§7所有偏好已重置为默认！",
         "reset_minigame": "§b{minigame} §7的所有自定义偏好设置已重置为全局设置！",
         "state": {
             "_prefix": "",
@@ -2295,6 +2449,7 @@
             "sb_right": "§a右侧"
         },
         "updated": "§7偏好设置 §e{pref} §8(§b{scope}§8) §7已更改为 {status}§7！",
+        "usage": "§c使用 §8/§c{label} §8<§c偏好§8|§creset§8>{n}§c系统 §8§l» §r§c可用偏好§8:§7 {prefs}",
         "menu": {
             "_prefix": "",
             "back": "§c« 返回小游戏列表",
@@ -2324,6 +2479,7 @@
             "friendnotify": "好友上下线通知",
             "hideplayers": "隐藏玩家",
             "highlights": "聊天高亮提醒",
+            "lowykb": "降低垂直击退 (PvP)",
             "nakb": "NA 延迟 / 击退 (PvP)",
             "openchest": "持工具打开箱子",
             "partnernotify": "伴侣上下线通知",
@@ -2338,8 +2494,7 @@
             "tell": "私聊消息",
             "treecapitator": "一键砍树 (Survival)",
             "veinminer": "连锁挖矿 (Survival)",
-            "viewprofile": "个人资料可见性",
-            "lowykb": "降低垂直击退 (PvP)"
+            "viewprofile": "个人资料可见性"
         }
     },
     "profanity": {
@@ -2529,14 +2684,14 @@
     },
     "tpa": {
         "expired": "§5传送 §8§l» §r§c来自 {sender} 的传送请求已过期...",
+        "in_combat": "§5传送 §8§l» §r§c战斗中无法使用此命令...",
         "noself": "§5传送 §8§l» §r§c您不能传送到自己那里...",
         "not_in_survival": "§5传送 §8§l» §r§c您不在生存模式中...",
         "pending": "§5传送 §8§l» §r§c该玩家已有待处理的传送请求...",
         "received": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §5传送请求 §8===-=-=-=-{n}§5传送 §8§l» §r§5{sender} §7想要传送到您这里...{n}§5传送 §8§l» §r§7使用 §a/tpaccept §7接受或 §c/tpdeny §7拒绝",
         "sent": "§5传送 §8§l» §r§7传送请求已发送给 §5{target}§7！",
         "target_not_in_survival": "§5传送 §8§l» §r§c该玩家不在生存模式中...",
-        "usage": "§5传送 §8§l» §r§c使用 §8/§c{label} §8<§c玩家§8>",
-        "in_combat": "§5传送 §8§l» §r§c战斗中无法使用此命令..."
+        "usage": "§5传送 §8§l» §r§c使用 §8/§c{label} §8<§c玩家§8>"
     },
     "tpaccept": {
         "_prefix": "§5传送 §8§l» §r",
@@ -2627,6 +2782,7 @@
         "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §6任务 §8===-=-=-=-",
         "header_other": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §6{target}§7 的§6任务 §8===-=-=-=-",
         "resetIn": "§7任务将在 §6{time} §7后重置",
+        "reset_midnight": "§7每日任务已刷新！使用 §8/§6missions §7查看！",
         "break": {
             "_prefix": "",
             "blocks": "§7破坏 {target} 个方块",
@@ -2715,8 +2871,7 @@
                 "_prefix": "",
                 "bedwars": "§7在 §cBed§fWars §7购买 {target} 次升级"
             }
-        },
-        "reset_midnight": "§7每日任务已刷新！使用 §8/§6missions §7查看！"
+        }
     },
     "missions": {
         "_prefix": "§6任务 §8§l» §r",
@@ -3345,161 +3500,6 @@
             "success": "§7称号 §6{titulo} §7已成功购买！"
         },
         "expired": "§6称号 §8§l» §r§7你的称号 §6{titulo} §7已过期..."
-    },
-    "pearl": {
-        "_prefix": "",
-        "blocked": "§c那里没有安全的空间可供传送！"
-    },
-    "pvpmodes": {
-        "_prefix": "§bPvP §8§l» §r",
-        "usage": "§7加入请使用 §8/§7{label} join §8<§7模式§8>{n}§bPvP §8§l» §r§7离开请使用 §8/§7{label} leave",
-        "join": {
-            "usage": "§c使用 §8/§c{label} join §8<§c模式§8>"
-        },
-        "modes_list": "§7可用模式§8: §f{modes}",
-        "invalid_mode": "§c模式 §f{mode} §c不存在！",
-        "world_unavailable": "§c模式 {mode} §c的地图当前不可用...",
-        "joined": "§7您已加入 {mode} §7模式！",
-        "joined_team": "§7您已加入 {mode} §7模式的 {team} §7队伍！",
-        "not_playing": "§c您不在任何PvP模式中...",
-        "left": "§7您已离开PvP模式！",
-        "menu": {
-            "_prefix": "",
-            "back": "§c« 返回",
-            "mode_item": "{label}{n}§7游玩中§8: §f{playing}{n}{n}§e点击加入",
-            "prefs_item": "§3PvPModes 偏好设置{n}§7配置您的个人设置{n}{n}§e点击打开",
-            "team_amarelo": "§e黄队",
-            "team_azul": "§9蓝队",
-            "team_title": "§6TeamPvP §8§l» §r§7选择队伍",
-            "team_verde": "§a绿队",
-            "team_vermelho": "§c红队",
-            "teampvp_item": "§6TeamPvP{n}§7游玩中§8: §f{playing}{n}{n}§e点击选择您的队伍",
-            "title": "§bPvPModes §8§l» §r§7选择模式",
-            "uhc_item": "§bUHC{n}§7游玩中§8: §f{playing}{n}{n}§e点击选择变体",
-            "uhc_title": "§bPvPModes UHC §8§l» §r§7变体",
-            "uhc_uhc": "§b普通 UHC",
-            "uhc_uhcfly": "§b飞行 UHC",
-            "uhc_uhcheavy": "§bUHC §8(§c重击退§8)",
-            "uhc_uhclight": "§bUHC §8(§3轻击退§8)"
-        }
-    },
-    "challenge": {
-        "_prefix": "§c决斗 §8§l» §r",
-        "_noprefix": [
-            "menu",
-            "received"
-        ],
-        "cancelled_other": "§7玩家 §c{player} §7取消了挑战...",
-        "cancelled_self": "§7您取消了发送给 §c{player} §7的挑战...",
-        "denied_other": "§7玩家 §c{player} §7拒绝了您的挑战...",
-        "denied_self": "§7您拒绝了来自 §c{player} §7的挑战...",
-        "error": {
-            "already_sent": "§c您已有一个已发送的待处理挑战...",
-            "challenger_busy": "§c您已经在比赛或进行中的挑战里了...",
-            "challenger_offline": "§c挑战者 §7{player} §c已离线...",
-            "invalid_bet": "§c无效的赌注金额...",
-            "invalid_mode": "§c无效的模式 §7{mode}§c！模式§8: §7duels§8, §7thebridge§8, §7bedwars§8, §7skywars...",
-            "invalid_rounds": "§c回合数必须在 §7{min} §c到 §7{max} §c之间...",
-            "invalid_submode": "§c子模式 §7{submode} §c无效或与 {mode} 不兼容...",
-            "max_team_size": "§c允许的最大队伍规模§8: §7{max}v{max}§c...",
-            "member_busy": "§c玩家 §7{player} §c已经在比赛或挑战中...",
-            "member_offline": "§c一名队伍成员在挑战开始前离线了...",
-            "no_arena_available": "§c当前没有可用的竞技场来开始此模式...",
-            "no_pending": "§c您没有待处理的挑战...",
-            "no_pending_from": "§c您没有来自 §7{player} §c的待处理挑战...",
-            "no_sent_invite": "§c您没有已发送的待处理挑战...",
-            "not_enough_akunas": "§c您需要 §7{bet} Akunas §c才能参与此赌注...",
-            "not_in_challenge": "§c您不在进行中的挑战里...",
-            "player_offline": "§c玩家 §7{player} §c不在线...",
-            "same_party": "§c您不能挑战同一队伍中的成员...",
-            "self": "§c您不能挑战自己...",
-            "target_busy": "§c玩家 §7{player} §c已经在比赛或挑战中...",
-            "target_has_pending": "§c玩家 §7{player} §c已有一个待处理的挑战...",
-            "target_not_enough_akunas": "§c玩家 §7{player} §c没有足够的 §7{bet} Akunas §c来下注...",
-            "target_not_party_leader": "§c只有 §7{player} §c的队长才能接收挑战...",
-            "team_size_mismatch": "§c双方队伍人数必须相同 §8(§7{yours} vs {theirs}§8)§c..."
-        },
-        "expired": "§7与 §c{player} §7的挑战已过期...",
-        "finished_tie": "§7挑战平局！最终比分 §8(§f{leader_a} §c{score_a} §7x §9{score_b} §f{leader_b}§8)§7... 下注的 §cAkunas §7已退还！",
-        "finished_win": "§f{winner} §a获胜！最终比分§8: §f{leader_a} §c{score_a} §7x §9{score_b} §f{leader_b} §8- §7奖金§8: §e{pot} Akunas§7!",
-        "menu": {
-            "_prefix": "",
-            "back": "§c« 返回",
-            "bet_amount": "{amount} Akunas",
-            "bet_item": "{bet}{n}§7回合数§8: §f{rounds}{n}{n}§a点击发送挑战",
-            "bet_none": "§f无赌注",
-            "bet_title": "§c挑战 §8§l» §r§7赌注 §8(§7Akunas§8)",
-            "mode_item": "{label}{n}§7挑战 §f{player}{n}{n}§e点击选择回合数",
-            "mode_title": "§c挑战 §8§l» §r§7模式",
-            "round_plural": "§e{rounds} 回合{n}{n}§e点击选择赌注",
-            "round_single": "§e{rounds} 回合{n}{n}§e点击选择赌注",
-            "rounds_title": "§c挑战 §8§l» §r§7回合数"
-        },
-        "received": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §c决斗 §8===-=-=-{n}§c决斗 §8§l» §r§c{player} §7向你发起了 {mode} §8(§f{format}§8) §e{rounds}回合 §8(§6{bet}§8) §7的决斗挑战...{n}§c决斗 §8§l» §r§7使用 §a/desafiar accept {challenger} §7接受，或 §c/desafiar deny {challenger} §7拒绝 §8(§7{timeout}s§8)",
-        "round_finished": "§7第 §e{round}§8/§e{total} §7回合结束！比分§8: §f{leader_a} §c{score_a} §7x §9{score_b} §f{leader_b} §8- §7下一回合 §8(§e{next}§8/§e{total}§8) §7将在 §e{delay}s §7后开始！",
-        "round_starting": "§7正在开始 {mode} 的第 §e{round}§8/§e{total} §7回合 §8(§f{leader_a} §c{score_a} §7x §9{score_b} §f{leader_b}§8)!",
-        "sent": "§7已向 §c{player} §7发送 {mode} §8(§f{format}§8) §7的 §e{rounds} 回合 §8(§6{bet}§8) §7挑战！",
-        "status": "§7当前回合§8: §e{round}§8/§e{total} §8| §f{leader_a} §c{score_a} §7x §9{score_b} §f{leader_b} §8| §7赌注§8: §6{bet} Akunas",
-        "usage": "§c使用 §8/§c{label} §8<§c玩家§8> [§cduels§8|§cthebridge§8|§cbedwars§8|§cskywars§8] [§c子模式§8] [§c回合 1-10§8] [§c赌注§8] §7或 §8/§c{label} §8<§caccept§8|§cdeny§8|§ccancel§8|§cstatus§8>",
-        "won_wo": "§c弃权胜 §8(§cW.O.§8)§c！§7玩家 §c{quitter} §7退出了比赛... §a{winner} §7获胜并赢得了 §e{pot} Akunas§7!",
-        "loading_arena": "§7正在加载竞技场，请稍候..."
-    },
-    "friends": {
-        "accept": {
-            "_prefix": "§c系统 §8§l» §r",
-            "none": "§c您没有待处理的好友请求...",
-            "notify": "§b{friend} §7接受了您的好友请求！",
-            "success": "§7您和 §b{friend} §7现在是好友了！"
-        },
-        "add": {
-            "_prefix": "§c系统 §8§l» §r",
-            "already": "§c您已经是 §b{target} §c的好友了...",
-            "expired": "§c来自 §b{sender} §c的好友请求已过期...",
-            "limit": "§c您的好友数量已达上限 ({max})！",
-            "pending": "§c该玩家已有待处理的好友请求...",
-            "request": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §b好友请求 §8===-=-=-{n}§c系统 §8§l» §r§b{sender} §7向您发送了好友请求...{n}§c系统 §8§l» §r§7使用 §a/friend aceitar §7接受或使用 §c/friend recusar §7拒绝",
-            "self": "§c您不能添加自己为好友...",
-            "sent": "§7已向 §b{target} §7发送好友请求！",
-            "target_limit": "§c该玩家的好友数量已达上限！",
-            "usage": "§c使用 §8/§c{label} add §8<§c玩家§8>"
-        },
-        "deny": {
-            "_prefix": "§c系统 §8§l» §r",
-            "none": "§c您没有待处理的好友请求...",
-            "notify": "§b{target} §7拒绝了您的好友请求...",
-            "success": "§7已成功拒绝好友请求！"
-        },
-        "friend": {
-            "_prefix": "§c系统 §8§l» §r",
-            "joined": "§7您的好友 §b{friend} §7加入了服务器！",
-            "left": "§7您的好友 §b{friend} §c离开§7了服务器..."
-        },
-        "list": {
-            "_prefix": "",
-            "entry": "§c系统 §8§l» §r{status} §b{friend} §8| §7添加于§8:§b {date} §8(§7{dateSince}前§8){n}§c系统 §8§l» §r§7您的备注§8:§b {nicknameGiven} §8| §7对方对您的备注§8:§b {nicknameReceived}",
-            "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §b好友列表 §8(§7{count}§8/§7{max}§8) §8[§7第 {page}/{maxPages} 页§8] ===-=-=-=-",
-            "no_nickname": "§7无昵称...§r",
-            "none": "§c系统 §8§l» §r§c您还没有任何好友...",
-            "offline": "§c*",
-            "online": "§a*"
-        },
-        "nick": {
-            "_prefix": "§c系统 §8§l» §r",
-            "success": "§7已成功将 §b{friend} §7的昵称设置为 '§b{nickname}§7'！",
-            "usage": "§c使用 §8/§c{label} nick §8<§c好友§8> <§c昵称§8>"
-        },
-        "remove": {
-            "_prefix": "§c系统 §8§l» §r",
-            "all_success": "§7您的所有好友已被移除！",
-            "invalid": "§c无效的玩家或不在您的好友列表中...",
-            "none": "§c您没有任何好友...",
-            "notify": "§b{friend} §7将您从好友列表中移除了...",
-            "success": "§7您已将 §b{friend} §7从好友列表中移除...",
-            "usage": "§c使用 §8/§c{label} remover §8<§c玩家§8|§c*§8>",
-            "confirm": "§c确定要将 §b{friend} §c移出好友列表吗？请输入 §8/§c{command} confirm §c确认",
-            "confirm_all": "§c确定要删除所有好友吗？请输入 §8/§c{command} confirm §c确认"
-        },
-        "usage": "§c系统 §8§l» §r§c使用 §8/§c{label} §8<§cadd§8|§caceitar§8|§crecusar§8|§cremover§8|§clistar§8|§cnick§8>"
     },
     "online_reward": {
         "_prefix": "§b在线奖励 §8§l» §r",

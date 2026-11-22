@@ -1267,17 +1267,6 @@
             "countdown": "§7{seconds} saniye içinde başlıyor",
             "ending_countdown": "§7{seconds} saniye içinde lobiye dönülüyor"
         },
-        "item": {
-            "play_again": "§8-> §aTekrar oyna",
-            "quit": "§8-> §cÇık"
-        },
-        "queue": {
-            "_prefix": "§2Düellolar §8§l» §r",
-            "not_found": "§c{kit} modu mevcut değil!",
-            "joined": "§7§2{mode} §r§7modu için sıraya başarıyla katıldın!",
-            "left": "§7§c{mode}§7 modu sırasından ayrıldın!",
-            "timeout": "§cMevcut başka oyuncu bulunamadığı için sıradan otomatik çıkarıldın..."
-        },
         "match": {
             "_prefix": "§2Duels §8§l» §r",
             "started": "§7§2{arena} §7arenasında §2{opponent} §7karşısında §2{mode} §7düellosu!",
@@ -1309,6 +1298,17 @@
             "team_format": "{right}§fi§cAkuna§9MC §8§l» §r§2Duels {format}{n}{right}{bar}{n}{right}§8§l» §r§7Mod§8:§2 {mode}{n}{right}§8§l» §r§7Süre§8:§2 {duration}{n}{right}§8§l» §r§7Takım§8:§a {team_alive}/{team_total} §8| §c{opp_alive}/{team_total}{n}{right}§8§l» §r§7Ping§8:§2 {ping}ms{n}{right}{bar}{n}{n}{right}§2iakunamc.com 19132",
             "team_boxing_format": "{right}§fi§cAkuna§9MC §8§l» §r§2Duels {format}{n}{right}{bar}{n}{right}§8§l» §r§7Mod§8:§2 {mode}{n}{right}§8§l» §r§7Süre§8:§2 {duration}{n}{right}§8§l» §r§7Takım§8:§a {team_alive}/{team_total} §8| §c{opp_alive}/{team_total}{n}{right}§8§l» §r§7Vuruşlar§8:§a {hits} §8/ §c{opp_hits} §8(§7{max_hits}§8){n}{right}§8§l» §r§7Ping§8:§2 {ping}ms{n}{right}{bar}{n}{n}{right}§2iakunamc.com 19132"
         },
+        "item": {
+            "play_again": "§8-> §aTekrar oyna",
+            "quit": "§8-> §cÇık"
+        },
+        "queue": {
+            "_prefix": "§2Düellolar §8§l» §r",
+            "not_found": "§c{kit} modu mevcut değil!",
+            "joined": "§7§2{mode} §r§7modu için sıraya başarıyla katıldın!",
+            "left": "§7§c{mode}§7 modu sırasından ayrıldın!",
+            "timeout": "§cMevcut başka oyuncu bulunamadığı için sıradan otomatik çıkarıldın..."
+        },
         "bot": {
             "_prefix": "§2Duels §8§l» §r",
             "usage": "§7Kullanım: §8/§7duels bot §8<§7mod§8> [§aeasy§8|§emedium§8|§chard§8|§5hacker§8]",
@@ -1338,6 +1338,43 @@
             "mode_item": "{label} {format}{n}§7Oynayan§8: §f{playing}{n}{n}§eSıraya katılmak için tıkla",
             "sw1v1_item": "§bSky§fWars 1v1{n}§7Oynayan§8: §f{playing}{n}{n}§eOynamak için tıkla",
             "title": "§2Duels §8§l» §r§7Mod Seç"
+        }
+    },
+    "pearl": {
+        "_prefix": "",
+        "blocked": "§cOraya ışınlanmak için güvenli bir alan yok!"
+    },
+    "pvpmodes": {
+        "_prefix": "§bPvP §8§l» §r",
+        "usage": "§7Katılmak için §8/§7{label} join §8<§7mod§8> kullan{n}§bPvP §8§l» §r§7Ayrılmak için §8/§7{label} leave kullan",
+        "join": {
+            "usage": "§cKullanım: §8/§c{label} join §8<§cmod§8>"
+        },
+        "modes_list": "§7Mevcut modlar§8: §f{modes}",
+        "invalid_mode": "§c§f{mode} §cmodu mevcut değil!",
+        "world_unavailable": "§c{mode} §cmodu haritası şu anda kullanılamıyor...",
+        "joined": "§7{mode} §7moduna katıldın!",
+        "joined_team": "§7{mode} §7moduna {team} §7takımında katıldın!",
+        "not_playing": "§cHerhangi bir PvP modunda değilsin...",
+        "left": "§7PvP modundan ayrıldın!",
+        "menu": {
+            "_prefix": "",
+            "back": "§c« Geri",
+            "mode_item": "{label}{n}§7Oynayan§8: §f{playing}{n}{n}§eKatılmak için tıkla",
+            "prefs_item": "§3PvPModes Tercihleri{n}§7Ayarlarını yapılandır{n}{n}§eAçmak için tıkla",
+            "team_amarelo": "§eSarı Takım",
+            "team_azul": "§9Mavi Takım",
+            "team_title": "§6TeamPvP §8§l» §r§7Takım Seç",
+            "team_verde": "§aYeşil Takım",
+            "team_vermelho": "§cKırmızı Takım",
+            "teampvp_item": "§6TeamPvP{n}§7Oynayan§8: §f{playing}{n}{n}§eTakımını seçmek için tıkla",
+            "title": "§bPvPModes §8§l» §r§7Mod Seç",
+            "uhc_item": "§bUHC{n}§7Oynayan§8: §f{playing}{n}{n}§eVaryant seçmek için tıkla",
+            "uhc_title": "§bPvPModes UHC §8§l» §r§7Varyantlar",
+            "uhc_uhc": "§bNormal UHC",
+            "uhc_uhcfly": "§bFly UHC",
+            "uhc_uhcheavy": "§bUhc §8(§cAğır KB§8)",
+            "uhc_uhclight": "§bUhc §8(§3Hafif KB§8)"
         }
     },
     "addbalance": {
@@ -1384,7 +1421,6 @@
         },
         "join": {
             "_prefix": "",
-            "msg": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7Merhaba §e{user}§7, §fi§cAkuna§9MC§7'ye hoş geldin!",
             "greeting": {
                 "_prefix": "",
                 "dawn": "İyi geceler",
@@ -1395,7 +1431,8 @@
             "dawn": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7İyi geceler §e{user}§7, §fi§cAkuna§9MC§7'de sabahlıyor musun? Hoş geldin!",
             "morning": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7Günaydın §e{user}§7, §fi§cAkuna§9MC§7'ye hoş geldin! Harika bir oyun sabahı dileriz!",
             "afternoon": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7Tünaydın §e{user}§7, §fi§cAkuna§9MC§7'ye hoş geldin! Keyifli oyunlar!",
-            "night": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7İyi akşamlar §e{user}§7, §fi§cAkuna§9MC§7'ye hoş geldin! Harika bir maç gecesi dileriz!"
+            "night": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7İyi akşamlar §e{user}§7, §fi§cAkuna§9MC§7'ye hoş geldin! Harika bir maç gecesi dileriz!",
+            "msg": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7Merhaba §e{user}§7, §fi§cAkuna§9MC§7'ye hoş geldin!"
         },
         "login": {
             "_prefix": "",
@@ -1426,29 +1463,29 @@
     "automsg": {
         "_prefix": "§cSistem §8§l» §r",
         "akuna_ai": "§7Yapay zekamız §cAkuna§r§7 ile tanış! Sohbete §8\"§cAkuna, sorun§8\" §7yaz, cevap versin!",
+        "assistir": "§7Canlı maçları izlemek ister misin? §8/§cassistir §8<§coyuncu§8> §7kullan veya seni kimlerin izleyebileceğini §8/§cpref spectate ile ayarla",
         "block": "§7Oyuncuları engelleyebileceğini biliyor muydun? §8/§7block kullan",
+        "clan": "§7Sıralamalarda yarışmak için bir klan kur veya bir klana katıl! §8/§cclan kullan",
         "daily": "§7Her gün giriş yaparsan günlük ödül alacağını ve bu ödülün §cAkuna §7ve hatta §9XP Çarpanı§7 verebileceğini biliyor muydun?",
+        "desafiar": "§7§cAkunas §7bahisli çok turlu düellolarda bir oyuncuya meydan okumak ister misin? §8/§cdesafiar §8<§coyuncu§8> §8[§cmod§8] [§ctur§8] [§cbahis§8] kullan",
         "discord": "§7Discord'umuza katıl! §chttps://discord.iakunamc.com",
         "exit_minigames": "§7Herhangi bir mini oyundan lobiye dönmek için §8/§clobby kullan",
         "friends": "§7Arkadaşlarını sunucumuza oynamaya davet et! IP adresini §8/§7ip ile görebilirsin",
         "hackers": "§7Bir hileci mi gördün? §8/§creport §8<§cisim§8> <§csebep§8> §7kullanarak bildir!",
+        "lang": "§7Başka bir dilde oynamayı mı tercih ediyorsun? §8/§clang kullanarak dilini istediğin zaman değiştir",
         "launch": "§7§ciAkunaMC §7Şubat 2022'den beri var ve senin sayende büyüyor! Burada oynadığın için teşekkürler!",
         "marry": "§7Diğer oyuncularla evlenip kazandıkları XP'nin %25'ini alabilirsin! §8/§7marry kullan",
         "missions": "§7Harika bonuslar kazanmak için günlük görevleri tamamla! Mevcut tüm görevleri görmek için §8/§cmissões kullan",
         "nopromote": "§7Sohbette veya tell'de §csunucu tanıtımı yapma§7, bu seni §cyasaklatır§7!",
         "nosamepass": "§7Başka sunucularda aynı şifreyi kullanma! Kötü niyetli kişiler hesabını ele geçirebilir... Hesabını korumak için §8/§cpin kullanabilirsin!",
-        "rules": "§7Kurallarımızı §8/§crules okudun mu? Bilmemek §ccezadan kurtarmaz§7!",
-        "staff": "§7Staff ekibimize katılabileceğini biliyor musun? §chttps://staff.iakunamc.com adresine git",
-        "yt": "§7YouTube'da sunucumuzu tanıtan bir video kaydet ve özel rütbeler kazan! Gereksinimleri görmek için §8/§cyt kullan",
-        "assistir": "§7Canlı maçları izlemek ister misin? §8/§cassistir §8<§coyuncu§8> §7kullan veya seni kimlerin izleyebileceğini §8/§cpref spectate ile ayarla",
-        "clan": "§7Sıralamalarda yarışmak için bir klan kur veya bir klana katıl! §8/§cclan kullan",
-        "desafiar": "§7§cAkunas §7bahisli çok turlu düellolarda bir oyuncuya meydan okumak ister misin? §8/§cdesafiar §8<§coyuncu§8> §8[§cmod§8] [§ctur§8] [§cbahis§8] kullan",
-        "lang": "§7Başka bir dilde oynamayı mı tercih ediyorsun? §8/§clang kullanarak dilini istediğin zaman değiştir",
         "party": "§7Arkadaşlarınla mı oynuyorsun? §8/§cparty §7ile bir parti kur ve mini oyunlara ve düellolara birlikte katılın!",
         "pref": "§7Deneyimini özelleştir! Scoreboard, CPS, kombo, izleyiciler ve daha fazlasını ayarlamak için §8/§cpref gui §7kullan!",
         "profile": "§7İstatistiklerini, seviyeni ve diğer oyuncuların profillerini §8/§cperfil §8[§coyuncu§8] kullanarak gör",
         "ranking": "§7Mini oyuna veya döneme göre sunucunun en iyi oyuncularını §8/§ctops §7kullanarak kontrol et!",
+        "rules": "§7Kurallarımızı §8/§crules okudun mu? Bilmemek §ccezadan kurtarmaz§7!",
+        "staff": "§7Staff ekibimize katılabileceğini biliyor musun? §chttps://staff.iakunamc.com adresine git",
         "tell": "§7Diğer oyuncularla §8/§ctell §8<§coyuncu§8> <§cmesaj§8> §7kullanarak özel sohbet et ve §8/§cr ile hızlıca yanıtla",
+        "yt": "§7YouTube'da sunucumuzu tanıtan bir video kaydet ve özel rütbeler kazan! Gereksinimleri görmek için §8/§cyt kullan",
         "feedback": "§7Sunucuyu değerlendirmek veya öneri göndermek ister misin? §8/§cfeedback §7komutunu kullan ve fikrini bizimle paylaş!",
         "help": "§7Sunucu komutlarından emin değil misin? Tüm komutları görmek için §8/§chelp §7kullan!",
         "mail": "§7Çevrimdışı mesajların veya bekleyen ödüllerin mi var? Gelen kutunu §8/§cmail §7ile kontrol et!",
@@ -1609,6 +1646,67 @@
         ],
         "discord_format": "§9Discord §8§l» §r§f{player}§8:§7 {message}",
         "report_guard": "§cSohbette oyuncuları suçlama! Yetkililere bildirmek için §8/§creport §8<§coyuncu§8> <§csebep§8> §ckullan §8(§7ceza alırsa Akunas ve XP kazanırsın§8)§c"
+    },
+    "challenge": {
+        "_prefix": "§cDuel §8§l» §r",
+        "_noprefix": [
+            "menu",
+            "received"
+        ],
+        "cancelled_other": "§7Oyuncu §c{player} §7meydan okumayı iptal etti...",
+        "cancelled_self": "§7§c{player} §7adlı oyuncuya gönderilen meydan okumayı iptal ettin...",
+        "denied_other": "§7Oyuncu §c{player} §7meydan okumanı reddetti...",
+        "denied_self": "§7§c{player} §7adlı oyuncunun meydan okumasını reddettin...",
+        "error": {
+            "already_sent": "§cZaten gönderilmiş bekleyen bir meydan okuman var...",
+            "challenger_busy": "§cZaten bir maçta veya aktif bir meydan okumadasın...",
+            "challenger_offline": "§cMeydan okuyan §7{player} §cçevrimdışı oldu...",
+            "invalid_bet": "§cGeçersiz bahis miktarı...",
+            "invalid_mode": "§cGeçersiz mod §7{mode}§c! Modlar§8: §7duels§8, §7thebridge§8, §7bedwars§8, §7skywars...",
+            "invalid_rounds": "§cTur sayısı §7{min} §cile §7{max} §carasında olmalı...",
+            "invalid_submode": "§c{mode} için geçersiz veya uyumsuz alt mod §7{submode}§c...",
+            "max_team_size": "§cİzin verilen maksimum takım boyutu§8: §7{max}v{max}§c...",
+            "member_busy": "§cOyuncu §7{player} §czaten bir maçta veya meydan okumada...",
+            "member_offline": "§cMeydan okuma başlamadan önce bir parti üyesi çevrimdışı oldu...",
+            "no_arena_available": "§cŞu anda bu modu başlatmak için uygun arena yok...",
+            "no_pending": "§cBekleyen bir meydan okuman yok...",
+            "no_pending_from": "§c§7{player} §cadlı oyuncudan bekleyen bir meydan okuman yok...",
+            "no_sent_invite": "§cBekleyen gönderilmiş bir meydan okuman yok...",
+            "not_enough_akunas": "§cBu bahis için §7{bet} Akunas §cgerekiyor...",
+            "not_in_challenge": "§cAktif bir meydan okumada değilsin...",
+            "player_offline": "§cOyuncu §7{player} §cçevrimiçi değil...",
+            "same_party": "§cAynı partideki birine meydan okuyamazsın...",
+            "self": "§cKendine meydan okuyamazsın...",
+            "target_busy": "§cOyuncu §7{player} §czaten bir maçta veya meydan okumada...",
+            "target_has_pending": "§cOyuncu §7{player} §czaten bekleyen bir meydan okumaya sahip...",
+            "target_not_enough_akunas": "§cOyuncu §7{player} §cbahis için §7{bet} Akunas §csahibi değil...",
+            "target_not_party_leader": "§cYalnızca §7{player} §cpartisindeki lider meydan okuma alabilir...",
+            "team_size_mismatch": "§cPartiler aynı oyuncu sayısına sahip olmalı §8(§7{yours} vs {theirs}§8)§c..."
+        },
+        "expired": "§7§c{player} §7ile olan meydan okumanın süresi doldu...",
+        "finished_tie": "§7Meydan okuma berabere bitti! Son skor §8(§f{leader_a} §c{score_a} §7x §9{score_b} §f{leader_b}§8)§7... Bahis §cAkunas §7iade edildi!",
+        "finished_win": "§a§f{winner} §azaferi! Son skor§8: §f{leader_a} §c{score_a} §7x §9{score_b} §f{leader_b} §8- §7Ödül§8: §e{pot} Akunas§7!",
+        "menu": {
+            "_prefix": "",
+            "back": "§c« Geri",
+            "bet_amount": "{amount} Akunas",
+            "bet_item": "{bet}{n}§7Turlar§8: §f{rounds}{n}{n}§aMeydan okuma göndermek için tıkla",
+            "bet_none": "§fBahissiz",
+            "bet_title": "§cMeydan Oku §8§l» §r§7Bahis §8(§7Akunas§8)",
+            "mode_item": "{label}{n}§7§f{player} §7adlı oyuncuya meydan oku{n}{n}§eTur seçmek için tıkla",
+            "mode_title": "§cMeydan Oku §8§l» §r§7Mod",
+            "round_plural": "§e{rounds} Tur{n}{n}§eBahis seçmek için tıkla",
+            "round_single": "§e{rounds} Tur{n}{n}§eBahis seçmek için tıkla",
+            "rounds_title": "§cMeydan Oku §8§l» §r§7Turlar"
+        },
+        "received": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §cDüello §8===-=-=-{n}§cDüello §8§l» §r§c{player} §7sizi {mode} §8(§f{format}§8) §7modunda §e{rounds} raunt §8(§6{bet}§8) §7için davet etti...{n}§cDüello §8§l» §r§7Kabul etmek için §a/desafiar accept {challenger} §7veya reddetmek için §c/desafiar deny {challenger} §7yazın §8(§7{timeout}s§8)",
+        "round_finished": "§7Tur §e{round}§8/§e{total} §7bitti! Skor§8: §f{leader_a} §c{score_a} §7x §9{score_b} §f{leader_b} §8- §7Sonraki tur §8(§e{next}§8/§e{total}§8) §e{delay}s §7içinde!",
+        "round_starting": "§7{mode} §7modunda tur §e{round}§8/§e{total} §7başlıyor §8(§f{leader_a} §c{score_a} §7x §9{score_b} §f{leader_b}§8)!",
+        "sent": "§7§c{player} §7adlı oyuncuya {mode} §8(§f{format}§8) §7modunda §e{rounds} tur §8(§6{bet}§8) §7için meydan okuma gönderildi!",
+        "status": "§7Mevcut tur§8: §e{round}§8/§e{total} §8| §f{leader_a} §c{score_a} §7x §9{score_b} §f{leader_b} §8| §7Bahis§8: §6{bet} Akunas",
+        "usage": "§cKullanım: §8/§c{label} §8<§coyuncu§8> [§cduels§8|§cthebridge§8|§cbedwars§8|§cskywars§8] [§caltmod§8] [§ctur 1-10§8] [§cbahis§8] §7veya §8/§c{label} §8<§caccept§8|§cdeny§8|§ccancel§8|§cstatus§8>",
+        "won_wo": "§cHükmen §8(§cW.O.§8)§c! §7Oyuncu §c{quitter} §7maçtan ayrıldı... §a{winner} §7kazandı ve §e{pot} Akunas §7aldı!",
+        "loading_arena": "§7Arena yükleniyor, lütfen biraz bekleyin..."
     },
     "clan": {
         "_prefix": "§eKlanlar §8§l» §r",
@@ -1796,14 +1894,14 @@
     "daily": {
         "reward": {
             "akunas": "§c{amount} Akuna",
+            "cooldown": "§5Günlük ödül §8§l» §r§cBugün zaten aldın! Sonraki §5{time} §ciçinde...",
             "milestone": "§5Günlük ödül §8§l» §r§7Tebrikler! §5{weeks} §7haftalık seriye ulaştın!",
+            "milestone_month": "§5Günlük ödül §8§l» §r§7Harika! §5{days} §7günlük seriye ulaştın ve özel bir bonus kazandın!",
             "multiplier": "§9{multiplier}x Çarpan §8(§5{duration}§8)",
             "received": "§5Günlük ödül §8§l» §r§7Şunları aldın: {rewards}",
             "streak": "§5Günlük ödül §8§l» §r§7Mevcut seri§8: §5{streak} §7gün",
             "xp": "§9{amount} XP",
             "streak_lost": "§5Günlük ödül §8§l» §r§c{oldStreak} günlük serini kaybettin...",
-            "cooldown": "§5Günlük ödül §8§l» §r§cBugün zaten aldın! Sonraki §5{time} §ciçinde...",
-            "milestone_month": "§5Günlük ödül §8§l» §r§7Harika! §5{days} §7günlük seriye ulaştın ve özel bir bonus kazandın!",
             "bonus_applied": "§5Daily §8§l» §r§7Uygulanan bonus§8: {bonuses}",
             "bonus_galaxy": "§7§l§oGalaxy§r§a+ §e(+{percent}%)",
             "bonus_booster": "§dBooster §e(+{percent}%)"
@@ -1851,14 +1949,71 @@
         "set": "§7Fake başarıyla etkinleştirildi!",
         "usage": "§cKullanım: §8/§c{label} §8<§con§8|§coff§8|§crandom§8|§clist§8>"
     },
+    "friends": {
+        "accept": {
+            "_prefix": "§cSystem §8§l» §r",
+            "none": "§cBekleyen arkadaşlık isteğin yok...",
+            "notify": "§b{friend} §7arkadaşlık isteğini kabul etti!",
+            "success": "§7Sen ve §b{friend} §7artık arkadaşsınız!"
+        },
+        "add": {
+            "_prefix": "§cSystem §8§l» §r",
+            "already": "§c§b{target} §cile zaten arkadaşsın...",
+            "expired": "§c§b{sender} §cadlı oyuncunun arkadaşlık isteğinin süresi doldu...",
+            "limit": "§cArkadaş sınırına ({max}) ulaştın!",
+            "pending": "§cBu oyuncunun zaten bekleyen bir arkadaşlık isteği var...",
+            "request": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §bArkadaşlık İsteği §8===-=-=-{n}§cSystem §8§l» §r§b{sender} §7sana bir arkadaşlık isteği gönderdi...{n}§cSystem §8§l» §r§7Kabul etmek için §a/friend aceitar §7veya reddetmek için §c/friend recusar §7kullan",
+            "self": "§cKendini arkadaş olarak ekleyemezsin...",
+            "sent": "§7§b{target} §7adlı oyuncuya arkadaşlık isteği gönderildi!",
+            "target_limit": "§cBu oyuncu zaten arkadaş sınırına ulaştı!",
+            "usage": "§cKullanım: §8/§c{label} add §8<§coyuncu§8>"
+        },
+        "deny": {
+            "_prefix": "§cSystem §8§l» §r",
+            "none": "§cBekleyen arkadaşlık isteğin yok...",
+            "notify": "§b{target} §7arkadaşlık isteğini reddetti...",
+            "success": "§7Arkadaşlık isteği başarıyla reddedildi!"
+        },
+        "friend": {
+            "_prefix": "§cSystem §8§l» §r",
+            "joined": "§7Arkadaşın §b{friend} §7sunucuya katıldı!",
+            "left": "§7Arkadaşın §b{friend} §7sunucudan §cayrıldı..."
+        },
+        "list": {
+            "_prefix": "",
+            "entry": "§cSystem §8§l» §r{status} §b{friend} §8| §7Tarih§8:§b {date} §8(§7{dateSince} önce§8){n}§cSystem §8§l» §r§7Senin taktığın§8:§b {nicknameGiven} §8| §7Sana taktığı§8:§b {nicknameReceived}",
+            "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §bArkadaşlar §8(§7{count}§8/§7{max}§8) §8[§7Sayfa {page}/{maxPages}§8] ===-=-=-=-",
+            "no_nickname": "§7Takma ad yok...§r",
+            "none": "§cSystem §8§l» §r§cHenüz hiç arkadaşın yok...",
+            "offline": "§c*",
+            "online": "§a*"
+        },
+        "nick": {
+            "_prefix": "§cSystem §8§l» §r",
+            "success": "§7§b{friend} §7adlı oyuncunun takma adı başarıyla '§b{nickname}§7' olarak ayarlandı!",
+            "usage": "§cKullanım: §8/§c{label} nick §8<§carkadaş§8> <§ctakma_ad§8>"
+        },
+        "remove": {
+            "_prefix": "§cSystem §8§l» §r",
+            "all_success": "§7Tüm arkadaşların kaldırıldı!",
+            "invalid": "§cGeçersiz oyuncu veya arkadaş listende değil...",
+            "none": "§cHiç arkadaşın yok...",
+            "notify": "§b{friend} §7seni arkadaş listesinden çıkardı...",
+            "success": "§7§b{friend} §7adlı oyuncuyu arkadaş listenden çıkardın...",
+            "usage": "§cKullanım: §8/§c{label} remover §8<§coyuncu§8|§c*§8>",
+            "confirm": "§b{friend} §ckişisini arkadaşlarından çıkarmak istediğine emin misin? Onaylamak için §8/§c{command} confirm §cyaz",
+            "confirm_all": "§cTÜM arkadaşlarını çıkarmak istediğine emin misin? Onaylamak için §8/§c{command} confirm §cyaz"
+        },
+        "usage": "§cSystem §8§l» §r§cKullanım: §8/§c{label} §8<§cadd§8|§caceitar§8|§crecusar§8|§cremover§8|§clistar§8|§cnick§8>"
+    },
     "home": {
         "_prefix": "§cSistem §8§l» §r",
+        "in_combat": "§cSavaştayken bu komutu kullanamazsın...",
         "none": "§cHiç evin yok...",
         "not_exists": "§cBu isimde bir evin yok...",
         "not_in_survival": "§cHayatta kalma modunda değilsin...",
         "success": "§7§c{home}§7 konumuna ışınlanıyorsun...",
-        "usage": "§cKullanım: §8/§c{label} §8<§cisim§8>",
-        "in_combat": "§cSavaştayken bu komutu kullanamazsın..."
+        "usage": "§cKullanım: §8/§c{label} §8<§cisim§8>"
     },
     "homes": {
         "_prefix": "§cSistem §8§l» §r",
@@ -2267,9 +2422,6 @@
         "_prefix": "§cSistem §8§l» §r",
         "disable": "§7Tercih başarıyla devre dışı bırakıldı!",
         "enable": "§7Tercih başarıyla etkinleştirildi!",
-        "onlyvip": "§cYalnızca §b§l§oAstral §r§cvip rütbeli veya üzeri oyuncular bu tercihi değiştirebilir... §oHemen al: https://loja.iakunamc.com",
-        "reset": "§7Tüm tercihler varsayılana sıfırlandı!",
-        "usage": "§cKullanım: §8/§c{label} §8<§ctercih§8|§creset§8>{n}§cSistem §8§l» §r§cMevcut tercihler§8:§7 {prefs}",
         "global_only": "§c§e{pref} §ctercihi yalnızca geneldir ve mini oyuna göre ayarlanamaz!",
         "invalid_bool": "§c§e{pref} §ciçin geçersiz değer! §aon §cveya §coff §ckullan",
         "invalid_minigame": "§cGeçersiz mini oyun! Mini oyunlar§8:§7 {minigames}",
@@ -2278,6 +2430,8 @@
         "minigame_unset": "§7§b{minigame} §7içindeki §e{pref} §7tercihi artık Genel varsayılanı takip ediyor!",
         "minigame_usage": "§cKullanım: §8/§c{label} mg §8<§cminigame§8> <§cpref§8> [§cmod§8|§creset§8]{n}§cSystem §8§l» §r§cMini oyunlar§8:§7 {minigames}{n}§cSystem §8§l» §r§cTercihler§8:§7 {prefs}",
         "not_allowed_minigame": "§c§e{pref} §ctercihi §b{minigame} §ciçinde mevcut değil! İzin verilen mini oyunlar§8:§7 {minigames}",
+        "onlyvip": "§cYalnızca §b§l§oAstral §r§cvip rütbeli veya üzeri oyuncular bu tercihi değiştirebilir... §oHemen al: https://loja.iakunamc.com",
+        "reset": "§7Tüm tercihler varsayılana sıfırlandı!",
         "reset_minigame": "§7§b{minigame} §7için tüm özel tercihler Genele sıfırlandı!",
         "state": {
             "_prefix": "",
@@ -2295,6 +2449,7 @@
             "sb_right": "§aSağ"
         },
         "updated": "§7§e{pref} §8(§b{scope}§8) §7tercihi {status} §7olarak değiştirildi!",
+        "usage": "§cKullanım: §8/§c{label} §8<§ctercih§8|§creset§8>{n}§cSistem §8§l» §r§cMevcut tercihler§8:§7 {prefs}",
         "menu": {
             "_prefix": "",
             "back": "§c« Mini Oyunlara Dön",
@@ -2324,6 +2479,7 @@
             "friendnotify": "Arkadaş bildirimleri",
             "hideplayers": "Oyuncuları gizle",
             "highlights": "Sohbet vurguları",
+            "lowykb": "Azaltılmış Y Knockback (PvP)",
             "nakb": "NA Ping / Knockback (PvP)",
             "openchest": "Aletle sandık aç",
             "partnernotify": "Partner bildirimleri",
@@ -2338,8 +2494,7 @@
             "tell": "Özel mesajlar",
             "treecapitator": "Tree Capitator (Survival)",
             "veinminer": "Vein Miner (Survival)",
-            "viewprofile": "Profil görünürlüğü",
-            "lowykb": "Azaltılmış Y Knockback (PvP)"
+            "viewprofile": "Profil görünürlüğü"
         }
     },
     "profanity": {
@@ -2529,14 +2684,14 @@
     },
     "tpa": {
         "expired": "§5Işınlanma §8§l» §r§c{sender} adlı oyuncudan gelen ışınlanma isteğinin süresi doldu...",
+        "in_combat": "§5Işınlanma §8§l» §r§cSavaştayken bu komutu kullanamazsın...",
         "noself": "§5Işınlanma §8§l» §r§cKendine ışınlanamazsın...",
         "not_in_survival": "§5Işınlanma §8§l» §r§cHayatta kalma modunda değilsin...",
         "pending": "§5Işınlanma §8§l» §r§cBu oyuncunun zaten bekleyen bir ışınlanma isteği var...",
         "received": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §5Işınlanma İsteği §8===-=-=-=-{n}§5Işınlanma §8§l» §r§5{sender} §7sana ışınlanmak istiyor...{n}§5Işınlanma §8§l» §r§7Kabul için §a/tpaccept, red için §c/tpdeny kullan",
         "sent": "§5Işınlanma §8§l» §r§7Işınlanma isteği §5{target}§7 adlı oyuncuya gönderildi!",
         "target_not_in_survival": "§5Işınlanma §8§l» §r§cHedef oyuncu hayatta kalma modunda değil...",
-        "usage": "§5Işınlanma §8§l» §r§cKullanım: §8/§c{label} §8<§coyuncu§8>",
-        "in_combat": "§5Işınlanma §8§l» §r§cSavaştayken bu komutu kullanamazsın..."
+        "usage": "§5Işınlanma §8§l» §r§cKullanım: §8/§c{label} §8<§coyuncu§8>"
     },
     "tpaccept": {
         "_prefix": "§5Işınlanma §8§l» §r",
@@ -2627,6 +2782,7 @@
         "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §6Görevler §8===-=-=-=-",
         "header_other": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §6{target} adlı oyuncunun Görevleri §8===-=-=-=-",
         "resetIn": "§7Görevler §6{time} içinde sıfırlanacak",
+        "reset_midnight": "§7Günlük görevler sıfırlandı! Kontrol etmek için §8/§6missoes §7kullan!",
         "break": {
             "_prefix": "",
             "blocks": "§7{target} blok kır",
@@ -2715,8 +2871,7 @@
                 "_prefix": "",
                 "bedwars": "§7§cBed§fWars §7içinde {target} yükseltme satın al"
             }
-        },
-        "reset_midnight": "§7Günlük görevler sıfırlandı! Kontrol etmek için §8/§6missoes §7kullan!"
+        }
     },
     "missions": {
         "_prefix": "§6Görevler §8§l» §r",
@@ -3345,161 +3500,6 @@
             "success": "§7Ünvan §6{titulo} §7başarıyla satın alındı!"
         },
         "expired": "§6Ünvanlar §8§l» §r§7Ünvanın §6{titulo} §7süresi doldu..."
-    },
-    "pearl": {
-        "_prefix": "",
-        "blocked": "§cOraya ışınlanmak için güvenli bir alan yok!"
-    },
-    "pvpmodes": {
-        "_prefix": "§bPvP §8§l» §r",
-        "usage": "§7Katılmak için §8/§7{label} join §8<§7mod§8> kullan{n}§bPvP §8§l» §r§7Ayrılmak için §8/§7{label} leave kullan",
-        "join": {
-            "usage": "§cKullanım: §8/§c{label} join §8<§cmod§8>"
-        },
-        "modes_list": "§7Mevcut modlar§8: §f{modes}",
-        "invalid_mode": "§c§f{mode} §cmodu mevcut değil!",
-        "world_unavailable": "§c{mode} §cmodu haritası şu anda kullanılamıyor...",
-        "joined": "§7{mode} §7moduna katıldın!",
-        "joined_team": "§7{mode} §7moduna {team} §7takımında katıldın!",
-        "not_playing": "§cHerhangi bir PvP modunda değilsin...",
-        "left": "§7PvP modundan ayrıldın!",
-        "menu": {
-            "_prefix": "",
-            "back": "§c« Geri",
-            "mode_item": "{label}{n}§7Oynayan§8: §f{playing}{n}{n}§eKatılmak için tıkla",
-            "prefs_item": "§3PvPModes Tercihleri{n}§7Ayarlarını yapılandır{n}{n}§eAçmak için tıkla",
-            "team_amarelo": "§eSarı Takım",
-            "team_azul": "§9Mavi Takım",
-            "team_title": "§6TeamPvP §8§l» §r§7Takım Seç",
-            "team_verde": "§aYeşil Takım",
-            "team_vermelho": "§cKırmızı Takım",
-            "teampvp_item": "§6TeamPvP{n}§7Oynayan§8: §f{playing}{n}{n}§eTakımını seçmek için tıkla",
-            "title": "§bPvPModes §8§l» §r§7Mod Seç",
-            "uhc_item": "§bUHC{n}§7Oynayan§8: §f{playing}{n}{n}§eVaryant seçmek için tıkla",
-            "uhc_title": "§bPvPModes UHC §8§l» §r§7Varyantlar",
-            "uhc_uhc": "§bNormal UHC",
-            "uhc_uhcfly": "§bFly UHC",
-            "uhc_uhcheavy": "§bUhc §8(§cAğır KB§8)",
-            "uhc_uhclight": "§bUhc §8(§3Hafif KB§8)"
-        }
-    },
-    "challenge": {
-        "_prefix": "§cDuel §8§l» §r",
-        "_noprefix": [
-            "menu",
-            "received"
-        ],
-        "cancelled_other": "§7Oyuncu §c{player} §7meydan okumayı iptal etti...",
-        "cancelled_self": "§7§c{player} §7adlı oyuncuya gönderilen meydan okumayı iptal ettin...",
-        "denied_other": "§7Oyuncu §c{player} §7meydan okumanı reddetti...",
-        "denied_self": "§7§c{player} §7adlı oyuncunun meydan okumasını reddettin...",
-        "error": {
-            "already_sent": "§cZaten gönderilmiş bekleyen bir meydan okuman var...",
-            "challenger_busy": "§cZaten bir maçta veya aktif bir meydan okumadasın...",
-            "challenger_offline": "§cMeydan okuyan §7{player} §cçevrimdışı oldu...",
-            "invalid_bet": "§cGeçersiz bahis miktarı...",
-            "invalid_mode": "§cGeçersiz mod §7{mode}§c! Modlar§8: §7duels§8, §7thebridge§8, §7bedwars§8, §7skywars...",
-            "invalid_rounds": "§cTur sayısı §7{min} §cile §7{max} §carasında olmalı...",
-            "invalid_submode": "§c{mode} için geçersiz veya uyumsuz alt mod §7{submode}§c...",
-            "max_team_size": "§cİzin verilen maksimum takım boyutu§8: §7{max}v{max}§c...",
-            "member_busy": "§cOyuncu §7{player} §czaten bir maçta veya meydan okumada...",
-            "member_offline": "§cMeydan okuma başlamadan önce bir parti üyesi çevrimdışı oldu...",
-            "no_arena_available": "§cŞu anda bu modu başlatmak için uygun arena yok...",
-            "no_pending": "§cBekleyen bir meydan okuman yok...",
-            "no_pending_from": "§c§7{player} §cadlı oyuncudan bekleyen bir meydan okuman yok...",
-            "no_sent_invite": "§cBekleyen gönderilmiş bir meydan okuman yok...",
-            "not_enough_akunas": "§cBu bahis için §7{bet} Akunas §cgerekiyor...",
-            "not_in_challenge": "§cAktif bir meydan okumada değilsin...",
-            "player_offline": "§cOyuncu §7{player} §cçevrimiçi değil...",
-            "same_party": "§cAynı partideki birine meydan okuyamazsın...",
-            "self": "§cKendine meydan okuyamazsın...",
-            "target_busy": "§cOyuncu §7{player} §czaten bir maçta veya meydan okumada...",
-            "target_has_pending": "§cOyuncu §7{player} §czaten bekleyen bir meydan okumaya sahip...",
-            "target_not_enough_akunas": "§cOyuncu §7{player} §cbahis için §7{bet} Akunas §csahibi değil...",
-            "target_not_party_leader": "§cYalnızca §7{player} §cpartisindeki lider meydan okuma alabilir...",
-            "team_size_mismatch": "§cPartiler aynı oyuncu sayısına sahip olmalı §8(§7{yours} vs {theirs}§8)§c..."
-        },
-        "expired": "§7§c{player} §7ile olan meydan okumanın süresi doldu...",
-        "finished_tie": "§7Meydan okuma berabere bitti! Son skor §8(§f{leader_a} §c{score_a} §7x §9{score_b} §f{leader_b}§8)§7... Bahis §cAkunas §7iade edildi!",
-        "finished_win": "§a§f{winner} §azaferi! Son skor§8: §f{leader_a} §c{score_a} §7x §9{score_b} §f{leader_b} §8- §7Ödül§8: §e{pot} Akunas§7!",
-        "menu": {
-            "_prefix": "",
-            "back": "§c« Geri",
-            "bet_amount": "{amount} Akunas",
-            "bet_item": "{bet}{n}§7Turlar§8: §f{rounds}{n}{n}§aMeydan okuma göndermek için tıkla",
-            "bet_none": "§fBahissiz",
-            "bet_title": "§cMeydan Oku §8§l» §r§7Bahis §8(§7Akunas§8)",
-            "mode_item": "{label}{n}§7§f{player} §7adlı oyuncuya meydan oku{n}{n}§eTur seçmek için tıkla",
-            "mode_title": "§cMeydan Oku §8§l» §r§7Mod",
-            "round_plural": "§e{rounds} Tur{n}{n}§eBahis seçmek için tıkla",
-            "round_single": "§e{rounds} Tur{n}{n}§eBahis seçmek için tıkla",
-            "rounds_title": "§cMeydan Oku §8§l» §r§7Turlar"
-        },
-        "received": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §cDüello §8===-=-=-{n}§cDüello §8§l» §r§c{player} §7sizi {mode} §8(§f{format}§8) §7modunda §e{rounds} raunt §8(§6{bet}§8) §7için davet etti...{n}§cDüello §8§l» §r§7Kabul etmek için §a/desafiar accept {challenger} §7veya reddetmek için §c/desafiar deny {challenger} §7yazın §8(§7{timeout}s§8)",
-        "round_finished": "§7Tur §e{round}§8/§e{total} §7bitti! Skor§8: §f{leader_a} §c{score_a} §7x §9{score_b} §f{leader_b} §8- §7Sonraki tur §8(§e{next}§8/§e{total}§8) §e{delay}s §7içinde!",
-        "round_starting": "§7{mode} §7modunda tur §e{round}§8/§e{total} §7başlıyor §8(§f{leader_a} §c{score_a} §7x §9{score_b} §f{leader_b}§8)!",
-        "sent": "§7§c{player} §7adlı oyuncuya {mode} §8(§f{format}§8) §7modunda §e{rounds} tur §8(§6{bet}§8) §7için meydan okuma gönderildi!",
-        "status": "§7Mevcut tur§8: §e{round}§8/§e{total} §8| §f{leader_a} §c{score_a} §7x §9{score_b} §f{leader_b} §8| §7Bahis§8: §6{bet} Akunas",
-        "usage": "§cKullanım: §8/§c{label} §8<§coyuncu§8> [§cduels§8|§cthebridge§8|§cbedwars§8|§cskywars§8] [§caltmod§8] [§ctur 1-10§8] [§cbahis§8] §7veya §8/§c{label} §8<§caccept§8|§cdeny§8|§ccancel§8|§cstatus§8>",
-        "won_wo": "§cHükmen §8(§cW.O.§8)§c! §7Oyuncu §c{quitter} §7maçtan ayrıldı... §a{winner} §7kazandı ve §e{pot} Akunas §7aldı!",
-        "loading_arena": "§7Arena yükleniyor, lütfen biraz bekleyin..."
-    },
-    "friends": {
-        "accept": {
-            "_prefix": "§cSystem §8§l» §r",
-            "none": "§cBekleyen arkadaşlık isteğin yok...",
-            "notify": "§b{friend} §7arkadaşlık isteğini kabul etti!",
-            "success": "§7Sen ve §b{friend} §7artık arkadaşsınız!"
-        },
-        "add": {
-            "_prefix": "§cSystem §8§l» §r",
-            "already": "§c§b{target} §cile zaten arkadaşsın...",
-            "expired": "§c§b{sender} §cadlı oyuncunun arkadaşlık isteğinin süresi doldu...",
-            "limit": "§cArkadaş sınırına ({max}) ulaştın!",
-            "pending": "§cBu oyuncunun zaten bekleyen bir arkadaşlık isteği var...",
-            "request": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §bArkadaşlık İsteği §8===-=-=-{n}§cSystem §8§l» §r§b{sender} §7sana bir arkadaşlık isteği gönderdi...{n}§cSystem §8§l» §r§7Kabul etmek için §a/friend aceitar §7veya reddetmek için §c/friend recusar §7kullan",
-            "self": "§cKendini arkadaş olarak ekleyemezsin...",
-            "sent": "§7§b{target} §7adlı oyuncuya arkadaşlık isteği gönderildi!",
-            "target_limit": "§cBu oyuncu zaten arkadaş sınırına ulaştı!",
-            "usage": "§cKullanım: §8/§c{label} add §8<§coyuncu§8>"
-        },
-        "deny": {
-            "_prefix": "§cSystem §8§l» §r",
-            "none": "§cBekleyen arkadaşlık isteğin yok...",
-            "notify": "§b{target} §7arkadaşlık isteğini reddetti...",
-            "success": "§7Arkadaşlık isteği başarıyla reddedildi!"
-        },
-        "friend": {
-            "_prefix": "§cSystem §8§l» §r",
-            "joined": "§7Arkadaşın §b{friend} §7sunucuya katıldı!",
-            "left": "§7Arkadaşın §b{friend} §7sunucudan §cayrıldı..."
-        },
-        "list": {
-            "_prefix": "",
-            "entry": "§cSystem §8§l» §r{status} §b{friend} §8| §7Tarih§8:§b {date} §8(§7{dateSince} önce§8){n}§cSystem §8§l» §r§7Senin taktığın§8:§b {nicknameGiven} §8| §7Sana taktığı§8:§b {nicknameReceived}",
-            "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §bArkadaşlar §8(§7{count}§8/§7{max}§8) §8[§7Sayfa {page}/{maxPages}§8] ===-=-=-=-",
-            "no_nickname": "§7Takma ad yok...§r",
-            "none": "§cSystem §8§l» §r§cHenüz hiç arkadaşın yok...",
-            "offline": "§c*",
-            "online": "§a*"
-        },
-        "nick": {
-            "_prefix": "§cSystem §8§l» §r",
-            "success": "§7§b{friend} §7adlı oyuncunun takma adı başarıyla '§b{nickname}§7' olarak ayarlandı!",
-            "usage": "§cKullanım: §8/§c{label} nick §8<§carkadaş§8> <§ctakma_ad§8>"
-        },
-        "remove": {
-            "_prefix": "§cSystem §8§l» §r",
-            "all_success": "§7Tüm arkadaşların kaldırıldı!",
-            "invalid": "§cGeçersiz oyuncu veya arkadaş listende değil...",
-            "none": "§cHiç arkadaşın yok...",
-            "notify": "§b{friend} §7seni arkadaş listesinden çıkardı...",
-            "success": "§7§b{friend} §7adlı oyuncuyu arkadaş listenden çıkardın...",
-            "usage": "§cKullanım: §8/§c{label} remover §8<§coyuncu§8|§c*§8>",
-            "confirm": "§b{friend} §ckişisini arkadaşlarından çıkarmak istediğine emin misin? Onaylamak için §8/§c{command} confirm §cyaz",
-            "confirm_all": "§cTÜM arkadaşlarını çıkarmak istediğine emin misin? Onaylamak için §8/§c{command} confirm §cyaz"
-        },
-        "usage": "§cSystem §8§l» §r§cKullanım: §8/§c{label} §8<§cadd§8|§caceitar§8|§crecusar§8|§cremover§8|§clistar§8|§cnick§8>"
     },
     "online_reward": {
         "_prefix": "§bActivity §8§l» §r",
