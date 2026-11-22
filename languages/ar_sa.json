@@ -1372,7 +1372,9 @@
             "format_title": "§2Duels {format} §8§l» §r§7اختر الوضع",
             "mode_item": "{label} {format}{n}§7يلعبون§8: §f{playing}{n}{n}§eانقر للانضمام للطابور",
             "sw1v1_item": "§bSkyWars 1v1{n}§7يلعبون§8: §f{playing}{n}{n}§eانقر للعب",
-            "title": "§2Duels §8§l» §r§7اختر الوضع"
+            "title": "§2Duels §8§l» §r§7اختر الوضع",
+            "confirm_button": "§a§lتأكيد§r",
+            "cancel_button": "§c§lإلغاء§r"
         }
     },
     "pearl": {
@@ -1409,7 +1411,9 @@
             "uhc_uhc": "§bUHC عادي",
             "uhc_uhcfly": "§bUHC طيران",
             "uhc_uhcheavy": "§bUHC §8(§cارتداد ثقيل§8)",
-            "uhc_uhclight": "§bUHC §8(§3ارتداد خفيف§8)"
+            "uhc_uhclight": "§bUHC §8(§3ارتداد خفيف§8)",
+            "confirm_button": "§a§lتأكيد§r",
+            "cancel_button": "§c§lإلغاء§r"
         }
     },
     "addbalance": {

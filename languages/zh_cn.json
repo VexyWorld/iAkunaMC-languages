@@ -1372,7 +1372,9 @@
             "format_title": "§2Duels {format} §8§l» §r§7选择模式",
             "mode_item": "{label} {format}{n}§7游玩中§8: §f{playing}{n}{n}§e点击加入队列",
             "sw1v1_item": "§bSkyWars 1v1{n}§7游玩中§8: §f{playing}{n}{n}§e点击游玩",
-            "title": "§2Duels §8§l» §r§7选择模式"
+            "title": "§2Duels §8§l» §r§7选择模式",
+            "confirm_button": "§a§l确认§r",
+            "cancel_button": "§c§l取消§r"
         }
     },
     "pearl": {
@@ -1409,7 +1411,9 @@
             "uhc_uhc": "§b普通 UHC",
             "uhc_uhcfly": "§b飞行 UHC",
             "uhc_uhcheavy": "§bUHC §8(§c重击退§8)",
-            "uhc_uhclight": "§bUHC §8(§3轻击退§8)"
+            "uhc_uhclight": "§bUHC §8(§3轻击退§8)",
+            "confirm_button": "§a§l确认§r",
+            "cancel_button": "§c§l取消§r"
         }
     },
     "addbalance": {

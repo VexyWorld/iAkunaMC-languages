@@ -1372,7 +1372,9 @@
             "format_title": "§2Duels {format} §8§l» §r§7Выбор Режима",
             "mode_item": "{label} {format}{n}§7Играют§8: §f{playing}{n}{n}§eНажмите, чтобы встать в очередь",
             "sw1v1_item": "§bSky§fWars 1v1{n}§7Играют§8: §f{playing}{n}{n}§eНажмите, чтобы играть",
-            "title": "§2Duels §8§l» §r§7Выберите Режим"
+            "title": "§2Duels §8§l» §r§7Выберите Режим",
+            "confirm_button": "§a§lПодтвердить§r",
+            "cancel_button": "§c§lОтмена§r"
         }
     },
     "pearl": {
@@ -1409,7 +1411,9 @@
             "uhc_uhc": "§bОбычный Uhc",
             "uhc_uhcfly": "§bFly Uhc",
             "uhc_uhcheavy": "§bUhc §8(§cТяжёлый KB§8)",
-            "uhc_uhclight": "§bUhc §8(§3Лёгкий KB§8)"
+            "uhc_uhclight": "§bUhc §8(§3Лёгкий KB§8)",
+            "confirm_button": "§a§lПодтвердить§r",
+            "cancel_button": "§c§lОтмена§r"
         }
     },
     "addbalance": {
