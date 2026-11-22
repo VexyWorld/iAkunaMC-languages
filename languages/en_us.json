@@ -140,8 +140,8 @@
             "click_favorite": "§7Click a map to favorite or unfavorite",
             "map_favorited": "§7Map {map} added to favorites",
             "map_unfavorited": "§7Map {map} removed from favorites",
-            "confirm_button": "§a§lConfirm",
-            "cancel_button": "§c§lCancel"
+            "confirm_button": "§a§lConfirm§r",
+            "cancel_button": "§c§lCancel§r"
         },
         "shop": {
             "_prefix": "§cBed§fWars §8§l» §r",
@@ -181,7 +181,7 @@
     },
     "teampvp": {
         "_prefix": "§aTeamPvP §8§l» §r",
-        "usage": "§7To join use §8/§7{label} entrar §8<§7team§8>{n}§aTeamPvP §8§l» §7To leave use §8/§7{label} sair",
+        "usage": "§7To join use §8/§7{label} entrar §8<§7team§8>{n}§aTeamPvP §8§l» §r§7To leave use §8/§7{label} sair",
         "join": {
             "_prefix": "",
             "usage": "§aTeamPvP §8§l» §r§cUse §8/§c{label} entrar §8<§cteam§8>"
@@ -295,8 +295,8 @@
             "click_favorite": "§7Click a map to favorite or unfavorite it",
             "map_favorited": "§7Map {map} added to favorites",
             "map_unfavorited": "§7Map {map} removed from favorites",
-            "confirm_button": "§a§lConfirm",
-            "cancel_button": "§c§lCancel"
+            "confirm_button": "§a§lConfirm§r",
+            "cancel_button": "§c§lCancel§r"
         },
         "tracker": "§8§l» §r§7Tracking §b{player} §8§l» §r§7Distance: §b{distance} §7blocks",
         "rejoin": {
@@ -1247,7 +1247,6 @@
             "not_in_game": "§cYou are not in any queue or duel...",
             "no_arenas": "§cThere are no arenas available right now...",
             "party_size": "§cDuels only supports parties of exactly 2 players...",
-            "party_size_team": "§cFor {format} duels, your party needs up to {team_size} player(s) for the queue or exactly {private_size} for a private duel...",
             "usage": "§7Use §8/§7duels §8<§7mode§8|§7leave§8>",
             "help": {
                 "_prefix": "",
@@ -1255,10 +1254,12 @@
                 "entry": "§2Duels §8§l» §r§8/§7{cmd} §8- §7{desc}",
                 "desc": {
                     "play": "Join queue",
-                    "bot": "Duel against a Bot",
-                    "leave": "Leave queue or duel"
+                    "leave": "Leave queue or duel",
+                    "bot": "Duel against a Bot"
                 }
-            }
+            },
+            "party_size_team": "§cFor {format} duels, your party needs up to {team_size} player(s) for the queue or exactly {private_size} for a private duel...",
+            "player_only": "§cOnly players can use this command..."
         },
         "status": {
             "_prefix": "§2Duels §8§l» §r",
@@ -1269,8 +1270,6 @@
         "match": {
             "_prefix": "§2Duels §8§l» §r",
             "started": "§7Duel §2{mode} §7against §2{opponent} §7in arena §2{arena}§7!",
-            "started_team": "§7Duel §2{mode} §8(§2{format}§8) §7in arena §2{arena}§7! §a{teammates} §8vs §c{opponents}",
-            "eliminated": "§c{player} §7was eliminated! §8(§2{team_alive}§8/§7{team_total}§8 remaining)",
             "cancelled": "§cThe duel was cancelled...",
             "timeout": "§cMatch time limit reached...",
             "summary": {
@@ -1278,6 +1277,8 @@
                 "normal": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §2Duels §8===-=-=-=-{n}§7Winner§8: §a{winner}{n}§7Loser§8: §c{loser}{n}§7Mode§8: §2{mode} §8| §7Duration§8: §2{duration}{n}§8-=-=-=-===============================-=-=-=-",
                 "forfeit": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §2Duels §8===-=-=-=-{n}§7Result§8: §eForfeit{n}§7Winner§8: §a{winner}{n}§7Loser§8: §c{loser}{n}§7Mode§8: §2{mode} §8| §7Duration§8: §2{duration}{n}§8-=-=-=-===============================-=-=-=-"
             },
+            "started_team": "§7Duel §2{mode} §8(§2{format}§8) §7in arena §2{arena}§7! §a{teammates} §8vs §c{opponents}",
+            "eliminated": "§c{player} §7was eliminated! §8(§2{team_alive}§8/§7{team_total}§8 remaining)",
             "summary_team": {
                 "_prefix": "",
                 "normal": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §2Duels {format} §8===-=-=-=-{n}§7Winners§8: §a{winners}{n}§7Losers§8: §c{losers}{n}§7Mode§8: §2{mode} §8| §7Duration§8: §2{duration}{n}§8-=-=-=-===============================-=-=-=-",
@@ -1308,11 +1309,6 @@
             "left": "§7You left the queue for the §c{mode}§7 mode!",
             "timeout": "§cYou were automatically removed from the queue because no other available players were found..."
         },
-        "bot": {
-            "_prefix": "§2Duels §8§l» §r",
-            "usage": "§7Use §8/§7duels bot §8<§7mode§8> [§aeasy§8|§emedium§8|§chard§8|§5hacker§8]",
-            "invalid_difficulty": "§cInvalid difficulty! Use §aeasy§c, §emedium§c, §chard §cor §5hacker§c..."
-        },
         "menu": {
             "_prefix": "",
             "back": "§c« Back",
@@ -1337,11 +1333,12 @@
             "mode_item": "{label} {format}{n}§7Playing§8: §f{playing}{n}{n}§eClick to join queue",
             "sw1v1_item": "§bSkyWars 1v1{n}§7Playing§8: §f{playing}{n}{n}§eClick to play",
             "title": "§2Duels §8§l» §r§7Select Mode"
+        },
+        "bot": {
+            "invalid_difficulty": "§cInvalid difficulty! Use §aeasy§c, §emedium§c, §chard §cor §5hacker§c...",
+            "_prefix": "§2Duels §8§l» §r",
+            "usage": "§7Use §8/§7duels bot §8<§7mode§8> [§aeasy§8|§emedium§8|§chard§8|§5hacker§8]"
         }
-    },
-    "pearl": {
-        "_prefix": "",
-        "blocked": "§cThere is no safe space to teleport there!"
     },
     "pvpmodes": {
         "_prefix": "§bPvP §8§l» §r",
@@ -1744,7 +1741,8 @@
         },
         "delete": {
             "error": "§cError deleting clan!",
-            "success": "§7Clan deleted successfully!"
+            "success": "§7Clan deleted successfully!",
+            "confirm": "§cAre you sure you want to delete clan §6{clan}§c? Type §8/§c{label} delete confirm §cto confirm"
         },
         "demote": {
             "broadcast": "§e{player} §7was demoted to member!",
@@ -1805,7 +1803,8 @@
             "broadcast": "§e{player} §7left the clan...",
             "error": "§cError leaving clan...",
             "owner": "§cThe owner cannot leave the clan...",
-            "success": "§7You left the clan successfully!"
+            "success": "§7You left the clan successfully!",
+            "confirm": "§cAre you sure you want to leave clan §6{clan}§c? Type §8/§c{label} leave confirm §cto confirm"
         },
         "level_up": "§7The clan leveled up to level §e{newLevel}§7!",
         "not_found": "§cThat clan doesn't exist...",
@@ -1891,14 +1890,14 @@
     "daily": {
         "reward": {
             "akunas": "§c{amount} Akunas",
-            "cooldown": "§5Daily reward §8§l» §r§cYou already claimed today! Next in §5{time}§c...",
             "milestone": "§5Daily reward §8§l» §r§7Congratulations! you reached §5{weeks} §7weeks streak!",
-            "milestone_month": "§5Daily reward §8§l» §r§7Amazing! You reached a §5{days} §7day streak and earned a special bonus!",
             "multiplier": "§9{multiplier}x Multiplier §8(§5{duration}§8)",
             "received": "§5Daily reward §8§l» §r§7You received {rewards}",
             "streak": "§5Daily reward §8§l» §r§7Current streak§8: §5{streak} §7days",
             "xp": "§9{amount} XP",
             "streak_lost": "§5Daily reward §8§l» §r§cYou lost your {oldStreak} days streak...",
+            "cooldown": "§5Daily reward §8§l» §r§cYou already claimed today! Next in §5{time}§c...",
+            "milestone_month": "§5Daily reward §8§l» §r§7Amazing! You reached a §5{days} §7day streak and earned a special bonus!",
             "bonus_applied": "§5Daily §8§l» §r§7Applied bonus§8: {bonuses}",
             "bonus_galaxy": "§7§l§oGalaxy§r§a+ §e(+{percent}%)",
             "bonus_booster": "§dBooster §e(+{percent}%)"
@@ -1908,7 +1907,7 @@
             "status_available": "§aAvailable now!{n}§eClick to claim",
             "status_cooldown": "§7Next in§8: §e{time}",
             "bonus_active": "{n}§7Active bonus§8: §a+{percent}%",
-            "summary": "§5§lDaily Streak{n}§7Current streak§8: §d{streak} day(s){n}§7Best streak§8: §6{best} day(s){n}§7Total claimed§8: §b{total}{bonus}{n}{n}{status}",
+            "summary": "§5§lDaily Streak§r{n}§7Current streak§8: §d{streak} day(s){n}§7Best streak§8: §6{best} day(s){n}§7Total claimed§8: §b{total}{bonus}{n}{n}{status}",
             "day_claimed": "§aDay {day} §8(§aClaimed§8){n}§7Multiplier§8: §e+{percent}%",
             "day_available": "§bDay {day} §8(§aAvailable§8){n}§7Multiplier§8: §e+{percent}%{weekly}{n}{n}§eClick to claim!",
             "day_next": "§eDay {day} §8(§7Next§8){n}§7Unlocks in§8: §e{time}{n}§7Multiplier§8: §e+{percent}%",
@@ -1946,64 +1945,8 @@
         "set": "§7Fake enabled successfully!",
         "usage": "§cUse §8/§c{label} §8<§con§8|§coff§8|§crandom§8|§clist§8>"
     },
-    "friends": {
-        "accept": {
-            "_prefix": "§cSystem §8§l» §r",
-            "none": "§cYou have no pending friend requests...",
-            "notify": "§b{friend} §7accepted your friend request!",
-            "success": "§7You and §b{friend} §7are now friends!"
-        },
-        "add": {
-            "_prefix": "§cSystem §8§l» §r",
-            "already": "§cYou are already friends with §b{target}§c...",
-            "expired": "§cThe friend request from §b{sender} §cexpired...",
-            "limit": "§cYou have reached your friend limit ({max})!",
-            "pending": "§cThis player already has a pending friend request...",
-            "request": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §bFriend Request §8===-=-=-{n}§cSystem §8§l» §r§b{sender} §7sent you a friend request...{n}§cSystem §8§l» §r§7Use §a/friend aceitar §7to accept or §c/friend recusar §7to decline",
-            "self": "§cYou cannot add yourself as a friend...",
-            "sent": "§7Friend request sent to §b{target}§7!",
-            "target_limit": "§cThis player has already reached their friend limit!",
-            "usage": "§cUse §8/§c{label} add §8<§cplayer§8>"
-        },
-        "deny": {
-            "_prefix": "§cSystem §8§l» §r",
-            "none": "§cYou have no pending friend requests...",
-            "notify": "§b{target} §7declined your friend request...",
-            "success": "§7Friend request declined successfully!"
-        },
-        "friend": {
-            "_prefix": "§cSystem §8§l» §r",
-            "joined": "§7Your friend §b{friend} §7joined the server!",
-            "left": "§7Your friend §b{friend} §cleft §7the server..."
-        },
-        "list": {
-            "_prefix": "",
-            "entry": "§cSystem §8§l» §r{status} §b{friend} §8| §7Since§8:§b {date} §8(§7{dateSince} ago§8){n}§cSystem §8§l» §r§7You call§8:§b {nicknameGiven} §8| §7Calls you§8:§b {nicknameReceived}",
-            "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §bFriends §8(§7{count}§8/§7{max}§8) §8[§7Page {page}/{maxPages}§8] ===-=-=-=-",
-            "no_nickname": "§7No nickname...§r",
-            "none": "§cSystem §8§l» §r§cYou do not have any friends yet...",
-            "offline": "§c●",
-            "online": "§a●"
-        },
-        "nick": {
-            "_prefix": "§cSystem §8§l» §r",
-            "success": "§7Nickname of §b{friend} §7set to '§b{nickname}§7' successfully!",
-            "usage": "§cUse §8/§c{label} nick §8<§cfriend§8> <§cnickname§8>"
-        },
-        "remove": {
-            "_prefix": "§cSystem §8§l» §r",
-            "all_success": "§7All of your friends have been removed!",
-            "invalid": "§cInvalid player or not on your friends list...",
-            "none": "§cYou do not have any friends...",
-            "notify": "§b{friend} §7removed you from their friends list...",
-            "success": "§7You removed §b{friend} §7from your friends list...",
-            "usage": "§cUse §8/§c{label} remover §8<§cplayer§8|§c*§8>"
-        },
-        "usage": "§cSystem §8§l» §r§cUse §8/§c{label} §8<§cadd§8|§caceitar§8|§crecusar§8|§cremover§8|§clistar§8|§cnick§8>"
-    },
     "home": {
         "_prefix": "§cSystem §8§l» §r",
-        "in_combat": "§cVocê não pode usar esse comando em combate...",
         "none": "§cYou don't have any homes...",
         "not_exists": "§cYou don't have a home with that name...",
         "not_in_survival": "§cYou are not in survival mode...",
@@ -2142,7 +2085,9 @@
             "none": "§cYou are not married...",
             "notify": "§c{partner} §7divorced you...",
             "specify": "§cUse §8/§c{label} divorce §8<§cplayer§8|§c*§8>",
-            "success": "§7You divorced §c{partner}§7..."
+            "success": "§7You divorced §c{partner}§7...",
+            "confirm": "§cAre you sure you want to divorce §c{partner}§c? Type §8/§c{command} confirm §cto confirm",
+            "confirm_all": "§cAre you sure you want to divorce ALL your partners? Type §8/§c{command} confirm §cto confirm"
         },
         "info": {
             "entry": "§cSystem §8§l» §r§7Partner§8:§d {partner} §8| §7Since§8:§d {date} §8(§7§d{dateSince} ago§8){n}§cSystem §8§l» §r§7You call§8:§d {nicknameGiven} §8| §7Calls you§8:§d {nicknameReceived}",
@@ -2415,33 +2360,8 @@
         "_prefix": "§cSystem §8§l» §r",
         "disable": "§7Preference disabled successfully!",
         "enable": "§7Preference enabled successfully!",
-        "global_only": "§cPreference §e{pref} §cis global-only and cannot be configured per minigame!",
-        "invalid_bool": "§cInvalid value for §e{pref}§c! Use §aon §cor §coff",
-        "invalid_minigame": "§cInvalid minigame! Minigames§8:§7 {minigames}",
-        "invalid_mode": "§cInvalid mode for §e{pref}§c! Modes§8: §aall§8, §bfriends§8, §dpartner§8, §eparty§8, §6clan§8, §coff",
-        "invalid_scoreboard_side": "§cInvalid position for §e{pref}§c! Use §aright§c, §bleft §cor §einline",
-        "minigame_unset": "§7Preference §e{pref} §7in §b{minigame} §7now follows the Global default!",
-        "minigame_usage": "§cUse §8/§c{label} mg §8<§cminigame§8> <§cpref§8> [§cmode§8|§creset§8]{n}§cSystem §8§l» §r§cMinigames§8:§7 {minigames}{n}§cSystem §8§l» §r§cPrefs§8:§7 {prefs}",
-        "not_allowed_minigame": "§cPreference §e{pref} §cis not available in §b{minigame}§c! Allowed minigames§8:§7 {minigames}",
         "onlyvip": "§cOnly players with §b§l§oAstral §r§cvip rank or higher can change this preference... §oGet yours at https://loja.iakunamc.com",
         "reset": "§7All preferences have been reset to default!",
-        "reset_minigame": "§7All custom preferences for §b{minigame} §7have been reset to Global!",
-        "state": {
-            "_prefix": "",
-            "all": "§aEveryone",
-            "clan": "§6Clan",
-            "friends": "§bFriends",
-            "hide_all": "§cHiding all",
-            "hide_off": "§aShowing all",
-            "off": "§cDisabled",
-            "on": "§aEnabled",
-            "partner": "§dPartner",
-            "party": "§eParty",
-            "sb_inline": "§eInline",
-            "sb_left": "§bLeft",
-            "sb_right": "§aRight"
-        },
-        "updated": "§7Preference §e{pref} §8(§b{scope}§8) §7changed to {status}§7!",
         "usage": "§cUse §8/§c{label} §8<§cpreference§8|§creset§8>{n}§cSystem §8§l» §r§cAvailable preferences§8:§7 {prefs}",
         "menu": {
             "_prefix": "",
@@ -2472,7 +2392,6 @@
             "friendnotify": "Notify friends",
             "hideplayers": "Hide players",
             "highlights": "Chat highlights",
-            "lowykb": "Knockback Y Reduzido (PvP)",
             "nakb": "NA Ping / Knockback (PvP)",
             "openchest": "Open chest with tool",
             "partnernotify": "Notify partner",
@@ -2488,7 +2407,32 @@
             "treecapitator": "Tree Capitator (Survival)",
             "veinminer": "Vein Miner (Survival)",
             "viewprofile": "Profile visibility"
-        }
+        },
+        "global_only": "§cPreference §e{pref} §cis global-only and cannot be configured per minigame!",
+        "invalid_bool": "§cInvalid value for §e{pref}§c! Use §aon §cor §coff",
+        "invalid_minigame": "§cInvalid minigame! Minigames§8:§7 {minigames}",
+        "invalid_mode": "§cInvalid mode for §e{pref}§c! Modes§8: §aall§8, §bfriends§8, §dpartner§8, §eparty§8, §6clan§8, §coff",
+        "invalid_scoreboard_side": "§cInvalid position for §e{pref}§c! Use §aright§c, §bleft §cor §einline",
+        "minigame_unset": "§7Preference §e{pref} §7in §b{minigame} §7now follows the Global default!",
+        "minigame_usage": "§cUse §8/§c{label} mg §8<§cminigame§8> <§cpref§8> [§cmode§8|§creset§8]{n}§cSystem §8§l» §r§cMinigames§8:§7 {minigames}{n}§cSystem §8§l» §r§cPrefs§8:§7 {prefs}",
+        "not_allowed_minigame": "§cPreference §e{pref} §cis not available in §b{minigame}§c! Allowed minigames§8:§7 {minigames}",
+        "reset_minigame": "§7All custom preferences for §b{minigame} §7have been reset to Global!",
+        "state": {
+            "_prefix": "",
+            "all": "§aEveryone",
+            "clan": "§6Clan",
+            "friends": "§bFriends",
+            "hide_all": "§cHiding all",
+            "hide_off": "§aShowing all",
+            "off": "§cDisabled",
+            "on": "§aEnabled",
+            "partner": "§dPartner",
+            "party": "§eParty",
+            "sb_inline": "§eInline",
+            "sb_left": "§bLeft",
+            "sb_right": "§aRight"
+        },
+        "updated": "§7Preference §e{pref} §8(§b{scope}§8) §7changed to {status}§7!"
     },
     "profanity": {
         "_prefix": "§cSystem §8§l» §r",
@@ -2677,7 +2621,6 @@
     },
     "tpa": {
         "expired": "§5Teleport §8§l» §r§cThe teleport request from {sender} has expired...",
-        "in_combat": "§5Teleporte §8§l» §r§cVocê não pode usar esse comando em combate...",
         "noself": "§5Teleport §8§l» §r§cYou cannot teleport to yourself...",
         "not_in_survival": "§5Teleport §8§l» §r§cYou are not in survival mode...",
         "pending": "§5Teleport §8§l» §r§cThat player already has a pending teleport request...",
@@ -3356,12 +3299,15 @@
         },
         "link": {
             "bot_command": "§7Join our Discord server §8(§9https://discord.iakunamc.com§8)§7, go to the commands chat and use §8/§7link {code}",
-            "expires": "§7The code expires in 5 minutes..."
+            "expires": "§7The code expires in 5 minutes...",
+            "already": "§cYour account is already linked to Discord..."
         },
         "unlink": {
             "success": "§7Your account has been unlinked successfully...",
-            "not_linked": "§cYour account is not linked..."
-        }
+            "not_linked": "§cYour account is not linked...",
+            "confirm": "§cAre you sure you want to unlink your Discord account? Type §8/§c{label} {action} confirm §cto confirm"
+        },
+        "usage": "§cUse §8/§c{label} §8<§clink§8|§cunlink§8>"
     },
     "email": {
         "usage": "§bEmail §8§l» §r§cUse §8/§c{label} §8<§clink§8|§cverify§8|§cunlink§8|§c2fa§8>",
@@ -3380,7 +3326,8 @@
         },
         "unlink": {
             "not_linked": "§bEmail §8§l» §r§cYou don't have an email linked...",
-            "success": "§bEmail §8§l» §r§7Email unlinked successfully!"
+            "success": "§bEmail §8§l» §r§7Email unlinked successfully!",
+            "confirm": "§bEmail §8§l» §r§cAre you sure you want to unlink your email? Type §8/§c{label} {action} confirm §cto confirm"
         },
         "2fa": {
             "no_email": "§bEmail §8§l» §r§cYou need to link an email first...",
@@ -3406,11 +3353,9 @@
             "code": {
                 "usage": "§eAuth §8§l» §r§cUse §8/§c{label} §8<§ccode§8>"
             },
-            "email": {
-                "expired": "§eAuth §8§l» §r§cThe code expired...",
-                "invalid": "§eAuth §8§l» §r§cInvalid code...",
-                "success": "§eAuth §8§l» §r§7Authenticated successfully!"
-            }
+            "expired": "§eAuth §8§l» §r§cThe code expired...",
+            "invalid": "§eAuth §8§l» §r§cInvalid code...",
+            "success": "§eAuth §8§l» §r§7Authenticated successfully!"
         }
     },
     "tntrun": {
@@ -3740,8 +3685,8 @@
             "title": "§8Teleport to Player",
             "no_players": "{prefix}§cThere are no alive players to teleport to...",
             "team_icon": "{team} §7({count})",
-            "team_player_head": "{team} §8- §f{player}{n}§7Health: §c{hp}❤{n}§eClick to teleport",
-            "player_head": "§a{player}{n}§7Health: §c{hp}❤{n}§eClick to teleport",
+            "team_player_head": "{team} §8- §f{player}{n}§7Health: §c{hp} HP{n}§eClick to teleport",
+            "player_head": "§a{player}{n}§7Health: §c{hp} HP{n}§eClick to teleport",
             "player_unavailable": "{prefix}§cThat player is no longer available..."
         },
         "teleported": "{prefix}§aTeleported to §e{player}§a!"
@@ -3772,6 +3717,67 @@
             "cheststealer": "Chest Stealer"
         }
     },
+    "pearl": {
+        "_prefix": "",
+        "blocked": "§cThere is no safe space to teleport there!"
+    },
+    "friends": {
+        "accept": {
+            "_prefix": "§cSystem §8§l» §r",
+            "none": "§cYou have no pending friend requests...",
+            "notify": "§b{friend} §7accepted your friend request!",
+            "success": "§7You and §b{friend} §7are now friends!"
+        },
+        "add": {
+            "_prefix": "§cSystem §8§l» §r",
+            "already": "§cYou are already friends with §b{target}§c...",
+            "expired": "§cThe friend request from §b{sender} §cexpired...",
+            "limit": "§cYou have reached your friend limit ({max})!",
+            "pending": "§cThis player already has a pending friend request...",
+            "request": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §bFriend Request §8===-=-=-{n}§cSystem §8§l» §r§b{sender} §7sent you a friend request...{n}§cSystem §8§l» §r§7Use §a/friend aceitar §7to accept or §c/friend recusar §7to decline",
+            "self": "§cYou cannot add yourself as a friend...",
+            "sent": "§7Friend request sent to §b{target}§7!",
+            "target_limit": "§cThis player has already reached their friend limit!",
+            "usage": "§cUse §8/§c{label} add §8<§cplayer§8>"
+        },
+        "deny": {
+            "_prefix": "§cSystem §8§l» §r",
+            "none": "§cYou have no pending friend requests...",
+            "notify": "§b{target} §7declined your friend request...",
+            "success": "§7Friend request declined successfully!"
+        },
+        "friend": {
+            "_prefix": "§cSystem §8§l» §r",
+            "joined": "§7Your friend §b{friend} §7joined the server!",
+            "left": "§7Your friend §b{friend} §cleft §7the server..."
+        },
+        "list": {
+            "_prefix": "",
+            "entry": "§cSystem §8§l» §r{status} §b{friend} §8| §7Since§8:§b {date} §8(§7{dateSince} ago§8){n}§cSystem §8§l» §r§7You call§8:§b {nicknameGiven} §8| §7Calls you§8:§b {nicknameReceived}",
+            "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §bFriends §8(§7{count}§8/§7{max}§8) §8[§7Page {page}/{maxPages}§8] ===-=-=-=-",
+            "no_nickname": "§7No nickname...§r",
+            "none": "§cSystem §8§l» §r§cYou do not have any friends yet...",
+            "offline": "§c*",
+            "online": "§a*"
+        },
+        "nick": {
+            "_prefix": "§cSystem §8§l» §r",
+            "success": "§7Nickname of §b{friend} §7set to '§b{nickname}§7' successfully!",
+            "usage": "§cUse §8/§c{label} nick §8<§cfriend§8> <§cnickname§8>"
+        },
+        "remove": {
+            "_prefix": "§cSystem §8§l» §r",
+            "all_success": "§7All of your friends have been removed!",
+            "invalid": "§cInvalid player or not on your friends list...",
+            "none": "§cYou do not have any friends...",
+            "notify": "§b{friend} §7removed you from their friends list...",
+            "success": "§7You removed §b{friend} §7from your friends list...",
+            "usage": "§cUse §8/§c{label} remover §8<§cplayer§8|§c*§8>",
+            "confirm": "§cAre you sure you want to remove §b{friend} §cfrom your friends list? Type §8/§c{command} confirm §cto confirm",
+            "confirm_all": "§cAre you sure you want to remove ALL your friends? Type §8/§c{command} confirm §cto confirm"
+        },
+        "usage": "§cSystem §8§l» §r§cUse §8/§c{label} §8<§cadd§8|§caceitar§8|§crecusar§8|§cremover§8|§clistar§8|§cnick§8>"
+    },
     "staffchat": {
         "discord_format": "§9Staff§fChat §8(§bDiscord§8) §8§l» §r§f{player}§8:§7 {message}"
     },
@@ -3791,12 +3797,12 @@
         "menu": {
             "_prefix": "",
             "title": "§6Survival §8§l» §r§dEnchant",
-            "applied": "§a✔ Already applied to this tool",
-            "incompatible": "§c✖ Incompatible with this tool type",
+            "applied": "§aAlready applied to this tool",
+            "incompatible": "§cIncompatible with this tool type",
             "cost": "§7Cost§8: §e{cost} Akunas",
             "cost_with_tax": "{n}§7With tax§8: §e{total} Akunas",
             "click_to_apply": "{n}{n}§eClick to apply!",
-            "entry": "{color}§l{name} {level}{n}§7{desc}{n}{n}{status}"
+            "entry": "{color}§l{name} {level}§r{n}§7{desc}{n}{n}{status}"
         },
         "items": {
             "_prefix": "",
@@ -4036,8 +4042,8 @@
             "title": "§3Feedback §8§l» §r§7Rate the Server",
             "public_title": "§3Feedback §8§l» §r§7Public Reviews",
             "my_title": "§3Feedback §8§l» §r§7My Reviews",
-            "summary": "§3Server Reviews\n§7Average§8: §e{average} *\n§7Public total§8: §3{total}",
-            "star_item": "{color}{rating} Star(s)\n{stars}\n{note}",
+            "summary": "§3Server Reviews\n§7Average§8: §e{average} *\n§7Total public§8: §3{total}\n\n§eClick a wool (1* to 5*) below\n§7or use §8/§7feedback §8<§71-5§8> [§7comment§8]",
+            "star_item": "{color}{rating} Star(s)\n{stars}\n{note}\n\n§eClick to rate",
             "comment_required": "§cComment required",
             "comment_optional": "§aComment optional",
             "public_btn": "§3Public Reviews\n§7Click to view §8(§3{total}§8)",
