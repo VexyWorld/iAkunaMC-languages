@@ -1509,7 +1509,7 @@
         "hackers": "§7发现作弊者？使用 §8/§creport §8<§c名字§8> <§c原因§8> §7进行举报！",
         "lang": "§7想用其他语言游玩吗？随时使用 §8/§clang 切换您的语言",
         "launch": "§7§ciAkunaMC §7自2022年2月以来一直在成长，感谢您在此游玩！",
-        "marry": "§7您可以与其他玩家结婚并获得他们25%的XP！使用 §8/§7marry",
+        "marry": "§7你可以与其他玩家结婚，在线时获得其经验收益的 §950%§7（离线时获得 §910%§7）！使用 §8/§7marry",
         "missions": "§7完成每日任务获得丰厚奖励！使用 §8/§c任务 §7查看所有可用任务",
         "nopromote": "§7不要在聊天或私信中宣传§c其他服务器§7，否则将被§c封禁§7！",
         "nosamepass": "§7不要在其他服务器使用相同密码！使用 §8/§cpin §7保护您的账户！",
@@ -3538,8 +3538,8 @@
     },
     "online_reward": {
         "_prefix": "§b在线奖励 §8§l» §r",
-        "both": "§7由于您游玩了 §b{minutes}m§7，获得了 §a+{akunas} Akunas §7和 §9+{xp} XP§7！",
-        "akunas_only": "§7由于您游玩了 §b{minutes}m§7，获得了 §a+{akunas} Akunas§7！",
+        "both": "§7由于您游玩了 §b{minutes}m§7，获得了 §c+{akunas} Akunas §7和 §9+{xp} XP§7！",
+        "akunas_only": "§7由于您游玩了 §b{minutes}m§7，获得了 §c+{akunas} Akunas§7！",
         "xp_only": "§7由于您游玩了 §b{minutes}m§7，获得了 §9+{xp} XP§7！"
     },
     "angel": {
@@ -3754,7 +3754,11 @@
     "spectate": {
         "_prefix": "§9观战 §8§l» §r",
         "_noprefix": [
-            "item"
+            "item",
+            "menu.title",
+            "menu.team_icon",
+            "menu.team_player_head",
+            "menu.player_head"
         ],
         "command": {
             "usage": "§c使用 §8/§cassistir §8<§c玩家§8|§cleave§8>"
@@ -3782,13 +3786,13 @@
         },
         "menu": {
             "title": "§8传送至玩家",
-            "no_players": "{prefix}§c当前没有可传送的存活玩家...",
+            "no_players": "§c当前没有可传送的存活玩家...",
             "team_icon": "{team} §7({count})",
             "team_player_head": "{team} §8- §f{player}{n}§7生命值: §c{hp} HP{n}§e点击传送",
             "player_head": "§a{player}{n}§7生命值: §c{hp} HP{n}§e点击传送",
-            "player_unavailable": "{prefix}§c该玩家已不可用..."
+            "player_unavailable": "§c该玩家已不可用..."
         },
-        "teleported": "{prefix}§a已传送至 §e{player}§a!"
+        "teleported": "§a已传送至 §e{player}§a!"
     },
     "cooldown": {
         "_noprefix": [

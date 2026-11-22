@@ -1509,7 +1509,7 @@
         "hackers": "§7رأيت هاكر؟ استخدم §8/§creport §8<§cالاسم§8> <§cالسبب§8> §7للإبلاغ عنه!",
         "lang": "§7هل تفضل اللعب بلغة أخرى؟ غيّر لغتك في أي وقت باستخدام §8/§clang",
         "launch": "§7§ciAkunaMC §7موجودة منذ فبراير 2022 وتستمر في النمو بفضلك! شكرًا للعبك هنا!",
-        "marry": "§7يمكنك الزواج من لاعبين آخرين والحصول على 25% من خبرتهم! استخدم §8/§7marry",
+        "marry": "§7يمكنك الزواج من لاعبين آخرين وكسب §950% §7من نقاط خبرتهم أثناء اتصالك (و §910% §7عند عدم الاتصال)! استخدم §8/§7marry",
         "missions": "§7أكمل المهام اليومية لتربح مكافآت رائعة! استخدم §8/§cmissões §7لرؤية كل المهام المتاحة",
         "nopromote": "§7لا تروج §cلخوادم في الدردشة أو التيل§7، فهذا سيعرضك لـ§cالحظر§7!",
         "nosamepass": "§7لا تستخدم نفس كلمة المرور في خوادم أخرى! قد يخترق المخادعون حسابك... يمكنك استخدام §8/§cpin §7لحماية حسابك!",
@@ -3538,8 +3538,8 @@
     },
     "online_reward": {
         "_prefix": "§bالنشاط §8§l» §r",
-        "both": "§7للعبك لمدة §b{minutes}m§7، حصلت على §a+{akunas} Akunas §7و §9+{xp} XP§7!",
-        "akunas_only": "§7للعبك لمدة §b{minutes}m§7، حصلت على §a+{akunas} Akunas§7!",
+        "both": "§7للعبك لمدة §b{minutes}m§7، حصلت على §c+{akunas} Akunas §7و §9+{xp} XP§7!",
+        "akunas_only": "§7للعبك لمدة §b{minutes}m§7، حصلت على §c+{akunas} Akunas§7!",
         "xp_only": "§7للعبك لمدة §b{minutes}m§7، حصلت على §9+{xp} XP§7!"
     },
     "angel": {
@@ -3754,7 +3754,11 @@
     "spectate": {
         "_prefix": "§9مشاهدة §8§l» §r",
         "_noprefix": [
-            "item"
+            "item",
+            "menu.title",
+            "menu.team_icon",
+            "menu.team_player_head",
+            "menu.player_head"
         ],
         "command": {
             "usage": "§cاستخدم §8/§cassistir §8<§cلاعب§8|§cleave§8>"
@@ -3782,13 +3786,13 @@
         },
         "menu": {
             "title": "§8الانتقال إلى لاعب",
-            "no_players": "{prefix}§cلا يوجد لاعبون أحياء للانتقال إليهم...",
+            "no_players": "§cلا يوجد لاعبون أحياء للانتقال إليهم...",
             "team_icon": "{team} §7({count})",
             "team_player_head": "{team} §8- §f{player}{n}§7الصحة: §c{hp} HP{n}§eانقر للانتقال",
             "player_head": "§a{player}{n}§7الصحة: §c{hp} HP{n}§eانقر للانتقال",
-            "player_unavailable": "{prefix}§cهذا اللاعب لم يعد متاحاً..."
+            "player_unavailable": "§cهذا اللاعب لم يعد متاحاً..."
         },
-        "teleported": "{prefix}§aتم الانتقال إلى §e{player}§a!"
+        "teleported": "§aتم الانتقال إلى §e{player}§a!"
     },
     "cooldown": {
         "_noprefix": [

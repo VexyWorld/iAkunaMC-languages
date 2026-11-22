@@ -1509,7 +1509,7 @@
         "hackers": "§7チーターを見かけましたか？§8/§creport §8<§c名前§8> <§c理由§8> §7で報告してください！",
         "lang": "§7別の言語でプレイしたいですか？ §8/§clang でいつでも言語を変更できます",
         "launch": "§7§ciAkunaMC §7は2022年2月から成長し続けています。ここでプレイしてくれてありがとう！",
-        "marry": "§7他のプレイヤーと結婚してXPの25%を獲得できます！§8/§7marry を使用してください",
+        "marry": "§7他のプレイヤーと結婚すると、オンライン時は獲得XPの§950%§7（オフライン時は§910%§7）を受け取れます! §8/§7marry を使用してください",
         "missions": "§7毎日ミッションをクリアして素晴らしいボーナスを獲得！§8/§cミッション §7で確認できます",
         "nopromote": "§7チャットやテルで§c他のサーバーを宣伝§7しないでください。§cBANされます§7！",
         "nosamepass": "§7他のサーバーで同じパスワードを使わないでください！§8/§cpin §7でアカウントを保護できます！",
@@ -3538,8 +3538,8 @@
     },
     "online_reward": {
         "_prefix": "§bアクティビティ §8§l» §r",
-        "both": "§b{minutes}m §7プレイした報酬として §a+{akunas} Akunas §7と §9+{xp} XP §7を獲得しました！",
-        "akunas_only": "§b{minutes}m §7プレイした報酬として §a+{akunas} Akunas §7を獲得しました！",
+        "both": "§b{minutes}m §7プレイした報酬として §c+{akunas} Akunas §7と §9+{xp} XP §7を獲得しました！",
+        "akunas_only": "§b{minutes}m §7プレイした報酬として §c+{akunas} Akunas §7を獲得しました！",
         "xp_only": "§b{minutes}m §7プレイした報酬として §9+{xp} XP §7を獲得しました！"
     },
     "angel": {
@@ -3754,7 +3754,11 @@
     "spectate": {
         "_prefix": "§9観戦 §8§l» §r",
         "_noprefix": [
-            "item"
+            "item",
+            "menu.title",
+            "menu.team_icon",
+            "menu.team_player_head",
+            "menu.player_head"
         ],
         "command": {
             "usage": "§c§8/§cassistir §8<§cプレイヤー§8|§cleave§8> を使用してください"
@@ -3782,13 +3786,13 @@
         },
         "menu": {
             "title": "§8プレイヤーへテレポート",
-            "no_players": "{prefix}§cテレポートできる生存プレイヤーがいません...",
+            "no_players": "§cテレポートできる生存プレイヤーがいません...",
             "team_icon": "{team} §7({count})",
             "team_player_head": "{team} §8- §f{player}{n}§7体力: §c{hp} HP{n}§eクリックしてテレポート",
             "player_head": "§a{player}{n}§7体力: §c{hp} HP{n}§eクリックしてテレポート",
-            "player_unavailable": "{prefix}§cそのプレイヤーは現在利用できません..."
+            "player_unavailable": "§cそのプレイヤーは現在利用できません..."
         },
-        "teleported": "{prefix}§e{player} §aにテレポートしました!"
+        "teleported": "§e{player} §aにテレポートしました!"
     },
     "cooldown": {
         "_noprefix": [

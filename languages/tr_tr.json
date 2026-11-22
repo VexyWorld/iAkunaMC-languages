@@ -1509,7 +1509,7 @@
         "hackers": "§7Bir hileci mi gördün? §8/§creport §8<§cisim§8> <§csebep§8> §7kullanarak bildir!",
         "lang": "§7Başka bir dilde oynamayı mı tercih ediyorsun? §8/§clang kullanarak dilini istediğin zaman değiştir",
         "launch": "§7§ciAkunaMC §7Şubat 2022'den beri var ve senin sayende büyüyor! Burada oynadığın için teşekkürler!",
-        "marry": "§7Diğer oyuncularla evlenip kazandıkları XP'nin %25'ini alabilirsin! §8/§7marry kullan",
+        "marry": "§7Diğer oyuncularla evlenip çevrimiçiyken XP kazançlarının §9%50§7'sini (çevrimdışıyken §9%10§7'unu) kazanabilirsin! §8/§7marry kullan",
         "missions": "§7Harika bonuslar kazanmak için günlük görevleri tamamla! Mevcut tüm görevleri görmek için §8/§cmissões kullan",
         "nopromote": "§7Sohbette veya tell'de §csunucu tanıtımı yapma§7, bu seni §cyasaklatır§7!",
         "nosamepass": "§7Başka sunucularda aynı şifreyi kullanma! Kötü niyetli kişiler hesabını ele geçirebilir... Hesabını korumak için §8/§cpin kullanabilirsin!",
@@ -3538,8 +3538,8 @@
     },
     "online_reward": {
         "_prefix": "§bActivity §8§l» §r",
-        "both": "§7§b{minutes}dk §7oynadığın için §a+{akunas} Akunas §7ve §9+{xp} XP §7kazandın!",
-        "akunas_only": "§7§b{minutes}dk §7oynadığın için §a+{akunas} Akunas §7kazandın!",
+        "both": "§7§b{minutes}dk §7oynadığın için §c+{akunas} Akunas §7ve §9+{xp} XP §7kazandın!",
+        "akunas_only": "§7§b{minutes}dk §7oynadığın için §c+{akunas} Akunas §7kazandın!",
         "xp_only": "§7§b{minutes}dk §7oynadığın için §9+{xp} XP §7kazandın!"
     },
     "angel": {
@@ -3754,7 +3754,11 @@
     "spectate": {
         "_prefix": "§9Spectate §8§l» §r",
         "_noprefix": [
-            "item"
+            "item",
+            "menu.title",
+            "menu.team_icon",
+            "menu.team_player_head",
+            "menu.player_head"
         ],
         "command": {
             "usage": "§cKullanım: §8/§cassistir §8<§coyuncu§8|§csair§8>"
@@ -3782,13 +3786,13 @@
         },
         "menu": {
             "title": "§8Oyuncuya Işınlan",
-            "no_players": "{prefix}§cIşınlanacak hayatta oyuncu yok...",
+            "no_players": "§cIşınlanacak hayatta oyuncu yok...",
             "team_icon": "{team} §7({count})",
             "team_player_head": "{team} §8- §f{player}{n}§7Can: §c{hp} HP{n}§eIşınlanmak için tıkla",
             "player_head": "§a{player}{n}§7Can: §c{hp} HP{n}§eIşınlanmak için tıkla",
-            "player_unavailable": "{prefix}§cBu oyuncu artık müsait değil..."
+            "player_unavailable": "§cBu oyuncu artık müsait değil..."
         },
-        "teleported": "{prefix}§e{player} §aoyuncusuna ışınlandın!"
+        "teleported": "§e{player} §aoyuncusuna ışınlandın!"
     },
     "cooldown": {
         "_noprefix": [

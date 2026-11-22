@@ -1509,7 +1509,7 @@
         "hackers": "§7Saw a hacker? Use §8/§creport §8<§cname§8> <§creason§8> §7to report them!",
         "lang": "§7Prefer playing in another language? Change your language anytime using §8/§clang",
         "launch": "§7§ciAkunaMC §7has been around since February 2022 and keeps growing thanks to you! Thank you for playing here!",
-        "marry": "§7You can marry other players and get 25% of their XP earnings! Use §8/§7marry",
+        "marry": "§7You can marry other players and earn §950% §7of their XP gains while online (and §910% §7offline)! Use §8/§7marry",
         "missions": "§7Complete daily missions to earn amazing bonuses! Use §8/§cmissões §7to see all available missions",
         "nopromote": "§7Do not promote §cservers in chat or in tell§7, this will get you §cbanned§7!",
         "nosamepass": "§7Do not use the same password on other servers! Malicious people could hack your account... You can use §8/§cpin §7to protect your account!",
@@ -3538,8 +3538,8 @@
     },
     "online_reward": {
         "_prefix": "§bActivity §8§l» §r",
-        "both": "§7For playing for §b{minutes}m§7, you received §a+{akunas} Akunas §7and §9+{xp} XP§7!",
-        "akunas_only": "§7For playing for §b{minutes}m§7, you received §a+{akunas} Akunas§7!",
+        "both": "§7For playing for §b{minutes}m§7, you received §c+{akunas} Akunas §7and §9+{xp} XP§7!",
+        "akunas_only": "§7For playing for §b{minutes}m§7, you received §c+{akunas} Akunas§7!",
         "xp_only": "§7For playing for §b{minutes}m§7, you received §9+{xp} XP§7!"
     },
     "angel": {
@@ -3754,7 +3754,11 @@
     "spectate": {
         "_prefix": "§9Spectate §8§l» §r",
         "_noprefix": [
-            "item"
+            "item",
+            "menu.title",
+            "menu.team_icon",
+            "menu.team_player_head",
+            "menu.player_head"
         ],
         "command": {
             "usage": "§cUse §8/§cassistir §8<§cplayer§8|§cleave§8>"
@@ -3782,13 +3786,13 @@
         },
         "menu": {
             "title": "§8Teleport to Player",
-            "no_players": "{prefix}§cThere are no alive players to teleport to...",
+            "no_players": "§cThere are no alive players to teleport to...",
             "team_icon": "{team} §7({count})",
             "team_player_head": "{team} §8- §f{player}{n}§7Health: §c{hp} HP{n}§eClick to teleport",
             "player_head": "§a{player}{n}§7Health: §c{hp} HP{n}§eClick to teleport",
-            "player_unavailable": "{prefix}§cThat player is no longer available..."
+            "player_unavailable": "§cThat player is no longer available..."
         },
-        "teleported": "{prefix}§aTeleported to §e{player}§a!"
+        "teleported": "§aTeleported to §e{player}§a!"
     },
     "cooldown": {
         "_noprefix": [

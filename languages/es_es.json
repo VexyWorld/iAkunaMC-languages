@@ -1510,7 +1510,7 @@
         "hackers": "§7¿Viste un hacker? ¡Usa §8/§creport §8<§cnombre§8> <§crazón§8> §7para denunciarlo!",
         "lang": "§7¿Prefieres jugar en otro idioma? Cambia tu idioma en cualquier momento usando §8/§clang",
         "launch": "§7¡§ciAkunaMC §7existe desde febrero de 2022 y sigue creciendo gracias a ti! ¡Gracias por jugar aquí!",
-        "marry": "§7¡Puedes casarte con otros jugadores y conseguir el 25% de sus ganancias de XP! Usa §8/§7marry",
+        "marry": "§7¡Puedes casarte con otros jugadores y ganar §950% §7de sus ganancias de XP en línea (y §910% §7desconectado)! Usa §8/§7marry",
         "missions": "§7¡Completa misiones diarias para ganar bonificaciones increíbles! Usa §8/§cmissões §7para ver todas las misiones disponibles",
         "nopromote": "§7¡No divulgues §cservidores en el chat o en el tell§7, esto va a hacer que seas §csancionado(a)§7!",
         "nosamepass": "§7¡No uses la misma contraseña en otros servidores! Gente maliciosa podría hackear tu cuenta... ¡Puedes usar §8/§cpin §7para proteger tu cuenta!",
@@ -3539,8 +3539,8 @@
     },
     "online_reward": {
         "_prefix": "§bActivity §8§l» §r",
-        "both": "§7¡Por jugar durante §b{minutes}m§7, recibiste §a+{akunas} Akunas §7y §9+{xp} XP§7!",
-        "akunas_only": "§7¡Por jugar durante §b{minutes}m§7, recibiste §a+{akunas} Akunas§7!",
+        "both": "§7¡Por jugar durante §b{minutes}m§7, recibiste §c+{akunas} Akunas §7y §9+{xp} XP§7!",
+        "akunas_only": "§7¡Por jugar durante §b{minutes}m§7, recibiste §c+{akunas} Akunas§7!",
         "xp_only": "§7¡Por jugar durante §b{minutes}m§7, recibiste §9+{xp} XP§7!"
     },
     "angel": {
@@ -3755,7 +3755,11 @@
     "spectate": {
         "_prefix": "§9Spectate §8§l» §r",
         "_noprefix": [
-            "item"
+            "item",
+            "menu.title",
+            "menu.team_icon",
+            "menu.team_player_head",
+            "menu.player_head"
         ],
         "command": {
             "usage": "§cUsa §8/§cassistir §8<§cjugador§8|§csair§8>"
@@ -3783,13 +3787,13 @@
         },
         "menu": {
             "title": "§8Teletransportar a Jugador",
-            "no_players": "{prefix}§cNo hay jugadores vivos para teletransportarse...",
+            "no_players": "§cNo hay jugadores vivos para teletransportarse...",
             "team_icon": "{team} §7({count})",
             "team_player_head": "{team} §8- §f{player}{n}§7Vida: §c{hp} HP{n}§eHaz clic para teletransportarte",
             "player_head": "§a{player}{n}§7Vida: §c{hp} HP{n}§eHaz clic para teletransportarte",
-            "player_unavailable": "{prefix}§cEse jugador ya no está disponible..."
+            "player_unavailable": "§cEse jugador ya no está disponible..."
         },
-        "teleported": "{prefix}§a¡Teletransportado a §e{player}§a!"
+        "teleported": "§a¡Teletransportado a §e{player}§a!"
     },
     "cooldown": {
         "_noprefix": [

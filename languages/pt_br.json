@@ -1509,7 +1509,7 @@
         "hackers": "§7Viu um hacker? Utilize §8/§creport §8<§cnome§8> <§cmotivo§8> §7para denúncia-lo!",
         "lang": "§7Prefere jogar em outro idioma? Altere seu idioma a qualquer momento usando §8/§clang",
         "launch": "§7A §ciAkunaMC §7existe desde fevereiro de 2022 e segue crescendo graças a você! Obrigado por jogar aqui!",
-        "marry": "§7Você pode se casar com outros jogadores e conseguir 25% dos ganhos de XP deles! Utilize §8/§7marry",
+        "marry": "§7Você pode se casar com outros jogadores e ganhar §950% §7dos ganhos de XP deles online (e §910% §7offline)! Utilize §8/§7marry",
         "missions": "§7Complete missões diárias para ganhar bônus incríveis! Utilize §8/§cmissões §7para ver todas as missões disponíveis",
         "nopromote": "§7Não divulgue §cservidores no chat ou no tell§7, isso fará você ser §cbanido(a)§7!",
         "nosamepass": "§7Não utilize a mesma senha em outros servidores! Pessoas maliciosas podem invadir sua conta... Você pode usar §8/§cpin §7para proteger sua conta!",
@@ -3538,8 +3538,8 @@
     },
     "online_reward": {
         "_prefix": "§bAtividade §8§l» §r",
-        "both": "§7Por jogar por §b{minutes}m§7, você recebeu §a+{akunas} Akunas §7e §9+{xp} XP§7!",
-        "akunas_only": "§7Por jogar por §b{minutes}m§7, você recebeu §a+{akunas} Akunas§7!",
+        "both": "§7Por jogar por §b{minutes}m§7, você recebeu §c+{akunas} Akunas §7e §9+{xp} XP§7!",
+        "akunas_only": "§7Por jogar por §b{minutes}m§7, você recebeu §c+{akunas} Akunas§7!",
         "xp_only": "§7Por jogar por §b{minutes}m§7, você recebeu §9+{xp} XP§7!"
     },
     "angel": {
@@ -3754,7 +3754,11 @@
     "spectate": {
         "_prefix": "§9Assistir §8§l» §r",
         "_noprefix": [
-            "item"
+            "item",
+            "menu.title",
+            "menu.team_icon",
+            "menu.team_player_head",
+            "menu.player_head"
         ],
         "command": {
             "usage": "§cUtilize §8/§cassistir §8<§cjogador§8|§csair§8>"
@@ -3782,13 +3786,13 @@
         },
         "menu": {
             "title": "§8Teleportar para Jogador",
-            "no_players": "{prefix}§cNão há jogadores vivos para teleportar...",
+            "no_players": "§cNão há jogadores vivos para teleportar...",
             "team_icon": "{team} §7({count})",
             "team_player_head": "{team} §8- §f{player}{n}§7Vida: §c{hp} HP{n}§eClique para teleportar",
             "player_head": "§a{player}{n}§7Vida: §c{hp} HP{n}§eClique para teleportar",
-            "player_unavailable": "{prefix}§cEsse jogador não está mais disponível..."
+            "player_unavailable": "§cEsse jogador não está mais disponível..."
         },
-        "teleported": "{prefix}§aTeleportado para §e{player}§a!"
+        "teleported": "§aTeleportado para §e{player}§a!"
     },
     "cooldown": {
         "_noprefix": [
