@@ -1258,7 +1258,8 @@
                     "bot": "مبارزة ضد البوت",
                     "leave": "مغادرة الطابور أو المبارزة"
                 }
-            }
+            },
+            "player_only": "§cيمكن للاعبين فقط استخدام هذا الأمر..."
         },
         "status": {
             "_prefix": "§2المبارزات §8§l» §r",
@@ -1646,7 +1647,8 @@
         },
         "delete": {
             "error": "§cخطأ في حذف الكلان!",
-            "success": "§7تم حذف الكلان بنجاح!"
+            "success": "§7تم حذف الكلان بنجاح!",
+            "confirm": "§cهل أنت متأكد من حذف الكلان §6{clan}§c؟ اكتب §8/§c{label} delete confirm §cللتأكيد"
         },
         "demote": {
             "broadcast": "§e{player} §7تم تخفيض رتبته إلى عضو!",
@@ -1707,7 +1709,8 @@
             "broadcast": "§e{player} §7غادر الكلان...",
             "error": "§cخطأ في مغادرة الكلان...",
             "owner": "§cلا يمكن للمالك مغادرة الكلان...",
-            "success": "§7غادرت الكلان بنجاح!"
+            "success": "§7غادرت الكلان بنجاح!",
+            "confirm": "§cهل أنت متأكد من مغادرة الكلان §6{clan}§c؟ اكتب §8/§c{label} leave confirm §cللتأكيد"
         },
         "level_up": "§7رفع الكلان مستواه إلى §e{newLevel}§7!",
         "not_found": "§cهذا الكلان غير موجود...",
@@ -1988,7 +1991,9 @@
             "none": "§cأنت لست متزوجًا...",
             "notify": "§c{partner} §7طلقك...",
             "specify": "§cاستخدم §8/§c{label} divorce §8<§cلاعب§8|§c*§8>",
-            "success": "§7طلقت §c{partner}§7..."
+            "success": "§7طلقت §c{partner}§7...",
+            "confirm": "§cهل أنت متأكد من الطلاق من §c{partner}§c؟ اكتب §8/§c{command} confirm §cللتأكيد",
+            "confirm_all": "§cهل أنت متأكد من الطلاق من جميع شركائك؟ اكتب §8/§c{command} confirm §cللتأكيد"
         },
         "info": {
             "entry": "§cالنظام §8§l» §r §7الشريك§8:§d {partner} §8| §7منذ§8:§d {date} §8(§7منذ §d{dateSince}§8){n}§cالنظام §8§l» §r §7لقبه§8:§d {nicknameGiven} §8| §7لقبك§8:§d {nicknameReceived}",
@@ -3200,12 +3205,15 @@
         },
         "link": {
             "bot_command": "§7انضم إلى خادم Discord الخاص بنا §8(§9https://discord.iakunamc.com§8)§7، اذهب إلى دردشة الأوامر واستخدم §8/§7ربط {code}",
-            "expires": "§7ينتهي الرمز خلال 5 دقائق..."
+            "expires": "§7ينتهي الرمز خلال 5 دقائق...",
+            "already": "§cحسابك مرتبط بالفعل بـ Discord..."
         },
         "unlink": {
             "success": "§7تم إلغاء ربط حسابك بنجاح...",
-            "not_linked": "§cحسابك غير مرتبط..."
-        }
+            "not_linked": "§cحسابك غير مرتبط...",
+            "confirm": "§cهل أنت متأكد من إلغاء ربط حساب Discord؟ اكتب §8/§c{label} {action} confirm §cللتأكيد"
+        },
+        "usage": "§cاستخدم §8/§c{label} §8<§clink§8|§cunlink§8>"
     },
     "email": {
         "usage": "§bEmail §8§l» §r§cاستخدم §8/§c{label} §8<§clink§8|§cverify§8|§cunlink§8|§c2fa§8>",
@@ -3224,7 +3232,8 @@
         },
         "unlink": {
             "not_linked": "§bEmail §8§l» §r§cليس لديك بريد إلكتروني مرتبط...",
-            "success": "§bEmail §8§l» §r§7تم إلغاء ربط البريد الإلكتروني بنجاح!"
+            "success": "§bEmail §8§l» §r§7تم إلغاء ربط البريد الإلكتروني بنجاح!",
+            "confirm": "§bEmail §8§l» §r§cهل أنت متأكد من إلغاء ربط البريد الإلكتروني؟ اكتب §8/§c{label} {action} confirm §cللتأكيد"
         },
         "2fa": {
             "no_email": "§bEmail §8§l» §r§cيجب عليك ربط بريد إلكتروني أولاً...",
@@ -3250,11 +3259,9 @@
             "code": {
                 "usage": "§eAuth §8§l» §r§cاستخدم §8/§c{label} §8<§cالرمز§8>"
             },
-            "email": {
-                "expired": "§eAuth §8§l» §r§cانتهت صلاحية الرمز...",
-                "invalid": "§eAuth §8§l» §r§cرمز غير صالح...",
-                "success": "§eAuth §8§l» §r§7تم التحقق بنجاح!"
-            }
+            "expired": "§eAuth §8§l» §r§cانتهت صلاحية الرمز...",
+            "invalid": "§eAuth §8§l» §r§cرمز غير صالح...",
+            "success": "§eAuth §8§l» §r§7تم التحقق بنجاح!"
         }
     },
     "tntrun": {
@@ -3470,8 +3477,8 @@
             "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §bالأصدقاء §8(§7{count}§8/§7{max}§8) §8[§7صفحة {page}/{maxPages}§8] ===-=-=-=-",
             "no_nickname": "§7لا يوجد لقب...§r",
             "none": "§cالنظام §8§l» §r§cليس لديك أي أصدقاء بعد...",
-            "offline": "§c●",
-            "online": "§a●"
+            "offline": "§c*",
+            "online": "§a*"
         },
         "nick": {
             "_prefix": "§cالنظام §8§l» §r",
@@ -3485,7 +3492,9 @@
             "none": "§cليس لديك أي أصدقاء...",
             "notify": "§b{friend} §7أزالك من قائمة أصدقائه...",
             "success": "§7لقد أزلت §b{friend} §7من قائمة أصدقائك...",
-            "usage": "§cاستخدم §8/§c{label} remover §8<§cلاعب§8|§c*§8>"
+            "usage": "§cاستخدم §8/§c{label} remover §8<§cلاعب§8|§c*§8>",
+            "confirm": "§cهل أنت متأكد من إزالة §b{friend} §cمن قائمة الأصدقاء؟ اكتب §8/§c{command} confirm §cللتأكيد",
+            "confirm_all": "§cهل أنت متأكد من إزالة جميع أصدقائك؟ اكتب §8/§c{command} confirm §cللتأكيد"
         },
         "usage": "§cالنظام §8§l» §r§cاستخدم §8/§c{label} §8<§cadd§8|§caceitar§8|§crecusar§8|§cremover§8|§clistar§8|§cnick§8>"
     },
@@ -3737,8 +3746,8 @@
             "title": "§8الانتقال إلى لاعب",
             "no_players": "{prefix}§cلا يوجد لاعبون أحياء للانتقال إليهم...",
             "team_icon": "{team} §7({count})",
-            "team_player_head": "{team} §8- §f{player}{n}§7الصحة: §c{hp}❤{n}§eانقر للانتقال",
-            "player_head": "§a{player}{n}§7الصحة: §c{hp}❤{n}§eانقر للانتقال",
+            "team_player_head": "{team} §8- §f{player}{n}§7الصحة: §c{hp} HP{n}§eانقر للانتقال",
+            "player_head": "§a{player}{n}§7الصحة: §c{hp} HP{n}§eانقر للانتقال",
             "player_unavailable": "{prefix}§cهذا اللاعب لم يعد متاحاً..."
         },
         "teleported": "{prefix}§aتم الانتقال إلى §e{player}§a!"
@@ -3788,8 +3797,8 @@
         "menu": {
             "_prefix": "",
             "title": "§6Survival §8§l» §r§dالتطوير",
-            "applied": "§a✔ مطبق بالفعل",
-            "incompatible": "§c✖ غير متوافق مع هذه الأداة",
+            "applied": "§aمطبق بالفعل",
+            "incompatible": "§cغير متوافق مع هذه الأداة",
             "cost": "§7التكلفة§8: §e{cost} Akunas",
             "cost_with_tax": "{n}§7مع الضريبة§8: §e{total} Akunas",
             "click_to_apply": "{n}{n}§eاضغط للتطبيق!",
@@ -4033,8 +4042,8 @@
             "title": "§3Feedback §8§l» §r§7Rate the Server",
             "public_title": "§3Feedback §8§l» §r§7Public Reviews",
             "my_title": "§3Feedback §8§l» §r§7My Reviews",
-            "summary": "§3Server Reviews\n§7Average§8: §e{average} *\n§7Public total§8: §3{total}",
-            "star_item": "{color}{rating} Star(s)\n{stars}\n{note}",
+            "summary": "§3تقييمات السيرفر\n§7المتوسط§8: §e{average} *\n§7الإجمالي العام§8: §3{total}\n\n§eانقر على تقييم (1*-5*) بالأسفل\n§7أو استخدم §8/§7feedback §8<§71-5§8> [§7تعليق§8]",
+            "star_item": "{color}{rating} نجمة\n{stars}\n{note}\n\n§eانقر للتقييم",
             "comment_required": "§cComment required",
             "comment_optional": "§aComment optional",
             "public_btn": "§3Public Reviews\n§7Click to view §8(§3{total}§8)",

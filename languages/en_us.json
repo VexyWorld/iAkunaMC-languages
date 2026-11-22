@@ -1258,7 +1258,8 @@
                     "bot": "Duel against a Bot"
                 }
             },
-            "party_size_team": "§cFor {format} duels, your party needs up to {team_size} player(s) for the queue or exactly {private_size} for a private duel..."
+            "party_size_team": "§cFor {format} duels, your party needs up to {team_size} player(s) for the queue or exactly {private_size} for a private duel...",
+            "player_only": "§cOnly players can use this command..."
         },
         "status": {
             "_prefix": "§2Duels §8§l» §r",
@@ -1740,7 +1741,8 @@
         },
         "delete": {
             "error": "§cError deleting clan!",
-            "success": "§7Clan deleted successfully!"
+            "success": "§7Clan deleted successfully!",
+            "confirm": "§cAre you sure you want to delete clan §6{clan}§c? Type §8/§c{label} delete confirm §cto confirm"
         },
         "demote": {
             "broadcast": "§e{player} §7was demoted to member!",
@@ -1801,7 +1803,8 @@
             "broadcast": "§e{player} §7left the clan...",
             "error": "§cError leaving clan...",
             "owner": "§cThe owner cannot leave the clan...",
-            "success": "§7You left the clan successfully!"
+            "success": "§7You left the clan successfully!",
+            "confirm": "§cAre you sure you want to leave clan §6{clan}§c? Type §8/§c{label} leave confirm §cto confirm"
         },
         "level_up": "§7The clan leveled up to level §e{newLevel}§7!",
         "not_found": "§cThat clan doesn't exist...",
@@ -2082,7 +2085,9 @@
             "none": "§cYou are not married...",
             "notify": "§c{partner} §7divorced you...",
             "specify": "§cUse §8/§c{label} divorce §8<§cplayer§8|§c*§8>",
-            "success": "§7You divorced §c{partner}§7..."
+            "success": "§7You divorced §c{partner}§7...",
+            "confirm": "§cAre you sure you want to divorce §c{partner}§c? Type §8/§c{command} confirm §cto confirm",
+            "confirm_all": "§cAre you sure you want to divorce ALL your partners? Type §8/§c{command} confirm §cto confirm"
         },
         "info": {
             "entry": "§cSystem §8§l» §r§7Partner§8:§d {partner} §8| §7Since§8:§d {date} §8(§7§d{dateSince} ago§8){n}§cSystem §8§l» §r§7You call§8:§d {nicknameGiven} §8| §7Calls you§8:§d {nicknameReceived}",
@@ -3294,12 +3299,15 @@
         },
         "link": {
             "bot_command": "§7Join our Discord server §8(§9https://discord.iakunamc.com§8)§7, go to the commands chat and use §8/§7link {code}",
-            "expires": "§7The code expires in 5 minutes..."
+            "expires": "§7The code expires in 5 minutes...",
+            "already": "§cYour account is already linked to Discord..."
         },
         "unlink": {
             "success": "§7Your account has been unlinked successfully...",
-            "not_linked": "§cYour account is not linked..."
-        }
+            "not_linked": "§cYour account is not linked...",
+            "confirm": "§cAre you sure you want to unlink your Discord account? Type §8/§c{label} {action} confirm §cto confirm"
+        },
+        "usage": "§cUse §8/§c{label} §8<§clink§8|§cunlink§8>"
     },
     "email": {
         "usage": "§bEmail §8§l» §r§cUse §8/§c{label} §8<§clink§8|§cverify§8|§cunlink§8|§c2fa§8>",
@@ -3318,7 +3326,8 @@
         },
         "unlink": {
             "not_linked": "§bEmail §8§l» §r§cYou don't have an email linked...",
-            "success": "§bEmail §8§l» §r§7Email unlinked successfully!"
+            "success": "§bEmail §8§l» §r§7Email unlinked successfully!",
+            "confirm": "§bEmail §8§l» §r§cAre you sure you want to unlink your email? Type §8/§c{label} {action} confirm §cto confirm"
         },
         "2fa": {
             "no_email": "§bEmail §8§l» §r§cYou need to link an email first...",
@@ -3344,11 +3353,9 @@
             "code": {
                 "usage": "§eAuth §8§l» §r§cUse §8/§c{label} §8<§ccode§8>"
             },
-            "email": {
-                "expired": "§eAuth §8§l» §r§cThe code expired...",
-                "invalid": "§eAuth §8§l» §r§cInvalid code...",
-                "success": "§eAuth §8§l» §r§7Authenticated successfully!"
-            }
+            "expired": "§eAuth §8§l» §r§cThe code expired...",
+            "invalid": "§eAuth §8§l» §r§cInvalid code...",
+            "success": "§eAuth §8§l» §r§7Authenticated successfully!"
         }
     },
     "tntrun": {
@@ -3678,8 +3685,8 @@
             "title": "§8Teleport to Player",
             "no_players": "{prefix}§cThere are no alive players to teleport to...",
             "team_icon": "{team} §7({count})",
-            "team_player_head": "{team} §8- §f{player}{n}§7Health: §c{hp}❤{n}§eClick to teleport",
-            "player_head": "§a{player}{n}§7Health: §c{hp}❤{n}§eClick to teleport",
+            "team_player_head": "{team} §8- §f{player}{n}§7Health: §c{hp} HP{n}§eClick to teleport",
+            "player_head": "§a{player}{n}§7Health: §c{hp} HP{n}§eClick to teleport",
             "player_unavailable": "{prefix}§cThat player is no longer available..."
         },
         "teleported": "{prefix}§aTeleported to §e{player}§a!"
@@ -3750,8 +3757,8 @@
             "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §bFriends §8(§7{count}§8/§7{max}§8) §8[§7Page {page}/{maxPages}§8] ===-=-=-=-",
             "no_nickname": "§7No nickname...§r",
             "none": "§cSystem §8§l» §r§cYou do not have any friends yet...",
-            "offline": "§c●",
-            "online": "§a●"
+            "offline": "§c*",
+            "online": "§a*"
         },
         "nick": {
             "_prefix": "§cSystem §8§l» §r",
@@ -3765,7 +3772,9 @@
             "none": "§cYou do not have any friends...",
             "notify": "§b{friend} §7removed you from their friends list...",
             "success": "§7You removed §b{friend} §7from your friends list...",
-            "usage": "§cUse §8/§c{label} remover §8<§cplayer§8|§c*§8>"
+            "usage": "§cUse §8/§c{label} remover §8<§cplayer§8|§c*§8>",
+            "confirm": "§cAre you sure you want to remove §b{friend} §cfrom your friends list? Type §8/§c{command} confirm §cto confirm",
+            "confirm_all": "§cAre you sure you want to remove ALL your friends? Type §8/§c{command} confirm §cto confirm"
         },
         "usage": "§cSystem §8§l» §r§cUse §8/§c{label} §8<§cadd§8|§caceitar§8|§crecusar§8|§cremover§8|§clistar§8|§cnick§8>"
     },
@@ -3788,8 +3797,8 @@
         "menu": {
             "_prefix": "",
             "title": "§6Survival §8§l» §r§dEnchant",
-            "applied": "§a✔ Already applied to this tool",
-            "incompatible": "§c✖ Incompatible with this tool type",
+            "applied": "§aAlready applied to this tool",
+            "incompatible": "§cIncompatible with this tool type",
             "cost": "§7Cost§8: §e{cost} Akunas",
             "cost_with_tax": "{n}§7With tax§8: §e{total} Akunas",
             "click_to_apply": "{n}{n}§eClick to apply!",
@@ -4033,8 +4042,8 @@
             "title": "§3Feedback §8§l» §r§7Rate the Server",
             "public_title": "§3Feedback §8§l» §r§7Public Reviews",
             "my_title": "§3Feedback §8§l» §r§7My Reviews",
-            "summary": "§3Server Reviews\n§7Average§8: §e{average} *\n§7Public total§8: §3{total}",
-            "star_item": "{color}{rating} Star(s)\n{stars}\n{note}",
+            "summary": "§3Server Reviews\n§7Average§8: §e{average} *\n§7Total public§8: §3{total}\n\n§eClick a wool (1* to 5*) below\n§7or use §8/§7feedback §8<§71-5§8> [§7comment§8]",
+            "star_item": "{color}{rating} Star(s)\n{stars}\n{note}\n\n§eClick to rate",
             "comment_required": "§cComment required",
             "comment_optional": "§aComment optional",
             "public_btn": "§3Public Reviews\n§7Click to view §8(§3{total}§8)",

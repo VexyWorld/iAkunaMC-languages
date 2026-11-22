@@ -1259,7 +1259,8 @@
                     "bot": "Duelar contra un Bot",
                     "leave": "Salir de la cola o duelo"
                 }
-            }
+            },
+            "player_only": "§cSolo los jugadores pueden usar este comando..."
         },
         "status": {
             "_prefix": "§2Duelos §8§l» §r",
@@ -1647,7 +1648,8 @@
         },
         "delete": {
             "error": "§cError al eliminar clan!",
-            "success": "§7¡Clan eliminado bien!"
+            "success": "§7¡Clan eliminado bien!",
+            "confirm": "§c¿Seguro que deseas eliminar el clan §6{clan}§c? Escribe §8/§c{label} delete confirm §cpara confirmar"
         },
         "demote": {
             "broadcast": "§e{player} §7¡fue degradado(a) a miembro!",
@@ -1708,7 +1710,8 @@
             "broadcast": "§e{player} §7abandonó el clan...",
             "error": "§cError al abandonar clan...",
             "owner": "§cEl dueño no puede abandonar el clan...",
-            "success": "§7¡Abandonaste el clan bien!"
+            "success": "§7¡Abandonaste el clan bien!",
+            "confirm": "§c¿Seguro que deseas salir del clan §6{clan}§c? Escribe §8/§c{label} leave confirm §cpara confirmar"
         },
         "level_up": "§7¡El clan subió al nivel §e{newLevel}§7!",
         "not_found": "§cEse clan no existe...",
@@ -1989,7 +1992,9 @@
             "none": "§cNo estás casado(a)...",
             "notify": "§c{partner} §7se divorció de ti...",
             "specify": "§cUsa §8/§c{label} divorciar §8<§cjugador§8|§c*§8>",
-            "success": "§7Te divorciaste de §c{partner}§7..."
+            "success": "§7Te divorciaste de §c{partner}§7...",
+            "confirm": "§c¿Seguro que deseas divorciarte de §c{partner}§c? Escribe §8/§c{command} confirm §cpara confirmar",
+            "confirm_all": "§c¿Seguro que deseas divorciarte de TODAS tus parejas? Escribe §8/§c{command} confirm §cpara confirmar"
         },
         "info": {
             "entry": "§cSistema §8§l» §r§7Pareja§8:§d {partner} §8| §7Desde§8:§d {date} §8(§7Hace §d{dateSince}§8){n}§cSistema §8§l» §r§7Tú llamas§8:§d {nicknameGiven} §8| §7Te llama§8:§d {nicknameReceived}",
@@ -3201,12 +3206,15 @@
         },
         "link": {
             "bot_command": "§7Únete a nuestro servidor de Discord §8(§9https://discord.iakunamc.com§8)§7, ve al chat de comandos y usa §8/§7vincular {code}",
-            "expires": "§7El código expira en 5 minutos..."
+            "expires": "§7El código expira en 5 minutos...",
+            "already": "§cTu cuenta ya está vinculada a Discord..."
         },
         "unlink": {
             "success": "§7Tu cuenta fue desvinculada bien...",
-            "not_linked": "§cTu cuenta no está vinculada..."
-        }
+            "not_linked": "§cTu cuenta no está vinculada...",
+            "confirm": "§c¿Seguro que deseas desvincular tu cuenta de Discord? Escribe §8/§c{label} {action} confirm §cpara confirmar"
+        },
+        "usage": "§cUsa §8/§c{label} §8<§clink§8|§cunlink§8>"
     },
     "email": {
         "usage": "§bEmail §8§l» §r§cUsa §8/§c{label} §8<§clink§8|§cverify§8|§cunlink§8|§c2fa§8>",
@@ -3225,7 +3233,8 @@
         },
         "unlink": {
             "not_linked": "§bEmail §8§l» §r§cNo tienes un email vinculado...",
-            "success": "§bEmail §8§l» §r§7¡Email desvinculado bien!"
+            "success": "§bEmail §8§l» §r§7¡Email desvinculado bien!",
+            "confirm": "§bEmail §8§l» §r§c¿Seguro que deseas desvincular tu correo? Escribe §8/§c{label} {action} confirm §cpara confirmar"
         },
         "2fa": {
             "no_email": "§bEmail §8§l» §r§cNecesitas vincular un email primero...",
@@ -3251,11 +3260,9 @@
             "code": {
                 "usage": "§eAuth §8§l» §r§cUsa §8/§c{label} §8<§ccódigo§8>"
             },
-            "email": {
-                "expired": "§eAuth §8§l» §r§cEl código expiró...",
-                "invalid": "§eAuth §8§l» §r§cCódigo inválido...",
-                "success": "§eAuth §8§l» §r§7¡Autenticado bien!"
-            }
+            "expired": "§eAuth §8§l» §r§cEl código expiró...",
+            "invalid": "§eAuth §8§l» §r§cCódigo inválido...",
+            "success": "§eAuth §8§l» §r§7¡Autenticado bien!"
         }
     },
     "tntrun": {
@@ -3471,8 +3478,8 @@
             "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §bAmigos §8(§7{count}§8/§7{max}§8) §8[§7Pág. {page}/{maxPages}§8] ===-=-=-=-",
             "no_nickname": "§7Sin apodo...§r",
             "none": "§cSystem §8§l» §r§cAún no tienes ningún amigo...",
-            "offline": "§c●",
-            "online": "§a●"
+            "offline": "§c*",
+            "online": "§a*"
         },
         "nick": {
             "_prefix": "§cSystem §8§l» §r",
@@ -3486,7 +3493,9 @@
             "none": "§cNo tienes ningún amigo...",
             "notify": "§b{friend} §7te eliminó de su lista de amigos...",
             "success": "§7Eliminaste a §b{friend} §7de tu lista de amigos...",
-            "usage": "§cUsa §8/§c{label} remover §8<§cjugador§8|§c*§8>"
+            "usage": "§cUsa §8/§c{label} remover §8<§cjugador§8|§c*§8>",
+            "confirm": "§c¿Seguro que deseas eliminar a §b{friend} §cde tu lista de amigos? Escribe §8/§c{command} confirm §cpara confirmar",
+            "confirm_all": "§c¿Seguro que deseas eliminar a TODOS tus amigos? Escribe §8/§c{command} confirm §cpara confirmar"
         },
         "usage": "§cSystem §8§l» §r§cUsa §8/§c{label} §8<§cadd§8|§caceitar§8|§crecusar§8|§cremover§8|§clistar§8|§cnick§8>"
     },
@@ -3738,8 +3747,8 @@
             "title": "§8Teletransportar a Jugador",
             "no_players": "{prefix}§cNo hay jugadores vivos para teletransportarse...",
             "team_icon": "{team} §7({count})",
-            "team_player_head": "{team} §8- §f{player}{n}§7Vida: §c{hp}❤{n}§eHaz clic para teletransportarte",
-            "player_head": "§a{player}{n}§7Vida: §c{hp}❤{n}§eHaz clic para teletransportarte",
+            "team_player_head": "{team} §8- §f{player}{n}§7Vida: §c{hp} HP{n}§eHaz clic para teletransportarte",
+            "player_head": "§a{player}{n}§7Vida: §c{hp} HP{n}§eHaz clic para teletransportarte",
             "player_unavailable": "{prefix}§cEse jugador ya no está disponible..."
         },
         "teleported": "{prefix}§a¡Teletransportado a §e{player}§a!"
@@ -3789,8 +3798,8 @@
         "menu": {
             "_prefix": "",
             "title": "§6Survival §8§l» §r§dEncantar",
-            "applied": "§a✔ Ya aplicado en esta herramienta",
-            "incompatible": "§c✖ Incompatible con este tipo de herramienta",
+            "applied": "§aYa aplicado en esta herramienta",
+            "incompatible": "§cIncompatible con este tipo de herramienta",
             "cost": "§7Costo§8: §e{cost} Akunas",
             "cost_with_tax": "{n}§7Con impuesto§8: §e{total} Akunas",
             "click_to_apply": "{n}{n}§e¡Haz clic para aplicar!",
@@ -4034,8 +4043,8 @@
             "title": "§3Feedback §8§l» §r§7Calificar Servidor",
             "public_title": "§3Feedback §8§l» §r§7Reseñas Públicas",
             "my_title": "§3Feedback §8§l» §r§7Mis Reseñas",
-            "summary": "§3Reseñas del Servidor\n§7Promedio§8: §e{average} *\n§7Públicas§8: §3{total}",
-            "star_item": "{color}{rating} Estrella(s)\n{stars}\n{note}",
+            "summary": "§3Reseñas del Servidor\n§7Promedio§8: §e{average} *\n§7Total públicas§8: §3{total}\n\n§eHaz clic en una lana (1* a 5*) abajo\n§7o usa §8/§7feedback §8<§71-5§8> [§7comentario§8]",
+            "star_item": "{color}{rating} Estrella(s)\n{stars}\n{note}\n\n§eHaz clic para calificar",
             "comment_required": "§cComentario obligatorio",
             "comment_optional": "§aComentario opcional",
             "public_btn": "§3Reseñas Públicas\n§7Clic para ver §8(§3{total}§8)",

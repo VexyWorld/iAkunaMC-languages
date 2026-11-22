@@ -1258,7 +1258,8 @@
                     "bot": "与机器人决斗",
                     "leave": "离开队列或决斗"
                 }
-            }
+            },
+            "player_only": "§c只有玩家可以使用此命令..."
         },
         "status": {
             "_prefix": "§2决斗 §8§l» §r",
@@ -1646,7 +1647,8 @@
         },
         "delete": {
             "error": "§c删除战队时出错！",
-            "success": "§7战队已成功删除！"
+            "success": "§7战队已成功删除！",
+            "confirm": "§c确定要删除公会 §6{clan} §c吗？请输入 §8/§c{label} delete confirm §c确认"
         },
         "demote": {
             "broadcast": "§e{player} §7已被降为普通成员！",
@@ -1707,7 +1709,8 @@
             "broadcast": "§e{player} §7离开了战队...",
             "error": "§c退出战队时出错...",
             "owner": "§c队长不能离开战队...",
-            "success": "§7您已成功退出战队！"
+            "success": "§7您已成功退出战队！",
+            "confirm": "§c确定要退出公会 §6{clan} §c吗？请输入 §8/§c{label} leave confirm §c确认"
         },
         "level_up": "§7战队升级到了 §e{newLevel}§7 级！",
         "not_found": "§c该战队不存在...",
@@ -1988,7 +1991,9 @@
             "none": "§c您未婚...",
             "notify": "§c{partner} §7与您离婚了...",
             "specify": "§c使用 §8/§c{label} 离婚 §8<§c玩家§8|§c*§8>",
-            "success": "§7您与 §c{partner}§7 离婚了..."
+            "success": "§7您与 §c{partner}§7 离婚了...",
+            "confirm": "§c确定要与 §c{partner} §c离婚吗？请输入 §8/§c{command} confirm §c确认",
+            "confirm_all": "§c确定要与所有伴侣离婚吗？请输入 §8/§c{command} confirm §c确认"
         },
         "info": {
             "entry": "§c系统 §8§l» §r§7伴侣§8:§d {partner} §8| §7自§8:§d {date} §8(§7{dateSince} §7前§8){n}§c系统 §8§l» §r§7您称呼§8:§d {nicknameGiven} §8| §7被称呼§8:§d {nicknameReceived}",
@@ -3200,12 +3205,15 @@
         },
         "link": {
             "bot_command": "§7加入我们的Discord服务器 §8(§9https://discord.iakunamc.com§8)§7，前往命令聊天频道并使用 §8/§7绑定 {code}",
-            "expires": "§7验证码将在5分钟后过期..."
+            "expires": "§7验证码将在5分钟后过期...",
+            "already": "§c你的账号已绑定 Discord..."
         },
         "unlink": {
             "success": "§7您的账户已成功解绑...",
-            "not_linked": "§c您的账户未绑定..."
-        }
+            "not_linked": "§c您的账户未绑定...",
+            "confirm": "§c确定要解绑 Discord 账号吗？请输入 §8/§c{label} {action} confirm §c确认"
+        },
+        "usage": "§c用法§8: §8/§c{label} §8<§clink§8|§cunlink§8>"
     },
     "email": {
         "usage": "§bEmail §8§l» §r§c使用 §8/§c{label} §8<§clink§8|§cverify§8|§cunlink§8|§c2fa§8>",
@@ -3224,7 +3232,8 @@
         },
         "unlink": {
             "not_linked": "§bEmail §8§l» §r§c您没有绑定邮箱...",
-            "success": "§bEmail §8§l» §r§7邮箱已成功解绑！"
+            "success": "§bEmail §8§l» §r§7邮箱已成功解绑！",
+            "confirm": "§bEmail §8§l» §r§c确定要解绑邮箱吗？请输入 §8/§c{label} {action} confirm §c确认"
         },
         "2fa": {
             "no_email": "§bEmail §8§l» §r§c请先绑定邮箱...",
@@ -3250,11 +3259,9 @@
             "code": {
                 "usage": "§eAuth §8§l» §r§c使用 §8/§c{label} §8<§c代码§8>"
             },
-            "email": {
-                "expired": "§eAuth §8§l» §r§c验证码已过期...",
-                "invalid": "§eAuth §8§l» §r§c无效的验证码...",
-                "success": "§eAuth §8§l» §r§7验证成功！"
-            }
+            "expired": "§eAuth §8§l» §r§c验证码已过期...",
+            "invalid": "§eAuth §8§l» §r§c无效的验证码...",
+            "success": "§eAuth §8§l» §r§7验证成功！"
         }
     },
     "tntrun": {
@@ -3470,8 +3477,8 @@
             "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §b好友列表 §8(§7{count}§8/§7{max}§8) §8[§7第 {page}/{maxPages} 页§8] ===-=-=-=-",
             "no_nickname": "§7无昵称...§r",
             "none": "§c系统 §8§l» §r§c您还没有任何好友...",
-            "offline": "§c●",
-            "online": "§a●"
+            "offline": "§c*",
+            "online": "§a*"
         },
         "nick": {
             "_prefix": "§c系统 §8§l» §r",
@@ -3485,7 +3492,9 @@
             "none": "§c您没有任何好友...",
             "notify": "§b{friend} §7将您从好友列表中移除了...",
             "success": "§7您已将 §b{friend} §7从好友列表中移除...",
-            "usage": "§c使用 §8/§c{label} remover §8<§c玩家§8|§c*§8>"
+            "usage": "§c使用 §8/§c{label} remover §8<§c玩家§8|§c*§8>",
+            "confirm": "§c确定要将 §b{friend} §c移出好友列表吗？请输入 §8/§c{command} confirm §c确认",
+            "confirm_all": "§c确定要删除所有好友吗？请输入 §8/§c{command} confirm §c确认"
         },
         "usage": "§c系统 §8§l» §r§c使用 §8/§c{label} §8<§cadd§8|§caceitar§8|§crecusar§8|§cremover§8|§clistar§8|§cnick§8>"
     },
@@ -3737,8 +3746,8 @@
             "title": "§8传送至玩家",
             "no_players": "{prefix}§c当前没有可传送的存活玩家...",
             "team_icon": "{team} §7({count})",
-            "team_player_head": "{team} §8- §f{player}{n}§7生命值: §c{hp}❤{n}§e点击传送",
-            "player_head": "§a{player}{n}§7生命值: §c{hp}❤{n}§e点击传送",
+            "team_player_head": "{team} §8- §f{player}{n}§7生命值: §c{hp} HP{n}§e点击传送",
+            "player_head": "§a{player}{n}§7生命值: §c{hp} HP{n}§e点击传送",
             "player_unavailable": "{prefix}§c该玩家已不可用..."
         },
         "teleported": "{prefix}§a已传送至 §e{player}§a!"
@@ -3788,8 +3797,8 @@
         "menu": {
             "_prefix": "",
             "title": "§6Survival §8§l» §r§d附魔",
-            "applied": "§a✔ 已应用到此工具",
-            "incompatible": "§c✖ 与此工具不兼容",
+            "applied": "§a已应用到此工具",
+            "incompatible": "§c与此工具不兼容",
             "cost": "§7费用§8: §e{cost} Akunas",
             "cost_with_tax": "{n}§7含税§8: §e{total} Akunas",
             "click_to_apply": "{n}{n}§e点击应用！",
@@ -4033,8 +4042,8 @@
             "title": "§3Feedback §8§l» §r§7Rate the Server",
             "public_title": "§3Feedback §8§l» §r§7Public Reviews",
             "my_title": "§3Feedback §8§l» §r§7My Reviews",
-            "summary": "§3Server Reviews\n§7Average§8: §e{average} *\n§7Public total§8: §3{total}",
-            "star_item": "{color}{rating} Star(s)\n{stars}\n{note}",
+            "summary": "§3服务器评价\n§7平均分§8: §e{average} *\n§7公开总数§8: §3{total}\n\n§e点击下方评分 (1*-5*)\n§7或使用 §8/§7feedback §8<§71-5§8> [§7评论§8]",
+            "star_item": "{color}{rating} 星\n{stars}\n{note}\n\n§e点击评价",
             "comment_required": "§cComment required",
             "comment_optional": "§aComment optional",
             "public_btn": "§3Public Reviews\n§7Click to view §8(§3{total}§8)",

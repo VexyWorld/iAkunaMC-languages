@@ -1258,7 +1258,8 @@
                     "bot": "Bota karşı düello yap",
                     "leave": "Sıradan veya düellodan çık"
                 }
-            }
+            },
+            "player_only": "§cBu komutu sadece oyuncular kullanabilir..."
         },
         "status": {
             "_prefix": "§2Düellolar §8§l» §r",
@@ -1646,7 +1647,8 @@
         },
         "delete": {
             "error": "§cKlan silinirken hata!",
-            "success": "§7Klan başarıyla silindi!"
+            "success": "§7Klan başarıyla silindi!",
+            "confirm": "§6{clan} §cklanını silmek istediğine emin misin? Onaylamak için §8/§c{label} delete confirm §cyaz"
         },
         "demote": {
             "broadcast": "§e{player} §7üye konumuna düşürüldü!",
@@ -1707,7 +1709,8 @@
             "broadcast": "§e{player} §7klandan ayrıldı...",
             "error": "§cKlandan ayrılırken hata...",
             "owner": "§cKurucu klandan ayrılamaz...",
-            "success": "§7Klandan başarıyla ayrıldın!"
+            "success": "§7Klandan başarıyla ayrıldın!",
+            "confirm": "§6{clan} §cklanından ayrılmak istediğine emin misin? Onaylamak için §8/§c{label} leave confirm §cyaz"
         },
         "level_up": "§7Klan seviye §e{newLevel}§7 atladı!",
         "not_found": "§cBu klan mevcut değil...",
@@ -1988,7 +1991,9 @@
             "none": "§cEvli değilsin...",
             "notify": "§c{partner} §7senden boşandı...",
             "specify": "§cKullanım: §8/§c{label} divorce §8<§coyuncu§8|§c*§8>",
-            "success": "§7§c{partner}§7 adlı eşten boşandın..."
+            "success": "§7§c{partner}§7 adlı eşten boşandın...",
+            "confirm": "§c{partner} §cile boşanmak istediğine emin misin? Onaylamak için §8/§c{command} confirm §cyaz",
+            "confirm_all": "§cTÜM partnerlerinden boşanmak istediğine emin misin? Onaylamak için §8/§c{command} confirm §cyaz"
         },
         "info": {
             "entry": "§cSistem §8§l» §r §7Eş§8:§d {partner} §8| §7Başlangıç§8:§d {date} §8(§7§d{dateSince} önce§8){n}§cSistem §8§l» §r §7Senin takma adın§8:§d {nicknameGiven} §8| §7Onun takma adı§8:§d {nicknameReceived}",
@@ -3200,12 +3205,15 @@
         },
         "link": {
             "bot_command": "§7Discord sunucumuza katılın §8(§9https://discord.iakunamc.com§8)§7, komut sohbetine gidin ve §8/§7bağla {code} kullanın",
-            "expires": "§7Kod 5 dakika içinde sona erer..."
+            "expires": "§7Kod 5 dakika içinde sona erer...",
+            "already": "§cHesabın zaten Discord'a bağlı..."
         },
         "unlink": {
             "success": "§7Hesabınız başarıyla bağlantısı kesildi...",
-            "not_linked": "§cHesabınız bağlı değil..."
-        }
+            "not_linked": "§cHesabınız bağlı değil...",
+            "confirm": "§cDiscord bağlantısını kaldırmak istediğine emin misin? Onaylamak için §8/§c{label} {action} confirm §cyaz"
+        },
+        "usage": "§cKullanım§8: §8/§c{label} §8<§clink§8|§cunlink§8>"
     },
     "email": {
         "usage": "§bEmail §8§l» §r§cKullanım: §8/§c{label} §8<§clink§8|§cverify§8|§cunlink§8|§c2fa§8>",
@@ -3224,7 +3232,8 @@
         },
         "unlink": {
             "not_linked": "§bEmail §8§l» §r§cBağlı bir e-postanız yok...",
-            "success": "§bEmail §8§l» §r§7E-posta bağlantısı başarıyla kaldırıldı!"
+            "success": "§bEmail §8§l» §r§7E-posta bağlantısı başarıyla kaldırıldı!",
+            "confirm": "§bEmail §8§l» §r§cE-posta bağlantısını kaldırmak istediğine emin misin? Onaylamak için §8/§c{label} {action} confirm §cyaz"
         },
         "2fa": {
             "no_email": "§bEmail §8§l» §r§cÖnce bir e-posta bağlamalısınız...",
@@ -3250,11 +3259,9 @@
             "code": {
                 "usage": "§eAuth §8§l» §r§cKullan §8/§c{label} §8<§ckod§8>"
             },
-            "email": {
-                "expired": "§eAuth §8§l» §r§cKodun süresi doldu...",
-                "invalid": "§eAuth §8§l» §r§cGeçersiz kod...",
-                "success": "§eAuth §8§l» §r§7Başarıyla doğrulandı!"
-            }
+            "expired": "§eAuth §8§l» §r§cKodun süresi doldu...",
+            "invalid": "§eAuth §8§l» §r§cGeçersiz kod...",
+            "success": "§eAuth §8§l» §r§7Başarıyla doğrulandı!"
         }
     },
     "tntrun": {
@@ -3470,8 +3477,8 @@
             "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §bArkadaşlar §8(§7{count}§8/§7{max}§8) §8[§7Sayfa {page}/{maxPages}§8] ===-=-=-=-",
             "no_nickname": "§7Takma ad yok...§r",
             "none": "§cSystem §8§l» §r§cHenüz hiç arkadaşın yok...",
-            "offline": "§c●",
-            "online": "§a●"
+            "offline": "§c*",
+            "online": "§a*"
         },
         "nick": {
             "_prefix": "§cSystem §8§l» §r",
@@ -3485,7 +3492,9 @@
             "none": "§cHiç arkadaşın yok...",
             "notify": "§b{friend} §7seni arkadaş listesinden çıkardı...",
             "success": "§7§b{friend} §7adlı oyuncuyu arkadaş listenden çıkardın...",
-            "usage": "§cKullanım: §8/§c{label} remover §8<§coyuncu§8|§c*§8>"
+            "usage": "§cKullanım: §8/§c{label} remover §8<§coyuncu§8|§c*§8>",
+            "confirm": "§b{friend} §ckişisini arkadaşlarından çıkarmak istediğine emin misin? Onaylamak için §8/§c{command} confirm §cyaz",
+            "confirm_all": "§cTÜM arkadaşlarını çıkarmak istediğine emin misin? Onaylamak için §8/§c{command} confirm §cyaz"
         },
         "usage": "§cSystem §8§l» §r§cKullanım: §8/§c{label} §8<§cadd§8|§caceitar§8|§crecusar§8|§cremover§8|§clistar§8|§cnick§8>"
     },
@@ -3737,8 +3746,8 @@
             "title": "§8Oyuncuya Işınlan",
             "no_players": "{prefix}§cIşınlanacak hayatta oyuncu yok...",
             "team_icon": "{team} §7({count})",
-            "team_player_head": "{team} §8- §f{player}{n}§7Can: §c{hp}❤{n}§eIşınlanmak için tıkla",
-            "player_head": "§a{player}{n}§7Can: §c{hp}❤{n}§eIşınlanmak için tıkla",
+            "team_player_head": "{team} §8- §f{player}{n}§7Can: §c{hp} HP{n}§eIşınlanmak için tıkla",
+            "player_head": "§a{player}{n}§7Can: §c{hp} HP{n}§eIşınlanmak için tıkla",
             "player_unavailable": "{prefix}§cBu oyuncu artık müsait değil..."
         },
         "teleported": "{prefix}§e{player} §aoyuncusuna ışınlandın!"
@@ -3788,8 +3797,8 @@
         "menu": {
             "_prefix": "",
             "title": "§6Survival §8§l» §r§dBüyü",
-            "applied": "§a✔ Bu alette zaten var",
-            "incompatible": "§c✖ Bu alet türüyle uyumsuz",
+            "applied": "§aBu alette zaten var",
+            "incompatible": "§cBu alet türüyle uyumsuz",
             "cost": "§7Maliyet§8: §e{cost} Akunas",
             "cost_with_tax": "{n}§7Vergi dahil§8: §e{total} Akunas",
             "click_to_apply": "{n}{n}§eEklemek için tıkla!",
@@ -4033,8 +4042,8 @@
             "title": "§3Feedback §8§l» §r§7Rate the Server",
             "public_title": "§3Feedback §8§l» §r§7Public Reviews",
             "my_title": "§3Feedback §8§l» §r§7My Reviews",
-            "summary": "§3Server Reviews\n§7Average§8: §e{average} *\n§7Public total§8: §3{total}",
-            "star_item": "{color}{rating} Star(s)\n{stars}\n{note}",
+            "summary": "§3Sunucu Değerlendirmeleri\n§7Ortalama§8: §e{average} *\n§7Toplam herkese açık§8: §3{total}\n\n§eAşağıdan puan (1*-5*) seç\n§7veya §8/§7feedback §8<§71-5§8> [§7yorum§8] kullan",
+            "star_item": "{color}{rating} Yıldız\n{stars}\n{note}\n\n§eDeğerlendirmek için tıkla",
             "comment_required": "§cComment required",
             "comment_optional": "§aComment optional",
             "public_btn": "§3Public Reviews\n§7Click to view §8(§3{total}§8)",

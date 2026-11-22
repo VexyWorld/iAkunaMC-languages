@@ -1258,7 +1258,8 @@
                     "bot": "Botと対戦",
                     "leave": "待機列またはデュエルから退出"
                 }
-            }
+            },
+            "player_only": "§cこのコマンドはプレイヤーのみ使用できます..."
         },
         "status": {
             "_prefix": "§2デュエル §8§l» §r",
@@ -1646,7 +1647,8 @@
         },
         "delete": {
             "error": "§cクラン削除エラー！",
-            "success": "§7クランが正常に削除されました！"
+            "success": "§7クランが正常に削除されました！",
+            "confirm": "§cクラン §6{clan} §cを削除してもよろしいですか？確認するには §8/§c{label} delete confirm §cと入力してください"
         },
         "demote": {
             "broadcast": "§e{player} §7がメンバーに降格されました！",
@@ -1707,7 +1709,8 @@
             "broadcast": "§e{player} §7がクランを離れました...",
             "error": "§cクラン退出エラー...",
             "owner": "§cオーナーはクランを離れることができません...",
-            "success": "§7クランを正常に退出しました！"
+            "success": "§7クランを正常に退出しました！",
+            "confirm": "§cクラン §6{clan} §cを脱退してもよろしいですか？確認するには §8/§c{label} leave confirm §cと入力してください"
         },
         "level_up": "§7クランがレベル §e{newLevel}§7 になりました！",
         "not_found": "§cそのクランは存在しません...",
@@ -1988,7 +1991,9 @@
             "none": "§c結婚していません...",
             "notify": "§c{partner} §7があなたと離婚しました...",
             "specify": "§c§8/§c{label} 離婚 §8<§cプレイヤー§8|§c*§8> を使用してください",
-            "success": "§7§c{partner}§7 と離婚しました..."
+            "success": "§7§c{partner}§7 と離婚しました...",
+            "confirm": "§c{partner} §cと離婚してもよろしいですか？確認するには §8/§c{command} confirm §cと入力してください",
+            "confirm_all": "§cすべてのパートナーと離婚してもよろしいですか？確認するには §8/§c{command} confirm §cと入力してください"
         },
         "info": {
             "entry": "§cシステム §8§l» §r§7パートナー§8:§d {partner} §8| §7から§8:§d {date} §8(§7{dateSince} §7前§8){n}§cシステム §8§l» §r§7あなたの呼び方§8:§d {nicknameGiven} §8| §7相手の呼び方§8:§d {nicknameReceived}",
@@ -3200,12 +3205,15 @@
         },
         "link": {
             "bot_command": "§7Discordサーバーに参加してください §8(§9https://discord.iakunamc.com§8)§7、コマンドチャットに行き §8/§7link {code} を使用してください",
-            "expires": "§7コードは5分で期限切れになります..."
+            "expires": "§7コードは5分で期限切れになります...",
+            "already": "§cアカウントは既にDiscordと連携されています..."
         },
         "unlink": {
             "success": "§7アカウントのリンクが解除されました...",
-            "not_linked": "§cアカウントがリンクされていません..."
-        }
+            "not_linked": "§cアカウントがリンクされていません...",
+            "confirm": "§cDiscord連携を解除してもよろしいですか？確認するには §8/§c{label} {action} confirm §cと入力してください"
+        },
+        "usage": "§c使用方法§8: §8/§c{label} §8<§clink§8|§cunlink§8>"
     },
     "email": {
         "usage": "§bEmail §8§l» §r§c使用法: §8/§c{label} §8<§clink§8|§cverify§8|§cunlink§8|§c2fa§8>",
@@ -3224,7 +3232,8 @@
         },
         "unlink": {
             "not_linked": "§bEmail §8§l» §r§cメールアドレスがリンクされていません...",
-            "success": "§bEmail §8§l» §r§7メールアドレスのリンクを解除しました！"
+            "success": "§bEmail §8§l» §r§7メールアドレスのリンクを解除しました！",
+            "confirm": "§bEmail §8§l» §r§cメール連携を解除してもよろしいですか？確認するには §8/§c{label} {action} confirm §cと入力してください"
         },
         "2fa": {
             "no_email": "§bEmail §8§l» §r§c最初にメールアドレスをリンクしてください...",
@@ -3250,11 +3259,9 @@
             "code": {
                 "usage": "§eAuth §8§l» §r§c使用 §8/§c{label} §8<§cコード§8>"
             },
-            "email": {
-                "expired": "§eAuth §8§l» §r§cコードの有効期限が切れました...",
-                "invalid": "§eAuth §8§l» §r§c無効なコードです...",
-                "success": "§eAuth §8§l» §r§7認証に成功しました！"
-            }
+            "expired": "§eAuth §8§l» §r§cコードの有効期限が切れました...",
+            "invalid": "§eAuth §8§l» §r§c無効なコードです...",
+            "success": "§eAuth §8§l» §r§7認証に成功しました！"
         }
     },
     "tntrun": {
@@ -3470,8 +3477,8 @@
             "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §bフレンド §8(§7{count}§8/§7{max}§8) §8[§7ページ {page}/{maxPages}§8] ===-=-=-=-",
             "no_nickname": "§7ニックネームなし...§r",
             "none": "§cシステム §8§l» §r§cまだフレンドがいません...",
-            "offline": "§c●",
-            "online": "§a●"
+            "offline": "§c*",
+            "online": "§a*"
         },
         "nick": {
             "_prefix": "§cシステム §8§l» §r",
@@ -3485,7 +3492,9 @@
             "none": "§cフレンドがいません...",
             "notify": "§b{friend} §7があなたをフレンドリストから削除しました...",
             "success": "§b{friend} §7をフレンドリストから削除しました...",
-            "usage": "§c§8/§c{label} remover §8<§cプレイヤー§8|§c*§8> を使用してください"
+            "usage": "§c§8/§c{label} remover §8<§cプレイヤー§8|§c*§8> を使用してください",
+            "confirm": "§b{friend} §cをフレンドから削除してもよろしいですか？確認するには §8/§c{command} confirm §cと入力してください",
+            "confirm_all": "§cすべてのフレンドを削除してもよろしいですか？確認するには §8/§c{command} confirm §cと入力してください"
         },
         "usage": "§cシステム §8§l» §r§c§8/§c{label} §8<§cadd§8|§caceitar§8|§crecusar§8|§cremover§8|§clistar§8|§cnick§8> を使用してください"
     },
@@ -3737,8 +3746,8 @@
             "title": "§8プレイヤーへテレポート",
             "no_players": "{prefix}§cテレポートできる生存プレイヤーがいません...",
             "team_icon": "{team} §7({count})",
-            "team_player_head": "{team} §8- §f{player}{n}§7体力: §c{hp}❤{n}§eクリックしてテレポート",
-            "player_head": "§a{player}{n}§7体力: §c{hp}❤{n}§eクリックしてテレポート",
+            "team_player_head": "{team} §8- §f{player}{n}§7体力: §c{hp} HP{n}§eクリックしてテレポート",
+            "player_head": "§a{player}{n}§7体力: §c{hp} HP{n}§eクリックしてテレポート",
             "player_unavailable": "{prefix}§cそのプレイヤーは現在利用できません..."
         },
         "teleported": "{prefix}§e{player} §aにテレポートしました!"
@@ -3788,8 +3797,8 @@
         "menu": {
             "_prefix": "",
             "title": "§6Survival §8§l» §r§dエンチャント",
-            "applied": "§a✔ 付与済み",
-            "incompatible": "§c✖ このツールには非対応",
+            "applied": "§a付与済み",
+            "incompatible": "§cこのツールには非対応",
             "cost": "§7費用§8: §e{cost} Akunas",
             "cost_with_tax": "{n}§7税込§8: §e{total} Akunas",
             "click_to_apply": "{n}{n}§eクリックして付与！",
@@ -4033,8 +4042,8 @@
             "title": "§3Feedback §8§l» §r§7Rate the Server",
             "public_title": "§3Feedback §8§l» §r§7Public Reviews",
             "my_title": "§3Feedback §8§l» §r§7My Reviews",
-            "summary": "§3Server Reviews\n§7Average§8: §e{average} *\n§7Public total§8: §3{total}",
-            "star_item": "{color}{rating} Star(s)\n{stars}\n{note}",
+            "summary": "§3サーバー評価\n§7平均§8: §e{average} *\n§7公開数§8: §3{total}\n\n§e下の評価 (1*-5*) をクリック\n§7または §8/§7feedback §8<§71-5§8> [§7コメント§8]",
+            "star_item": "{color}星 {rating}\n{stars}\n{note}\n\n§eクリックして評価",
             "comment_required": "§cComment required",
             "comment_optional": "§aComment optional",
             "public_btn": "§3Public Reviews\n§7Click to view §8(§3{total}§8)",

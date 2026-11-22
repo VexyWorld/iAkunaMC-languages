@@ -105,7 +105,7 @@
             "invalid_time": "§cBed§fWars §8§l» §r§cНеверное время...",
             "invalid_speed": "§cBed§fWars §8§l» §r§cНеверная скорость...",
             "speed_zero": "§cBed§fWars §8§l» §r§cСкорость должна быть больше нуля...",
-            "speed_max": "§cBed§fWars §8§l» §r§cМаксимальная скорость — 10x...",
+            "speed_max": "§cBed§fWars §8§l» §r§cМаксимальная скорость - 10x...",
             "forge_level_range": "§cBed§fWars §8§l» §r§cУровень кузницы должен быть от 0 до 3...",
             "generator_level_range": "§cBed§fWars §8§l» §r§cУровень генератора должен быть от 1 до 3...",
             "invalid_gen_item": "§cBed§fWars §8§l» §r§cНеверный предмет генератора§8: §c{item}={amount} §8(§cМаксимум§8: §c64§8)",
@@ -1258,7 +1258,8 @@
                     "bot": "Дуэль против Бота",
                     "leave": "Покинуть очередь или дуэль"
                 }
-            }
+            },
+            "player_only": "§cТолько игроки могут использовать эту команду..."
         },
         "status": {
             "_prefix": "§2Дуэли §8§l» §r",
@@ -1646,7 +1647,8 @@
         },
         "delete": {
             "error": "§cОшибка при удалении клана!",
-            "success": "§7Клан успешно удалён!"
+            "success": "§7Клан успешно удалён!",
+            "confirm": "§cВы уверены, что хотите удалить клан §6{clan}§c? Введите §8/§c{label} delete confirm §cдля подтверждения"
         },
         "demote": {
             "broadcast": "§e{player} §7понижен(а) до рядового члена!",
@@ -1707,7 +1709,8 @@
             "broadcast": "§e{player} §7покинул(а) клан...",
             "error": "§cОшибка при выходе из клана...",
             "owner": "§cВладелец не может покинуть клан...",
-            "success": "§7Вы успешно покинули клан!"
+            "success": "§7Вы успешно покинули клан!",
+            "confirm": "§cВы уверены, что хотите покинуть клан §6{clan}§c? Введите §8/§c{label} leave confirm §cдля подтверждения"
         },
         "level_up": "§7Клан достиг уровня §e{newLevel}§7!",
         "not_found": "§cТакого клана не существует...",
@@ -1988,7 +1991,9 @@
             "none": "§cВы не состоите в браке...",
             "notify": "§c{partner} §7развёлся(лась) с вами...",
             "specify": "§cИспользуйте §8/§c{label} развод §8<§cигрок§8|§c*§8>",
-            "success": "§7Вы развелись с §c{partner}§7..."
+            "success": "§7Вы развелись с §c{partner}§7...",
+            "confirm": "§cВы уверены, что хотите развестись с §c{partner}§c? Введите §8/§c{command} confirm §cдля подтверждения",
+            "confirm_all": "§cВы уверены, что хотите развестись со ВСЕМИ партнёрами? Введите §8/§c{command} confirm §cдля подтверждения"
         },
         "info": {
             "entry": "§cСистема §8§l» §r§7Партнёр§8:§d {partner} §8| §7С§8:§d {date} §8(§7{dateSince} §7назад§8){n}§cСистема §8§l» §r§7Вы зовёте§8:§d {nicknameGiven} §8| §7Вас зовут§8:§d {nicknameReceived}",
@@ -2138,8 +2143,8 @@
         },
         "leader": {
             "_prefix": "",
-            "changed": "§dПати §8§l» §r§d{old_leader} §7покинул сервер, новый лидер — §d{new_leader}§7!",
-            "expired": "§dПати §8§l» §r§d{old_leader} §7не вернулся вовремя. Новый лидер — §d{new_leader}§7!"
+            "changed": "§dПати §8§l» §r§d{old_leader} §7покинул сервер, новый лидер - §d{new_leader}§7!",
+            "expired": "§dПати §8§l» §r§d{old_leader} §7не вернулся вовремя. Новый лидер - §d{new_leader}§7!"
         },
         "leave": {
             "broadcast": "§d{player} §7покинул(а) пати...",
@@ -2155,7 +2160,7 @@
             "leader_rejoined": "§dПати §8§l» §r§d{player} §7вернулся на сервер и восстановил лидерство!"
         },
         "transfer": {
-            "broadcast": "§d{new_leader} §7— новый(ая) лидер!",
+            "broadcast": "§d{new_leader} §7- новый(ая) лидер!",
             "error": "§cОшибка при передаче лидерства...",
             "not_in_party": "§cИгрок не состоит в пати...",
             "received": "§7Вы получили лидерство в пати!",
@@ -2603,7 +2608,7 @@
     "ping": {
         "_prefix": "§cСистема §8§l» §r",
         "self": "§7Ваш пинг §c{ping}мс",
-        "other": "§7Пинг §c{target} §7— §c{ping}мс"
+        "other": "§7Пинг §c{target} §7- §c{ping}мс"
     },
     "version": {
         "_prefix": "§bApi §8§l» §r",
@@ -3200,12 +3205,15 @@
         },
         "link": {
             "bot_command": "§7Зайдите на наш Discord сервер §8(§9https://discord.iakunamc.com§8)§7, перейдите в чат команд и используйте §8/§7привязать {code}",
-            "expires": "§7Код истекает через 5 минут..."
+            "expires": "§7Код истекает через 5 минут...",
+            "already": "§cВаш аккаунт уже привязан к Discord..."
         },
         "unlink": {
             "success": "§7Ваш аккаунт успешно отвязан...",
-            "not_linked": "§cВаш аккаунт не привязан..."
-        }
+            "not_linked": "§cВаш аккаунт не привязан...",
+            "confirm": "§cВы уверены, что хотите отвязать Discord? Введите §8/§c{label} {action} confirm §cдля подтверждения"
+        },
+        "usage": "§cИспользуйте §8/§c{label} §8<§clink§8|§cunlink§8>"
     },
     "email": {
         "usage": "§bEmail §8§l» §r§cИспользуйте §8/§c{label} §8<§clink§8|§cverify§8|§cunlink§8|§c2fa§8>",
@@ -3224,7 +3232,8 @@
         },
         "unlink": {
             "not_linked": "§bEmail §8§l» §r§cУ вас нет привязанного email...",
-            "success": "§bEmail §8§l» §r§7Email успешно отвязан!"
+            "success": "§bEmail §8§l» §r§7Email успешно отвязан!",
+            "confirm": "§bEmail §8§l» §r§cВы уверены, что хотите отвязать почту? Введите §8/§c{label} {action} confirm §cдля подтверждения"
         },
         "2fa": {
             "no_email": "§bEmail §8§l» §r§cСначала привяжите email...",
@@ -3250,11 +3259,9 @@
             "code": {
                 "usage": "§eAuth §8§l» §r§cИспользуйте §8/§c{label} §8<§cкод§8>"
             },
-            "email": {
-                "expired": "§eAuth §8§l» §r§cСрок действия кода истёк...",
-                "invalid": "§eAuth §8§l» §r§cНеверный код...",
-                "success": "§eAuth §8§l» §r§7Успешная аутентификация!"
-            }
+            "expired": "§eAuth §8§l» §r§cСрок действия кода истёк...",
+            "invalid": "§eAuth §8§l» §r§cНеверный код...",
+            "success": "§eAuth §8§l» §r§7Успешная аутентификация!"
         }
     },
     "tntrun": {
@@ -3470,8 +3477,8 @@
             "header": "§8-=-=-=-=== §fi§cAkuna§9MC §8| §bДрузья §8(§7{count}§8/§7{max}§8) §8[§7Стр. {page}/{maxPages}§8] ===-=-=-=-",
             "no_nickname": "§7Нет прозвища...§r",
             "none": "§cSystem §8§l» §r§cУ вас пока нет друзей...",
-            "offline": "§c●",
-            "online": "§a●"
+            "offline": "§c*",
+            "online": "§a*"
         },
         "nick": {
             "_prefix": "§cSystem §8§l» §r",
@@ -3485,7 +3492,9 @@
             "none": "§cУ вас нет друзей...",
             "notify": "§b{friend} §7удалил(а) вас из списка друзей...",
             "success": "§7Вы удалили §b{friend} §7из своего списка друзей...",
-            "usage": "§cИспользуйте §8/§c{label} remover §8<§cигрок§8|§c*§8>"
+            "usage": "§cИспользуйте §8/§c{label} remover §8<§cигрок§8|§c*§8>",
+            "confirm": "§cВы уверены, что хотите удалить §b{friend} §cиз друзей? Введите §8/§c{command} confirm §cдля подтверждения",
+            "confirm_all": "§cВы уверены, что хотите удалить ВСЕХ друзей? Введите §8/§c{command} confirm §cдля подтверждения"
         },
         "usage": "§cSystem §8§l» §r§cИспользуйте §8/§c{label} §8<§cadd§8|§caceitar§8|§crecusar§8|§cremover§8|§clistar§8|§cnick§8>"
     },
@@ -3737,8 +3746,8 @@
             "title": "§8Телепортация к игроку",
             "no_players": "{prefix}§cНет живых игроков для телепортации...",
             "team_icon": "{team} §7({count})",
-            "team_player_head": "{team} §8- §f{player}{n}§7Здоровье: §c{hp}❤{n}§eНажмите для телепортации",
-            "player_head": "§a{player}{n}§7Здоровье: §c{hp}❤{n}§eНажмите для телепортации",
+            "team_player_head": "{team} §8- §f{player}{n}§7Здоровье: §c{hp} HP{n}§eНажмите для телепортации",
+            "player_head": "§a{player}{n}§7Здоровье: §c{hp} HP{n}§eНажмите для телепортации",
             "player_unavailable": "{prefix}§cЭтот игрок больше недоступен..."
         },
         "teleported": "{prefix}§aВы телепортировались к §e{player}§a!"
@@ -3788,8 +3797,8 @@
         "menu": {
             "_prefix": "",
             "title": "§6Survival §8§l» §r§dЗачарование",
-            "applied": "§a✔ Уже наложено на инструмент",
-            "incompatible": "§c✖ Несовместимо с этим инструментом",
+            "applied": "§aУже наложено на инструмент",
+            "incompatible": "§cНесовместимо с этим инструментом",
             "cost": "§7Цена§8: §e{cost} Akunas",
             "cost_with_tax": "{n}§7С налогом§8: §e{total} Akunas",
             "click_to_apply": "{n}{n}§eНажмите, чтобы применить!",
@@ -4033,8 +4042,8 @@
             "title": "§3Feedback §8§l» §r§7Rate the Server",
             "public_title": "§3Feedback §8§l» §r§7Public Reviews",
             "my_title": "§3Feedback §8§l» §r§7My Reviews",
-            "summary": "§3Server Reviews\n§7Average§8: §e{average} *\n§7Public total§8: §3{total}",
-            "star_item": "{color}{rating} Star(s)\n{stars}\n{note}",
+            "summary": "§3Отзывы о сервере\n§7Средняя§8: §e{average} *\n§7Публичных§8: §3{total}\n\n§eНажмите на оценку (1*-5*) ниже\n§7или используйте §8/§7feedback §8<§71-5§8> [§7комментарий§8]",
+            "star_item": "{color}{rating} Звезд(ы)\n{stars}\n{note}\n\n§eНажмите, чтобы оценить",
             "comment_required": "§cComment required",
             "comment_optional": "§aComment optional",
             "public_btn": "§3Public Reviews\n§7Click to view §8(§3{total}§8)",
