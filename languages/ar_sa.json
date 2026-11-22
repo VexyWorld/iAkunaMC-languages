@@ -4040,7 +4040,10 @@
             "stat_attempts": "المحاولات",
             "game_bridgetraining": "تدريب الجسور",
             "stat_elo": "ELO",
-            "field_parkour": "🏃 | أفضل وقت في الباركور"
+            "field_parkour": "🏃 | أفضل وقت في الباركور",
+            "view_main": "الملف الرئيسي",
+            "select_game_placeholder": "اختر لعبة مصغرة لعرض الإحصائيات...",
+            "select_period_placeholder": "اختر الفترة..."
         },
         "top": {
             "title": "أفضل {game} — {period}",

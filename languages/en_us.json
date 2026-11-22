@@ -4040,7 +4040,10 @@
             "stat_attempts": "Attempts",
             "game_bridgetraining": "Bridge Training",
             "stat_elo": "ELO",
-            "field_parkour": "🏃 | Parkour Best Time"
+            "field_parkour": "🏃 | Parkour Best Time",
+            "view_main": "Main Profile",
+            "select_game_placeholder": "Select a minigame to view stats...",
+            "select_period_placeholder": "Select period..."
         },
         "top": {
             "title": "Top {game} — {period}",

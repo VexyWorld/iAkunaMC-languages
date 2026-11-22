@@ -4040,7 +4040,10 @@
             "stat_attempts": "試行回数",
             "game_bridgetraining": "ブリッジ練習",
             "stat_elo": "ELO",
-            "field_parkour": "🏃 | パルクール最速記録"
+            "field_parkour": "🏃 | パルクール最速記録",
+            "view_main": "メインプロフィール",
+            "select_game_placeholder": "統計を見るミニゲームを選択...",
+            "select_period_placeholder": "期間を選択..."
         },
         "top": {
             "title": "Top {game} — {period}",

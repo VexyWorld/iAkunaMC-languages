@@ -4040,7 +4040,10 @@
             "stat_attempts": "Попыток",
             "game_bridgetraining": "Тренировка мостов",
             "stat_elo": "ELO",
-            "field_parkour": "🏃 | Лучшее время паркура"
+            "field_parkour": "🏃 | Лучшее время паркура",
+            "view_main": "Основной профиль",
+            "select_game_placeholder": "Выберите мини-игру для просмотра статистики...",
+            "select_period_placeholder": "Выберите период..."
         },
         "top": {
             "title": "Топ {game} — {period}",

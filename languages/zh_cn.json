@@ -4040,7 +4040,10 @@
             "stat_attempts": "尝试次数",
             "game_bridgetraining": "搭路训练",
             "stat_elo": "ELO",
-            "field_parkour": "🏃 | 跑酷最佳时间"
+            "field_parkour": "🏃 | 跑酷最佳时间",
+            "view_main": "主个人资料",
+            "select_game_placeholder": "选择一个小游戏查看统计...",
+            "select_period_placeholder": "选择时间段..."
         },
         "top": {
             "title": "Top {game} — {period}",

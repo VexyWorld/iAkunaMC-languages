@@ -4040,7 +4040,10 @@
             "stat_attempts": "Denemeler",
             "game_bridgetraining": "Köprü Antrenmanı",
             "stat_elo": "ELO",
-            "field_parkour": "🏃 | En İyi Parkur Süresi"
+            "field_parkour": "🏃 | En İyi Parkur Süresi",
+            "view_main": "Ana Profil",
+            "select_game_placeholder": "İstatistikleri görmek için bir mini oyun seçin...",
+            "select_period_placeholder": "Dönem seçin..."
         },
         "top": {
             "title": "En İyi {game} — {period}",
