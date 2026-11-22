@@ -4570,6 +4570,78 @@
             "orbital": {
                 "desc": "Etrafında dönen yüzen eşyaları etkinleştir",
                 "usage": "orbital <item|list|random|off>"
+            },
+            "box": {
+                "desc": "Bloklardan bir kutu oluşturur (WorldEdit)",
+                "usage": "/box <genişlik> <yükseklik> <derinlik> <blok>"
+            },
+            "copy": {
+                "desc": "Seçili alanı kopyalar (WorldEdit)",
+                "usage": "/copy"
+            },
+            "count": {
+                "desc": "Seçimdeki blokları sayar (WorldEdit)",
+                "usage": "/count [blok]"
+            },
+            "cyl": {
+                "desc": "Bloklardan bir silindir oluşturur (WorldEdit)",
+                "usage": "/cyl <yarıçap> <yükseklik> <blok>"
+            },
+            "expand": {
+                "desc": "Mevcut seçimi genişletir (WorldEdit)",
+                "usage": "/expand <miktar> [yön]"
+            },
+            "flip": {
+                "desc": "Kopyalanan alanı çevirir (WorldEdit)",
+                "usage": "/flip [yön]"
+            },
+            "paste": {
+                "desc": "Kopyalanan alanı yapıştırır (WorldEdit)",
+                "usage": "/paste"
+            },
+            "pos1": {
+                "desc": "Seçimin 1. konumunu belirler (WorldEdit)",
+                "usage": "/pos1"
+            },
+            "pos2": {
+                "desc": "Seçimin 2. konumunu belirler (WorldEdit)",
+                "usage": "/pos2"
+            },
+            "pyramid": {
+                "desc": "Bloklardan bir piramit oluşturur (WorldEdit)",
+                "usage": "/pyramid <boyut> <yükseklik> <blok>"
+            },
+            "redo": {
+                "desc": "Son geri alınan işlemi yineler (WorldEdit)",
+                "usage": "/redo"
+            },
+            "replace": {
+                "desc": "Seçimdeki blokları değiştirir (WorldEdit)",
+                "usage": "/replace <eski_blok> <yeni_blok>"
+            },
+            "rotate": {
+                "desc": "Kopyalanan alanı döndürür (WorldEdit)",
+                "usage": "/rotate <90|180|270>"
+            },
+            "set": {
+                "desc": "Seçimi bloklarla doldurur (WorldEdit)",
+                "usage": "/set <blok>"
+            },
+            "sphere": {
+                "desc": "Bloklardan bir küre oluşturur (WorldEdit)",
+                "usage": "/sphere <yarıçap> <blok>"
+            },
+            "stack": {
+                "desc": "Kopyalanan alanı istifler (WorldEdit)",
+                "usage": "/stack <kez> [yön]"
+            },
+            "undo": {
+                "desc": "Son yapı işlemini geri alır (WorldEdit)",
+                "usage": "/undo"
+            },
+            "wand": {
+                "desc": "Seçim baltasını açar veya kapatır (WorldEdit)",
+                "usage": "/wand"
             }
         }
     },

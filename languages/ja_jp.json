@@ -4570,6 +4570,78 @@
             "orbital": {
                 "desc": "周囲を回る浮遊アイテムを有効化",
                 "usage": "orbital <item|list|random|off>"
+            },
+            "box": {
+                "desc": "ブロックの箱を作成します (WorldEdit)",
+                "usage": "/box <幅> <高さ> <奥行> <ブロック>"
+            },
+            "copy": {
+                "desc": "選択範囲をコピーします (WorldEdit)",
+                "usage": "/copy"
+            },
+            "count": {
+                "desc": "選択範囲のブロック数を数えます (WorldEdit)",
+                "usage": "/count [ブロック]"
+            },
+            "cyl": {
+                "desc": "ブロックの円柱を作成します (WorldEdit)",
+                "usage": "/cyl <半径> <高さ> <ブロック>"
+            },
+            "expand": {
+                "desc": "現在の選択範囲を拡張します (WorldEdit)",
+                "usage": "/expand <量> [方向]"
+            },
+            "flip": {
+                "desc": "コピーした範囲を反転します (WorldEdit)",
+                "usage": "/flip [方向]"
+            },
+            "paste": {
+                "desc": "コピーした範囲を貼り付けます (WorldEdit)",
+                "usage": "/paste"
+            },
+            "pos1": {
+                "desc": "選択範囲の座標1を設定します (WorldEdit)",
+                "usage": "/pos1"
+            },
+            "pos2": {
+                "desc": "選択範囲の座標2を設定します (WorldEdit)",
+                "usage": "/pos2"
+            },
+            "pyramid": {
+                "desc": "ブロックのピラミッドを作成します (WorldEdit)",
+                "usage": "/pyramid <サイズ> <高さ> <ブロック>"
+            },
+            "redo": {
+                "desc": "取り消した操作をやり直します (WorldEdit)",
+                "usage": "/redo"
+            },
+            "replace": {
+                "desc": "選択範囲のブロックを置換します (WorldEdit)",
+                "usage": "/replace <元ブロック> <新ブロック>"
+            },
+            "rotate": {
+                "desc": "コピーした範囲を回転します (WorldEdit)",
+                "usage": "/rotate <90|180|270>"
+            },
+            "set": {
+                "desc": "選択範囲をブロックで埋めます (WorldEdit)",
+                "usage": "/set <ブロック>"
+            },
+            "sphere": {
+                "desc": "ブロックの球体を作成します (WorldEdit)",
+                "usage": "/sphere <半径> <ブロック>"
+            },
+            "stack": {
+                "desc": "コピーした範囲を繰り返し配置します (WorldEdit)",
+                "usage": "/stack <回数> [方向]"
+            },
+            "undo": {
+                "desc": "直前の建築操作を取り消します (WorldEdit)",
+                "usage": "/undo"
+            },
+            "wand": {
+                "desc": "選択ワンドを切り替えます (WorldEdit)",
+                "usage": "/wand"
             }
         }
     },

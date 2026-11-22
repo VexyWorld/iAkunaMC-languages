@@ -4570,6 +4570,78 @@
             "orbital": {
                 "desc": "Activate floating items orbiting around you",
                 "usage": "orbital <item|list|random|off>"
+            },
+            "box": {
+                "desc": "Creates a box of blocks (WorldEdit)",
+                "usage": "/box <width> <height> <depth> <block>"
+            },
+            "copy": {
+                "desc": "Copies the selected area (WorldEdit)",
+                "usage": "/copy"
+            },
+            "count": {
+                "desc": "Counts blocks in the selection (WorldEdit)",
+                "usage": "/count [block]"
+            },
+            "cyl": {
+                "desc": "Creates a cylinder of blocks (WorldEdit)",
+                "usage": "/cyl <radius> <height> <block>"
+            },
+            "expand": {
+                "desc": "Expands the current selection (WorldEdit)",
+                "usage": "/expand <amount> [direction]"
+            },
+            "flip": {
+                "desc": "Flips the copied area (WorldEdit)",
+                "usage": "/flip [direction]"
+            },
+            "paste": {
+                "desc": "Pastes the copied area (WorldEdit)",
+                "usage": "/paste"
+            },
+            "pos1": {
+                "desc": "Sets selection position 1 (WorldEdit)",
+                "usage": "/pos1"
+            },
+            "pos2": {
+                "desc": "Sets selection position 2 (WorldEdit)",
+                "usage": "/pos2"
+            },
+            "pyramid": {
+                "desc": "Creates a pyramid of blocks (WorldEdit)",
+                "usage": "/pyramid <size> <height> <block>"
+            },
+            "redo": {
+                "desc": "Redoes the last undone action (WorldEdit)",
+                "usage": "/redo"
+            },
+            "replace": {
+                "desc": "Replaces blocks in the selection (WorldEdit)",
+                "usage": "/replace <old_block> <new_block>"
+            },
+            "rotate": {
+                "desc": "Rotates the copied area (WorldEdit)",
+                "usage": "/rotate <90|180|270>"
+            },
+            "set": {
+                "desc": "Fills the selection with blocks (WorldEdit)",
+                "usage": "/set <block>"
+            },
+            "sphere": {
+                "desc": "Creates a sphere of blocks (WorldEdit)",
+                "usage": "/sphere <radius> <block>"
+            },
+            "stack": {
+                "desc": "Stacks the copied area (WorldEdit)",
+                "usage": "/stack <times> [direction]"
+            },
+            "undo": {
+                "desc": "Undoes the last build action (WorldEdit)",
+                "usage": "/undo"
+            },
+            "wand": {
+                "desc": "Toggles the selection wand (WorldEdit)",
+                "usage": "/wand"
             }
         }
     },

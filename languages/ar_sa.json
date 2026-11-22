@@ -4570,6 +4570,78 @@
             "orbital": {
                 "desc": "تفعيل عناصر طافية تدور حولك",
                 "usage": "orbital <item|list|random|off>"
+            },
+            "box": {
+                "desc": "إنشاء صندوق من الكتل (WorldEdit)",
+                "usage": "/box <العرض> <الارتفاع> <العمق> <الكتلة>"
+            },
+            "copy": {
+                "desc": "نسخ المنطقة المحددة (WorldEdit)",
+                "usage": "/copy"
+            },
+            "count": {
+                "desc": "عدّ الكتل في التحديد (WorldEdit)",
+                "usage": "/count [الكتلة]"
+            },
+            "cyl": {
+                "desc": "إنشاء أسطوانة من الكتل (WorldEdit)",
+                "usage": "/cyl <نصف_القطر> <الارتفاع> <الكتلة>"
+            },
+            "expand": {
+                "desc": "توسيع التحديد الحالي (WorldEdit)",
+                "usage": "/expand <الكمية> [الاتجاه]"
+            },
+            "flip": {
+                "desc": "قلب المنطقة المنسوخة (WorldEdit)",
+                "usage": "/flip [الاتجاه]"
+            },
+            "paste": {
+                "desc": "لصق المنطقة المنسوخة (WorldEdit)",
+                "usage": "/paste"
+            },
+            "pos1": {
+                "desc": "تحديد الموضع الأول للتحديد (WorldEdit)",
+                "usage": "/pos1"
+            },
+            "pos2": {
+                "desc": "تحديد الموضع الثاني للتحديد (WorldEdit)",
+                "usage": "/pos2"
+            },
+            "pyramid": {
+                "desc": "إنشاء هرم من الكتل (WorldEdit)",
+                "usage": "/pyramid <الحجم> <الارتفاع> <الكتلة>"
+            },
+            "redo": {
+                "desc": "إعادة آخر إجراء تم التراجع عنه (WorldEdit)",
+                "usage": "/redo"
+            },
+            "replace": {
+                "desc": "استبدال الكتل في التحديد (WorldEdit)",
+                "usage": "/replace <الكتلة_القديمة> <الكتلة_الجديدة>"
+            },
+            "rotate": {
+                "desc": "تدوير المنطقة المنسوخة (WorldEdit)",
+                "usage": "/rotate <90|180|270>"
+            },
+            "set": {
+                "desc": "ملء التحديد بالكتل (WorldEdit)",
+                "usage": "/set <الكتلة>"
+            },
+            "sphere": {
+                "desc": "إنشاء كرة من الكتل (WorldEdit)",
+                "usage": "/sphere <نصف_القطر> <الكتلة>"
+            },
+            "stack": {
+                "desc": "تكرار المنطقة المنسوخة (WorldEdit)",
+                "usage": "/stack <المرات> [الاتجاه]"
+            },
+            "undo": {
+                "desc": "التراجع عن آخر إجراء بناء (WorldEdit)",
+                "usage": "/undo"
+            },
+            "wand": {
+                "desc": "تفعيل أو تعطيل فأس التحديد (WorldEdit)",
+                "usage": "/wand"
             }
         }
     },

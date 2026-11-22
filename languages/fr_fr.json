@@ -4570,6 +4570,78 @@
             "orbital": {
                 "desc": "Activer des objets flottant autour de vous",
                 "usage": "orbital <item|list|random|off>"
+            },
+            "box": {
+                "desc": "Crée une boîte de blocs (WorldEdit)",
+                "usage": "/box <largeur> <hauteur> <profondeur> <bloc>"
+            },
+            "copy": {
+                "desc": "Copie la zone sélectionnée (WorldEdit)",
+                "usage": "/copy"
+            },
+            "count": {
+                "desc": "Compte les blocs de la sélection (WorldEdit)",
+                "usage": "/count [bloc]"
+            },
+            "cyl": {
+                "desc": "Crée un cylindre de blocs (WorldEdit)",
+                "usage": "/cyl <rayon> <hauteur> <bloc>"
+            },
+            "expand": {
+                "desc": "Étend la sélection actuelle (WorldEdit)",
+                "usage": "/expand <quantité> [direction]"
+            },
+            "flip": {
+                "desc": "Retourne la zone copiée (WorldEdit)",
+                "usage": "/flip [direction]"
+            },
+            "paste": {
+                "desc": "Colle la zone copiée (WorldEdit)",
+                "usage": "/paste"
+            },
+            "pos1": {
+                "desc": "Définit la position 1 de la sélection (WorldEdit)",
+                "usage": "/pos1"
+            },
+            "pos2": {
+                "desc": "Définit la position 2 de la sélection (WorldEdit)",
+                "usage": "/pos2"
+            },
+            "pyramid": {
+                "desc": "Crée une pyramide de blocs (WorldEdit)",
+                "usage": "/pyramid <taille> <hauteur> <bloc>"
+            },
+            "redo": {
+                "desc": "Rétablit la dernière action annulée (WorldEdit)",
+                "usage": "/redo"
+            },
+            "replace": {
+                "desc": "Remplace des blocs dans la sélection (WorldEdit)",
+                "usage": "/replace <ancien_bloc> <nouveau_bloc>"
+            },
+            "rotate": {
+                "desc": "Fait pivoter la zone copiée (WorldEdit)",
+                "usage": "/rotate <90|180|270>"
+            },
+            "set": {
+                "desc": "Remplit la sélection avec des blocs (WorldEdit)",
+                "usage": "/set <bloc>"
+            },
+            "sphere": {
+                "desc": "Crée une sphère de blocs (WorldEdit)",
+                "usage": "/sphere <rayon> <bloc>"
+            },
+            "stack": {
+                "desc": "Empile la zone copiée (WorldEdit)",
+                "usage": "/stack <fois> [direction]"
+            },
+            "undo": {
+                "desc": "Annule la dernière action de construction (WorldEdit)",
+                "usage": "/undo"
+            },
+            "wand": {
+                "desc": "Active ou désactive la hache de sélection (WorldEdit)",
+                "usage": "/wand"
             }
         }
     },

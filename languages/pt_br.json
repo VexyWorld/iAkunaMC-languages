@@ -4570,6 +4570,78 @@
             "orbital": {
                 "desc": "Ative itens flutuando ao seu redor",
                 "usage": "orbital <item|list|random|off>"
+            },
+            "box": {
+                "desc": "Cria uma caixa de blocos (WorldEdit)",
+                "usage": "/box <largura> <altura> <profundidade> <bloco>"
+            },
+            "copy": {
+                "desc": "Copia a área selecionada (WorldEdit)",
+                "usage": "/copy"
+            },
+            "count": {
+                "desc": "Conta os blocos da seleção (WorldEdit)",
+                "usage": "/count [bloco]"
+            },
+            "cyl": {
+                "desc": "Cria um cilindro de blocos (WorldEdit)",
+                "usage": "/cyl <raio> <altura> <bloco>"
+            },
+            "expand": {
+                "desc": "Expande a seleção atual (WorldEdit)",
+                "usage": "/expand <quantidade> [direção]"
+            },
+            "flip": {
+                "desc": "Espelha a área copiada (WorldEdit)",
+                "usage": "/flip [direção]"
+            },
+            "paste": {
+                "desc": "Cola a área copiada (WorldEdit)",
+                "usage": "/paste"
+            },
+            "pos1": {
+                "desc": "Define a posição 1 da seleção (WorldEdit)",
+                "usage": "/pos1"
+            },
+            "pos2": {
+                "desc": "Define a posição 2 da seleção (WorldEdit)",
+                "usage": "/pos2"
+            },
+            "pyramid": {
+                "desc": "Cria uma pirâmide de blocos (WorldEdit)",
+                "usage": "/pyramid <tamanho> <altura> <bloco>"
+            },
+            "redo": {
+                "desc": "Refaz a última ação desfeita (WorldEdit)",
+                "usage": "/redo"
+            },
+            "replace": {
+                "desc": "Substitui blocos na seleção (WorldEdit)",
+                "usage": "/replace <bloco_antigo> <bloco_novo>"
+            },
+            "rotate": {
+                "desc": "Rotaciona a área copiada (WorldEdit)",
+                "usage": "/rotate <90|180|270>"
+            },
+            "set": {
+                "desc": "Preenche a seleção com blocos (WorldEdit)",
+                "usage": "/set <bloco>"
+            },
+            "sphere": {
+                "desc": "Cria uma esfera de blocos (WorldEdit)",
+                "usage": "/sphere <raio> <bloco>"
+            },
+            "stack": {
+                "desc": "Empilha a área copiada (WorldEdit)",
+                "usage": "/stack <vezes> [direção]"
+            },
+            "undo": {
+                "desc": "Desfaz a última ação de construção (WorldEdit)",
+                "usage": "/undo"
+            },
+            "wand": {
+                "desc": "Ativa ou desativa o machado de seleção (WorldEdit)",
+                "usage": "/wand"
             }
         }
     },

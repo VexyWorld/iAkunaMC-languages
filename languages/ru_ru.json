@@ -4570,6 +4570,78 @@
             "orbital": {
                 "desc": "Включить парящие предметы вокруг вас",
                 "usage": "orbital <item|list|random|off>"
+            },
+            "box": {
+                "desc": "Создаёт коробку из блоков (WorldEdit)",
+                "usage": "/box <ширина> <высота> <глубина> <блок>"
+            },
+            "copy": {
+                "desc": "Копирует выделенную область (WorldEdit)",
+                "usage": "/copy"
+            },
+            "count": {
+                "desc": "Считает блоки в выделении (WorldEdit)",
+                "usage": "/count [блок]"
+            },
+            "cyl": {
+                "desc": "Создаёт цилиндр из блоков (WorldEdit)",
+                "usage": "/cyl <радиус> <высота> <блок>"
+            },
+            "expand": {
+                "desc": "Расширяет текущее выделение (WorldEdit)",
+                "usage": "/expand <количество> [направление]"
+            },
+            "flip": {
+                "desc": "Отражает скопированную область (WorldEdit)",
+                "usage": "/flip [направление]"
+            },
+            "paste": {
+                "desc": "Вставляет скопированную область (WorldEdit)",
+                "usage": "/paste"
+            },
+            "pos1": {
+                "desc": "Устанавливает первую точку выделения (WorldEdit)",
+                "usage": "/pos1"
+            },
+            "pos2": {
+                "desc": "Устанавливает вторую точку выделения (WorldEdit)",
+                "usage": "/pos2"
+            },
+            "pyramid": {
+                "desc": "Создаёт пирамиду из блоков (WorldEdit)",
+                "usage": "/pyramid <размер> <высота> <блок>"
+            },
+            "redo": {
+                "desc": "Повторяет последнее отменённое действие (WorldEdit)",
+                "usage": "/redo"
+            },
+            "replace": {
+                "desc": "Заменяет блоки в выделении (WorldEdit)",
+                "usage": "/replace <старый_блок> <новый_блок>"
+            },
+            "rotate": {
+                "desc": "Поворачивает скопированную область (WorldEdit)",
+                "usage": "/rotate <90|180|270>"
+            },
+            "set": {
+                "desc": "Заполняет выделение блоками (WorldEdit)",
+                "usage": "/set <блок>"
+            },
+            "sphere": {
+                "desc": "Создаёт сферу из блоков (WorldEdit)",
+                "usage": "/sphere <радиус> <блок>"
+            },
+            "stack": {
+                "desc": "Повторяет скопированную область (WorldEdit)",
+                "usage": "/stack <раз> [направление]"
+            },
+            "undo": {
+                "desc": "Отменяет последнее действие строительства (WorldEdit)",
+                "usage": "/undo"
+            },
+            "wand": {
+                "desc": "Включает или отключает топор выделения (WorldEdit)",
+                "usage": "/wand"
             }
         }
     },

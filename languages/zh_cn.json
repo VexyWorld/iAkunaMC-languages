@@ -4570,6 +4570,78 @@
             "orbital": {
                 "desc": "启用环绕你的悬浮物品",
                 "usage": "orbital <item|list|random|off>"
+            },
+            "box": {
+                "desc": "创建方块箱体 (WorldEdit)",
+                "usage": "/box <宽> <高> <深> <方块>"
+            },
+            "copy": {
+                "desc": "复制选定区域 (WorldEdit)",
+                "usage": "/copy"
+            },
+            "count": {
+                "desc": "统计选区内的方块数量 (WorldEdit)",
+                "usage": "/count [方块]"
+            },
+            "cyl": {
+                "desc": "创建方块圆柱 (WorldEdit)",
+                "usage": "/cyl <半径> <高度> <方块>"
+            },
+            "expand": {
+                "desc": "扩展当前选区 (WorldEdit)",
+                "usage": "/expand <数量> [方向]"
+            },
+            "flip": {
+                "desc": "翻转已复制的区域 (WorldEdit)",
+                "usage": "/flip [方向]"
+            },
+            "paste": {
+                "desc": "粘贴已复制的区域 (WorldEdit)",
+                "usage": "/paste"
+            },
+            "pos1": {
+                "desc": "设置选区位置 1 (WorldEdit)",
+                "usage": "/pos1"
+            },
+            "pos2": {
+                "desc": "设置选区位置 2 (WorldEdit)",
+                "usage": "/pos2"
+            },
+            "pyramid": {
+                "desc": "创建方块金字塔 (WorldEdit)",
+                "usage": "/pyramid <大小> <高度> <方块>"
+            },
+            "redo": {
+                "desc": "重做上次撤销的操作 (WorldEdit)",
+                "usage": "/redo"
+            },
+            "replace": {
+                "desc": "替换选区内的方块 (WorldEdit)",
+                "usage": "/replace <旧方块> <新方块>"
+            },
+            "rotate": {
+                "desc": "旋转已复制的区域 (WorldEdit)",
+                "usage": "/rotate <90|180|270>"
+            },
+            "set": {
+                "desc": "用方块填充选区 (WorldEdit)",
+                "usage": "/set <方块>"
+            },
+            "sphere": {
+                "desc": "创建方块球体 (WorldEdit)",
+                "usage": "/sphere <半径> <方块>"
+            },
+            "stack": {
+                "desc": "堆叠已复制的区域 (WorldEdit)",
+                "usage": "/stack <次数> [方向]"
+            },
+            "undo": {
+                "desc": "撤销上次建筑操作 (WorldEdit)",
+                "usage": "/undo"
+            },
+            "wand": {
+                "desc": "开关选区木斧 (WorldEdit)",
+                "usage": "/wand"
             }
         }
     },
