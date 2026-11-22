@@ -608,6 +608,41 @@
             "desc": "§7Define el nombre de tu parcela",
             "usage": "§8/§cp name §8<§cnombre§8>",
             "success": "§9Plot §8§l» §r§7¡Nombre de la parcela cambiado a §9{name} §7con éxito!"
+        },
+        "merge": {
+            "name": "merge",
+            "alias": "unir",
+            "desc": "Une tu parcela con una parcela vecina",
+            "usage": "§8/§cp merge §8[§cnorte§8|§csur§8|§ceste§8|§coeste§8]",
+            "invalid_direction": "§cDirección inválida! Usa §8/§cp merge §8[§cnorte§8|§csur§8|§ceste§8|§coeste§8]",
+            "neighbor_unclaimed": "§cLa parcela vecina en esa dirección no tiene dueño...",
+            "different_owner": "§cDebes ser el dueño de ambas parcelas para unirlas...",
+            "already_merged": "§cEstas parcelas ya están unidas...",
+            "max_merged": "§cAlcanzaste el límite máximo de §f{max} §cparcelas unidas...",
+            "clearing": "§cUna de las parcelas se está limpiando ahora mismo...",
+            "failed": "§cNo se pudieron unir las parcelas...",
+            "success": "§aParcelas unidas con éxito! §7Total en el grupo§8: §f{count} §7parcela(s)."
+        },
+        "unmerge": {
+            "name": "unmerge",
+            "alias": "separar",
+            "desc": "Separa parcelas unidas y restaura los caminos",
+            "usage": "§8/§cp unmerge",
+            "not_merged": "§cEsta parcela no está unida con ninguna otra...",
+            "success": "§aParcelas separadas! §7Los caminos y bordes originales se están restaurando..."
+        },
+        "worldedit": {
+            "selection_too_large": "§cSelección demasiado grande (§f{volume}§c bloques). Límite en Plot§8: §f{max} §cbloques.",
+            "blocked_block": "§cEste bloque no está permitido en el WorldEdit de Plot...",
+            "active_task": "§cEspera a que termine tu operación anterior de WorldEdit...",
+            "cooldown": "§cEspera unos segundos antes de volver a usar WorldEdit...",
+            "max_blocks": "§cSe excedió el límite máximo de §f{max} §cbloques por operación...",
+            "outside_plot": "§cNingún bloque de la selección está dentro de una parcela tuya...",
+            "expand_limit": "§cLa expansión supera el límite de §f{max} §cbloques en Plot...",
+            "sphere_limit": "§cEl radio máximo de esfera en Plot es §f{max}§c...",
+            "cylinder_limit": "§cLímites de cilindro en Plot§8: §fradio máx. {radius}, altura máx. {height}§c...",
+            "pyramid_limit": "§cLímites de pirámide en Plot§8: §fbase máx. {base}, altura máx. {height}§c...",
+            "box_limit": "§cLímites de caja en Plot§8: §fmáx. {axis} por eje y {max} bloques en total§c..."
         }
     },
     "cosmetic": {

@@ -607,6 +607,41 @@
             "desc": "§7Plotunun adını belirler",
             "usage": "§8/§cp name §8<§cisim§8>",
             "success": "§9Plot §8§l» §r§7Plot adı başarıyla §9{name} §7olarak değiştirildi!"
+        },
+        "merge": {
+            "name": "merge",
+            "alias": "birlestir",
+            "desc": "Arsanızı komşu arsa ile birleştirir",
+            "usage": "§8/§cp merge §8[§cnorth§8|§csouth§8|§ceast§8|§cwest§8]",
+            "invalid_direction": "§cGeçersiz yön! Kullanım: §8/§cp merge §8[§cnorth§8|§csouth§8|§ceast§8|§cwest§8]",
+            "neighbor_unclaimed": "§cBu yöndeki komşu arsanın sahibi yok...",
+            "different_owner": "§cBirleştirmek için her iki arsanın da sahibi olmalısınız...",
+            "already_merged": "§cBu arsalar zaten birleştirilmiş...",
+            "max_merged": "§cEn fazla §f{max} §carsa birleştirebilirsiniz...",
+            "clearing": "§cArsalardan biri şu anda temizleniyor...",
+            "failed": "§cArsalar birleştirilemedi...",
+            "success": "§aArsalar başarıyla birleştirildi! §7Gruptaki toplam§8: §f{count} §7arsa."
+        },
+        "unmerge": {
+            "name": "unmerge",
+            "alias": "ayir",
+            "desc": "Birleştirilmiş arsaları ayırır ve yolları geri yükler",
+            "usage": "§8/§cp unmerge",
+            "not_merged": "§cBu arsa başka bir arsa ile birleştirilmemiş...",
+            "success": "§aArsalar ayrıldı! §7Orijinal yollar ve sınırlar geri yükleniyor..."
+        },
+        "worldedit": {
+            "selection_too_large": "§cSeçim çok büyük (§f{volume}§c blok). Plot limiti§8: §f{max} §cblok.",
+            "blocked_block": "§cBu blok Plot WorldEdit içinde yasaktır...",
+            "active_task": "§cÖnceki WorldEdit işleminizin bitmesini bekleyin...",
+            "cooldown": "§cWorldEdit kullanmadan önce birkaç saniye bekleyin...",
+            "max_blocks": "§cİşlem başına maksimum §f{max} §cblok limiti aşıldı...",
+            "outside_plot": "§cSeçiminizdeki hiçbir blok kendi arsanızın içinde değil...",
+            "expand_limit": "§cGenişletme Plot içindeki §f{max} §cblok limitini aşıyor...",
+            "sphere_limit": "§cPlot içinde maksimum küre yarıçapı §f{max}§c...",
+            "cylinder_limit": "§cPlot silindir limitleri§8: §fmaks. yarıçap {radius}, maks. yükseklik {height}§c...",
+            "pyramid_limit": "§cPlot piramit limitleri§8: §fmaks. taban {base}, maks. yükseklik {height}§c...",
+            "box_limit": "§cPlot kutu limitleri§8: §feksen başına maks. {axis} ve toplam {max} blok§c..."
         }
     },
     "cosmetic": {

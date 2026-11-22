@@ -607,6 +607,41 @@
             "desc": "§7يعيّن اسم القطعة الخاصة بك",
             "usage": "§8/§cp name §8<§cالاسم§8>",
             "success": "§9Plot §8§l» §r§7تم تغيير اسم القطعة إلى §9{name} §7بنجاح!"
+        },
+        "merge": {
+            "name": "merge",
+            "alias": "دمج",
+            "desc": "دمج أرضك مع أرض مجاورة",
+            "usage": "§8/§cp merge §8[§cnorth§8|§csouth§8|§ceast§8|§cwest§8]",
+            "invalid_direction": "§cاتجاه غير صالح! استخدم §8/§cp merge §8[§cnorth§8|§csouth§8|§ceast§8|§cwest§8]",
+            "neighbor_unclaimed": "§cالأرض المجاورة في هذا الاتجاه غير مملوكة...",
+            "different_owner": "§cيجب أن تمتلك كلا الأرضين لدمجهما...",
+            "already_merged": "§cهذه الأراضي مدمجة بالفعل...",
+            "max_merged": "§cلقد وصلت إلى الحد الأقصى وهو §f{max} §cأراضي مدمجة...",
+            "clearing": "§cإحدى الأراضي قيد التنظيف حالياً...",
+            "failed": "§cتعذر دمج الأراضي...",
+            "success": "§aتم دمج الأراضي بنجاح! §7الإجمالي في المجموعة§8: §f{count} §7أرض."
+        },
+        "unmerge": {
+            "name": "unmerge",
+            "alias": "فصل",
+            "desc": "فصل الأراضي المدمجة واستعادة الطرق",
+            "usage": "§8/§cp unmerge",
+            "not_merged": "§cهذه الأرض غير مدمجة مع أي أرض أخرى...",
+            "success": "§aتم فصل الأراضي! §7جاري استعادة الطرق والحدود الأصلية..."
+        },
+        "worldedit": {
+            "selection_too_large": "§cالتحديد كبير جداً (§f{volume}§c بلوك). الحد في Plot§8: §f{max} §cبلوك.",
+            "blocked_block": "§cهذا البلوك غير مسموح به في WorldEdit داخل Plot...",
+            "active_task": "§cانتظر حتى تنتهي عملية WorldEdit السابقة...",
+            "cooldown": "§cانتظر بضع ثوانٍ قبل استخدام WorldEdit مرة أخرى...",
+            "max_blocks": "§cتم تجاوز الحد الأقصى البالغ §f{max} §cبلوك لكل عملية...",
+            "outside_plot": "§cلا يوجد أي بلوك في التحديد داخل أرض يمكنك البناء فيها...",
+            "expand_limit": "§cالتوسيع يتجاوز حد §f{max} §cبلوك في Plot...",
+            "sphere_limit": "§cالحد الأقصى لنصف قطر الكرة في Plot هو §f{max}§c...",
+            "cylinder_limit": "§cحدود الأسطوانة في Plot§8: §fأقصى نصف قطر {radius}، أقصى ارتفاع {height}§c...",
+            "pyramid_limit": "§cحدود الهرم في Plot§8: §fأقصى قاعدة {base}، أقصى ارتفاع {height}§c...",
+            "box_limit": "§cحدود الصندوق في Plot§8: §fأقصى {axis} لكل محور و {max} بلوك إجمالاً§c..."
         }
     },
     "cosmetic": {

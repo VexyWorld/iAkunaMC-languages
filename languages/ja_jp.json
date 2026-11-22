@@ -607,6 +607,41 @@
             "desc": "§7プロットの名前を設定します",
             "usage": "§8/§cp name §8<§c名前§8>",
             "success": "§9Plot §8§l» §r§7プロットの名前を §9{name} §7に変更しました！"
+        },
+        "merge": {
+            "name": "merge",
+            "alias": "結合",
+            "desc": "隣接するプロットと結合します",
+            "usage": "§8/§cp merge §8[§cnorth§8|§csouth§8|§ceast§8|§cwest§8]",
+            "invalid_direction": "§c無効な方向です！§8/§cp merge §8[§cnorth§8|§csouth§8|§ceast§8|§cwest§8] §cを使用してください",
+            "neighbor_unclaimed": "§cその方向の隣接プロットは所有されていません...",
+            "different_owner": "§c結合するには両方のプロットを所有している必要があります...",
+            "already_merged": "§cこれらのプロットは既に結合されています...",
+            "max_merged": "§c結合できるプロットの上限（§f{max}§c個）に達しています...",
+            "clearing": "§cいずれかのプロットが現在クリア中です...",
+            "failed": "§cプロットを結合できませんでした...",
+            "success": "§aプロットを結合しました！ §7グループ合計§8: §f{count} §7プロット。"
+        },
+        "unmerge": {
+            "name": "unmerge",
+            "alias": "分離",
+            "desc": "結合されたプロットを分離し道路を復元します",
+            "usage": "§8/§cp unmerge",
+            "not_merged": "§cこのプロットは他のプロットと結合されていません...",
+            "success": "§aプロットを分離しました！ §7元の道路と境界を復元しています..."
+        },
+        "worldedit": {
+            "selection_too_large": "§c選択範囲が大きすぎます（§f{volume}§cブロック）。Plot上限§8: §f{max} §cブロック。",
+            "blocked_block": "§cこのブロックはPlotのWorldEditでは使用できません...",
+            "active_task": "§c前のWorldEdit処理が完了するまでお待ちください...",
+            "cooldown": "§cWorldEditを再度使用する前に数秒お待ちください...",
+            "max_blocks": "§c1回の操作の上限（§f{max}§cブロック）を超えています...",
+            "outside_plot": "§c選択範囲内に建築可能な自分のプロットのブロックがありません...",
+            "expand_limit": "§c拡張後の範囲がPlotの上限（§f{max}§cブロック）を超えています...",
+            "sphere_limit": "§cPlotでの球体の最大半径は §f{max} §cです...",
+            "cylinder_limit": "§cPlotでの円柱の上限§8: §f最大半径 {radius}、最大高さ {height}§c...",
+            "pyramid_limit": "§cPlotでのピラミッドの上限§8: §f最大底辺 {base}、最大高さ {height}§c...",
+            "box_limit": "§cPlotでのボックスの上限§8: §f各軸最大 {axis}、合計最大 {max} ブロック§c..."
         }
     },
     "cosmetic": {

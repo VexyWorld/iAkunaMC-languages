@@ -607,6 +607,41 @@
             "desc": "§7Define o nome da sua plot",
             "usage": "§8/§cp name §8<§cnome§8>",
             "success": "§9Plot §8§l» §r§7Nome da plot alterado para §9{name} §7com sucesso!"
+        },
+        "merge": {
+            "name": "merge",
+            "alias": "juntar",
+            "desc": "Junta sua plot com uma plot vizinha",
+            "usage": "§8/§cp merge §8[§cnorte§8|§csul§8|§cleste§8|§coeste§8]",
+            "invalid_direction": "§cDireção inválida! Utilize §8/§cp merge §8[§cnorte§8|§csul§8|§cleste§8|§coeste§8]",
+            "neighbor_unclaimed": "§cA plot vizinha nessa direção não possui dono...",
+            "different_owner": "§cVocê precisa ser o dono das duas plots para juntá-las...",
+            "already_merged": "§cEssas plots já estão unidas...",
+            "max_merged": "§cVocê atingiu o limite máximo de §f{max} §cplots unidas...",
+            "clearing": "§cUma das plots está sendo limpa no momento...",
+            "failed": "§cNão foi possível unir as plots...",
+            "success": "§aPlots unidas com sucesso! §7Total no grupo§8: §f{count} §7plot(s)."
+        },
+        "unmerge": {
+            "name": "unmerge",
+            "alias": "separar",
+            "desc": "Separa plots unidas e restaura as estradas",
+            "usage": "§8/§cp unmerge",
+            "not_merged": "§cEsta plot não está unida com nenhuma outra...",
+            "success": "§aPlots separadas! §7As estradas e bordas originais estão sendo restauradas..."
+        },
+        "worldedit": {
+            "selection_too_large": "§cSeleção muito grande (§f{volume}§c blocos). Limite no Plot§8: §f{max} §cblocos.",
+            "blocked_block": "§cEste bloco não é permitido no WorldEdit do Plot...",
+            "active_task": "§cAguarde sua operação de WorldEdit anterior finalizar...",
+            "cooldown": "§cAguarde alguns segundos antes de usar o WorldEdit novamente...",
+            "max_blocks": "§cLimite máximo de §f{max} §cblocos por operação excedido...",
+            "outside_plot": "§cNenhum bloco da seleção está dentro de uma plot sua...",
+            "expand_limit": "§cExpansão excede o limite de §f{max} §cblocos no Plot...",
+            "sphere_limit": "§cRaio máximo de esfera no Plot é §f{max}§c...",
+            "cylinder_limit": "§cLimites de cilindro no Plot§8: §fraio máx. {radius}, altura máx. {height}§c...",
+            "pyramid_limit": "§cLimites de pirâmide no Plot§8: §fbase máx. {base}, altura máx. {height}§c...",
+            "box_limit": "§cLimites de caixa no Plot§8: §fmáx. {axis} por eixo e {max} blocos no total§c..."
         }
     },
     "cosmetic": {

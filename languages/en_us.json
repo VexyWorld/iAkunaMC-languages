@@ -607,6 +607,41 @@
             "desc": "§7Sets the name of your plot",
             "usage": "§8/§cp name §8<§cname§8>",
             "success": "§9Plot §8§l» §r§7Plot name changed to §9{name} §7successfully!"
+        },
+        "merge": {
+            "name": "merge",
+            "alias": "join",
+            "desc": "Merge your plot with an adjacent plot",
+            "usage": "§8/§cp merge §8[§cnorth§8|§csouth§8|§ceast§8|§cwest§8]",
+            "invalid_direction": "§cInvalid direction! Use §8/§cp merge §8[§cnorth§8|§csouth§8|§ceast§8|§cwest§8]",
+            "neighbor_unclaimed": "§cThe adjacent plot in that direction is unclaimed...",
+            "different_owner": "§cYou must own both plots to merge them...",
+            "already_merged": "§cThese plots are already merged...",
+            "max_merged": "§cYou reached the maximum limit of §f{max} §cmerged plots...",
+            "clearing": "§cOne of the plots is currently being cleared...",
+            "failed": "§cCould not merge the plots...",
+            "success": "§aPlots merged successfully! §7Total in group§8: §f{count} §7plot(s)."
+        },
+        "unmerge": {
+            "name": "unmerge",
+            "alias": "split",
+            "desc": "Unmerge plots and restore original roads",
+            "usage": "§8/§cp unmerge",
+            "not_merged": "§cThis plot is not merged with any other plot...",
+            "success": "§aPlots unmerged! §7Original roads and borders are being restored..."
+        },
+        "worldedit": {
+            "selection_too_large": "§cSelection too large (§f{volume}§c blocks). Plot limit§8: §f{max} §cblocks.",
+            "blocked_block": "§cThis block is not allowed in Plot WorldEdit...",
+            "active_task": "§cPlease wait for your previous WorldEdit operation to finish...",
+            "cooldown": "§cPlease wait a few seconds before using WorldEdit again...",
+            "max_blocks": "§cMaximum limit of §f{max} §cblocks per operation exceeded...",
+            "outside_plot": "§cNo blocks in your selection are inside a plot you can build on...",
+            "expand_limit": "§cExpansion exceeds the limit of §f{max} §cblocks in Plot...",
+            "sphere_limit": "§cMaximum sphere radius in Plot is §f{max}§c...",
+            "cylinder_limit": "§cCylinder limits in Plot§8: §fmax radius {radius}, max height {height}§c...",
+            "pyramid_limit": "§cPyramid limits in Plot§8: §fmax base {base}, max height {height}§c...",
+            "box_limit": "§cBox limits in Plot§8: §fmax {axis} per axis and {max} total blocks§c..."
         }
     },
     "cosmetic": {

@@ -607,6 +607,41 @@
             "desc": "§7Définit le nom de votre plot",
             "usage": "§8/§cp name §8<§cnom§8>",
             "success": "§9Plot §8§l» §r§7Nom du plot changé en §9{name} §7avec succès!"
+        },
+        "merge": {
+            "name": "merge",
+            "alias": "fusionner",
+            "desc": "Fusionne votre parcelle avec une parcelle voisine",
+            "usage": "§8/§cp merge §8[§cnorth§8|§csouth§8|§ceast§8|§cwest§8]",
+            "invalid_direction": "§cDirection invalide! Utilisez §8/§cp merge §8[§cnorth§8|§csouth§8|§ceast§8|§cwest§8]",
+            "neighbor_unclaimed": "§cLa parcelle voisine dans cette direction n'a pas de propriétaire...",
+            "different_owner": "§cVous devez posséder les deux parcelles pour les fusionner...",
+            "already_merged": "§cCes parcelles sont déjà fusionnées...",
+            "max_merged": "§cVous avez atteint la limite maximale de §f{max} §cparcelles fusionnées...",
+            "clearing": "§cL'une des parcelles est en cours de nettoyage...",
+            "failed": "§cImpossible de fusionner les parcelles...",
+            "success": "§aParcelles fusionnées avec succès! §7Total dans le groupe§8: §f{count} §7parcelle(s)."
+        },
+        "unmerge": {
+            "name": "unmerge",
+            "alias": "separer",
+            "desc": "Sépare les parcelles fusionnées et restaure les routes",
+            "usage": "§8/§cp unmerge",
+            "not_merged": "§cCette parcelle n'est fusionnée avec aucune autre...",
+            "success": "§aParcelles séparées! §7Les routes et bordures d'origine sont en cours de restauration..."
+        },
+        "worldedit": {
+            "selection_too_large": "§cSélection trop grande (§f{volume}§c blocs). Limite en Plot§8: §f{max} §cblocs.",
+            "blocked_block": "§cCe bloc n'est pas autorisé dans le WorldEdit en Plot...",
+            "active_task": "§cVeuillez attendre la fin de votre opération WorldEdit précédente...",
+            "cooldown": "§cVeuillez patienter quelques secondes avant de réutiliser WorldEdit...",
+            "max_blocks": "§cLimite maximale de §f{max} §cblocs par opération dépassée...",
+            "outside_plot": "§cAucun bloc de votre sélection ne se trouve dans une de vos parcelles...",
+            "expand_limit": "§cL'extension dépasse la limite de §f{max} §cblocs en Plot...",
+            "sphere_limit": "§cLe rayon maximal d'une sphère en Plot est de §f{max}§c...",
+            "cylinder_limit": "§cLimites de cylindre en Plot§8: §frayon max {radius}, hauteur max {height}§c...",
+            "pyramid_limit": "§cLimites de pyramide en Plot§8: §fbase max {base}, hauteur max {height}§c...",
+            "box_limit": "§cLimites de boîte en Plot§8: §fmax {axis} par axe et {max} blocs au total§c..."
         }
     },
     "cosmetic": {

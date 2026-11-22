@@ -607,6 +607,41 @@
             "desc": "§7设置您的地皮名称",
             "usage": "§8/§cp name §8<§c名称§8>",
             "success": "§9Plot §8§l» §r§7地皮名称已成功更改为 §9{name}§7！"
+        },
+        "merge": {
+            "name": "merge",
+            "alias": "合并",
+            "desc": "将你的地皮与相邻地皮合并",
+            "usage": "§8/§cp merge §8[§cnorth§8|§csouth§8|§ceast§8|§cwest§8]",
+            "invalid_direction": "§c无效的方向！请使用 §8/§cp merge §8[§cnorth§8|§csouth§8|§ceast§8|§cwest§8]",
+            "neighbor_unclaimed": "§c该方向的相邻地皮尚未被认领...",
+            "different_owner": "§c你必须同时拥有这两块地皮才能合并...",
+            "already_merged": "§c这些地皮已经合并过了...",
+            "max_merged": "§c已达到最多合并 §f{max} §c块地皮的上限...",
+            "clearing": "§c其中一块地皮正在清理中...",
+            "failed": "§c无法合并地皮...",
+            "success": "§a地皮合并成功！ §7当前合并总数§8: §f{count} §7块地皮。"
+        },
+        "unmerge": {
+            "name": "unmerge",
+            "alias": "拆分",
+            "desc": "拆分已合并的地皮并恢复原始道路",
+            "usage": "§8/§cp unmerge",
+            "not_merged": "§c这块地皮没有与其他地皮合并...",
+            "success": "§a地皮已拆分！ §7正在恢复原始道路和边界..."
+        },
+        "worldedit": {
+            "selection_too_large": "§c选区过大（§f{volume}§c 个方块）。地皮上限§8: §f{max} §c个方块。",
+            "blocked_block": "§c该方块不允许在地皮 WorldEdit 中使用...",
+            "active_task": "§c请等待你上一个 WorldEdit 操作完成...",
+            "cooldown": "§c请等待几秒后再使用 WorldEdit...",
+            "max_blocks": "§c已超过单次操作最多 §f{max} §c个方块的限制...",
+            "outside_plot": "§c选区内没有任何方块位于你有权建造的地皮内...",
+            "expand_limit": "§c扩展后的范围超过了地皮 §f{max} §c个方块的限制...",
+            "sphere_limit": "§c地皮中球体的最大半径为 §f{max}§c...",
+            "cylinder_limit": "§c地皮中圆柱体限制§8: §f最大半径 {radius}，最大高度 {height}§c...",
+            "pyramid_limit": "§c地皮中金字塔限制§8: §f最大底边 {base}，最大高度 {height}§c...",
+            "box_limit": "§c地皮中长方体限制§8: §f每轴最大 {axis}，总计最多 {max} 个方块§c..."
         }
     },
     "cosmetic": {
