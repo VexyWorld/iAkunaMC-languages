@@ -4686,5 +4686,10 @@
         "position": {
             "unsafe": "§6Survival §8§l» §r§7前回の位置が塞がれているか危険なため、スポーンに移動しました"
         }
+    },
+    "akuna": {
+        "_prefix": "§cAkuna §8§l» §r",
+        "cooldown": "§c落ち着いてください！もう一度質問するには §f{wait}s §cお待ちください。ヒント: §8/§cakunas§c、§8/§cperfil §cまたは §8/§ctop §cで直接確認できます！",
+        "quota": "§c5分あたりの質問上限（§f{limit}§c回）に達しました（§f{wait}s §cお待ちください）。待たずに残高や統計、ランキングを見るには §8/§cakunas§c、§8/§cperfil §c、§8/§ctop §cを使ってください！"
     }
 }

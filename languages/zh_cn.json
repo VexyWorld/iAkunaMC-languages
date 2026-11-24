@@ -4686,5 +4686,10 @@
         "position": {
             "unsafe": "§6Survival §8§l» §r§7你上次的位置被阻挡或不安全，已将你传送回出生点"
         }
+    },
+    "akuna": {
+        "_prefix": "§cAkuna §8§l» §r",
+        "cooldown": "§c别急！请等待 §f{wait}s §c后再提问。提示：使用 §8/§cakunas§c、§8/§cperfil §c或 §8/§ctop §c可直接查询！",
+        "quota": "§c您已达到每5分钟 §f{limit} §c次提问的上限（请等待 §f{wait}s§c）。无需等待即可查看余额、数据或排行榜，请使用 §8/§cakunas§c、§8/§cperfil §c和 §8/§ctop§c！"
     }
 }

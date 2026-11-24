@@ -4686,5 +4686,10 @@
         "position": {
             "unsafe": "§6Survival §8§l» §r§7Son konumun engellenmiş veya güvensizdi, spawna gönderildin"
         }
+    },
+    "akuna": {
+        "_prefix": "§cAkuna §8§l» §r",
+        "cooldown": "§cYavaş ol! Tekrar sormak için §f{wait}s §cbekle. İpucu: doğrudan bakmak için §8/§cakunas§c, §8/§cperfil §cveya §8/§ctop §ckullan!",
+        "quota": "§c5 dakikada §f{limit} §csoru sınırına ulaştın (§f{wait}s §cbekle). Beklemeden bakiye, istatistik veya sıralama görmek için §8/§cakunas§c, §8/§cperfil §cve §8/§ctop §ckullan!"
     }
 }

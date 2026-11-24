@@ -4686,5 +4686,10 @@
         "position": {
             "unsafe": "§6Survival §8§l» §r§7Your last position was obstructed or unsafe, you were sent to spawn"
         }
+    },
+    "akuna": {
+        "_prefix": "§cAkuna §8§l» §r",
+        "cooldown": "§cSlow down! Wait §f{wait}s §cto ask again. Tip: use §8/§cakunas§c, §8/§cperfil §cor §8/§ctop §cto check directly!",
+        "quota": "§cYou reached the limit of §f{limit} §cquestions every 5 min (wait §f{wait}s§c). To view balance, stats or ranking without waiting, use §8/§cakunas§c, §8/§cperfil §cand §8/§ctop§c!"
     }
 }
