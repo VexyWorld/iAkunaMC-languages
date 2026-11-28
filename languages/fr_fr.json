@@ -1467,11 +1467,11 @@
                 "afternoon": "Bon après-midi",
                 "night": "Bonsoir"
             },
-            "dawn": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7Bon matin §e{user}§7, nuit blanche sur §fi§cAkuna§9MC§7? Bienvenue!{n}§bNouveautés §8§l» §r§7Le knockback des modes §fBoxing§7, §fResistance §7et §fPractice §7a été modifié !{n}§8- §7Évaluez-les avec §8/§bfeedback §7en donnant une note et un commentaire pour nous aider à les améliorer !",
-            "morning": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7Bonjour §e{user}§7, bienvenue sur §fi§cAkuna§9MC§7! Passez une excellente matinée de jeu!{n}§bNouveautés §8§l» §r§7Le knockback des modes §fBoxing§7, §fResistance §7et §fPractice §7a été modifié !{n}§8- §7Évaluez-les avec §8/§bfeedback §7en donnant une note et un commentaire pour nous aider à les améliorer !",
-            "afternoon": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7Bon après-midi §e{user}§7, bienvenue sur §fi§cAkuna§9MC§7! Profitez bien de votre après-midi!{n}§bNouveautés §8§l» §r§7Le knockback des modes §fBoxing§7, §fResistance §7et §fPractice §7a été modifié !{n}§8- §7Évaluez-les avec §8/§bfeedback §7en donnant une note et un commentaire pour nous aider à les améliorer !",
-            "night": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7Bonsoir §e{user}§7, bienvenue sur §fi§cAkuna§9MC§7! Passez une excellente soirée de parties!{n}§bNouveautés §8§l» §r§7Le knockback des modes §fBoxing§7, §fResistance §7et §fPractice §7a été modifié !{n}§8- §7Évaluez-les avec §8/§bfeedback §7en donnant une note et un commentaire pour nous aider à les améliorer !",
-            "msg": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7Bonjour §e{user}§7, bienvenue sur §fi§cAkuna§9MC§7!{n}§bNouveautés §8§l» §r§7Le knockback des modes §fBoxing§7, §fResistance §7et §fPractice §7a été modifié !{n}§8- §7Évaluez-les avec §8/§bfeedback §7en donnant une note et un commentaire pour nous aider à les améliorer !"
+            "dawn": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7Bon matin §e{user}§7, nuit blanche sur §fi§cAkuna§9MC§7? Bienvenue!",
+            "morning": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7Bonjour §e{user}§7, bienvenue sur §fi§cAkuna§9MC§7! Passez une excellente matinée de jeu!",
+            "afternoon": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7Bon après-midi §e{user}§7, bienvenue sur §fi§cAkuna§9MC§7! Profitez bien de votre après-midi!",
+            "night": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7Bonsoir §e{user}§7, bienvenue sur §fi§cAkuna§9MC§7! Passez une excellente soirée de parties!",
+            "msg": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7Bonjour §e{user}§7, bienvenue sur §fi§cAkuna§9MC§7!"
         },
         "login": {
             "_prefix": "",
