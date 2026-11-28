@@ -4691,5 +4691,126 @@
         "_prefix": "§cAkuna §8§l» §r",
         "cooldown": "§cНе спешите! Подождите §f{wait}s §cперед следующим вопросом. Совет: используйте §8/§cakunas§c, §8/§cperfil §cили §8/§ctop §cдля быстрого просмотра!",
         "quota": "§cВы достигли лимита в §f{limit} §cвопросов за 5 мин (подождите §f{wait}s§c). Чтобы посмотреть баланс, статистику или рейтинг без ожидания, используйте §8/§cakunas§c, §8/§cperfil §cи §8/§ctop§c!"
+    },
+    "event": {
+        "_prefix": "§bEvent §8§l» §r",
+        "none": "§cThere is no active event right now.",
+        "already_started": "§cThis event has already started.",
+        "full": "§cThe event is full!",
+        "arena_full": "§cThe event arena is full or unavailable.",
+        "world_unavailable": "§cEvent world is currently unavailable.",
+        "not_in": "§cYou are not in any event.",
+        "joined": "§aYou joined the event §f{event}§a!",
+        "left": "§7You left the event.",
+        "kicked": "§cYou were removed from the event by the staff.",
+        "started": "§aThe event §f{event} §ahas started!",
+        "cancelled": "§cThe event §f{event} §cwas cancelled by the staff.",
+        "join_reminder": "§7The event §f{event} §7is open! Use §8/§bevento entrar§7.",
+        "minigame": {
+            "blocked": "§cMinigames are locked during the event §f{event}§c! Use §8/§bevento entrar§c."
+        },
+        "party": {
+            "required": "§cThis event is party-only! Join or create a party with §8/§bparty criar§c."
+        },
+        "spectate": {
+            "disabled": "§cSpectator mode is disabled for this event.",
+            "already_playing": "§cYou are playing in the event! Use §8/§bevento sair §cbefore spectating.",
+            "target_not_found": "§cPlayer §f{player} §cwas not found alive in the event.",
+            "unavailable": "§cEvent location is unavailable to spectate right now.",
+            "started": "§aSpectating event §f{event}§a! Use §8/§bevento sair §ato return to the lobby.",
+            "left": "§7You stopped spectating the event."
+        },
+        "announce": {
+            "_prefix": "",
+            "header": "§b§lEVENT STARTING! §r§f{event} §8({type}§8)",
+            "join_hint": "§7Join now using §8/§bevento entrar §7(Minigames blocked during the event)."
+        },
+        "pvp": {
+            "grace": "§ePvP will be enabled in §f{time}§e!",
+            "enabled": "§aPvP is now §lENABLED§r§a! Good luck!",
+            "not_started": "§cPvP is only enabled after the event starts.",
+            "disabled": "§cPvP is disabled in this event.",
+            "wait": "§cPvP enabled in §f{time}§c!",
+            "countdown_tip": "§bEvent §8| §ePvP in §f{time}s",
+            "wrong_target": "§cYou can only attack your assigned target(s)!",
+            "same_team": "§cYou cannot attack a teammate."
+        },
+        "border": {
+            "_prefix": "",
+            "outside": "§cOutside the event border! Return to the center."
+        },
+        "scoreboard": {
+            "_prefix": "",
+            "alive": "Alive",
+            "lives": "Lives",
+            "kills": "Kills",
+            "pvp": "PvP",
+            "target": "Target",
+            "none": "None"
+        },
+        "target": {
+            "assigned": "§7Your current target is§8: §c{target}",
+            "pair": "§7Your current opponent is§8: §c{target}"
+        },
+        "duel": {
+            "bye": "§eYou received a BYE this round and automatically advanced!"
+        },
+        "round": {
+            "duel_win": "§f{winner} §awon Round §f{round}§a! §8(§f{label0} §a{wins0} §7x §c{wins1} §f{label1} §8| §7Goal: {target}§8)",
+            "win": "§f{team} §awon Round §f{round}§a! §8({scores}§8)",
+            "starting": "§aStarting §eRound {round} §a(teams locked)!"
+        },
+        "life": {
+            "lost": "§eYou lost 1 life! Remaining lives§8: §c{lives}§e."
+        },
+        "player": {
+            "eliminated": "§c{player} §7was eliminated! §f{alive} §7alive remaining."
+        },
+        "eliminated": {
+            "self": "§cYou ran out of lives! Spectate the event or use §8/§bevento sair§c."
+        },
+        "finished": {
+            "_prefix": "",
+            "header": "§b§lEVENT ENDED! §r§f{event}",
+            "place1": "§e1st Place§8: §f{players}",
+            "place2": "§f2nd Place§8: §7{players}",
+            "place3": "§63rd Place§8: §7{players}"
+        },
+        "reward": {
+            "received": "§7You received for §f{place} §7in §b{event}§8: {rewards}",
+            "tier": {
+                "_prefix": "",
+                "top1": "§e1st Place",
+                "top2": "§f2nd Place",
+                "top3": "§63rd Place",
+                "participacao": "§bParticipation"
+            }
+        },
+        "mail": {
+            "_prefix": "",
+            "reward": "§7Congratulations on §f{place} §7in event §b{event}§7! Claim your reward in §3/mail§7."
+        },
+        "info": {
+            "_prefix": "",
+            "header": "§bEvent §8§l» §r§f{event} §8(§7{type} §8| §e{state}§8)",
+            "counts": "§7Participants§8: §f{total} §8(§aAlive§8: §f{alive} §8| §3Watching§8: §f{specs}§8)",
+            "rules": "§7Lock minigames§8: §f{lock} §8| §7PvP§8: §f{pvp} §8| §7Lives§8: §f{lives} §8| §7Rounds§8: §f{round}/{rounds} §8| §7Party§8: §f{party} §8| §7Spec§8: §f{spec} §8| §7Target§8: §f{target} §8| §7Blocks§8: §f{blocks}",
+            "scores": "§7Round Scores§8: §f{scores}",
+            "reward": "{place}§8: {rewards}"
+        },
+        "list": {
+            "_prefix": "",
+            "alive": "§bEvent §8§l» §r§aAlive §8(§f{count}§8): §f{players}",
+            "eliminated": "§7Eliminated §8(§f{count}§8): §7{players}",
+            "spectators": "§3Watching §8(§f{count}§8): §7{players}"
+        },
+        "help": {
+            "_prefix": "",
+            "header": "§bEvent §8§l» §r§7Available commands§8:",
+            "join": "§8/§b{label} entrar §8- §7Join the active event",
+            "spectate": "§8/§b{label} assistir [player] §8- §7Watch the active event",
+            "leave": "§8/§b{label} sair §8- §7Leave event or spectator mode",
+            "info": "§8/§b{label} lista §8| §8/§b{label} info §8- §7View participants and details"
+        }
     }
 }

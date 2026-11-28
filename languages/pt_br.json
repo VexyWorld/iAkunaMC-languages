@@ -4691,5 +4691,126 @@
         "_prefix": "§cAkuna §8§l» §r",
         "cooldown": "§cVai com calma! Aguarde §f{wait}s §cpara perguntar de novo. Dica: use §8/§cakunas§c, §8/§cperfil §cou §8/§ctop §cpara consultar direto!",
         "quota": "§cVocê atingiu o limite de §f{limit} §cperguntas a cada 5 min (aguarde §f{wait}s§c). Para ver saldo, stats ou ranking sem esperar, use §8/§cakunas§c, §8/§cperfil §ce §8/§ctop§c!"
+    },
+    "event": {
+        "_prefix": "§bEvento §8§l» §r",
+        "none": "§cNão há nenhum evento ativo no momento.",
+        "already_started": "§cEste evento já foi iniciado.",
+        "full": "§cO evento está lotado!",
+        "arena_full": "§cA arena do evento está lotada ou indisponível.",
+        "world_unavailable": "§cMundo do evento indisponível no momento.",
+        "not_in": "§cVocê não está em nenhum evento.",
+        "joined": "§aVocê entrou no evento §f{event}§a!",
+        "left": "§7Você saiu do evento.",
+        "kicked": "§cVocê foi removido do evento pela equipe.",
+        "started": "§aO evento §f{event} §acomeçou!",
+        "cancelled": "§cO evento §f{event} §cfoi cancelado pela equipe.",
+        "join_reminder": "§7O evento §f{event} §7está aberto! Use §8/§bevento entrar§7.",
+        "minigame": {
+            "blocked": "§cOs minigames estão bloqueados durante o evento §f{event}§c! Use §8/§bevento entrar§c."
+        },
+        "party": {
+            "required": "§cEste evento é exclusivo para jogadores em party! Use §8/§bparty criar§c."
+        },
+        "spectate": {
+            "disabled": "§cO modo espectador está desativado neste evento.",
+            "already_playing": "§cVocê está jogando no evento! Use §8/§bevento sair §cantes de assistir.",
+            "target_not_found": "§cJogador §f{player} §cnão encontrado vivo no evento.",
+            "unavailable": "§cLocal do evento indisponível para assistir no momento.",
+            "started": "§aAssistindo ao evento §f{event}§a! Use §8/§bevento sair §apara voltar ao lobby.",
+            "left": "§7Você parou de assistir ao evento."
+        },
+        "announce": {
+            "_prefix": "",
+            "header": "§b§lEVENTO INICIANDO! §r§f{event} §8({type}§8)",
+            "join_hint": "§7Entre agora usando §8/§bevento entrar §7(Minigames bloqueados durante o evento)."
+        },
+        "pvp": {
+            "grace": "§ePvP será liberado em §f{time}§e!",
+            "enabled": "§aO PvP foi §lLIBERADO§r§a! Boa sorte!",
+            "not_started": "§cO PvP só será liberado após o início do evento.",
+            "disabled": "§cO PvP está desativado neste evento.",
+            "wait": "§cPvP liberado em §f{time}§c!",
+            "countdown_tip": "§bEvento §8| §ePvP em §f{time}s",
+            "wrong_target": "§cVocê só pode atacar o(s) jogador(es) liberado(s) para você!",
+            "same_team": "§cVocê não pode atacar alguém do mesmo time."
+        },
+        "border": {
+            "_prefix": "",
+            "outside": "§cFora da borda do evento! Volte para o centro."
+        },
+        "scoreboard": {
+            "_prefix": "",
+            "alive": "Vivos",
+            "lives": "Vidas",
+            "kills": "Kills",
+            "pvp": "PvP",
+            "target": "Alvo",
+            "none": "Nenhum"
+        },
+        "target": {
+            "assigned": "§7Seu alvo atual é§8: §c{target}",
+            "pair": "§7Seu oponente atual é§8: §c{target}"
+        },
+        "duel": {
+            "bye": "§eVocê recebeu BYE nesta rodada e avançou automaticamente!"
+        },
+        "round": {
+            "duel_win": "§f{winner} §avenceu o Round §f{round}§a! §8(§f{label0} §a{wins0} §7x §c{wins1} §f{label1} §8| §7Meta: {target}§8)",
+            "win": "§f{team} §avenceu o Round §f{round}§a! §8({scores}§8)",
+            "starting": "§aIniciando §eRound {round} §a(times mantidos)!"
+        },
+        "life": {
+            "lost": "§eVocê perdeu 1 vida! Vidas restantes§8: §c{lives}§e."
+        },
+        "player": {
+            "eliminated": "§c{player} §7foi eliminado! Restam §f{alive} §7vivos."
+        },
+        "eliminated": {
+            "self": "§cSuas vidas acabaram! Acompanhe o evento ou use §8/§bevento sair§c."
+        },
+        "finished": {
+            "_prefix": "",
+            "header": "§b§lEVENTO ENCERRADO! §r§f{event}",
+            "place1": "§e1º Lugar§8: §f{players}",
+            "place2": "§f2º Lugar§8: §7{players}",
+            "place3": "§63º Lugar§8: §7{players}"
+        },
+        "reward": {
+            "received": "§7Você recebeu pelo §f{place} §7em §b{event}§8: {rewards}",
+            "tier": {
+                "_prefix": "",
+                "top1": "§e1º Lugar",
+                "top2": "§f2º Lugar",
+                "top3": "§63º Lugar",
+                "participacao": "§bParticipação"
+            }
+        },
+        "mail": {
+            "_prefix": "",
+            "reward": "§7Parabéns pelo §f{place} §7no evento §b{event}§7! Resgate seu prêmio no §3/correio§7."
+        },
+        "info": {
+            "_prefix": "",
+            "header": "§bEvento §8§l» §r§f{event} §8(§7{type} §8| §e{state}§8)",
+            "counts": "§7Participantes§8: §f{total} §8(§aVivos§8: §f{alive} §8| §3Assistindo§8: §f{specs}§8)",
+            "rules": "§7Trava minigames§8: §f{lock} §8| §7PvP§8: §f{pvp} §8| §7Vidas§8: §f{lives} §8| §7Rounds§8: §f{round}/{rounds} §8| §7Party§8: §f{party} §8| §7Spec§8: §f{spec} §8| §7Alvo§8: §f{target} §8| §7Blocos§8: §f{blocks}",
+            "scores": "§7Placar de Rounds§8: §f{scores}",
+            "reward": "{place}§8: {rewards}"
+        },
+        "list": {
+            "_prefix": "",
+            "alive": "§bEvento §8§l» §r§aVivos §8(§f{count}§8): §f{players}",
+            "eliminated": "§7Eliminados §8(§f{count}§8): §7{players}",
+            "spectators": "§3Assistindo §8(§f{count}§8): §7{players}"
+        },
+        "help": {
+            "_prefix": "",
+            "header": "§bEvento §8§l» §r§7Comandos disponíveis§8:",
+            "join": "§8/§b{label} entrar §8- §7Entra no evento ativo",
+            "spectate": "§8/§b{label} assistir [jogador] §8- §7Assiste ao evento",
+            "leave": "§8/§b{label} sair §8- §7Sai do evento ou do modo espectador",
+            "info": "§8/§b{label} lista §8| §8/§b{label} info §8- §7Vê participantes e detalhes"
+        }
     }
 }
