@@ -1467,11 +1467,11 @@
                 "afternoon": "下午好",
                 "night": "晚上好"
             },
-            "dawn": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7凌晨好 §e{user}§7，在 §fi§cAkuna§9MC §7通宵吗？欢迎光临！{n}§b更新公告 §8§l» §r§7查看 §f4.0§7 和 §f4.0 Patch 1 §7更新日志§8:{n}§8- §bhttps://www.iakunamc.com/changelogs?v=v4.0{n}§8- §bhttps://www.iakunamc.com/changelogs?v=v4.0-patch-1",
-            "morning": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7早上好 §e{user}§7，欢迎来到 §fi§cAkuna§9MC§7！祝您早安，游戏愉快！{n}§b更新公告 §8§l» §r§7查看 §f4.0§7 和 §f4.0 Patch 1 §7更新日志§8:{n}§8- §bhttps://www.iakunamc.com/changelogs?v=v4.0{n}§8- §bhttps://www.iakunamc.com/changelogs?v=v4.0-patch-1",
-            "afternoon": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7下午好 §e{user}§7，欢迎来到 §fi§cAkuna§9MC§7！祝您下午玩得开心！{n}§b更新公告 §8§l» §r§7查看 §f4.0§7 和 §f4.0 Patch 1 §7更新日志§8:{n}§8- §bhttps://www.iakunamc.com/changelogs?v=v4.0{n}§8- §bhttps://www.iakunamc.com/changelogs?v=v4.0-patch-1",
-            "night": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7晚上好 §e{user}§7，欢迎来到 §fi§cAkuna§9MC§7！祝您今晚比赛愉快！{n}§b更新公告 §8§l» §r§7查看 §f4.0§7 和 §f4.0 Patch 1 §7更新日志§8:{n}§8- §bhttps://www.iakunamc.com/changelogs?v=v4.0{n}§8- §bhttps://www.iakunamc.com/changelogs?v=v4.0-patch-1",
-            "msg": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§e认证 §8§l» §r§7你好 §e{user}§7，欢迎来到 §fi§cAkuna§9MC§7！{n}§b更新公告 §8§l» §r§7查看 §f4.0§7 和 §f4.0 Patch 1 §7更新日志§8:{n}§8- §bhttps://www.iakunamc.com/changelogs?v=v4.0{n}§8- §bhttps://www.iakunamc.com/changelogs?v=v4.0-patch-1"
+            "dawn": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7凌晨好 §e{user}§7，在 §fi§cAkuna§9MC §7通宵吗？欢迎光临！{n}§b更新公告 §8§l» §r§7已调整 §fBoxing§7、§fResistance §7与 §fPractice §7模式的击退（Knockback）！{n}§8- §7欢迎使用 §8/§bfeedback §7进行评分并留言告诉我们如何进一步优化！",
+            "morning": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7早上好 §e{user}§7，欢迎来到 §fi§cAkuna§9MC§7！祝您早安，游戏愉快！{n}§b更新公告 §8§l» §r§7已调整 §fBoxing§7、§fResistance §7与 §fPractice §7模式的击退（Knockback）！{n}§8- §7欢迎使用 §8/§bfeedback §7进行评分并留言告诉我们如何进一步优化！",
+            "afternoon": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7下午好 §e{user}§7，欢迎来到 §fi§cAkuna§9MC§7！祝您下午玩得开心！{n}§b更新公告 §8§l» §r§7已调整 §fBoxing§7、§fResistance §7与 §fPractice §7模式的击退（Knockback）！{n}§8- §7欢迎使用 §8/§bfeedback §7进行评分并留言告诉我们如何进一步优化！",
+            "night": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7晚上好 §e{user}§7，欢迎来到 §fi§cAkuna§9MC§7！祝您今晚比赛愉快！{n}§b更新公告 §8§l» §r§7已调整 §fBoxing§7、§fResistance §7与 §fPractice §7模式的击退（Knockback）！{n}§8- §7欢迎使用 §8/§bfeedback §7进行评分并留言告诉我们如何进一步优化！",
+            "msg": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§e认证 §8§l» §r§7你好 §e{user}§7，欢迎来到 §fi§cAkuna§9MC§7！{n}§b更新公告 §8§l» §r§7已调整 §fBoxing§7、§fResistance §7与 §fPractice §7模式的击退（Knockback）！{n}§8- §7欢迎使用 §8/§bfeedback §7进行评分并留言告诉我们如何进一步优化！"
         },
         "login": {
             "_prefix": "",

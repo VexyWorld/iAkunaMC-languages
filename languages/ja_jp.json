@@ -1467,11 +1467,11 @@
                 "afternoon": "こんにちは",
                 "night": "こんばんは"
             },
-            "dawn": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7おはようございます §e{user}§7、§fi§cAkuna§9MC §7で徹夜ですか？ようこそ！{n}§bお知らせ §8§l» §r§7§f4.0§7 と §f4.0 Patch 1 §7の更新履歴をチェック§8:{n}§8- §bhttps://www.iakunamc.com/changelogs?v=v4.0{n}§8- §bhttps://www.iakunamc.com/changelogs?v=v4.0-patch-1",
-            "morning": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7おはようございます §e{user}§7、§fi§cAkuna§9MC §7へようこそ！朝から試合を楽しみましょう！{n}§bお知らせ §8§l» §r§7§f4.0§7 と §f4.0 Patch 1 §7の更新履歴をチェック§8:{n}§8- §bhttps://www.iakunamc.com/changelogs?v=v4.0{n}§8- §bhttps://www.iakunamc.com/changelogs?v=v4.0-patch-1",
-            "afternoon": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7こんにちは §e{user}§7、§fi§cAkuna§9MC §7へようこそ！午後のプレイをお楽しみください！{n}§bお知らせ §8§l» §r§7§f4.0§7 と §f4.0 Patch 1 §7の更新履歴をチェック§8:{n}§8- §bhttps://www.iakunamc.com/changelogs?v=v4.0{n}§8- §bhttps://www.iakunamc.com/changelogs?v=v4.0-patch-1",
-            "night": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7こんばんは §e{user}§7、§fi§cAkuna§9MC §7へようこそ！夜の試合を存分に楽しみましょう！{n}§bお知らせ §8§l» §r§7§f4.0§7 と §f4.0 Patch 1 §7の更新履歴をチェック§8:{n}§8- §bhttps://www.iakunamc.com/changelogs?v=v4.0{n}§8- §bhttps://www.iakunamc.com/changelogs?v=v4.0-patch-1",
-            "msg": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§e認証 §8§l» §r§7こんにちは §e{user}§7、§fi§cAkuna§9MC§7 へようこそ！{n}§bお知らせ §8§l» §r§7§f4.0§7 と §f4.0 Patch 1 §7の更新履歴をチェック§8:{n}§8- §bhttps://www.iakunamc.com/changelogs?v=v4.0{n}§8- §bhttps://www.iakunamc.com/changelogs?v=v4.0-patch-1"
+            "dawn": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7おはようございます §e{user}§7、§fi§cAkuna§9MC §7で徹夜ですか？ようこそ！{n}§bお知らせ §8§l» §r§fBoxing§7、§fResistance§7、§fPractice §7モードのノックバックを変更しました！{n}§8- §8/§bfeedback §7で評価と改善点についてのコメントをお寄せください！",
+            "morning": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7おはようございます §e{user}§7、§fi§cAkuna§9MC §7へようこそ！朝から試合を楽しみましょう！{n}§bお知らせ §8§l» §r§fBoxing§7、§fResistance§7、§fPractice §7モードのノックバックを変更しました！{n}§8- §8/§bfeedback §7で評価と改善点についてのコメントをお寄せください！",
+            "afternoon": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7こんにちは §e{user}§7、§fi§cAkuna§9MC §7へようこそ！午後のプレイをお楽しみください！{n}§bお知らせ §8§l» §r§fBoxing§7、§fResistance§7、§fPractice §7モードのノックバックを変更しました！{n}§8- §8/§bfeedback §7で評価と改善点についてのコメントをお寄せください！",
+            "night": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§eAuth §8§l» §r§7こんばんは §e{user}§7、§fi§cAkuna§9MC §7へようこそ！夜の試合を存分に楽しみましょう！{n}§bお知らせ §8§l» §r§fBoxing§7、§fResistance§7、§fPractice §7モードのノックバックを変更しました！{n}§8- §8/§bfeedback §7で評価と改善点についてのコメントをお寄せください！",
+            "msg": "§8-=-=-=-=== §fi§cAkuna§9MC §8===-=-=-=-{n}§e認証 §8§l» §r§7こんにちは §e{user}§7、§fi§cAkuna§9MC§7 へようこそ！{n}§bお知らせ §8§l» §r§fBoxing§7、§fResistance§7、§fPractice §7モードのノックバックを変更しました！{n}§8- §8/§bfeedback §7で評価と改善点についてのコメントをお寄せください！"
         },
         "login": {
             "_prefix": "",
